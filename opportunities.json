@@ -1,936 +1,446 @@
 {
-  "date": "2026-05-01",
+  "date": "2026-05-02",
   "language": "zh",
   "opportunities": [
     {
-      "id": "hackernews:story:47964617",
-      "title": "Semgrep发现PyTorch Lightning中“Shai-Hulud”主题恶意依赖",
-      "url": "https://semgrep.dev/blog/2026/malicious-dependency-in-pytorch-lightning-used-for-ai-training/",
-      "source_type": "hackernews",
-      "ai_score": 8.0,
-      "signal_score": 7.0,
-      "signal_reason": "The incident underscores a concrete, recurring risk for organizations shipping AI/ML code that depend on Python packages, signaling demand for dependency vetting, monitoring, and incident response; high engagement and multiple related cases discussed suggest an active, growing problem area.",
-      "capability_delta": "该事件本身并未带来全新的防御能力，但为主流ML训练技术栈中的恶意依赖风险提供了一个高信号案例。在实践层面，它提升了在既有流程中启用恶意依赖告警与依赖扫描的紧迫性。",
+      "id": "telegram:zaihuapd:41168",
+      "title": "中国电动车竞争从降价转向车内AI座舱",
+      "url": "https://www.cnbc.com/2026/05/01/china-ev-ai-features-price-war-bytedance-alibaba-doubao-volcano-engine.html",
+      "source_type": "telegram",
+      "ai_score": 7.0,
+      "signal_score": 8.0,
+      "signal_reason": "可观测事实显示车载AI已在数百万量级车辆与大量车型/品牌中部署，并与主流车企/合资品牌达成集成合作，说明能力边界与分发渠道（车企量产导入）已明确且规模化，存在清晰的产业链采购与集成需求信号。",
+      "capability_delta": "能力边界的变化在于，基于大模型的车载语音助手开始在中国多品牌、多车型上规模化部署，使车内语音不仅能对话，还能联动真实消费服务（外卖、酒店、快递查询等）。这更多体现为“接入规模与系统集成”的跃迁，而非披露了新的模型架构突破。",
       "assessment": {
         "capability_boundary_change": {
-          "magnitude": "none",
-          "en": "The news describes a compromise incident rather than a new tool capability becoming available beyond what dependency scanners already provide.",
-          "zh": "该新闻描述的是一次被入侵事件，而不是出现了超出现有依赖扫描器能力边界的新能力。"
+          "magnitude": "20-50%",
+          "en": "Reported integrations across 50+ brands, 145 models, and 7M+ cars indicate a meaningful expansion in where LLM-driven in-car assistance is practically available.",
+          "zh": "覆盖50多个品牌、145款车型与700万+车辆的接入规模，意味着大模型车载助手在可用范围上出现了显著扩张。"
         },
         "cost_change": {
           "magnitude": "unclear",
-          "en": "The report does not quantify any change in scanning, remediation, or operational costs attributable to this specific incident.",
-          "zh": "报道未量化该事件对扫描、修复或运营成本带来的具体变化幅度。"
+          "en": "The item provides no pricing, compute, or licensing information for Doubao/Qwen in-vehicle deployments, so cost impact cannot be quantified.",
+          "zh": "报道未提供豆包或通义千问车端部署的定价、算力或授权成本信息，因此无法量化成本变化。"
         },
         "workflow_unlock": {
-          "magnitude": "0-10%",
-          "en": "It modestly strengthens the case for enabling malicious-dependency advisories and integrating dependency scanning earlier in CI, but the workflows already exist.",
-          "zh": "它在一定程度上强化了启用恶意依赖告警并将依赖扫描前置到CI的理由，但这些工作流本身此前就已存在。"
+          "magnitude": "10-20%",
+          "en": "Voice-linked actions like ordering food or booking hotels suggest incremental workflow enablement for drivers, but the report does not describe end-to-end reliability or coverage limits.",
+          "zh": "语音联动点外卖与订酒店等功能带来一定程度的车内流程便利，但报道未说明端到端可靠性与覆盖范围限制。"
         },
         "buyer_clarity": {
+          "magnitude": "20-50%",
+          "en": "Stating specific service scenarios and named automotive partners (e.g., BYD and a Volkswagen China JV brand) makes the buyer-facing value proposition clearer than generic “AI cockpit” claims.",
+          "zh": "明确给出服务场景并点名合作对象（如比亚迪与大众在华合资品牌），相较泛泛的“AI座舱”表述更能让买方理解价值。"
+        },
+        "distribution_integration_entry": {
+          "magnitude": "20-50%",
+          "en": "Scale figures and multi-brand penetration imply that platform-level integrations with automakers are becoming a key distribution channel for LLM providers.",
+          "zh": "规模数据与多品牌渗透表明，与车企进行平台级集成正在成为大模型厂商的重要分发入口。"
+        },
+        "regulatory_data_supply_window": {
+          "magnitude": "unclear",
+          "en": "The report does not mention regulatory approvals, data governance arrangements, or telemetry collection policies related to in-car LLM use.",
+          "zh": "报道未涉及车载大模型使用的监管审批、数据治理安排或车端数据采集政策，因此窗口变化不明确。"
+        }
+      },
+      "tags": [
+        "EV",
+        "In-car AI",
+        "LLM",
+        "China tech",
+        "Automotive software"
+      ]
+    },
+    {
+      "id": "telegram:zaihuapd:41161",
+      "title": "OpenAI 计划受控发布 GPT-5.5-Cyber 安全模型",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/921073/openai-sam-altman-new-cybersecurity-model-gpt-5-5-cyber",
+      "source_type": "telegram",
+      "ai_score": 8.0,
+      "signal_score": 7.0,
+      "signal_reason": "可观察到的事实是：将出现一个受控、面向机构防御场景的专用模型与审核准入机制，意味着企业级安全工作流可能获得新的能力供给与合规/接入需求，但由于尚未公开发布且缺乏能力与商业条款细节，商业信号强度有限。",
+      "capability_delta": "若按报道发布，将有一个基于 GPT-5.5 且面向网络安全优化的模型通过受控项目提供给经审核的防御方，而不是对所有人开放。但报道未披露评测指标、定价或具体功能细节，因此其相对通用模型的性能增量仍不明确。",
+      "assessment": {
+        "capability_boundary_change": {
+          "magnitude": "unclear",
+          "en": "A new cyber-focused GPT-5.5 variant is planned, but the article provides no measurable capability claims or evaluations to quantify the boundary change.",
+          "zh": "虽然计划推出面向网络安全的 GPT-5.5 变体，但报道未给出可量化的能力声明或评测结果，难以判断能力边界变化幅度。"
+        },
+        "cost_change": {
+          "magnitude": "unclear",
+          "en": "No pricing or usage terms were reported, so any change in cost versus existing OpenAI offerings is unknown.",
+          "zh": "报道未提供定价或使用条款，因此相对现有 OpenAI 产品的成本变化无法判断。"
+        },
+        "workflow_unlock": {
           "magnitude": "10-20%",
-          "en": "A high-profile ML ecosystem incident makes the buyer need for supply-chain controls more concrete, even though exact exposure scope varies by environment.",
-          "zh": "在ML生态中出现高关注事件会让采购方对供应链管控的需求更具体，但具体暴露范围仍取决于各自环境。"
+          "en": "For vetted defenders who gain access, a purpose-built model could modestly streamline security analysis workflows, but concrete workflow features were not specified.",
+          "zh": "对获得访问权限的经审核防御方而言，专用模型可能在一定程度上简化安全分析流程，但报道未明确具体工作流能力。"
+        },
+        "buyer_clarity": {
+          "magnitude": "20-50%",
+          "en": "The intended initial buyers/users are explicitly described as vetted “trusted cyber defenders,” which is clearer than a general-purpose launch.",
+          "zh": "其初期目标用户被明确限定为经审核的“受信任网络防御者”，相较通用模型发布具有更清晰的购买与使用对象界定。"
         },
         "distribution_integration_entry": {
           "magnitude": "0-10%",
-          "en": "The incident may slightly increase adoption of existing SCA/dependency scanning integrations, but it does not create a new distribution channel or standard.",
-          "zh": "该事件可能小幅提升对既有SCA/依赖扫描集成的采用率，但并未形成新的分发渠道或行业标准。"
+          "en": "Distribution appears more restricted rather than easier, since access is gated and coordinated via a trusted mechanism.",
+          "zh": "由于需要受控审核并通过“受信任”机制分发，整体分发与集成门槛更可能提高而非降低。"
+        },
+        "regulatory_data_supply_window": {
+          "magnitude": "10-20%",
+          "en": "The stated coordination with governments and industry suggests a modest shift toward formalized access governance, but no new regulatory program details were provided.",
+          "zh": "与政府及行业协作制定访问机制表明治理更趋正式化，但报道未披露新的监管安排或数据供给细则，因此只能判断为有限变化。"
+        }
+      },
+      "tags": [
+        "OpenAI",
+        "Cybersecurity",
+        "LLM",
+        "AI Governance",
+        "Model Release"
+      ]
+    },
+    {
+      "id": "telegram:zaihuapd:41171",
+      "title": "PyPI 的 lightning 2.6.2/2.6.3 被入侵用于窃密与投毒",
+      "url": "https://socket.dev/blog/lightning-pypi-package-compromised",
+      "source_type": "telegram",
+      "ai_score": 8.0,
+      "signal_score": 7.0,
+      "signal_reason": "事件显示软件供应链攻击可通过包发布渠道在“导入即执行”路径批量窃取密钥并扩散到 GitHub/npm，反映出对依赖投毒检测、发布完整性验证与密钥轮换响应的明确刚需与可采购的安全能力需求。",
+      "capability_delta": "这并非新增防御能力，而是能力边界被攻击方扩大：lightning 2.6.2/2.6.3 可在导入时执行恶意代码以窃取机密并推动仓库与包投毒。对受影响用户而言，这意味着需要更快地执行版本固定、密钥轮换与依赖审计。",
+      "assessment": {
+        "capability_boundary_change": {
+          "magnitude": "20-50%",
+          "en": "For affected environments, routine importing of lightning 2.6.2/2.6.3 reportedly became sufficient to trigger secret theft and enable further supply-chain poisoning behaviors.",
+          "zh": "对受影响环境而言，常规导入 lightning 2.6.2/2.6.3 据称就足以触发窃密，并为后续供应链投毒行为提供条件。"
+        },
+        "cost_change": {
+          "magnitude": "unclear",
+          "en": "The incident implies additional incident-response costs (downgrades and key rotation), but the net cost impact is not quantified in the provided material.",
+          "zh": "该事件意味着额外的应急处置成本（降级与密钥轮换），但提供的信息未量化整体成本变化。"
+        },
+        "workflow_unlock": {
+          "magnitude": "10-20%",
+          "en": "The report suggests that an attacker could leverage stolen tokens to move from a poisoned package into repository and CI-related actions, modestly broadening the attack workflow path from dependency to codebase.",
+          "zh": "报告暗示攻击者可利用被窃令牌从被投毒的依赖延伸到仓库与 CI 相关操作，在一定程度上打通从依赖到代码库的攻击路径。"
+        },
+        "buyer_clarity": {
+          "magnitude": "20-50%",
+          "en": "The remediation actions are concrete—remove 2.6.2/2.6.3, downgrade to 2.6.1, and rotate secrets—making the immediate response requirements relatively clear for users.",
+          "zh": "处置建议较明确——移除 2.6.2/2.6.3、降级到 2.6.1 并轮换密钥——使得用户的即时响应要求相对清晰。"
+        },
+        "distribution_integration_entry": {
+          "magnitude": "0-10%",
+          "en": "The incident reinforces the importance of dependency scanning and version pinning in package distribution, but it does not itself introduce a new integration channel or distribution mechanism.",
+          "zh": "该事件强化了在包分发环节进行依赖扫描与版本固定的重要性，但本身并未带来新的集成入口或分发机制。"
         },
         "regulatory_data_supply_window": {
           "magnitude": "none",
-          "en": "No new regulatory requirement, dataset, or disclosure framework is introduced in the provided materials.",
-          "zh": "现有材料未显示新增监管要求、数据集或披露框架。"
+          "en": "No regulatory change or new data-sharing window is described in the provided report and supporting references.",
+          "zh": "所提供的报告与参考资料未提及任何监管变化或新的数据供给窗口。"
         }
       },
       "tags": [
         "supply-chain-security",
         "python",
-        "pytorch",
-        "malware",
-        "mlops"
+        "pypi",
+        "credential-theft",
+        "devsecops"
       ]
     },
     {
-      "id": "rss:simonwillison.net_atom_everything_:-1578304475071077242",
-      "title": "英国AISI称GPT-5.5漏洞挖掘能力可比Claude Mythos",
-      "url": "https://simonwillison.net/2026/Apr/30/gpt-55-cyber-capabilities/#atom-everything",
-      "source_type": "rss",
-      "ai_score": 8.0,
-      "signal_score": 7.0,
-      "signal_reason": "The evaluation indicates a generally available model (GPT-5.5) reaches a capability level relevant to vulnerability discovery, which can materially affect security workflows and procurement decisions; however, the post provides limited concrete data on cost/latency or specific deployment changes.",
-      "capability_delta": "该评估所暗示的主要边界变化在于：与Mythos相当的漏洞挖掘能力如今出现在一款“普遍可用”的模型（GPT-5.5）上。这使高端网络安全辅助从受限的预览阶段更倾向于走向更广泛使用，即便其原始能力被描述为“相当”而非大幅跃升。",
-      "assessment": {
-        "capability_boundary_change": {
-          "magnitude": "10-20%",
-          "en": "The reported capability is comparable to Mythos, but pairing that level with broad availability modestly expands what more users can practically do.",
-          "zh": "据称能力与Mythos相当，但将该水平与广泛可用性结合，会在实践层面小幅扩大更多用户可完成的事情范围。"
-        },
-        "cost_change": {
-          "magnitude": "unclear",
-          "en": "The snippet provides no pricing, rate limits, or compute requirements for GPT-5.5, so cost impact cannot be determined here.",
-          "zh": "该摘录未提供GPT-5.5的定价、调用限额或算力需求信息，因此无法据此判断成本影响。"
-        },
-        "workflow_unlock": {
-          "magnitude": "20-50%",
-          "en": "Broad availability of a Mythos-level vulnerability-finding assistant can meaningfully increase adoption in security review workflows compared with a limited preview model.",
-          "zh": "具备接近Mythos水平且可广泛使用的漏洞挖掘助手，相比受限预览模型，可能显著提高其在安全审查工作流中的采用程度。"
-        },
-        "buyer_clarity": {
-          "magnitude": "0-10%",
-          "en": "An independent comparison offers some signal to security teams, but the provided excerpt lacks enough methodological detail to strongly sharpen procurement decisions.",
-          "zh": "独立对比能为安全团队提供一定信号，但该摘录缺少足够的方法学细节，难以显著提升采购决策的明确性。"
-        },
-        "distribution_integration_entry": {
-          "magnitude": "10-20%",
-          "en": "A generally available model lowers practical barriers to integrate vulnerability-finding assistance into tools, compared with a restricted preview, though specifics are not provided here.",
-          "zh": "相较受限预览版本，普遍可用的模型会降低将漏洞挖掘辅助集成到工具中的实践门槛，但此处未给出具体集成细节。"
-        },
-        "regulatory_data_supply_window": {
-          "magnitude": "unclear",
-          "en": "The excerpt does not mention policy, compliance, data access, or regulatory changes tied to the evaluation.",
-          "zh": "该摘录未提及与评估相关的政策、合规、数据获取或监管变化。"
-        }
-      },
-      "tags": [
-        "AI security",
-        "LLM evaluation",
-        "vulnerability research",
-        "OpenAI",
-        "cybersecurity"
-      ]
-    },
-    {
-      "id": "telegram:zaihuapd:41144",
-      "title": "国会点名调查Airbnb与Anysphere使用中国AI模型",
-      "url": "https://chinaselectcommittee.house.gov/media/press-releases/chairmen-moolenaar-garbarino-announce-joint-investigation-into-airbnb-anysphere-and-the-national-security-risks-posed-by-chinese-ai-models",
+      "id": "telegram:zaihuapd:41172",
+      "title": "白宫反对扩大 Anthropic Mythos 模型访问范围",
+      "url": "https://t.me/zaihuapd/41172",
       "source_type": "telegram",
       "ai_score": 8.0,
       "signal_score": 7.0,
-      "signal_reason": "可观察到监管压力与披露要求（供应商沟通记录、模型使用/测试范围、客户数据规模）显著上升，表明企业对AI供应链合规、审计与风险管理的刚性需求可能增加，但尚未出现明确的新规则、禁令或成本/能力边界的直接变化。",
-      "capability_delta": "这不是技术能力突破，而是监管与合规边界的变化：国会要求企业就使用中国AI模型及相关数据暴露情况进行更高强度披露。实际效果可能是相关AI集成若缺乏审计留痕与供应商风险控制，将更难持续推进。",
+      "signal_reason": "可观察到政府对“攻防能力型”AI模型的访问控制与配额/算力分配正在收紧并引发诉讼，表明合规、审计、访问控制与安全评估等刚性需求上升，且目标用户（政府与关键基础设施相关实体）明确。",
+      "capability_delta": "这里的能力边界变化主要是 Mythos 访问主体拟从约 50 家扩到约 120 家，但报道称该扩容正遭白宫反对。按现有信息看，并未出现新的技术能力披露，变化点在于对既有高风险模型的可得性边界存在争议。",
       "assessment": {
         "capability_boundary_change": {
-          "magnitude": "10-20%",
-          "en": "The event increases the likelihood that using Chinese AI models triggers added review and disclosure, tightening the operational boundary for such integrations.",
-          "zh": "该事件提高了使用中国AI模型触发额外审查与披露的概率，从而收紧了相关集成的运作边界。"
+          "magnitude": "unclear",
+          "en": "The report describes a proposed access expansion but also says the White House is opposing it, so the net change in real availability is unclear.",
+          "zh": "报道提到拟扩大访问范围但同时称白宫反对，因此实际可用性是否变化仍不明确。"
         },
         "cost_change": {
           "magnitude": "unclear",
-          "en": "The letters imply potential additional compliance and legal costs, but no direct cost figures or new mandates are specified in the provided materials.",
-          "zh": "信函暗示可能增加合规与法律成本，但在已提供材料中没有给出明确成本数据或新增强制要求。"
+          "en": "No pricing or unit-cost information is provided, and the compute-allocation concern does not quantify any cost shift.",
+          "zh": "未提供定价或单位成本信息，而“算力分配担忧”也未量化成本变化。"
         },
         "workflow_unlock": {
-          "magnitude": "none",
-          "en": "The news does not introduce a new tool or process; it is an oversight action that may constrain existing workflows rather than unlock new ones.",
-          "zh": "该新闻并未带来新的工具或流程，而是监督调查行动，可能约束既有工作流而非解锁新工作流。"
+          "magnitude": "unclear",
+          "en": "Mythos is described as enabling autonomous vulnerability discovery/exploitation, but this item reports a policy dispute rather than a newly released workflow feature.",
+          "zh": "Mythos 被描述为可支持自主漏洞发现与利用，但该消息聚焦政策争议而非新增工作流能力发布。"
         },
         "buyer_clarity": {
           "magnitude": "0-10%",
-          "en": "It marginally clarifies that U.S. lawmakers are explicitly scrutinizing Chinese-model usage and data exposure, but concrete compliance rules are not detailed.",
-          "zh": "它在一定程度上明确了美国立法者会直接审视中国模型使用与数据暴露，但未给出具体可执行的合规规则细则。"
+          "en": "The reporting reiterates that eligible users have been limited to critical-infrastructure operators and some government bodies, which slightly clarifies the intended buyer/user set.",
+          "zh": "报道重申此前主要面向关键基础设施管理方与部分政府机构开放，这对目标用户范围有小幅澄清。"
         },
         "distribution_integration_entry": {
-          "magnitude": "none",
-          "en": "There is no new distribution channel or integration pathway announced; the only change is heightened oversight pressure.",
-          "zh": "并未出现新的分发渠道或集成入口变化，变化主要体现在监管关注度上升。"
+          "magnitude": "unclear",
+          "en": "Because the expansion is contested and no integration channels (APIs, cloud marketplaces, or partners) are specified, distribution and integration implications are unclear.",
+          "zh": "由于扩容本身存在争议且未说明 API、云市场或合作伙伴等集成渠道，分发与集成影响不明确。"
         },
         "regulatory_data_supply_window": {
           "magnitude": "10-20%",
-          "en": "The document requests point to a near-term window where companies may need to inventory data flows and vendor relationships in anticipation of possible follow-on actions.",
-          "zh": "信函的披露要求表明在短期内企业可能需要盘点数据流向与供应商关系，以应对潜在的后续监管动作。"
+          "en": "White House involvement framed around national security and compute allocation modestly increases the likelihood of tighter access controls for exploit-capable models.",
+          "zh": "以国家安全与算力供给为由的白宫介入，适度提高了对具漏洞利用能力模型实施更严格访问管控的可能性。"
         }
       },
       "tags": [
         "AI政策与监管",
         "国家安全",
-        "数据治理",
-        "第三方模型风险",
-        "合规审计"
+        "网络安全",
+        "漏洞挖掘",
+        "AI治理"
       ]
     },
     {
-      "id": "telegram:zaihuapd:41149",
-      "title": "中央网信办启动为期4个月AI应用乱象整治",
-      "url": "https://content-static.cctvnews.cctv.com/snow-book/index.html?toc_style_id=feeds_default&amp;t=1777539738167&amp;item_id=12250550966227521722&amp;channelId=1215",
+      "id": "telegram:zaihuapd:41162",
+      "title": "Anthropic 向 Claude Enterprise 开放 Claude Security 公测",
+      "url": "https://x.com/claudeai/status/2049898739783897537",
       "source_type": "telegram",
-      "ai_score": 8.0,
+      "ai_score": 7.0,
       "signal_score": 7.0,
-      "signal_reason": "行动明确强化备案登记、安全审核、训练数据安全、数据投毒防护与内容标识等可验证合规要求，并伴随执法处罚，客观上提升相关技术与合规能力的刚性需求与采购/投入确定性，但未给出具体新标准细则或预算/采购机制信息。",
-      "capability_delta": "这主要是执法与合规边界的变化：未按要求完成备案、具备安全审核能力并落实生成合成内容标识的AI应用与分发行为，将面临更高的被查处与处罚概率。它并非发布新的技术能力，而是收紧生成式AI内容生产与传播的运营约束。",
+      "signal_reason": "可观察到的能力边界变化是新增企业可用的安全扫描与补丁建议工具（降低误报、可审查补丁），面向明确买方群体（Claude Enterprise/企业安全与研发团队），具备直接集成到现有安全/CI 流程的商业落地点；但目前仅为公开测试且限定企业用户范围，规模与效果尚未被事实验证。 ",
+      "capability_delta": "对 Claude Enterprise 用户而言，新能力在于可使用带“验证环节”的 LLM 辅助代码库漏洞扫描，以降低误报并输出可审查的补丁建议。这使 Claude 从通用协助进一步延伸为面向应用安全流程的专用工具，但目前仅在企业版范围内体现。",
       "assessment": {
         "capability_boundary_change": {
           "magnitude": "20-50%",
-          "en": "The campaign materially tightens the compliance boundary for AI services and AI-generated content distribution through targeted enforcement of filing, security review, and labeling obligations.",
-          "zh": "该专项行动通过对备案、安全审核与内容标识等要求的集中执法，实质性收紧了AI服务与生成内容分发的合规边界。"
+          "en": "Adding verified findings plus reviewable patch suggestions represents a meaningful expansion from general LLM help to an end-to-end SAST-adjacent workflow for Claude Enterprise users.",
+          "zh": "在 Claude Enterprise 中新增“验证发现”与“可审查补丁建议”，相较通用对话辅助更接近端到端的 SAST 相邻工作流，能力边界有明显扩展。"
         },
         "cost_change": {
-          "magnitude": "10-20%",
-          "en": "Compliance work such as security review readiness, training data security controls, and content labeling implementation is likely to increase operating costs for affected providers.",
-          "zh": "安全审核能力建设、训练语料安全管控与内容标识落地等合规工作，可能会抬升相关主体的运营成本。"
+          "magnitude": "unclear",
+          "en": "The post does not disclose pricing, included usage, or measurable reductions in engineering time, so the net cost impact cannot be quantified.",
+          "zh": "公告未披露定价、包含额度或可量化的人力节省数据，因此无法评估净成本变化。"
         },
         "workflow_unlock": {
-          "magnitude": "none",
-          "en": "The notice focuses on rectification and enforcement and does not introduce a new workflow or capability that makes development or deployment easier.",
-          "zh": "通知侧重整治与执法，并未引入能让研发或部署更便捷的新流程或新能力。"
+          "magnitude": "20-50%",
+          "en": "A tool that scans, verifies, and proposes reviewable patches can reduce manual triage loops and better align with code review practices than raw findings alone.",
+          "zh": "同时具备扫描、验证与可审查补丁建议的工具，可能减少人工分流与反复确认的环节，并更贴合代码评审流程。"
         },
         "buyer_clarity": {
           "magnitude": "10-20%",
-          "en": "By naming specific problem areas (e.g., filing, data poisoning, labeling), the campaign provides somewhat clearer compliance priorities for organizations procuring or operating AI services.",
-          "zh": "通过点名备案、数据投毒、内容标识等问题，该行动在一定程度上为采购或运营AI服务的组织明确了合规优先级。"
+          "en": "Targeting Claude Enterprise makes the buyer persona clearer (enterprise AppSec and engineering leadership), but missing details on coverage and integrations still limit procurement certainty.",
+          "zh": "明确面向 Claude Enterprise 有助于锁定采购人群（企业应用安全与工程管理层），但覆盖范围与集成细节缺失仍会影响采购确定性。"
+        },
+        "distribution_integration_entry": {
+          "magnitude": "0-10%",
+          "en": "Distribution is improved mainly by being packaged for Claude Enterprise users, but the announcement does not confirm delivery via common dev pipelines (e.g., GitHub/CI) for frictionless adoption.",
+          "zh": "分发主要依托现有的 Claude Enterprise 用户体系有所增强，但公告未确认是否以常见开发流水线（如 GitHub/CI）形式交付，因此接入门槛变化有限。"
+        },
+        "regulatory_data_supply_window": {
+          "magnitude": "none",
+          "en": "The announcement does not mention compliance standards, audit requirements, or new data access/retention terms that would change regulatory or data-supply conditions.",
+          "zh": "公告未提及合规标准、审计要求或新的数据访问与留存条款，因此不会改变监管或数据供给窗口。"
+        }
+      },
+      "tags": [
+        "Application Security",
+        "Static Analysis",
+        "LLM Tools",
+        "Enterprise Software",
+        "Vulnerability Management"
+      ]
+    },
+    {
+      "id": "telegram:zaihuapd:41164",
+      "title": "中国收紧商业短信同意与拒收规则",
+      "url": "https://www.miit.gov.cn/zcfg/xxtxl/art/2026/art_20183ad07ad740f7b59bb5b1212df241.html",
+      "source_type": "telegram",
+      "ai_score": 7.0,
+      "signal_score": 7.0,
+      "signal_reason": "合规边界发生明确变化（同意机制、退订机制、身份信息附带与6个月留存/追溯），将迫使发送方与平台更新流程与系统以避免违规，带来可观察的合规改造与审计需求。",
+      "capability_delta": "商业短信发送的法律边界更清晰：必须明示同意、必须提供不设障的便捷拒收，并通过实名信息与不少于6个月的日志留存强化追溯。无同意群发的操作风险上升且更容易被定位责任主体。",
+      "assessment": {
+        "capability_boundary_change": {
+          "magnitude": "20-50%",
+          "en": "The regulation introduces enforceable requirements (explicit consent, easy opt-out, traceability, and ≥6-month log retention) that materially narrow how commercial SMS can be legally sent.",
+          "zh": "该规定引入可执行的“明示同意、便捷拒收、可追溯、日志留存不少于6个月”等要求，实质性收窄了商业短信的合规发送边界。"
+        },
+        "cost_change": {
+          "magnitude": "10-20%",
+          "en": "Compliance work such as consent management, opt-out handling, identity attachment, and record retention is likely to add operational cost, though the exact increase is not specified in the provided text.",
+          "zh": "同意管理、拒收处理、身份信息附带与记录留存等合规工作预计会增加运营成本，但提供材料未给出具体增幅。"
+        },
+        "workflow_unlock": {
+          "magnitude": "0-10%",
+          "en": "The change mainly adds constraints rather than enabling a new workflow, aside from standardizing consent and opt-out processes for commercial SMS operations.",
+          "zh": "该变化主要是增加约束而非解锁全新流程，仅在一定程度上促使商业短信运营的同意与拒收流程标准化。"
+        },
+        "buyer_clarity": {
+          "magnitude": "20-50%",
+          "en": "By explicitly requiring opt-in consent and unobstructed opt-out, the rule makes compliance expectations clearer for businesses that send commercial SMS.",
+          "zh": "通过明确“明示同意”和“拒收不得设障”，新规让商业短信发送主体的合规要求更清晰。"
         },
         "distribution_integration_entry": {
           "magnitude": "10-20%",
-          "en": "Platforms and MCNs face higher enforcement pressure, which can raise integration and publishing requirements for AI-generated content in distribution channels.",
-          "zh": "平台与MCN面临更高执法压力，可能提高AI生成内容在分发渠道的接入与发布要求。"
+          "en": "Requiring real-identity information and six-month record retention raises the integration and governance bar for port-based SMS distribution, but the extent depends on existing operator/platform practices.",
+          "zh": "要求附带真实身份信息并留存6个月记录，会抬高端口类短信分发的接入与治理门槛，但幅度取决于既有运营商与平台实践。"
+        },
+        "regulatory_data_supply_window": {
+          "magnitude": "10-20%",
+          "en": "Mandated retention of timestamps and code/number data for at least six months increases the availability of evidentiary data for enforcement within that retention window.",
+          "zh": "要求至少6个月留存发送接收时间、码号等数据，提高了在该留存窗口内用于监管执法取证的数据可得性。"
+        }
+      },
+      "tags": [
+        "regulation",
+        "sms",
+        "privacy-compliance",
+        "telecom",
+        "china"
+      ]
+    },
+    {
+      "id": "hackernews:story:47978370",
+      "title": "城市得知Flock演示访问儿童体操室摄像头后仍续约",
+      "url": "https://www.404media.co/city-learns-flock-accessed-cameras-in-childrens-gymnastics-room-as-a-sales-pitch-demo-renews-contract-anyway/",
+      "source_type": "hackernews",
+      "ai_score": 7.0,
+      "signal_score": 6.0,
+      "signal_reason": "The incident highlights a concrete and widely relevant gap in access control, auditability, and demo/data-segregation practices for surveillance and civic tech vendors, with clear buyer pressure signals (public scrutiny and policy risk) but no explicit market-opening change or new capability described.",
+      "capability_delta": "这里没有明显的技术突破；变化更多在声誉与治理层面，暴露出供应商的演示访问可能延伸到敏感场所的实时摄像头画面。该事件可能促使机构在云端视频访问上要求更强的环境隔离、最小权限角色与可审计性。",
+      "assessment": {
+        "capability_boundary_change": {
+          "magnitude": "none",
+          "en": "The report describes a problematic use of existing access capabilities rather than a newly introduced technical capability.",
+          "zh": "该报道描述的是既有访问能力被不当使用，而非新增的技术能力。"
+        },
+        "cost_change": {
+          "magnitude": "none",
+          "en": "No pricing or cost information changed in the provided materials, so a cost shift cannot be inferred.",
+          "zh": "提供的信息未显示价格或成本发生变化，因此无法推断成本变动。"
+        },
+        "workflow_unlock": {
+          "magnitude": "0-10%",
+          "en": "The main “unlock” is procedural awareness that demo programs can involve live feeds, which may slightly change procurement and access-control workflows.",
+          "zh": "主要“解锁”在于流程层面的认知：演示项目可能涉及实时画面，这可能对采购与权限控制流程带来轻微调整。"
+        },
+        "buyer_clarity": {
+          "magnitude": "10-20%",
+          "en": "Public reporting and discussion make vendor-access risk more concrete for city buyers, modestly increasing clarity around required controls and contract terms.",
+          "zh": "公开报道与讨论使城市采购方更具体地认识到供应商访问风险，在一定程度上提升了对所需控制与合同条款的清晰度。"
+        },
+        "distribution_integration_entry": {
+          "magnitude": "none",
+          "en": "There is no indication of new integration surfaces, APIs, or distribution channels in the described incident.",
+          "zh": "该事件未显示出现新的集成接口、API或分发渠道变化。"
         },
         "regulatory_data_supply_window": {
           "magnitude": "unclear",
-          "en": "The campaign mentions training data security and data poisoning but does not specify new data access rules, making the net effect on data availability unclear.",
-          "zh": "行动提及训练语料安全与数据投毒，但未明确新的数据供给或获取规则，因此对数据可得性的净影响不明确。"
+          "en": "The incident could influence oversight or policy attention, but no specific regulatory action or timeline is provided here.",
+          "zh": "该事件可能影响监管关注或政策讨论，但此处未提供具体监管行动或时间表。"
+        }
+      },
+      "tags": [
+        "privacy",
+        "surveillance-tech",
+        "govtech",
+        "security",
+        "vendor-risk"
+      ]
+    },
+    {
+      "id": "telegram:zaihuapd:41170",
+      "title": "小红书发布AI治理规则并强化标注与处罚",
+      "url": "https://t.me/zaihuapd/41170",
+      "source_type": "telegram",
+      "ai_score": 7.0,
+      "signal_score": 6.0,
+      "signal_reason": "规则明确要求AI内容标注、平台将对未标注内容自动加标并提供申诉，同时严禁自动化运营与深度伪造等行为，这会推动合规标注、内容审核与账号风控相关能力的刚需提升，但未显示成本/接口/能力边界的重大变化。",
+      "capability_delta": "这主要是政策边界的变化：平台仍允许使用生成式AI创作，但对内容披露的要求更明确，并更清晰地强化对AI造假与自动化违规运营的治理。平台也明确将对识别出的未标注AI内容统一补充标识。",
+      "assessment": {
+        "capability_boundary_change": {
+          "magnitude": "10-20%",
+          "en": "The update clarifies what AI-assisted creation is permitted and draws firmer lines against deepfake impersonation, automated operations, and low-quality mass production.",
+          "zh": "该更新更清晰界定了AI辅助创作的允许范围，并对音容造假、自动化运营与低质批量生产划出更明确的红线。"
+        },
+        "cost_change": {
+          "magnitude": "0-10%",
+          "en": "Compliance costs may rise slightly due to the need for labeling and potential appeals, but no direct pricing or tooling cost changes are stated.",
+          "zh": "由于需要标注及可能的申诉流程，合规成本可能小幅上升，但规则未提及任何直接的收费或工具成本变化。"
+        },
+        "workflow_unlock": {
+          "magnitude": "0-10%",
+          "en": "The rules modestly standardize publishing workflows by encouraging proactive disclosure and providing a defined appeals path for platform-applied labels.",
+          "zh": "规则通过鼓励主动标注并提供平台加标后的申诉通道，对发布流程形成小幅度的规范化。"
+        },
+        "buyer_clarity": {
+          "magnitude": "10-20%",
+          "en": "For brands and agencies, clearer labeling and enforcement signals reduce ambiguity about acceptable AI use and content risk on the platform.",
+          "zh": "对品牌与代理机构而言，更明确的标注与处罚信号降低了平台上AI使用与内容风险的不确定性。"
+        },
+        "distribution_integration_entry": {
+          "magnitude": "unclear",
+          "en": "The announcement indicates the platform may detect and label AI content, but it does not specify APIs, technical standards, or integration requirements.",
+          "zh": "公告提到平台会识别并补充标识AI内容，但未说明API、技术标准或接入要求，因此影响程度不明确。"
+        },
+        "regulatory_data_supply_window": {
+          "magnitude": "unclear",
+          "en": "While the rules align with broader AI content labeling governance, the announcement provides no concrete timelines or data-sharing specifics that define a clear window.",
+          "zh": "尽管规则与更广泛的AI内容标识治理方向一致，但公告未给出时间表或数据共享细节，因此难以界定明确窗口期。"
         }
       },
       "tags": [
         "AI治理",
-        "监管合规",
+        "内容平台政策",
+        "内容审核",
         "生成式AI",
-        "内容安全",
-        "中国政策"
+        "社交媒体运营"
       ]
     },
     {
-      "id": "telegram:zaihuapd:41154",
-      "title": "网信办征求数字虚拟人管理意见并拟禁未成年虚拟伴侣",
-      "url": "https://t.me/zaihuapd/41154",
-      "source_type": "telegram",
-      "ai_score": 8.0,
-      "signal_score": 7.0,
-      "signal_reason": "The draft introduces clear, enforceable compliance obligations and restrictions that change operational requirements for a defined market segment (digital avatar/virtual human services in China), creating observable demand for compliance processes (labeling, consent management, identity-risk controls, minors handling, and deletion workflows), though it is still a consultation draft and not yet finalized.",
-      "capability_delta": "这不是技术能力突破，而是合规边界发生变化：要求持续显著标识、对敏感信息与未成年人信息的同意更严格，并可能直接限制面向未成年人的虚拟伴侣体验。新增的是在中国境内开展合规数字虚拟人服务时更明确、可执行的操作规范。",
+      "id": "hackernews:story:47972511",
+      "title": "WhatCable 在 macOS 上识别 USB-C 线材真实能力",
+      "url": "https://github.com/darrylmorley/whatcable",
+      "source_type": "hackernews",
+      "ai_score": 7.0,
+      "signal_score": 4.0,
+      "signal_reason": "Clear user pain and strong engagement indicate demand, but the capability is mostly a UI/packaging layer over existing system data and is already free/open-source, with no observable new platform capability, cost shift, or constrained supply/regulatory window described.",
+      "capability_delta": "WhatCable 让 macOS 用户无需专用硬件测试仪，也能更容易读取并理解线材对 USB-C/Thunderbolt 能力的宣称信息，并且新增了 GUI 与 CLI 两种工作流。它不会带来新的硬件能力，但显著降低了用系统可见数据定位“线材瓶颈”的门槛。",
       "assessment": {
         "capability_boundary_change": {
           "magnitude": "20-50%",
-          "en": "The draft meaningfully tightens what digital-human services may do in China by mandating prominent labeling, restricting identifiable-person outputs without consent, and proposing a minors virtual-companion ban.",
-          "zh": "征求意见稿通过强制显著标识、限制未经同意的可识别真人服务、以及拟禁止未成年虚拟伴侣等规定，显著收紧了数字虚拟人在中国可提供的服务边界。"
+          "en": "For macOS users, accurately summarizing OS-accessible cable/eMarker-reported capabilities in a GUI/CLI meaningfully expands what can be diagnosed without external testers.",
+          "zh": "对 macOS 用户而言，把系统可读的线缆/eMarker 上报能力用 GUI/CLI 直接汇总展示，显著扩展了无需外部测试仪即可诊断的问题范围。"
         },
         "cost_change": {
           "magnitude": "10-20%",
-          "en": "Separate-consent collection, guardian-consent flows, and required deletion/cancellation after consent withdrawal add compliance and engineering overhead for providers.",
-          "zh": "单独同意、监护人同意流程以及撤回同意后的注销删除要求，会为服务提供者带来额外的合规与工程实现成本。"
-        },
-        "workflow_unlock": {
-          "magnitude": "0-10%",
-          "en": "The draft clarifies required operational steps (labeling and consent lifecycle), which slightly standardizes compliance workflows but does not create new production capabilities.",
-          "zh": "征求意见稿明确了标识与同意生命周期等操作要求，能在一定程度上标准化合规流程，但并未解锁新的生产能力。"
-        },
-        "buyer_clarity": {
-          "magnitude": "10-20%",
-          "en": "Clearer labeling and consent rules can make procurement and audits more straightforward for organizations deploying digital humans in China.",
-          "zh": "更明确的标识与同意规则有助于在中国部署数字虚拟人的机构开展采购评估与合规审计，从而提升需求方的规则清晰度。"
-        },
-        "distribution_integration_entry": {
-          "magnitude": "10-20%",
-          "en": "Mandatory labeling and consent requirements raise the baseline integration work for distributing digital-human features to the public in China.",
-          "zh": "强制标识与同意要求会抬高在中国向公众分发数字虚拟人功能时的基础接入与改造门槛。"
-        },
-        "regulatory_data_supply_window": {
-          "magnitude": "unclear",
-          "en": "The available information indicates tighter handling of sensitive/minors data and consent withdrawal deletion, but it is unclear how this will change lawful data availability in practice.",
-          "zh": "现有信息显示对敏感信息与未成年人信息的处理更趋严格且强调撤回同意后的注销删除，但这在实践中会如何改变合法数据供给仍不明确。"
-        }
-      },
-      "tags": [
-        "China regulation",
-        "digital humans",
-        "AI governance",
-        "privacy compliance",
-        "minors protection"
-      ]
-    },
-    {
-      "id": "telegram:zaihuapd:41155",
-      "title": "马斯克证词暗示 xAI 蒸馏 OpenAI 模型",
-      "url": "https://www.wired.com/story/elon-musk-distill-openai-models-partly-xai/",
-      "source_type": "telegram",
-      "ai_score": 8.0,
-      "signal_score": 7.0,
-      "signal_reason": "可观测事实显示蒸馏行为已成为争议焦点且进入诉讼与合规层面，意味着对“蒸馏检测/审计、数据与模型使用合规、企业AI治理”类需求可能上升；但具体规则变化与可用接口/成本边界未在内容中明确。",
-      "capability_delta": "这并非新的技术发布，但庭审证词进入公共视野后，蒸馏做法更可能被通过合同或诉讼进行审视与约束。实际的边界变化主要体现在对“用第三方模型输出训练”的执法与合规风险认知上升。",
-      "assessment": {
-        "capability_boundary_change": {
-          "magnitude": "none",
-          "en": "The news does not introduce a new method or tool for distillation, only a legal-reputational signal about its contested use.",
-          "zh": "该新闻未带来新的蒸馏方法或工具，只是对其争议性使用释放了法律与声誉层面的信号。"
-        },
-        "cost_change": {
-          "magnitude": "unclear",
-          "en": "Costs could rise if enforcement reduces access to teacher outputs, but the report itself provides no quantitative change.",
-          "zh": "若执法导致更难获取教师模型输出，成本可能上升，但报道本身未给出任何量化变化。"
-        },
-        "workflow_unlock": {
-          "magnitude": "none",
-          "en": "No new workflow is enabled; the development workflow remains the same while legal risk may increase.",
-          "zh": "没有解锁新的工作流；研发流程本身不变，但法律风险可能上升。"
-        },
-        "buyer_clarity": {
-          "magnitude": "0-10%",
-          "en": "A high-profile testimony slightly clarifies that output-based training is a focal point of disputes, but compliance boundaries remain case- and contract-specific.",
-          "zh": "高关注度的庭审证词让“基于输出的训练”是争议焦点这一点更清晰一些，但合规边界仍取决于具体合同与个案。"
-        },
-        "distribution_integration_entry": {
-          "magnitude": "none",
-          "en": "There is no change to distribution channels or integration paths described in the report.",
-          "zh": "报道未涉及分发渠道或集成路径的变化。"
-        },
-        "regulatory_data_supply_window": {
-          "magnitude": "unclear",
-          "en": "The item suggests potential litigation-driven constraints, but it does not specify any new regulation or data access rule.",
-          "zh": "该事件暗示可能出现诉讼推动的约束，但并未明确新的监管规定或数据获取规则。"
-        }
-      },
-      "tags": [
-        "LLM",
-        "Model Distillation",
-        "AI Policy/Legal",
-        "OpenAI",
-        "xAI"
-      ]
-    },
-    {
-      "id": "hackernews:story:47965108",
-      "title": "Linux 内核披露缺口让发行版缺少漏洞预警",
-      "url": "https://www.openwall.com/lists/oss-security/2026/04/30/10",
-      "source_type": "hackernews",
-      "ai_score": 8.0,
-      "signal_score": 6.0,
-      "signal_reason": "Observable process failure/risk around coordinated disclosure and downstream patch readiness suggests demand for better vulnerability coordination, notification, and mitigation workflows across kernel and distributions, but no concrete new capability or market change is evidenced beyond heightened attention.",
-      "capability_delta": "这并未带来内核层面的新技术能力；边界变化在于更清晰且有争议地确认：如果未明确启用 linux-distros，发行版可能完全收不到禁运期预警。现实影响是“公开利用先于发行版补丁”的失效模式更容易发生，运维方需要据此调整预案。",
-      "assessment": {
-        "capability_boundary_change": {
-          "magnitude": "none",
-          "en": "The thread describes a coordination gap rather than introducing a new kernel feature or security mechanism.",
-          "zh": "该讨论揭示的是协作缺口，而不是引入新的内核特性或安全机制。"
-        },
-        "cost_change": {
-          "magnitude": "unclear",
-          "en": "The item does not quantify whether the disclosure pattern increases or decreases remediation cost, only that timing risk can worsen.",
-          "zh": "该信息未量化这种披露模式会提高还是降低修复成本，只说明时序风险可能变差。"
-        },
-        "workflow_unlock": {
-          "magnitude": "0-10%",
-          "en": "It modestly clarifies that using linux-distros is a key step for embargo coordination, which may slightly change reporter and vendor workflows.",
-          "zh": "它在一定程度上明确 linux-distros 是禁运期协作的关键步骤，可能对报告者与厂商流程产生轻微影响。"
-        },
-        "buyer_clarity": {
-          "magnitude": "10-20%",
-          "en": "For organizations relying on distro kernels, the discussion makes the risk of patch lag versus exploit publication more explicit.",
-          "zh": "对依赖发行版内核的组织而言，这次讨论更明确地揭示了补丁滞后于利用公开的风险。"
-        },
-        "distribution_integration_entry": {
-          "magnitude": "none",
-          "en": "No new integration surface or distribution channel is introduced; it is about existing mailing-list practices and expectations.",
-          "zh": "这并未引入新的集成接口或分发渠道，而是关于既有邮件列表实践与预期。"
-        },
-        "regulatory_data_supply_window": {
-          "magnitude": "none",
-          "en": "The content does not mention regulatory requirements or new data/attestation obligations tied to this disclosure issue.",
-          "zh": "内容未提及与该披露问题相关的监管要求或新的数据与合规证明义务。"
-        }
-      },
-      "tags": [
-        "linux-kernel",
-        "security",
-        "vulnerability-disclosure",
-        "oss-governance",
-        "distributions"
-      ]
-    },
-    {
-      "id": "hackernews:story:47963204",
-      "title": "Claude Code据称遇到“OpenClaw”即终止会话",
-      "url": "https://twitter.com/theo/status/2049645973350363168",
-      "source_type": "hackernews",
-      "ai_score": 8.0,
-      "signal_score": 6.0,
-      "signal_reason": "If the behavior is real and reproducible, it signals unmet demand for reliable coding-assistant access without abrupt term-based shutdowns/usage burn, implying potential switching/mitigation spend by developer teams, but the evidence is currently anecdotal/community-reported rather than an official platform change.",
-      "capability_delta": "这并非带来新能力，而更像能力边界的负向变化：提到“OpenClaw”可能会新增触发拒答、强制结束会话或加速消耗额度的情况。若得到确认，它会降低Claude类工具在包含OpenClaw引用的仓库与文档中的可用可靠性。",
-      "assessment": {
-        "capability_boundary_change": {
-          "magnitude": "10-20%",
-          "en": "The reports indicate a meaningful new failure mode (keyword-triggered termination/quota burn) that narrows what text can be safely processed in Claude workflows.",
-          "zh": "这些报告表明出现了重要的新故障模式（关键词触发终止/烧额度），从而收窄了Claude工作流中可安全处理的文本范围。"
-        },
-        "cost_change": {
-          "magnitude": "unclear",
-          "en": "Users allege quota is consumed unexpectedly, but the frequency, scope, and billing mechanics are not confirmed from the available sources.",
-          "zh": "用户声称会发生意外的额度消耗，但从现有信息无法确认其发生频率、影响范围与计费机制。"
-        },
-        "workflow_unlock": {
-          "magnitude": "none",
-          "en": "This news does not unlock a new workflow; it suggests disruption to existing chat and CLI usage when certain strings appear.",
-          "zh": "该事件并未解锁新工作流，而是暗示当出现特定字符串时会干扰既有的聊天与CLI使用。"
-        },
-        "buyer_clarity": {
-          "magnitude": "0-10%",
-          "en": "The incident slightly clarifies risk factors (keyword-sensitive reliability) but does not provide an official policy or SLA change to anchor decisions.",
-          "zh": "该事件在一定程度上让风险点（对关键词敏感的可靠性问题）更明确，但未出现可供决策依赖的官方策略或SLA变化。"
-        },
-        "distribution_integration_entry": {
-          "magnitude": "none",
-          "en": "There is no indication of new integrations or distribution channels; the discussion concerns behavior inside existing Claude interfaces.",
-          "zh": "没有迹象表明出现新的集成或分发渠道；讨论集中在现有Claude界面内部的行为。"
-        },
-        "regulatory_data_supply_window": {
-          "magnitude": "none",
-          "en": "The available information concerns product behavior and moderation/rate-limit hypotheses, not regulatory changes or data supply shifts.",
-          "zh": "现有信息聚焦产品行为及审核/限流推测，并不涉及监管变化或数据供给的转变。"
-        }
-      },
-      "tags": [
-        "LLM-tools",
-        "developer-tools",
-        "AI-policy-moderation",
-        "reliability",
-        "Hacker-News"
-      ]
-    },
-    {
-      "id": "telegram:zaihuapd:41153",
-      "title": "FCC 拟禁涵盖名单运营商使用第214条概括授权",
-      "url": "https://docs.fcc.gov/public/attachments/DOC-420715A1.pdf",
-      "source_type": "telegram",
-      "ai_score": 8.0,
-      "signal_score": 6.0,
-      "signal_reason": "若规则最终落地，将带来明确的合规审查、授权变更/撤销与互联互通限制需求，可能触发运营商与相关企业在合规评估、网络调整与合同/互联协议处理上的刚性支出与服务需求；但仍是 NPRM 阶段，落地范围与执行细节未定，商业信号中等。",
-      "capability_delta": "该提案试图在制度边界上作出的变化是：取消涵盖名单实体依赖第214条“概括授权”的能力，并可能进一步限制或禁止其与美国运营商互联互通，从而把“简化准入”转为“逐案审查/潜在禁止”。但由于目前仍处于 NPRM 征求意见阶段，尚未生效，最终范围与时间表仍不确定。",
-      "assessment": {
-        "capability_boundary_change": {
-          "magnitude": "unclear",
-          "en": "The NPRM proposes a large legal boundary shift (loss of blanket Section 214 authority and possible interconnection bans), but its final adoption and scope are not yet determined.",
-          "zh": "该 NPRM 提出较大的法律边界变化（取消第214条概括授权并可能禁止互联互通），但是否最终通过及其范围尚未确定。"
-        },
-        "cost_change": {
-          "magnitude": "unclear",
-          "en": "Compliance and network-change costs could rise for affected entities and possibly U.S. carriers if revocations or interconnection restrictions are adopted, but the NPRM does not quantify costs.",
-          "zh": "若采纳撤销授权或互联互通限制，相关主体及部分美国运营商的合规与网络改造成本可能上升，但 NPRM 未给出量化成本。"
-        },
-        "workflow_unlock": {
-          "magnitude": "unclear",
-          "en": "The proposal would likely replace a streamlined blanket-authorization workflow with case-by-case Section 214 applications and reviews for Covered List entities, but the exact process changes depend on the final rules.",
-          "zh": "该提案可能把概括授权的简化流程改为涵盖名单实体的逐案第214条申请与审查，但具体流程变化取决于最终规则。"
-        },
-        "buyer_clarity": {
-          "magnitude": "0-10%",
-          "en": "An NPRM provides some directional clarity about the FCC’s intent, but buyers and operators still lack final, enforceable requirements until a final order is adopted.",
-          "zh": "NPRM 仅提供 FCC 监管方向的一定清晰度，但在最终规则出台前，市场主体仍缺乏可执行的确定性要求。"
-        },
-        "distribution_integration_entry": {
-          "magnitude": "none",
-          "en": "The NPRM is a regulatory proposal and does not itself create new distribution channels or technical integration entry points.",
-          "zh": "该 NPRM 属于监管提案，本身不会创造新的分发渠道或技术集成入口。"
-        },
-        "regulatory_data_supply_window": {
-          "magnitude": "10-20%",
-          "en": "The notice-and-comment process can create a short-term window for filings and disclosures in the public record, but the amount and usefulness of new data are uncertain until comments are submitted.",
-          "zh": "公告征求意见流程可能在短期内带来公开记录中的提交材料与披露信息，但新增数据的规模与可用性要待意见提交后方能判断。"
-        }
-      },
-      "tags": [
-        "telecom-policy",
-        "FCC",
-        "national-security",
-        "regulation",
-        "cross-border-telecom"
-      ]
-    },
-    {
-      "id": "hackernews:story:47967786",
-      "title": "Rivian说明关闭车辆数据收集的限制",
-      "url": "https://rivian.com/support/article/can-i-disable-all-data-collection-from-my-vehicle",
-      "source_type": "hackernews",
-      "ai_score": 7.0,
-      "signal_score": 6.0,
-      "signal_reason": "Observable signal of a real and growing need: manufacturers offer configurable data-collection limits that can disable key functionality (like OTA updates), and the thread highlights unresolved operational/regulatory issues and cross-border security concerns—indicating clear demand from owners, fleets, and regulators for verifiable privacy/security controls and compliant update pathways.",
-      "capability_delta": "客观边界变化在于用户对联网汽车数据流拥有更多可控性，但代价是关闭收集/连接可能会失去OTA更新及其带来的收益。讨论强调“退出”在功能上可能无法等同于保留完整的更新与服务体验。",
-      "assessment": {
-        "capability_boundary_change": {
-          "magnitude": "10-20%",
-          "en": "The article and discussion indicate a modest but real increase in user ability to limit vehicle data collection, constrained by dependence of OTA updates on connectivity.",
-          "zh": "文章与讨论表明用户限制车辆数据收集的能力有一定提升，但由于OTA更新依赖连接能力而受到约束。"
-        },
-        "cost_change": {
-          "magnitude": "none",
-          "en": "No direct cost reduction is evidenced; disabling connectivity can instead shift costs to dealer visits or foregone improvements if OTA is lost.",
-          "zh": "没有证据表明成本会直接下降；关闭连接反而可能把成本转移到到店维护，或以放弃改进为代价。"
-        },
-        "workflow_unlock": {
-          "magnitude": "0-10%",
-          "en": "The main workflow change is an opt-out path for telemetry, but it may complicate the maintenance workflow by removing remote update delivery.",
-          "zh": "主要流程变化是提供了遥测退出路径，但这可能因失去远程更新而使维护流程更复杂。"
-        },
-        "buyer_clarity": {
-          "magnitude": "10-20%",
-          "en": "Publishing explicit guidance makes the privacy-versus-OTA tradeoff more legible to buyers than opaque defaults, though details still appear situational.",
-          "zh": "公开明确指引让买家更容易理解隐私与OTA之间的取舍，相比默认不透明有所改善，但细节仍可能因情况而异。"
-        },
-        "distribution_integration_entry": {
-          "magnitude": "none",
-          "en": "No new integration channel or distribution mechanism is described beyond standard vehicle connectivity and OTA infrastructure.",
-          "zh": "除常规车辆连接与OTA基础设施外，没有描述新的集成渠道或分发机制。"
-        },
-        "regulatory_data_supply_window": {
-          "magnitude": "unclear",
-          "en": "The thread raises recall and safety-update implications, but the news item does not provide enough regulatory detail to estimate a concrete compliance-driven window.",
-          "zh": "讨论提到了召回与安全更新影响，但新闻内容未提供足够监管细节，无法估计明确的合规驱动窗口。"
-        }
-      },
-      "tags": [
-        "automotive-privacy",
-        "connected-vehicles",
-        "ota-updates",
-        "security",
-        "regulation"
-      ]
-    },
-    {
-      "id": "hackernews:story:47961319",
-      "title": "比利时叫停核电退役计划并延长机组运行",
-      "url": "https://dpa-international.com/general-news/urn:newsml:dpa.com:20090101:260430-930-14717/",
-      "source_type": "hackernews",
-      "ai_score": 7.0,
-      "signal_score": 6.0,
-      "signal_reason": "Keeping reactors operating longer creates concrete, near-term demand for life-extension services, maintenance, fuel supply, safety/compliance work, and grid integration planning, but it does not by itself change a core technology capability boundary or announce new market access—it's primarily a policy/ownership shift.",
-      "capability_delta": "比利时的电网规划获得了“更长时间依赖现有核电机组”这一可选项，从而不必按原定关停时间表在短期内完成同等容量替代。该变化主要提升的是近中期的供电充裕性与减碳策略灵活性，而不是带来新的技术能力。",
-      "assessment": {
-        "capability_boundary_change": {
-          "magnitude": "10-20%",
-          "en": "Keeping existing reactors online longer modestly expands the feasible set of near-term low-carbon, dispatchable supply options for Belgium compared with a fixed phaseout schedule.",
-          "zh": "延长现役机组运行相较于固定退核时间表，小幅扩大了比利时在近期可选的低碳、可调度供给方案集合。"
-        },
-        "cost_change": {
-          "magnitude": "unclear",
-          "en": "The net system cost impact is unclear from the provided information because lifetime-extension, fuel, and compliance costs are not specified and depend on plant condition and regulatory requirements.",
-          "zh": "由于未给出延寿改造、燃料与合规成本等关键信息，且其高度依赖机组状态与监管要求，因此系统净成本影响不明确。"
-        },
-        "workflow_unlock": {
-          "magnitude": "0-10%",
-          "en": "The decision slightly simplifies planning workflows by reducing immediate replacement pressure for firm capacity, but it does not introduce a new operational workflow on its own.",
-          "zh": "该决定在一定程度上降低了对可调度容量“立刻替代”的压力，从而略微简化规划流程，但本身并未引入全新的运营工作流。"
-        },
-        "buyer_clarity": {
-          "magnitude": "10-20%",
-          "en": "Policy reversal provides somewhat clearer demand signals for services tied to operating existing nuclear assets (e.g., maintenance and compliance), though specifics are not provided.",
-          "zh": "政策逆转在一定程度上为围绕现役核电资产运行的相关服务（如检修与合规）提供了更清晰的需求信号，但具体安排未披露。"
-        },
-        "distribution_integration_entry": {
-          "magnitude": "none",
-          "en": "This is a national policy change and does not, by itself, create a new distribution channel or integration pathway for third parties.",
-          "zh": "这是一项国家层面的政策变化，本身并不会直接产生新的分发渠道或集成入口。"
-        },
-        "regulatory_data_supply_window": {
-          "magnitude": "0-10%",
-          "en": "A shift away from phaseout may trigger incremental regulatory and reporting activity, but no concrete new rules or data releases are described in the provided material.",
-          "zh": "偏离退核路线可能带来增量的监管与信息披露活动，但现有材料未描述明确的新规或数据发布。"
-        }
-      },
-      "tags": [
-        "nuclear-energy",
-        "energy-policy",
-        "europe",
-        "decarbonization",
-        "power-grid"
-      ]
-    },
-    {
-      "id": "hackernews:story:47963316",
-      "title": "Honker 将持久队列、发布订阅与定时任务封装进 SQLite 文件",
-      "url": "https://honker.dev/",
-      "source_type": "hackernews",
-      "ai_score": 7.0,
-      "signal_score": 6.0,
-      "signal_reason": "If it reliably replaces separate queue/scheduler infrastructure with a single-file SQLite-based component, it could materially reduce operational complexity and idle cost for a clear user segment (small services/embedded/single-node deployments), but the discussion highlights unresolved implementation concerns (polling/notifications and concurrency) that limit near-term certainty.",
-      "capability_delta": "Honker 使得将持久队列、发布订阅、流与定时任务作为单个 SQLite 组件来部署在一些场景下变得更可行，从而减少对独立基础设施的依赖。其能力边界变化主要体现在封装与运维简化，而不是引入全新的消息语义。",
-      "assessment": {
-        "capability_boundary_change": {
-          "magnitude": "10-20%",
-          "en": "Compared with plain SQLite usage, Honker adds an integrated, SQLite-backed primitive set (queues/pubsub/cron) that can replace separate components in some deployments.",
-          "zh": "相较于直接使用 SQLite，Honker 增加了基于 SQLite 的一体化原语集合（队列/发布订阅/定时任务），在部分部署中可替代独立组件。"
-        },
-        "cost_change": {
-          "magnitude": "unclear",
-          "en": "It may reduce infrastructure and operational costs by removing Redis/Celery-like services, but the runtime cost of millisecond polling and contention under load is not quantified here.",
-          "zh": "它可能通过移除类似 Redis/Celery 的服务降低基础设施与运维成本，但毫秒级轮询的运行时成本以及负载下的争用代价在此并未量化。"
+          "en": "A free open-source tool can reduce reliance on paid cable testers for basic capability checks, though it cannot fully replace physical validation.",
+          "zh": "免费开源工具可在基础能力核对上减少对付费线材测试仪的依赖，但仍无法完全替代物理验证。"
         },
         "workflow_unlock": {
           "magnitude": "20-50%",
-          "en": "For teams already deploying SQLite, it can simplify workflows by bundling scheduling and messaging into the same file-based artifact and backup/restore path.",
-          "zh": "对于本就部署 SQLite 的团队，它把调度与消息能力绑定到同一文件制品及备份恢复路径上，能明显简化工作流。"
-        },
-        "buyer_clarity": {
-          "magnitude": "unclear",
-          "en": "The target buyer is broadly “apps that would otherwise add Redis/Celery,” but suitability depends heavily on workload concurrency and required delivery guarantees, which are debated.",
-          "zh": "目标用户大体是“原本会额外上 Redis/Celery 的应用”，但是否适用高度依赖并发负载与所需投递保证，而这些点在讨论中存在争议。"
-        },
-        "distribution_integration_entry": {
-          "magnitude": "20-50%",
-          "en": "A single SQLite file is easy to distribute and embed, lowering integration friction versus operating separate messaging and scheduling services.",
-          "zh": "单个 SQLite 文件更易分发与嵌入，相比运行独立消息与调度服务可降低集成摩擦。"
-        },
-        "regulatory_data_supply_window": {
-          "magnitude": "none",
-          "en": "No regulatory change or new data-supply constraint is indicated; this is an architectural packaging approach on existing SQLite capabilities.",
-          "zh": "未体现监管变化或新的数据供给约束；这主要是在既有 SQLite 能力之上的架构封装方式。"
-        }
-      },
-      "tags": [
-        "sqlite",
-        "message-queues",
-        "pubsub",
-        "durability",
-        "systems"
-      ]
-    },
-    {
-      "id": "telegram:zaihuapd:41145",
-      "title": "PocketOS称AI代理9秒误删生产库及全部备份",
-      "url": "https://www.pcgamer.com/software/ai/here-we-go-again-ai-deletes-entire-company-database-and-all-backups-in-9-seconds-then-cheerfully-admits-i-violated-every-principle-i-was-given/",
-      "source_type": "telegram",
-      "ai_score": 7.0,
-      "signal_score": 6.0,
-      "signal_reason": "事件显示在“AI 代理+云平台 API”的新工作流下，高权限自动化可在极短时间造成灾难性破坏，且备份与源数据同域导致恢复脆弱；这类风险与合规/可靠性需求明确存在，但内容未呈现市场规模、付费意愿或已出现的供给变化等更强商业信号。 ",
-      "capability_delta": "这并非新的技术能力发布，而是一则事后复盘式事故，说明当AI代理持有高权限令牌时，能够极快地执行云API破坏性操作。客观上的边界变化更多是风险认知层面：团队会把“代理访问生产API与备份域”视为更高风险的控制面来管理。",
-      "assessment": {
-        "capability_boundary_change": {
-          "magnitude": "none",
-          "en": "The reports describe an operational failure mode rather than a new platform feature or capability expansion.",
-          "zh": "相关报道描述的是一次操作失误模式，而非平台新增功能或能力扩展。"
-        },
-        "cost_change": {
-          "magnitude": "none",
-          "en": "No pricing or compute-efficiency change is indicated; any costs discussed are incident-recovery consequences, not a cost reduction.",
-          "zh": "报道未体现价格或计算效率变化；涉及的成本主要是事故恢复代价而非成本下降。"
-        },
-        "workflow_unlock": {
-          "magnitude": "0-10%",
-          "en": "The incident may lead some teams to add approval steps and least-privilege token workflows for agents, but it does not unlock a fundamentally new workflow by itself.",
-          "zh": "该事件可能促使部分团队为AI代理增加审批步骤与最小权限令牌流程，但本身并未解锁全新的工作流。"
+          "en": "The addition of a CLI alongside a menu bar/regular app enables scripting and repeatable checks in developer and IT troubleshooting workflows.",
+          "zh": "在菜单栏/普通应用之外加入 CLI，使开发与 IT 排障流程中可以进行脚本化与可重复的检查。"
         },
         "buyer_clarity": {
           "magnitude": "10-20%",
-          "en": "It provides a concrete example that clarifies risk and requirements (scoped tokens, destructive-action confirmations, backup isolation) for buyers evaluating agent tooling in production.",
-          "zh": "它提供了一个具体案例，使采购方在评估生产环境中的代理工具时更清楚风险与需求（令牌限权、破坏性操作确认、备份隔离）。"
-        },
-        "distribution_integration_entry": {
-          "magnitude": "none",
-          "en": "No new distribution channel, standard integration, or ecosystem partnership is reported.",
-          "zh": "报道未涉及新的分发渠道、标准化集成方式或生态合作。"
-        },
-        "regulatory_data_supply_window": {
-          "magnitude": "unclear",
-          "en": "While the incident relates to data loss risk, the sources do not indicate any specific regulatory response or compliance requirement change.",
-          "zh": "尽管事件与数据丢失风险相关，但资料未显示出现明确的监管动作或合规要求变化。"
-        }
-      },
-      "tags": [
-        "AI Agents",
-        "DevOps",
-        "Database Backup",
-        "Cloud Security",
-        "Incident Postmortem"
-      ]
-    },
-    {
-      "id": "telegram:zaihuapd:41151",
-      "title": "消息称苹果因销量疲软暂停 Vision Pro 产品线",
-      "url": "https://www.techspot.com/news/112244-apple-giving-up-vision-pro-after-weak-sales.html",
-      "source_type": "telegram",
-      "ai_score": 7.0,
-      "signal_score": 6.0,
-      "signal_reason": "可观察到的事实是：高价/佩戴负担/缺乏核心应用导致头显销量与退货率问题，且苹果据称资源转向AR眼镜、竞争对手以更低价位入场；这表明产业重心和需求约束在变化，可能影响供应链、内容生态与竞品策略，但报道未披露明确的新能力或可直接利用的接口/政策变化。",
-      "capability_delta": "这条消息并未带来已确认的能力提升，而是“若属实”会意味着苹果对 Vision Pro 级别头显的短期投入下降。对开发者而言，更直接的变化是路线图不确定性上升，而不是新增功能边界。",
-      "assessment": {
-        "capability_boundary_change": {
-          "magnitude": "none",
-          "en": "The report does not describe any new technical capability becoming available, only an alleged internal reprioritization.",
-          "zh": "该报道没有描述任何新增技术能力上线，只是声称出现了内部优先级调整。"
-        },
-        "cost_change": {
-          "magnitude": "unclear",
-          "en": "While a rumored half-priced model is mentioned as shelved, there is no confirmed pricing change in market offerings tied to this report.",
-          "zh": "尽管提到“价格减半”的机型被搁置，但并无可验证的市场定价变化与该消息直接对应。"
-        },
-        "workflow_unlock": {
-          "magnitude": "none",
-          "en": "No new tooling, platform features, or distribution changes are reported that would unlock new workflows.",
-          "zh": "报道未提及新的工具链、平台特性或分发变化，因此不存在明确的工作流解锁。"
-        },
-        "buyer_clarity": {
-          "magnitude": "0-10%",
-          "en": "If the pause is real, it slightly clarifies that Apple may be prioritizing AR glasses over a near-term Vision Pro expansion, but the information is unconfirmed.",
-          "zh": "如果暂停属实，这会在一定程度上表明苹果可能更优先推进 AR 眼镜而非短期扩展 Vision Pro，但信息未经官方确认。"
-        },
-        "distribution_integration_entry": {
-          "magnitude": "none",
-          "en": "There is no indication of changes to visionOS distribution, app review, or integration policies in the report.",
-          "zh": "报道没有显示 visionOS 的分发、审核或系统集成政策发生变化。"
-        },
-        "regulatory_data_supply_window": {
-          "magnitude": "none",
-          "en": "The item does not mention regulatory shifts or data/supply constraints that would open or close a window.",
-          "zh": "该消息未涉及监管变化或数据与供应链限制，因此不存在可判断的窗口期变化。"
-        }
-      },
-      "tags": [
-        "Apple",
-        "XR/VR/MR",
-        "AR Glasses",
-        "Consumer Electronics",
-        "Market Analysis"
-      ]
-    },
-    {
-      "id": "telegram:zaihuapd:41152",
-      "title": "强制性国标GB 32634-2025规范公共预警短信",
-      "url": "https://t.me/zaihuapd/41152",
-      "source_type": "telegram",
-      "ai_score": 7.0,
-      "signal_score": 6.0,
-      "signal_reason": "强制性标准落地带来明确的合规与改造刚需（运营商平台、终端适配、测试认证与审计），且生效时间明确，但公告未披露具体新增技术门槛、成本/性能边界变化或采购规模信息。 ",
-      "capability_delta": "能力边界的主要变化在于合规属性：公共预警短信的业务流程与终端要求从可选遵循转为全国统一的强制执行。其结果是跨运营商、跨终端的一致性预期更明确，但底层仍以短信机制为主并非技术路线的跃迁。",
-      "assessment": {
-        "capability_boundary_change": {
-          "magnitude": "10-20%",
-          "en": "The shift from GB/T to mandatory GB modestly expands what becomes enforceably deployable nationwide by standardizing required workflows and terminal behaviors.",
-          "zh": "从GB/T升级为强制性GB，使业务流程与终端行为在全国范围内具备可强制落地的统一要求，带来一定幅度的可实施边界扩大。"
-        },
-        "cost_change": {
-          "magnitude": "unclear",
-          "en": "The announcement does not provide quantified implementation or compliance costs for operators and terminal vendors, so the net cost impact cannot be determined from the provided sources.",
-          "zh": "现有信息未给出运营商与终端厂商的改造与合规成本量化数据，因此无法据此判断总体成本变化。"
-        },
-        "workflow_unlock": {
-          "magnitude": "10-20%",
-          "en": "A mandatory standard can reduce coordination friction by requiring a common process and terminal spec for public warning SMS across carriers and devices.",
-          "zh": "强制性标准通过要求统一流程与终端规范，可能降低跨运营商与跨终端协同摩擦，从而带来一定程度的流程解锁。"
-        },
-        "buyer_clarity": {
-          "magnitude": "20-50%",
-          "en": "Mandating GB 32634-2025 makes compliance requirements clearer for procurement and acceptance testing than a recommended GB/T standard.",
-          "zh": "将GB 32634-2025设为强制性标准后，相比推荐性GB/T，采购与验收的合规条款更明确，买方需求清晰度提升更明显。"
+          "en": "Clear, plain-language reporting improves day-to-day understanding of which cable supports which power/data/display modes, but only when the OS/cable can report them.",
+          "zh": "用通俗语言呈现功率/数据/显示模式有助于日常判断线材能力，但前提是系统与线材本身能够上报这些信息。"
         },
         "distribution_integration_entry": {
           "magnitude": "0-10%",
-          "en": "The change primarily affects compliance expectations rather than creating a new distribution channel, so integration entry conditions only change slightly.",
-          "zh": "该变化主要提升合规要求而非引入新的分发渠道，因此对接入与集成门槛的改变相对有限。"
+          "en": "Because it is open-source and already offers multiple front-ends, integrating it into existing macOS troubleshooting practices is straightforward but still limited to macOS environments.",
+          "zh": "由于其开源且已有多种前端形态，将其融入现有 macOS 排障实践相对容易，但应用范围仍主要受限于 macOS 环境。"
         },
         "regulatory_data_supply_window": {
           "magnitude": "none",
-          "en": "The provided materials describe technical and process requirements for warning SMS, not new data-sharing mandates or datasets becoming available.",
-          "zh": "现有材料聚焦预警短信的技术与流程要求，并未涉及新增数据共享义务或数据供给窗口的开放。"
+          "en": "This news item does not indicate any regulatory change or new mandatory data disclosure affecting USB-C cable capability reporting.",
+          "zh": "该新闻未体现任何监管变化或新的强制数据披露要求，会影响 USB-C 线材能力报告的情况。"
         }
       },
       "tags": [
-        "Standards",
-        "Telecom",
-        "Emergency-Alerting",
-        "SMS",
-        "Regulation"
-      ]
-    },
-    {
-      "id": "telegram:zaihuapd:41156",
-      "title": "OpenAI 为高风险 ChatGPT 与 Codex 用户上线高级账户安全",
-      "url": "https://www.wired.com/story/openai-chatgpt-codex-advanced-account-security/",
-      "source_type": "telegram",
-      "ai_score": 7.0,
-      "signal_score": 6.0,
-      "signal_reason": "可观察到的商业信号包括：对硬件安全密钥（与 Yubico 合作优惠套装）的直接需求提升，以及企业侧需满足“抗钓鱼认证”的 SSO/访问控制合规要求与迁移实施需求；但该更新主要是安全配置与政策强化，未显示新的开放接口或显著降低成本/提升能力边界。",
-      "capability_delta": "对符合条件的账户而言，现在可以强制执行无口令且更抗钓鱼的登录方式，并采用“客服无法介入”的恢复机制，同时把“默认不用于训练”设为对话基线。另一个边界变化是对部分成员在固定日期前必须启用，或以提交企业 SSO 抗钓鱼认证证明作为替代路径。",
-      "assessment": {
-        "capability_boundary_change": {
-          "magnitude": "20-50%",
-          "en": "The update enables mandatory passwordless, phishing-resistant authentication plus locked-down recovery and session controls for targeted users, which is a material step-up from typical password/MFA defaults.",
-          "zh": "该更新为特定用户提供可强制的无口令抗钓鱼认证，并叠加更严格的恢复与会话控制，相比常见的密码/MFA 默认方案属于显著提升。"
-        },
-        "cost_change": {
-          "magnitude": "0-10%",
-          "en": "Direct platform costs are unclear, but requiring passkeys/hardware keys may add modest hardware and rollout overhead even with vendor discounts.",
-          "zh": "平台侧的直接成本不明确，但要求通行密钥/硬件密钥即使有折扣也可能带来一定的硬件采购与部署管理开销。"
-        },
-        "workflow_unlock": {
-          "magnitude": "10-20%",
-          "en": "Security teams can standardize high-risk user access around passkeys/FIDO2-like flows and reduce reliance on support-based recovery, which slightly simplifies incident response and access governance.",
-          "zh": "安全团队可以围绕通行密钥/FIDO2 类流程统一高风险用户访问，并减少对客服找回的依赖，从而在一定程度上简化响应与访问治理流程。"
-        },
-        "buyer_clarity": {
-          "magnitude": "20-50%",
-          "en": "The target buyer/user segment is explicit (high-risk roles and a named program), and the 2026-06-01 enforcement date for some members increases procurement and compliance clarity.",
-          "zh": "目标人群与适用计划被明确指向高风险角色及特定项目成员，并给出 2026-06-01 的强制时间点，提高了采购与合规决策的确定性。"
-        },
-        "distribution_integration_entry": {
-          "magnitude": "0-10%",
-          "en": "The change does not inherently open new distribution channels, though the option to use enterprise SSO with phishing-resistant authentication suggests limited integration alignment with existing IdP ecosystems.",
-          "zh": "该变化本身并未显著打开新的分发渠道，但允许以具备抗钓鱼认证的企业 SSO 作为替代方案，体现出与既有身份提供商生态的有限对齐。"
-        },
-        "regulatory_data_supply_window": {
-          "magnitude": "unclear",
-          "en": "While “no training by default” may help with privacy expectations, the news item does not specify regulatory drivers or jurisdictions, so the compliance impact cannot be quantified.",
-          "zh": "尽管“默认不用于训练”可能有利于隐私预期，但新闻未说明具体监管驱动或适用司法辖区，因此难以量化其合规窗口影响。"
-        }
-      },
-      "tags": [
-        "account-security",
-        "passkeys",
-        "hardware-security-keys",
-        "enterprise-it",
-        "privacy"
-      ]
-    },
-    {
-      "id": "telegram:zaihuapd:41158",
-      "title": "华为预计2026年AI芯片营收增长超60%至120亿美元",
-      "url": "https://www.ft.com/content/b82fa156-d1db-40e5-bce5-3c5f8f54069b",
-      "source_type": "telegram",
-      "ai_score": 7.0,
-      "signal_score": 6.0,
-      "signal_reason": "可观察到的事实是国内对本土AI算力硬件的需求上升、在手订单支撑营收大幅增长预期与市场渗透加速，表明产业链采购与配套生态存在增量空间；但具体可切入的产品/服务边界变化、成本/性能指标与落地约束未披露，商业信号中等。 ",
-      "capability_delta": "报道呈现的主要变化是商业层面的供给与可获得性：在海外高端芯片受限背景下，华为有望在国内提供更多AI算力硬件。文章并未给出可核验的“新增技术能力边界”（例如全新训练级芯片能力）证据，更多体现为订单驱动的市场渗透提升。",
-      "assessment": {
-        "capability_boundary_change": {
-          "magnitude": "unclear",
-          "en": "The item reports revenue expectations and demand drivers but provides no verifiable chip performance/spec changes, so the capability boundary shift cannot be quantified.",
-          "zh": "该消息主要是营收预期与需求驱动因素，未提供可核验的芯片性能或规格变化，因此难以量化能力边界是否发生改变。"
-        },
-        "cost_change": {
-          "magnitude": "unclear",
-          "en": "No pricing or cost-per-compute figures are given, so any cost change relative to foreign alternatives is not supported by the provided information.",
-          "zh": "报道未给出价格或单位算力成本数据，因此无法据此判断相对海外方案的成本变化幅度。"
-        },
-        "workflow_unlock": {
-          "magnitude": "0-10%",
-          "en": "The claimed increase in domestic availability via locked-in orders could modestly reduce procurement friction for some buyers, but no concrete workflow integration details are provided.",
-          "zh": "在手订单带来的国内供给确定性可能在一定程度上降低部分客户的采购摩擦，但报道未提供具体工作流集成细节，因此只能判断为有限改善。"
-        },
-        "buyer_clarity": {
-          "magnitude": "10-20%",
-          "en": "A quantified internal revenue target tied to backlog provides somewhat clearer demand signaling, even though it is not audited guidance.",
-          "zh": "基于在手订单给出的量化营收目标提高了需求信号的清晰度，尽管其并非经审计的正式财务指引。"
-        },
-        "distribution_integration_entry": {
-          "magnitude": "0-10%",
-          "en": "The report implies stronger domestic market penetration, but it does not describe new distribution channels, partnerships, or integration programs that would materially lower entry barriers.",
-          "zh": "报道暗示国内渗透率提升，但未说明新的渠道、合作或集成计划，因此难以认为分发与集成门槛发生显著变化。"
-        },
-        "regulatory_data_supply_window": {
-          "magnitude": "10-20%",
-          "en": "The context of export controls suggests a somewhat wider near-term window for domestic suppliers to capture demand, but the article does not specify any new regulations or compliance changes.",
-          "zh": "出口管制背景意味着国内供应商获得需求的时间窗口可能有所扩大，但报道未提及新增监管规则或合规变化，因此只能做有限幅度判断。"
-        }
-      },
-      "tags": [
-        "AI芯片",
-        "华为",
-        "半导体供应链",
-        "出口管制",
-        "国产替代"
-      ]
-    },
-    {
-      "id": "hackernews:story:47965060",
-      "title": "书摘回顾马克·克莱因揭露AT&T“641A房间”事件",
-      "url": "https://thereader.mitpress.mit.edu/the-whistleblower-who-uncovered-the-nsas-big-brother-machine/",
-      "source_type": "hackernews",
-      "ai_score": 7.0,
-      "signal_score": 3.0,
-      "signal_reason": "The piece is primarily historical narrative and commentary; it does not indicate a new capability, cost/latency shift, regulatory change, or newly unlocked workflow that would clearly create an immediate commercial opening.",
-      "capability_delta": "这则内容并未带来新的技术能力边界变化；变化主要在信息与语境层面，补充了“641A房间”指控如何进入EFF与司法程序的细节。它更多是提升公众对监控架构与法律路径的理解，而非改变技术可行性。",
-      "assessment": {
-        "capability_boundary_change": {
-          "magnitude": "none",
-          "en": "The item is a historical book excerpt and does not introduce new surveillance, privacy, or security capabilities.",
-          "zh": "该内容为历史书摘，并未引入新的监控、隐私或安全技术能力。"
-        },
-        "cost_change": {
-          "magnitude": "none",
-          "en": "No cost reductions or new pricing related to technology, compliance, or operations are described.",
-          "zh": "文中未描述任何与技术、合规或运营相关的成本下降或新的定价变化。"
-        },
-        "workflow_unlock": {
-          "magnitude": "0-10%",
-          "en": "By consolidating narrative details about Room 641A and Hepting v. AT&T, it can slightly streamline research and briefing workflows for readers tracking surveillance history.",
-          "zh": "由于汇总了关于“641A房间”和Hepting v. AT&T的叙事细节，它可能在小幅度上简化研究与汇报类工作流。"
-        },
-        "buyer_clarity": {
-          "magnitude": "0-10%",
-          "en": "The excerpt may marginally clarify for some audiences what allegations were made and why they mattered, but it does not define a new market need.",
-          "zh": "该书摘可能让部分读者更清楚相关指控及其重要性，但并未形成新的明确市场需求。"
-        },
-        "distribution_integration_entry": {
-          "magnitude": "none",
-          "en": "There is no new platform, API, standard, or integration channel introduced that changes distribution or adoption dynamics.",
-          "zh": "文中未引入新的平台、API、标准或集成渠道，因此不会改变分发或采用路径。"
-        },
-        "regulatory_data_supply_window": {
-          "magnitude": "unclear",
-          "en": "While it touches on litigation and the FISA Amendments Act context, the excerpt does not announce a new regulatory action or data access change with a clear timing window.",
-          "zh": "尽管涉及诉讼与《FISA修正案法案》背景，但并未公布新的监管动作或数据获取变化，无法给出明确时间窗口。"
-        }
-      },
-      "tags": [
-        "surveillance",
-        "privacy",
-        "whistleblowing",
-        "infosec",
-        "history"
-      ]
-    },
-    {
-      "id": "hackernews:story:47965503",
-      "title": "用F#实现Game Boy模拟器的深度技术笔记",
-      "url": "https://nickkossolapov.github.io/fame-boy/building-a-game-boy-emulator-in-fsharp/",
-      "source_type": "hackernews",
-      "ai_score": 7.0,
-      "signal_score": 2.0,
-      "signal_reason": "Primarily an educational/portfolio engineering project and tutorial content; no observable new capability boundary, cost/access change, or clear buyer-driven workflow unlock indicated in the post or discussion.",
-      "capability_delta": "这并非带来新的平台能力变化，而是发布了一份面向F#的高质量模拟器实现复盘，并附带社区验证过的优化建议。实际效果是让F#开发者更容易复现模拟器实现路径，并提前规避常见的分配陷阱。",
-      "assessment": {
-        "capability_boundary_change": {
-          "magnitude": "0-10%",
-          "en": "The article modestly lowers the technical barrier for building emulators in F# by sharing implementation and optimization lessons, but it does not add new underlying capabilities.",
-          "zh": "该文章通过分享实现与优化经验，小幅降低了用F#编写模拟器的门槛，但并未带来新的底层能力。"
-        },
-        "cost_change": {
-          "magnitude": "none",
-          "en": "There is no evidenced change in compute, licensing, or tooling costs; it is primarily educational content.",
-          "zh": "没有证据表明计算、许可或工具成本发生变化，因为这主要是教育与经验分享内容。"
-        },
-        "workflow_unlock": {
-          "magnitude": "0-10%",
-          "en": "It slightly improves developer workflow by providing concrete F# idioms and performance tips that can reduce iteration time on emulator projects.",
-          "zh": "它通过提供具体的F#写法与性能建议，略微提升了模拟器项目的开发效率并减少试错时间。"
-        },
-        "buyer_clarity": {
-          "magnitude": "none",
-          "en": "The news does not define a market offering or procurement criteria, so buyer-side clarity is unchanged.",
-          "zh": "该新闻未形成可采购的产品或明确的采购标准，因此买方清晰度没有变化。"
-        },
-        "distribution_integration_entry": {
-          "magnitude": "none",
-          "en": "No new distribution channel, API, or integration surface is introduced beyond a published blog post and discussion.",
-          "zh": "除了博客文章与讨论外，并未引入新的分发渠道、API或集成入口。"
-        },
-        "regulatory_data_supply_window": {
-          "magnitude": "none",
-          "en": "This topic does not indicate any regulatory shift or new data access/supply conditions.",
-          "zh": "该主题不涉及监管变化，也未出现新的数据获取或供给条件。"
-        }
-      },
-      "tags": [
-        "emulation",
-        "FSharp",
-        "programming-languages",
-        "systems-programming",
-        "performance-optimization"
+        "macOS",
+        "USB-C",
+        "Thunderbolt",
+        "Developer Tools",
+        "Open Source"
       ]
     }
   ]
