@@ -1,446 +1,495 @@
 {
-  "date": "2026-05-02",
+  "date": "2026-05-03",
   "language": "zh",
   "opportunities": [
     {
-      "id": "telegram:zaihuapd:41168",
-      "title": "中国电动车竞争从降价转向车内AI座舱",
-      "url": "https://www.cnbc.com/2026/05/01/china-ev-ai-features-price-war-bytedance-alibaba-doubao-volcano-engine.html",
-      "source_type": "telegram",
-      "ai_score": 7.0,
-      "signal_score": 8.0,
-      "signal_reason": "可观测事实显示车载AI已在数百万量级车辆与大量车型/品牌中部署，并与主流车企/合资品牌达成集成合作，说明能力边界与分发渠道（车企量产导入）已明确且规模化，存在清晰的产业链采购与集成需求信号。",
-      "capability_delta": "能力边界的变化在于，基于大模型的车载语音助手开始在中国多品牌、多车型上规模化部署，使车内语音不仅能对话，还能联动真实消费服务（外卖、酒店、快递查询等）。这更多体现为“接入规模与系统集成”的跃迁，而非披露了新的模型架构突破。",
-      "assessment": {
-        "capability_boundary_change": {
-          "magnitude": "20-50%",
-          "en": "Reported integrations across 50+ brands, 145 models, and 7M+ cars indicate a meaningful expansion in where LLM-driven in-car assistance is practically available.",
-          "zh": "覆盖50多个品牌、145款车型与700万+车辆的接入规模，意味着大模型车载助手在可用范围上出现了显著扩张。"
-        },
-        "cost_change": {
-          "magnitude": "unclear",
-          "en": "The item provides no pricing, compute, or licensing information for Doubao/Qwen in-vehicle deployments, so cost impact cannot be quantified.",
-          "zh": "报道未提供豆包或通义千问车端部署的定价、算力或授权成本信息，因此无法量化成本变化。"
-        },
-        "workflow_unlock": {
-          "magnitude": "10-20%",
-          "en": "Voice-linked actions like ordering food or booking hotels suggest incremental workflow enablement for drivers, but the report does not describe end-to-end reliability or coverage limits.",
-          "zh": "语音联动点外卖与订酒店等功能带来一定程度的车内流程便利，但报道未说明端到端可靠性与覆盖范围限制。"
-        },
-        "buyer_clarity": {
-          "magnitude": "20-50%",
-          "en": "Stating specific service scenarios and named automotive partners (e.g., BYD and a Volkswagen China JV brand) makes the buyer-facing value proposition clearer than generic “AI cockpit” claims.",
-          "zh": "明确给出服务场景并点名合作对象（如比亚迪与大众在华合资品牌），相较泛泛的“AI座舱”表述更能让买方理解价值。"
-        },
-        "distribution_integration_entry": {
-          "magnitude": "20-50%",
-          "en": "Scale figures and multi-brand penetration imply that platform-level integrations with automakers are becoming a key distribution channel for LLM providers.",
-          "zh": "规模数据与多品牌渗透表明，与车企进行平台级集成正在成为大模型厂商的重要分发入口。"
-        },
-        "regulatory_data_supply_window": {
-          "magnitude": "unclear",
-          "en": "The report does not mention regulatory approvals, data governance arrangements, or telemetry collection policies related to in-car LLM use.",
-          "zh": "报道未涉及车载大模型使用的监管审批、数据治理安排或车端数据采集政策，因此窗口变化不明确。"
-        }
-      },
-      "tags": [
-        "EV",
-        "In-car AI",
-        "LLM",
-        "China tech",
-        "Automotive software"
-      ]
-    },
-    {
-      "id": "telegram:zaihuapd:41161",
-      "title": "OpenAI 计划受控发布 GPT-5.5-Cyber 安全模型",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/921073/openai-sam-altman-new-cybersecurity-model-gpt-5-5-cyber",
+      "id": "telegram:zaihuapd:41183",
+      "title": "阿尔忒弥斯二号O2O激光链路从月球回传484GB数据",
+      "url": "https://dailygalaxy.com/2026/05/nasa-just-beamed-484-gigabytes-from-moon/",
       "source_type": "telegram",
       "ai_score": 8.0,
       "signal_score": 7.0,
-      "signal_reason": "可观察到的事实是：将出现一个受控、面向机构防御场景的专用模型与审核准入机制，意味着企业级安全工作流可能获得新的能力供给与合规/接入需求，但由于尚未公开发布且缺乏能力与商业条款细节，商业信号强度有限。",
-      "capability_delta": "若按报道发布，将有一个基于 GPT-5.5 且面向网络安全优化的模型通过受控项目提供给经审核的防御方，而不是对所有人开放。但报道未披露评测指标、定价或具体功能细节，因此其相对通用模型的性能增量仍不明确。",
+      "signal_reason": "可观测的能力边界提升（月球下行260 Mbps、小时级回传数十GB、支持高清视频与近实时数据分析）意味着深空任务对高带宽地面站/光通信终端与运营支持的需求更明确，但内容未显示价格、可用性或商业采购开放度等直接市场化信号。",
+      "capability_delta": "此次演示把“月球距离的高带宽光下行”在阿尔忒弥斯任务场景下以多地面站方式验证，使月球端大体量数据回传更具可操作性。它并未消除天气与指向等约束，但展示了相较纯射频架构更常态化提升月球下行能力的路径。",
       "assessment": {
         "capability_boundary_change": {
-          "magnitude": "unclear",
-          "en": "A new cyber-focused GPT-5.5 variant is planned, but the article provides no measurable capability claims or evaluations to quantify the boundary change.",
-          "zh": "虽然计划推出面向网络安全的 GPT-5.5 变体，但报道未给出可量化的能力声明或评测结果，难以判断能力边界变化幅度。"
+          "magnitude": "50%+",
+          "en": "The reported ~260 Mbps lunar downlink and 484 GB return indicate a step-change in achievable Moon-to-Earth data volume versus typical RF links for similar mission classes.",
+          "zh": "报道的月球下行约260 Mbps以及累计回传484 GB数据，表明相较同类任务常见射频链路可实现的天地数据量存在显著的能力跃迁。"
         },
         "cost_change": {
           "magnitude": "unclear",
-          "en": "No pricing or usage terms were reported, so any change in cost versus existing OpenAI offerings is unknown.",
-          "zh": "报道未提供定价或使用条款，因此相对现有 OpenAI 产品的成本变化无法判断。"
+          "en": "The sources describe performance and architecture but do not provide enough information to quantify system or operations cost changes versus RF.",
+          "zh": "现有来源主要描述性能与架构，未给出足够信息来量化相较射频方案的系统或运维成本变化。"
         },
         "workflow_unlock": {
-          "magnitude": "10-20%",
-          "en": "For vetted defenders who gain access, a purpose-built model could modestly streamline security analysis workflows, but concrete workflow features were not specified.",
-          "zh": "对获得访问权限的经审核防御方而言，专用模型可能在一定程度上简化安全分析流程，但报道未明确具体工作流能力。"
+          "magnitude": "20-50%",
+          "en": "Higher downlink capacity can shorten turnaround for receiving high-resolution imagery/video and high-rate telemetry, enabling faster analysis cycles for lunar operations.",
+          "zh": "更高下行能力可缩短高清图像/视频与高速遥测的回传等待时间，从而加快月球任务的分析与决策循环。"
         },
         "buyer_clarity": {
-          "magnitude": "20-50%",
-          "en": "The intended initial buyers/users are explicitly described as vetted “trusted cyber defenders,” which is clearer than a general-purpose launch.",
-          "zh": "其初期目标用户被明确限定为经审核的“受信任网络防御者”，相较通用模型发布具有更清晰的购买与使用对象界定。"
+          "magnitude": "10-20%",
+          "en": "Artemis II and NASA documentation clarify that Orion-class human spaceflight missions are an explicit user for O2O-like optical links, but broader procurement signals are not detailed here.",
+          "zh": "阿尔忒弥斯二号与NASA文档明确“猎户座”级载人航天任务是O2O类光链路的直接用户，但关于更广泛采购与推广的信号在此并不充分。"
         },
         "distribution_integration_entry": {
-          "magnitude": "0-10%",
-          "en": "Distribution appears more restricted rather than easier, since access is gated and coordinated via a trusted mechanism.",
-          "zh": "由于需要受控审核并通过“受信任”机制分发，整体分发与集成门槛更可能提高而非降低。"
-        },
-        "regulatory_data_supply_window": {
-          "magnitude": "10-20%",
-          "en": "The stated coordination with governments and industry suggests a modest shift toward formalized access governance, but no new regulatory program details were provided.",
-          "zh": "与政府及行业协作制定访问机制表明治理更趋正式化，但报道未披露新的监管安排或数据供给细则，因此只能判断为有限变化。"
-        }
-      },
-      "tags": [
-        "OpenAI",
-        "Cybersecurity",
-        "LLM",
-        "AI Governance",
-        "Model Release"
-      ]
-    },
-    {
-      "id": "telegram:zaihuapd:41171",
-      "title": "PyPI 的 lightning 2.6.2/2.6.3 被入侵用于窃密与投毒",
-      "url": "https://socket.dev/blog/lightning-pypi-package-compromised",
-      "source_type": "telegram",
-      "ai_score": 8.0,
-      "signal_score": 7.0,
-      "signal_reason": "事件显示软件供应链攻击可通过包发布渠道在“导入即执行”路径批量窃取密钥并扩散到 GitHub/npm，反映出对依赖投毒检测、发布完整性验证与密钥轮换响应的明确刚需与可采购的安全能力需求。",
-      "capability_delta": "这并非新增防御能力，而是能力边界被攻击方扩大：lightning 2.6.2/2.6.3 可在导入时执行恶意代码以窃取机密并推动仓库与包投毒。对受影响用户而言，这意味着需要更快地执行版本固定、密钥轮换与依赖审计。",
-      "assessment": {
-        "capability_boundary_change": {
-          "magnitude": "20-50%",
-          "en": "For affected environments, routine importing of lightning 2.6.2/2.6.3 reportedly became sufficient to trigger secret theft and enable further supply-chain poisoning behaviors.",
-          "zh": "对受影响环境而言，常规导入 lightning 2.6.2/2.6.3 据称就足以触发窃密，并为后续供应链投毒行为提供条件。"
-        },
-        "cost_change": {
           "magnitude": "unclear",
-          "en": "The incident implies additional incident-response costs (downgrades and key rotation), but the net cost impact is not quantified in the provided material.",
-          "zh": "该事件意味着额外的应急处置成本（降级与密钥轮换），但提供的信息未量化整体成本变化。"
-        },
-        "workflow_unlock": {
-          "magnitude": "10-20%",
-          "en": "The report suggests that an attacker could leverage stolen tokens to move from a poisoned package into repository and CI-related actions, modestly broadening the attack workflow path from dependency to codebase.",
-          "zh": "报告暗示攻击者可利用被窃令牌从被投毒的依赖延伸到仓库与 CI 相关操作，在一定程度上打通从依赖到代码库的攻击路径。"
-        },
-        "buyer_clarity": {
-          "magnitude": "20-50%",
-          "en": "The remediation actions are concrete—remove 2.6.2/2.6.3, downgrade to 2.6.1, and rotate secrets—making the immediate response requirements relatively clear for users.",
-          "zh": "处置建议较明确——移除 2.6.2/2.6.3、降级到 2.6.1 并轮换密钥——使得用户的即时响应要求相对清晰。"
-        },
-        "distribution_integration_entry": {
-          "magnitude": "0-10%",
-          "en": "The incident reinforces the importance of dependency scanning and version pinning in package distribution, but it does not itself introduce a new integration channel or distribution mechanism.",
-          "zh": "该事件强化了在包分发环节进行依赖扫描与版本固定的重要性，但本身并未带来新的集成入口或分发机制。"
+          "en": "While multiple ground sites are mentioned, the sources do not specify interfaces, standards, or network integration details that would indicate ease of third-party adoption.",
+          "zh": "尽管提到多处地面站协同接收，但来源未说明接口、标准或网络集成细节，难以判断第三方接入与扩展的难度。"
         },
         "regulatory_data_supply_window": {
           "magnitude": "none",
-          "en": "No regulatory change or new data-sharing window is described in the provided report and supporting references.",
-          "zh": "所提供的报告与参考资料未提及任何监管变化或新的数据供给窗口。"
+          "en": "The provided sources do not indicate any new regulatory approvals or spectrum-related changes tied to this optical communications demonstration.",
+          "zh": "所给来源未显示该光通信演示带来新的监管审批变化或与频谱相关的窗口期变化。"
         }
       },
       "tags": [
-        "supply-chain-security",
-        "python",
-        "pypi",
-        "credential-theft",
-        "devsecops"
+        "Space Communications",
+        "Laser Communications",
+        "NASA Artemis",
+        "Deep Space Networking",
+        "Aerospace Systems"
       ]
     },
     {
-      "id": "telegram:zaihuapd:41172",
-      "title": "白宫反对扩大 Anthropic Mythos 模型访问范围",
-      "url": "https://t.me/zaihuapd/41172",
+      "id": "telegram:zaihuapd:41185",
+      "title": "DeepSeek-V4 预览版上线并开源，强化 Agent 能力",
+      "url": "https://t.me/zaihuapd/41185",
       "source_type": "telegram",
       "ai_score": 8.0,
       "signal_score": 7.0,
-      "signal_reason": "可观察到政府对“攻防能力型”AI模型的访问控制与配额/算力分配正在收紧并引发诉讼，表明合规、审计、访问控制与安全评估等刚性需求上升，且目标用户（政府与关键基础设施相关实体）明确。",
-      "capability_delta": "这里的能力边界变化主要是 Mythos 访问主体拟从约 50 家扩到约 120 家，但报道称该扩容正遭白宫反对。按现有信息看，并未出现新的技术能力披露，变化点在于对既有高风险模型的可得性边界存在争议。",
+      "signal_reason": "文本明确提到“上线+API”“极其便宜”“更小参数/激活带来更快更经济服务”以及 Agent 能力增强，这些若属实代表能力/成本边界变化并可直接影响采用与集成；但缺少可核验定价、SLA、官方评测与发布细节，商业信号强度受限。",
+      "capability_delta": "宣称的能力边界变化在于：开源的 DeepSeek-V4-Pro 可能在 Agentic coding 与强推理任务上达到开源模型的领先水平，并额外提供更低延迟的 V4-Flash 用于部署。但由于摘录中缺少一手公告与基准材料，改进幅度仅凭该条信息难以严格核验。",
       "assessment": {
         "capability_boundary_change": {
           "magnitude": "unclear",
-          "en": "The report describes a proposed access expansion but also says the White House is opposing it, so the net change in real availability is unclear.",
-          "zh": "报道提到拟扩大访问范围但同时称白宫反对，因此实际可用性是否变化仍不明确。"
+          "en": "Multiple secondary sources claim a meaningful jump in agent evaluations and tool-calling success, but the excerpt lacks primary benchmark links needed to quantify the boundary change confidently.",
+          "zh": "多篇二手材料声称 Agent 评测与工具调用成功率有明显提升，但该摘录缺少一手基准链接，难以定量确认能力边界变化幅度。"
         },
         "cost_change": {
           "magnitude": "unclear",
-          "en": "No pricing or unit-cost information is provided, and the compute-allocation concern does not quantify any cost shift.",
-          "zh": "未提供定价或单位成本信息，而“算力分配担忧”也未量化成本变化。"
+          "en": "The item asserts V4-Flash is cheaper due to smaller parameters/activations, but it provides no pricing tables or measured $/token comparisons to estimate the cost delta.",
+          "zh": "内容宣称 V4-Flash 因参数与激活更小而更便宜，但未给出定价或 $/token 对比数据，无法估算成本变化幅度。"
         },
         "workflow_unlock": {
-          "magnitude": "unclear",
-          "en": "Mythos is described as enabling autonomous vulnerability discovery/exploitation, but this item reports a policy dispute rather than a newly released workflow feature.",
-          "zh": "Mythos 被描述为可支持自主漏洞发现与利用，但该消息聚焦政策争议而非新增工作流能力发布。"
+          "magnitude": "10-20%",
+          "en": "If the reported higher multi-step tool-calling success and stronger agentic coding results are accurate, more automation workflows could run end-to-end with fewer retries, modestly improving reliability.",
+          "zh": "若所述多步工具调用成功率提升与更强的 Agentic coding 结果属实，更多自动化流程可更少重试地端到端完成，从而带来一定可靠性提升。"
         },
         "buyer_clarity": {
           "magnitude": "0-10%",
-          "en": "The reporting reiterates that eligible users have been limited to critical-infrastructure operators and some government bodies, which slightly clarifies the intended buyer/user set.",
-          "zh": "报道重申此前主要面向关键基础设施管理方与部分政府机构开放，这对目标用户范围有小幅澄清。"
+          "en": "The positioning is clear (V4-Pro for stronger agents, V4-Flash for speed/cost), but missing official benchmark and pricing details reduces purchase-decision clarity.",
+          "zh": "定位本身较清晰（V4-Pro 强 Agent、V4-Flash 低延迟低成本），但缺少官方基准与价格细节会降低采购决策的清晰度。"
         },
         "distribution_integration_entry": {
-          "magnitude": "unclear",
-          "en": "Because the expansion is contested and no integration channels (APIs, cloud marketplaces, or partners) are specified, distribution and integration implications are unclear.",
-          "zh": "由于扩容本身存在争议且未说明 API、云市场或合作伙伴等集成渠道，分发与集成影响不明确。"
-        },
-        "regulatory_data_supply_window": {
-          "magnitude": "10-20%",
-          "en": "White House involvement framed around national security and compute allocation modestly increases the likelihood of tighter access controls for exploit-capable models.",
-          "zh": "以国家安全与算力供给为由的白宫介入，适度提高了对具漏洞利用能力模型实施更严格访问管控的可能性。"
-        }
-      },
-      "tags": [
-        "AI政策与监管",
-        "国家安全",
-        "网络安全",
-        "漏洞挖掘",
-        "AI治理"
-      ]
-    },
-    {
-      "id": "telegram:zaihuapd:41162",
-      "title": "Anthropic 向 Claude Enterprise 开放 Claude Security 公测",
-      "url": "https://x.com/claudeai/status/2049898739783897537",
-      "source_type": "telegram",
-      "ai_score": 7.0,
-      "signal_score": 7.0,
-      "signal_reason": "可观察到的能力边界变化是新增企业可用的安全扫描与补丁建议工具（降低误报、可审查补丁），面向明确买方群体（Claude Enterprise/企业安全与研发团队），具备直接集成到现有安全/CI 流程的商业落地点；但目前仅为公开测试且限定企业用户范围，规模与效果尚未被事实验证。 ",
-      "capability_delta": "对 Claude Enterprise 用户而言，新能力在于可使用带“验证环节”的 LLM 辅助代码库漏洞扫描，以降低误报并输出可审查的补丁建议。这使 Claude 从通用协助进一步延伸为面向应用安全流程的专用工具，但目前仅在企业版范围内体现。",
-      "assessment": {
-        "capability_boundary_change": {
           "magnitude": "20-50%",
-          "en": "Adding verified findings plus reviewable patch suggestions represents a meaningful expansion from general LLM help to an end-to-end SAST-adjacent workflow for Claude Enterprise users.",
-          "zh": "在 Claude Enterprise 中新增“验证发现”与“可审查补丁建议”，相较通用对话辅助更接近端到端的 SAST 相邻工作流，能力边界有明显扩展。"
-        },
-        "cost_change": {
-          "magnitude": "unclear",
-          "en": "The post does not disclose pricing, included usage, or measurable reductions in engineering time, so the net cost impact cannot be quantified.",
-          "zh": "公告未披露定价、包含额度或可量化的人力节省数据，因此无法评估净成本变化。"
-        },
-        "workflow_unlock": {
-          "magnitude": "20-50%",
-          "en": "A tool that scans, verifies, and proposes reviewable patches can reduce manual triage loops and better align with code review practices than raw findings alone.",
-          "zh": "同时具备扫描、验证与可审查补丁建议的工具，可能减少人工分流与反复确认的环节，并更贴合代码评审流程。"
-        },
-        "buyer_clarity": {
-          "magnitude": "10-20%",
-          "en": "Targeting Claude Enterprise makes the buyer persona clearer (enterprise AppSec and engineering leadership), but missing details on coverage and integrations still limit procurement certainty.",
-          "zh": "明确面向 Claude Enterprise 有助于锁定采购人群（企业应用安全与工程管理层），但覆盖范围与集成细节缺失仍会影响采购确定性。"
-        },
-        "distribution_integration_entry": {
-          "magnitude": "0-10%",
-          "en": "Distribution is improved mainly by being packaged for Claude Enterprise users, but the announcement does not confirm delivery via common dev pipelines (e.g., GitHub/CI) for frictionless adoption.",
-          "zh": "分发主要依托现有的 Claude Enterprise 用户体系有所增强，但公告未确认是否以常见开发流水线（如 GitHub/CI）形式交付，因此接入门槛变化有限。"
+          "en": "A simultaneous open-source release generally lowers integration barriers by enabling self-hosting and local evaluation, assuming the weights and license are truly available as claimed.",
+          "zh": "同步开源通常会通过允许自托管与本地评测来降低集成门槛，前提是如其所述模型权重与许可证确实可用。"
         },
         "regulatory_data_supply_window": {
           "magnitude": "none",
-          "en": "The announcement does not mention compliance standards, audit requirements, or new data access/retention terms that would change regulatory or data-supply conditions.",
-          "zh": "公告未提及合规标准、审计要求或新的数据访问与留存条款，因此不会改变监管或数据供给窗口。"
+          "en": "The provided materials do not mention regulatory changes, data access shifts, or new compliance constraints tied to this release.",
+          "zh": "现有材料未提及与该发布相关的监管变化、数据供给变化或新的合规约束。"
         }
       },
       "tags": [
-        "Application Security",
-        "Static Analysis",
-        "LLM Tools",
-        "Enterprise Software",
-        "Vulnerability Management"
+        "LLM",
+        "Open Source",
+        "Agents",
+        "Benchmarking",
+        "Inference Cost"
       ]
     },
     {
-      "id": "telegram:zaihuapd:41164",
-      "title": "中国收紧商业短信同意与拒收规则",
-      "url": "https://www.miit.gov.cn/zcfg/xxtxl/art/2026/art_20183ad07ad740f7b59bb5b1212df241.html",
-      "source_type": "telegram",
-      "ai_score": 7.0,
-      "signal_score": 7.0,
-      "signal_reason": "合规边界发生明确变化（同意机制、退订机制、身份信息附带与6个月留存/追溯），将迫使发送方与平台更新流程与系统以避免违规，带来可观察的合规改造与审计需求。",
-      "capability_delta": "商业短信发送的法律边界更清晰：必须明示同意、必须提供不设障的便捷拒收，并通过实名信息与不少于6个月的日志留存强化追溯。无同意群发的操作风险上升且更容易被定位责任主体。",
+      "id": "hackernews:story:47988504",
+      "title": "VideoLAN 启动 dav2d：面向 AV2 的高性能解码器",
+      "url": "https://code.videolan.org/videolan/dav2d",
+      "source_type": "hackernews",
+      "ai_score": 8.0,
+      "signal_score": 6.0,
+      "signal_reason": "A fast AV2 decoder can materially affect playback efficiency and enable earlier AV2 adoption in players/devices, but AV2 is not yet finalized (late 2025 mentioned) and ecosystem readiness (encoders, deployments) remains a gating factor, limiting immediate commercial signal.",
+      "capability_delta": "在 AV2 最终定稿之前，开发者现在就可以开始集成与评测开源 CPU 的 AV2 解码器（dav2d），而不必等待更成熟的下游实现。能力边界的变化在于“更早获得以性能为导向的解码器代码库用于实验”，但这并不等同于对最终版 AV2 码流的生产级就绪保证。",
       "assessment": {
         "capability_boundary_change": {
           "magnitude": "20-50%",
-          "en": "The regulation introduces enforceable requirements (explicit consent, easy opt-out, traceability, and ≥6-month log retention) that materially narrow how commercial SMS can be legally sent.",
-          "zh": "该规定引入可执行的“明示同意、便捷拒收、可追溯、日志留存不少于6个月”等要求，实质性收窄了商业短信的合规发送边界。"
+          "en": "An openly available, performance-focused CPU AV2 decoder meaningfully expands what developers can test and integrate before AV2 is finalized.",
+          "zh": "一个公开可用、以性能为导向的 CPU AV2 解码器显著扩展了开发者在 AV2 定稿前可进行的测试与集成范围。"
         },
         "cost_change": {
-          "magnitude": "10-20%",
-          "en": "Compliance work such as consent management, opt-out handling, identity attachment, and record retention is likely to add operational cost, though the exact increase is not specified in the provided text.",
-          "zh": "同意管理、拒收处理、身份信息附带与记录留存等合规工作预计会增加运营成本，但提供材料未给出具体增幅。"
+          "magnitude": "unclear",
+          "en": "The project being open-source suggests lower licensing friction, but the article-level information does not quantify compute cost or efficiency versus alternatives.",
+          "zh": "开源特性意味着授权摩擦更低，但现有信息未量化其相对替代方案的算力成本或效率差异。"
         },
         "workflow_unlock": {
-          "magnitude": "0-10%",
-          "en": "The change mainly adds constraints rather than enabling a new workflow, aside from standardizing consent and opt-out processes for commercial SMS operations.",
-          "zh": "该变化主要是增加约束而非解锁全新流程，仅在一定程度上促使商业短信运营的同意与拒收流程标准化。"
+          "magnitude": "10-20%",
+          "en": "Early decoder availability unlocks earlier CI testing, playback prototyping, and bitstream validation workflows for AV2, though spec churn may limit stability.",
+          "zh": "解码器的提前可用解锁了更早的 CI 测试、播放原型与码流验证工作流，但规范变动可能限制其稳定性。"
         },
         "buyer_clarity": {
-          "magnitude": "20-50%",
-          "en": "By explicitly requiring opt-in consent and unobstructed opt-out, the rule makes compliance expectations clearer for businesses that send commercial SMS.",
-          "zh": "通过明确“明示同意”和“拒收不得设障”，新规让商业短信发送主体的合规要求更清晰。"
+          "magnitude": "unclear",
+          "en": "Because AV2 remains draft and adoption timelines are debated, near-term demand signals for AV2 decoding are not yet clear from the provided evidence.",
+          "zh": "由于 AV2 仍为草案且落地时间存在争议，从现有证据难以判断短期内对 AV2 解码的需求清晰度。"
         },
         "distribution_integration_entry": {
-          "magnitude": "10-20%",
-          "en": "Requiring real-identity information and six-month record retention raises the integration and governance bar for port-based SMS distribution, but the extent depends on existing operator/platform practices.",
-          "zh": "要求附带真实身份信息并留存6个月记录，会抬高端口类短信分发的接入与治理门槛，但幅度取决于既有运营商与平台实践。"
+          "magnitude": "0-10%",
+          "en": "Publishing dav2d slightly lowers the barrier to entry for downstream projects to begin AV2 integration, but broad distribution depends on spec maturity and ecosystem uptake.",
+          "zh": "dav2d 的发布在一定程度上降低了下游项目启动 AV2 集成的门槛，但大规模分发仍取决于规范成熟度与生态采纳。"
         },
         "regulatory_data_supply_window": {
-          "magnitude": "10-20%",
-          "en": "Mandated retention of timestamps and code/number data for at least six months increases the availability of evidentiary data for enforcement within that retention window.",
-          "zh": "要求至少6个月留存发送接收时间、码号等数据，提高了在该留存窗口内用于监管执法取证的数据可得性。"
+          "magnitude": "none",
+          "en": "This news item concerns a codec decoder implementation and does not indicate any regulatory, policy, or data-supply change.",
+          "zh": "该新闻聚焦于编解码器解码实现，并未体现任何监管、政策或数据供给窗口的变化。"
         }
       },
       "tags": [
-        "regulation",
-        "sms",
-        "privacy-compliance",
-        "telecom",
-        "china"
+        "video-codecs",
+        "AV2",
+        "decoders",
+        "VideoLAN",
+        "performance-optimization"
       ]
     },
     {
-      "id": "hackernews:story:47978370",
-      "title": "城市得知Flock演示访问儿童体操室摄像头后仍续约",
-      "url": "https://www.404media.co/city-learns-flock-accessed-cameras-in-childrens-gymnastics-room-as-a-sales-pitch-demo-renews-contract-anyway/",
+      "id": "hackernews:story:47993235",
+      "title": "Kimi K2.6 声称在编程挑战中胜过顶级闭源模型",
+      "url": "https://thinkpol.ca/2026/04/30/an-open-weights-chinese-model-just-beat-claude-gpt-5-5-and-gemini-in-a-programming-challenge/",
       "source_type": "hackernews",
       "ai_score": 7.0,
       "signal_score": 6.0,
-      "signal_reason": "The incident highlights a concrete and widely relevant gap in access control, auditability, and demo/data-segregation practices for surveillance and civic tech vendors, with clear buyer pressure signals (public scrutiny and policy risk) but no explicit market-opening change or new capability described.",
-      "capability_delta": "这里没有明显的技术突破；变化更多在声誉与治理层面，暴露出供应商的演示访问可能延伸到敏感场所的实时摄像头画面。该事件可能促使机构在云端视频访问上要求更强的环境隔离、最小权限角色与可审计性。",
+      "signal_reason": "If an open-weights model is competitive with leading closed models on coding tasks, that materially shifts cost/control/access tradeoffs (self-hosting, customization, data governance), but the evidence here is based on a single reported challenge and commenters question comparability, so the commercial signal is moderate rather than definitive.",
+      "capability_delta": "文章暗示开放权重模型可能在编码性能上领先，但社区反馈认为在缺少标准化、基于执行的客观评测前，这种能力边界变化尚未被证实。更稳妥的表述是“出现了一个可能在编码上具备竞争力的开放权重新选手”，而非已被确认的全面超越。",
       "assessment": {
         "capability_boundary_change": {
-          "magnitude": "none",
-          "en": "The report describes a problematic use of existing access capabilities rather than a newly introduced technical capability.",
-          "zh": "该报道描述的是既有访问能力被不当使用，而非新增的技术能力。"
+          "magnitude": "unclear",
+          "en": "The reported win is based on a single programming challenge and is disputed as non-standard, so a durable capability boundary shift is unclear.",
+          "zh": "该胜出结论来自一次编程挑战且被质疑不够标准化，因此是否构成稳定的能力边界变化尚不明确。"
         },
         "cost_change": {
-          "magnitude": "none",
-          "en": "No pricing or cost information changed in the provided materials, so a cost shift cannot be inferred.",
-          "zh": "提供的信息未显示价格或成本发生变化，因此无法推断成本变动。"
+          "magnitude": "unclear",
+          "en": "While open-weights models can enable self-hosting cost control, the news item provides no pricing or total-cost evidence for Kimi K2.6.",
+          "zh": "虽然开放权重模型可能带来自部署成本可控性，但该新闻未提供 Kimi K2.6 的定价或总体成本证据。"
         },
         "workflow_unlock": {
           "magnitude": "0-10%",
-          "en": "The main “unlock” is procedural awareness that demo programs can involve live feeds, which may slightly change procurement and access-control workflows.",
-          "zh": "主要“解锁”在于流程层面的认知：演示项目可能涉及实时画面，这可能对采购与权限控制流程带来轻微调整。"
+          "en": "If Kimi K2.6 is truly competitive, it modestly expands the set of viable coding models teams can evaluate for tool-driven workflows, but the claim is not yet validated.",
+          "zh": "若 Kimi K2.6 确实具备竞争力，它会小幅扩展团队在工具驱动编码流程中可评估的模型选择，但该结论尚未被充分验证。"
+        },
+        "buyer_clarity": {
+          "magnitude": "none",
+          "en": "The debate highlights that buyers still lack a single objective comparison method, so this news does not materially improve selection clarity.",
+          "zh": "讨论反而凸显买方仍缺少统一客观的对比方法，因此该新闻并未实质提升选型清晰度。"
+        },
+        "distribution_integration_entry": {
+          "magnitude": "10-20%",
+          "en": "An open-weights model, by definition, can be downloaded and integrated into self-hosted stacks more easily than closed APIs, lowering integration barriers somewhat if access is truly open.",
+          "zh": "按定义，开放权重模型可被下载并更容易集成到自托管技术栈中，相比纯 API 的闭源模型在集成门槛上有所降低（前提是权重获取确实开放）。"
+        },
+        "regulatory_data_supply_window": {
+          "magnitude": "0-10%",
+          "en": "Open-weights availability can help organizations keep data on-prem, but the item does not provide new regulatory or data-access developments beyond that general implication.",
+          "zh": "开放权重的可用性可能帮助组织实现数据本地化，但该新闻并未提供除这一一般性含义之外的新增监管或数据获取变化。"
+        }
+      },
+      "tags": [
+        "LLMs",
+        "open-weights-models",
+        "code-generation",
+        "benchmarks",
+        "model-evaluation"
+      ]
+    },
+    {
+      "id": "hackernews:story:47990606",
+      "title": "独立开发者六年打磨 watchOS 地图体验",
+      "url": "https://www.david-smith.org/blog/2026/04/29/maps-on-watchos/",
+      "source_type": "hackernews",
+      "ai_score": 7.0,
+      "signal_score": 6.0,
+      "signal_reason": "Observable signals include significant user demand and validation (4.8 rating with 170k+ reviews; high HN engagement) and a clear platform gap noted in comments (lack of Apple Watch hiking/topo maps and GPX import), but no new platform capability or market-access change is announced.",
+      "capability_delta": "这并非新的平台能力发布；它带来的边界变化在于用可验证的工程实践表明：在不依赖 MapKit 的情况下，通过自研栈也能在 watchOS 上实现高质量、强定制风格的地图体验。文章把定制制图/瓦片与动态渲染、以及偏离标准 UI 模式的利弊讲清楚，从而影响其他开发者对“可行性边界”的判断。",
+      "assessment": {
+        "capability_boundary_change": {
+          "magnitude": "10-20%",
+          "en": "The post does not add new APIs, but it credibly expands perceived feasibility of custom watchOS mapping by detailing a working approach and its tradeoffs.",
+          "zh": "文章并未带来新 API，但通过完整复盘与权衡说明，可信地扩大了业界对 watchOS 自定义地图“可做到”的认知边界。"
+        },
+        "cost_change": {
+          "magnitude": "unclear",
+          "en": "Custom cartography and tile pipelines can increase development and data production costs, but the article does not quantify costs or compare them to MapKit in numbers.",
+          "zh": "定制制图与瓦片流水线可能抬高研发与数据制作成本，但文章未给出量化数据，无法用数字对比 MapKit 方案的成本变化。"
+        },
+        "workflow_unlock": {
+          "magnitude": "0-10%",
+          "en": "The main unlock is knowledge transfer (design/engineering decisions for watch maps), not a new toolchain that materially changes day-to-day workflows for most teams.",
+          "zh": "主要解锁点是经验与决策方法的迁移，而非能显著改变多数团队日常工作方式的新工具链。"
         },
         "buyer_clarity": {
           "magnitude": "10-20%",
-          "en": "Public reporting and discussion make vendor-access risk more concrete for city buyers, modestly increasing clarity around required controls and contract terms.",
-          "zh": "公开报道与讨论使城市采购方更具体地认识到供应商访问风险，在一定程度上提升了对所需控制与合同条款的清晰度。"
+          "en": "Community comments and the post sharpen the problem statement around hiking/topo needs and map aesthetics on Apple Watch, but do not provide market sizing or segmentation data.",
+          "zh": "文章与评论让“Apple Watch 徒步/地形需求与地图观感”这一痛点更清晰，但未提供市场规模或用户分层等数据。"
         },
         "distribution_integration_entry": {
           "magnitude": "none",
-          "en": "There is no indication of new integration surfaces, APIs, or distribution channels in the described incident.",
-          "zh": "该事件未显示出现新的集成接口、API或分发渠道变化。"
+          "en": "Nothing in the post changes App Store distribution rules, watchOS integration surfaces, or entry barriers beyond sharing implementation lessons.",
+          "zh": "文章没有改变 App Store 分发规则、watchOS 集成入口或准入门槛，更多只是分享实现经验。"
         },
         "regulatory_data_supply_window": {
+          "magnitude": "none",
+          "en": "The content does not indicate any regulatory change or new data supply agreement affecting mapping data availability.",
+          "zh": "内容未体现任何监管变化或新的数据供给协议，从而不会改变地图数据可获得性窗口。"
+        }
+      },
+      "tags": [
+        "watchOS",
+        "mapping",
+        "mobile-development",
+        "UX-design",
+        "indie-apps"
+      ]
+    },
+    {
+      "id": "hackernews:story:47988592",
+      "title": "Do_not_track 汇总常见开发工具的遥测关闭环境变量",
+      "url": "https://donottrack.sh/",
+      "source_type": "hackernews",
+      "ai_score": 7.0,
+      "signal_score": 6.0,
+      "signal_reason": "Observable demand signal: many tools phone home by default and users struggle to reliably disable it (noted in comments), implying a concrete need for centralized configuration/compliance guidance, but the content itself is a list/resource rather than a new capability or platform shift.",
+      "capability_delta": "通过一个集中整理的参考表，用户更容易跨多个工具批量应用“关闭遥测”的设置，而不必逐个项目搜索文档。但它并不会自动改变任何工具实际收集的数据，主要是降低了发现与配置成本，并暴露出既有开关在语义上的不一致。",
+      "assessment": {
+        "capability_boundary_change": {
+          "magnitude": "0-10%",
+          "en": "The boundary shift is modest because the site aggregates existing opt-out controls rather than enabling new technical enforcement beyond what tools already support.",
+          "zh": "能力边界变化较小，因为该站点只是汇总现有的退出控制，并未提供超出工具既有能力的新型强制手段。"
+        },
+        "cost_change": {
+          "magnitude": "0-10%",
+          "en": "It can slightly reduce the time cost of locating and validating telemetry-disabling settings, but it does not directly reduce licensing, hosting, or compute costs.",
+          "zh": "它可能小幅降低查找与验证关闭遥测设置的时间成本，但不会直接降低许可、托管或算力成本。"
+        },
+        "workflow_unlock": {
+          "magnitude": "10-20%",
+          "en": "A centralized list can streamline privacy-hardening and offline/restricted-network setup workflows, though effectiveness still depends on each tool’s actual behavior.",
+          "zh": "集中清单可简化隐私加固与离线/受限网络环境的配置流程，但最终效果仍取决于各工具的实际行为。"
+        },
+        "buyer_clarity": {
           "magnitude": "unclear",
-          "en": "The incident could influence oversight or policy attention, but no specific regulatory action or timeline is provided here.",
-          "zh": "该事件可能影响监管关注或政策讨论，但此处未提供具体监管行动或时间表。"
+          "en": "The resource may clarify options for some users, but community disagreement about semantics (telemetry vs version checks vs offline mode) makes overall clarity hard to quantify.",
+          "zh": "该资源可能让部分用户更清楚可用选项，但社区对语义的分歧（遥测、版本检查、离线模式）使整体清晰度难以量化。"
+        },
+        "distribution_integration_entry": {
+          "magnitude": "0-10%",
+          "en": "Adoption could be easy via copying a shared .env-style file, but integrating it reliably into diverse toolchains still requires per-tool verification.",
+          "zh": "通过复制共享的 .env 风格文件可能易于采用，但要可靠地集成到多样化工具链中仍需逐个工具验证。"
+        },
+        "regulatory_data_supply_window": {
+          "magnitude": "none",
+          "en": "The news item does not indicate any regulatory change or new data-sharing requirement that would materially alter compliance windows or data supply.",
+          "zh": "该新闻并未显示出现监管变化或新的数据共享要求，因此不会实质性改变合规窗口或数据供给。"
         }
       },
       "tags": [
         "privacy",
-        "surveillance-tech",
-        "govtech",
-        "security",
-        "vendor-risk"
+        "telemetry",
+        "developer-tools",
+        "open-source",
+        "security"
       ]
     },
     {
-      "id": "telegram:zaihuapd:41170",
-      "title": "小红书发布AI治理规则并强化标注与处罚",
-      "url": "https://t.me/zaihuapd/41170",
-      "source_type": "telegram",
+      "id": "hackernews:story:47989883",
+      "title": "VS Code 默认在提交中添加“Co-Authored-by Copilot”",
+      "url": "https://github.com/microsoft/vscode/pull/310226",
+      "source_type": "hackernews",
       "ai_score": 7.0,
-      "signal_score": 6.0,
-      "signal_reason": "规则明确要求AI内容标注、平台将对未标注内容自动加标并提供申诉，同时严禁自动化运营与深度伪造等行为，这会推动合规标注、内容审核与账号风控相关能力的刚需提升，但未显示成本/接口/能力边界的重大变化。",
-      "capability_delta": "这主要是政策边界的变化：平台仍允许使用生成式AI创作，但对内容披露的要求更明确，并更清晰地强化对AI造假与自动化违规运营的治理。平台也明确将对识别出的未标注AI内容统一补充标识。",
+      "signal_score": 5.0,
+      "signal_reason": "Observable signal is moderate: the incident highlights a concrete pain point around trustworthy AI attribution/audit trails in developer workflows, but it is primarily a controversy/bug-fix situation rather than a clear new capability or cost/access shift.",
+      "capability_delta": "对用户而言并没有实质性的新增技术能力，主要变化只是自动插入 AI 共同作者尾注；边界变化在于署名可能在未明确意图下被添加。实际效果是更容易生成“看起来由 AI 协作”的提交，但以记录完整性为代价。",
       "assessment": {
         "capability_boundary_change": {
-          "magnitude": "10-20%",
-          "en": "The update clarifies what AI-assisted creation is permitted and draws firmer lines against deepfake impersonation, automated operations, and low-quality mass production.",
-          "zh": "该更新更清晰界定了AI辅助创作的允许范围，并对音容造假、自动化运营与低质批量生产划出更明确的红线。"
+          "magnitude": "0-10%",
+          "en": "The change only affects whether a commit trailer is auto-added by default, not core Git or AI capabilities.",
+          "zh": "该变化主要影响提交尾注是否默认自动添加，并未改变 Git 或 AI 的核心能力边界。"
         },
         "cost_change": {
-          "magnitude": "0-10%",
-          "en": "Compliance costs may rise slightly due to the need for labeling and potential appeals, but no direct pricing or tooling cost changes are stated.",
-          "zh": "由于需要标注及可能的申诉流程，合规成本可能小幅上升，但规则未提及任何直接的收费或工具成本变化。"
+          "magnitude": "none",
+          "en": "No direct cost reduction or increase is evidenced in the provided information, since it is a metadata default behavior.",
+          "zh": "从已提供的信息看，这只是元数据默认行为调整，并无直接成本升降的证据。"
         },
         "workflow_unlock": {
           "magnitude": "0-10%",
-          "en": "The rules modestly standardize publishing workflows by encouraging proactive disclosure and providing a defined appeals path for platform-applied labels.",
-          "zh": "规则通过鼓励主动标注并提供平台加标后的申诉通道，对发布流程形成小幅度的规范化。"
+          "en": "It marginally reduces effort to add AI co-author attribution, but it does not unlock a new development workflow beyond commit formatting.",
+          "zh": "它只是略微降低添加 AI 共同署名的操作成本，并未解锁超出提交格式化之外的新工作流。"
         },
         "buyer_clarity": {
-          "magnitude": "10-20%",
-          "en": "For brands and agencies, clearer labeling and enforcement signals reduce ambiguity about acceptable AI use and content risk on the platform.",
-          "zh": "对品牌与代理机构而言，更明确的标注与处罚信号降低了平台上AI使用与内容风险的不确定性。"
+          "magnitude": "unclear",
+          "en": "The backlash suggests buyers/users care about provenance controls, but the news does not quantify demand or purchasing behavior.",
+          "zh": "舆论反弹表明用户重视来源与可控性，但新闻未量化需求强度或采购行为，因此不明确。"
         },
         "distribution_integration_entry": {
-          "magnitude": "unclear",
-          "en": "The announcement indicates the platform may detect and label AI content, but it does not specify APIs, technical standards, or integration requirements.",
-          "zh": "公告提到平台会识别并补充标识AI内容，但未说明API、技术标准或接入要求，因此影响程度不明确。"
+          "magnitude": "none",
+          "en": "This is an internal VS Code behavior change and does not, by itself, create a new integration surface for third parties.",
+          "zh": "这是 VS Code 内部行为变更，本身不会为第三方带来新的集成入口或分发通道。"
         },
         "regulatory_data_supply_window": {
           "magnitude": "unclear",
-          "en": "While the rules align with broader AI content labeling governance, the announcement provides no concrete timelines or data-sharing specifics that define a clear window.",
-          "zh": "尽管规则与更广泛的AI内容标识治理方向一致，但公告未给出时间表或数据共享细节，因此难以界定明确窗口期。"
+          "en": "While commit integrity can relate to compliance, the provided material does not indicate any regulatory change or new data-sharing requirement.",
+          "zh": "尽管提交完整性可能关联合规，但现有材料未显示监管变化或新的数据供给要求，因此不明确。"
         }
       },
       "tags": [
-        "AI治理",
-        "内容平台政策",
-        "内容审核",
-        "生成式AI",
-        "社交媒体运营"
+        "vscode",
+        "git",
+        "developer-tools",
+        "ai-assistants",
+        "software-governance"
       ]
     },
     {
-      "id": "hackernews:story:47972511",
-      "title": "WhatCable 在 macOS 上识别 USB-C 线材真实能力",
-      "url": "https://github.com/darrylmorley/whatcable",
+      "id": "hackernews:story:47984852",
+      "title": "基准测试梳理 macOS 虚拟机速度与最小配置",
+      "url": "https://eclecticlight.co/2026/05/02/how-fast-is-a-macos-vm-and-how-small-could-it-be/",
       "source_type": "hackernews",
       "ai_score": 7.0,
-      "signal_score": 4.0,
-      "signal_reason": "Clear user pain and strong engagement indicate demand, but the capability is mostly a UI/packaging layer over existing system data and is already free/open-source, with no observable new platform capability, cost shift, or constrained supply/regulatory window described.",
-      "capability_delta": "WhatCable 让 macOS 用户无需专用硬件测试仪，也能更容易读取并理解线材对 USB-C/Thunderbolt 能力的宣称信息，并且新增了 GUI 与 CLI 两种工作流。它不会带来新的硬件能力，但显著降低了用系统可见数据定位“线材瓶颈”的门槛。",
+      "signal_score": 5.0,
+      "signal_reason": "Clear, observable pain points and constraints are highlighted (inefficiency of common macOS container/VM stacks; missing compute-GPU passthrough for ML workloads), indicating demand, but no new capability boundary or major cost/latency shift is evidenced in the item itself.",
+      "capability_delta": "这并非新增平台能力发布；变化在于更明确的实践边界：macOS 虚拟机在大约 2 vCPU/4GB 内存时仍可能对轻量任务保持流畅。讨论同时再次确认一个未改变的限制：macOS 虚拟机里的图形虚拟化不等同于面向 PyTorch 等框架的计算型 GPU 透传。",
       "assessment": {
         "capability_boundary_change": {
-          "magnitude": "20-50%",
-          "en": "For macOS users, accurately summarizing OS-accessible cable/eMarker-reported capabilities in a GUI/CLI meaningfully expands what can be diagnosed without external testers.",
-          "zh": "对 macOS 用户而言，把系统可读的线缆/eMarker 上报能力用 GUI/CLI 直接汇总展示，显著扩展了无需外部测试仪即可诊断的问题范围。"
+          "magnitude": "0-10%",
+          "en": "The news does not add new VM features, but it modestly improves the actionable boundary of “minimum usable macOS VM sizing” with concrete downscaling observations.",
+          "zh": "该消息没有带来新的虚拟机特性，但通过具体的降配观察，小幅提升了对“macOS 虚拟机最低可用配置边界”的可操作认知。"
         },
         "cost_change": {
-          "magnitude": "10-20%",
-          "en": "A free open-source tool can reduce reliance on paid cable testers for basic capability checks, though it cannot fully replace physical validation.",
-          "zh": "免费开源工具可在基础能力核对上减少对付费线材测试仪的依赖，但仍无法完全替代物理验证。"
+          "magnitude": "0-10%",
+          "en": "Right-sizing guidance can slightly reduce resource allocation (and thus opportunity cost on the host), but there is no direct pricing change evidenced.",
+          "zh": "合理配比可能略微降低资源分配（从而减少宿主机资源机会成本），但没有证据表明存在直接的价格变化。"
         },
         "workflow_unlock": {
-          "magnitude": "20-50%",
-          "en": "The addition of a CLI alongside a menu bar/regular app enables scripting and repeatable checks in developer and IT troubleshooting workflows.",
-          "zh": "在菜单栏/普通应用之外加入 CLI，使开发与 IT 排障流程中可以进行脚本化与可重复的检查。"
+          "magnitude": "0-10%",
+          "en": "It marginally streamlines VM setup decisions for light workloads, while GPU/ML isolation workflows remain blocked by the stated compute-GPU limitation.",
+          "zh": "它仅在轻量工作负载的虚拟机配置决策上带来小幅简化，而需要 GPU/ML 隔离的工作流仍受所述计算型 GPU 限制所阻。"
         },
         "buyer_clarity": {
           "magnitude": "10-20%",
-          "en": "Clear, plain-language reporting improves day-to-day understanding of which cable supports which power/data/display modes, but only when the OS/cable can report them.",
-          "zh": "用通俗语言呈现功率/数据/显示模式有助于日常判断线材能力，但前提是系统与线材本身能够上报这些信息。"
+          "en": "Concrete CPU/RAM scaling anecdotes and observed memory usage improve clarity for users deciding how much Mac hardware to buy or allocate for VMs.",
+          "zh": "具体的 CPU/内存缩放案例与观测到的内存占用，提高了用户在购买或分配 Mac 硬件资源时的决策清晰度。"
         },
         "distribution_integration_entry": {
-          "magnitude": "0-10%",
-          "en": "Because it is open-source and already offers multiple front-ends, integrating it into existing macOS troubleshooting practices is straightforward but still limited to macOS environments.",
-          "zh": "由于其开源且已有多种前端形态，将其融入现有 macOS 排障实践相对容易，但应用范围仍主要受限于 macOS 环境。"
+          "magnitude": "none",
+          "en": "No new distribution channel, API, or integration surface is introduced in the item or the referenced discussion.",
+          "zh": "该条目及其讨论未引入新的分发渠道、API 或集成入口。"
         },
         "regulatory_data_supply_window": {
           "magnitude": "none",
-          "en": "This news item does not indicate any regulatory change or new mandatory data disclosure affecting USB-C cable capability reporting.",
-          "zh": "该新闻未体现任何监管变化或新的强制数据披露要求，会影响 USB-C 线材能力报告的情况。"
+          "en": "The item discusses performance sizing and GPU constraints but does not indicate any regulatory change or data availability shift.",
+          "zh": "该条目讨论的是性能配比与 GPU 限制，并未体现监管变化或数据供给窗口的改变。"
         }
       },
       "tags": [
         "macOS",
-        "USB-C",
-        "Thunderbolt",
-        "Developer Tools",
-        "Open Source"
+        "virtualization",
+        "VM-performance",
+        "Apple-Silicon",
+        "containers"
+      ]
+    },
+    {
+      "id": "hackernews:story:47990318",
+      "title": "Ladybird 2026年4月：可用性与网页兼容性持续提升",
+      "url": "https://ladybird.org/newsletter/2026-04-30/",
+      "source_type": "hackernews",
+      "ai_score": 7.0,
+      "signal_score": 4.0,
+      "signal_reason": "The item signals growing interest in a new browser engine but does not show a clear capability/price/access boundary change or concrete adoption unlock; comments emphasize structural constraints (DRM licensing, website blocking) that limit near-term commercial leverage.",
+      "capability_delta": "随着持续的标准与行为修复累积，Ladybird 能够正确渲染并与更多现代网站交互的能力边界在逐步外扩。这里未体现单一“功能跃迁”，变化主要来自持续的网页兼容性与可用性改进。",
+      "assessment": {
+        "capability_boundary_change": {
+          "magnitude": "0-10%",
+          "en": "A monthly set of fixes suggests incremental expansion in real-world site compatibility rather than a step-function change.",
+          "zh": "月度修复更像是在真实网站兼容性上的小幅扩展，而非阶跃式能力变化。"
+        },
+        "cost_change": {
+          "magnitude": "none",
+          "en": "The newsletter indicates progress but does not provide evidence of reduced development, deployment, or runtime costs.",
+          "zh": "通讯体现的是进展，但没有提供开发、部署或运行成本下降的证据。"
+        },
+        "workflow_unlock": {
+          "magnitude": "0-10%",
+          "en": "As more sites work correctly, early adopters can test and dogfood Ladybird in slightly broader daily workflows, but major blockers remain.",
+          "zh": "随着更多网站可用，早期用户可在略更广的日常流程中试用与自用 Ladybird，但关键阻碍仍存在。"
+        },
+        "buyer_clarity": {
+          "magnitude": "unclear",
+          "en": "The item is a progress update and does not clarify a stable release timeline or a concrete adoption-ready value proposition for specific buyers.",
+          "zh": "这是一则进度更新，未明确稳定版时间表，也未给出面向特定购买方的清晰可落地价值主张。"
+        },
+        "distribution_integration_entry": {
+          "magnitude": "none",
+          "en": "There is no indication of new distribution channels, default integrations, or platform deals that would change go-to-market access.",
+          "zh": "未提到新的分发渠道、默认集成或平台合作，因此进入市场的分发条件没有变化。"
+        },
+        "regulatory_data_supply_window": {
+          "magnitude": "none",
+          "en": "The update and discussion mention DRM and gating, but not regulatory shifts or new data/rights availability that would open a compliance window.",
+          "zh": "更新与讨论提到 DRM 与门禁问题，但未涉及监管变化或新的数据/权利供给，从而不会打开新的合规窗口。"
+        }
+      },
+      "tags": [
+        "web-browsers",
+        "browser-engines",
+        "open-source",
+        "web-compatibility",
+        "hn-discussion"
+      ]
+    },
+    {
+      "id": "hackernews:story:47988776",
+      "title": "NetHack 5.0.0 用 Lua 现代化工具链并打破存档兼容",
+      "url": "https://nethack.org/v500/release.html",
+      "source_type": "hackernews",
+      "ai_score": 7.0,
+      "signal_score": 3.0,
+      "signal_reason": "While the release may drive renewed interest and downstream client/tool updates (e.g., third-party 3D client mention), the observable facts do not indicate a material new capability boundary, cost/access shift, or clear buyer-facing workflow change beyond a niche community update.",
+      "capability_delta": "NetHack 5.0.0 使得部分游戏定义输入可以通过 Lua 在运行时处理，而不再依赖构建期的 lex/yacc 与 makedefs，从而降低对传统工具链的依赖。相应代价是既有存档与骨档无法迁移到 5.0.0 继续使用。",
+      "assessment": {
+        "capability_boundary_change": {
+          "magnitude": "10-20%",
+          "en": "Moving definition processing to Lua at runtime meaningfully changes what can be modified or inspected without rebuilding, but it does not fundamentally change the core game genre or platform reach by itself.",
+          "zh": "将定义处理迁移到 Lua 运行时会明显改变“不重新构建即可修改或观察”的边界，但单凭这一点并不会从根本上改变游戏类型或平台覆盖范围。"
+        },
+        "cost_change": {
+          "magnitude": "0-10%",
+          "en": "Using Lua instead of lex/yacc and auxiliary build utilities may slightly reduce build and maintenance overhead, but the release materials do not provide quantified cost reductions.",
+          "zh": "用 Lua 替代 lex/yacc 与相关构建工具可能会小幅降低构建与维护负担，但现有材料并未给出可量化的成本下降数据。"
+        },
+        "workflow_unlock": {
+          "magnitude": "20-50%",
+          "en": "Runtime Lua processing can streamline workflows for iterating on definitions compared with regenerating artifacts via build-time compilers, although the exact scope of exposed APIs is not fully specified here.",
+          "zh": "运行时 Lua 处理相较于构建期编译器生成工件，可能显著简化定义文件的迭代流程，但此处并未完整说明对外暴露 API 的具体范围。"
+        },
+        "buyer_clarity": {
+          "magnitude": "none",
+          "en": "This is primarily a game release and toolchain change, and the information provided does not define a commercial buyer or procurement context.",
+          "zh": "这主要是游戏版本发布与工具链调整，现有信息并未形成明确的商业买方或采购场景。"
+        },
+        "distribution_integration_entry": {
+          "magnitude": "unclear",
+          "en": "The shift to Lua may ease portability in principle, but the provided sources do not confirm any new packaging, platform targets, or integration pathways for distribution.",
+          "zh": "迁移到 Lua 在原理上可能更利于可移植性，但现有来源并未确认新的打包方式、平台目标或分发集成路径。"
+        },
+        "regulatory_data_supply_window": {
+          "magnitude": "none",
+          "en": "No regulatory, data-access, or compliance-related changes are indicated by the release and discussion provided.",
+          "zh": "从发布内容与讨论中看不出任何与监管、数据获取或合规相关的变化。"
+        }
+      },
+      "tags": [
+        "roguelike",
+        "open-source",
+        "game-development",
+        "programming-languages",
+        "software-release"
       ]
     }
   ]
