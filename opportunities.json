@@ -1,830 +1,340 @@
 {
-  "date": "2026-05-13",
+  "date": "2026-05-14",
   "language": "zh",
   "opportunities": [
     {
-      "id": "hackernews:story:48111765",
-      "title": "DuckDB 发布 Quack 远程客户端-服务器协议",
-      "url": "https://duckdb.org/2026/05/12/quack-remote-protocol",
-      "source_type": "hackernews",
-      "ai_score": 9.0,
+      "id": "telegram:zaihuapd:41365",
+      "title": "小米开源 OneVL 一步式潜空间自动驾驶推理框架",
+      "url": "https://mp.weixin.qq.com/s/7po3r6YtmuXm8Xny1bw61Q",
+      "source_type": "telegram",
+      "ai_score": 8.0,
       "signal_score": 8.0,
-      "signal_reason": "Observable change: DuckDB gains an official remote protocol, materially expanding deployment options (remote access, concurrent usage, and horizontal scaling patterns) and unlocking workflows previously awkward or impossible with purely embedded usage; strong community validation suggests immediate practical adoption potential.",
-      "capability_delta": "DuckDB 现在具备明确的远程客户端-服务器协议，使多个客户端可以通过网络连接到某个 DuckDB 实例，而不再局限于本地进程内访问。这使 DuckDB 在许多部署中从“主要只能嵌入式使用”扩展为可作为共享的远程端点使用。",
+      "signal_reason": "可观察事实包括：模型权重与完整训练/推理代码开源、在多个基准报告SOTA、并将推理延迟压到0.24s（相对自回归VLA约5.4%），这些都构成能力与性能/成本边界的实质变化，且适用人群（自动驾驶与多模态推理研究/工程）明确。",
+      "capability_delta": "其宣称的能力边界变化在于：自动驾驶中的 VLA 式推理可通过“一步并行”的潜空间生成（并可选用 MLP 回归头）替代显式自回归 CoT 解码，同时在多个驾驶基准上仍达到或刷新 SOTA。另一个变化是权重与代码的全面开源，降低了复现与二次研发该类潜空间推理系统的门槛。",
       "assessment": {
         "capability_boundary_change": {
-          "magnitude": "50%+",
-          "en": "A new HTTP-based remote protocol enables client-server connectivity and multi-client access where embedded-only access was previously the default pattern.",
-          "zh": "新增基于 HTTP 的远程协议，使客户端-服务器连接与多客户端访问成为可能，而此前默认主要是嵌入式本地访问模式。"
+          "magnitude": "20-50%",
+          "en": "Moving from explicit autoregressive CoT to one-step latent parallel inference (as claimed) represents a meaningful functional shift in how driving reasoning can be executed under latency constraints.",
+          "zh": "从显式自回归 CoT 迁移到其宣称的一步式潜空间并行推理，在低时延约束下的执行方式上属于较明显的功能性变化。"
         },
         "cost_change": {
-          "magnitude": "unclear",
-          "en": "The sources describe new connectivity and performance claims, but do not provide enough standardized evidence to quantify end-to-end cost changes for typical deployments.",
-          "zh": "资料提到新的连接方式与性能说法，但缺少可用于量化典型部署端到端成本变化的标准化证据。"
+          "magnitude": "50%+",
+          "en": "The post reports 0.24s latency, only 5.4% of an autoregressive VLA baseline, implying a large reduction in inference-time compute/serving cost if comparable hardware and settings are assumed.",
+          "zh": "文中报告 0.24s 的时延、仅为自回归 VLA 的 5.4%，在假设硬件与设置可比的前提下意味着推理侧算力/服务成本可能大幅下降。"
         },
         "workflow_unlock": {
           "magnitude": "20-50%",
-          "en": "Remote access allows common workflows like connecting a UI/inspector or multiple apps to a live DuckDB instance without stopping the writer process.",
-          "zh": "远程访问解锁了常见工作流，例如在不停止写入进程的情况下连接 UI/查看器或让多个应用同时连接同一 DuckDB 实例。"
+          "en": "Open-sourced weights plus training and inference code can materially shorten reproduction and iteration cycles for researchers working on latent reasoning for driving benchmarks.",
+          "zh": "开源权重以及训练与推理代码，能够显著缩短研究者在驾驶基准上复现与迭代潜空间推理方法的流程周期。"
         },
         "buyer_clarity": {
-          "magnitude": "0-10%",
-          "en": "Community reactions show some users still debate DuckDB’s role, although others see Quack as consistent with “SQLite for analytics.”",
-          "zh": "社区反馈显示仍有人讨论 DuckDB 的角色定位，尽管也有人认为 Quack 与“分析领域的 SQLite”一致。"
+          "magnitude": "unclear",
+          "en": "While benchmarks and latency numbers are provided, the news does not specify production deployment constraints, safety cases, or supported data pipelines, so buyer readiness remains unclear.",
+          "zh": "尽管给出了基准成绩与时延数据，但未说明量产部署约束、安全论证或支持的数据流水线，因此“买方就绪度”仍不明确。"
         },
         "distribution_integration_entry": {
           "magnitude": "10-20%",
-          "en": "An HTTP protocol generally lowers integration friction across environments compared to bespoke connectivity, but the sources do not enumerate full client/library availability.",
-          "zh": "HTTP 协议通常比定制连接方式更易在多环境集成，但资料未完整列出所有客户端/库的可用性情况。"
+          "en": "Full open-source release lowers integration friction compared with a paper-only result, but real integration effort depends on code quality and compatibility with existing autonomy stacks (not specified).",
+          "zh": "相较仅论文发布，全面开源会降低集成摩擦，但真实接入成本仍取决于代码质量以及与现有自动驾驶系统栈的兼容性（文中未说明）。"
         },
         "regulatory_data_supply_window": {
           "magnitude": "none",
-          "en": "The announcement concerns a connectivity protocol and does not indicate any regulatory-driven data access or new data supply constraints.",
-          "zh": "该公告聚焦连接协议本身，没有显示与监管驱动的数据获取或新的数据供给约束相关的变化。"
+          "en": "The announcement focuses on model architecture and benchmarks and does not indicate any regulatory change or new data access that would alter compliance or data supply conditions.",
+          "zh": "该发布聚焦模型架构与基准结果，并未涉及监管变化或新的数据获取条件，因此不会直接改变合规或数据供给窗口。"
         }
       },
       "tags": [
-        "DuckDB",
-        "Databases",
-        "Analytics",
-        "Client-Server",
-        "Data Engineering"
-      ]
-    },
-    {
-      "id": "hackernews:story:48111896",
-      "title": "Needle开源26M注意力纯模型用于快速JSON工具调用",
-      "url": "https://github.com/cactus-compute/needle",
-      "source_type": "hackernews",
-      "ai_score": 8.0,
-      "signal_score": 7.0,
-      "signal_reason": "Observable signals include an open-source release with explicit performance claims (6000 tok/s prefill, 1200 tok/s decode on consumer devices) and a small model size (~14MB mentioned in comments), which materially lowers compute/memory requirements for local tool-use pipelines; however, public evidence of accuracy/discriminatory power and standardized benchmarks is not provided in the excerpt and is questioned in comments.",
-      "capability_delta": "能力边界的变化在于：项目声称一个非常小且MIT许可的模型就足以完成单轮JSON工具调用，并在端侧达到较高吞吐，同时采用“无FFN”的注意力纯架构。其是否能在更复杂任务与不同工具集合上泛化，仍取决于第三方验证与任务难度。",
-      "assessment": {
-        "capability_boundary_change": {
-          "magnitude": "20-50%",
-          "en": "A 26M open model purpose-built for tool calling plausibly expands what can run on-device for this narrow task, but the boundary depends on independent evaluations.",
-          "zh": "一个面向工具调用的26M开源模型可能在该狭窄任务上显著拓展端侧可行范围，但边界提升仍依赖独立评测验证。"
-        },
-        "cost_change": {
-          "magnitude": "50%+",
-          "en": "Moving from hundreds-of-millions/billions-parameter models to 26M parameters can materially reduce memory and inference cost for tool calling, assuming comparable accuracy for target tools.",
-          "zh": "将工具调用从数亿/数十亿参数模型转向26M参数，通常会显著降低内存与推理成本，前提是对目标工具保持可比准确率。"
-        },
-        "workflow_unlock": {
-          "magnitude": "20-50%",
-          "en": "If the playground/finetuning flow works as described, it can make shipping per-app/per-tool tool-calling models on commodity hardware more practical than relying on remote LLM calls.",
-          "zh": "如果其playground与微调流程如描述可用，将使在通用硬件上为每个应用/工具交付专用工具调用模型更可行，并减少对远程LLM调用的依赖。"
-        },
-        "buyer_clarity": {
-          "magnitude": "10-20%",
-          "en": "The target buyer/user is fairly clear (developers needing on-device JSON tool calling), but uncertainty remains about robustness across real tool sets and conversational contexts.",
-          "zh": "目标用户相对清晰（需要端侧JSON工具调用的开发者），但在真实工具集合与对话场景下的鲁棒性仍不确定。"
-        },
-        "distribution_integration_entry": {
-          "magnitude": "20-50%",
-          "en": "MIT licensing and published weights lower integration friction, though deploying on varied devices still requires an inference stack and careful evaluation.",
-          "zh": "MIT许可与公开权重降低了集成门槛，但在多样化设备上部署仍需要推理栈支持并进行谨慎评估。"
-        },
-        "regulatory_data_supply_window": {
-          "magnitude": "unclear",
-          "en": "The item does not provide enough information to judge regulatory or data-supply constraints beyond noting synthesized tool-calling data generated via Gemini.",
-          "zh": "除提到通过Gemini生成合成工具调用数据外，材料不足以判断监管或数据供给约束的变化幅度。"
-        }
-      },
-      "tags": [
-        "tool-calling",
-        "on-device-ml",
-        "llm-distillation",
-        "efficient-transformers",
+        "multimodal",
+        "autonomous-driving",
+        "world-models",
+        "latent-reasoning",
         "open-source"
       ]
     },
     {
-      "id": "hackernews:story:48112042",
-      "title": "CERT将发布dnsmasq六个严重漏洞CVE",
-      "url": "https://lists.thekelleys.org.uk/pipermail/dnsmasq-discuss/2026q2/018471.html",
-      "source_type": "hackernews",
-      "ai_score": 8.0,
-      "signal_score": 7.0,
-      "signal_reason": "Observable signal of a meaningful security event: multiple new CVEs for a broadly deployed component typically trigger urgent patching and downstream vendor/distro updates, implying near-term changes in operational/security workflows (updates, mitigations, advisories), though the post itself does not state specific new capabilities or market shifts beyond vulnerability disclosure.",
-      "capability_delta": "这并非新增功能能力，而是边界变化在于dnsmasq的六个弱点被正式纳入CVE跟踪，从而便于协同分级、定位与修补。从运维角度看，这让跨发行版与嵌入式构建的暴露面清点与升级推进更可执行。",
-      "assessment": {
-        "capability_boundary_change": {
-          "magnitude": "0-10%",
-          "en": "Assigning CVEs primarily improves coordination and visibility for remediation rather than adding new technical functionality.",
-          "zh": "发布CVE主要提升修复协同与可见性，而不是带来新的技术功能能力。"
-        },
-        "cost_change": {
-          "magnitude": "unclear",
-          "en": "The net cost impact is unclear because patching effort depends on each vendor’s backporting and release process.",
-          "zh": "总体成本影响不明确，因为修补工作量取决于各厂商的回移植与发布流程。"
-        },
-        "workflow_unlock": {
-          "magnitude": "10-20%",
-          "en": "CVE publication standardizes tracking, making it easier for security teams to drive inventory, scanning, and update workflows.",
-          "zh": "CVE发布使跟踪标准化，从而更便于安全团队推动资产盘点、扫描与更新流程。"
-        },
-        "buyer_clarity": {
-          "magnitude": "0-10%",
-          "en": "The news increases awareness of risk, but without per-CVE technical details here, buyers’ remediation priorities remain only slightly clearer.",
-          "zh": "该消息提升了风险认知，但在缺少逐个CVE技术细节的情况下，采购与修复优先级只会略微更清晰。"
-        },
-        "distribution_integration_entry": {
-          "magnitude": "0-10%",
-          "en": "CVE identifiers slightly lower the friction to integrate fixes into distro/firmware pipelines, but integration still depends on maintainers.",
-          "zh": "CVE编号在一定程度上降低了将修复纳入发行版/固件流水线的摩擦，但集成仍取决于维护者节奏。"
-        },
-        "regulatory_data_supply_window": {
-          "magnitude": "none",
-          "en": "This disclosure does not inherently change regulatory obligations or create a new data-sharing window beyond standard vulnerability handling.",
-          "zh": "该披露本身不会改变监管义务，也不会在常规漏洞处置之外形成新的数据供给窗口。"
-        }
-      },
-      "tags": [
-        "security",
-        "CVE",
-        "dnsmasq",
-        "DNS",
-        "systems"
-      ]
-    },
-    {
-      "id": "telegram:zaihuapd:41342",
-      "title": "Canvas 勒索入侵扰乱美国多校期末周",
-      "url": "https://t.me/zaihuapd/41342",
-      "source_type": "telegram",
-      "ai_score": 8.0,
-      "signal_score": 7.0,
-      "signal_reason": "可观察到的事实包括：平台被迫进入维护模式并对多数用户恢复、出现勒索信息、此前泄露用户名/邮箱/学生ID、以及高校调整考试安排，显示对关键教育基础设施的可用性与数据安全边界发生了实质性冲击并引发组织层面的应急响应。",
-      "capability_delta": "这不是能力提升事件；边界变化在于攻击者能够影响核心 LMS 的可用性，并在多所机构的页面上展示勒索信息。该事件表明当集中式平台被入侵或为调查进入维护模式时，期末周关键教学与考试流程可能被迫中断。",
-      "assessment": {
-        "capability_boundary_change": {
-          "magnitude": "unclear",
-          "en": "The reports indicate a disruptive compromise/defacement, but the specific technical boundary (e.g., exploit path or control level) is not described in the provided material.",
-          "zh": "现有信息仅表明发生了破坏性入侵/篡改，但未说明利用路径或控制程度等关键技术细节，因此边界变化不清楚。"
-        },
-        "cost_change": {
-          "magnitude": "unclear",
-          "en": "The incident likely increases remediation and downtime costs for affected institutions, but no quantified cost information is provided.",
-          "zh": "事件可能抬升修复与停机成本，但材料中未提供可量化的成本数据。"
-        },
-        "workflow_unlock": {
-          "magnitude": "none",
-          "en": "This incident does not unlock new legitimate workflows; it primarily disrupts existing teaching and assessment workflows.",
-          "zh": "该事件未解锁任何新的正当工作流，主要是破坏既有教学与评测流程。"
-        },
-        "buyer_clarity": {
-          "magnitude": "0-10%",
-          "en": "The disruption during finals week modestly clarifies institutional demand for stronger LMS security and continuity planning, though no procurement signals are mentioned.",
-          "zh": "期末周中断在一定程度上强化了学校对 LMS 安全与业务连续性规划的需求，但材料中未出现明确采购信号。"
-        },
-        "distribution_integration_entry": {
-          "magnitude": "none",
-          "en": "No new distribution channel or integration pathway is indicated; the news concerns an incident affecting an existing platform.",
-          "zh": "新闻未体现新的分发渠道或集成入口变化，内容仅涉及既有平台的安全事件。"
-        },
-        "regulatory_data_supply_window": {
-          "magnitude": "unclear",
-          "en": "A student-data exposure is referenced, but there is not enough information here to assess regulatory reporting outcomes or any resulting data-sharing restrictions.",
-          "zh": "材料提及学生数据泄露，但信息不足以判断监管通报进展或由此带来的数据供给/共享限制变化。"
-        }
-      },
-      "tags": [
-        "cybersecurity",
-        "ransomware",
-        "edtech",
-        "data-breach",
-        "incident-response"
-      ]
-    },
-    {
-      "id": "telegram:zaihuapd:41352",
-      "title": "Google 与 SpaceX 磋商“Project Suncatcher”轨道数据中心发射",
-      "url": "https://www.wsj.com/tech/spacex-google-in-talks-to-explore-data-centers-in-orbit-7b7799e2",
-      "source_type": "telegram",
-      "ai_score": 8.0,
-      "signal_score": 7.0,
-      "signal_reason": "可观察事实显示多方在轨计算/数据中心方向出现明确推进信号：Google 有 2027 原型计划且在洽谈发射协议、已与 Planet Labs 合作；同时 SpaceX 将该方向作为 IPO 叙事并披露与 Anthropic 的 300MW 与 22 万块 Nvidia GPU 级别算力供给安排，表明资本与算力基础设施层面存在实质性动作，但仍处于“谈判/计划”阶段且在轨数据中心落地规模与技术可行性未披露。",
-      "capability_delta": "这条消息主要体现的是更具体的商业推进（发射谈判与 2027 年前原型目标），而非已验证的轨道计算技术突破。因此，其能力边界变化更多在于提升“轨道数据中心原型”落地的可信度与时间表清晰度。",
-      "assessment": {
-        "capability_boundary_change": {
-          "magnitude": "0-10%",
-          "en": "The reports add execution signals (launch negotiations and a prototype date) but do not show that orbital data-center capability has been achieved yet.",
-          "zh": "报道提供了执行层面的信号（发射谈判与原型节点），但并未证明轨道数据中心能力已经实现。"
-        },
-        "cost_change": {
-          "magnitude": "unclear",
-          "en": "No pricing, launch-rate, or cost-per-kg/compute figures were provided, so cost impact cannot be quantified from the available information.",
-          "zh": "信息中未给出报价、发射费率或单位质量/算力成本数据，因此无法据此量化成本影响。"
-        },
-        "workflow_unlock": {
-          "magnitude": "0-10%",
-          "en": "A stated prototype timeline may prompt early integration planning, but there is no confirmed new workflow or deployed system described.",
-          "zh": "原型时间表可能推动早期对接规划，但并未披露已落地系统或确定的新工作流。"
-        },
-        "buyer_clarity": {
-          "magnitude": "0-10%",
-          "en": "The involvement of Google and SpaceX clarifies that large incumbents are exploring this direction, but specific buyers and use cases are not detailed.",
-          "zh": "Google 与 SpaceX 的参与表明大厂在探索该方向，但具体买方与使用场景仍未被明确描述。"
-        },
-        "distribution_integration_entry": {
-          "magnitude": "unclear",
-          "en": "The news mentions launch talks but does not describe interfaces, standards, or partner programs that would lower integration barriers.",
-          "zh": "消息仅提到发射磋商，未说明接口、标准或合作计划等会降低集成门槛的要素。"
-        },
-        "regulatory_data_supply_window": {
-          "magnitude": "unclear",
-          "en": "No regulatory approvals, spectrum/launch licensing changes, or data policy details were included, so any window is not assessable here.",
-          "zh": "信息未涉及监管审批、频谱/发射许可变化或数据政策细节，因此无法评估相关窗口期。"
-        }
-      },
-      "tags": [
-        "SpaceX",
-        "Google",
-        "Orbital Data Centers",
-        "Satellite Computing",
-        "AI Infrastructure"
-      ]
-    },
-    {
-      "id": "rss:simonwillison.net_atom_everything_:4282595854836192831",
-      "title": "llm 0.32a2 将推理型 OpenAI 模型切换到 /v1/responses",
-      "url": "https://simonwillison.net/2026/May/12/llm/#atom-everything",
-      "source_type": "rss",
-      "ai_score": 7.0,
-      "signal_score": 7.0,
-      "signal_reason": "Observable workflow and integration change: the tool now targets OpenAI's /v1/responses endpoint (a material API shift for reasoning/tool-calling models) and exposes reasoning summaries with new flags, which can affect debugging/observability and compatibility for users relying on the CLI.",
-      "capability_delta": "llm 用户现在可通过 /v1/responses 访问 GPT-5 级推理模型的“工具调用交错推理”行为，并可选择在 CLI 中直接查看模型输出的推理摘要 token。这使得在命令行中运行并检查多工具、多步骤的代理式提示更容易。",
-      "assessment": {
-        "capability_boundary_change": {
-          "magnitude": "10-20%",
-          "en": "Switching to /v1/responses enables interleaved tool-call reasoning features that are not described as available via /v1/chat/completions for these model classes.",
-          "zh": "切换到 /v1/responses 使得工具调用之间的交错推理能力可用，而这些能力并未被描述为在 /v1/chat/completions 下同样可用。"
-        },
-        "cost_change": {
-          "magnitude": "unclear",
-          "en": "The release notes describe API and UX changes but do not provide evidence of token, latency, or pricing differences.",
-          "zh": "发布说明强调接口与体验变化，但未给出 token、延迟或定价差异的证据，因此成本影响不明确。"
-        },
-        "workflow_unlock": {
-          "magnitude": "20-50%",
-          "en": "Interleaved reasoning across tool calls plus visible reasoning summaries in the CLI can materially simplify debugging and iteration for tool-using prompts.",
-          "zh": "工具调用间的交错推理加上 CLI 可见的推理摘要，可能显著简化工具型提示的调试与迭代流程。"
-        },
-        "buyer_clarity": {
-          "magnitude": "0-10%",
-          "en": "The change is clearly valuable to llm/OpenAI API users, but it does not introduce a new end-user category or a clearly new procurement driver.",
-          "zh": "该变化对 llm/OpenAI API 用户的价值较明确，但并未引入新的终端用户类别或清晰的新采购驱动因素。"
-        },
-        "distribution_integration_entry": {
-          "magnitude": "0-10%",
-          "en": "This is primarily an internal integration update within an existing CLI, not a new distribution channel or platform integration surface.",
-          "zh": "这主要是既有 CLI 工具内部的集成更新，而非新的分发渠道或平台级集成入口。"
-        },
-        "regulatory_data_supply_window": {
-          "magnitude": "none",
-          "en": "The described release does not indicate any regulatory, compliance, or data-supply changes.",
-          "zh": "该发布内容未体现监管、合规或数据供给方面的变化。"
-        }
-      },
-      "tags": [
-        "llm-tools",
-        "openai-api",
-        "developer-tools",
-        "tool-calling",
-        "cli"
-      ]
-    },
-    {
-      "id": "telegram:zaihuapd:41355",
-      "title": "三星工会称集会致韩国本土芯片夜班产出骤降",
-      "url": "https://t.me/zaihuapd/41355",
-      "source_type": "telegram",
-      "ai_score": 7.0,
-      "signal_score": 7.0,
-      "signal_reason": "可观测事实显示产能在一个班次内已发生大幅波动，且有明确时间点与持续周期的进一步停工风险（5月21日起18天），这类事件可能实质影响供给、交期与价格预期；但目前仅为单一渠道披露，实际影响范围与持续性仍待更多确认。",
-      "capability_delta": "这不是技术能力变化，而是一次被报道的运营产能冲击，短期削弱了三星在受影响韩国班次上的代工与存储供给能力。若后续18天全面罢工落地，能力边界的变化将体现为有效产能下降，并可能降低部分客户的交付可靠性。",
-      "assessment": {
-        "capability_boundary_change": {
-          "magnitude": "unclear",
-          "en": "A one-shift output drop is reported, but the duration, fab scope, and whether an 18-day strike will occur are not confirmed in the provided materials.",
-          "zh": "虽然报道提到单个夜班减产，但持续时间、涉及工厂范围以及18天罢工是否发生均未在材料中得到确认。"
-        },
-        "cost_change": {
-          "magnitude": "unclear",
-          "en": "No direct pricing or cost data is provided, and any wafer or memory price impact would depend on whether disruption persists.",
-          "zh": "材料未提供直接的价格或成本数据，晶圆或存储价格是否受影响取决于扰动是否持续。"
-        },
-        "workflow_unlock": {
-          "magnitude": "none",
-          "en": "The news describes a labor dispute and production impact rather than enabling a new workflow or process for customers.",
-          "zh": "该新闻描述的是劳资纠纷与产出影响，并未带来客户可用的新流程或新作业方式。"
-        },
-        "buyer_clarity": {
-          "magnitude": "0-10%",
-          "en": "The union’s stated strike date and the reported one-shift numbers slightly increase customers’ visibility into near-term risk, but key specifics remain unclear.",
-          "zh": "工会给出的罢工日期与单班减产数据让客户对短期风险的可见度略有提高，但关键信息仍不清晰。"
-        },
-        "distribution_integration_entry": {
-          "magnitude": "none",
-          "en": "There is no indication of new distribution channels, integration paths, or ecosystem entry points in the report.",
-          "zh": "报道中没有出现新的分销渠道、集成路径或生态进入机会的信息。"
-        },
-        "regulatory_data_supply_window": {
-          "magnitude": "none",
-          "en": "The item concerns labor negotiations and production output, with no regulatory changes or new data-supply windows mentioned.",
-          "zh": "该事件聚焦劳资谈判与产出情况，未提及监管变化或新的数据供给窗口。"
-        }
-      },
-      "tags": [
-        "Semiconductors",
-        "Supply Chain",
-        "Samsung",
-        "Labor Dispute",
-        "Foundry/Memory"
-      ]
-    },
-    {
-      "id": "hackernews:story:48115127",
-      "title": "OrcaSlicer 分支恢复完整 BambuNetwork 远程打印",
-      "url": "https://github.com/FULU-Foundation/OrcaSlicer-bambulab",
-      "source_type": "hackernews",
-      "ai_score": 7.0,
-      "signal_score": 6.0,
-      "signal_reason": "Observable signal is a vendor policy/firmware change that materially affects workflows (local/LAN printing vs cloud/auth) and has prompted a highly engaged public response plus an active alternative codebase, but no clear evidence here of broad market adoption shifts or measurable cost/latency changes beyond the reported access/control constraints.",
-      "capability_delta": "如果该分支的声明属实，它让使用第三方 OrcaSlicer 的用户重新获得通过 BambuNetwork 进行完整远程（互联网）打印及相关功能的能力，而不再被限制为仅 LAN 连接。这个边界变化更偏向“恢复可用性”而非新发明：把近期因平台/固件策略而受限的远程工作流重新打开。",
-      "assessment": {
-        "capability_boundary_change": {
-          "magnitude": "20-50%",
-          "en": "Restoring internet-based BambuNetwork functionality (vs LAN-only) is a meaningful expansion of what third-party slicer users can do remotely if it works as described.",
-          "zh": "若其如描述般可用，恢复基于互联网的 BambuNetwork（相对仅 LAN）会显著扩大第三方切片软件用户的远程可操作范围。"
-        },
-        "cost_change": {
-          "magnitude": "unclear",
-          "en": "The sources do not quantify any change in software, cloud, or operational costs from using this fork versus official tooling.",
-          "zh": "现有来源没有量化使用该分支相较官方工具在软件、云服务或运维成本上的变化。"
-        },
-        "workflow_unlock": {
-          "magnitude": "20-50%",
-          "en": "For users dependent on remote printing/monitoring, bypassing LAN-only constraints can materially simplify cross-network workflows compared with LAN-restricted operation.",
-          "zh": "对依赖远程打印/监控的用户而言，绕开仅 LAN 限制可以在跨网络使用上明显简化工作流。"
-        },
-        "buyer_clarity": {
-          "magnitude": "10-20%",
-          "en": "The fork’s goal is clearly stated, but uncertainty remains around long-term compatibility with firmware authorization policies and vendor responses.",
-          "zh": "该分支的目标表述清晰，但其与固件授权策略的长期兼容性以及厂商后续动作仍存在不确定性。"
-        },
-        "distribution_integration_entry": {
-          "magnitude": "0-10%",
-          "en": "This is a GitHub-hosted fork, so distribution is straightforward for technical users, but deeper ecosystem integration still depends on Bambu’s protocols and policy stability.",
-          "zh": "作为托管在 GitHub 的分支，技术用户获取与分发较容易，但更深层的生态集成仍取决于 Bambu 的协议与政策稳定性。"
-        },
-        "regulatory_data_supply_window": {
-          "magnitude": "none",
-          "en": "The provided sources do not indicate any regulatory change or new data-access window tied to this fork.",
-          "zh": "现有来源未显示该分支带来任何监管变化或新的数据获取窗口。"
-        }
-      },
-      "tags": [
-        "3d-printing",
-        "open-source",
-        "firmware",
-        "cloud-authentication",
-        "security-privacy"
-      ]
-    },
-    {
-      "id": "hackernews:story:48109970",
-      "title": "Obsidian 重做社区站点与插件审核流程",
-      "url": "https://obsidian.md/blog/future-of-plugins/",
-      "source_type": "hackernews",
-      "ai_score": 7.0,
-      "signal_score": 6.0,
-      "signal_reason": "Observable change is a new, year-in-the-making Community site and review system that reduces manual-review constraints which previously made new plugin submission effectively difficult; strong community attention indicates meaningful ecosystem impact, though security effectiveness remains debated rather than proven.",
-      "capability_delta": "主要边界变化发生在运营层面：借助新的 Community 站点与审核系统，插件/主题的提交与持续治理可以在更高规模下运转。就已提供的信息而言，没有明确证据表明引入了新的运行时沙箱或权限模型，从而实质性改变插件安全能力边界。",
-      "assessment": {
-        "capability_boundary_change": {
-          "magnitude": "10-20%",
-          "en": "A more scalable review and governance pipeline expands the practical ability to publish and maintain community plugins, even if plugin runtime privileges are unchanged.",
-          "zh": "更可扩展的审核与治理流水线提升了社区插件发布与维护的实际可行性，即使插件运行时权限未改变。"
-        },
-        "cost_change": {
-          "magnitude": "unclear",
-          "en": "The announcement emphasizes throughput and process changes but does not quantify time or labor savings per submission.",
-          "zh": "公告强调的是吞吐与流程变化，但未量化单次提交所节省的时间或人力成本。"
-        },
-        "workflow_unlock": {
-          "magnitude": "50%+",
-          "en": "Community feedback indicates new plugin submissions were effectively blocked by manual review, so a revamped pipeline materially unlocks developer publishing workflow.",
-          "zh": "社区反馈称人工审核曾导致新插件提交几乎被阻塞，因此重做流水线会显著解锁开发者的发布工作流。"
-        },
-        "buyer_clarity": {
-          "magnitude": "0-10%",
-          "en": "The change is mainly platform governance; it does not substantially clarify purchasing decisions for end users beyond surfacing guidelines and listings.",
-          "zh": "这次变化主要是平台治理层面，除更清晰展示指南与列表外，并未显著提升终端用户的购买/选用决策清晰度。"
-        },
-        "distribution_integration_entry": {
-          "magnitude": "20-50%",
-          "en": "A new Community site and developer dashboard can reduce friction for listing and distributing plugins compared with a purely manual or PR-driven bottleneck.",
-          "zh": "新的 Community 站点与开发者仪表盘可能相较于纯人工或被 PR 审核卡住的方式降低上架与分发摩擦。"
-        },
-        "regulatory_data_supply_window": {
-          "magnitude": "none",
-          "en": "No regulatory, policy, or data-supply change is described beyond Obsidian’s internal review and governance process.",
-          "zh": "除 Obsidian 内部审核与治理流程外，未描述任何监管、政策或数据供给层面的变化。"
-        }
-      },
-      "tags": [
-        "obsidian",
-        "plugin-ecosystem",
-        "software-security",
-        "developer-tools",
-        "platform-governance"
-      ]
-    },
-    {
-      "id": "telegram:zaihuapd:41343",
-      "title": "市场监管总局附条件批准腾讯收购喜马拉雅股权",
-      "url": "https://www.samr.gov.cn/xw/zj/art/2026/art_c1b14339020e464fb46aa655a720ba48.html",
-      "source_type": "telegram",
-      "ai_score": 7.0,
-      "signal_score": 6.0,
-      "signal_reason": "可观察到的事实是并购获批但附带可执行的行为性约束（限价/服务、不降免费与热门内容比例、禁止/解除独家版权、禁止对车厂捆绑与排他、保障主播多平台），这会实质改变交易结构与平台运营边界，但未披露具体量化指标或立即可验证的成本/能力跃迁。",
-      "capability_delta": "该并购在法律层面获得通过，但并对集中后实体的经营行为设定了明确边界：涨价、扩大独家、限制主播多平台、以及车载渠道捆绑等行为被明确限制。由此改变的是合并后在在线音频领域进行变现与分发锁定的可操作空间。",
-      "assessment": {
-        "capability_boundary_change": {
-          "magnitude": "10-20%",
-          "en": "Approval enables closing the transaction, but the five commitments materially restrict exclusivity, pricing, creator multi-homing, and car-channel tying compared with an unconditional merger.",
-          "zh": "批准使交易可落地，但五项承诺相较无条件并购对独家、定价、主播多平台与车载渠道捆绑等行为形成实质性约束。"
-        },
-        "cost_change": {
-          "magnitude": "unclear",
-          "en": "The published conditions focus on conduct (pricing, content ratios, exclusivity, tying) and do not quantify compliance costs or savings.",
-          "zh": "公开条件主要针对行为约束（价格、内容比例、独家与捆绑），未量化合规成本或节省幅度。"
-        },
-        "workflow_unlock": {
-          "magnitude": "0-10%",
-          "en": "For creators and car OEMs, the commitments modestly formalize the ability to work with multiple platforms without being restricted by the merged entity.",
-          "zh": "对主播与汽车厂商而言，承诺在一定程度上固化了多平台合作与采购不受限制的操作路径。"
-        },
-        "buyer_clarity": {
-          "magnitude": "10-20%",
-          "en": "The five commitments clarify what conduct is prohibited or required for the parties, improving predictability for counterparties such as rights holders, creators, and OEMs.",
-          "zh": "五项承诺明确了相关方的禁止性与义务性行为，提高了版权方、主播与汽车厂商等交易相对方的可预期性。"
-        },
-        "distribution_integration_entry": {
-          "magnitude": "0-10%",
-          "en": "By limiting exclusivity and tying in car channels, the decision slightly lowers lock-in risk for competing audio services but does not create open-access obligations.",
-          "zh": "对车载渠道捆绑与独家版权的限制在一定程度上降低了竞品被锁死的风险，但并未形成开放接入义务。"
-        },
-        "regulatory_data_supply_window": {
-          "magnitude": "none",
-          "en": "The announcement describes behavioral remedies but does not introduce new data-sharing, reporting, or public data-release requirements beyond compliance with commitments.",
-          "zh": "公告主要是行为性救济安排，未新增数据共享、定期披露或对外数据发布等要求，除了承诺履行本身。"
-        }
-      },
-      "tags": [
-        "反垄断监管",
-        "并购审查",
-        "在线音频",
-        "数字版权",
-        "平台竞争"
-      ]
-    },
-    {
-      "id": "telegram:zaihuapd:41347",
-      "title": "Anthropic 拒绝中国智库访问最新 AI 模型",
-      "url": "https://www.nytimes.com/2026/05/12/us/politics/china-ai-anthropic-openai-mythos-chatgpt.html",
-      "source_type": "telegram",
-      "ai_score": 7.0,
-      "signal_score": 6.0,
-      "signal_reason": "可观察到的事实是：顶级模型提供方明确拒绝来自中国智库的访问请求，且美国国家安全委员会对此警惕，表明跨境访问门槛与审查压力可能上升；但未披露具体政策变更、产品/定价调整或可量化的能力与成本边界变化。",
-      "capability_delta": "报道未披露新的技术能力提升；主要变化是 Anthropic 据称针对与中国相关的请求拒绝其最新模型访问。因此边界变化更多体现在政策与可得性层面，而非模型性能突破。",
-      "assessment": {
-        "capability_boundary_change": {
-          "magnitude": "0-10%",
-          "en": "The event modestly shifts the effective access boundary by signaling stricter availability decisions for certain China-linked requests, without changing model capabilities themselves.",
-          "zh": "该事件在不改变模型能力本身的情况下，释放出对部分涉华请求更严格的可得性信号，从而对实际访问边界产生小幅影响。"
-        },
-        "cost_change": {
-          "magnitude": "none",
-          "en": "The report does not indicate any pricing or compute-cost change for Anthropic’s models.",
-          "zh": "报道未提及 Anthropic 模型的定价或算力成本发生变化。"
-        },
-        "workflow_unlock": {
-          "magnitude": "none",
-          "en": "No new workflow is enabled; the described outcome is a denied access request rather than a new integration path.",
-          "zh": "报道并未带来新的工作流解锁；描述的结果是访问被拒而非新增集成路径。"
-        },
-        "buyer_clarity": {
-          "magnitude": "0-10%",
-          "en": "It slightly increases clarity that frontier-model vendors may treat China-linked access as a national-security-sensitive decision area.",
-          "zh": "它在一定程度上提高了外界对前沿模型厂商可能将涉华访问视为国家安全敏感决策领域的认知清晰度。"
-        },
-        "distribution_integration_entry": {
-          "magnitude": "none",
-          "en": "There is no announced distribution partnership, API change, or platform integration affecting go-to-market access.",
-          "zh": "报道未宣布任何分发合作、API 变更或平台集成，从而未改变进入与分发方式。"
-        },
-        "regulatory_data_supply_window": {
-          "magnitude": "unclear",
-          "en": "While the involvement of the National Security Council suggests regulatory sensitivity, the report does not describe any new rule, restriction, or enforcement action.",
-          "zh": "尽管国家安全委员会的关注暗示监管敏感性上升，但报道未说明出现新的规则、限制或执法行动，因此影响不明确。"
-        }
-      },
-      "tags": [
-        "AI政策与治理",
-        "地缘政治",
-        "模型访问与出口管制",
-        "Anthropic",
-        "国家安全"
-      ]
-    },
-    {
-      "id": "telegram:zaihuapd:41348",
-      "title": "美国商务部网站删除AI安全测试协议细节",
-      "url": "https://www.reuters.com/legal/litigation/microsoft-google-xai-security-test-details-deleted-us-government-website-2026-05-11/",
-      "source_type": "telegram",
-      "ai_score": 7.0,
-      "signal_score": 6.0,
-      "signal_reason": "可观察到的事实是政府网站上的协议细节被撤下并改跳转至相关机构网站，表明信息披露/访问路径发生变化；但未见能力、成本、准入或合规要求的明确变更证据，且原因与后续影响尚不确定。}",
-      "capability_delta": "目前没有披露新的技术方法或能力提升；可观察到的变化是关于测试协议的公开细节减少。对实际测试能力或执行力度是否产生影响，现有信息无法判断。",
-      "assessment": {
-        "capability_boundary_change": {
-          "magnitude": "none",
-          "en": "The news describes removal of web-page details, not a new testing capability or standard that expands what is technically possible.",
-          "zh": "该消息描述的是网页信息被移除，而非新增测试能力或标准从而扩展技术边界。"
-        },
-        "cost_change": {
-          "magnitude": "unclear",
-          "en": "No pricing, funding, or operational cost information is provided about the testing program or affected parties.",
-          "zh": "报道未提供该测试项目或相关方的定价、经费或运营成本信息，因此无法判断成本变化。"
-        },
-        "workflow_unlock": {
-          "magnitude": "none",
-          "en": "No new workflow is introduced; if anything, the deletion may reduce clarity about an existing pre-deployment testing workflow.",
-          "zh": "消息未引入新的工作流程；相反，信息删除可能降低对既有部署前测试流程的清晰度。"
-        },
-        "buyer_clarity": {
-          "magnitude": "0-10%",
-          "en": "Public deletion of details slightly reduces clarity for stakeholders trying to understand how the government-company testing commitments are structured.",
-          "zh": "公开细节被删除会在一定程度上降低外界理解政府与企业测试承诺结构的清晰度，但幅度预计有限。"
-        },
-        "distribution_integration_entry": {
-          "magnitude": "none",
-          "en": "There is no announced change to distribution channels, APIs, or integration requirements—only a change in publicly visible information.",
-          "zh": "未宣布对分发渠道、API或集成要求的改变，只有公开可见信息发生变化。"
-        },
-        "regulatory_data_supply_window": {
-          "magnitude": "unclear",
-          "en": "The removal could signal a transparency shift, but there is insufficient evidence that regulatory requirements or data-sharing obligations changed.",
-          "zh": "信息移除可能暗示透明度变化，但缺乏证据表明监管要求或数据供给义务已改变。"
-        }
-      },
-      "tags": [
-        "AI安全",
-        "监管与政策",
-        "模型评测",
-        "美国政府",
-        "科技公司"
-      ]
-    },
-    {
-      "id": "telegram:zaihuapd:41350",
-      "title": "一季度央行动用人民币互换余额创两年新高",
-      "url": "https://www.bloomberg.com/news/articles/2026-05-12/central-banks-tap-most-yuan-swap-lines-with-pboc-in-two-years",
-      "source_type": "telegram",
-      "ai_score": 7.0,
-      "signal_score": 6.0,
-      "signal_reason": "可观察到的客观变化包括：互换余额达到两年高位且单季增量为 2023 年以来最大、人民币国际支付占比升至 3.10%（第5）、CIPS 单日处理量达 1.22 万亿元，表明跨境人民币流动性与结算使用强度出现阶段性上行；但这更多是趋势信号，未体现明确的成本/准入/能力边界被显著改变。",
-      "capability_delta": "能力边界的变化在于，一季度通过既有互换机制实际获得的人民币流动性规模更高，显示该“流动性后备”被更频繁地动用。它本身未必扩大互换网络的合同额度，但提高了人民币在跨境融资与结算中的实际可用性与使用强度。",
-      "assessment": {
-        "capability_boundary_change": {
-          "magnitude": "0-10%",
-          "en": "More swap-line drawdowns indicate a modest increase in effective access to RMB liquidity, while the underlying mechanism already existed.",
-          "zh": "互换余额上升表明人民币流动性“实际可得性”小幅增强，但机制本身此前已存在。"
-        },
-        "cost_change": {
-          "magnitude": "unclear",
-          "en": "The report provides balances and activity indicators but does not quantify funding or transaction cost changes versus alternatives.",
-          "zh": "报道给出余额与活跃度指标，但未量化与替代渠道相比的资金成本或交易成本变化。"
-        },
-        "workflow_unlock": {
-          "magnitude": "0-10%",
-          "en": "Higher utilization can marginally ease operational reliance on third-currency funding for some cross-border settlement workflows, but no new workflow is explicitly introduced.",
-          "zh": "动用上升可能让部分跨境结算对第三方货币融资的依赖略有缓解，但并未明确出现全新的流程解锁。"
-        },
-        "buyer_clarity": {
-          "magnitude": "0-10%",
-          "en": "The data helps clarify that some central banks are actively using RMB swap facilities, but it does not specify which users or use-cases in detail.",
-          "zh": "数据表明确有部分央行在使用人民币互换工具，但未细化到具体使用方与场景，因此清晰度仅小幅提升。"
-        },
-        "distribution_integration_entry": {
-          "magnitude": "none",
-          "en": "No new distribution channel, technical integration, or access program is described beyond existing swap lines and payment rails.",
-          "zh": "报道未提及新增分发渠道、技术接入或准入机制变化，仍基于既有互换与支付体系。"
-        },
-        "regulatory_data_supply_window": {
-          "magnitude": "none",
-          "en": "There is no stated regulatory change or new data-release regime; the item is an observation of usage and activity metrics.",
-          "zh": "该消息未包含监管规则变化或新的数据供给窗口，仅是对使用规模与活跃度的观察。"
-        }
-      },
-      "tags": [
-        "宏观金融",
-        "人民币国际化",
-        "央行互换",
-        "跨境支付",
-        "地缘政治"
-      ]
-    },
-    {
-      "id": "telegram:zaihuapd:41353",
-      "title": "爆料：Googlebook将取代Chromebook并深度整合Gemini",
-      "url": "https://www.techpowerup.com/348969/google-prepares-googlebook-as-a-chromebook-successor-powered-by-gemini",
-      "source_type": "telegram",
-      "ai_score": 7.0,
-      "signal_score": 6.0,
-      "signal_reason": "可观察到的信号是：若品牌与平台从Chromebook转向Googlebook、并引入新的AI交互功能（Magic Pointer、Cast My Apps）及潜在OS融合，将影响设备形态与生态整合路径；但目前缺乏官方确认、规格/发布时间/可用性等硬指标，因此商业与市场条件变化尚不确定。",
-      "capability_delta": "如果报道中的Aluminium OS方向属实，其能力边界变化在于：基于Android 16的桌面环境可能在Chromebook级硬件上运行，同时仍支持Chrome扩展，并叠加更紧密的Gemini交互。由于目前仍以爆料与泄露为主、尚未官方确认发布，面向用户与开发者的实际能力变化仍不确定。",
-      "assessment": {
-        "capability_boundary_change": {
-          "magnitude": "unclear",
-          "en": "Leaks suggest an Android 16 desktop with Chrome extension support and deeper Gemini integration, but availability and final behavior are unconfirmed.",
-          "zh": "泄露信息暗示Android 16桌面形态可同时支持Chrome扩展并更深整合Gemini，但是否落地及最终表现尚未确认。"
-        },
-        "cost_change": {
-          "magnitude": "unclear",
-          "en": "The reports do not provide pricing, BOM, licensing, or compute requirements that would indicate whether devices become cheaper or more expensive.",
-          "zh": "相关报道未提供定价、BOM、授权或算力需求信息，因此无法判断成本会下降还是上升。"
-        },
-        "workflow_unlock": {
-          "magnitude": "10-20%",
-          "en": "Features like “Cast My Apps” and “Magic Pointer” imply modest new cross-device and context-aware workflows if they ship broadly.",
-          "zh": "“Cast My Apps”“Magic Pointer”等功能若能广泛落地，可能带来一定程度的跨设备与上下文工作流增量。"
-        },
-        "buyer_clarity": {
-          "magnitude": "none",
-          "en": "Because this is largely pre-announcement reporting, buyer-facing positioning and procurement guidance are not yet clear.",
-          "zh": "由于目前主要是发布前爆料，面向购买者的定位与采购指引尚不清晰。"
-        },
-        "distribution_integration_entry": {
-          "magnitude": "0-10%",
-          "en": "If Chrome extensions remain supported on an Android-based desktop, existing extension distribution could carry over with limited changes, but that is not confirmed.",
-          "zh": "若Android桌面仍支持Chrome扩展，既有扩展分发可能以较小改动延续，但这一点尚未被确认。"
-        },
-        "regulatory_data_supply_window": {
-          "magnitude": "none",
-          "en": "The provided information does not indicate new regulatory requirements or data-access changes tied to Googlebook or Aluminium OS.",
-          "zh": "现有信息未显示Googlebook或Aluminium OS会带来新的监管要求或数据获取变化。"
-        }
-      },
-      "tags": [
-        "Google",
-        "Chromebook",
-        "Gemini",
-        "Android",
-        "ChromeOS"
-      ]
-    },
-    {
       "id": "telegram:zaihuapd:41354",
-      "title": "Google 发布 Gemini Intelligence，今夏先到 Pixel 与三星旗舰",
+      "title": "Google 发布 Gemini Intelligence，今夏先到 Pixel 与三星新机",
       "url": "https://9to5google.com/2026/05/12/gemini-intelligence-announcement/",
       "source_type": "telegram",
       "ai_score": 7.0,
-      "signal_score": 6.0,
-      "signal_reason": "可观察到的市场/能力变化是：明确的发布与时间表（今夏推送、年内扩展多终端），并包含系统级能力（屏幕上下文任务自动化、自动填充、语音输入、生成小部件等）；但尚未披露覆盖机型范围、API/开发者接入方式、性能/成本指标或可用性细节，因此客观信号中等。",
-      "capability_delta": "若按描述落地，Gemini Intelligence 将在受支持的高端 Android 设备上把更多 AI 交互扩展到核心系统工作流（界面、自动化、键盘输入、小部件）中。但现有信息未说明模型是在端侧还是云端执行、性能表现以及地区可用性，因此能力边界的实际变化仍有部分不明确。",
+      "signal_score": 7.0,
+      "signal_reason": "可观察到的事实包括：新能力将通过系统更新在特定主流设备上线，并计划扩展到多类终端；涉及屏幕上下文任务自动化、语音输入与自动填充/小部件生成等系统入口，意味着可用能力与分发触点将随上线时间表发生实质变化，但尚未披露覆盖范围、API开放度、性能/成本等关键量化指标。",
+      "capability_delta": "能力边界的变化在于：Gemini 品牌的一组系统集成能力（界面、语音输入、自动填充、小部件生成与基于屏幕的自动化）将按明确时间表下发到特定旗舰 Android 设备。但由于缺少技术细节，目前无法确认这些能力在实际运行中主要是端侧、端云混合还是以云端为主。",
       "assessment": {
         "capability_boundary_change": {
           "magnitude": "unclear",
-          "en": "The announcement suggests broader system-level AI capabilities, but the lack of technical and rollout specifics makes the net new capability boundary difficult to quantify.",
-          "zh": "公告暗示系统级 AI 能力范围扩大，但由于缺少技术与推送细节，新增能力边界难以量化评估。"
+          "en": "The feature set implies a broader system-assistant surface area, but the lack of model/runtime specifics makes the net capability increase hard to quantify objectively.",
+          "zh": "该功能组合暗示系统级助手能力覆盖面扩大，但由于缺少模型与运行方式细节，整体能力提升幅度难以客观量化。"
         },
         "cost_change": {
           "magnitude": "unclear",
-          "en": "No pricing, compute locality, or subscription implications are provided, so cost impact for users or developers cannot be inferred.",
-          "zh": "未提供定价、算力执行位置或订阅影响信息，因此无法推断用户或开发者的成本变化。"
+          "en": "No pricing, compute placement (on-device vs cloud), or usage limits were provided, so end-user or developer cost impact cannot be inferred.",
+          "zh": "消息未提供定价、算力部署位置（端侧或云端）或使用限额，因此无法推断对用户或开发者的成本影响。"
         },
         "workflow_unlock": {
           "magnitude": "20-50%",
-          "en": "Features like on-screen context automation, improved voice dictation, and widget generation plausibly unlock new end-user workflows on supported devices, even though exact behavior is not detailed.",
-          "zh": "屏幕上下文自动化、增强语音输入与小部件生成等能力有望在受支持设备上解锁新的用户工作流，但具体行为细节仍未披露。"
+          "en": "Screen-context automation, improved natural speech dictation, and description-to-widget creation could reduce steps for common phone workflows if delivered as described.",
+          "zh": "若按描述落地，基于屏幕上下文的自动化、更自然的语音输入以及“描述生成小部件”可能减少常见手机流程的操作步骤。"
         },
         "buyer_clarity": {
           "magnitude": "0-10%",
-          "en": "Target devices and a summer timeline are stated, but precise models, regions, and feature availability are not fully specified in the provided summary.",
-          "zh": "已给出首批设备范围与今夏时间点，但在所给摘要中未完全明确具体机型、地区与各功能可用性。"
+          "en": "The announcement names initial device families and broad form-factor expansion, but does not clearly define exact supported models, requirements, or availability by region.",
+          "zh": "公告明确了首发设备家族与后续扩展形态，但未清晰给出具体支持机型、前置条件或分地区可用性。"
         },
         "distribution_integration_entry": {
           "magnitude": "10-20%",
-          "en": "A Pixel and Samsung-first rollout implies tighter OEM integration pathways, but there is no explicit developer integration surface described here.",
-          "zh": "Pixel 与三星先行意味着更深的 OEM 集成路径正在形成，但此处未明确对开发者开放的集成入口。"
+          "en": "System-level rollout on Pixel and Samsung flagships suggests easier distribution for included experiences, but third-party integration pathways are not described.",
+          "zh": "在 Pixel 与三星旗舰机进行系统级推送意味着相关体验的分发更顺畅，但未说明第三方接入与集成路径。"
         },
         "regulatory_data_supply_window": {
-          "magnitude": "none",
-          "en": "The provided information does not mention regulatory changes, data access, or policy shifts that would alter compliance or data supply conditions.",
-          "zh": "现有信息未涉及监管变化、数据获取或政策调整，因此看不到会改变合规或数据供给条件的窗口。"
+          "magnitude": "unclear",
+          "en": "Because data handling, on-device processing, and privacy guarantees were not specified, regulatory or data-supply implications cannot be assessed from the provided information.",
+          "zh": "由于未说明数据处理方式、端侧处理占比与隐私承诺，无法据此评估监管或数据供给层面的影响。"
         }
       },
       "tags": [
         "Android",
         "Gemini",
         "Mobile AI",
-        "Google Pixel",
-        "Samsung Galaxy"
+        "On-device AI",
+        "Google"
+      ]
+    },
+    {
+      "id": "telegram:zaihuapd:41355",
+      "title": "三星工会称加薪抗议致韩国芯片减产并警告升级罢工",
+      "url": "https://t.me/zaihuapd/41355",
+      "source_type": "telegram",
+      "ai_score": 7.0,
+      "signal_score": 7.0,
+      "signal_reason": "可观察到的量化产出下滑与明确的潜在罢工时间表，意味着短期供给与交付风险上升、市场预期可能变化；但尚未看到公司/监管层面的正式确认与持续性影响数据。",
+      "capability_delta": "此次并非技术能力提升，而是运营可靠性的边界发生变化：据称三星韩国芯片产出短期显著下滑，且若罢工发生将带来进一步中断风险。这会降低相关代工与存储产线对客户的供给可预测性。",
+      "assessment": {
+        "capability_boundary_change": {
+          "magnitude": "unclear",
+          "en": "The report indicates a one-shift output drop and a possible May 21 strike, but the longer-term, sustained capacity impact cannot be quantified from the provided sources.",
+          "zh": "信息显示单个夜班产出下滑并存在5月21日罢工风险，但从现有材料无法量化对长期、持续产能边界的影响。"
+        },
+        "cost_change": {
+          "magnitude": "unclear",
+          "en": "Potential cost effects (e.g., expedited logistics or price moves) are plausible under supply disruption, but no cost or pricing data is provided.",
+          "zh": "供应扰动可能带来加急物流或价格波动等成本影响，但现有材料未提供任何成本或定价数据。"
+        },
+        "workflow_unlock": {
+          "magnitude": "none",
+          "en": "This event does not unlock a new workflow; it is an operational disruption and labor negotiation issue.",
+          "zh": "该事件未解锁新的工作流，本质上是运营扰动与劳资谈判问题。"
+        },
+        "buyer_clarity": {
+          "magnitude": "0-10%",
+          "en": "The union’s stated May 21 escalation date marginally improves planning clarity, but uncertainty remains because outcomes depend on negotiations and verification of impact.",
+          "zh": "工会给出5月21日升级节点在一定程度上提高了规划清晰度，但结果仍取决于谈判进展且影响程度缺少核验。"
+        },
+        "distribution_integration_entry": {
+          "magnitude": "none",
+          "en": "No new distribution or integration channel is introduced; the news concerns production continuity at existing fabs.",
+          "zh": "该消息未引入新的分发或集成入口，关注点是既有晶圆厂的生产连续性。"
+        },
+        "regulatory_data_supply_window": {
+          "magnitude": "none",
+          "en": "No regulatory change or new data/supply window is described in the provided information.",
+          "zh": "现有信息未涉及监管变化或新的数据/供给窗口。"
+        }
+      },
+      "tags": [
+        "semiconductors",
+        "supply-chain",
+        "Samsung",
+        "labor-strike",
+        "foundry-memory"
+      ]
+    },
+    {
+      "id": "hackernews:story:48118727",
+      "title": "LLM推动主流软件走向“Emacs式”的个人可扩展性",
+      "url": "https://sockpuppet.org/blog/2026/05/12/emacsification/",
+      "source_type": "hackernews",
+      "ai_score": 8.0,
+      "signal_score": 6.0,
+      "signal_reason": "Observable signal is a meaningful workflow shift: commenters report using LLMs to create replacement-grade personal tools and list multiple app categories amenable to this, but there’s no specific new release, capability benchmark, pricing change, or distribution/integration event cited—mostly an accelerant trend validated by active community discussion.",
+      "capability_delta": "所宣称的能力边界变化在于：在LLM辅助下，非专业人士更容易为个人用途产出可用的个性化软件成果。但讨论也表明，如果没有更好的打包、复现与维护方式，这类个性化方案在可靠性与可移植性上的边界未必会明显前移。",
+      "assessment": {
+        "capability_boundary_change": {
+          "magnitude": "20-50%",
+          "en": "The item argues that LLMs make personal, end-user-built apps and workflows substantially more feasible than before for many categories of “good-enough” software.",
+          "zh": "该观点认为LLM让终端用户在多类“足够好”的软件上更容易自建个人应用与工作流，可行性提升幅度较大。"
+        },
+        "cost_change": {
+          "magnitude": "unclear",
+          "en": "No concrete time or dollar figures are provided, even though commenters claim it can be easier than installing and adapting existing software.",
+          "zh": "尽管有人称“比安装并改造现有软件更容易”，但没有给出具体时间或成本数据，因此难以量化。"
+        },
+        "workflow_unlock": {
+          "magnitude": "20-50%",
+          "en": "The discussion suggests LLMs can unlock ad-hoc creation of bespoke tools (e.g., personal clients and trackers) as part of day-to-day workflows, but highlights fragility as a limiter.",
+          "zh": "讨论显示LLM可能解锁将临时自制工具（如个人客户端与追踪器）融入日常工作流的做法，但也强调脆弱性会限制效果。"
+        },
+        "buyer_clarity": {
+          "magnitude": "none",
+          "en": "This is commentary about a trend rather than a specific product offering, so it does not define a clear buyer, budget, or procurement path.",
+          "zh": "这是一种趋势性评论而非具体产品发布，因此并未形成清晰的购买方、预算或采购路径。"
+        },
+        "distribution_integration_entry": {
+          "magnitude": "unclear",
+          "en": "The item does not describe distribution channels or integrations; it mainly discusses individually maintained setups that may not generalize well.",
+          "zh": "内容没有涉及分发渠道或集成方式，主要讨论个人维护的配置且可能难以泛化，因此难以判断进入门槛变化。"
+        },
+        "regulatory_data_supply_window": {
+          "magnitude": "none",
+          "en": "No regulatory or data-supply changes are mentioned in the post summary or comments.",
+          "zh": "摘要与评论中未提及监管或数据供给层面的变化。"
+        }
+      },
+      "tags": [
+        "LLMs",
+        "developer-tools",
+        "end-user programming",
+        "personal software",
+        "software customization"
+      ]
+    },
+    {
+      "id": "hackernews:story:48120629",
+      "title": "将“数字技术栈”从美国迁移到欧洲的实践记录",
+      "url": "https://monokai.com/articles/how-i-moved-my-digital-stack-to-europe/",
+      "source_type": "hackernews",
+      "ai_score": 7.0,
+      "signal_score": 6.0,
+      "signal_reason": "Observable signal of increased demand for EU-only hosting from government/procurement contexts (conference anecdote that every vendor was asked about EU-local hosting) plus evidence of real migrations and tooling work (cross-provider Terraform, switching CDN providers), but no specific market-wide pricing/capability shift is documented beyond these instances.",
+      "capability_delta": "这并非推出新技术；能力边界的变化在于提供了可操作的实践路径，证明现代“数字技术栈”的相当一部分可以迁移到欧盟服务商，同时也坦承某些美国依赖要么难以避免、要么出于权衡而保留。它让迁移的取舍与“部分主权”的最终形态更清晰、更便于他人复用。",
+      "assessment": {
+        "capability_boundary_change": {
+          "magnitude": "0-10%",
+          "en": "The post does not add new platform capabilities, but it slightly lowers the barrier to executing an EU-focused migration by sharing concrete mappings and tradeoffs discussed by practitioners.",
+          "zh": "文章没有带来新的平台能力，但通过实践者的具体替换思路与取舍讨论，略微降低了执行“迁往欧盟”的门槛。"
+        },
+        "cost_change": {
+          "magnitude": "unclear",
+          "en": "Neither the item nor the provided discussion establishes a consistent cost increase or decrease from moving US-centric providers to EU providers.",
+          "zh": "新闻内容与所给讨论未能明确表明从美国型服务商迁移到欧盟服务商会稳定地降本或增本。"
+        },
+        "workflow_unlock": {
+          "magnitude": "10-20%",
+          "en": "For teams already motivated by sovereignty/compliance, the described migrations and community-shared recipes (e.g., Cloudflare alternatives, Terraform multi-provider HA) make an EU-only or EU-mostly workflow more straightforward.",
+          "zh": "对于已受主权/合规驱动的团队，文中迁移经验与评论区的可复用做法（如 Cloudflare 替代、Terraform 跨供应商高可用）让“欧盟全量或尽量欧盟化”的流程更顺畅。"
+        },
+        "buyer_clarity": {
+          "magnitude": "20-50%",
+          "en": "Comments indicate EU-government-aligned buyers are explicitly asking whether products can be fully hosted in the EU, making requirements clearer and more consistently stated.",
+          "zh": "评论显示与欧盟政府相关的买方会直接询问产品能否“完全在欧盟托管”，使需求表述更清晰且更一致。"
+        },
+        "distribution_integration_entry": {
+          "magnitude": "none",
+          "en": "The news item is a narrative and discussion, not a new distribution channel, standard, or integration surface that changes go-to-market mechanics.",
+          "zh": "该新闻是迁移叙事与讨论，并未带来新的分发渠道、标准或集成入口，因此不会改变获客与交付机制。"
+        },
+        "regulatory_data_supply_window": {
+          "magnitude": "0-10%",
+          "en": "The main regulatory context (e.g., Schrems II-driven transfer uncertainty) is longstanding, but the discussion suggests slightly increased near-term attention to EU-only hosting in certain procurement contexts.",
+          "zh": "主要监管背景（如 Schrems II 带来的跨境传输不确定性）并非新近出现，但讨论显示在部分采购场景中对“欧盟境内托管”的近期关注度有所上升。"
+        }
+      },
+      "tags": [
+        "cloud-infrastructure",
+        "data-sovereignty",
+        "eu-regulation",
+        "provider-migration",
+        "devops"
       ]
     },
     {
       "id": "telegram:zaihuapd:41356",
-      "title": "Meta员工反对用鼠标键盘与屏幕数据训练AI",
+      "title": "Meta员工反对用工作电脑行为数据训练AI",
       "url": "https://cybernews.com/ai-news/meta-employees-revolt-ai-mouse-keystroke-tracking/",
       "source_type": "telegram",
       "ai_score": 7.0,
       "signal_score": 6.0,
-      "signal_reason": "可观察到的事实是Meta推进一项会收集鼠标移动、屏幕活动并偶尔截图的数据采集计划，且引发内部反弹与潜在法律合规争议；这反映企业AI训练数据来源与员工监控边界的现实摩擦，但尚未出现明确监管裁决、政策变更或行业范围的能力/成本边界改变。",
-      "capability_delta": "据称的变化是Meta将能够从工作电脑规模化收集高分辨率的员工交互遥测数据（鼠标、键盘与屏幕截图）作为AI训练数据。这可能让基于真实工作软件使用方式训练AI代理更容易，但也显著增加合规与信任方面的约束。",
+      "signal_reason": "可观察事实是：Meta推动更激进的工作设备行为数据采集以支持AI训练且已引发内部反弹与潜在法律争议，表明合规与员工监控政策将影响数据获取成本与可行性，但尚无明确的产品发布、市场准入变化或行业范围内规则变更。",
+      "capability_delta": "据报道的部署使Meta更容易在内部大规模收集细粒度的员工交互数据（鼠标/按键/屏幕活动）用于AI训练。能力边界的变化主要体现在数据来源与治理方式，而非披露了新的模型能力。",
       "assessment": {
         "capability_boundary_change": {
-          "magnitude": "20-50%",
-          "en": "Collecting mouse/keystroke telemetry plus periodic screen snapshots from work apps materially expands the fidelity and volume of human-behavior training data available for AI agents.",
-          "zh": "从工作应用中收集鼠标/键盘遥测并辅以定期屏幕截图，会显著提升AI代理可用的人类行为训练数据的精细度与规模。"
+          "magnitude": "10-20%",
+          "en": "If broadly deployed, the initiative expands available training data to include high-resolution workplace interaction telemetry beyond typical content datasets.",
+          "zh": "若广泛部署，该计划将可用训练数据扩展到高分辨率的职场交互遥测数据，超出常见的内容型数据集范围。"
         },
         "cost_change": {
           "magnitude": "unclear",
-          "en": "The reporting does not quantify implementation, storage, security, and compliance costs versus alternative data-collection methods.",
-          "zh": "报道未量化相较其他数据收集方式在部署、存储、安全与合规上的成本变化。"
+          "en": "The sources describe new data collection, but they do not quantify implementation, storage, or compliance costs.",
+          "zh": "现有来源描述了新增数据采集，但未量化部署、存储或合规成本，因此成本变化不明确。"
         },
         "workflow_unlock": {
           "magnitude": "10-20%",
-          "en": "If deployed as described, MCI could streamline the creation of datasets that reflect real employee software workflows for training and evaluating AI agents.",
-          "zh": "若按描述部署，MCI可能会更便捷地生成反映员工真实软件工作流的数据集，用于训练与评估AI代理。"
+          "en": "Capturing mouse/keystroke/screen signals can support training or evaluation workflows that require detailed interaction traces, but the exact internal use is not specified.",
+          "zh": "采集鼠标/按键/屏幕信号可支持需要详细交互轨迹的训练或评测流程，但具体内部用法未被明确说明。"
         },
         "buyer_clarity": {
           "magnitude": "none",
-          "en": "This is an internal Meta program report and does not describe a market offering or buyer requirements.",
-          "zh": "这是一则关于Meta内部项目的报道，并未描述对外产品或明确的买方需求。"
+          "en": "This is an internal Meta program report and does not define a market-facing offering or buyer segment.",
+          "zh": "这是一则关于Meta内部项目的报道，并未定义面向市场的产品形态或明确买方人群。"
         },
         "distribution_integration_entry": {
-          "magnitude": "0-10%",
-          "en": "The item suggests limited broader distribution impact because it focuses on Meta’s internal deployment on employee work devices.",
-          "zh": "由于内容集中在Meta对员工工作设备的内部部署，对更广泛分发与集成入口的影响看起来有限。"
+          "magnitude": "none",
+          "en": "The news does not announce a third-party integration, API, or distribution channel—only an internal deployment.",
+          "zh": "该消息未公布任何第三方集成、API或分发渠道，仅涉及内部部署。"
         },
         "regulatory_data_supply_window": {
-          "magnitude": "20-50%",
-          "en": "Employee claims about potential NLRA conflicts indicate a meaningful risk that legal or policy scrutiny could constrain the supply of such workplace behavioral data.",
-          "zh": "员工提出可能触及NLRA的说法表明，法律或政策审视可能在相当程度上限制此类工作场所行为数据的供给。"
+          "magnitude": "unclear",
+          "en": "Because employee opposition cites potential U.S. labor-law protections, the durability and permissibility of this data supply are uncertain.",
+          "zh": "由于员工反对意见提到可能涉及美国劳动法保护，该类数据供给的可持续性与合规可行性存在不确定性。"
         }
       },
       "tags": [
-        "AI数据治理",
-        "员工隐私",
-        "工作场所监控",
+        "Meta",
+        "AI治理",
+        "隐私与监控",
         "劳动法合规",
-        "Meta"
+        "数据采集"
       ]
     },
     {
       "id": "telegram:zaihuapd:41357",
-      "title": "英伟达称黄仁勋将随特朗普访华",
+      "title": "英伟达确认黄仁勋将随特朗普访华",
       "url": "https://www.cnbc.com/2026/05/13/nvidia-says-ceo-jensen-huang-is-joining-trumps-china-trip.html",
       "source_type": "telegram",
       "ai_score": 7.0,
       "signal_score": 6.0,
-      "signal_reason": "可观察事实是美方组织多名企业高管随行并与中方最高层会晤，且英伟达明确参与；这提高了政策沟通与潜在监管调整的可能性，但目前未出现任何已落地的规则变更、许可发放或供给/成本边界的明确变化。",
-      "capability_delta": "该消息并未宣布任何直接的技术能力变化，核心是企业高管参与外交与商务代表团。其对芯片供应或出口管制合规的实际影响仍未被具体说明。",
+      "signal_reason": "可观察事实是英伟达CEO加入总统级访华代表团并参与峰会，释放出政府与关键企业在对华科技议题上协调/沟通增强的信号，但未出现明确的规则变更、解禁/加严措施、成本或供给条件改变等可量化市场条件变化。",
+      "capability_delta": "该消息未带来直接的技术能力变化，因为其内容是行程与会晤确认而非政策或产品发布。若要推断英伟达对华销售先进AI芯片能力的变化，仍需等待出口管制等具体信息披露。",
       "assessment": {
         "capability_boundary_change": {
           "magnitude": "none",
-          "en": "The report describes a trip and summit attendance, but it does not change what AI chips can do or what can legally be shipped.",
-          "zh": "报道仅涉及行程与参会信息，并未改变AI芯片的能力边界或可合法出货范围。"
+          "en": "The item reports a diplomatic/business trip participation and does not describe any new technical capability or access change.",
+          "zh": "该消息仅涉及出访与会晤安排，并未描述任何新的技术能力或获取边界变化。"
         },
         "cost_change": {
           "magnitude": "none",
-          "en": "No pricing, tariff, subsidy, or supply changes were announced that would affect chip or compute costs.",
-          "zh": "报道未宣布任何会影响芯片或算力成本的价格、关税、补贴或供给变化。"
+          "en": "No pricing, tariffs, licensing outcomes, or cost-related policy changes were stated in the report.",
+          "zh": "报道未提及价格、关税、许可结果或与成本相关的政策变化。"
         },
         "workflow_unlock": {
           "magnitude": "none",
-          "en": "There is no described new process, tooling, or access that would immediately unlock new AI development workflows.",
-          "zh": "报道没有描述任何可立即解锁新AI开发流程的新增流程、工具或访问权限。"
+          "en": "There is no new workflow, process, or operational mechanism announced beyond attending meetings.",
+          "zh": "除参加会晤外，消息未宣布任何新的工作流程、流程机制或运营方式。"
         },
         "buyer_clarity": {
-          "magnitude": "unclear",
-          "en": "High-level engagement could change expectations, but the article provides no concrete policy signals that clarify procurement decisions.",
-          "zh": "高层互动可能影响预期，但报道未给出能明确采购决策的具体政策信号，因此仍不清晰。"
+          "magnitude": "0-10%",
+          "en": "The confirmation may slightly clarify near-term engagement priorities, but it provides no concrete guidance on product availability or export licensing.",
+          "zh": "行程确认可能对短期沟通重点带来轻微信号，但未就产品可得性或出口许可提供明确指引。"
         },
         "distribution_integration_entry": {
           "magnitude": "none",
-          "en": "No new distribution partnerships, integrations, or channels were announced in the information provided.",
-          "zh": "所给信息中未宣布任何新的分销合作、集成关系或渠道变化。"
+          "en": "No new partnerships, channels, or integration arrangements were disclosed in the trip confirmation.",
+          "zh": "该行程确认未披露任何新的合作伙伴关系、渠道或集成安排。"
         },
         "regulatory_data_supply_window": {
           "magnitude": "unclear",
-          "en": "The context is export controls, but the report does not specify any regulatory updates or exemptions that would open or close supply windows.",
-          "zh": "背景涉及出口管制，但报道未说明任何会打开或收紧供给窗口的监管更新或豁免。"
+          "en": "While the context is export controls, the report does not include regulatory decisions, timelines, or rule changes that would define a measurable window.",
+          "zh": "尽管背景涉及出口管制，但报道未包含监管决定、时间表或规则变化，无法界定可量化的窗口期。"
         }
       },
       "tags": [
@@ -836,199 +346,101 @@
       ]
     },
     {
-      "id": "hackernews:story:48107997",
-      "title": "逼真天空、日落与行星大气渲染教程",
-      "url": "https://blog.maximeheckel.com/posts/on-rendering-the-sky-sunsets-and-planets/",
+      "id": "hackernews:story:48121266",
+      "title": "一位开发者为何从 GitHub 迁移到 Forgejo",
+      "url": "https://jorijn.com/en/blog/leaving-github-for-forgejo/",
       "source_type": "hackernews",
       "ai_score": 7.0,
-      "signal_score": 4.0,
-      "signal_reason": "No new capability release or market/access change is evidenced; it’s an educational/technical article with community validation and practical insights, but without observable shifts in cost, performance, availability, or tooling.",
-      "capability_delta": "这不是一个全新渲染模型的发布，而是一份高质量、偏实现落地的讲解，让大气散射与天空/行星大气渲染在 Web/移动端场景中更容易复现。能力边界的变化主要体现在学习与集成时间的下降，而非出现了全新的算法突破。",
+      "signal_score": 5.0,
+      "signal_reason": "Observable signal is mainly sentiment and migration interest (516 points, 276 comments) plus calls for Forgejo federation support; no confirmed capability, pricing, or access change is described, but discussion indicates real evaluation/movement among developers.",
+      "capability_delta": "这里没有新的技术突破；边界变化更多是实践与社会层面的——展示个人可以把“主仓库”从 GitHub 转到 Forgejo，同时应对可发现性、镜像与协作历史等取舍。讨论也更明确了替代 GitHub 集中式网络效应时最受限的能力点（尤其是联邦化）。",
       "assessment": {
         "capability_boundary_change": {
           "magnitude": "0-10%",
-          "en": "The tutorial modestly expands what more developers can implement reliably by clarifying atmospheric scattering and practical rendering steps, but it does not introduce a new model standard.",
-          "zh": "该教程通过澄清大气散射与实现步骤，让更多开发者更可靠地实现相关效果，但并未引入新的模型标准。"
+          "en": "The post demonstrates an incremental, already-possible migration path from GitHub to Forgejo rather than introducing a new capability.",
+          "zh": "文章展示的是一种增量的、原本就可行的从 GitHub 迁移到 Forgejo 的路径，而非出现全新能力。"
         },
         "cost_change": {
-          "magnitude": "none",
-          "en": "There is no direct evidence of reduced compute cost or runtime performance improvements versus existing approaches; the change is primarily educational.",
-          "zh": "没有证据表明它相对既有方法降低了计算开销或提升了运行时性能；变化主要是教育与知识传播层面。"
+          "magnitude": "unclear",
+          "en": "The content suggests self-hosting and non-GitHub forges may shift costs (hosting, maintenance, anti-scraping), but it provides no quantification.",
+          "zh": "内容暗示自托管与非 GitHub 平台会改变成本结构（主机、维护、反爬虫），但没有给出可量化的数据。"
         },
         "workflow_unlock": {
-          "magnitude": "10-20%",
-          "en": "Step-by-step guidance and demos can reduce iteration time for teams implementing sky/sunset/atmosphere rendering in WebGL/mobile shader workflows.",
-          "zh": "循序渐进的讲解与示例可减少团队在 WebGL/移动端着色器流程中实现天空、日落与大气渲染的迭代时间。"
-        },
-        "buyer_clarity": {
-          "magnitude": "unclear",
-          "en": "The item is a public tutorial rather than a product announcement, so buyer needs and purchasing signals are not directly indicated.",
-          "zh": "这是一篇公开教程而非产品发布，因此并未直接呈现明确的采购需求或购买信号。"
-        },
-        "distribution_integration_entry": {
           "magnitude": "0-10%",
-          "en": "Because it targets web/mobile graphics contexts, it slightly lowers integration friction for developers already using browser-based rendering stacks.",
-          "zh": "由于面向 Web/移动端图形语境，它在一定程度上降低了已使用浏览器渲染栈的开发者的集成摩擦。"
-        },
-        "regulatory_data_supply_window": {
-          "magnitude": "none",
-          "en": "Rendering technique guidance does not materially change regulatory constraints or data supply availability.",
-          "zh": "渲染技术指导不会实质性改变监管约束或数据供给可用性。"
-        }
-      },
-      "tags": [
-        "computer-graphics",
-        "atmospheric-scattering",
-        "rendering",
-        "webgl",
-        "procedural-generation"
-      ]
-    },
-    {
-      "id": "hackernews:story:48111581",
-      "title": "DeepMind 演示“AI 指针”，把界面上下文注入 LLM 提示词",
-      "url": "https://deepmind.google/blog/ai-pointer/",
-      "source_type": "hackernews",
-      "ai_score": 7.0,
-      "signal_score": 4.0,
-      "signal_reason": "Observable signal is limited to a concept/demo blog post (no clear release, availability, performance/cost change, or new access), and comments report the demo behaving poorly and raise concerns about always-on voice and possible server dependence.",
-      "capability_delta": "能力边界的变化在于一种被提出的交互模式：用户可通过指针驱动的空间上下文选择，把 GUI 目标直接纳入 LLM 提示词，而不只依赖文字描述与复制粘贴。但 DeepMind 将其作为实验演示与原则展示，真实工作流中的可用性与可靠性仍不明确。",
-      "assessment": {
-        "capability_boundary_change": {
-          "magnitude": "unclear",
-          "en": "The post demonstrates a new GUI-to-prompt interaction concept, but it is not presented as a generally available, validated capability with measurable performance.",
-          "zh": "文章展示了新的“GUI 到提示词”的交互概念，但未体现为可普遍获得且有可量化指标验证的能力。"
-        },
-        "cost_change": {
-          "magnitude": "unclear",
-          "en": "No pricing, compute requirements, or deployment model are specified beyond being powered by Gemini in experimental demos, so cost impact cannot be estimated.",
-          "zh": "除说明实验演示由 Gemini 驱动外，未给出定价、算力需求或部署方式，因此无法估算成本影响。"
-        },
-        "workflow_unlock": {
-          "magnitude": "10-20%",
-          "en": "If the pointer can reliably add on-screen targets into prompts, it could reduce manual context transcription for some GUI tasks, but community feedback suggests practical friction (voice use, reliability) remains.",
-          "zh": "如果指针能可靠地把屏幕目标加入提示词，部分 GUI 任务可减少手工转写上下文，但社区反馈显示语音与可靠性等实际摩擦仍然存在。"
-        },
-        "buyer_clarity": {
-          "magnitude": "unclear",
-          "en": "The announcement is framed as research principles and demos rather than a product with defined users, packaging, or adoption path.",
-          "zh": "该发布更像研究原则与演示，而非具备明确用户、形态与采用路径的产品。"
-        },
-        "distribution_integration_entry": {
-          "magnitude": "unclear",
-          "en": "The post does not describe OS/app integrations, APIs, or a distribution channel, so integration difficulty and entry barriers are unknown.",
-          "zh": "文章未说明操作系统或应用集成方式、API 或分发渠道，因此集成难度与进入门槛未知。"
-        },
-        "regulatory_data_supply_window": {
-          "magnitude": "unclear",
-          "en": "Because the concept implies capturing on-screen context and possibly sending it to a model, privacy and data-handling constraints may matter, but the post provides no concrete data-flow details.",
-          "zh": "由于该概念暗示采集屏幕上下文并可能发送给模型，隐私与数据处理约束可能重要，但文章未给出具体数据流细节。"
-        }
-      },
-      "tags": [
-        "HCI",
-        "LLM",
-        "AI assistants",
-        "UI/UX",
-        "Google DeepMind"
-      ]
-    },
-    {
-      "id": "hackernews:story:48109224",
-      "title": "Bambu Lab因AGPL合规姿态与云端封锁引发批评",
-      "url": "https://www.jeffgeerling.com/blog/2026/bambu-lab-abusing-open-source-social-contract/",
-      "source_type": "hackernews",
-      "ai_score": 7.0,
-      "signal_score": 4.0,
-      "signal_reason": "Observable signal is primarily reputational/community backlash and a reported vendor claim about service outages tied to 'unauthorized traffic'; no clear, verified change in capabilities, pricing, access, or market structure is evidenced in the provided excerpt.",
-      "capability_delta": "这里并没有明确的技术能力突破；变化主要是外界对Bambu做法的审视加强，以及围绕“当产品依赖专有云服务时，AGPL合规应当意味着什么”的争议升温。在实践层面，这可能改变开发者与用户对第三方客户端与集成方式的取舍与风险判断。",
-      "assessment": {
-        "capability_boundary_change": {
-          "magnitude": "none",
-          "en": "The news is primarily a licensing and ecosystem governance dispute rather than a newly released capability or interface.",
-          "zh": "该新闻主要是许可合规与生态治理争议，并非发布了新的能力或接口。"
-        },
-        "cost_change": {
-          "magnitude": "none",
-          "en": "No concrete cost reductions or increases are established in the reported information beyond claims about service outages and scaling concerns.",
-          "zh": "除关于宕机与扩容压力的说法外，报道信息并未给出可核实的成本上升或下降结论。"
-        },
-        "workflow_unlock": {
-          "magnitude": "none",
-          "en": "The discussion does not document a newly available workflow; it debates whether access should be granted and under what terms.",
-          "zh": "讨论并未确认出现新的可用工作流，而是在争论是否应当开放访问及其条件。"
+          "en": "Keeping canonical repos off GitHub while optionally maintaining mirrors is a modest workflow change that some teams can adopt immediately.",
+          "zh": "将主仓库迁出 GitHub、同时可选维护镜像是一种幅度不大的流程调整，部分团队可以立刻采用。"
         },
         "buyer_clarity": {
           "magnitude": "10-20%",
-          "en": "Public debate around AGPL scope versus proprietary cloud services can modestly improve buyer understanding of lock-in and legal/operational tradeoffs in cloud-dependent printers.",
-          "zh": "围绕AGPL边界与专有云服务的公开争论，可能在一定程度上提升买方对云依赖设备的锁定效应与法律/运维权衡的认知。"
+          "en": "The discussion makes the decision criteria clearer—network effects, federation, mirror maintenance, and scraper exposure—though it is still anecdotal.",
+          "zh": "讨论让决策标准更清晰——网络效应、联邦化、镜像维护与爬虫暴露——但整体仍以个案经验为主。"
         },
         "distribution_integration_entry": {
-          "magnitude": "unclear",
-          "en": "It is unclear whether Bambu’s enforcement posture will materially raise or lower the practical barriers for third-party integrations, since the thread reflects disagreement and limited verified implementation detail.",
-          "zh": "由于讨论存在分歧且缺少可验证的实现细节，Bambu的执行策略是否会实质性提高或降低第三方集成门槛尚不明确。"
+          "magnitude": "none",
+          "en": "No new integration channel or distribution mechanism is introduced; the item is primarily a narrative and community debate.",
+          "zh": "该事件没有引入新的集成渠道或分发机制，主要是个人叙述与社区讨论。"
         },
         "regulatory_data_supply_window": {
           "magnitude": "none",
-          "en": "The item concerns open-source licensing norms rather than regulatory changes or new data-supply constraints.",
-          "zh": "该事件聚焦开源许可规范争议，并不涉及监管变化或新的数据供给限制。"
+          "en": "The item raises concerns about AI scraping, but it does not describe any regulatory change or new data-access window.",
+          "zh": "事件提到了对 AI 爬虫的担忧，但未涉及监管变化或新的数据获取窗口。"
         }
       },
       "tags": [
+        "git",
+        "forgejo",
         "open-source",
-        "software-licensing",
-        "AGPL",
-        "3d-printing",
-        "platform-ecosystems"
+        "developer-tools",
+        "decentralization"
       ]
     },
     {
-      "id": "hackernews:story:48109460",
-      "title": "为什么资深开发难以表达专业经验",
-      "url": "https://www.nair.sh/guides-and-opinions/communicating-your-expertise/why-senior-developers-fail-to-communicate-their-expertise",
-      "source_type": "hackernews",
+      "id": "rss:simonwillison.net_atom_everything_:-3137684329676513308",
+      "title": "用于沙盒 iframe 的父窗口 CSP 允许列表机制",
+      "url": "https://simonwillison.net/2026/May/13/csp-allow/#atom-everything",
+      "source_type": "rss",
       "ai_score": 7.0,
-      "signal_score": 3.0,
-      "signal_reason": "The item is commentary/discussion rather than a concrete technical release or market change; while engagement is strong, it does not present observable new capabilities, cost/access shifts, or policy/regulatory changes.",
-      "capability_delta": "这不是一次新的技术能力发布，边界变化更多是概念层面的：它将经验传递重新定义为默会模型对齐与情境化练习，而不仅是“把话讲清楚”。因此它可能改变团队组织带教、文档与评审对话的方式，但实际效果取决于是否被采纳。",
+      "signal_score": 5.0,
+      "signal_reason": "Observable artifact is a working public tool and technique that could simplify debugging/iterating CSP-restricted embeds by turning CSP errors into a user-driven allow-list and refresh flow, but it does not indicate a new platform capability, standard change, or market-wide shift.",
+      "capability_delta": "该实验展示了将沙盒 iframe 中因 CSP 造成的连接拦截转化为“可操作事件”的具体方法：由父窗口提示用户并更新允许列表，而不是让失败悄无声息地发生。这使得在保持 default-src 'none' 的同时，仅在需要时选择性扩展 connect-src 变得更容易。",
       "assessment": {
         "capability_boundary_change": {
           "magnitude": "0-10%",
-          "en": "The news primarily changes understanding and practices around mentorship rather than enabling fundamentally new engineering capabilities.",
-          "zh": "该新闻主要改变的是对带教与沟通的认知和做法，而不是开启全新的工程技术能力边界。"
+          "en": "It does not add new browser primitives, but it demonstrates a workable pattern for user-approved connect-src exceptions coordinated by the parent page.",
+          "zh": "它并未引入新的浏览器能力，但展示了一种可行模式：由父页面协调并经用户批准的 connect-src 例外放行。"
         },
         "cost_change": {
           "magnitude": "none",
-          "en": "No direct cost reduction is evidenced; any savings would be indirect and organization-specific (e.g., fewer repeated incidents).",
-          "zh": "没有证据表明会带来直接成本下降；潜在节省若存在也属于间接且依组织而异（例如减少重复事故）。"
+          "en": "The post provides an experiment and code pattern but does not claim measurable cost reductions for hosting, compute, or security tooling.",
+          "zh": "该内容提供的是实验与代码模式，并未声称能在托管、计算或安全工具成本上带来可量化下降。"
         },
         "workflow_unlock": {
           "magnitude": "10-20%",
-          "en": "By emphasizing tacit knowledge and context, it can modestly improve onboarding and mentorship workflows when teams adopt practices like modeling thinking and guided practice.",
-          "zh": "通过强调默会知识与情境，它在团队采纳“示范思考+带教练习”等做法时，可能对入职与带教流程带来适度改进。"
+          "en": "For teams embedding sandboxed mini-apps, it can reduce trial-and-error by turning CSP fetch failures into a guided allow-list and reload flow.",
+          "zh": "对于嵌入沙盒小应用的团队，它可将 CSP 导致的 fetch 失败转为引导式的允许列表与刷新流程，从而减少反复试错。"
         },
         "buyer_clarity": {
           "magnitude": "unclear",
-          "en": "The item is an opinion article plus discussion, so it does not define a concrete procurement-ready solution or buyer requirements.",
-          "zh": "该内容属于观点文章与讨论，并未给出可直接采购的明确方案或买方需求定义。"
+          "en": "The item is an engineering experiment and does not identify a specific buyer, budget owner, or procurement-ready offering.",
+          "zh": "该内容是工程实验，并未明确特定购买方、预算负责人或可直接采购的成品方案。"
         },
         "distribution_integration_entry": {
-          "magnitude": "none",
-          "en": "There is no new platform, API, or integration surface described that would change distribution or integration dynamics.",
-          "zh": "文中没有描述新的平台、API 或集成接口，因此不会改变分发或集成进入门槛。"
+          "magnitude": "0-10%",
+          "en": "The pattern fits existing web distribution (an embedding parent page plus iframe) but does not by itself create a new integration channel.",
+          "zh": "该模式可直接适配现有的 Web 分发形态（父页面嵌入 iframe），但本身不会形成新的集成入口或分发渠道。"
         },
         "regulatory_data_supply_window": {
           "magnitude": "none",
-          "en": "No regulatory change or new data supply is mentioned; the discussion is about communication and incentives in engineering teams.",
-          "zh": "未提及监管变化或新的数据供给窗口；讨论焦点是工程团队中的沟通与激励问题。"
+          "en": "The post is about CSP handling in iframes and does not introduce regulatory changes or new data supply constraints.",
+          "zh": "该内容聚焦于 iframe 的 CSP 处理方式，并未涉及监管变化或新的数据供给约束。"
         }
       },
       "tags": [
-        "software-engineering",
-        "communication",
-        "mentorship",
-        "engineering-culture",
-        "tacit-knowledge"
+        "Content-Security-Policy",
+        "Web-Security",
+        "iframes",
+        "JavaScript",
+        "Browser-Sandboxing"
       ]
     }
   ]
