@@ -4,235 +4,365 @@
     <title>Horizon Personal Feed - ZH</title>
     <link>https://felicia7c.github.io/newsfeed</link>
     <description>AI-filtered stories from Horizon</description>
-    <lastBuildDate>2026-05-14</lastBuildDate>
+    <lastBuildDate>2026-05-15</lastBuildDate>
     <atom:link href="https://felicia7c.github.io/newsfeed/feeds/horizon-selected-zh.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>[信号 8.0] 小米开源 OneVL 一步式潜空间自动驾驶推理框架</title>
-      <link>https://mp.weixin.qq.com/s/7po3r6YtmuXm8Xny1bw61Q</link>
-      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41365</guid>
-      <pubDate>Wed, 13 May 2026 10:33:01 +0000</pubDate>
+      <title>[信号 9.0] NGINX rewrite 堆溢出可致未授权 RCE（CVE-2026-42945）</title>
+      <link>https://depthfirst.com/research/nginx-rift-achieving-nginx-rce-via-an-18-year-old-vulnerability</link>
+      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41374</guid>
+      <pubDate>Thu, 14 May 2026 02:41:48 +0000</pubDate>
+      <description><![CDATA[<p>AI Score: 9.0</p>
+<p>Signal Score: 9.0</p>
+<p><strong>客观变化评估</strong></p>
+<p><strong>能力边界变化: 20-50%</strong> 公开的技术细节与官方修复版本显著提升了防守方识别受影响配置并封堵此前不易察觉的 RCE 路径的能力。</p>
+<p><strong>成本变化: 0-10%</strong> 升级 NGINX 或采用命名捕获组缓解主要增加的是运维工作量，而非带来明显的软件许可成本变化。</p>
+<p><strong>工作流解锁: 10-20%</strong> 文中给出的触发前置条件（含“?”的 rewrite 替换串与捕获组用法）为配置扫描与补丁优先级排序提供了更明确的清单。</p>
+<p><strong>买单人群明确度: 20-50%</strong> 受影响版本区间与产品清单（开源版、Plus 及多种 F5/NGINX 企业产品）使得“谁需要行动、升到哪里”相对清晰。</p>
+<p><strong>分发/集成入口: none</strong> 该事件并未带来新的分发渠道或集成入口，本质上是针对既有部署的安全通告与补丁迭代。</p>
+<p><strong>监管/数据/供应链窗口: none</strong> 此次披露属于软件漏洞通告，本身不会产生新的监管合规要求或数据获取窗口。</p>
+<p><strong>能力变化:</strong> 此次披露使得对 NGINX rewrite 配置进行有针对性的排查与修复变得可操作，因为它明确了一个长期存在的问题如何在特定 rewrite 场景下演变为未授权堆溢出并可能导致 RCE。客观边界变化在于：官方提供了明确的修复版本以及可在升级前降低暴露面的配置级缓解措施。</p>
+<p>2026 年 5 月 13 日，depthfirst 与 F5 联合披露 NGINX 的 CVE-2026-42945，这是位于 ngx_http_rewrite_module 的严重堆缓冲区溢出漏洞，CVSS 评分 9.2。该问题自 2008 年引入后潜伏至今，可在特定配置下被未授权远程触发并实现 RCE，官方已发布修复版本与缓解方案。 NGINX 广泛用于 Web 服务、反向代理、API 网关以及 Kubernetes Ingress 数据平面，因而“可远程触发”的内存破坏漏洞可能带来极大规模的风险外溢。由于可进一步达到对 Worker 进程的远程代码执行，该事件会显著提高面向公网服务的紧急升级与配置审计优先级。 漏洞根因是 rewrite 脚本引擎“两遍执行”状态不一致：长度计算阶段按未转义长度分配缓冲区，而拷贝阶段在替换字符串含“?”导致 is_args 被置位且不重置后，会对特殊字符做转义扩展（单字节最多膨胀到 3 字节）从而写越界并触发堆溢出。影响范围包括 NGINX Open Source 0.6.27–1.30.0 与 NGINX Plus R32–R36，修复版本为 1.31.0/1.30.1 与 Plus R36 P4/R32 P6；临时缓解是将 rewrite 中未命名捕获组（$1、$2）替换为命名捕获组。</p>
+<p><strong>Background:</strong> NGINX 的 rewrite 模块（ngx_http_rewrite_module）通过 rewrite 指令使用正则表达式改写请求 URI，并按照配置文件中的顺序依次执行，且可根据标志位决定是否停止后续处理。在 Kubernetes 中，基于 NGINX 的 Ingress 控制器与 Gateway API 实现常用于集群入口的流量转发，因此请求处理路径上的漏洞更容易直接暴露给不受信任的外部客户端。对以 C 语言实现的服务器而言，堆溢出这类内存破坏问题通常危害更高，因为在特定条件下可能被利用为代码执行。</p>
+<p><strong>Community:</strong> 讨论者普遍认为漏洞严重，但在可利用性上存在分歧：有人强调公开的 PoC 关闭了 ASLR，另一些人则指出报告声称可稳定绕过 ASLR，且 ASLR 只是“纵深防御”而非根本屏障。也有人补充该漏洞存在配置前置条件（特定 rewrite 写法，例如替换串含“?”并引用捕获组），并转述 F5 建议用命名捕获组替代 $1/$2 作为临时缓解手段。</p>
+<p><strong>Tags:</strong> #NGINX, #CVE, #RCE, #Web Security, #Kubernetes Ingress</p>
+<p><a href="https://depthfirst.com/research/nginx-rift-achieving-nginx-rce-via-an-18-year-old-vulnerability">Read original</a></p>]]></description>
+      <category>NGINX</category>
+      <category>CVE</category>
+      <category>RCE</category>
+      <category>Web Security</category>
+      <category>Kubernetes Ingress</category>
+    </item>
+    <item>
+      <title>[信号 8.0] DeepSeek 对话疑似会话隔离漏洞可泄露他人片段</title>
+      <link>https://github.com/deepseek-ai/DeepSeek-R1/issues/840</link>
+      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41383</guid>
+      <pubDate>Thu, 14 May 2026 13:15:23 +0000</pubDate>
+      <description><![CDATA[<p>AI Score: 9.0</p>
+<p>Signal Score: 8.0</p>
+<p><strong>客观变化评估</strong></p>
+<p><strong>能力边界变化: unclear</strong> 该指控意味着严重的边界破坏（跨用户历史暴露），但公开讨论包含“可能是幻觉”的观点，仅凭现有材料无法确认真实边界变化幅度。</p>
+<p><strong>成本变化: unclear</strong> 若属实，所述触发方式（空会话输入“&lt;think”）意味着攻击成本极低，但目前缺乏在此材料中的确定性验证。</p>
+<p><strong>工作流解锁: unclear</strong> 一旦泄露被证实，将解锁一种直接的流程用于探测会话/记忆混用，但目前不清楚该行为是否对应真实数据取回。</p>
+<p><strong>买单人群明确度: 0-10%</strong> 受影响对象大体明确（DeepSeek Web/API 用户及其集成方），但具体影响范围与可复现确定性在现有文本中仍不清晰。</p>
+<p><strong>分发/集成入口: none</strong> 该消息未涉及新的分发渠道或集成入口变化，而是报告现有端点可能存在漏洞。</p>
+<p><strong>监管/数据/供应链窗口: unclear</strong> 潜在的跨用户泄露可能触发合规与事件通报要求，但材料中未提供已验证的事件范围或监管动作信息。</p>
+<p><strong>能力变化:</strong> 这不是新增防御能力，而是报告声称存在客观的隔离失效：用极其简单的输入就可能让系统返回其他用户的已存对话历史。若验证属实，将显著降低针对受影响 DeepSeek 对话端点进行跨用户数据暴露尝试的门槛。</p>
+<p>一则于 2026 年 5 月 11 日提交的 GitHub issue 声称 DeepSeek 的 Web/API 对话会泄露其他用户的历史对话片段。报告称在全新空对话里发送未闭合的“&lt;think”即可触发跨用户片段返回。 如果指控属实，这将破坏关键安全边界（按用户/会话隔离），并可能跨租户泄露 API Key、代码或个人隐私等敏感信息。由于其触发方式被描述为门槛很低且已公开传播，风险可能同时波及 Web 端用户与调用 API 的下游应用。 报告描述的触发条件是在全新空会话中仅发送一次未闭合的“&lt;think”，而返回内容据称包含其他用户的对话片段。讨论中也提到第三方部署出现类似现象并有人认为可能是“幻觉”，因此在下结论前需要可复现性验证与基于日志的证据确认是否为真实数据外泄。</p>
+<p><strong>Background:</strong> LLM 对话系统的“会话隔离”通常依赖把每次请求正确绑定到唯一的 session/user 标识，从而只为该用户取回并注入其历史对话。工程实践文章指出，在共享网关/代理或记忆存储层中，如果 metadata（如 user_id/session_id）缺失、被覆盖或被混用，就可能把他人的历史错误地拼接到当前请求里，造成跨用户数据泄露。常见实现会按 session_id 存储并在每次执行时自动注入历史，因此一旦键值绑定出错或缓存碰撞，就可能表现为模型输出“别人的上下文”。</p>
+<p><strong>Community:</strong> 部分讨论认为第三方部署也出现类似现象，因此更像模型“幻觉”而非真实隔离失效。也有人将其视为高危安全边界问题，主张应尽快复现并由服务方基于后端证据开展排查。</p>
+<p><strong>Tags:</strong> #LLM Security, #Data Leakage, #Session Isolation, #DeepSeek, #Prompt Injection</p>
+<p><a href="https://github.com/deepseek-ai/DeepSeek-R1/issues/840">Read original</a></p>]]></description>
+      <category>LLM Security</category>
+      <category>Data Leakage</category>
+      <category>Session Isolation</category>
+      <category>DeepSeek</category>
+      <category>Prompt Injection</category>
+    </item>
+    <item>
+      <title>[信号 8.0] 美国批准向约10家中国企业有限销售H200</title>
+      <link>https://www.reuters.com/business/retail-consumer/us-clears-h200-chip-sales-10-china-firms-nvidia-ceo-looks-breakthrough-2026-05-14/</link>
+      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41378</guid>
+      <pubDate>Thu, 14 May 2026 08:57:55 +0000</pubDate>
       <description><![CDATA[<p>AI Score: 8.0</p>
 <p>Signal Score: 8.0</p>
 <p><strong>客观变化评估</strong></p>
-<p><strong>能力边界变化: 20-50%</strong> 从显式自回归 CoT 迁移到其宣称的一步式潜空间并行推理，在低时延约束下的执行方式上属于较明显的功能性变化。</p>
-<p><strong>成本变化: 50%+</strong> 文中报告 0.24s 的时延、仅为自回归 VLA 的 5.4%，在假设硬件与设置可比的前提下意味着推理侧算力/服务成本可能大幅下降。</p>
-<p><strong>工作流解锁: 20-50%</strong> 开源权重以及训练与推理代码，能够显著缩短研究者在驾驶基准上复现与迭代潜空间推理方法的流程周期。</p>
-<p><strong>买单人群明确度: unclear</strong> 尽管给出了基准成绩与时延数据，但未说明量产部署约束、安全论证或支持的数据流水线，因此“买方就绪度”仍不明确。</p>
-<p><strong>分发/集成入口: 10-20%</strong> 相较仅论文发布，全面开源会降低集成摩擦，但真实接入成本仍取决于代码质量以及与现有自动驾驶系统栈的兼容性（文中未说明）。</p>
-<p><strong>监管/数据/供应链窗口: none</strong> 该发布聚焦模型架构与基准结果，并未涉及监管变化或新的数据获取条件，因此不会直接改变合规或数据供给窗口。</p>
-<p><strong>能力变化:</strong> 其宣称的能力边界变化在于：自动驾驶中的 VLA 式推理可通过“一步并行”的潜空间生成（并可选用 MLP 回归头）替代显式自回归 CoT 解码，同时在多个驾驶基准上仍达到或刷新 SOTA。另一个变化是权重与代码的全面开源，降低了复现与二次研发该类潜空间推理系统的门槛。</p>
-<p>小米发布并全面开源 Xiaomi OneVL，这是一种用于自动驾驶的“一步并行”潜空间 VLA 推理框架，将 VLA 与世界模型统一在同一框架内。该方法在 ROADWork、Impromptu、Alpamayo-R1 上报告 SOTA，并在 NAVSIM 上取得 88.84 的 PDM-score，且在挂载 MLP 回归头变体时推理时延可低至 0.24s。 潜空间推理将“思考过程”保留在 latent token 中，而非生成冗长的显式 CoT 文本，从而有机会减少自回归解码开销并降低时延。对强调实时性的自动驾驶系统而言，若其 0.24s（为自回归 VLA 的 5.4%）的时延优势在更多场景中成立，将直接影响模型的可部署性。 OneVL 用视觉 latent token 编码物理因果结构、用语言 latent token 编码驾驶意图，并在训练时引入两个辅助解码器来预测未来画面与可读思维链，但在推理时全部移除以实现一步生成。文中还宣称其是当前唯一在所列全部基准上超越显式自回归 CoT 的隐式（潜空间）推理方法，并已开源权重及训练/推理代码。</p>
-<p><strong>Background:</strong> 潜空间 Chain-of-Thought（latent CoT）通常指把中间推理过程表示在模型的潜变量/latent 空间中，而不是输出成可读的自然语言推理步骤，其目标常包括提升效率并在部分任务上改善表现。与之相对，显式/自回归 CoT 需要逐 token 生成文本推理链，天然存在串行解码带来的时延开销。NAVSIM 是一种数据驱动的自动驾驶仿真基准，其中的 PDM-score 是用于评估该框架下驾驶规划质量的开环指标之一。</p>
-<p><strong>Tags:</strong> #multimodal, #autonomous-driving, #world-models, #latent-reasoning, #open-source</p>
-<p><a href="https://mp.weixin.qq.com/s/7po3r6YtmuXm8Xny1bw61Q">Read original</a></p>]]></description>
-      <category>multimodal</category>
-      <category>autonomous-driving</category>
-      <category>world-models</category>
-      <category>latent-reasoning</category>
-      <category>open-source</category>
+<p><strong>能力边界变化: unclear</strong> 据报道H200出口许可获批扩大了特定企业“可合规采购”的范围，但在实际出货前，能力边界变化幅度仍不明确。</p>
+<p><strong>成本变化: unclear</strong> 报道未给出价格与交付条款，因此相对替代方案（国产芯片或其他加速卡）的净成本变化不明确。</p>
+<p><strong>工作流解锁: 0-10%</strong> 若后续交付推进，部分买家可恢复基于H200的常规部署流程，但当前未出货且买方谨慎使得短期流程变化有限。</p>
+<p><strong>买单人群明确度: 10-20%</strong> 明确的潜在买家名单与据称的单客户上限提升了采购路径的可见度，但落地不确定性仍限制了清晰度。</p>
+<p><strong>分发/集成入口: 0-10%</strong> 联想、富士康等分销商据称获批表明渠道具备一定准备度，但尚无交付完成意味着短期集成推进有限。</p>
+<p><strong>监管/数据/供应链窗口: unclear</strong> 许可获批显示在BIS发证框架下可能存在一定“窗口期”，但在政策与地缘变化下该窗口的持续时间与稳定性不明确。</p>
+<p><strong>能力变化:</strong> 能力边界的变化在于，部分中国企业在获得美国出口许可后，可能合规采购英伟达H200，并受到据称的单客户数量上限约束。但由于尚未完成交付，实际可用算力提升尚未兑现。</p>
+<p>路透社报道称，美国商务部已批准英伟达H200芯片对约10家中国企业的出口许可，并据称对单一客户设置最高约7.5万颗的上限。由于监管与地缘不确定性，交付尚未开始，部分潜在买家也趋于谨慎。 若最终落地，这些许可将让部分中国头部云与互联网公司在短期内重新获得高端英伟达AI加速卡的供给，从而影响中国AI算力的可获得性。该进展也体现了美国出口管制可能通过逐案许可而非全面放开来执行，从而影响全球AI硬件供给格局。 据报道，获批对象既包括终端买家（如阿里巴巴、腾讯、字节跳动、京东等），也包括联想、富士康等分销商，但目前仍未完成任何交付。单客户上限与买方谨慎态度意味着即使获批，实际到货规模与节奏仍不确定。</p>
+<p><strong>Background:</strong> 美国对中国的先进芯片出口管制主要由美国商务部工业与安全局（BIS）执行，针对高性能“先进计算”半导体通常要求申请出口许可。BIS也会随着政策变化调整对发往中国和澳门的许可审查政策，可能出现收紧或修订审查口径的情况。在现实操作中，即便存在广泛限制，也可能通过逐案发证形成“有限可得”的供给。</p>
+<p><strong>Tags:</strong> #NVIDIA, #H200, #出口管制, #中国AI算力, #中美科技竞争</p>
+<p><a href="https://www.reuters.com/business/retail-consumer/us-clears-h200-chip-sales-10-china-firms-nvidia-ceo-looks-breakthrough-2026-05-14/">Read original</a></p>]]></description>
+      <category>NVIDIA</category>
+      <category>H200</category>
+      <category>出口管制</category>
+      <category>中国AI算力</category>
+      <category>中美科技竞争</category>
     </item>
     <item>
-      <title>[信号 7.0] Google 发布 Gemini Intelligence，今夏先到 Pixel 与三星新机</title>
-      <link>https://9to5google.com/2026/05/12/gemini-intelligence-announcement/</link>
-      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41354</guid>
-      <pubDate>Wed, 13 May 2026 00:32:50 +0000</pubDate>
+      <title>[信号 8.0] Anthropic 推出面向小企业的 Claude 套餐并集成多款 SaaS</title>
+      <link>https://www.anthropic.com/news/claude-for-small-business</link>
+      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41382</guid>
+      <pubDate>Thu, 14 May 2026 12:41:30 +0000</pubDate>
+      <description><![CDATA[<p>AI Score: 7.0</p>
+<p>Signal Score: 8.0</p>
+<p><strong>客观变化评估</strong></p>
+<p><strong>能力边界变化: 20-50%</strong> 打包的 SaaS 连接与可直接运行的工作流/技能，使非技术型 SMB 团队相较仅聊天用法能完成的可执行任务范围明显扩大。</p>
+<p><strong>成本变化: unclear</strong> 公告主要描述了产品打包、培训与集成，但未给出定价或量化节省数据，因此无法客观估算净成本变化。</p>
+<p><strong>工作流解锁: 50%+</strong> 提供 15 个预置工作流与 15 项技能并由代理系统执行，使大量端到端 SMB 任务无需用户自行设计多步骤流程即可落地。</p>
+<p><strong>买单人群明确度: 20-50%</strong> 该套餐明确面向小企业，并点名具体 SaaS 与职能场景（财务、销售、HR、客服），使目标购买者与使用场景较通用助手更清晰。</p>
+<p><strong>分发/集成入口: 10-20%</strong> 宣称与常见 SaaS（如 QuickBooks、PayPal、Microsoft 365）原生集成可降低接入摩擦，但各连接器的深度与可用范围未被详细说明。</p>
+<p><strong>监管/数据/供应链窗口: 0-10%</strong> 强调 Team 与 Enterprise 默认不用于训练可能小幅提升合规与数据使用的信心，但并未带来新的监管框架或数据获取通道。</p>
+<p><strong>能力变化:</strong> Claude 以 SMB 套餐形式提供了面向常用 SaaS 的集成与预置工作流/技能，并通过 Claude Cowork 在高影响动作前加入明确的人类审批环节。相较从零自建集成与流程，这让在典型 SMB 技术栈中部署代理式自动化变得更容易。</p>
+<p>Anthropic 发布 Claude for Small Business，将 Claude 接入 QuickBooks、PayPal、HubSpot、Canva、DocuSign、Google Workspace 和 Microsoft 365。该套餐提供 15 个可直接运行的工作流与 15 项“技能”，并通过 Claude Cowork 交付，在发送、发布或付款等动作前要求人工审批。 这使 Claude 从通用聊天助手更进一步，转向面向 SMB 的“可执行工作流/代理”产品形态，并直接嵌入常用业务系统。若集成与审批机制有效，小企业可以在降低运营人力的同时，对高风险动作与敏感数据保持更强控制。 Anthropic 将该套餐建立在 Claude Cowork 之上，用于代表用户执行多步骤知识工作，并在产生外部影响（如付款）前要求用户确认。官方同时强调 Team 与 Enterprise 默认不使用客户数据训练，并与 PayPal 提供免费线课、于 5 月 14 日起在美国多地开展线下培训。</p>
+<p><strong>Background:</strong> Claude Cowork 是 Anthropic 的代理式系统，目标是代表用户执行多步骤知识工作（例如研究汇总、文档准备与文件管理），而不是只对单次提示做回答。在该语境下，“工作流”通常指预置的端到端任务流程，“技能”则更像可复用的行动模块，供代理在需要时调用。将这些能力连接到记账、支付、CRM 与办公套件等 SaaS，可以让代理在真实业务系统内读写数据并触发动作，从而更接近可落地的业务自动化。</p>
+<p><strong>Tags:</strong> #Anthropic, #Claude, #AI Agents, #SaaS集成, #SMB</p>
+<p><a href="https://www.anthropic.com/news/claude-for-small-business">Read original</a></p>]]></description>
+      <category>Anthropic</category>
+      <category>Claude</category>
+      <category>AI Agents</category>
+      <category>SaaS集成</category>
+      <category>SMB</category>
+    </item>
+    <item>
+      <title>[信号 7.0] vLLM v0.21.0加入HMA KV卸载与Blackwell注意力后端</title>
+      <link>https://github.com/vllm-project/vllm/releases/tag/v0.21.0</link>
+      <guid isPermaLink="false">horizon:zh:github:release:322898436</guid>
+      <pubDate>Thu, 14 May 2026 23:15:45 +0000</pubDate>
+      <description><![CDATA[<p>AI Score: 8.0</p>
+<p>Signal Score: 7.0</p>
+<p><strong>客观变化评估</strong></p>
+<p><strong>能力边界变化: 10-20%</strong> HMA集成的KV卸载与Blackwell专用注意力后端提升了特定部署下的吞吐与可扩展性上限，但整体服务范式并未改变。</p>
+<p><strong>成本变化: unclear</strong> 版本包含多项性能优化，但总体成本影响取决于工作负载结构、硬件（如Blackwell）以及KV卸载是否显著降低显存压力从而改变集群规格。</p>
+<p><strong>工作流解锁: 10-20%</strong> 支持思考预算的推测解码与增强的KV卸载链路，有助于在不写大量定制补丁的情况下更顺畅地服务推理模型与长上下文负载。</p>
+<p><strong>买单人群明确度: 0-10%</strong> 这些变化对现有vLLM使用者而言很清晰（升级要求与新增后端），但并未重塑品类或带来新的购买者群体。</p>
+<p><strong>分发/集成入口: none</strong> 除版本升级与后端新增外，发布说明未显示有新的分发渠道或集成入口变化。</p>
+<p><strong>监管/数据/供应链窗口: none</strong> 发布说明与相关资料未显示任何监管、许可或新增数据获取窗口的变化。</p>
+<p><strong>能力变化:</strong> v0.21.0使得将KV卸载与基于HMA的分配路径结合更具可用性，并为特定模型提供面向Blackwell的注意力后端，从而扩展新GPU上的性能上限。同时，它也通过C++20要求与推进Transformers v5迁移来收紧兼容范围。</p>
+<p>vLLM发布v0.21.0，带来破坏性构建与依赖变更，包括正式弃用Transformers v4并要求使用支持C++20的编译器。该版本还加入与HMA集成的KV卸载、支持“思考预算”的推测解码，以及面向Blackwell GPU的TOKENSPEED_MLA注意力后端。 这些破坏性变更会推动生态升级（迁移到Transformers v5以及更新的编译工具链），而新增的推理功能旨在提升长上下文与推理型工作负载的吞吐与服务稳定性。对Blackwell的专用注意力支持也表明开源推理服务栈正在快速跟进NVIDIA最新一代GPU。 KV卸载现在与Hybrid Memory Allocator（HMA）集成，并加入调度器侧的滑动窗口分组支持，从而扩展KV缓存跨内存层级的管理方式。推测解码新增“思考预算”支持，目标是让推理模型在spec decode场景下的行为更正确；TOKENSPEED_MLA则面向Blackwell上DeepSeek-R1/Kimi-K25的prefill+decode。</p>
+<p><strong>Background:</strong> vLLM是面向高吞吐LLM推理服务的开源引擎，重点在于优化注意力计算与KV缓存管理。KV卸载会在GPU显存与主机内存之间转移部分KV缓存，以在不耗尽显存的情况下支持更长上下文或更多并发请求。推测解码通过较小的“草稿模型”提出候选token、再由主模型校验来加速生成，而“思考预算”对区分推理token与最终回答的推理模型尤为关键。</p>
+<p><strong>Tags:</strong> #vLLM, #LLM Inference, #GPU Systems, #PyTorch, #Transformers</p>
+<p><a href="https://github.com/vllm-project/vllm/releases/tag/v0.21.0">Read original</a></p>]]></description>
+      <category>vLLM</category>
+      <category>LLM Inference</category>
+      <category>GPU Systems</category>
+      <category>PyTorch</category>
+      <category>Transformers</category>
+    </item>
+    <item>
+      <title>[信号 7.0] Anthropic 使用 SpaceX Colossus 1 算力并上调 Claude 限额</title>
+      <link>https://t.me/zaihuapd/41371</link>
+      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41371</guid>
+      <pubDate>Thu, 14 May 2026 00:57:58 +0000</pubDate>
+      <description><![CDATA[<p>AI Score: 8.0</p>
+<p>Signal Score: 7.0</p>
+<p><strong>客观变化评估</strong></p>
+<p><strong>能力边界变化: 20-50%</strong> 内容描述的是速率限制显著上调与峰值限制减少，属于明显的可用性扩展，但不是模型能力层面的升级。</p>
+<p><strong>成本变化: unclear</strong> 信息中未给出 Claude 套餐或 API 计费的变化，因此无法据此判断用户成本是否变化。</p>
+<p><strong>工作流解锁: 20-50%</strong> 更高吞吐与更少高峰限流，可能解锁此前受限的持续型编码代理会话与更高并发的集成工作流。</p>
+<p><strong>买单人群明确度: 0-10%</strong> 变化本身很直观（限额提高），但合作协议细节与提升的可持续性在现有转述中仍缺乏充分可核验信息。</p>
+<p><strong>分发/集成入口: none</strong> 这更像是算力与限流策略更新，而不是新增分发渠道、SDK 或集成入口。</p>
+<p><strong>监管/数据/供应链窗口: none</strong> 该消息聚焦算力来源与限流调整，并未体现新增监管窗口或数据获取与供给变化。</p>
+<p><strong>能力变化:</strong> 实际能力边界的变化在于 Claude Code 与 Claude API 的可持续吞吐提高、峰值时段限流减少（前提是所述新增签约算力按期落地）。这会让更长时间的编码使用与更高并发的 API 调用更可行，并减少触发限流的情况。</p>
+<p>消息称 Anthropic 与 SpaceX 签署协议，将使用 Colossus 1 数据中心的全部算力，在短期内新增约 300MW 容量（对外表述约“22 万块 NVIDIA GPU”）。同时，Claude Code 付费档位的 5 小时速率限制提高，并取消 Pro/Max 用户的峰值限制，Claude Opus 的 API 速率限制也被上调。 若消息属实，这将是一次显著的短期算力扩容，可直接减少限流并提升 Claude Code 与 Claude API 的稳定性与可用性。它也表明在 GPU 供给紧张背景下，头部模型厂商正通过锁定大型数据中心资源来保障增长。 披露的规模为 300MW，“约 22 万块 GPU”更像是按功耗进行的折算口径而非已核验的实物清单，因为数据中心总功耗还包含制冷与基础设施开销。对用户而言，变化主要体现在更高的速率限制与更少的高峰限制，而非发布新模型或新增 API 能力。</p>
+<p><strong>Background:</strong> 数据中心的功耗规模（如 300MW）常被用来近似描述可提供的 AI 算力，但它无法与 GPU 数量一一对应，因为机柜、网络与制冷等基础设施也会消耗大量电力。API“速率限制”用于限制客户端在固定时间窗口内可发送的请求量或消耗的额度，“峰值限制”则是在高需求时段额外限流以维持服务稳定。随着使用量激增，大型 AI 厂商越来越倾向于签约专用算力以降低排队与宕机风险。</p>
+<p><strong>Tags:</strong> #Anthropic, #Claude, #AI基础设施, #GPU算力, #API限额</p>
+<p><a href="https://t.me/zaihuapd/41371">Read original</a></p>]]></description>
+      <category>Anthropic</category>
+      <category>Claude</category>
+      <category>AI基础设施</category>
+      <category>GPU算力</category>
+      <category>API限额</category>
+    </item>
+    <item>
+      <title>[信号 7.0] 京东上线自营AI硬件专区并上架多款高端NVIDIA GPU</title>
+      <link>https://u.jd.com/HaDkFMa</link>
+      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41385</guid>
+      <pubDate>Thu, 14 May 2026 15:15:08 +0000</pubDate>
       <description><![CDATA[<p>AI Score: 7.0</p>
 <p>Signal Score: 7.0</p>
 <p><strong>客观变化评估</strong></p>
-<p><strong>能力边界变化: unclear</strong> 该功能组合暗示系统级助手能力覆盖面扩大，但由于缺少模型与运行方式细节，整体能力提升幅度难以客观量化。</p>
-<p><strong>成本变化: unclear</strong> 消息未提供定价、算力部署位置（端侧或云端）或使用限额，因此无法推断对用户或开发者的成本影响。</p>
-<p><strong>工作流解锁: 20-50%</strong> 若按描述落地，基于屏幕上下文的自动化、更自然的语音输入以及“描述生成小部件”可能减少常见手机流程的操作步骤。</p>
-<p><strong>买单人群明确度: 0-10%</strong> 公告明确了首发设备家族与后续扩展形态，但未清晰给出具体支持机型、前置条件或分地区可用性。</p>
-<p><strong>分发/集成入口: 10-20%</strong> 在 Pixel 与三星旗舰机进行系统级推送意味着相关体验的分发更顺畅，但未说明第三方接入与集成路径。</p>
-<p><strong>监管/数据/供应链窗口: unclear</strong> 由于未说明数据处理方式、端侧处理占比与隐私承诺，无法据此评估监管或数据供给层面的影响。</p>
-<p><strong>能力变化:</strong> 能力边界的变化在于：Gemini 品牌的一组系统集成能力（界面、语音输入、自动填充、小部件生成与基于屏幕的自动化）将按明确时间表下发到特定旗舰 Android 设备。但由于缺少技术细节，目前无法确认这些能力在实际运行中主要是端侧、端云混合还是以云端为主。</p>
-<p>Google 宣布面向高端 Android 设备推出 Gemini Intelligence 系列 AI 功能，今夏将首先推送到最新的 Pixel 与三星 Galaxy 手机，并在年内扩展到手表、汽车、眼镜和笔记本等形态。已公布的功能包括基于 Material 3 的视觉语言、支持屏幕上下文的任务自动化、需手动启用的智能自动填充、Gboard“Rambler”自然口语语音输入，以及通过描述生成小部件的“创建我的小部件”。 这表明 Google 正将 Gemini 从应用层能力推进到旗舰 Android 设备的系统级助手层。若在多终端形态广泛落地，这类“语音+上下文+自动化”的体验可能改变用户完成任务的方式，并提高 Android 生态中 OEM 与应用集成的期望。 部分能力被明确为需要用户主动开启或依赖特定上下文，例如“需手动启用”的智能自动填充，以及基于屏幕内容的自动化操作。根据 9to5Google 的概述，该消息给出了首发机型与扩展节奏及功能清单，但缺少模型规格、性能数据与实测验证等技术细节。</p>
-<p><strong>Background:</strong> Material Design 3（也常被称为 Material You）是 Google 在 Android 12 前后引入的设计系统，强调个性化，例如从壁纸提取动态配色并应用到系统与应用界面。由于它会影响系统 UI 组件与应用样式，“基于 Material 3 的视觉语言”通常意味着更统一的系统与应用视觉一致性和主题化体验。所谓“屏幕上下文”的系统级 AI 功能，一般指对当前屏幕展示内容进行理解，从而触发操作或自动化步骤，减少反复的手动输入与切换。</p>
-<p><strong>Tags:</strong> #Android, #Gemini, #Mobile AI, #On-device AI, #Google</p>
-<p><a href="https://9to5google.com/2026/05/12/gemini-intelligence-announcement/">Read original</a></p>]]></description>
-      <category>Android</category>
-      <category>Gemini</category>
-      <category>Mobile AI</category>
-      <category>On-device AI</category>
-      <category>Google</category>
+<p><strong>能力边界变化: unclear</strong> 京东自营上架可能扩大高端GPU可获得性，但现有内容无法核实持续供给与合规属性，因此能力边界变化无法确认。</p>
+<p><strong>成本变化: unclear</strong> 未提供价格或总体持有成本信息，无法评估相对其他渠道的成本变化。</p>
+<p><strong>工作流解锁: 0-10%</strong> 若确实可下单并履约，自营渠道可能让采购与开票流程略更顺畅，但文中未提供流程细节。</p>
+<p><strong>买单人群明确度: 10-20%</strong> “京东自营”通常较第三方店铺更能提升买家确定性，但对受限硬件缺少官方说明仍限制了清晰度。</p>
+<p><strong>分发/集成入口: 0-10%</strong> 独立的AI硬件专区可能小幅降低发现与购买摩擦，但没有证据表明其超出店铺层面的更深集成。</p>
+<p><strong>监管/数据/供应链窗口: unclear</strong> 由于内容未提供监管口径、货源或型号变体等信息，无法据此推断出口管制或供给窗口是否发生变化。</p>
+<p><strong>能力变化:</strong> 客观上的边界变化在于：高端GPU可能通过头部国内平台的自营渠道获得更标准化的采购入口，甚至包含被称为曾受制裁影响而难以购买的型号。但仅依据现有转述信息，供货持续性以及合规属性仍不明确。</p>
+<p>京东出现“AI硬件京东自营专区”，首批上架NVIDIA GeForce RTX 5090 32G涡轮版、RTX PRO 6000 Blackwell服务器版以及H100等GPU。内容转述称其中部分此前受制裁影响的硬件（如H100）在该渠道被描述为可恢复购买。 如果信息属实，自营渠道在京东这样的大平台上提供数据中心级GPU，可能会显著影响国内AI算力的获取方式与采购路径。对被认为受出口管制影响的硬件若出现“可购买”的变化，也会直接影响训练与部署的算力供给预期与项目排期。 内容明确称RTX 5090涡轮版为“无阉割全球统一规格”，并将RTX PRO 6000 Blackwell定位为面向专业渲染与数据中心。文中同时提到H100此前因制裁对华暂停出口，但现在页面被描述为可购买，不过未给出官方公告或合规口径细节。</p>
+<p><strong>Background:</strong> NVIDIA H100是常用于大规模AI训练与推理的数据中心GPU，其在受出口管制影响的市场中供给往往高度敏感。“京东自营”通常意味着由平台作为销售主体开票与履约，买家往往认为其售后与交付确定性高于第三方店铺。但在缺少独立信源或官方说明的情况下，仅凭上架信息并不能解释其货源性质、是否为合规型号或具体供应安排。</p>
+<p><strong>Tags:</strong> #JD.com, #NVIDIA GPU, #AI硬件, #出口管制/制裁, #算力供应链</p>
+<p><a href="https://u.jd.com/HaDkFMa">Read original</a></p>]]></description>
+      <category>JD.com</category>
+      <category>NVIDIA GPU</category>
+      <category>AI硬件</category>
+      <category>出口管制/制裁</category>
+      <category>算力供应链</category>
     </item>
     <item>
-      <title>[信号 7.0] 三星工会称加薪抗议致韩国芯片减产并警告升级罢工</title>
-      <link>https://t.me/zaihuapd/41355</link>
-      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41355</guid>
-      <pubDate>Wed, 13 May 2026 01:11:22 +0000</pubDate>
-      <description><![CDATA[<p>AI Score: 7.0</p>
-<p>Signal Score: 7.0</p>
-<p><strong>客观变化评估</strong></p>
-<p><strong>能力边界变化: unclear</strong> 信息显示单个夜班产出下滑并存在5月21日罢工风险，但从现有材料无法量化对长期、持续产能边界的影响。</p>
-<p><strong>成本变化: unclear</strong> 供应扰动可能带来加急物流或价格波动等成本影响，但现有材料未提供任何成本或定价数据。</p>
-<p><strong>工作流解锁: none</strong> 该事件未解锁新的工作流，本质上是运营扰动与劳资谈判问题。</p>
-<p><strong>买单人群明确度: 0-10%</strong> 工会给出5月21日升级节点在一定程度上提高了规划清晰度，但结果仍取决于谈判进展且影响程度缺少核验。</p>
-<p><strong>分发/集成入口: none</strong> 该消息未引入新的分发或集成入口，关注点是既有晶圆厂的生产连续性。</p>
-<p><strong>监管/数据/供应链窗口: none</strong> 现有信息未涉及监管变化或新的数据/供给窗口。</p>
-<p><strong>能力变化:</strong> 此次并非技术能力提升，而是运营可靠性的边界发生变化：据称三星韩国芯片产出短期显著下滑，且若罢工发生将带来进一步中断风险。这会降低相关代工与存储产线对客户的供给可预测性。</p>
-<p>三星电子最大工会称，大量员工离岗参加加薪抗议，导致其韩国本土代工与存储产线夜班产出大幅下滑。工会称在晚10点至早6点的轮班中，代工产出下降58%、存储产出下降18%，并警告若谈判无果将于5月21日起发动18天全面罢工。 三星在存储芯片与代工领域都具备关键供给能力，若劳资冲突持续升级，可能收紧全球半导体供应并影响下游电子产品的交付与成本。工会给出明确升级节点（5月21日），使依赖韩国晶圆厂产出的客户面临更高的短期供应风险。 所述影响集中在夜班轮班缺勤，而半导体制造依赖连续且严格排程的运行，轮班人员不足会直接拖累产线吞吐。争议焦点是取消奖金上限并实质性上调基本工资，但该信息为工会口径且来自转述渠道，在所给材料中缺少独立佐证。</p>
-<p><strong>Background:</strong> 代工（foundry）通常指按外部客户订单进行的合同制造，而存储芯片产线主要生产标准化的存储产品，因此中断可能同时影响定制芯片供给与大宗存储供给。晶圆厂一般是24小时连续运行，关键岗位的人力配置会影响产线吞吐，单个轮班的缺员也可能因形成工序瓶颈而带来连锁影响。</p>
-<p><strong>Tags:</strong> #semiconductors, #supply-chain, #Samsung, #labor-strike, #foundry-memory</p>
-<p><a href="https://t.me/zaihuapd/41355">Read original</a></p>]]></description>
-      <category>semiconductors</category>
-      <category>supply-chain</category>
-      <category>Samsung</category>
-      <category>labor-strike</category>
-      <category>foundry-memory</category>
-    </item>
-    <item>
-      <title>[信号 6.0] LLM推动主流软件走向“Emacs式”的个人可扩展性</title>
-      <link>https://sockpuppet.org/blog/2026/05/12/emacsification/</link>
-      <guid isPermaLink="false">horizon:zh:hackernews:story:48118727</guid>
-      <pubDate>Wed, 13 May 2026 07:06:14 +0000</pubDate>
+      <title>[信号 6.0] RTX 5090 外接显卡连接 M4 MacBook Air，暴露 macOS 游戏与 LLM 瓶颈</title>
+      <link>https://scottjg.com/posts/2026-05-05-egpu-mac-gaming/</link>
+      <guid isPermaLink="false">horizon:zh:hackernews:story:48137145</guid>
+      <pubDate>Thu, 14 May 2026 15:47:31 +0000</pubDate>
       <description><![CDATA[<p>AI Score: 8.0</p>
 <p>Signal Score: 6.0</p>
 <p><strong>客观变化评估</strong></p>
-<p><strong>能力边界变化: 20-50%</strong> 该观点认为LLM让终端用户在多类“足够好”的软件上更容易自建个人应用与工作流，可行性提升幅度较大。</p>
-<p><strong>成本变化: unclear</strong> 尽管有人称“比安装并改造现有软件更容易”，但没有给出具体时间或成本数据，因此难以量化。</p>
-<p><strong>工作流解锁: 20-50%</strong> 讨论显示LLM可能解锁将临时自制工具（如个人客户端与追踪器）融入日常工作流的做法，但也强调脆弱性会限制效果。</p>
-<p><strong>买单人群明确度: none</strong> 这是一种趋势性评论而非具体产品发布，因此并未形成清晰的购买方、预算或采购路径。</p>
-<p><strong>分发/集成入口: unclear</strong> 内容没有涉及分发渠道或集成方式，主要讨论个人维护的配置且可能难以泛化，因此难以判断进入门槛变化。</p>
-<p><strong>监管/数据/供应链窗口: none</strong> 摘要与评论中未提及监管或数据供给层面的变化。</p>
-<p><strong>能力变化:</strong> 所宣称的能力边界变化在于：在LLM辅助下，非专业人士更容易为个人用途产出可用的个性化软件成果。但讨论也表明，如果没有更好的打包、复现与维护方式，这类个性化方案在可靠性与可移植性上的边界未必会明显前移。</p>
-<p>一篇发表于2026年5月12日的文章提出，LLM让个人构建并不断定制“个人软件”变得现实，这类似于Emacs用户对编辑器进行深度定制的方式。相关讨论认为，对不少日常应用而言，用LLM生成一个“足够好”的专用替代品，可能比安装并改造现有产品更省事。 如果LLM确实显著降低了终端用户编程所需的技能与时间，更多软件就可能从标准化产品转向高度个性化的工作流与工具。这会改变人们对可移植性、支持成本与互操作性的预期，并可能重塑开发者工具与消费级应用的竞争方式。 评论者列出多类应用——播客客户端、音乐应用、RSS阅读器、社交客户端、笔记应用、书签/稍后读、聊天工具、时间追踪、菜谱管理——认为用LLM做出个人替代品在很多情况下“足够好”，即便达不到行业最优。也有人提醒，类似Emacs的深度个性化往往很脆弱，跨设备或跨操作系统复现困难，长期维护与可移植性会成为主要限制。</p>
-<p><strong>Background:</strong> 终端用户开发（或终端用户编程）通常指用户为了自身个人用途而创建或修改软件，而不是面向广泛分发。历史上，许多主流应用之所以走向打包的软件产品形态，是因为开发与维护需要专业技能与大量时间。LLM能够降低生成代码与拼接自动化流程的成本，从而让个人围绕自己的工作方式塑造软件的想法重新变得可行。</p>
-<p><strong>Community:</strong> 讨论整体上对LLM促成“个人软件”持乐观态度，并给出了许多用户可能会自己重做的日常应用示例。与此同时，评论者指出Emacs式配置以脆弱著称：难复现、难在Windows/macOS间迁移、时间久了甚至会忘记如何运作，说明维护与可移植性是最大的摩擦点。</p>
-<p><strong>Tags:</strong> #LLMs, #developer-tools, #end-user programming, #personal software, #software customization</p>
-<p><a href="https://sockpuppet.org/blog/2026/05/12/emacsification/">Read original</a></p>]]></description>
+<p><strong>能力边界变化: 20-50%</strong> 该实验表明在实践中 Apple Silicon 上让 NVIDIA eGPU 运行成为可能，但收益仍受 macOS 图形与系统限制约束，并未形成普遍可靠的通路。</p>
+<p><strong>成本变化: none</strong> 未体现成本下降；RTX 5090 加 eGPU 机箱以及非官方软件配置本身就意味着高成本与高投入。</p>
+<p><strong>工作流解锁: 10-20%</strong> 它在基准测试或小众本地 AI 实验方面对 Mac 工作流有一定扩展，但日常游戏体验与顺畅 GPU 直通仍受平台支持限制。</p>
+<p><strong>买单人群明确度: 20-50%</strong> 该深度文章与讨论更清晰地揭示了限制点——游戏侧的 API/驱动缺口与 LLM 的预填充瓶颈——从而让用户更能判断 eGPU 是否真的有用。</p>
+<p><strong>分发/集成入口: unclear</strong> 搜索结果与评论暗示该方案可能依赖非标准驱动或降低系统防护，因此将其产品化集成并可分发的可行性不明确。</p>
+<p><strong>监管/数据/供应链窗口: none</strong> 这属于技术兼容性与性能议题，不会实质性改变监管条件或数据供给。</p>
+<p><strong>能力变化:</strong> 从实际效果看，能力边界从“Apple Silicon Mac 不能用 NVIDIA eGPU”变为“可以想办法跑起来，但很多结果仍由 macOS 软件栈约束决定”。同时它也强化了一个结论：对本地 LLM 而言，提升 GPU 计算并不必然提升提示词/预填充性能，该环节仍可能是主要瓶颈。</p>
+<p>一次动手实验将 NVIDIA RTX 5090 以外接显卡（eGPU）方式连接到 M4 MacBook Air，并对实际游戏与本地 LLM 推理进行了基准测试。结果显示，限制因素往往不是显卡算力本身，而是 macOS 图形栈支持与提示词/预填充（prefill）吞吐等瓶颈。 它动摇了“Apple Silicon Mac 基本无法使用 NVIDIA eGPU”的普遍认知，同时也说明了“加一块 GPU”并不必然解决 macOS 游戏或 LLM 端到端时延问题。对计划用 Mac 跑本地 AI 或通过兼容层玩游戏的开发者与重度用户来说，这能更清楚地定位真正的约束点。 讨论提到 macOS 对 OpenGL 的支持已弱化，而部分游戏需要依赖 Vulkan-to-Metal 的转译（如 MoltenVK），从而带来“能不能跑”的兼容性断层。评论者还强调，本地 LLM 的可用性常被提示词/预填充速度主导，并且提示词越长越容易恶化；同时，苹果平台现有限制（包括较小的映射窗口）也让更顺畅的 GPU 直通或 eGPU 工作流更难实现。</p>
+<p><strong>Background:</strong> 苹果官方文档说明 eGPU 需要基于 Intel 处理器的 Mac，且历史上的官方支持生态更多集中在 AMD GPU 而非 NVIDIA。在 macOS 上，现代游戏兼容性往往依赖 Metal；当游戏面向 Vulkan 或较旧的 OpenGL 路径时，通常需要转译层，但并非所有扩展都能覆盖。对本地 LLM 推理而言，端到端时延除了生成 token 之外还包括“预填充”（处理提示词上下文），因此更快的 GPU 并不总能消除整体瓶颈。</p>
+<p><strong>Community:</strong> 评论者普遍认可这次实现的技术含量，并将其与多年来对 Apple Silicon 官方 VM GPU 直通支持的诉求对比，认为苹果仍缺乏相应支持。有人强调最实际的收益在本地 LLM 负载上；也有人指出即使硬件很强，macOS 图形/API 缺口（OpenGL、Vulkan 转译与扩展缺失）仍会让部分游戏无法正常运行。</p>
+<p><strong>Tags:</strong> #macos, #egpu, #gpu, #gaming, #llm-inference</p>
+<p><a href="https://scottjg.com/posts/2026-05-05-egpu-mac-gaming/">Read original</a></p>]]></description>
+      <category>macos</category>
+      <category>egpu</category>
+      <category>gpu</category>
+      <category>gaming</category>
+      <category>llm-inference</category>
+    </item>
+    <item>
+      <title>[信号 6.0] 传闻arXiv新规：捏造引用将禁投一年</title>
+      <link>https://twitter.com/tdietterich/status/2055000956144935055</link>
+      <guid isPermaLink="false">horizon:zh:hackernews:story:48140922</guid>
+      <pubDate>Thu, 14 May 2026 20:39:12 +0000</pubDate>
+      <description><![CDATA[<p>AI Score: 8.0</p>
+<p>Signal Score: 6.0</p>
+<p><strong>客观变化评估</strong></p>
+<p><strong>能力边界变化: unclear</strong> 该消息暗示对捏造引用的执法边界收紧，但在所给材料中尚未能确认arXiv官方政策的具体内容与适用范围。</p>
+<p><strong>成本变化: 0-10%</strong> 对合规作者而言，成本变化主要来自额外的引用核查时间，单篇论文可能幅度不大但并非为零。</p>
+<p><strong>工作流解锁: none</strong> 该变化并未解锁新的工作流程，而主要是约束含捏造引用的投稿行为。</p>
+<p><strong>买单人群明确度: unclear</strong> 若arXiv发布清晰的规则与流程，预期会更明确，但讨论本身显示该政策是否已正式公布仍不确定。</p>
+<p><strong>分发/集成入口: none</strong> 该消息未涉及新的API、集成或分发机制，而是关于执法与发布资格。</p>
+<p><strong>监管/数据/供应链窗口: none</strong> 这属于平台政策讨论而非监管变化，且在所给信息中未体现新的数据供给窗口。</p>
+<p><strong>能力变化:</strong> 如果该传闻中的规则按描述落地，那么在arXiv发布含捏造引用的论文将变得明显更难，因为代价上升为一年禁投并伴随后续更严格的投稿门槛。不经核验就“快速发布”LLM辅助稿件的做法将被压缩，但在arXiv发布权威政策文本与执法细则前，能力边界变化仍存在不确定性。</p>
+<p>一则通过社交媒体传播的消息称，arXiv将对含有“幻觉/捏造”参考文献的论文实施1年禁投。该消息还称，禁投期后作者的后续arXiv投稿必须先在可信的同行评审期刊或会议被接收。 arXiv是关键的预印本传播渠道，因此对捏造引用的执法可能显著减少低质量、由LLM辅助但未核查的投稿，并提升读者对论文可信度的判断信号。若该政策属实且稳定执行，将通过要求作者核验引用来提高问责门槛，而不是放任未检查的模型输出。 根据讨论中对该规则的转述，处罚包括1年arXiv禁投，以及此后投稿需先获得“可信同行评审渠道接收”的更严格门槛。也有评论指出在arXiv公开的政策页面上未能清晰找到对应条款，因此从该讨论所引用的公开材料来看，政策是否已生效及具体流程仍不确定。</p>
+<p><strong>Background:</strong> LLM可能生成看似可信但实际不存在的引用（“幻觉/捏造参考文献”），当作者不核对书目信息时就会混入稿件。由于arXiv承载了大量快速发布的预印本，管理员与读者需要一定的投稿质量底线来保证平台可用性。近期一些写作辅助研究明确聚焦于改进引用处理或避免引用幻觉，也侧面反映出该问题的普遍性与干扰性。</p>
+<p><strong>Community:</strong> 评论者整体上支持惩罚措施，认为不仔细核查LLM输出的稿件不值得读者花时间，并强调使用arXiv是“特权而非权利”。同时也有人质疑该规则是否已正式公开发布，并提出程序正义与边界情形的担忧（例如合作者未经他人明确许可提交时责任如何认定）。</p>
+<p><strong>Tags:</strong> #arXiv, #research-integrity, #LLMs, #academic-publishing, #policy</p>
+<p><a href="https://twitter.com/tdietterich/status/2055000956144935055">Read original</a></p>]]></description>
+      <category>arXiv</category>
+      <category>research-integrity</category>
       <category>LLMs</category>
-      <category>developer-tools</category>
-      <category>end-user programming</category>
-      <category>personal software</category>
-      <category>software customization</category>
+      <category>academic-publishing</category>
+      <category>policy</category>
     </item>
     <item>
-      <title>[信号 6.0] 将“数字技术栈”从美国迁移到欧洲的实践记录</title>
-      <link>https://monokai.com/articles/how-i-moved-my-digital-stack-to-europe/</link>
-      <guid isPermaLink="false">horizon:zh:hackernews:story:48120629</guid>
-      <pubDate>Wed, 13 May 2026 11:42:20 +0000</pubDate>
-      <description><![CDATA[<p>AI Score: 7.0</p>
+      <title>[信号 6.0] Bun 从 Zig 重写到 Rust 的改动已合并</title>
+      <link>https://github.com/oven-sh/bun/pull/30412</link>
+      <guid isPermaLink="false">horizon:zh:hackernews:story:48132488</guid>
+      <pubDate>Thu, 14 May 2026 08:15:31 +0000</pubDate>
+      <description><![CDATA[<p>AI Score: 8.0</p>
 <p>Signal Score: 6.0</p>
 <p><strong>客观变化评估</strong></p>
-<p><strong>能力边界变化: 0-10%</strong> 文章没有带来新的平台能力，但通过实践者的具体替换思路与取舍讨论，略微降低了执行“迁往欧盟”的门槛。</p>
-<p><strong>成本变化: unclear</strong> 新闻内容与所给讨论未能明确表明从美国型服务商迁移到欧盟服务商会稳定地降本或增本。</p>
-<p><strong>工作流解锁: 10-20%</strong> 对于已受主权/合规驱动的团队，文中迁移经验与评论区的可复用做法（如 Cloudflare 替代、Terraform 跨供应商高可用）让“欧盟全量或尽量欧盟化”的流程更顺畅。</p>
-<p><strong>买单人群明确度: 20-50%</strong> 评论显示与欧盟政府相关的买方会直接询问产品能否“完全在欧盟托管”，使需求表述更清晰且更一致。</p>
-<p><strong>分发/集成入口: none</strong> 该新闻是迁移叙事与讨论，并未带来新的分发渠道、标准或集成入口，因此不会改变获客与交付机制。</p>
-<p><strong>监管/数据/供应链窗口: 0-10%</strong> 主要监管背景（如 Schrems II 带来的跨境传输不确定性）并非新近出现，但讨论显示在部分采购场景中对“欧盟境内托管”的近期关注度有所上升。</p>
-<p><strong>能力变化:</strong> 这并非推出新技术；能力边界的变化在于提供了可操作的实践路径，证明现代“数字技术栈”的相当一部分可以迁移到欧盟服务商，同时也坦承某些美国依赖要么难以避免、要么出于权衡而保留。它让迁移的取舍与“部分主权”的最终形态更清晰、更便于他人复用。</p>
-<p>作者记录了将托管与相关基础设施从偏美国的服务商迁移到欧洲服务商的过程，目标是获得更可预测的司法管辖与更强的数据/托管主权。文章也明确提到并非所有组件都能迁走（例如仍在使用 Cloudflare），强调“完全去美国化”的现实边界。 随着合规与主权诉求升温，许多组织（尤其是与欧盟政府打交道的公司）越来越需要证明系统和数据可在欧盟境内托管。该文章及讨论体现了基础设施决策从单纯的成本/性能优化，转向合规、风险管理与主权导向的更大趋势。 评论者强调，“欧盟托管”仍可能依赖受美国控制的组件（尤其是 Cloudflare），要替换它们可能需要改用其他 CDN 或调整 DDoS 防护方案。讨论也提出反论点：欧盟的数字政策同样可能不够可预测（例如有关限制 VPN 的讨论），因此司法风险并非单向。</p>
-<p><strong>Background:</strong> 在云托管语境中，“数据驻留”通常指数据存放地点，而“数据主权”还关注哪些法律与机构能够强制获取这些数据。2020 年 7 月，欧盟法院（CJEU）的 Schrems II 裁决使欧盟—美国“隐私盾”机制无效，导致欧盟向美国传输个人数据面临更高的不确定性与审查。受此影响，一些团队会选择欧盟本地服务商，并在可行范围内减少对美国公司的关键依赖。</p>
-<p><strong>Community:</strong> 多位评论者表示，在面向欧盟政府的场合，“能否完全在欧盟境内托管”已成为高频且具体的硬性问题，不少初创公司甚至为此准备了专门幻灯片。也有人分享迁移打法（如 Cloudflare → Bunny CDN、用 Terraform 做跨供应商高可用），同时争论欧盟司法是否真的更可预测，以及继续使用 Cloudflare 是否会削弱目标。</p>
-<p><strong>Tags:</strong> #cloud-infrastructure, #data-sovereignty, #eu-regulation, #provider-migration, #devops</p>
-<p><a href="https://monokai.com/articles/how-i-moved-my-digital-stack-to-europe/">Read original</a></p>]]></description>
-      <category>cloud-infrastructure</category>
-      <category>data-sovereignty</category>
-      <category>eu-regulation</category>
-      <category>provider-migration</category>
-      <category>devops</category>
-    </item>
-    <item>
-      <title>[信号 6.0] Meta员工反对用工作电脑行为数据训练AI</title>
-      <link>https://cybernews.com/ai-news/meta-employees-revolt-ai-mouse-keystroke-tracking/</link>
-      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41356</guid>
-      <pubDate>Wed, 13 May 2026 01:56:22 +0000</pubDate>
-      <description><![CDATA[<p>AI Score: 7.0</p>
-<p>Signal Score: 6.0</p>
-<p><strong>客观变化评估</strong></p>
-<p><strong>能力边界变化: 10-20%</strong> 若广泛部署，该计划将可用训练数据扩展到高分辨率的职场交互遥测数据，超出常见的内容型数据集范围。</p>
-<p><strong>成本变化: unclear</strong> 现有来源描述了新增数据采集，但未量化部署、存储或合规成本，因此成本变化不明确。</p>
-<p><strong>工作流解锁: 10-20%</strong> 采集鼠标/按键/屏幕信号可支持需要详细交互轨迹的训练或评测流程，但具体内部用法未被明确说明。</p>
-<p><strong>买单人群明确度: none</strong> 这是一则关于Meta内部项目的报道，并未定义面向市场的产品形态或明确买方人群。</p>
-<p><strong>分发/集成入口: none</strong> 该消息未公布任何第三方集成、API或分发渠道，仅涉及内部部署。</p>
-<p><strong>监管/数据/供应链窗口: unclear</strong> 由于员工反对意见提到可能涉及美国劳动法保护，该类数据供给的可持续性与合规可行性存在不确定性。</p>
-<p><strong>能力变化:</strong> 据报道的部署使Meta更容易在内部大规模收集细粒度的员工交互数据（鼠标/按键/屏幕活动）用于AI训练。能力边界的变化主要体现在数据来源与治理方式，而非披露了新的模型能力。</p>
-<p>报道称，Meta要求美国员工在工作电脑安装“Model Capability Initiative”，采集鼠标移动、点击/按键以及部分屏幕活动，用于AI模型训练。美国员工据称在多个办公室散发传单反对该计划，并提出可能涉及劳动法合规问题。 将员工行为遥测数据用于训练，意味着AI数据采集边界从公开/用户内容延伸到职场监控，带来更高的隐私、信任与治理风险。员工反弹也凸显AI数据管道可能与美国劳动保护及企业内部合规要求发生冲突。 该软件被描述为跟踪鼠标移动与屏幕活动，并会不定期截取与工作相关应用和网站的屏幕内容。Meta发言人Andy Stone表示，收集的数据不会用于绩效评估，也不会用于模型训练以外的用途。</p>
-<p><strong>Background:</strong> 员工活动监控软件通常会记录交互信号（如鼠标移动、点击、按键），并可能采集屏幕上下文以了解具体工作内容。对AI研发而言，这些信号可被视为训练数据，用于让模型学习工作流或用户界面交互。在美国，职场监控与工作条件的变化也可能引发劳动关系层面的争议，因此内部推广方式与员工沟通会影响其正当性认知。</p>
-<p><strong>Tags:</strong> #Meta, #AI治理, #隐私与监控, #劳动法合规, #数据采集</p>
-<p><a href="https://cybernews.com/ai-news/meta-employees-revolt-ai-mouse-keystroke-tracking/">Read original</a></p>]]></description>
-      <category>Meta</category>
-      <category>AI治理</category>
-      <category>隐私与监控</category>
-      <category>劳动法合规</category>
-      <category>数据采集</category>
-    </item>
-    <item>
-      <title>[信号 6.0] 英伟达确认黄仁勋将随特朗普访华</title>
-      <link>https://www.cnbc.com/2026/05/13/nvidia-says-ceo-jensen-huang-is-joining-trumps-china-trip.html</link>
-      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41357</guid>
-      <pubDate>Wed, 13 May 2026 02:41:56 +0000</pubDate>
-      <description><![CDATA[<p>AI Score: 7.0</p>
-<p>Signal Score: 6.0</p>
-<p><strong>客观变化评估</strong></p>
-<p><strong>能力边界变化: none</strong> 该消息仅涉及出访与会晤安排，并未描述任何新的技术能力或获取边界变化。</p>
-<p><strong>成本变化: none</strong> 报道未提及价格、关税、许可结果或与成本相关的政策变化。</p>
-<p><strong>工作流解锁: none</strong> 除参加会晤外，消息未宣布任何新的工作流程、流程机制或运营方式。</p>
-<p><strong>买单人群明确度: 0-10%</strong> 行程确认可能对短期沟通重点带来轻微信号，但未就产品可得性或出口许可提供明确指引。</p>
-<p><strong>分发/集成入口: none</strong> 该行程确认未披露任何新的合作伙伴关系、渠道或集成安排。</p>
-<p><strong>监管/数据/供应链窗口: unclear</strong> 尽管背景涉及出口管制，但报道未包含监管决定、时间表或规则变化，无法界定可量化的窗口期。</p>
-<p><strong>能力变化:</strong> 该消息未带来直接的技术能力变化，因为其内容是行程与会晤确认而非政策或产品发布。若要推断英伟达对华销售先进AI芯片能力的变化，仍需等待出口管制等具体信息披露。</p>
-<p>英伟达确认CEO黄仁勋将应特朗普邀请，随美国总统特朗普于本周访问中国。黄仁勋预计将在北京出席相关峰会，并随团与中方领导人会面。 这一行程引人关注的原因在于，英伟达处于美中围绕AI芯片与出口管制博弈的核心位置，CEO随总统出访并参与会晤可能释放贸易、管制执行或谈判优先级变化的信号。鉴于近年先进AI芯片对华销售限制趋严，此举也会影响市场对英伟达在华业务前景的预期。 英伟达发言人表示黄仁勋此行旨在支持美国及政府目标，CNBC称特朗普将带十多名美国企业高管赴北京。报道还提到英伟达先进AI芯片在过去四年面临更严格的对华销售限制，但该消息本身未披露任何新的政策调整或具体协议。</p>
-<p><strong>Background:</strong> 英伟达是用于训练与运行AI模型的GPU主要供应商，因此其产品在全球AI竞争中具有战略重要性。近年来，美国通过出口管制限制先进AI芯片对华出货，这会影响英伟达能向中国销售哪些产品以及以何种规格销售。企业高层参与国家元首出访通常用于在政府外交框架下协调商业诉求与政策目标。</p>
-<p><strong>Tags:</strong> #NVIDIA, #US-China relations, #AI chips, #Export controls, #Geopolitics</p>
-<p><a href="https://www.cnbc.com/2026/05/13/nvidia-says-ceo-jensen-huang-is-joining-trumps-china-trip.html">Read original</a></p>]]></description>
-      <category>NVIDIA</category>
-      <category>US-China relations</category>
-      <category>AI chips</category>
-      <category>Export controls</category>
-      <category>Geopolitics</category>
-    </item>
-    <item>
-      <title>[信号 5.0] 一位开发者为何从 GitHub 迁移到 Forgejo</title>
-      <link>https://jorijn.com/en/blog/leaving-github-for-forgejo/</link>
-      <guid isPermaLink="false">horizon:zh:hackernews:story:48121266</guid>
-      <pubDate>Wed, 13 May 2026 12:54:00 +0000</pubDate>
-      <description><![CDATA[<p>AI Score: 7.0</p>
-<p>Signal Score: 5.0</p>
-<p><strong>客观变化评估</strong></p>
-<p><strong>能力边界变化: 0-10%</strong> 文章展示的是一种增量的、原本就可行的从 GitHub 迁移到 Forgejo 的路径，而非出现全新能力。</p>
-<p><strong>成本变化: unclear</strong> 内容暗示自托管与非 GitHub 平台会改变成本结构（主机、维护、反爬虫），但没有给出可量化的数据。</p>
-<p><strong>工作流解锁: 0-10%</strong> 将主仓库迁出 GitHub、同时可选维护镜像是一种幅度不大的流程调整，部分团队可以立刻采用。</p>
-<p><strong>买单人群明确度: 10-20%</strong> 讨论让决策标准更清晰——网络效应、联邦化、镜像维护与爬虫暴露——但整体仍以个案经验为主。</p>
-<p><strong>分发/集成入口: none</strong> 该事件没有引入新的集成渠道或分发机制，主要是个人叙述与社区讨论。</p>
-<p><strong>监管/数据/供应链窗口: none</strong> 事件提到了对 AI 爬虫的担忧，但未涉及监管变化或新的数据获取窗口。</p>
-<p><strong>能力变化:</strong> 这里没有新的技术突破；边界变化更多是实践与社会层面的——展示个人可以把“主仓库”从 GitHub 转到 Forgejo，同时应对可发现性、镜像与协作历史等取舍。讨论也更明确了替代 GitHub 集中式网络效应时最受限的能力点（尤其是联邦化）。</p>
-<p>一篇博客文章讲述作者把项目从 GitHub 迁移到 Forgejo 的决定，并将其定位为对“Git 的去中心化理想”与“中心化托管平台现实”之间张力的回应。文章与评论讨论了迁移的实际取舍，包括社区触达、镜像同步，以及对 AI 爬虫带来负载与滥用的担忧。 GitHub 的中心地位使得“离开平台”即便不影响 Git 协议层面的去中心化，也可能显著降低可见性与协作效率，因此此类迁移会检验开源生态对平台集中化的韧性。对 Forgejo 与自托管的兴趣也反映了更广泛的趋势：在爬虫压力、可靠性与平台商业模式变化的背景下，开发者希望重新掌控基础设施。 评论者认为保留自动同步的 GitHub 镜像可以在“主仓库不在 GitHub”的情况下维持可发现性，但也提醒镜像若无人维护很容易失效。另一些人指出联邦化（federation）支持不完整是替代 GitHub 网络效应的关键阻碍；也有人表示为了避免向 AI 爬虫提供内容，选择自托管但不开放公开的 HTTP 前端。</p>
-<p><strong>Background:</strong> Git 是分布式版本控制系统，每个克隆都包含完整历史，但许多协作能力（如 issue、pull request、身份与发现机制）通常由 GitHub 这类“代码托管平台/forge”提供。文章与评论将 Forgejo 作为替代性的 forge 选择进行讨论，并提到有人同时支持 Codeberg。讨论的核心是：去中心化 Git 数据相对容易，但要去中心化围绕其构建的协作流程与社交关系网络则更难。</p>
-<p><strong>Community:</strong> 评论区总体认同“Git 的去中心化理想”与“以 GitHub 为中心的工具链”存在冲突，并有多人主张保留自动同步的 GitHub 镜像以维持传播与协作。多位评论者认为联邦化是 Forgejo 生态真正缺失的关键能力；也有人更看重通过自托管来降低 AI 爬虫带来的暴露与成本，另有评论提到 GitSocial 可迁移社交/协作历史并实现跨托管平台的 pull request。</p>
-<p><strong>Tags:</strong> #git, #forgejo, #open-source, #developer-tools, #decentralization</p>
-<p><a href="https://jorijn.com/en/blog/leaving-github-for-forgejo/">Read original</a></p>]]></description>
-      <category>git</category>
-      <category>forgejo</category>
+<p><strong>能力边界变化: 20-50%</strong> 将大量系统层代码从 Zig 切换到 Rust，会显著改变开发中可使用的工具、库与静态检查范围，但 unsafe 的存在限制了安全收益上限。</p>
+<p><strong>成本变化: unclear</strong> 现有材料未量化该重写带来的构建时间、运行时性能或工程成本变化。</p>
+<p><strong>工作流解锁: 10-20%</strong> 更多贡献者可能可以直接使用熟悉的 Rust 工作流（crates、工具链、静态检查等），但大量 unsafe 与 JS 边界复杂性仍要求较强的专门知识。</p>
+<p><strong>买单人群明确度: none</strong> 这主要是内部实现层面的变化，本身不会直接带来更清晰的对外功能集合或产品边界。</p>
+<p><strong>分发/集成入口: 0-10%</strong> 对已标准化使用 Rust 的贡献者而言，Rust 生态可能略微降低集成门槛，但此次合并本身并未建立新的分发渠道或集成接口。</p>
+<p><strong>监管/数据/供应链窗口: none</strong> 现有信息未显示该重写与监管变化或新的数据供给约束/窗口存在关联。</p>
+<p><strong>能力变化:</strong> 能力边界变化在于：Bun 的大量实现从 Zig 迁移到 Rust，使 Rust 的工具生态与基于所有权的检查能更广泛地覆盖代码库。但由于仍存在大量 unsafe 以及复杂的 JS 边界交互，这并不意味着获得“全面内存安全保证”。</p>
+<p>Bun 通过一个 GitHub PR 合并了将代码库从 Zig 大规模重写为 Rust 的改动。该合并引发了大量讨论，集中在重写前的准备工作量、合并后代码体量，以及在仍大量使用 unsafe 的情况下实际安全性提升有多大。 Bun 是备受关注的 JavaScript 运行时与工具链，更换实现语言会直接影响可维护性、贡献者参与门槛以及长期可靠性。迁移到 Rust 可能减少一类内存管理错误，但最终收益仍取决于 unsafe 的占比以及跨 JS/FFI 边界的复杂交互有多大。 社区统计提到 Rust 代码规模约接近 100 万行，并且存在大量 unsafe 代码块（例如数量级达上万），同时项目仍包含大量 TypeScript/JavaScript 以及此前的 Zig 代码。维护者指出，Rust 能把不少 use-after-free、double-free、错误路径忘记释放等问题变成编译期错误或自动清理，但“引用持有过久导致泄漏”和跨 JS 边界重入等问题仍需要工程层面谨慎处理。</p>
+<p><strong>Background:</strong> Zig 是一种系统编程语言，定位为对 C 的现代化改进，强调显式控制与相对简洁的心智模型。Rust 也是系统语言，但以所有权/借用模型（借用检查器）著称，可在无 GC 的情况下避免大量内存安全错误。在工程实践中，Rust 仍允许通过 unsafe 退出部分检查（常用于底层性能或 FFI），因此迁移并不等于自动消除所有风险。</p>
+<p><strong>Community:</strong> 评论者争论“只用一周”是否低估了投入，指出此前已有大量准备工作，例如详尽的 Zig 到 Rust 习惯用法映射文档，以及项目内部早已使用可与 Rust 一一对应的指针/集合抽象。也有人聚焦代码库体量（Rust 代码接近 100 万行）并质疑在 unsafe 数量很高时的安全叙事；维护者则强调许多历史内存错误在 Rust 中更难写出来，但跨 JS 边界问题依旧存在。</p>
+<p><strong>Tags:</strong> #bun, #rust, #javascript-runtime, #toolchain, #open-source</p>
+<p><a href="https://github.com/oven-sh/bun/pull/30412">Read original</a></p>]]></description>
+      <category>bun</category>
+      <category>rust</category>
+      <category>javascript-runtime</category>
+      <category>toolchain</category>
       <category>open-source</category>
-      <category>developer-tools</category>
-      <category>decentralization</category>
     </item>
     <item>
-      <title>[信号 5.0] 用于沙盒 iframe 的父窗口 CSP 允许列表机制</title>
-      <link>https://simonwillison.net/2026/May/13/csp-allow/#atom-everything</link>
-      <guid isPermaLink="false">horizon:zh:rss:simonwillison.net_atom_everything_:-3137684329676513308</guid>
-      <pubDate>Wed, 13 May 2026 04:50:45 +0000</pubDate>
+      <title>[信号 6.0] 高收入国家肥胖趋稳，低中收入国家加速上升</title>
+      <link>https://www.nature.com/articles/s41586-026-10383-0</link>
+      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41379</guid>
+      <pubDate>Thu, 14 May 2026 09:45:39 +0000</pubDate>
+      <description><![CDATA[<p>AI Score: 8.0</p>
+<p>Signal Score: 6.0</p>
+<p><strong>客观变化评估</strong></p>
+<p><strong>能力边界变化: 20-50%</strong> 该研究用1980—2024年的长时间窗与200国数据，更明确地确立了“高收入国家平台化、低中收入国家继续上升”的分层边界。</p>
+<p><strong>成本变化: none</strong> 该论文并未显示肥胖监测或干预成本下降，而主要是更新流行病学层面的认识。</p>
+<p><strong>工作流解锁: 10-20%</strong> 基于该研究揭示的分化趋势，公共卫生政策与规划流程可更有依据地从“一刀切”转向按收入与地区分层的优先级设定。</p>
+<p><strong>买单人群明确度: 0-10%</strong> 潜在决策方（公共卫生机构与政府）较为明确，但新闻内容未给出具体采购需求或项目落地信息。</p>
+<p><strong>分发/集成入口: none</strong> 该研究摘要未引入新的分发渠道、平台集成方式或实施路径。</p>
+<p><strong>监管/数据/供应链窗口: unclear</strong> 尽管研究规模大且跨国，但摘要未说明数据开放条款或监管变化，是否形成新的数据供给窗口不清楚。</p>
+<p><strong>能力变化:</strong> 该研究以1980—2024年、覆盖200国的大样本证据，更清晰地界定了全球肥胖趋势的边界：高收入国家总体进入平台，而低中收入国家仍在上行。其直接改变在于提高政策定位的可证性，使“全球普遍上升”的叙事更容易被拆解为按收入与地区分层的干预优先级判断。</p>
+<p>一项发表在 Nature 的研究覆盖200个国家、2.32亿人（1980—2024），发现高收入国家的肥胖上升在1990年代开始减速并在2000年代后大多进入平台期，部分国家还出现小幅下降。相较之下，低中收入国家的肥胖率仍在持续上升或加速，并在部分地区出现对高收入国家“反超”。 这种“分化”意味着全球肥胖负担的新增增长不再主要来自高收入国家，而可能更多转向低中收入国家，从而改变公共卫生干预与医疗体系承压的重点地区。它也提示政策与食物系统干预的边际效果可能更集中在仍在上升或加速的国家与地区。 研究指出高收入国家的儿童与青少年肥胖率更早出现增速放缓，成人肥胖随后也出现类似平台；并且有些国家在肥胖率已很高（部分超过40%）后才出现放缓或平台。作者将可能原因指向影响食物可得性、可负担性与使用方式的社会、经济与技术因素，并强调低中收入国家仍可能需要更强的政策干预。</p>
+<p><strong>Background:</strong> 肥胖流行率常被用作群体层面的指标，用于反映心代谢风险以及未来医疗需求压力。研究者常按国家收入水平比较趋势，因为不同收入水平国家在食物环境、价格与卫生政策上存在系统性差异。“平台期”通常指按BMI分类的肥胖占比不再快速上升，但即使肥胖率看似稳定，其他体脂相关指标仍可能继续变化。</p>
+<p><strong>Tags:</strong> #public-health, #epidemiology, #obesity, #global-health, #health-policy</p>
+<p><a href="https://www.nature.com/articles/s41586-026-10383-0">Read original</a></p>]]></description>
+      <category>public-health</category>
+      <category>epidemiology</category>
+      <category>obesity</category>
+      <category>global-health</category>
+      <category>health-policy</category>
+    </item>
+    <item>
+      <title>[信号 5.0] 博客称首个公开的 Apple M5 macOS 内核内存破坏利用</title>
+      <link>https://blog.calif.io/p/first-public-kernel-memory-corruption</link>
+      <guid isPermaLink="false">horizon:zh:hackernews:story:48139219</guid>
+      <pubDate>Thu, 14 May 2026 18:25:09 +0000</pubDate>
       <description><![CDATA[<p>AI Score: 7.0</p>
 <p>Signal Score: 5.0</p>
 <p><strong>客观变化评估</strong></p>
-<p><strong>能力边界变化: 0-10%</strong> 它并未引入新的浏览器能力，但展示了一种可行模式：由父页面协调并经用户批准的 connect-src 例外放行。</p>
-<p><strong>成本变化: none</strong> 该内容提供的是实验与代码模式，并未声称能在托管、计算或安全工具成本上带来可量化下降。</p>
-<p><strong>工作流解锁: 10-20%</strong> 对于嵌入沙盒小应用的团队，它可将 CSP 导致的 fetch 失败转为引导式的允许列表与刷新流程，从而减少反复试错。</p>
-<p><strong>买单人群明确度: unclear</strong> 该内容是工程实验，并未明确特定购买方、预算负责人或可直接采购的成品方案。</p>
-<p><strong>分发/集成入口: 0-10%</strong> 该模式可直接适配现有的 Web 分发形态（父页面嵌入 iframe），但本身不会形成新的集成入口或分发渠道。</p>
-<p><strong>监管/数据/供应链窗口: none</strong> 该内容聚焦于 iframe 的 CSP 处理方式，并未涉及监管变化或新的数据供给约束。</p>
-<p><strong>能力变化:</strong> 该实验展示了将沙盒 iframe 中因 CSP 造成的连接拦截转化为“可操作事件”的具体方法：由父窗口提示用户并更新允许列表，而不是让失败悄无声息地发生。这使得在保持 default-src &#x27;none&#x27; 的同时，仅在需要时选择性扩展 connect-src 变得更容易。</p>
-<p>Simon Willison 发布了“CSP Allow-list Experiment”，演示在受 CSP 保护的沙盒 iframe 中运行应用，并用自定义 fetch() 捕获因 CSP 导致的连接失败并上报给父窗口。父窗口随后可提示用户将被拦截的源加入 connect-src 允许列表并刷新预览。 这展示了一种实用的 UI/安全模式：在不提前大幅放宽 CSP 的前提下，为不受信任或被沙盒化的 iframe 应用安全地处理网络访问需求。它有助于注重安全的 Web 开发者在最小权限策略与用户可控的放行机制之间取得平衡。 该机制依赖 iframe 识别被 CSP 的 connect-src 拦截的请求（例如访问 https://api.inaturalist.org），并将信息发送给父窗口，由父窗口维护允许列表并在用户确认后触发刷新。演示界面提供重置示例、清空允许列表和刷新预览等控制，并在“Messages from sandbox”中展示被拦截请求的信息。</p>
-<p><strong>Background:</strong> 内容安全策略（CSP）是浏览器强制执行的安全策略，可限制页面允许从哪些来源加载资源，其中 connect-src 会约束页面可发起的对外网络请求。沙盒 iframe 常用于隔离不受信任内容，但仍可结合 CSP 进一步约束，减少意外数据外泄风险。当 CSP 阻止连接时，在 iframe 内通常会表现为 fetch() 报错；此类错误可通过类似 postMessage 的通信上报给宿主页面，以便由宿主页面协调用户批准的例外放行。</p>
-<p><strong>Tags:</strong> #Content-Security-Policy, #Web-Security, #iframes, #JavaScript, #Browser-Sandboxing</p>
-<p><a href="https://simonwillison.net/2026/May/13/csp-allow/#atom-everything">Read original</a></p>]]></description>
-      <category>Content-Security-Policy</category>
-      <category>Web-Security</category>
-      <category>iframes</category>
-      <category>JavaScript</category>
-      <category>Browser-Sandboxing</category>
+<p><strong>能力边界变化: unclear</strong> 该说法暗示存在显著能力边界变化（M5 时代的 MIE/MTE 并未阻止内核内存破坏被利用），但公开细节不足以确认其范围与普适性。</p>
+<p><strong>成本变化: unclear</strong> 由于缺少可复现的利用链细节或材料，尚不清楚对他人而言开发 M5 macOS 内核利用的成本是否发生了实质变化。</p>
+<p><strong>工作流解锁: 0-10%</strong> 文章与讨论更多是提出考量点（如 MIE/MTE 障碍与赏金定级表述），而不是提供新的可重复工作流来推进利用开发。</p>
+<p><strong>买单人群明确度: 0-10%</strong> 讨论提到 Apple 漏洞赏金可能的奖励档位，但并未得到 Apple 对漏洞类别、影响等级或资格条件的明确确认。</p>
+<p><strong>分发/集成入口: none</strong> 并未发布会改变他人分发或集成方式的工具、补丁或集成成果，除阅读博客文章外没有新的入口变化。</p>
+<p><strong>监管/数据/供应链窗口: none</strong> 该事件属于研究主张与社区争论，并非监管动作或数据可用性事件，因此不会开启或关闭合规相关窗口。</p>
+<p><strong>能力变化:</strong> 如果能被独立验证，其能力边界变化在于：在 Apple M5 时代的 macOS 上，即便有 MIE/MTE 这类缓解，仍展示了可行的内核内存破坏利用路径。不过由于公开文章被普遍认为缺乏可复现的绕过细节，社区能立刻获得的可迁移能力提升仍不明确。</p>
+<p>Calif 发布博客文章，声称这是首个公开披露、可在 Apple M5 硬件上工作的 macOS 内核内存破坏利用，并将基于 Arm MTE 的 Memory Integrity Enforcement（MIE）描述为主要障碍。由于公开内容对如何绕过 MTE 的技术细节披露较少，这一说法迅速引发讨论与质疑。 如果该说法属实，这意味着即便在新一代 Apple Silicon 上引入了 MTE/MIE 等硬件辅助内存安全缓解措施，macOS 内核内存破坏仍可能被利用，这会影响防御方、应急响应与漏洞研究方向。它也可能影响 Apple 漏洞赏金对“带有 MTE 缓解背景的内核利用”的定级与奖励预期，以及研究者构建可用利用链的效率判断。 文章将 MIE 描述为 Apple M5 的标志性安全特性，并将该成果定位为在类似 MTE 标记机制存在的情况下仍实现内存破坏利用的展示，但读者普遍认为公开内容对绕过机制缺乏足够可复现细节。另有媒体报道强调团队在开发过程中使用了 Anthropic 的 Mythos，这也使讨论部分转向“营销叙事与技术佐证是否匹配”的可信度争议。</p>
+<p><strong>Background:</strong> 内核内存破坏利用通常试图把越界访问、use-after-free 等漏洞转化为内核代码执行或权限提升；在 macOS 上这类影响尤其大，因为内核负责协调硬件访问并构成关键安全边界。Arm 的 Memory Tagging Extension（MTE）是一种硬件特性，通过给指针与内存分配标签来帮助发现某些内存安全问题；Apple 将 Memory Integrity Enforcement（MIE）描述为围绕 MTE 构建的系统级内存完整性方案，用以显著提高利用难度。在现代 Apple 平台上，内核利用通常还要面对多层缓解与隔离机制叠加，使得“完整可用的利用链”往往远比单个漏洞更复杂。</p>
+<p><strong>Community:</strong> 评论区呈现“期待与怀疑并存”的态势：有人祝贺并期待完整报告，也有人认为文章更像营销叙事、技术细节不足以评估。反复出现的技术疑问是该漏洞如何在 MTE 存在时仍可被利用，另有讨论聚焦于 Apple 漏洞赏金可能因呈现方式不同而出现奖励差异（例如是否针对 beta 版本、是否按未授权访问来表述）。</p>
+<p><strong>Tags:</strong> #macOS, #kernel-exploit, #Apple-silicon, #memory-corruption, #security-research</p>
+<p><a href="https://blog.calif.io/p/first-public-kernel-memory-corruption">Read original</a></p>]]></description>
+      <category>macOS</category>
+      <category>kernel-exploit</category>
+      <category>Apple-silicon</category>
+      <category>memory-corruption</category>
+      <category>security-research</category>
+    </item>
+    <item>
+      <title>[信号 4.0] 拆除2024款RAV4 Hybrid的蜂窝模块与GPS</title>
+      <link>https://arkadiyt.com/2026/05/13/removing-the-modem-and-gps-from-my-rav4/</link>
+      <guid isPermaLink="false">horizon:zh:hackernews:story:48138136</guid>
+      <pubDate>Thu, 14 May 2026 17:08:00 +0000</pubDate>
+      <description><![CDATA[<p>AI Score: 7.0</p>
+<p>Signal Score: 4.0</p>
+<p><strong>客观变化评估</strong></p>
+<p><strong>能力边界变化: 10-20%</strong> 文中展示了车主可执行的硬件禁用思路，但由于仍存在其他遥测路径，能力边界的变化有限。</p>
+<p><strong>成本变化: unclear</strong> 该内容未给出可推广的成本信息，包括改装成本及对维修、功能与二手价值的影响。</p>
+<p><strong>工作流解锁: 10-20%</strong> 它在一定程度上为注重隐私的车主解锁了可复用的操作流程（硬件拆除与连接使用习惯），但仍依赖具体车型与配置。</p>
+<p><strong>买单人群明确度: 0-10%</strong> 讨论在一定程度上澄清了误解（如蓝牙与USB差异、选择加入机制），但主要是经验之谈，缺少权威政策依据。</p>
+<p><strong>分发/集成入口: none</strong> 内容未引入新的集成渠道、平台政策或分发机制，主要是个人拆解与讨论。</p>
+<p><strong>监管/数据/供应链窗口: none</strong> 文中未体现监管变化，也未描述新的、经验证的数据供给安排。</p>
+<p><strong>能力变化:</strong> 该文章及讨论让车主更容易以实践方式通过物理拆除蜂窝模块/GPS来禁用一条主要的直接遥测通道，而不只是依赖软件开关。但这并不等于彻底消除遥测，因为手机共享网络以及CarPlay/Android Auto等路径仍可能传出车辆数据。</p>
+<p>一篇博文记录了作者对2024款Toyota RAV4 Hybrid进行动手拆解，移除蜂窝通信模块与GPS硬件以降低车辆追踪与遥测上报。相关讨论指出，即使拆掉车载模块，数据仍可能通过手机连接和车机系统的其他路径外传。 现代车辆越来越多地默认启用常开车联网功能，这篇拆解展示了车主通过硬件层面减少关键遥测通道的可行做法。它也提醒现实限制：手机、CarPlay/Android Auto以及厂商策略可能让数据采集“绕路回归”，因此隐私预期必须与真实数据路径相匹配。 有评论者称，蓝牙配对后车辆可能利用手机作为联网通道继续发送类似遥测数据，而通过USB有线使用CarPlay可能避开该特定路径。多位评论者指出CarPlay/Android Auto本身也可能采集车辆遥测数据，另有人提到不同厂商的设计差异，例如某些车型可通过拔掉单独的车联网保险丝来禁用模块且不报码。</p>
+<p><strong>Background:</strong> 车辆车联网（telematics）通常将蜂窝通信模块与定位数据（常见为GPS）结合，用于远程App控制、紧急服务、诊断与使用分析等功能。移除或禁用蜂窝模块可以切断直接蜂窝上行，但车机仍可能通过手机共享网络或应用生态对外通信。由于这些系统高度集成，改动可能影响导航、联网服务以及4S店支持的预期。</p>
+<p><strong>Community:</strong> 讨论中，一部分人认为拆除模块能显著提升隐私，另一部分人则强调仍可能通过蓝牙共享网络以及CarPlay/Android Auto的遥测采集实现“残余上报”。也有人并非出于隐私，而是因为与CarPlay配对时出现GPS/指南针方向异常且厂商拒修而考虑动手处理，同时还有人对比其他车型更简单的禁用方式（例如拔车联网保险丝）。关于Toyota是否向保险公司共享数据也存在争论，有评论者认为关键在于是否被“选择加入”，且购车时不透明的初始化流程可能导致用户在不知情下启用相关选项。</p>
+<p><strong>Tags:</strong> #automotive-telematics, #privacy, #hardware-hacking, #infotainment, #security</p>
+<p><a href="https://arkadiyt.com/2026/05/13/removing-the-modem-and-gps-from-my-rav4/">Read original</a></p>]]></description>
+      <category>automotive-telematics</category>
+      <category>privacy</category>
+      <category>hardware-hacking</category>
+      <category>infotainment</category>
+      <category>security</category>
+    </item>
+    <item>
+      <title>[信号 3.0] 文章警告AI写代码可能削弱开发者理解</title>
+      <link>https://jpain.io/god-damn-ai-is-making-me-dumb/</link>
+      <guid isPermaLink="false">horizon:zh:hackernews:story:48139148</guid>
+      <pubDate>Thu, 14 May 2026 18:19:28 +0000</pubDate>
+      <description><![CDATA[<p>AI Score: 7.0</p>
+<p>Signal Score: 3.0</p>
+<p><strong>客观变化评估</strong></p>
+<p><strong>能力边界变化: 0-10%</strong> 该新闻并未带来超出现有LLM编程助手的新技术能力，但更清晰地指出了“生成代码”与“理解代码”之间的能力边界。</p>
+<p><strong>成本变化: none</strong> 内容未提及新的定价或成本变化；它是一篇关于使用习惯及其带来的审查、调试等下游成本的文章与讨论。</p>
+<p><strong>工作流解锁: 10-20%</strong> 讨论汇总了可操作的流程经验（审查、测试、刻意学习计划），可在一定程度上改进团队更安全地集成LLM输出的方式。</p>
+<p><strong>买单人群明确度: 0-10%</strong> 它在一定程度上强化了一个明确需求：采用AI编程工具时应配置验证与人类在环保障，但并未给出正式标准。</p>
+<p><strong>分发/集成入口: none</strong> 没有引入新的分发渠道、集成方式或平台变化；这属于观点讨论而非产品发布。</p>
+<p><strong>监管/数据/供应链窗口: none</strong> 内容未涉及监管或数据供给约束；重点在个人与团队实践层面的影响。</p>
+<p><strong>能力变化:</strong> 这里并没有新的模型或工具发布；边界变化更多是社会与流程层面的：借助LLM，更多开发者可以更快产出能运行的代码，但也更容易把未经验证、理解不足的改动带入项目。文章强调，“新出现的可能性”是更快交付却不一定同步提升理解，因此需要增加约束与审查闭环。</p>
+<p>一篇广泛传播的文章《AI is making me dumb》认为，频繁使用LLM进行“vibe coding”会削弱理解与习惯，除非开发者主动复核、学习并约束模型输出。Hacker News上的高热度讨论则争论这究竟是能力退化，还是减少刻意练习后的正常生疏，以及哪些验证流程能缓解问题。 如果AI工具让程序员从“编写与推理”转向“接受与微调”，团队可能面临更多隐性缺陷、更弱的调试能力，以及更慢的技能成长——对初级开发者影响尤甚。讨论指出，生产力提升可能伴随代码质量与学习效率的“隐性成本”，除非同步强化复核、测试与有意识学习。 评论者指出，LLM可能生成看似合理的代码，却悄悄加入未请求的行为，因此即使是个人项目也需要仔细代码审查与测试。也有人认为这不是永久性的“变笨”，而是减少动手练习后的可预期生疏，意味着对策应是刻意练习叠加人类在环的验证流程。</p>
+<p><strong>Background:</strong> AI辅助编程通常指使用LLM根据自然语言提示生成或修改代码，从而加速脚手架搭建与常规任务。更广泛的讨论中，一个反复出现的担忧是“认知外包”：如果把思考步骤交给工具而缺少主动学习，记忆与熟练度可能下降。在软件工程里，这会提升“人类在环”实践的重要性——代码审查、测试与显式验证——以防看似可信但实际错误的输出进入代码库。</p>
+<p><strong>Community:</strong> 一些有经验的开发者表示自己会产生强烈的不适感，从而驱动他们审查AI输出，但也提醒初级开发者更可能盲目信任。也有人把AI视为“工作保障”或带来多巴胺的捷径，指出模型会擅自添加功能而反噬；少数观点则认为这只是减少练习导致的技能生疏，并非AI独有的负面效应。</p>
+<p><strong>Tags:</strong> #LLMs, #software-engineering, #developer-productivity, #education, #human-factors</p>
+<p><a href="https://jpain.io/god-damn-ai-is-making-me-dumb/">Read original</a></p>]]></description>
+      <category>LLMs</category>
+      <category>software-engineering</category>
+      <category>developer-productivity</category>
+      <category>education</category>
+      <category>human-factors</category>
     </item>
   </channel>
 </rss>
