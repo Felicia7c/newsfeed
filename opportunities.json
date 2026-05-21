@@ -1,5 +1,384 @@
 {
   "date": "2026-05-21",
   "language": "zh",
-  "opportunities": []
+  "opportunities": [
+    {
+      "id": "rss:simonwillison.net_atom_everything_:-6052924173598202158",
+      "title": "Quoting SpaceX S-1",
+      "url": "https://simonwillison.net/2026/May/20/spacex-s1/#atom-everything",
+      "source_type": "rss",
+      "ai_score": 9.0,
+      "signal_score": 9.0,
+      "signal_reason": "Observable facts indicate a new, material market condition: SpaceX is selling large-scale AI compute to third parties under a disclosed $1.25B/month contract through 2029 with near-term ramp, demonstrating significant capacity, clear buyer segment, and meaningful revenue/market validation (though with termination risk on 90 days’ notice).",
+      "capability_delta": "",
+      "assessment": {},
+      "tags": [
+        "AI compute",
+        "cloud infrastructure",
+        "Anthropic",
+        "SpaceX",
+        "SEC filing"
+      ]
+    },
+    {
+      "id": "telegram:zaihuapd:41497",
+      "title": "OpenAI 计划最快本周提交 IPO 申请",
+      "url": "https://www.wsj.com/tech/ai/openai-is-preparing-to-file-for-an-ipo-very-soon-0ec95af5",
+      "source_type": "telegram",
+      "ai_score": 9.0,
+      "signal_score": 8.0,
+      "signal_reason": "可观察事实包括：与高盛、摩根士丹利等投行合作起草招股书、拟向监管机构秘密递交 IPO 申请并给出最早 9 月上市时间表，若成行将显著改变其融资与信息披露环境；但仍存在上诉与上市计划变动的不确定性。",
+      "capability_delta": "",
+      "assessment": {},
+      "tags": [
+        "OpenAI",
+        "IPO",
+        "AI行业",
+        "资本市场",
+        "监管申报"
+      ]
+    },
+    {
+      "id": "telegram:zaihuapd:41498",
+      "title": "♻️ 英伟达Q4营收681亿美元超预期，下季度指引上调至780亿美元  英伟达第四财季营收达681亿美元，其中数据中心业务贡献623亿美元，两项核心指标及1.6",
+      "url": "https://t.me/zaihuapd/41498",
+      "source_type": "telegram",
+      "ai_score": 8.0,
+      "signal_score": 8.0,
+      "signal_reason": "可观察到的市场条件变化包括：收入与EPS超预期、下一季度营收指引从市场预期约726亿美元上调到780亿美元、盘后股价即时上涨，以及公司明确表述通过战略手段确保库存以应对供应链压力，显示需求强劲与供给保障信号。",
+      "capability_delta": "",
+      "assessment": {},
+      "tags": [
+        "NVIDIA",
+        "Earnings",
+        "AI Infrastructure",
+        "Data Center",
+        "Semiconductors"
+      ]
+    },
+    {
+      "id": "telegram:zaihuapd:41499",
+      "title": "黄仁勋：英伟达已基本放弃中国 AI 芯片市场",
+      "url": "https://www.cnbc.com/2026/05/21/nvidia-jensen-huang-china-ai-chip-market-huawei.html",
+      "source_type": "telegram",
+      "ai_score": 8.0,
+      "signal_score": 8.0,
+      "signal_reason": "可观察事实显示市场条件发生实质变化：美国对华芯片出口许可要求使英伟达在中国先进芯片销售“实质被排除”，且该市场此前占其数据中心收入至少五分之一；同时本土替代（华为及本地生态）被点名为强劲，意味着供给与竞争格局出现明显重排。",
+      "capability_delta": "",
+      "assessment": {},
+      "tags": [
+        "NVIDIA",
+        "AI芯片",
+        "出口管制",
+        "中国市场",
+        "华为"
+      ]
+    },
+    {
+      "id": "telegram:zaihuapd:41505",
+      "title": "腾讯操作系统级 AI 助手 Marvis 上线",
+      "url": "https://finance.sina.com.cn/jjxw/2026-05-21/doc-inhyrmmu5949795.shtml",
+      "source_type": "telegram",
+      "ai_score": 8.0,
+      "signal_score": 8.0,
+      "signal_reason": "可直接下载且无需邀请码降低试用门槛；端侧离线隐私模式与“每天1000万免费Token”等可观察的访问/成本条件变化，可能影响高敏感行业（财务/法务/HR）采用路径与终端AI工作流落地。",
+      "capability_delta": "",
+      "assessment": {},
+      "tags": [
+        "AI助手",
+        "操作系统",
+        "多智能体",
+        "端侧大模型",
+        "隐私计算"
+      ]
+    },
+    {
+      "id": "hackernews:story:48212493",
+      "title": "An OpenAI model has disproved a central conjecture in discrete geometry",
+      "url": "https://openai.com/index/model-disproves-discrete-geometry-conjecture/",
+      "source_type": "hackernews",
+      "ai_score": 10.0,
+      "signal_score": 7.0,
+      "signal_reason": "Observable signal is strong but bounded: the item reports a concrete, publication-style research outcome (a new counterexample/disproof) and widespread validated attention, indicating improved capability for generating nontrivial mathematical results, but it does not itself document broad access changes, cost/latency shifts, or a repeatable workflow guarantee for general users.",
+      "capability_delta": "",
+      "assessment": {},
+      "tags": [
+        "AI for mathematics",
+        "discrete geometry",
+        "automated theorem proving",
+        "LLMs",
+        "research breakthrough"
+      ]
+    },
+    {
+      "id": "hackernews:story:48220105",
+      "title": "Google officially announces that ads will be included in AI Mode search results",
+      "url": "https://blog.google/products/ads-commerce/google-marketing-live-search-ads/",
+      "source_type": "hackernews",
+      "ai_score": 8.0,
+      "signal_score": 7.0,
+      "signal_reason": "Observable market/technical condition change: Google is officially expanding ad inventory into AI Mode (a new distribution surface with different UX and ad-blocking dynamics), and high engagement plus comments indicating potential user churn suggest near-term shifts in search traffic and monetization behavior.",
+      "capability_delta": "",
+      "assessment": {},
+      "tags": [
+        "search",
+        "online-advertising",
+        "generative-ai",
+        "google",
+        "product-policy"
+      ]
+    },
+    {
+      "id": "telegram:zaihuapd:41494",
+      "title": "特斯拉监督版 FSD 入华",
+      "url": "https://x.com/i/status/2057226337010745348",
+      "source_type": "telegram",
+      "ai_score": 8.0,
+      "signal_score": 7.0,
+      "signal_reason": "可观察事实为“特斯拉官方声明监督版 FSD 可在中国使用”，意味着产品可用性/可访问性在中国这一关键市场出现实质变化；但缺少明确的发布范围、交付形态（订阅/一次性）、车端软件版本与监管许可细节，信号强度受限。",
+      "capability_delta": "",
+      "assessment": {},
+      "tags": [
+        "Tesla",
+        "FSD",
+        "Autonomous Driving",
+        "China Market",
+        "Regulation"
+      ]
+    },
+    {
+      "id": "telegram:zaihuapd:41495",
+      "title": "OpenAI 开始给 ChatGPT 图片加上 Google SynthID 水印",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/933442/openai-synthid-content-credentials-c2pa-expansion",
+      "source_type": "telegram",
+      "ai_score": 8.0,
+      "signal_score": 7.0,
+      "signal_reason": "可观察到的变化包括：OpenAI图像输出新增更难被简单处理抹除的SynthID水印、同时保留C2PA元数据，并上线官方公开检测入口；这提高了平台与个人进行来源核验的可用性与可靠性，但当前覆盖范围主要限于OpenAI自家生成图像。",
+      "capability_delta": "",
+      "assessment": {},
+      "tags": [
+        "AI内容溯源",
+        "数字水印",
+        "C2PA",
+        "SynthID",
+        "内容鉴伪"
+      ]
+    },
+    {
+      "id": "telegram:zaihuapd:41496",
+      "title": "营收井喷式增长，Anthropic 有望迎来首个盈利季度",
+      "url": "https://www.bloomberg.com/news/articles/2026-05-20/anthropic-on-pace-for-first-profitable-quarter-as-revenue-surges?srnd=phx-technology",
+      "source_type": "telegram",
+      "ai_score": 8.0,
+      "signal_score": 7.0,
+      "signal_reason": "可观察到的信号是：报道给出营收从 48 亿美元增至 109 亿美元、运营利润 5.59 亿美元及年化运行率 440 亿美元等明确数字，若属实意味着其商业化与盈利能力出现实质性变化，并可能影响企业 AI 采购与竞争格局；但为“预计/报道”而非正式财报披露，确定性略受限。",
+      "capability_delta": "",
+      "assessment": {},
+      "tags": [
+        "Anthropic",
+        "Generative AI",
+        "Enterprise AI",
+        "Financials",
+        "AI industry"
+      ]
+    },
+    {
+      "id": "telegram:zaihuapd:41502",
+      "title": "AMD 发布 Ryzen AI Max 400 系列处理器，内存上限提升至 192 GB",
+      "url": "https://www.techpowerup.com/349218/amd-launches-the-ryzen-ai-max-400-series-processors-strix-halo-gets-a-memory-upgrade",
+      "source_type": "telegram",
+      "ai_score": 8.0,
+      "signal_score": 7.0,
+      "signal_reason": "可观测到的客观变化包括：内存上限从 128GB 提升到 192GB、iGPU 可分配显存上限到 160GB，以及 NPU 最高 55 TOPS（约提升一成），并明确将有搭载 192GB 内存的 Halo 设备与后续消费版上市计划，意味着本地大模型/开发类工作负载的可用硬件配置边界被实质抬升。",
+      "capability_delta": "",
+      "assessment": {},
+      "tags": [
+        "AMD",
+        "Ryzen AI",
+        "APU",
+        "On-device AI",
+        "Hardware"
+      ]
+    },
+    {
+      "id": "telegram:zaihuapd:41509",
+      "title": "📱 中国审查 Meta 收购 Manus，两名联合创始人被限制离境  中国监管部门正在审查 Meta 收购 AI 初创公司 Manus 是否违反投资规定。",
+      "url": "https://t.me/zaihuapd/41509",
+      "source_type": "telegram",
+      "ai_score": 8.0,
+      "signal_score": 7.0,
+      "signal_reason": "可观察到的事实是并购审查启动且出现人员出境限制，表明跨境投资合规与交易执行风险上升、交易进程与条件可能变化；但交易金额与最终监管结论未披露，市场条件变化幅度仍不确定。",
+      "capability_delta": "",
+      "assessment": {},
+      "tags": [
+        "AI监管",
+        "跨境并购",
+        "Meta",
+        "中国监管",
+        "AI初创公司"
+      ]
+    },
+    {
+      "id": "reddit:subreddit:1tizmar",
+      "title": "Re. what ever happened to Cohere’s Command-A series of models?",
+      "url": "https://v.redd.it/3ez116nl0d2h1",
+      "source_type": "reddit",
+      "ai_score": 7.5,
+      "signal_score": 6.0,
+      "signal_reason": "Observable signal is a new model release with stated improved efficiency/quantization and confirmed community attention, potentially lowering hardware requirements for use, but concrete benchmark positioning, licensing details, and broad integration availability (e.g., GGUF) are not established in the provided content.",
+      "capability_delta": "",
+      "assessment": {},
+      "tags": [
+        "LLMs",
+        "Mixture-of-Experts",
+        "Quantization",
+        "Local inference",
+        "Model release"
+      ]
+    },
+    {
+      "id": "hackernews:story:48222383",
+      "title": "AI is just unauthorised plagiarism at a bigger scale",
+      "url": "https://axelk.ee/ai-is-just-unauthorised-plagiarism-at-a-bigger-scale/",
+      "source_type": "hackernews",
+      "ai_score": 7.0,
+      "signal_score": 6.0,
+      "signal_reason": "Observable signal is strong community attention (382 points, 239 comments) around unresolved legal and economic questions (fair use, attribution, incentives), but the item itself does not report a concrete policy change, court ruling, or new technical capability shift.",
+      "capability_delta": "",
+      "assessment": {},
+      "tags": [
+        "AI ethics",
+        "copyright",
+        "LLMs",
+        "fair use",
+        "web publishing"
+      ]
+    },
+    {
+      "id": "hackernews:story:48220696",
+      "title": "Python 3.15: features that didn't make the headlines",
+      "url": "https://blog.changs.co.uk/python-315-features-that-didnt-make-the-headlines.html",
+      "source_type": "hackernews",
+      "ai_score": 7.0,
+      "signal_score": 6.0,
+      "signal_reason": "Python 3.15 introduces observable new/changed runtime and stdlib capabilities (notably documented iterator synchronization primitives in threading and other small language/stdlib enhancements), which can materially affect compatibility/testing and enable new patterns for users upgrading, but it is incremental rather than a clear step-change in cost/latency/access on its own.",
+      "capability_delta": "",
+      "assessment": {},
+      "tags": [
+        "python",
+        "python-3.15",
+        "programming-languages",
+        "stdlib",
+        "threading"
+      ]
+    },
+    {
+      "id": "reddit:subreddit:1tjmvx6",
+      "title": "Heretic has been served a legal notice by Meta, Inc.",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tjmvx6/heretic_has_been_served_a_legal_notice_by_meta_inc/",
+      "source_type": "reddit",
+      "ai_score": 7.0,
+      "signal_score": 6.0,
+      "signal_reason": "Observable enforcement action (legal notice) led to immediate takedown of Llama-derivative weights, indicating a real change in practical access/distribution risk for certain artifacts, but details of claims, scope, and broader market impact remain unspecified.",
+      "capability_delta": "",
+      "assessment": {},
+      "tags": [
+        "open-source-llm",
+        "llama",
+        "ai-licensing",
+        "legal-risk",
+        "model-weights"
+      ]
+    },
+    {
+      "id": "reddit:subreddit:1tjh7az",
+      "title": "110 tok/s with 12GB VRAM on Qwen3.6 35B A3B and ik_llama.cpp",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tjh7az/110_toks_with_12gb_vram_on_qwen36_35b_a3b_and_ik/",
+      "source_type": "reddit",
+      "ai_score": 7.0,
+      "signal_score": 6.0,
+      "signal_reason": "Observable signal is a large reported throughput change on common consumer hardware plus active upstream churn (multiple MTP PRs merged recently) and a fork demonstrating different optimization behavior; however, it is a single-user benchmark and not a broadly validated capability/cost shift yet.",
+      "capability_delta": "",
+      "assessment": {},
+      "tags": [
+        "llama.cpp",
+        "local-llm-inference",
+        "MTP",
+        "quantization",
+        "GPU-offloading"
+      ]
+    },
+    {
+      "id": "reddit:subreddit:1tjbi24",
+      "title": "Qwen3.6 27B and llama.cpp appreciation post",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tjbi24/qwen36_27b_and_llamacpp_appreciation_post/",
+      "source_type": "reddit",
+      "ai_score": 7.0,
+      "signal_score": 6.0,
+      "signal_reason": "Observable technical signal includes a maintainer-recommended new runtime option (--spec-default) claimed to make file edits 'instantaneous' in workflows, and a recently merged MTP-related PR, suggesting near-term performance/latency improvements for local inference setups; however, the post itself is an appreciation/config report rather than a broadly scoped release announcement with measured benchmarks.",
+      "capability_delta": "",
+      "assessment": {},
+      "tags": [
+        "llama.cpp",
+        "Qwen",
+        "speculative-decoding",
+        "ROCm",
+        "local-LLM-inference"
+      ]
+    },
+    {
+      "id": "telegram:zaihuapd:41506",
+      "title": "🤖 Google 调整 Gemini Apps 使用限额，改为基于 AI 计算量的限额方式  Google 自 2026 年 5 月 17 日起调整 Gemin",
+      "url": "https://t.me/zaihuapd/41506",
+      "source_type": "telegram",
+      "ai_score": 7.0,
+      "signal_score": 6.0,
+      "signal_reason": "可观察到的变化是配额计量方式与订阅档位额度倍数被重新定义（标准/2x/4x/高于Pro 20倍、5小时刷新+周上限），意味着实际可用量与成本/可用性边界可能改变；但缺少官方定价与具体计算公式，市场与技术条件变化幅度难以精确量化。",
+      "capability_delta": "",
+      "assessment": {},
+      "tags": [
+        "Gemini",
+        "Google",
+        "LLM配额",
+        "计费与限流",
+        "订阅分层"
+      ]
+    },
+    {
+      "id": "hackernews:story:48215979",
+      "title": "Show HN: I reverse engineered Apple's video wallpapers",
+      "url": "https://github.com/kageroumado/phosphene",
+      "source_type": "hackernews",
+      "ai_score": 7.0,
+      "signal_score": 5.0,
+      "signal_reason": "Observable signal is moderate: the project is now open-sourced and demonstrates a working integration path for custom video wallpapers via Apple’s wallpaper framework, but it doesn’t indicate a major platform change, new official API access, or a broad market/price shift.",
+      "capability_delta": "",
+      "assessment": {},
+      "tags": [
+        "macOS",
+        "reverse-engineering",
+        "desktop-customization",
+        "WallpaperExtensionKit",
+        "open-source"
+      ]
+    },
+    {
+      "id": "reddit:subreddit:1tjbhjk",
+      "title": "Same task in github-copilot, pi, claude-code, and opencode with Qwen3.6 27B",
+      "url": "https://www.reddit.com/gallery/1tjbhjk",
+      "source_type": "reddit",
+      "ai_score": 7.0,
+      "signal_score": 4.0,
+      "signal_reason": "Observable facts are primarily anecdotal qualitative differences and a note that OpenCode has default internet search; no new release, benchmark results, or demonstrated step-change in cost/latency/access is provided, and the author states automated/metric evaluation is still in progress.",
+      "capability_delta": "",
+      "assessment": {},
+      "tags": [
+        "LLM agents",
+        "coding assistants",
+        "evaluation",
+        "Qwen",
+        "developer tools"
+      ]
+    }
+  ]
 }
