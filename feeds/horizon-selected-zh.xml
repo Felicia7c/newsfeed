@@ -4,40 +4,8 @@
     <title>Horizon Personal Feed - ZH</title>
     <link>https://felicia7c.github.io/newsfeed</link>
     <description>AI-filtered stories from Horizon</description>
-    <lastBuildDate>2026-05-21</lastBuildDate>
+    <lastBuildDate>2026-05-22</lastBuildDate>
     <atom:link href="https://felicia7c.github.io/newsfeed/feeds/horizon-selected-zh.xml" rel="self" type="application/rss+xml"/>
-    <item>
-      <title>[信号 9.0] Quoting SpaceX S-1</title>
-      <link>https://simonwillison.net/2026/May/20/spacex-s1/#atom-everything</link>
-      <guid isPermaLink="false">horizon:zh:rss:simonwillison.net_atom_everything_:-6052924173598202158</guid>
-      <pubDate>Wed, 20 May 2026 22:26:36 +0000</pubDate>
-      <description><![CDATA[<p>AI Score: 9.0</p>
-<p>Signal Score: 9.0</p>
-<p>An SEC filing excerpt states SpaceX signed cloud services agreements to provide Anthropic compute capacity across COLOSSUS/COLOSSUS II for $1.25B per month through May 2029 (terminable with 90 days’ notice).</p>
-<p><strong>Tags:</strong> #AI compute, #cloud infrastructure, #Anthropic, #SpaceX, #SEC filing</p>
-<p><a href="https://simonwillison.net/2026/May/20/spacex-s1/#atom-everything">Read original</a></p>]]></description>
-      <category>AI compute</category>
-      <category>cloud infrastructure</category>
-      <category>Anthropic</category>
-      <category>SpaceX</category>
-      <category>SEC filing</category>
-    </item>
-    <item>
-      <title>[信号 8.0] OpenAI 计划最快本周提交 IPO 申请</title>
-      <link>https://www.wsj.com/tech/ai/openai-is-preparing-to-file-for-an-ipo-very-soon-0ec95af5</link>
-      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41497</guid>
-      <pubDate>Thu, 21 May 2026 04:08:57 +0000</pubDate>
-      <description><![CDATA[<p>AI Score: 9.0</p>
-<p>Signal Score: 8.0</p>
-<p>报道称 OpenAI 正与多家投行起草招股书并计划最快本周秘密提交 IPO 申请，目标最早 9 月上市但仍受诉讼上诉与成本压力等因素影响。</p>
-<p><strong>Tags:</strong> #OpenAI, #IPO, #AI行业, #资本市场, #监管申报</p>
-<p><a href="https://www.wsj.com/tech/ai/openai-is-preparing-to-file-for-an-ipo-very-soon-0ec95af5">Read original</a></p>]]></description>
-      <category>OpenAI</category>
-      <category>IPO</category>
-      <category>AI行业</category>
-      <category>资本市场</category>
-      <category>监管申报</category>
-    </item>
     <item>
       <title>[信号 8.0] ♻️ 英伟达Q4营收681亿美元超预期，下季度指引上调至780亿美元  英伟达第四财季营收达681亿美元，其中数据中心业务贡献623亿美元，两项核心指标及1.6</title>
       <link>https://t.me/zaihuapd/41498</link>
@@ -45,14 +13,14 @@
       <pubDate>Thu, 21 May 2026 05:10:40 +0000</pubDate>
       <description><![CDATA[<p>AI Score: 8.0</p>
 <p>Signal Score: 8.0</p>
-<p>英伟达Q4营收681亿美元和数据中心收入623亿美元均超预期，并将下一季度销售指引上调至780亿美元，盘后股价上涨逾3%。</p>
-<p><strong>Tags:</strong> #NVIDIA, #Earnings, #AI Infrastructure, #Data Center, #Semiconductors</p>
+<p>英伟达Q4营收681亿美元、数据中心623亿美元均超预期，并将下季度指引上调至780亿美元，盘后股价上涨超3%。</p>
+<p><strong>Tags:</strong> #NVIDIA, #财报, #数据中心, #AI算力, #半导体</p>
 <p><a href="https://t.me/zaihuapd/41498">Read original</a></p>]]></description>
       <category>NVIDIA</category>
-      <category>Earnings</category>
-      <category>AI Infrastructure</category>
-      <category>Data Center</category>
-      <category>Semiconductors</category>
+      <category>财报</category>
+      <category>数据中心</category>
+      <category>AI算力</category>
+      <category>半导体</category>
     </item>
     <item>
       <title>[信号 8.0] 黄仁勋：英伟达已基本放弃中国 AI 芯片市场</title>
@@ -61,14 +29,14 @@
       <pubDate>Thu, 21 May 2026 05:52:25 +0000</pubDate>
       <description><![CDATA[<p>AI Score: 8.0</p>
 <p>Signal Score: 8.0</p>
-<p>黄仁勋称受美国出口管制影响英伟达已基本退出中国先进 AI 芯片市场，中国份额让渡给华为等本土厂商，同时公司转向供应链扩张并推进 800 亿美元回购。</p>
-<p><strong>Tags:</strong> #NVIDIA, #AI芯片, #出口管制, #中国市场, #华为</p>
+<p>黄仁勋称受美国出口管制与许可要求影响，Nvidia已基本放弃中国AI芯片市场并将份额让给华为等本土厂商，同时转向供应链扩张与股票回购。</p>
+<p><strong>Tags:</strong> #NVIDIA, #export-controls, #AI-chips, #China-tech, #semiconductors</p>
 <p><a href="https://www.cnbc.com/2026/05/21/nvidia-jensen-huang-china-ai-chip-market-huawei.html">Read original</a></p>]]></description>
       <category>NVIDIA</category>
-      <category>AI芯片</category>
-      <category>出口管制</category>
-      <category>中国市场</category>
-      <category>华为</category>
+      <category>export-controls</category>
+      <category>AI-chips</category>
+      <category>China-tech</category>
+      <category>semiconductors</category>
     </item>
     <item>
       <title>[信号 8.0] 腾讯操作系统级 AI 助手 Marvis 上线</title>
@@ -77,46 +45,78 @@
       <pubDate>Thu, 21 May 2026 10:00:00 +0000</pubDate>
       <description><![CDATA[<p>AI Score: 8.0</p>
 <p>Signal Score: 8.0</p>
-<p>腾讯上线操作系统级AI助手Marvis，提供多Agent协同与端侧隐私模式（离线、本地处理不上云），官网开放下载且无需邀请码。</p>
-<p><strong>Tags:</strong> #AI助手, #操作系统, #多智能体, #端侧大模型, #隐私计算</p>
+<p>腾讯上线操作系统级 AI 助手 Marvis，免邀请码下载，提供多 Agent 协同与端侧离线隐私模式并给出每日 1000 万免费 Token 配额。</p>
+<p><strong>Tags:</strong> #AI助手, #多Agent, #操作系统集成, #端侧大模型, #隐私计算</p>
 <p><a href="https://finance.sina.com.cn/jjxw/2026-05-21/doc-inhyrmmu5949795.shtml">Read original</a></p>]]></description>
       <category>AI助手</category>
-      <category>操作系统</category>
-      <category>多智能体</category>
+      <category>多Agent</category>
+      <category>操作系统集成</category>
       <category>端侧大模型</category>
       <category>隐私计算</category>
     </item>
     <item>
-      <title>[信号 7.0] An OpenAI model has disproved a central conjecture in discrete geometry</title>
-      <link>https://openai.com/index/model-disproves-discrete-geometry-conjecture/</link>
-      <guid isPermaLink="false">horizon:zh:hackernews:story:48212493</guid>
-      <pubDate>Wed, 20 May 2026 19:05:30 +0000</pubDate>
-      <description><![CDATA[<p>AI Score: 10.0</p>
-<p>Signal Score: 7.0</p>
-<p>OpenAI claims one of its models generated a counterexample disproving a prominent discrete-geometry conjecture, prompting wide expert discussion about AI-assisted mathematical discovery.</p>
-<p><strong>Tags:</strong> #AI for mathematics, #discrete geometry, #automated theorem proving, #LLMs, #research breakthrough</p>
-<p><a href="https://openai.com/index/model-disproves-discrete-geometry-conjecture/">Read original</a></p>]]></description>
-      <category>AI for mathematics</category>
-      <category>discrete geometry</category>
-      <category>automated theorem proving</category>
-      <category>LLMs</category>
-      <category>research breakthrough</category>
+      <title>[信号 8.0] Google暂不在Gemini应用中投放广告，专注AI搜索商业化  Google全球广告副总裁Dan Taylor表示，公司目前没有在Gemini AI应用中投</title>
+      <link>https://t.me/zaihuapd/41493</link>
+      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41493</guid>
+      <pubDate>Thu, 21 May 2026 00:48:31 +0000</pubDate>
+      <description><![CDATA[<p>AI Score: 7.0</p>
+<p>Signal Score: 8.0</p>
+<p>Google表示短期内不会在Gemini应用内投放广告，而将广告商业化重点放在AI搜索产品（AI Overviews与AI Mode）上，并称AI Overviews月活已超20亿。</p>
+<p><strong>Tags:</strong> #Google, #Gemini, #AI Search, #AdTech, #Generative AI</p>
+<p><a href="https://t.me/zaihuapd/41493">Read original</a></p>]]></description>
+      <category>Google</category>
+      <category>Gemini</category>
+      <category>AI Search</category>
+      <category>AdTech</category>
+      <category>Generative AI</category>
     </item>
     <item>
-      <title>[信号 7.0] Google officially announces that ads will be included in AI Mode search results</title>
+      <title>[信号 7.0] We&#x27;re testing new ad formats in Search and expanding our Direct Offers pilot</title>
       <link>https://blog.google/products/ads-commerce/google-marketing-live-search-ads/</link>
       <guid isPermaLink="false">horizon:zh:hackernews:story:48220105</guid>
       <pubDate>Thu, 21 May 2026 09:49:46 +0000</pubDate>
       <description><![CDATA[<p>AI Score: 8.0</p>
 <p>Signal Score: 7.0</p>
-<p>Google announced that AI Mode search results will include ads, extending search monetization into AI-generated responses.</p>
-<p><strong>Tags:</strong> #search, #online-advertising, #generative-ai, #google, #product-policy</p>
+<p>Google is testing new Search ad formats and expanding Direct Offers, including Gemini-generated product explainers that tailor ad messaging to a user’s query context.</p>
+<p><strong>Tags:</strong> #search-ads, #generative-ai, #online-advertising, #google-search, #privacy-ethics</p>
 <p><a href="https://blog.google/products/ads-commerce/google-marketing-live-search-ads/">Read original</a></p>]]></description>
-      <category>search</category>
-      <category>online-advertising</category>
+      <category>search-ads</category>
       <category>generative-ai</category>
-      <category>google</category>
-      <category>product-policy</category>
+      <category>online-advertising</category>
+      <category>google-search</category>
+      <category>privacy-ethics</category>
+    </item>
+    <item>
+      <title>[信号 7.0] News outlets are limiting the Internet Archive’s access to their journalism</title>
+      <link>https://www.niemanlab.org/2026/05/more-than-340-local-news-outlets-are-limiting-the-internet-archives-access-to-their-journalism/</link>
+      <guid isPermaLink="false">horizon:zh:hackernews:story:48225838</guid>
+      <pubDate>Thu, 21 May 2026 16:59:27 +0000</pubDate>
+      <description><![CDATA[<p>AI Score: 8.0</p>
+<p>Signal Score: 7.0</p>
+<p>More than 340 local news outlets are limiting the Internet Archive’s ability to crawl and preserve their journalism, raising concerns about long-term public access to news and historical records.</p>
+<p><strong>Tags:</strong> #web-archiving, #digital-preservation, #news-industry, #copyright, #open-access</p>
+<p><a href="https://www.niemanlab.org/2026/05/more-than-340-local-news-outlets-are-limiting-the-internet-archives-access-to-their-journalism/">Read original</a></p>]]></description>
+      <category>web-archiving</category>
+      <category>digital-preservation</category>
+      <category>news-industry</category>
+      <category>copyright</category>
+      <category>open-access</category>
+    </item>
+    <item>
+      <title>[信号 7.0] Tencent Hy 30B/7B/1.8B</title>
+      <link>https://www.reddit.com/r/LocalLLaMA/comments/1tjien7/tencent_hy_30b7b18b/</link>
+      <guid isPermaLink="false">horizon:zh:reddit:subreddit:1tjien7</guid>
+      <pubDate>Thu, 21 May 2026 12:03:42 +0000</pubDate>
+      <description><![CDATA[<p>AI Score: 8.0</p>
+<p>Signal Score: 7.0</p>
+<p>Tencent introduces Hy-MT2 multilingual translation models (1.8B/7B/30B MoE) for 33 languages, highlighting strong evals and a 1.25-bit quantized 1.8B model that fits in ~440MB for on-device use.</p>
+<p><strong>Tags:</strong> #machine-translation, #LLMs, #quantization, #multilingual, #open-source-models</p>
+<p><a href="https://www.reddit.com/r/LocalLLaMA/comments/1tjien7/tencent_hy_30b7b18b/">Read original</a></p>]]></description>
+      <category>machine-translation</category>
+      <category>LLMs</category>
+      <category>quantization</category>
+      <category>multilingual</category>
+      <category>open-source-models</category>
     </item>
     <item>
       <title>[信号 7.0] 特斯拉监督版 FSD 入华</title>
@@ -125,7 +125,7 @@
       <pubDate>Thu, 21 May 2026 01:34:05 +0000</pubDate>
       <description><![CDATA[<p>AI Score: 8.0</p>
 <p>Signal Score: 7.0</p>
-<p>特斯拉在 X 上发文称其监督版 FSD 已可在中国使用，披露了该功能在中国市场的最新布局。</p>
+<p>特斯拉在 X 上发文称其监督版 FSD 已可在中国使用。</p>
 <p><strong>Tags:</strong> #Tesla, #FSD, #Autonomous Driving, #China Market, #Regulation</p>
 <p><a href="https://x.com/i/status/2057226337010745348">Read original</a></p>]]></description>
       <category>Tesla</category>
@@ -141,14 +141,14 @@
       <pubDate>Thu, 21 May 2026 02:00:00 +0000</pubDate>
       <description><![CDATA[<p>AI Score: 8.0</p>
 <p>Signal Score: 7.0</p>
-<p>OpenAI为ChatGPT/Codex/API生成图像加入C2PA元数据与Google SynthID水印并上线公开验证页，以提升AI图片来源标记与核验能力。</p>
-<p><strong>Tags:</strong> #AI内容溯源, #数字水印, #C2PA, #SynthID, #内容鉴伪</p>
+<p>OpenAI 为 ChatGPT/Codex/API 生成图像同时添加 C2PA 元数据与 Google SynthID 水印，并上线公开页面用于验证图片是否带有 OpenAI 标记。</p>
+<p><strong>Tags:</strong> #OpenAI, #SynthID, #C2PA, #Content Provenance, #AI Safety</p>
 <p><a href="https://www.theverge.com/ai-artificial-intelligence/933442/openai-synthid-content-credentials-c2pa-expansion">Read original</a></p>]]></description>
-      <category>AI内容溯源</category>
-      <category>数字水印</category>
-      <category>C2PA</category>
+      <category>OpenAI</category>
       <category>SynthID</category>
-      <category>内容鉴伪</category>
+      <category>C2PA</category>
+      <category>Content Provenance</category>
+      <category>AI Safety</category>
     </item>
     <item>
       <title>[信号 7.0] 营收井喷式增长，Anthropic 有望迎来首个盈利季度</title>
@@ -157,14 +157,30 @@
       <pubDate>Thu, 21 May 2026 02:45:00 +0000</pubDate>
       <description><![CDATA[<p>AI Score: 8.0</p>
 <p>Signal Score: 7.0</p>
-<p>Bloomberg 报道称 Anthropic 受企业级 AI 需求拉动，预计 2026 年第二季度营收大幅增长并实现公司历史上首次季度盈利。</p>
-<p><strong>Tags:</strong> #Anthropic, #Generative AI, #Enterprise AI, #Financials, #AI industry</p>
+<p>报道称受企业AI需求拉动，Anthropic 2026年Q2营收大幅增长并有望实现首次季度盈利，显示生成式AI在企业市场的强劲变现。</p>
+<p><strong>Tags:</strong> #Anthropic, #生成式AI, #企业AI, #财务业绩, #AI行业动态</p>
 <p><a href="https://www.bloomberg.com/news/articles/2026-05-20/anthropic-on-pace-for-first-profitable-quarter-as-revenue-surges?srnd=phx-technology">Read original</a></p>]]></description>
       <category>Anthropic</category>
-      <category>Generative AI</category>
-      <category>Enterprise AI</category>
-      <category>Financials</category>
-      <category>AI industry</category>
+      <category>生成式AI</category>
+      <category>企业AI</category>
+      <category>财务业绩</category>
+      <category>AI行业动态</category>
+    </item>
+    <item>
+      <title>[信号 7.0] OpenAI 计划最快本周提交 IPO 申请</title>
+      <link>https://www.wsj.com/tech/ai/openai-is-preparing-to-file-for-an-ipo-very-soon-0ec95af5</link>
+      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41497</guid>
+      <pubDate>Thu, 21 May 2026 04:08:57 +0000</pubDate>
+      <description><![CDATA[<p>AI Score: 8.0</p>
+<p>Signal Score: 7.0</p>
+<p>报道称OpenAI正与投行起草招股书并可能最快本周秘密递交IPO申请，目标最早9月上市，但仍受成本压力与诉讼不确定性影响。</p>
+<p><strong>Tags:</strong> #OpenAI, #IPO, #AI行业, #资本市场, #监管合规</p>
+<p><a href="https://www.wsj.com/tech/ai/openai-is-preparing-to-file-for-an-ipo-very-soon-0ec95af5">Read original</a></p>]]></description>
+      <category>OpenAI</category>
+      <category>IPO</category>
+      <category>AI行业</category>
+      <category>资本市场</category>
+      <category>监管合规</category>
     </item>
     <item>
       <title>[信号 7.0] AMD 发布 Ryzen AI Max 400 系列处理器，内存上限提升至 192 GB</title>
@@ -173,13 +189,13 @@
       <pubDate>Thu, 21 May 2026 08:15:00 +0000</pubDate>
       <description><![CDATA[<p>AI Score: 8.0</p>
 <p>Signal Score: 7.0</p>
-<p>AMD 发布 Ryzen AI Max 400（Strix Halo 升级版）处理器，将统一内存上限提升至 192GB、iGPU 最高可用 160GB，并提升频率与 NPU 至最高 55 TOPS，首发为 PRO 型号并将推出对应设备。</p>
-<p><strong>Tags:</strong> #AMD, #Ryzen AI, #APU, #On-device AI, #Hardware</p>
+<p>AMD 发布 Ryzen AI Max 400（Strix Halo 升级版），将统一内存上限提升至 192GB、iGPU 最高可用 160GB，并提升 CPU/GPU 频率与 NPU 至 55 TOPS，首发为 PRO 商用型号。</p>
+<p><strong>Tags:</strong> #AMD, #Ryzen AI, #Strix Halo, #Edge AI, #Hardware</p>
 <p><a href="https://www.techpowerup.com/349218/amd-launches-the-ryzen-ai-max-400-series-processors-strix-halo-gets-a-memory-upgrade">Read original</a></p>]]></description>
       <category>AMD</category>
       <category>Ryzen AI</category>
-      <category>APU</category>
-      <category>On-device AI</category>
+      <category>Strix Halo</category>
+      <category>Edge AI</category>
       <category>Hardware</category>
     </item>
     <item>
@@ -189,46 +205,94 @@
       <pubDate>Thu, 21 May 2026 13:11:42 +0000</pubDate>
       <description><![CDATA[<p>AI Score: 8.0</p>
 <p>Signal Score: 7.0</p>
-<p>报道称中国监管部门正审查 Meta 收购 AI 初创公司 Manus 是否违规，期间 CEO 与首席科学家被限制出境。</p>
-<p><strong>Tags:</strong> #AI监管, #跨境并购, #Meta, #中国监管, #AI初创公司</p>
+<p>报道称中国监管部门正审查 Meta 收购 AI 初创公司 Manus 是否违规，并在审查期间限制其 CEO 与首席科学家出境。</p>
+<p><strong>Tags:</strong> #AI, #跨境并购, #监管合规, #Meta, #中国科技政策</p>
 <p><a href="https://t.me/zaihuapd/41509">Read original</a></p>]]></description>
-      <category>AI监管</category>
+      <category>AI</category>
       <category>跨境并购</category>
+      <category>监管合规</category>
       <category>Meta</category>
-      <category>中国监管</category>
-      <category>AI初创公司</category>
+      <category>中国科技政策</category>
     </item>
     <item>
-      <title>[信号 6.0] Re. what ever happened to Cohere’s Command-A series of models?</title>
-      <link>https://v.redd.it/3ez116nl0d2h1</link>
-      <guid isPermaLink="false">horizon:zh:reddit:subreddit:1tizmar</guid>
-      <pubDate>Wed, 20 May 2026 21:25:50 +0000</pubDate>
-      <description><![CDATA[<p>AI Score: 7.5</p>
+      <title>[信号 7.0] 🤖 Google 调整 Gemini Apps 使用限额，改为基于 AI 计算量的限额方式  Google 自 2026 年 5 月 17 日起调整 Gemin</title>
+      <link>https://t.me/zaihuapd/41506</link>
+      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41506</guid>
+      <pubDate>Thu, 21 May 2026 10:53:55 +0000</pubDate>
+      <description><![CDATA[<p>AI Score: 7.0</p>
+<p>Signal Score: 7.0</p>
+<p>Google 自 2026-05-17 起将 Gemini Apps 使用限额改为按 AI 计算量消耗并按 5 小时刷新至周上限，不同订阅档位获得不同倍数额度且 18 岁以下不受影响。</p>
+<p><strong>Tags:</strong> #Gemini, #Google, #AI限额, #订阅与配额, #计费模型</p>
+<p><a href="https://t.me/zaihuapd/41506">Read original</a></p>]]></description>
+      <category>Gemini</category>
+      <category>Google</category>
+      <category>AI限额</category>
+      <category>订阅与配额</category>
+      <category>计费模型</category>
+    </item>
+    <item>
+      <title>[信号 7.0] OLED MacBook Pro 屏幕量产进度恢复</title>
+      <link>https://appleinsider.com/articles/26/05/21/oled-macbook-pro-screens-on-schedule-after-manufacturing-difficulties</link>
+      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41508</guid>
+      <pubDate>Thu, 21 May 2026 12:45:44 +0000</pubDate>
+      <description><![CDATA[<p>AI Score: 7.0</p>
+<p>Signal Score: 7.0</p>
+<p>报道称三星显示已解决14/16英寸OLED面板量产难题，良率提升后将于6月开始出货，苹果或在后续MacBook Pro采用双层tandem OLED。</p>
+<p><strong>Tags:</strong> #Apple, #MacBook Pro, #OLED, #Display Supply Chain, #Hardware Manufacturing</p>
+<p><a href="https://appleinsider.com/articles/26/05/21/oled-macbook-pro-screens-on-schedule-after-manufacturing-difficulties">Read original</a></p>]]></description>
+      <category>Apple</category>
+      <category>MacBook Pro</category>
+      <category>OLED</category>
+      <category>Display Supply Chain</category>
+      <category>Hardware Manufacturing</category>
+    </item>
+    <item>
+      <title>[信号 6.0] Indexing a year of video locally on a 2021 MacBook with Gemma4-31B (50GB swap)</title>
+      <link>https://blog.simbastack.com/indexed-a-year-of-video-locally/</link>
+      <guid isPermaLink="false">horizon:zh:hackernews:story:48222733</guid>
+      <pubDate>Thu, 21 May 2026 14:01:37 +0000</pubDate>
+      <description><![CDATA[<p>AI Score: 8.0</p>
 <p>Signal Score: 6.0</p>
-<p>Cohere’s Nick Frosst announces the launch of Command A+, Cohere’s first MoE model, emphasizing speed, responsiveness, and quantization that enables good performance on 1–2 GPUs.</p>
-<p><strong>Tags:</strong> #LLMs, #Mixture-of-Experts, #Quantization, #Local inference, #Model release</p>
-<p><a href="https://v.redd.it/3ez116nl0d2h1">Read original</a></p>]]></description>
-      <category>LLMs</category>
-      <category>Mixture-of-Experts</category>
-      <category>Quantization</category>
-      <category>Local inference</category>
-      <category>Model release</category>
+<p>A practitioner details indexing a year of personal video locally on a 2021 MacBook using Gemma 4 31B with heavy swapping, and shares an initial open-source repo for the approach.</p>
+<p><strong>Tags:</strong> #local-llm, #video-indexing, #multimodal, #performance-optimization, #open-source</p>
+<p><a href="https://blog.simbastack.com/indexed-a-year-of-video-locally/">Read original</a></p>]]></description>
+      <category>local-llm</category>
+      <category>video-indexing</category>
+      <category>multimodal</category>
+      <category>performance-optimization</category>
+      <category>open-source</category>
     </item>
     <item>
-      <title>[信号 6.0] AI is just unauthorised plagiarism at a bigger scale</title>
-      <link>https://axelk.ee/ai-is-just-unauthorised-plagiarism-at-a-bigger-scale/</link>
-      <guid isPermaLink="false">horizon:zh:hackernews:story:48222383</guid>
-      <pubDate>Thu, 21 May 2026 13:38:12 +0000</pubDate>
+      <title>[信号 6.0] Waymo pauses Atlanta service as its robotaxis keep driving into floods</title>
+      <link>https://techcrunch.com/2026/05/21/waymo-pauses-atlanta-service-as-its-robotaxis-keep-driving-into-floods/</link>
+      <guid isPermaLink="false">horizon:zh:hackernews:story:48225426</guid>
+      <pubDate>Thu, 21 May 2026 16:30:47 +0000</pubDate>
+      <description><![CDATA[<p>AI Score: 8.0</p>
+<p>Signal Score: 6.0</p>
+<p>Waymo paused its Atlanta robotaxi service after repeated incidents of vehicles driving into flooded areas, prompting debate about autonomy robustness and out-of-distribution edge cases.</p>
+<p><strong>Tags:</strong> #autonomous-vehicles, #robotaxis, #ml-safety, #edge-cases, #reliability-engineering</p>
+<p><a href="https://techcrunch.com/2026/05/21/waymo-pauses-atlanta-service-as-its-robotaxis-keep-driving-into-floods/">Read original</a></p>]]></description>
+      <category>autonomous-vehicles</category>
+      <category>robotaxis</category>
+      <category>ml-safety</category>
+      <category>edge-cases</category>
+      <category>reliability-engineering</category>
+    </item>
+    <item>
+      <title>[信号 6.0] Show HN: Freenet, a peer-to-peer platform for decentralized apps</title>
+      <link>https://freenet.org/</link>
+      <guid isPermaLink="false">horizon:zh:hackernews:story:48223362</guid>
+      <pubDate>Thu, 21 May 2026 14:34:57 +0000</pubDate>
       <description><![CDATA[<p>AI Score: 7.0</p>
 <p>Signal Score: 6.0</p>
-<p>An opinion piece argues that AI amounts to large-scale unauthorized plagiarism, prompting extensive discussion about fair use, attribution, creator incentives, and the future of copyright in an AI-dominated web.</p>
-<p><strong>Tags:</strong> #AI ethics, #copyright, #LLMs, #fair use, #web publishing</p>
-<p><a href="https://axelk.ee/ai-is-just-unauthorised-plagiarism-at-a-bigger-scale/">Read original</a></p>]]></description>
-      <category>AI ethics</category>
-      <category>copyright</category>
-      <category>LLMs</category>
-      <category>fair use</category>
-      <category>web publishing</category>
+<p>A rebuilt Freenet (Hyphanet) is live as a decentralized key-value platform where WASM contracts define valid state and synchronization, with early apps like chat and CMS and active community debate.</p>
+<p><strong>Tags:</strong> #decentralized-systems, #p2p, #webassembly, #distributed-storage, #dapps</p>
+<p><a href="https://freenet.org/">Read original</a></p>]]></description>
+      <category>decentralized-systems</category>
+      <category>p2p</category>
+      <category>webassembly</category>
+      <category>distributed-storage</category>
+      <category>dapps</category>
     </item>
     <item>
       <title>[信号 6.0] Python 3.15: features that didn&#x27;t make the headlines</title>
@@ -237,14 +301,30 @@
       <pubDate>Thu, 21 May 2026 11:10:11 +0000</pubDate>
       <description><![CDATA[<p>AI Score: 7.0</p>
 <p>Signal Score: 6.0</p>
-<p>A roundup of under-the-radar Python 3.15 features, with HN discussion focusing on what’s new, how it works, and where it fits in real codebases.</p>
-<p><strong>Tags:</strong> #python, #python-3.15, #programming-languages, #stdlib, #threading</p>
+<p>An overview of under-the-radar Python 3.15 features, sparking detailed Hacker News discussion about lazy imports, new iterator synchronization primitives, and collections.Counter operation details.</p>
+<p><strong>Tags:</strong> #python, #language-features, #concurrency, #typing, #standard-library</p>
 <p><a href="https://blog.changs.co.uk/python-315-features-that-didnt-make-the-headlines.html">Read original</a></p>]]></description>
       <category>python</category>
-      <category>python-3.15</category>
-      <category>programming-languages</category>
-      <category>stdlib</category>
-      <category>threading</category>
+      <category>language-features</category>
+      <category>concurrency</category>
+      <category>typing</category>
+      <category>standard-library</category>
+    </item>
+    <item>
+      <title>[信号 6.0] Datasette Agent</title>
+      <link>https://simonwillison.net/2026/May/21/datasette-agent/#atom-everything</link>
+      <guid isPermaLink="false">horizon:zh:rss:simonwillison.net_atom_everything_:-3755409384494352281</guid>
+      <pubDate>Thu, 21 May 2026 19:52:19 +0000</pubDate>
+      <description><![CDATA[<p>AI Score: 7.0</p>
+<p>Signal Score: 6.0</p>
+<p>Datasette Agent is the first released, extensible AI assistant for Datasette that enables conversational querying of stored data and can generate charts via an optional plugin.</p>
+<p><strong>Tags:</strong> #Datasette, #LLM, #AI assistants, #Data tooling, #Python</p>
+<p><a href="https://simonwillison.net/2026/May/21/datasette-agent/#atom-everything">Read original</a></p>]]></description>
+      <category>Datasette</category>
+      <category>LLM</category>
+      <category>AI assistants</category>
+      <category>Data tooling</category>
+      <category>Python</category>
     </item>
     <item>
       <title>[信号 6.0] Heretic has been served a legal notice by Meta, Inc.</title>
@@ -253,13 +333,13 @@
       <pubDate>Thu, 21 May 2026 14:50:44 +0000</pubDate>
       <description><![CDATA[<p>AI Score: 7.0</p>
 <p>Signal Score: 6.0</p>
-<p>The Heretic Free Software Project says it received a legal notice from a Meta representative and is removing derivatives of Meta’s Llama model weights from repositories.</p>
-<p><strong>Tags:</strong> #open-source-llm, #llama, #ai-licensing, #legal-risk, #model-weights</p>
+<p>The Heretic Free Software Project says it received a legal notice from a provider representing Meta and is removing derivatives of Meta’s Llama model weights from its repositories.</p>
+<p><strong>Tags:</strong> #open-source-ai, #llama, #ai-licensing, #legal, #model-weights</p>
 <p><a href="https://www.reddit.com/r/LocalLLaMA/comments/1tjmvx6/heretic_has_been_served_a_legal_notice_by_meta_inc/">Read original</a></p>]]></description>
-      <category>open-source-llm</category>
+      <category>open-source-ai</category>
       <category>llama</category>
       <category>ai-licensing</category>
-      <category>legal-risk</category>
+      <category>legal</category>
       <category>model-weights</category>
     </item>
     <item>
@@ -269,7 +349,7 @@
       <pubDate>Thu, 21 May 2026 11:09:47 +0000</pubDate>
       <description><![CDATA[<p>AI Score: 7.0</p>
 <p>Signal Score: 6.0</p>
-<p>A user reports that switching from llama.cpp to ik_llama.cpp restores and significantly boosts MTP inference speed for Qwen3.6 35B A3B on an RTX 4070 Super 12GB, prompting technical discussion about configs and acceptance-rate differences.</p>
+<p>A Reddit benchmark claims ik_llama.cpp delivers a major MTP inference speed boost on Qwen3.6 35B (A3B) with an RTX 4070 Super 12GB compared to recent llama.cpp performance after an MTP merge.</p>
 <p><strong>Tags:</strong> #llama.cpp, #local-llm-inference, #MTP, #quantization, #GPU-offloading</p>
 <p><a href="https://www.reddit.com/r/LocalLLaMA/comments/1tjh7az/110_toks_with_12gb_vram_on_qwen36_35b_a3b_and_ik/">Read original</a></p>]]></description>
       <category>llama.cpp</category>
@@ -285,7 +365,7 @@
       <pubDate>Thu, 21 May 2026 06:03:22 +0000</pubDate>
       <description><![CDATA[<p>AI Score: 7.0</p>
 <p>Signal Score: 6.0</p>
-<p>A real-world writeup of using Qwen3.6 27B in llama.cpp with long context and speculative decoding on ROCm, with discussion highlighting new llama.cpp speculative options and recent MTP improvements.</p>
+<p>A user shares a detailed llama-server setup for Qwen3.6-27B with MTP speculative decoding on dual ROCm GPUs, sparking comments from llama.cpp’s maintainer about enabling `--spec-default` for near-instant edits and noting recent MTP improvements.</p>
 <p><strong>Tags:</strong> #llama.cpp, #Qwen, #speculative-decoding, #ROCm, #local-LLM-inference</p>
 <p><a href="https://www.reddit.com/r/LocalLLaMA/comments/1tjbi24/qwen36_27b_and_llamacpp_appreciation_post/">Read original</a></p>]]></description>
       <category>llama.cpp</category>
@@ -295,52 +375,116 @@
       <category>local-LLM-inference</category>
     </item>
     <item>
-      <title>[信号 6.0] 🤖 Google 调整 Gemini Apps 使用限额，改为基于 AI 计算量的限额方式  Google 自 2026 年 5 月 17 日起调整 Gemin</title>
-      <link>https://t.me/zaihuapd/41506</link>
-      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41506</guid>
-      <pubDate>Thu, 21 May 2026 10:53:55 +0000</pubDate>
+      <title>[信号 6.0] DeepSeek API 更新限速与隔离文档：V4 模型并发限制及 user_id 隔离功能</title>
+      <link>https://api-docs.deepseek.com/zh-cn/quick_start/rate_limit</link>
+      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41510</guid>
+      <pubDate>Thu, 21 May 2026 15:03:52 +0000</pubDate>
       <description><![CDATA[<p>AI Score: 7.0</p>
 <p>Signal Score: 6.0</p>
-<p>Google 自 2026-05-17 起将 Gemini Apps 使用限额改为按AI计算量消耗并按5小时刷新直至周上限，不同订阅档位获得不同倍数额度且未成年人不受影响。</p>
-<p><strong>Tags:</strong> #Gemini, #Google, #LLM配额, #计费与限流, #订阅分层</p>
-<p><a href="https://t.me/zaihuapd/41506">Read original</a></p>]]></description>
-      <category>Gemini</category>
-      <category>Google</category>
-      <category>LLM配额</category>
-      <category>计费与限流</category>
-      <category>订阅分层</category>
+<p>DeepSeek 更新 API 限速文档，公布 deepseek-v4-pro/flash 并发上限并引入 user_id 级别的内容安全、KVCache 与调度隔离及配额约束规则。</p>
+<p><strong>Tags:</strong> #DeepSeek, #API Rate Limiting, #Concurrency, #Multi-tenancy, #LLM Infrastructure</p>
+<p><a href="https://api-docs.deepseek.com/zh-cn/quick_start/rate_limit">Read original</a></p>]]></description>
+      <category>DeepSeek</category>
+      <category>API Rate Limiting</category>
+      <category>Concurrency</category>
+      <category>Multi-tenancy</category>
+      <category>LLM Infrastructure</category>
     </item>
     <item>
-      <title>[信号 5.0] Show HN: I reverse engineered Apple&#x27;s video wallpapers</title>
-      <link>https://github.com/kageroumado/phosphene</link>
-      <guid isPermaLink="false">horizon:zh:hackernews:story:48215979</guid>
-      <pubDate>Wed, 20 May 2026 23:54:06 +0000</pubDate>
+      <title>[信号 5.0] Flipper One – we need your help</title>
+      <link>https://blog.flipper.net/flipper-one-we-need-your-help/</link>
+      <guid isPermaLink="false">horizon:zh:hackernews:story:48220647</guid>
+      <pubDate>Thu, 21 May 2026 11:03:38 +0000</pubDate>
       <description><![CDATA[<p>AI Score: 7.0</p>
 <p>Signal Score: 5.0</p>
-<p>Phosphene is an open-sourced tool that reverse engineers macOS’s WallpaperExtensionKit to let users add custom video wallpapers that appear alongside Apple’s built-in options.</p>
-<p><strong>Tags:</strong> #macOS, #reverse-engineering, #desktop-customization, #WallpaperExtensionKit, #open-source</p>
-<p><a href="https://github.com/kageroumado/phosphene">Read original</a></p>]]></description>
-      <category>macOS</category>
-      <category>reverse-engineering</category>
-      <category>desktop-customization</category>
-      <category>WallpaperExtensionKit</category>
-      <category>open-source</category>
+<p>Flipper describes plans/appeal around “Flipper One,” prompting large community discussion focused on scope creep, usability tradeoffs, and whether local AI belongs on the device.</p>
+<p><strong>Tags:</strong> #hardware-hacking, #embedded-systems, #security-tools, #product-design, #edge-ai</p>
+<p><a href="https://blog.flipper.net/flipper-one-we-need-your-help/">Read original</a></p>]]></description>
+      <category>hardware-hacking</category>
+      <category>embedded-systems</category>
+      <category>security-tools</category>
+      <category>product-design</category>
+      <category>edge-ai</category>
     </item>
     <item>
-      <title>[信号 4.0] Same task in github-copilot, pi, claude-code, and opencode with Qwen3.6 27B</title>
+      <title>[信号 5.0] Google&#x27;s Antigravity bait and switch</title>
+      <link>https://www.0xsid.com/blog/antigravity-bait-n-switch</link>
+      <guid isPermaLink="false">horizon:zh:hackernews:story:48222529</guid>
+      <pubDate>Thu, 21 May 2026 13:50:59 +0000</pubDate>
+      <description><![CDATA[<p>AI Score: 7.0</p>
+<p>Signal Score: 5.0</p>
+<p>The post and HN thread argue that Google effectively reset Antigravity via an update that breaks or replaces the prior VS Code–like product experience, forcing users to scramble to restore settings and history.</p>
+<p><strong>Tags:</strong> #developer-tools, #vscode, #google, #product-management, #migration</p>
+<p><a href="https://www.0xsid.com/blog/antigravity-bait-n-switch">Read original</a></p>]]></description>
+      <category>developer-tools</category>
+      <category>vscode</category>
+      <category>google</category>
+      <category>product-management</category>
+      <category>migration</category>
+    </item>
+    <item>
+      <title>[信号 5.0] Same task in github-copilot, pi, claude-code, and opencode with Qwen3.6 27B</title>
       <link>https://www.reddit.com/gallery/1tjbhjk</link>
       <guid isPermaLink="false">horizon:zh:reddit:subreddit:1tjbhjk</guid>
       <pubDate>Thu, 21 May 2026 06:02:36 +0000</pubDate>
       <description><![CDATA[<p>AI Score: 7.0</p>
-<p>Signal Score: 4.0</p>
-<p>A Reddit post compares outputs from multiple coding-agent harnesses (Copilot, Pi, Claude Code, OpenCode) using the same Qwen3.6 27B model and finds harness/tooling differences strongly affect performance.</p>
-<p><strong>Tags:</strong> #LLM agents, #coding assistants, #evaluation, #Qwen, #developer tools</p>
+<p>Signal Score: 5.0</p>
+<p>A Reddit post compares outputs from several coding-agent harnesses (Copilot, Pi, Claude Code, OpenCode) using the same Qwen3.6 27B model, highlighting large harness-driven differences and noting the need for automated metrics.</p>
+<p><strong>Tags:</strong> #LLM agents, #coding assistants, #agent harness, #benchmarking, #Qwen</p>
 <p><a href="https://www.reddit.com/gallery/1tjbhjk">Read original</a></p>]]></description>
       <category>LLM agents</category>
       <category>coding assistants</category>
-      <category>evaluation</category>
+      <category>agent harness</category>
+      <category>benchmarking</category>
       <category>Qwen</category>
-      <category>developer tools</category>
+    </item>
+    <item>
+      <title>[信号 4.0] Project Hail Mary – Stellar Navigation Chart</title>
+      <link>https://valhovey.github.io/gaia-mary/</link>
+      <guid isPermaLink="false">horizon:zh:hackernews:story:48225297</guid>
+      <pubDate>Thu, 21 May 2026 16:23:11 +0000</pubDate>
+      <description><![CDATA[<p>AI Score: 7.0</p>
+<p>Signal Score: 4.0</p>
+<p>An interactive stellar navigation chart inspired by Project Hail Mary, rendered from ESA’s GAIA DR3 catalog to visualize 1.8B+ stars with accurate positions and colors.</p>
+<p><strong>Tags:</strong> #data-visualization, #astronomy, #gaia-dr3, #python, #interactive-graphics</p>
+<p><a href="https://valhovey.github.io/gaia-mary/">Read original</a></p>]]></description>
+      <category>data-visualization</category>
+      <category>astronomy</category>
+      <category>gaia-dr3</category>
+      <category>python</category>
+      <category>interactive-graphics</category>
+    </item>
+    <item>
+      <title>[信号 4.0] Seattle Shield, an intelligence-sharing network operated by the Seattle police</title>
+      <link>https://prismreports.org/2026/05/20/seattle-shield-private-companies-surveillance/</link>
+      <guid isPermaLink="false">horizon:zh:hackernews:story:48226588</guid>
+      <pubDate>Thu, 21 May 2026 17:55:58 +0000</pubDate>
+      <description><![CDATA[<p>AI Score: 7.0</p>
+<p>Signal Score: 4.0</p>
+<p>A report examines “Seattle Shield,” a Seattle Police-operated information-sharing network linking public and private partners for reporting suspicious activity and counterterrorism-related coordination.</p>
+<p><strong>Tags:</strong> #surveillance, #privacy, #law-enforcement, #public-private-partnerships, #civil-liberties</p>
+<p><a href="https://prismreports.org/2026/05/20/seattle-shield-private-companies-surveillance/">Read original</a></p>]]></description>
+      <category>surveillance</category>
+      <category>privacy</category>
+      <category>law-enforcement</category>
+      <category>public-private-partnerships</category>
+      <category>civil-liberties</category>
+    </item>
+    <item>
+      <title>[信号 4.0] Throwing AI-generated walls of text into conversations</title>
+      <link>https://noslopgrenade.com/</link>
+      <guid isPermaLink="false">horizon:zh:hackernews:story:48219992</guid>
+      <pubDate>Thu, 21 May 2026 09:31:15 +0000</pubDate>
+      <description><![CDATA[<p>AI Score: 7.0</p>
+<p>Signal Score: 4.0</p>
+<p>A popular HN thread critiques the practice of dumping long AI-generated text into conversations and discusses norms and tooling desires to make such communication more concise and transparent.</p>
+<p><strong>Tags:</strong> #LLMs, #developer-productivity, #workplace-communication, #human-computer-interaction, #prompting</p>
+<p><a href="https://noslopgrenade.com/">Read original</a></p>]]></description>
+      <category>LLMs</category>
+      <category>developer-productivity</category>
+      <category>workplace-communication</category>
+      <category>human-computer-interaction</category>
+      <category>prompting</category>
     </item>
   </channel>
 </rss>
