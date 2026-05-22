@@ -1,43 +1,7 @@
 {
-  "date": "2026-05-21",
+  "date": "2026-05-22",
   "language": "zh",
   "opportunities": [
-    {
-      "id": "rss:simonwillison.net_atom_everything_:-6052924173598202158",
-      "title": "Quoting SpaceX S-1",
-      "url": "https://simonwillison.net/2026/May/20/spacex-s1/#atom-everything",
-      "source_type": "rss",
-      "ai_score": 9.0,
-      "signal_score": 9.0,
-      "signal_reason": "Observable facts indicate a new, material market condition: SpaceX is selling large-scale AI compute to third parties under a disclosed $1.25B/month contract through 2029 with near-term ramp, demonstrating significant capacity, clear buyer segment, and meaningful revenue/market validation (though with termination risk on 90 days’ notice).",
-      "capability_delta": "",
-      "assessment": {},
-      "tags": [
-        "AI compute",
-        "cloud infrastructure",
-        "Anthropic",
-        "SpaceX",
-        "SEC filing"
-      ]
-    },
-    {
-      "id": "telegram:zaihuapd:41497",
-      "title": "OpenAI 计划最快本周提交 IPO 申请",
-      "url": "https://www.wsj.com/tech/ai/openai-is-preparing-to-file-for-an-ipo-very-soon-0ec95af5",
-      "source_type": "telegram",
-      "ai_score": 9.0,
-      "signal_score": 8.0,
-      "signal_reason": "可观察事实包括：与高盛、摩根士丹利等投行合作起草招股书、拟向监管机构秘密递交 IPO 申请并给出最早 9 月上市时间表，若成行将显著改变其融资与信息披露环境；但仍存在上诉与上市计划变动的不确定性。",
-      "capability_delta": "",
-      "assessment": {},
-      "tags": [
-        "OpenAI",
-        "IPO",
-        "AI行业",
-        "资本市场",
-        "监管申报"
-      ]
-    },
     {
       "id": "telegram:zaihuapd:41498",
       "title": "♻️ 英伟达Q4营收681亿美元超预期，下季度指引上调至780亿美元  英伟达第四财季营收达681亿美元，其中数据中心业务贡献623亿美元，两项核心指标及1.6",
@@ -45,15 +9,15 @@
       "source_type": "telegram",
       "ai_score": 8.0,
       "signal_score": 8.0,
-      "signal_reason": "可观察到的市场条件变化包括：收入与EPS超预期、下一季度营收指引从市场预期约726亿美元上调到780亿美元、盘后股价即时上涨，以及公司明确表述通过战略手段确保库存以应对供应链压力，显示需求强劲与供给保障信号。",
+      "signal_reason": "可观察到的事实包括：营收与EPS超预期、下季度营收指引从市场预期726亿美元上调至780亿美元且盘后涨超3%，显示市场对算力需求与公司供给能力的预期被上修，属于明确的市场条件变化信号。",
       "capability_delta": "",
       "assessment": {},
       "tags": [
         "NVIDIA",
-        "Earnings",
-        "AI Infrastructure",
-        "Data Center",
-        "Semiconductors"
+        "财报",
+        "数据中心",
+        "AI算力",
+        "半导体"
       ]
     },
     {
@@ -63,15 +27,15 @@
       "source_type": "telegram",
       "ai_score": 8.0,
       "signal_score": 8.0,
-      "signal_reason": "可观察事实显示市场条件发生实质变化：美国对华芯片出口许可要求使英伟达在中国先进芯片销售“实质被排除”，且该市场此前占其数据中心收入至少五分之一；同时本土替代（华为及本地生态）被点名为强劲，意味着供给与竞争格局出现明显重排。",
+      "signal_reason": "可观察事实显示政策约束导致先进GPU对华销售被“实质排除”、公司已下调许可预期且中国曾占数据中心收入至少20%，同时本土替代（华为与生态）被明确点名“非常强劲”，表明市场供给与竞争结构发生实质改变。",
       "capability_delta": "",
       "assessment": {},
       "tags": [
         "NVIDIA",
-        "AI芯片",
-        "出口管制",
-        "中国市场",
-        "华为"
+        "export-controls",
+        "AI-chips",
+        "China-tech",
+        "semiconductors"
       ]
     },
     {
@@ -81,51 +45,87 @@
       "source_type": "telegram",
       "ai_score": 8.0,
       "signal_score": 8.0,
-      "signal_reason": "可直接下载且无需邀请码降低试用门槛；端侧离线隐私模式与“每天1000万免费Token”等可观察的访问/成本条件变化，可能影响高敏感行业（财务/法务/HR）采用路径与终端AI工作流落地。",
+      "signal_reason": "可观察到的变化包括：产品已正式上线且开放下载、免邀请码降低使用门槛；提供端侧离线处理使高敏感行业可用性边界扩大；明确给出每日 1000 万免费 Token 的成本/供给条件，意味着短期试用与规模化体验的摩擦显著降低。",
       "capability_delta": "",
       "assessment": {},
       "tags": [
         "AI助手",
-        "操作系统",
-        "多智能体",
+        "多Agent",
+        "操作系统集成",
         "端侧大模型",
         "隐私计算"
       ]
     },
     {
-      "id": "hackernews:story:48212493",
-      "title": "An OpenAI model has disproved a central conjecture in discrete geometry",
-      "url": "https://openai.com/index/model-disproves-discrete-geometry-conjecture/",
-      "source_type": "hackernews",
-      "ai_score": 10.0,
-      "signal_score": 7.0,
-      "signal_reason": "Observable signal is strong but bounded: the item reports a concrete, publication-style research outcome (a new counterexample/disproof) and widespread validated attention, indicating improved capability for generating nontrivial mathematical results, but it does not itself document broad access changes, cost/latency shifts, or a repeatable workflow guarantee for general users.",
+      "id": "telegram:zaihuapd:41493",
+      "title": "Google暂不在Gemini应用中投放广告，专注AI搜索商业化  Google全球广告副总裁Dan Taylor表示，公司目前没有在Gemini AI应用中投",
+      "url": "https://t.me/zaihuapd/41493",
+      "source_type": "telegram",
+      "ai_score": 7.0,
+      "signal_score": 8.0,
+      "signal_reason": "可观察到的市场/能力变化是：Google已在AI Overviews与AI Mode中引入广告且披露月活超20亿，意味着广告库存与投放场景在AI搜索侧已实际上线并具备大规模触达；同时明确Gemini应用暂不作为广告载体，缩小了该渠道的近期预期。",
       "capability_delta": "",
       "assessment": {},
       "tags": [
-        "AI for mathematics",
-        "discrete geometry",
-        "automated theorem proving",
-        "LLMs",
-        "research breakthrough"
+        "Google",
+        "Gemini",
+        "AI Search",
+        "AdTech",
+        "Generative AI"
       ]
     },
     {
       "id": "hackernews:story:48220105",
-      "title": "Google officially announces that ads will be included in AI Mode search results",
+      "title": "We're testing new ad formats in Search and expanding our Direct Offers pilot",
       "url": "https://blog.google/products/ads-commerce/google-marketing-live-search-ads/",
       "source_type": "hackernews",
       "ai_score": 8.0,
       "signal_score": 7.0,
-      "signal_reason": "Observable market/technical condition change: Google is officially expanding ad inventory into AI Mode (a new distribution surface with different UX and ad-blocking dynamics), and high engagement plus comments indicating potential user churn suggest near-term shifts in search traffic and monetization behavior.",
+      "signal_reason": "Observable changes include new ad formats in Search, an expanded pilot (Direct Offers), and explicit use of Gemini to generate customized product explanations in response to queries, indicating a meaningful shift in ad delivery and content generation within a major distribution channel.",
       "capability_delta": "",
       "assessment": {},
       "tags": [
-        "search",
-        "online-advertising",
+        "search-ads",
         "generative-ai",
-        "google",
-        "product-policy"
+        "online-advertising",
+        "google-search",
+        "privacy-ethics"
+      ]
+    },
+    {
+      "id": "hackernews:story:48225838",
+      "title": "News outlets are limiting the Internet Archive’s access to their journalism",
+      "url": "https://www.niemanlab.org/2026/05/more-than-340-local-news-outlets-are-limiting-the-internet-archives-access-to-their-journalism/",
+      "source_type": "hackernews",
+      "ai_score": 8.0,
+      "signal_score": 7.0,
+      "signal_reason": "Observable market/technical conditions are shifting: hundreds of outlets are actively changing access controls (blocking/crawl-limiting) around journalism content, indicating increased enforcement of licensing/paywall boundaries and reduced archival accessibility at scale.",
+      "capability_delta": "",
+      "assessment": {},
+      "tags": [
+        "web-archiving",
+        "digital-preservation",
+        "news-industry",
+        "copyright",
+        "open-access"
+      ]
+    },
+    {
+      "id": "reddit:subreddit:1tjien7",
+      "title": "Tencent Hy 30B/7B/1.8B",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tjien7/tencent_hy_30b7b18b/",
+      "source_type": "reddit",
+      "ai_score": 8.0,
+      "signal_score": 7.0,
+      "signal_reason": "Observable capability/access changes include a new model release in multiple sizes plus an explicitly stated extreme-quantized on-device footprint (~440MB) and speedup (1.5x); however, adoption is uncertain due to unresolved licensing questions and missing common deployment artifacts (e.g., GGUF) noted in the discussion.",
+      "capability_delta": "",
+      "assessment": {},
+      "tags": [
+        "machine-translation",
+        "LLMs",
+        "quantization",
+        "multilingual",
+        "open-source-models"
       ]
     },
     {
@@ -135,7 +135,7 @@
       "source_type": "telegram",
       "ai_score": 8.0,
       "signal_score": 7.0,
-      "signal_reason": "可观察事实为“特斯拉官方声明监督版 FSD 可在中国使用”，意味着产品可用性/可访问性在中国这一关键市场出现实质变化；但缺少明确的发布范围、交付形态（订阅/一次性）、车端软件版本与监管许可细节，信号强度受限。",
+      "signal_reason": "可观察事实是特斯拉官方声明监督版 FSD 在中国可用，意味着功能/可访问性在该市场发生实质变化；但缺少上线范围、车型覆盖、价格、审批与性能等可验证细节，信号强度有限。",
       "capability_delta": "",
       "assessment": {},
       "tags": [
@@ -153,15 +153,15 @@
       "source_type": "telegram",
       "ai_score": 8.0,
       "signal_score": 7.0,
-      "signal_reason": "可观察到的变化包括：OpenAI图像输出新增更难被简单处理抹除的SynthID水印、同时保留C2PA元数据，并上线官方公开检测入口；这提高了平台与个人进行来源核验的可用性与可靠性，但当前覆盖范围主要限于OpenAI自家生成图像。",
+      "signal_reason": "可观察到的变化包括：OpenAI 生成图像新增更抗篡改的水印层（SynthID）且提供公开验证入口，降低了核验门槛并提高了跨平台传播后仍可检测的概率；但覆盖范围目前仅限 OpenAI 自家图像，且“未检出不代表非 AI”限制了确定性。",
       "capability_delta": "",
       "assessment": {},
       "tags": [
-        "AI内容溯源",
-        "数字水印",
-        "C2PA",
+        "OpenAI",
         "SynthID",
-        "内容鉴伪"
+        "C2PA",
+        "Content Provenance",
+        "AI Safety"
       ]
     },
     {
@@ -171,15 +171,33 @@
       "source_type": "telegram",
       "ai_score": 8.0,
       "signal_score": 7.0,
-      "signal_reason": "可观察到的信号是：报道给出营收从 48 亿美元增至 109 亿美元、运营利润 5.59 亿美元及年化运行率 440 亿美元等明确数字，若属实意味着其商业化与盈利能力出现实质性变化，并可能影响企业 AI 采购与竞争格局；但为“预计/报道”而非正式财报披露，确定性略受限。",
+      "signal_reason": "可观察事实（按报道口径）包括：季度营收从48亿到109亿美元、预计运营利润5.59亿美元、年化收入运行率约440亿美元并可能首次季度盈利；这代表商业化与资金面信号发生实质变化，但仍取决于报道数据准确性与财务口径确认。",
       "capability_delta": "",
       "assessment": {},
       "tags": [
         "Anthropic",
-        "Generative AI",
-        "Enterprise AI",
-        "Financials",
-        "AI industry"
+        "生成式AI",
+        "企业AI",
+        "财务业绩",
+        "AI行业动态"
+      ]
+    },
+    {
+      "id": "telegram:zaihuapd:41497",
+      "title": "OpenAI 计划最快本周提交 IPO 申请",
+      "url": "https://www.wsj.com/tech/ai/openai-is-preparing-to-file-for-an-ipo-very-soon-0ec95af5",
+      "source_type": "telegram",
+      "ai_score": 8.0,
+      "signal_score": 7.0,
+      "signal_reason": "可观察事实为：WSJ称公司已与高盛、摩根士丹利等投行合作并拟进行保密递交（若发生将显著推进上市进程），且近期诉讼进展被认为降低一项障碍；但尚无公开监管备案或正式公告，且马斯克上诉与上市时间仍可能变化，信号强度受不确定性折扣。",
+      "capability_delta": "",
+      "assessment": {},
+      "tags": [
+        "OpenAI",
+        "IPO",
+        "AI行业",
+        "资本市场",
+        "监管合规"
       ]
     },
     {
@@ -189,14 +207,14 @@
       "source_type": "telegram",
       "ai_score": 8.0,
       "signal_score": 7.0,
-      "signal_reason": "可观测到的客观变化包括：内存上限从 128GB 提升到 192GB、iGPU 可分配显存上限到 160GB，以及 NPU 最高 55 TOPS（约提升一成），并明确将有搭载 192GB 内存的 Halo 设备与后续消费版上市计划，意味着本地大模型/开发类工作负载的可用硬件配置边界被实质抬升。",
+      "signal_reason": "可观测到的能力边界变化包括内存上限提高到 192GB、iGPU 可用显存上限大幅提升以及 NPU 算力提升到 55 TOPS，并明确指向 AI 开发场景与即将推出的整机（先 PRO 商用、后消费版），意味着终端本地大模型工作负载的可行配置范围扩大。",
       "capability_delta": "",
       "assessment": {},
       "tags": [
         "AMD",
         "Ryzen AI",
-        "APU",
-        "On-device AI",
+        "Strix Halo",
+        "Edge AI",
         "Hardware"
       ]
     },
@@ -207,51 +225,105 @@
       "source_type": "telegram",
       "ai_score": 8.0,
       "signal_score": 7.0,
-      "signal_reason": "可观察到的事实是并购审查启动且出现人员出境限制，表明跨境投资合规与交易执行风险上升、交易进程与条件可能变化；但交易金额与最终监管结论未披露，市场条件变化幅度仍不确定。",
+      "signal_reason": "可观察事实包括：监管部门正式介入审查、关键高管被限制离境以及已宣布的收购交易面临不确定性，这些都代表跨境交易与合规风险条件出现实质变化，但交易金额与最终处置结果尚不明确。",
       "capability_delta": "",
       "assessment": {},
       "tags": [
-        "AI监管",
+        "AI",
         "跨境并购",
+        "监管合规",
         "Meta",
-        "中国监管",
-        "AI初创公司"
+        "中国科技政策"
       ]
     },
     {
-      "id": "reddit:subreddit:1tizmar",
-      "title": "Re. what ever happened to Cohere’s Command-A series of models?",
-      "url": "https://v.redd.it/3ez116nl0d2h1",
-      "source_type": "reddit",
-      "ai_score": 7.5,
-      "signal_score": 6.0,
-      "signal_reason": "Observable signal is a new model release with stated improved efficiency/quantization and confirmed community attention, potentially lowering hardware requirements for use, but concrete benchmark positioning, licensing details, and broad integration availability (e.g., GGUF) are not established in the provided content.",
+      "id": "telegram:zaihuapd:41506",
+      "title": "🤖 Google 调整 Gemini Apps 使用限额，改为基于 AI 计算量的限额方式  Google 自 2026 年 5 月 17 日起调整 Gemin",
+      "url": "https://t.me/zaihuapd/41506",
+      "source_type": "telegram",
+      "ai_score": 7.0,
+      "signal_score": 7.0,
+      "signal_reason": "可观察到的事实是配额计量口径改变（复杂度/功能/对话长度综合计耗）、刷新周期与周上限明确、以及订阅档位额度倍数（2x/4x/约20x+）公开，这会直接改变用户可用算力与使用成本边界；但缺少官方公告与量化价格/额度数据，市场影响幅度仍不确定。",
       "capability_delta": "",
       "assessment": {},
       "tags": [
-        "LLMs",
-        "Mixture-of-Experts",
-        "Quantization",
-        "Local inference",
-        "Model release"
+        "Gemini",
+        "Google",
+        "AI限额",
+        "订阅与配额",
+        "计费模型"
       ]
     },
     {
-      "id": "hackernews:story:48222383",
-      "title": "AI is just unauthorised plagiarism at a bigger scale",
-      "url": "https://axelk.ee/ai-is-just-unauthorised-plagiarism-at-a-bigger-scale/",
+      "id": "telegram:zaihuapd:41508",
+      "title": "OLED MacBook Pro 屏幕量产进度恢复",
+      "url": "https://appleinsider.com/articles/26/05/21/oled-macbook-pro-screens-on-schedule-after-manufacturing-difficulties",
+      "source_type": "telegram",
+      "ai_score": 7.0,
+      "signal_score": 7.0,
+      "signal_reason": "可观察到的量产指标（良率>90%/部分95%）、明确的出货节点（6月）与规模预期（2026年约200万片）表明供应链进度与产能可用性出现实质性改善，但仍属未获官方确认的报道。",
+      "capability_delta": "",
+      "assessment": {},
+      "tags": [
+        "Apple",
+        "MacBook Pro",
+        "OLED",
+        "Display Supply Chain",
+        "Hardware Manufacturing"
+      ]
+    },
+    {
+      "id": "hackernews:story:48222733",
+      "title": "Indexing a year of video locally on a 2021 MacBook with Gemma4-31B (50GB swap)",
+      "url": "https://blog.simbastack.com/indexed-a-year-of-video-locally/",
+      "source_type": "hackernews",
+      "ai_score": 8.0,
+      "signal_score": 6.0,
+      "signal_reason": "Observable signals include a newly published MIT-licensed repository (framedex) and demonstrated feasibility of offline video indexing on a common laptop configuration, but the author states the code isn’t properly tested and the workflow relies on costly swap/SSD wear, limiting immediate reliability and broad adoption evidence.",
+      "capability_delta": "",
+      "assessment": {},
+      "tags": [
+        "local-llm",
+        "video-indexing",
+        "multimodal",
+        "performance-optimization",
+        "open-source"
+      ]
+    },
+    {
+      "id": "hackernews:story:48225426",
+      "title": "Waymo pauses Atlanta service as its robotaxis keep driving into floods",
+      "url": "https://techcrunch.com/2026/05/21/waymo-pauses-atlanta-service-as-its-robotaxis-keep-driving-into-floods/",
+      "source_type": "hackernews",
+      "ai_score": 8.0,
+      "signal_score": 6.0,
+      "signal_reason": "Observable market/operational signal: a concrete service pause in a major city due to a specific environmental failure mode (flooding), indicating a reliability/safety gap that affects deployment continuity, but with no evidence here of broader capability gains, cost changes, or new access.",
+      "capability_delta": "",
+      "assessment": {},
+      "tags": [
+        "autonomous-vehicles",
+        "robotaxis",
+        "ml-safety",
+        "edge-cases",
+        "reliability-engineering"
+      ]
+    },
+    {
+      "id": "hackernews:story:48223362",
+      "title": "Show HN: Freenet, a peer-to-peer platform for decentralized apps",
+      "url": "https://freenet.org/",
       "source_type": "hackernews",
       "ai_score": 7.0,
       "signal_score": 6.0,
-      "signal_reason": "Observable signal is strong community attention (382 points, 239 comments) around unresolved legal and economic questions (fair use, attribution, incentives), but the item itself does not report a concrete policy change, court ruling, or new technical capability shift.",
+      "signal_reason": "Observable facts indicate a live network since December, working applications, and third-party app building plus high community attention; however, adoption/usage metrics, performance claims, and clear market shifts are not evidenced, and comments raise decentralization/governance concerns that could affect uptake.",
       "capability_delta": "",
       "assessment": {},
       "tags": [
-        "AI ethics",
-        "copyright",
-        "LLMs",
-        "fair use",
-        "web publishing"
+        "decentralized-systems",
+        "p2p",
+        "webassembly",
+        "distributed-storage",
+        "dapps"
       ]
     },
     {
@@ -261,15 +333,33 @@
       "source_type": "hackernews",
       "ai_score": 7.0,
       "signal_score": 6.0,
-      "signal_reason": "Python 3.15 introduces observable new/changed runtime and stdlib capabilities (notably documented iterator synchronization primitives in threading and other small language/stdlib enhancements), which can materially affect compatibility/testing and enable new patterns for users upgrading, but it is incremental rather than a clear step-change in cost/latency/access on its own.",
+      "signal_reason": "Observable signal is moderate: Python 3.15 introduces concrete standard-library additions (iterator synchronization primitives) and behavior/feature details that can affect real codebases, but it does not indicate a major capability or market/access shift on its own.",
       "capability_delta": "",
       "assessment": {},
       "tags": [
         "python",
-        "python-3.15",
-        "programming-languages",
-        "stdlib",
-        "threading"
+        "language-features",
+        "concurrency",
+        "typing",
+        "standard-library"
+      ]
+    },
+    {
+      "id": "rss:simonwillison.net_atom_everything_:-3755409384494352281",
+      "title": "Datasette Agent",
+      "url": "https://simonwillison.net/2026/May/21/datasette-agent/#atom-everything",
+      "source_type": "rss",
+      "ai_score": 7.0,
+      "signal_score": 6.0,
+      "signal_reason": "Observable new capability and integration point: a released AI assistant tightly coupled to Datasette (and the existing LLM Python library) with a demo site/video and plugin extensibility, which can change workflows for Datasette users, but scope and market impact are limited to that ecosystem based on the provided facts.",
+      "capability_delta": "",
+      "assessment": {},
+      "tags": [
+        "Datasette",
+        "LLM",
+        "AI assistants",
+        "Data tooling",
+        "Python"
       ]
     },
     {
@@ -279,14 +369,14 @@
       "source_type": "reddit",
       "ai_score": 7.0,
       "signal_score": 6.0,
-      "signal_reason": "Observable enforcement action (legal notice) led to immediate takedown of Llama-derivative weights, indicating a real change in practical access/distribution risk for certain artifacts, but details of claims, scope, and broader market impact remain unspecified.",
+      "signal_reason": "Observable signal is a direct legal pressure event leading to takedown/removal of model derivatives, indicating increased enforcement risk around Llama-derived weight redistribution, but limited to a single reported notice without broader policy or market change confirmed.",
       "capability_delta": "",
       "assessment": {},
       "tags": [
-        "open-source-llm",
+        "open-source-ai",
         "llama",
         "ai-licensing",
-        "legal-risk",
+        "legal",
         "model-weights"
       ]
     },
@@ -297,7 +387,7 @@
       "source_type": "reddit",
       "ai_score": 7.0,
       "signal_score": 6.0,
-      "signal_reason": "Observable signal is a large reported throughput change on common consumer hardware plus active upstream churn (multiple MTP PRs merged recently) and a fork demonstrating different optimization behavior; however, it is a single-user benchmark and not a broadly validated capability/cost shift yet.",
+      "signal_reason": "Observable evidence suggests materially different throughput on common consumer hardware and points to implementation-level changes (acceptance rate, CPU offload optimization, recent upstream PR merges), but results are from a single user report and depend on specific software versions/settings not fully specified in the excerpt.",
       "capability_delta": "",
       "assessment": {},
       "tags": [
@@ -315,7 +405,7 @@
       "source_type": "reddit",
       "ai_score": 7.0,
       "signal_score": 6.0,
-      "signal_reason": "Observable technical signal includes a maintainer-recommended new runtime option (--spec-default) claimed to make file edits 'instantaneous' in workflows, and a recently merged MTP-related PR, suggesting near-term performance/latency improvements for local inference setups; however, the post itself is an appreciation/config report rather than a broadly scoped release announcement with measured benchmarks.",
+      "signal_reason": "Observable signals include an endorsed new runtime flag (`--spec-default`) that improves interactive edit latency, a recent merged MTP PR, and evidence that high-accept-rate speculative decoding can materially change responsiveness for local coding workflows; however, it’s incremental optimization guidance rather than a major capability/access shift.",
       "capability_delta": "",
       "assessment": {},
       "tags": [
@@ -327,39 +417,57 @@
       ]
     },
     {
-      "id": "telegram:zaihuapd:41506",
-      "title": "🤖 Google 调整 Gemini Apps 使用限额，改为基于 AI 计算量的限额方式  Google 自 2026 年 5 月 17 日起调整 Gemin",
-      "url": "https://t.me/zaihuapd/41506",
+      "id": "telegram:zaihuapd:41510",
+      "title": "DeepSeek API 更新限速与隔离文档：V4 模型并发限制及 user_id 隔离功能",
+      "url": "https://api-docs.deepseek.com/zh-cn/quick_start/rate_limit",
       "source_type": "telegram",
       "ai_score": 7.0,
       "signal_score": 6.0,
-      "signal_reason": "可观察到的变化是配额计量方式与订阅档位额度倍数被重新定义（标准/2x/4x/高于Pro 20倍、5小时刷新+周上限），意味着实际可用量与成本/可用性边界可能改变；但缺少官方定价与具体计算公式，市场与技术条件变化幅度难以精确量化。",
+      "signal_reason": "可观测变化包括：官方明确并发上限（500/2500）、超限返回 429、支持免费申请扩容，以及新增 user_id 隔离与按账号/按 user_id 双层并发限制（对提升配额账号生效），这些会影响现有调用架构与配额管理方式。",
       "capability_delta": "",
       "assessment": {},
       "tags": [
-        "Gemini",
-        "Google",
-        "LLM配额",
-        "计费与限流",
-        "订阅分层"
+        "DeepSeek",
+        "API Rate Limiting",
+        "Concurrency",
+        "Multi-tenancy",
+        "LLM Infrastructure"
       ]
     },
     {
-      "id": "hackernews:story:48215979",
-      "title": "Show HN: I reverse engineered Apple's video wallpapers",
-      "url": "https://github.com/kageroumado/phosphene",
+      "id": "hackernews:story:48220647",
+      "title": "Flipper One – we need your help",
+      "url": "https://blog.flipper.net/flipper-one-we-need-your-help/",
       "source_type": "hackernews",
       "ai_score": 7.0,
       "signal_score": 5.0,
-      "signal_reason": "Observable signal is moderate: the project is now open-sourced and demonstrates a working integration path for custom video wallpapers via Apple’s wallpaper framework, but it doesn’t indicate a major platform change, new official API access, or a broad market/price shift.",
+      "signal_reason": "Observable signal is mainly attention (1026 points, 411 comments) and an announced direction/appeal rather than a shipped product, clear spec change, pricing, availability, or demonstrated capability improvement.",
       "capability_delta": "",
       "assessment": {},
       "tags": [
-        "macOS",
-        "reverse-engineering",
-        "desktop-customization",
-        "WallpaperExtensionKit",
-        "open-source"
+        "hardware-hacking",
+        "embedded-systems",
+        "security-tools",
+        "product-design",
+        "edge-ai"
+      ]
+    },
+    {
+      "id": "hackernews:story:48222529",
+      "title": "Google's Antigravity bait and switch",
+      "url": "https://www.0xsid.com/blog/antigravity-bait-n-switch",
+      "source_type": "hackernews",
+      "ai_score": 7.0,
+      "signal_score": 5.0,
+      "signal_reason": "Observable signal is a significant product change impacting existing installations and workflows (evidenced by large discussion and user-written restoration tooling), but there are no clearly stated new capabilities, pricing/access changes, or market-wide shifts beyond migration friction for current users.",
+      "capability_delta": "",
+      "assessment": {},
+      "tags": [
+        "developer-tools",
+        "vscode",
+        "google",
+        "product-management",
+        "migration"
       ]
     },
     {
@@ -368,16 +476,70 @@
       "url": "https://www.reddit.com/gallery/1tjbhjk",
       "source_type": "reddit",
       "ai_score": 7.0,
-      "signal_score": 4.0,
-      "signal_reason": "Observable facts are primarily anecdotal qualitative differences and a note that OpenCode has default internet search; no new release, benchmark results, or demonstrated step-change in cost/latency/access is provided, and the author states automated/metric evaluation is still in progress.",
+      "signal_score": 5.0,
+      "signal_reason": "Observable signal is moderate: it documents that harness features (e.g., default web search, system-prompt/token budgets) can materially change results, but provides no controlled metrics, reproducible benchmark results, or new capability/access/cost change—mainly an anecdotal comparison prompting further evaluation.",
       "capability_delta": "",
       "assessment": {},
       "tags": [
         "LLM agents",
         "coding assistants",
-        "evaluation",
-        "Qwen",
-        "developer tools"
+        "agent harness",
+        "benchmarking",
+        "Qwen"
+      ]
+    },
+    {
+      "id": "hackernews:story:48225297",
+      "title": "Project Hail Mary – Stellar Navigation Chart",
+      "url": "https://valhovey.github.io/gaia-mary/",
+      "source_type": "hackernews",
+      "ai_score": 7.0,
+      "signal_score": 4.0,
+      "signal_reason": "Observable facts indicate a well-executed public demo leveraging an existing open dataset with strong attention, but no new capability release, pricing/access change, or market/industry condition shift is evidenced in the item.",
+      "capability_delta": "",
+      "assessment": {},
+      "tags": [
+        "data-visualization",
+        "astronomy",
+        "gaia-dr3",
+        "python",
+        "interactive-graphics"
+      ]
+    },
+    {
+      "id": "hackernews:story:48226588",
+      "title": "Seattle Shield, an intelligence-sharing network operated by the Seattle police",
+      "url": "https://prismreports.org/2026/05/20/seattle-shield-private-companies-surveillance/",
+      "source_type": "hackernews",
+      "ai_score": 7.0,
+      "signal_score": 4.0,
+      "signal_reason": "Observable facts suggest local operational and reputational movement (e.g., some organizations reportedly no longer participating) and high public attention, but there’s no clear evidence here of a broad market shift, new capability boundary, or changed access/cost/latency that would materially alter technical or commercial conditions beyond this specific program.",
+      "capability_delta": "",
+      "assessment": {},
+      "tags": [
+        "surveillance",
+        "privacy",
+        "law-enforcement",
+        "public-private-partnerships",
+        "civil-liberties"
+      ]
+    },
+    {
+      "id": "hackernews:story:48219992",
+      "title": "Throwing AI-generated walls of text into conversations",
+      "url": "https://noslopgrenade.com/",
+      "source_type": "hackernews",
+      "ai_score": 7.0,
+      "signal_score": 4.0,
+      "signal_reason": "Observable signal is mainly cultural/UX friction evidenced by high engagement and repeated complaints (verbosity, lack of prompt visibility), but no concrete new capability, release, pricing/access change, or market-condition shift is presented in the content.",
+      "capability_delta": "",
+      "assessment": {},
+      "tags": [
+        "LLMs",
+        "developer-productivity",
+        "workplace-communication",
+        "human-computer-interaction",
+        "prompting"
       ]
     }
   ]
