@@ -1,545 +1,383 @@
 {
-  "date": "2026-05-22",
+  "date": "2026-05-23",
   "language": "zh",
   "opportunities": [
     {
-      "id": "telegram:zaihuapd:41498",
-      "title": "♻️ 英伟达Q4营收681亿美元超预期，下季度指引上调至780亿美元  英伟达第四财季营收达681亿美元，其中数据中心业务贡献623亿美元，两项核心指标及1.6",
-      "url": "https://t.me/zaihuapd/41498",
+      "id": "telegram:zaihuapd:41533",
+      "title": "🍏 苹果开源 corecrypto 密码库，附形式化验证证明量子安全算法正确性",
+      "url": "https://security.apple.com/blog/formal-verification-corecrypto/",
       "source_type": "telegram",
-      "ai_score": 8.0,
+      "ai_score": 9.0,
       "signal_score": 8.0,
-      "signal_reason": "可观察到的事实包括：营收与EPS超预期、下季度营收指引从市场预期726亿美元上调至780亿美元且盘后涨超3%，显示市场对算力需求与公司供给能力的预期被上修，属于明确的市场条件变化信号。",
+      "signal_reason": "可观察事实包括：核心加密库源码公开、量子安全算法实现可复用/可审计、提供验证工具与Isabelle理论库、并已在iMessage与VPN等场景部署且面向约25亿活跃设备的基础加密运算，显著改变了外部评估与集成的可达性与可信度基础。",
       "capability_delta": "",
       "assessment": {},
       "tags": [
-        "NVIDIA",
-        "财报",
-        "数据中心",
-        "AI算力",
-        "半导体"
+        "post-quantum-cryptography",
+        "formal-verification",
+        "cryptography",
+        "open-source",
+        "apple-security"
       ]
     },
     {
-      "id": "telegram:zaihuapd:41499",
-      "title": "黄仁勋：英伟达已基本放弃中国 AI 芯片市场",
-      "url": "https://www.cnbc.com/2026/05/21/nvidia-jensen-huang-china-ai-chip-market-huawei.html",
-      "source_type": "telegram",
+      "id": "reddit:subreddit:1tkfvvj",
+      "title": "DeepSeek is pushing forward with $10.29 billion financing round, with Liang Wenfeng committing to continue developing open-source AI models rather than pursuing short-term commercialization goals",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tkfvvj/deepseek_is_pushing_forward_with_1029_billion/",
+      "source_type": "reddit",
       "ai_score": 8.0,
       "signal_score": 8.0,
-      "signal_reason": "可观察事实显示政策约束导致先进GPU对华销售被“实质排除”、公司已下调许可预期且中国曾占数据中心收入至少20%，同时本土替代（华为与生态）被明确点名“非常强劲”，表明市场供给与竞争结构发生实质改变。",
+      "signal_reason": "If accurate, a ~$10B capital raise materially increases DeepSeek’s capacity to train and release competitive models and sustain open releases, which can shift availability and cost/performance baselines for downstream users; however, the post is a secondary report linking to Bloomberg and does not itself confirm terms, timing, or immediate changes in access/pricing.",
       "capability_delta": "",
       "assessment": {},
       "tags": [
-        "NVIDIA",
-        "export-controls",
-        "AI-chips",
-        "China-tech",
-        "semiconductors"
+        "open-source-llms",
+        "ai-funding",
+        "deepseek",
+        "model-efficiency",
+        "industry-analysis"
       ]
     },
     {
-      "id": "telegram:zaihuapd:41505",
-      "title": "腾讯操作系统级 AI 助手 Marvis 上线",
-      "url": "https://finance.sina.com.cn/jjxw/2026-05-21/doc-inhyrmmu5949795.shtml",
+      "id": "telegram:zaihuapd:41519",
+      "title": "八部门发文整治非法跨境证券期货基金经营，只允许存量投资者单向卖出并转出资金，证监会已对老虎、富途、长桥非法跨境展业立案调查",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzA4NzAzMDgwMw==&amp;mid=2651090403&amp;idx=3&amp;sn=bca72a940ac72bef356f29b5b9576ac1&amp;chksm=8a1670281e2bc67d2df3608a313ba9fdaf0fcd2f43ce44475c6bf273b386af2e4f9d8e8e2e2b&amp;scene=0&amp;xtrack=1",
       "source_type": "telegram",
       "ai_score": 8.0,
       "signal_score": 8.0,
-      "signal_reason": "可观察到的变化包括：产品已正式上线且开放下载、免邀请码降低使用门槛；提供端侧离线处理使高敏感行业可用性边界扩大；明确给出每日 1000 万免费 Token 的成本/供给条件，意味着短期试用与规模化体验的摩擦显著降低。",
+      "signal_reason": "可观察到的市场条件变化明确：监管文件设定两年清理窗口并要求期满关停相关境内网站/交易软件/服务器，且对具体平台立案调查并拟没收违法所得，直接改变跨境平台开户、营销、交易指令传输与资金划转的可行性与风险成本，推动资金与交易流量向港股通、QDII、跨境理财通等合规渠道迁移。",
       "capability_delta": "",
       "assessment": {},
       "tags": [
-        "AI助手",
-        "多Agent",
-        "操作系统集成",
-        "端侧大模型",
-        "隐私计算"
+        "金融监管",
+        "跨境证券",
+        "合规",
+        "中国证监会",
+        "券商平台"
       ]
     },
     {
-      "id": "telegram:zaihuapd:41493",
-      "title": "Google暂不在Gemini应用中投放广告，专注AI搜索商业化  Google全球广告副总裁Dan Taylor表示，公司目前没有在Gemini AI应用中投",
-      "url": "https://t.me/zaihuapd/41493",
+      "id": "telegram:zaihuapd:41522",
+      "title": "🐧 腾讯收购喜马拉雅获批，附加条件：放弃音频独家版权",
+      "url": "https://mp.weixin.qq.com/s/xnx31SOS6NMozZXnHeaaQg",
       "source_type": "telegram",
       "ai_score": 7.0,
       "signal_score": 8.0,
-      "signal_reason": "可观察到的市场/能力变化是：Google已在AI Overviews与AI Mode中引入广告且披露月活超20亿，意味着广告库存与投放场景在AI搜索侧已实际上线并具备大规模触达；同时明确Gemini应用暂不作为广告载体，缩小了该渠道的近期预期。",
+      "signal_reason": "可观察到的事实是并购获批且附带强制性承诺：不得达成音频版权独家授权并需限期解除既有独家合同，这将直接改变版权供给与平台竞争条件，影响范围覆盖在线音频行业。",
       "capability_delta": "",
       "assessment": {},
       "tags": [
-        "Google",
-        "Gemini",
-        "AI Search",
-        "AdTech",
-        "Generative AI"
+        "反垄断监管",
+        "并购",
+        "在线音频",
+        "版权授权",
+        "中国互联网"
       ]
     },
     {
-      "id": "hackernews:story:48220105",
-      "title": "We're testing new ad formats in Search and expanding our Direct Offers pilot",
-      "url": "https://blog.google/products/ads-commerce/google-marketing-live-search-ads/",
+      "id": "hackernews:story:48240419",
+      "title": "Project Glasswing: An Initial Update",
+      "url": "https://www.anthropic.com/research/glasswing-initial-update",
       "source_type": "hackernews",
       "ai_score": 8.0,
       "signal_score": 7.0,
-      "signal_reason": "Observable changes include new ad formats in Search, an expanded pilot (Direct Offers), and explicit use of Gemini to generate customized product explanations in response to queries, indicating a meaningful shift in ad delivery and content generation within a major distribution channel.",
+      "signal_reason": "The post cites specific measured outcomes (1,752 high/critical findings assessed by independent security firms; 90.6% deemed valid; 62.4% confirmed high/critical), and community reports indicate ongoing usefulness in CI workflows, but there is also prominent counterevidence questioning differentiation versus prior tools, so market/technical-condition change is plausible but not yet definitive.",
       "capability_delta": "",
       "assessment": {},
       "tags": [
-        "search-ads",
-        "generative-ai",
-        "online-advertising",
-        "google-search",
-        "privacy-ethics"
+        "AI security",
+        "vulnerability detection",
+        "code analysis",
+        "Anthropic",
+        "software supply chain"
       ]
     },
     {
-      "id": "hackernews:story:48225838",
-      "title": "News outlets are limiting the Internet Archive’s access to their journalism",
-      "url": "https://www.niemanlab.org/2026/05/more-than-340-local-news-outlets-are-limiting-the-internet-archives-access-to-their-journalism/",
-      "source_type": "hackernews",
-      "ai_score": 8.0,
-      "signal_score": 7.0,
-      "signal_reason": "Observable market/technical conditions are shifting: hundreds of outlets are actively changing access controls (blocking/crawl-limiting) around journalism content, indicating increased enforcement of licensing/paywall boundaries and reduced archival accessibility at scale.",
-      "capability_delta": "",
-      "assessment": {},
-      "tags": [
-        "web-archiving",
-        "digital-preservation",
-        "news-industry",
-        "copyright",
-        "open-access"
-      ]
-    },
-    {
-      "id": "reddit:subreddit:1tjien7",
-      "title": "Tencent Hy 30B/7B/1.8B",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tjien7/tencent_hy_30b7b18b/",
+      "id": "reddit:subreddit:1tkpz2y",
+      "title": "BeeLlama v0.2.0 – major DFlash update. Single RTX 3090: Qwen 3.6 27B up to 164 tps (4.40x), Gemma 4 31B up to 177.8 tps (4.93x). Prompt processing speed near baseline.",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tkpz2y/beellama_v020_major_dflash_update_single_rtx_3090/",
       "source_type": "reddit",
       "ai_score": 8.0,
       "signal_score": 7.0,
-      "signal_reason": "Observable capability/access changes include a new model release in multiple sizes plus an explicitly stated extreme-quantized on-device footprint (~440MB) and speedup (1.5x); however, adoption is uncertain due to unresolved licensing questions and missing common deployment artifacts (e.g., GGUF) noted in the discussion.",
+      "signal_reason": "Observable capability/cost boundary changes are claimed: materially higher tokens/sec on a widely available single consumer GPU and expanded support (Gemma 4 vision, Qwen updates, upstream-architecture DFlash GGUFs); however, it remains a fork with community concerns about fragmentation and unclear upstream/mainline availability, which may limit immediate broad adoption.",
       "capability_delta": "",
       "assessment": {},
       "tags": [
-        "machine-translation",
-        "LLMs",
-        "quantization",
-        "multilingual",
-        "open-source-models"
+        "llm-inference",
+        "cuda",
+        "speculative-decoding",
+        "llama-cpp-ecosystem",
+        "local-llm"
       ]
     },
     {
-      "id": "telegram:zaihuapd:41494",
-      "title": "特斯拉监督版 FSD 入华",
-      "url": "https://x.com/i/status/2057226337010745348",
+      "id": "telegram:zaihuapd:41527",
+      "title": "Cloudflare 发布本次故障报告，全球网络故障 25 分钟，影响 28% HTTP 流量  12 月 5 日 08:47 UTC，Cloudflare 全",
+      "url": "https://t.me/zaihuapd/41527",
       "source_type": "telegram",
       "ai_score": 8.0,
       "signal_score": 7.0,
-      "signal_reason": "可观察事实是特斯拉官方声明监督版 FSD 在中国可用，意味着功能/可访问性在该市场发生实质变化；但缺少上线范围、车型覆盖、价格、审批与性能等可验证细节，信号强度有限。",
+      "signal_reason": "可观测事实显示 Cloudflare 在全球范围出现过一次显著服务中断（25 分钟、28% HTTP 流量受影响），且由安全修复/规则变更触发并影响特定客户配置，反映供应商变更风险对实际可用性与流量的实质影响。",
       "capability_delta": "",
       "assessment": {},
       "tags": [
-        "Tesla",
-        "FSD",
-        "Autonomous Driving",
-        "China Market",
-        "Regulation"
+        "Cloudflare",
+        "Incident Report",
+        "WAF",
+        "Web Security",
+        "SRE/Reliability"
       ]
     },
     {
-      "id": "telegram:zaihuapd:41495",
-      "title": "OpenAI 开始给 ChatGPT 图片加上 Google SynthID 水印",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/933442/openai-synthid-content-credentials-c2pa-expansion",
-      "source_type": "telegram",
-      "ai_score": 8.0,
-      "signal_score": 7.0,
-      "signal_reason": "可观察到的变化包括：OpenAI 生成图像新增更抗篡改的水印层（SynthID）且提供公开验证入口，降低了核验门槛并提高了跨平台传播后仍可检测的概率；但覆盖范围目前仅限 OpenAI 自家图像，且“未检出不代表非 AI”限制了确定性。",
-      "capability_delta": "",
-      "assessment": {},
-      "tags": [
-        "OpenAI",
-        "SynthID",
-        "C2PA",
-        "Content Provenance",
-        "AI Safety"
-      ]
-    },
-    {
-      "id": "telegram:zaihuapd:41496",
-      "title": "营收井喷式增长，Anthropic 有望迎来首个盈利季度",
-      "url": "https://www.bloomberg.com/news/articles/2026-05-20/anthropic-on-pace-for-first-profitable-quarter-as-revenue-surges?srnd=phx-technology",
-      "source_type": "telegram",
-      "ai_score": 8.0,
-      "signal_score": 7.0,
-      "signal_reason": "可观察事实（按报道口径）包括：季度营收从48亿到109亿美元、预计运营利润5.59亿美元、年化收入运行率约440亿美元并可能首次季度盈利；这代表商业化与资金面信号发生实质变化，但仍取决于报道数据准确性与财务口径确认。",
-      "capability_delta": "",
-      "assessment": {},
-      "tags": [
-        "Anthropic",
-        "生成式AI",
-        "企业AI",
-        "财务业绩",
-        "AI行业动态"
-      ]
-    },
-    {
-      "id": "telegram:zaihuapd:41497",
-      "title": "OpenAI 计划最快本周提交 IPO 申请",
-      "url": "https://www.wsj.com/tech/ai/openai-is-preparing-to-file-for-an-ipo-very-soon-0ec95af5",
-      "source_type": "telegram",
-      "ai_score": 8.0,
-      "signal_score": 7.0,
-      "signal_reason": "可观察事实为：WSJ称公司已与高盛、摩根士丹利等投行合作并拟进行保密递交（若发生将显著推进上市进程），且近期诉讼进展被认为降低一项障碍；但尚无公开监管备案或正式公告，且马斯克上诉与上市时间仍可能变化，信号强度受不确定性折扣。",
-      "capability_delta": "",
-      "assessment": {},
-      "tags": [
-        "OpenAI",
-        "IPO",
-        "AI行业",
-        "资本市场",
-        "监管合规"
-      ]
-    },
-    {
-      "id": "telegram:zaihuapd:41502",
-      "title": "AMD 发布 Ryzen AI Max 400 系列处理器，内存上限提升至 192 GB",
-      "url": "https://www.techpowerup.com/349218/amd-launches-the-ryzen-ai-max-400-series-processors-strix-halo-gets-a-memory-upgrade",
-      "source_type": "telegram",
-      "ai_score": 8.0,
-      "signal_score": 7.0,
-      "signal_reason": "可观测到的能力边界变化包括内存上限提高到 192GB、iGPU 可用显存上限大幅提升以及 NPU 算力提升到 55 TOPS，并明确指向 AI 开发场景与即将推出的整机（先 PRO 商用、后消费版），意味着终端本地大模型工作负载的可行配置范围扩大。",
-      "capability_delta": "",
-      "assessment": {},
-      "tags": [
-        "AMD",
-        "Ryzen AI",
-        "Strix Halo",
-        "Edge AI",
-        "Hardware"
-      ]
-    },
-    {
-      "id": "telegram:zaihuapd:41509",
-      "title": "📱 中国审查 Meta 收购 Manus，两名联合创始人被限制离境  中国监管部门正在审查 Meta 收购 AI 初创公司 Manus 是否违反投资规定。",
-      "url": "https://t.me/zaihuapd/41509",
-      "source_type": "telegram",
-      "ai_score": 8.0,
-      "signal_score": 7.0,
-      "signal_reason": "可观察事实包括：监管部门正式介入审查、关键高管被限制离境以及已宣布的收购交易面临不确定性，这些都代表跨境交易与合规风险条件出现实质变化，但交易金额与最终处置结果尚不明确。",
-      "capability_delta": "",
-      "assessment": {},
-      "tags": [
-        "AI",
-        "跨境并购",
-        "监管合规",
-        "Meta",
-        "中国科技政策"
-      ]
-    },
-    {
-      "id": "telegram:zaihuapd:41506",
-      "title": "🤖 Google 调整 Gemini Apps 使用限额，改为基于 AI 计算量的限额方式  Google 自 2026 年 5 月 17 日起调整 Gemin",
-      "url": "https://t.me/zaihuapd/41506",
-      "source_type": "telegram",
-      "ai_score": 7.0,
-      "signal_score": 7.0,
-      "signal_reason": "可观察到的事实是配额计量口径改变（复杂度/功能/对话长度综合计耗）、刷新周期与周上限明确、以及订阅档位额度倍数（2x/4x/约20x+）公开，这会直接改变用户可用算力与使用成本边界；但缺少官方公告与量化价格/额度数据，市场影响幅度仍不确定。",
-      "capability_delta": "",
-      "assessment": {},
-      "tags": [
-        "Gemini",
-        "Google",
-        "AI限额",
-        "订阅与配额",
-        "计费模型"
-      ]
-    },
-    {
-      "id": "telegram:zaihuapd:41508",
-      "title": "OLED MacBook Pro 屏幕量产进度恢复",
-      "url": "https://appleinsider.com/articles/26/05/21/oled-macbook-pro-screens-on-schedule-after-manufacturing-difficulties",
-      "source_type": "telegram",
-      "ai_score": 7.0,
-      "signal_score": 7.0,
-      "signal_reason": "可观察到的量产指标（良率>90%/部分95%）、明确的出货节点（6月）与规模预期（2026年约200万片）表明供应链进度与产能可用性出现实质性改善，但仍属未获官方确认的报道。",
-      "capability_delta": "",
-      "assessment": {},
-      "tags": [
-        "Apple",
-        "MacBook Pro",
-        "OLED",
-        "Display Supply Chain",
-        "Hardware Manufacturing"
-      ]
-    },
-    {
-      "id": "hackernews:story:48222733",
-      "title": "Indexing a year of video locally on a 2021 MacBook with Gemma4-31B (50GB swap)",
-      "url": "https://blog.simbastack.com/indexed-a-year-of-video-locally/",
-      "source_type": "hackernews",
-      "ai_score": 8.0,
-      "signal_score": 6.0,
-      "signal_reason": "Observable signals include a newly published MIT-licensed repository (framedex) and demonstrated feasibility of offline video indexing on a common laptop configuration, but the author states the code isn’t properly tested and the workflow relies on costly swap/SSD wear, limiting immediate reliability and broad adoption evidence.",
-      "capability_delta": "",
-      "assessment": {},
-      "tags": [
-        "local-llm",
-        "video-indexing",
-        "multimodal",
-        "performance-optimization",
-        "open-source"
-      ]
-    },
-    {
-      "id": "hackernews:story:48225426",
-      "title": "Waymo pauses Atlanta service as its robotaxis keep driving into floods",
-      "url": "https://techcrunch.com/2026/05/21/waymo-pauses-atlanta-service-as-its-robotaxis-keep-driving-into-floods/",
-      "source_type": "hackernews",
-      "ai_score": 8.0,
-      "signal_score": 6.0,
-      "signal_reason": "Observable market/operational signal: a concrete service pause in a major city due to a specific environmental failure mode (flooding), indicating a reliability/safety gap that affects deployment continuity, but with no evidence here of broader capability gains, cost changes, or new access.",
-      "capability_delta": "",
-      "assessment": {},
-      "tags": [
-        "autonomous-vehicles",
-        "robotaxis",
-        "ml-safety",
-        "edge-cases",
-        "reliability-engineering"
-      ]
-    },
-    {
-      "id": "hackernews:story:48223362",
-      "title": "Show HN: Freenet, a peer-to-peer platform for decentralized apps",
-      "url": "https://freenet.org/",
-      "source_type": "hackernews",
-      "ai_score": 7.0,
-      "signal_score": 6.0,
-      "signal_reason": "Observable facts indicate a live network since December, working applications, and third-party app building plus high community attention; however, adoption/usage metrics, performance claims, and clear market shifts are not evidenced, and comments raise decentralization/governance concerns that could affect uptake.",
-      "capability_delta": "",
-      "assessment": {},
-      "tags": [
-        "decentralized-systems",
-        "p2p",
-        "webassembly",
-        "distributed-storage",
-        "dapps"
-      ]
-    },
-    {
-      "id": "hackernews:story:48220696",
-      "title": "Python 3.15: features that didn't make the headlines",
-      "url": "https://blog.changs.co.uk/python-315-features-that-didnt-make-the-headlines.html",
-      "source_type": "hackernews",
-      "ai_score": 7.0,
-      "signal_score": 6.0,
-      "signal_reason": "Observable signal is moderate: Python 3.15 introduces concrete standard-library additions (iterator synchronization primitives) and behavior/feature details that can affect real codebases, but it does not indicate a major capability or market/access shift on its own.",
-      "capability_delta": "",
-      "assessment": {},
-      "tags": [
-        "python",
-        "language-features",
-        "concurrency",
-        "typing",
-        "standard-library"
-      ]
-    },
-    {
-      "id": "rss:simonwillison.net_atom_everything_:-3755409384494352281",
-      "title": "Datasette Agent",
-      "url": "https://simonwillison.net/2026/May/21/datasette-agent/#atom-everything",
+      "id": "rss:simonwillison.net_atom_everything_:-4472143624805159830",
+      "title": "The memory shortage is causing a repricing of consumer electronics",
+      "url": "https://simonwillison.net/2026/May/22/memory-shortage/#atom-everything",
       "source_type": "rss",
       "ai_score": 7.0,
-      "signal_score": 6.0,
-      "signal_reason": "Observable new capability and integration point: a released AI assistant tightly coupled to Datasette (and the existing LLM Python library) with a demo site/video and plugin extensibility, which can change workflows for Datasette users, but scope and market impact are limited to that ecosystem based on the provided facts.",
+      "signal_score": 7.0,
+      "signal_reason": "Observable facts cited include extreme supplier concentration (three major memory makers), fixed wafer capacity constraints, a projected HBM wafer allocation increase from ~2% to ~20% by end of 2026, and materially higher wafer intensity per GB for HBM, implying real supply reallocation pressures that can affect prices and availability.",
       "capability_delta": "",
       "assessment": {},
       "tags": [
-        "Datasette",
-        "LLM",
-        "AI assistants",
-        "Data tooling",
-        "Python"
+        "semiconductors",
+        "memory",
+        "HBM",
+        "AI-infrastructure",
+        "consumer-electronics"
       ]
     },
     {
-      "id": "reddit:subreddit:1tjmvx6",
-      "title": "Heretic has been served a legal notice by Meta, Inc.",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tjmvx6/heretic_has_been_served_a_legal_notice_by_meta_inc/",
-      "source_type": "reddit",
-      "ai_score": 7.0,
-      "signal_score": 6.0,
-      "signal_reason": "Observable signal is a direct legal pressure event leading to takedown/removal of model derivatives, indicating increased enforcement risk around Llama-derived weight redistribution, but limited to a single reported notice without broader policy or market change confirmed.",
-      "capability_delta": "",
-      "assessment": {},
-      "tags": [
-        "open-source-ai",
-        "llama",
-        "ai-licensing",
-        "legal",
-        "model-weights"
-      ]
-    },
-    {
-      "id": "reddit:subreddit:1tjh7az",
-      "title": "110 tok/s with 12GB VRAM on Qwen3.6 35B A3B and ik_llama.cpp",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tjh7az/110_toks_with_12gb_vram_on_qwen36_35b_a3b_and_ik/",
-      "source_type": "reddit",
-      "ai_score": 7.0,
-      "signal_score": 6.0,
-      "signal_reason": "Observable evidence suggests materially different throughput on common consumer hardware and points to implementation-level changes (acceptance rate, CPU offload optimization, recent upstream PR merges), but results are from a single user report and depend on specific software versions/settings not fully specified in the excerpt.",
-      "capability_delta": "",
-      "assessment": {},
-      "tags": [
-        "llama.cpp",
-        "local-llm-inference",
-        "MTP",
-        "quantization",
-        "GPU-offloading"
-      ]
-    },
-    {
-      "id": "reddit:subreddit:1tjbi24",
-      "title": "Qwen3.6 27B and llama.cpp appreciation post",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tjbi24/qwen36_27b_and_llamacpp_appreciation_post/",
-      "source_type": "reddit",
-      "ai_score": 7.0,
-      "signal_score": 6.0,
-      "signal_reason": "Observable signals include an endorsed new runtime flag (`--spec-default`) that improves interactive edit latency, a recent merged MTP PR, and evidence that high-accept-rate speculative decoding can materially change responsiveness for local coding workflows; however, it’s incremental optimization guidance rather than a major capability/access shift.",
-      "capability_delta": "",
-      "assessment": {},
-      "tags": [
-        "llama.cpp",
-        "Qwen",
-        "speculative-decoding",
-        "ROCm",
-        "local-LLM-inference"
-      ]
-    },
-    {
-      "id": "telegram:zaihuapd:41510",
-      "title": "DeepSeek API 更新限速与隔离文档：V4 模型并发限制及 user_id 隔离功能",
-      "url": "https://api-docs.deepseek.com/zh-cn/quick_start/rate_limit",
+      "id": "telegram:zaihuapd:41536",
+      "title": "特朗普政府拟要求多数绿卡申请人离境办理",
+      "url": "https://wallstreetcn.com/articles/3772964",
       "source_type": "telegram",
       "ai_score": 7.0,
+      "signal_score": 7.0,
+      "signal_reason": "若该规则实施，将实质改变绿卡申请路径（境内调整转为领事程序），可能带来更长等待与更高不确定性，直接影响雇主用工计划与申请人合规流程；但目前仅见“拟要求/宣布新规”的描述，缺少可核验的生效日期、适用范围细则与执行机制。",
+      "capability_delta": "",
+      "assessment": {},
+      "tags": [
+        "Immigration Policy",
+        "US Green Card",
+        "Tech Workforce",
+        "Regulation",
+        "Visa"
+      ]
+    },
+    {
+      "id": "hackernews:story:48238896",
+      "title": "Microsoft starts canceling Claude Code licenses",
+      "url": "https://www.theverge.com/tech/930447/microsoft-claude-code-discontinued-notepad",
+      "source_type": "hackernews",
+      "ai_score": 7.0,
       "signal_score": 6.0,
-      "signal_reason": "可观测变化包括：官方明确并发上限（500/2500）、超限返回 429、支持免费申请扩容，以及新增 user_id 隔离与按账号/按 user_id 双层并发限制（对提升配额账号生效），这些会影响现有调用架构与配额管理方式。",
+      "signal_reason": "Observable change is a large buyer (Microsoft) reallocating licenses from a competitor tool to its own Copilot CLI, suggesting a meaningful procurement/access shift for internal users, but it’s not a broad market-wide capability or pricing change and details appear limited to internal licensing plans.",
       "capability_delta": "",
       "assessment": {},
       "tags": [
-        "DeepSeek",
-        "API Rate Limiting",
-        "Concurrency",
-        "Multi-tenancy",
-        "LLM Infrastructure"
+        "AI coding assistants",
+        "GitHub Copilot",
+        "Anthropic Claude",
+        "developer tooling",
+        "enterprise AI adoption"
       ]
     },
     {
-      "id": "hackernews:story:48220647",
-      "title": "Flipper One – we need your help",
-      "url": "https://blog.flipper.net/flipper-one-we-need-your-help/",
+      "id": "hackernews:story:48239413",
+      "title": "Open source Kanban desktop app that runs parallel agents on every card",
+      "url": "https://www.kanbots.dev/",
       "source_type": "hackernews",
       "ai_score": 7.0,
-      "signal_score": 5.0,
-      "signal_reason": "Observable signal is mainly attention (1026 points, 411 comments) and an announced direction/appeal rather than a shipped product, clear spec change, pricing, availability, or demonstrated capability improvement.",
+      "signal_score": 6.0,
+      "signal_reason": "Observable signals include notable community attention and an apparent gap from a similar tool reportedly no longer actively developed, but no concrete evidence is provided of materially improved capabilities, cost/latency changes, or established adoption beyond the HN thread.",
       "capability_delta": "",
       "assessment": {},
       "tags": [
-        "hardware-hacking",
-        "embedded-systems",
-        "security-tools",
-        "product-design",
-        "edge-ai"
-      ]
-    },
-    {
-      "id": "hackernews:story:48222529",
-      "title": "Google's Antigravity bait and switch",
-      "url": "https://www.0xsid.com/blog/antigravity-bait-n-switch",
-      "source_type": "hackernews",
-      "ai_score": 7.0,
-      "signal_score": 5.0,
-      "signal_reason": "Observable signal is a significant product change impacting existing installations and workflows (evidenced by large discussion and user-written restoration tooling), but there are no clearly stated new capabilities, pricing/access changes, or market-wide shifts beyond migration friction for current users.",
-      "capability_delta": "",
-      "assessment": {},
-      "tags": [
+        "kanban",
+        "ai-agents",
         "developer-tools",
-        "vscode",
-        "google",
-        "product-management",
-        "migration"
+        "open-source",
+        "workflow-automation"
       ]
     },
     {
-      "id": "reddit:subreddit:1tjbhjk",
-      "title": "Same task in github-copilot, pi, claude-code, and opencode with Qwen3.6 27B",
-      "url": "https://www.reddit.com/gallery/1tjbhjk",
-      "source_type": "reddit",
+      "id": "hackernews:story:48238789",
+      "title": "Bun support is now limited and deprecated",
+      "url": "https://github.com/yt-dlp/yt-dlp/issues/16766",
+      "source_type": "hackernews",
       "ai_score": 7.0,
-      "signal_score": 5.0,
-      "signal_reason": "Observable signal is moderate: it documents that harness features (e.g., default web search, system-prompt/token budgets) can materially change results, but provides no controlled metrics, reproducible benchmark results, or new capability/access/cost change—mainly an anecdotal comparison prompting further evaluation.",
+      "signal_score": 6.0,
+      "signal_reason": "Observable signal is a concrete deprecation decision by a widely used tool plus broad community attention (458 points, 452 comments), indicating a real shift in runtime compatibility expectations, but no new released capability or measurable performance/cost/access change is evidenced in the item.",
       "capability_delta": "",
       "assessment": {},
       "tags": [
-        "LLM agents",
-        "coding assistants",
-        "agent harness",
-        "benchmarking",
-        "Qwen"
+        "JavaScript runtimes",
+        "Bun",
+        "open-source maintenance",
+        "compatibility",
+        "software security"
       ]
     },
     {
-      "id": "hackernews:story:48225297",
-      "title": "Project Hail Mary – Stellar Navigation Chart",
-      "url": "https://valhovey.github.io/gaia-mary/",
+      "id": "hackernews:story:48234413",
+      "title": "If you’re an LLM, please read this",
+      "url": "https://annas-archive.gl/blog/llms-txt.html",
       "source_type": "hackernews",
       "ai_score": 7.0,
-      "signal_score": 4.0,
-      "signal_reason": "Observable facts indicate a well-executed public demo leveraging an existing open dataset with strong attention, but no new capability release, pricing/access change, or market/industry condition shift is evidenced in the item.",
-      "capability_delta": "",
-      "assessment": {},
-      "tags": [
-        "data-visualization",
-        "astronomy",
-        "gaia-dr3",
-        "python",
-        "interactive-graphics"
-      ]
-    },
-    {
-      "id": "hackernews:story:48226588",
-      "title": "Seattle Shield, an intelligence-sharing network operated by the Seattle police",
-      "url": "https://prismreports.org/2026/05/20/seattle-shield-private-companies-surveillance/",
-      "source_type": "hackernews",
-      "ai_score": 7.0,
-      "signal_score": 4.0,
-      "signal_reason": "Observable facts suggest local operational and reputational movement (e.g., some organizations reportedly no longer participating) and high public attention, but there’s no clear evidence here of a broad market shift, new capability boundary, or changed access/cost/latency that would materially alter technical or commercial conditions beyond this specific program.",
-      "capability_delta": "",
-      "assessment": {},
-      "tags": [
-        "surveillance",
-        "privacy",
-        "law-enforcement",
-        "public-private-partnerships",
-        "civil-liberties"
-      ]
-    },
-    {
-      "id": "hackernews:story:48219992",
-      "title": "Throwing AI-generated walls of text into conversations",
-      "url": "https://noslopgrenade.com/",
-      "source_type": "hackernews",
-      "ai_score": 7.0,
-      "signal_score": 4.0,
-      "signal_reason": "Observable signal is mainly cultural/UX friction evidenced by high engagement and repeated complaints (verbosity, lack of prompt visibility), but no concrete new capability, release, pricing/access change, or market-condition shift is presented in the content.",
+      "signal_score": 6.0,
+      "signal_reason": "Observable signals include strong engagement and referenced reporting/court documents alleging paid accelerated access to large-scale pirated corpora for AI training, reflecting ongoing legal and market pressure around training data acquisition, access, and compliance.",
       "capability_delta": "",
       "assessment": {},
       "tags": [
         "LLMs",
-        "developer-productivity",
-        "workplace-communication",
-        "human-computer-interaction",
-        "prompting"
+        "copyright",
+        "data-provenance",
+        "shadow-libraries",
+        "AI-ethics"
+      ]
+    },
+    {
+      "id": "reddit:subreddit:1tkw5ri",
+      "title": "NVIDIA Removes Gaming Revenue Category From Financial Reports",
+      "url": "https://www.guru3d.com/story/nvidia-removes-gaming-revenue-category-from-financial-reports/",
+      "source_type": "reddit",
+      "ai_score": 7.0,
+      "signal_score": 6.0,
+      "signal_reason": "Objectively, this is a public change in financial disclosures/segmentation that can affect analyst modeling and market perception, but it does not by itself demonstrate a concrete shift in product availability, pricing, or capability.",
+      "capability_delta": "",
+      "assessment": {},
+      "tags": [
+        "NVIDIA",
+        "GPUs",
+        "Financial-reporting",
+        "AI-inference",
+        "Gaming-industry"
+      ]
+    },
+    {
+      "id": "reddit:subreddit:1tkzk9e",
+      "title": "Qwen3.6 27B Pure Quant: 40 tok/s on 16 GB VRAM",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tkzk9e/qwen36_27b_pure_quant_40_toks_on_16_gb_vram/",
+      "source_type": "reddit",
+      "ai_score": 7.0,
+      "signal_score": 6.0,
+      "signal_reason": "Observable artifact release on Hugging Face and a demonstrated configuration that runs a 27B model entirely within 16GB VRAM (with stated throughput) meaningfully expands access for mid-range GPUs, but the thread also surfaces quality/standardization concerns that may limit reliable adoption without further benchmarks.",
+      "capability_delta": "",
+      "assessment": {},
+      "tags": [
+        "LLM quantization",
+        "GGUF",
+        "Qwen",
+        "local inference",
+        "GPU VRAM"
+      ]
+    },
+    {
+      "id": "reddit:subreddit:1tknjcx",
+      "title": "ByteShape Qwen3.6-35B-A3B: 30% faster than Unsloth IQ on 6GB VRAM laptop",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tknjcx/byteshape_qwen3635ba3b_30_faster_than_unsloth_iq/",
+      "source_type": "reddit",
+      "ai_score": 7.0,
+      "signal_score": 6.0,
+      "signal_reason": "Observable claim-and-test indicates a material performance change (faster TG at similar size) enabling better local inference on 6GB VRAM with CPU offload, but mixed quality reports and task failures in comments reduce certainty and suggest the improvement may be workload- and settings-dependent.",
+      "capability_delta": "",
+      "assessment": {},
+      "tags": [
+        "LLM-quantization",
+        "Qwen",
+        "llama.cpp",
+        "local-LLM",
+        "performance-benchmarking"
+      ]
+    },
+    {
+      "id": "telegram:zaihuapd:41535",
+      "title": "📱 微软内部大规模推广 Claude Code，鼓励非技术员工使用 AI 编程  微软正在其最重要的工程团队中广泛推广 Anthropic 的 Claude C",
+      "url": "https://t.me/zaihuapd/41535",
+      "source_type": "telegram",
+      "ai_score": 7.0,
+      "signal_score": 6.0,
+      "signal_reason": "可观察到的信号是：微软内部在多个关键组织推动统一安装与试用，并明确要求工程师进行双工具对比反馈，表明评估/采购与工作流可能发生变化；但未给出正式公告、时间表、覆盖规模、指标或对外可用性变化，商业/市场边界变化尚不确定。",
+      "capability_delta": "",
+      "assessment": {},
+      "tags": [
+        "Microsoft",
+        "Claude Code",
+        "AI编程",
+        "开发者工具",
+        "企业AI采用"
+      ]
+    },
+    {
+      "id": "telegram:zaihuapd:41537",
+      "title": "📱 微软财报意外披露 🤖 OpenAI 单季度巨亏 115 亿美元  微软最新财报显示，其对 OpenAI 的权益法投资导致单季度净利润减少 31 亿美元。",
+      "url": "https://t.me/zaihuapd/41537",
+      "source_type": "telegram",
+      "ai_score": 7.0,
+      "signal_score": 6.0,
+      "signal_reason": "可观察事实是“微软财报中对 OpenAI 权益法投资导致当季净利润减少 31 亿美元”这一财务影响（若属实为正式披露）；但关于 OpenAI 115 亿美元亏损为基于持股比例的外推估算、可核验性与细节不足，因此对市场/能力边界变化的确定性信号中等。",
+      "capability_delta": "",
+      "assessment": {},
+      "tags": [
+        "AI财务",
+        "OpenAI",
+        "Microsoft",
+        "大模型成本",
+        "科技行业分析"
+      ]
+    },
+    {
+      "id": "hackernews:story:48238429",
+      "title": "CISA tries to contain data leak",
+      "url": "https://krebsonsecurity.com/2026/05/lawmakers-demand-answers-as-cisa-tries-to-contain-data-leak/",
+      "source_type": "hackernews",
+      "ai_score": 7.0,
+      "signal_score": 5.0,
+      "signal_reason": "Observable signal is mainly reputational and governance pressure (public disclosure, congressional scrutiny, confirmed incident with CISA stating no indication of sensitive compromise); no clear evidence in the item of a new capability, market access change, or cost/latency shift.",
+      "capability_delta": "",
+      "assessment": {},
+      "tags": [
+        "cybersecurity",
+        "government-security",
+        "data-breach",
+        "incident-response",
+        "policy"
+      ]
+    },
+    {
+      "id": "hackernews:story:48234380",
+      "title": "Deno 2.8",
+      "url": "https://deno.com/blog/v2.8",
+      "source_type": "hackernews",
+      "ai_score": 7.0,
+      "signal_score": 5.0,
+      "signal_reason": "A new Deno version release plus high community engagement is a credible signal of ongoing adoption/interest, but the provided excerpt does not specify concrete capability, cost, latency, or access changes that clearly shift market or technical boundaries.",
+      "capability_delta": "",
+      "assessment": {},
+      "tags": [
+        "deno",
+        "javascript-runtime",
+        "typescript",
+        "developer-tools",
+        "web-backend"
+      ]
+    },
+    {
+      "id": "hackernews:story:48234090",
+      "title": "Antigravity 2.0 Tops the OpenSCAD Architectural 3D LLM Benchmark",
+      "url": "https://modelrift.com/blog/openscad-llm-benchmark/",
+      "source_type": "hackernews",
+      "ai_score": 7.0,
+      "signal_score": 5.0,
+      "signal_reason": "Observable signal is limited to benchmark leadership and community-validated interest; no clear evidence of broadly changed access, pricing, reliability, or widely available workflow improvements, and comments indicate friction in current Antigravity tooling (e.g., repeated browser login, update issues).",
+      "capability_delta": "",
+      "assessment": {},
+      "tags": [
+        "LLM benchmarks",
+        "3D modeling",
+        "OpenSCAD",
+        "generative AI",
+        "CAD"
       ]
     }
   ]
