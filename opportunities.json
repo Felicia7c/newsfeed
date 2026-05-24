@@ -1,5 +1,5 @@
 {
-  "date": "2026-05-23",
+  "date": "2026-05-24",
   "language": "zh",
   "opportunities": [
     {
@@ -9,285 +9,51 @@
       "source_type": "telegram",
       "ai_score": 9.0,
       "signal_score": 8.0,
-      "signal_reason": "可观察事实包括：核心加密库源码公开、量子安全算法实现可复用/可审计、提供验证工具与Isabelle理论库、并已在iMessage与VPN等场景部署且面向约25亿活跃设备的基础加密运算，显著改变了外部评估与集成的可达性与可信度基础。",
+      "signal_reason": "可观测事实包括：源代码与验证工具/Isabelle理论库公开、与NIST标准一致的实现可被独立审计复用，并已在iMessage/VPN等场景及约25亿活跃设备的基础加密中部署，显著提升可验证性与生态可集成性。",
       "capability_delta": "",
       "assessment": {},
       "tags": [
-        "post-quantum-cryptography",
-        "formal-verification",
-        "cryptography",
-        "open-source",
-        "apple-security"
+        "Post-Quantum Cryptography",
+        "Formal Verification",
+        "Cryptographic Engineering",
+        "Apple Security",
+        "Open Source"
       ]
     },
     {
-      "id": "reddit:subreddit:1tkfvvj",
-      "title": "DeepSeek is pushing forward with $10.29 billion financing round, with Liang Wenfeng committing to continue developing open-source AI models rather than pursuing short-term commercialization goals",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tkfvvj/deepseek_is_pushing_forward_with_1029_billion/",
-      "source_type": "reddit",
-      "ai_score": 8.0,
-      "signal_score": 8.0,
-      "signal_reason": "If accurate, a ~$10B capital raise materially increases DeepSeek’s capacity to train and release competitive models and sustain open releases, which can shift availability and cost/performance baselines for downstream users; however, the post is a secondary report linking to Bloomberg and does not itself confirm terms, timing, or immediate changes in access/pricing.",
-      "capability_delta": "",
-      "assessment": {},
-      "tags": [
-        "open-source-llms",
-        "ai-funding",
-        "deepseek",
-        "model-efficiency",
-        "industry-analysis"
-      ]
-    },
-    {
-      "id": "telegram:zaihuapd:41519",
-      "title": "八部门发文整治非法跨境证券期货基金经营，只允许存量投资者单向卖出并转出资金，证监会已对老虎、富途、长桥非法跨境展业立案调查",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzA4NzAzMDgwMw==&amp;mid=2651090403&amp;idx=3&amp;sn=bca72a940ac72bef356f29b5b9576ac1&amp;chksm=8a1670281e2bc67d2df3608a313ba9fdaf0fcd2f43ce44475c6bf273b386af2e4f9d8e8e2e2b&amp;scene=0&amp;xtrack=1",
-      "source_type": "telegram",
-      "ai_score": 8.0,
-      "signal_score": 8.0,
-      "signal_reason": "可观察到的市场条件变化明确：监管文件设定两年清理窗口并要求期满关停相关境内网站/交易软件/服务器，且对具体平台立案调查并拟没收违法所得，直接改变跨境平台开户、营销、交易指令传输与资金划转的可行性与风险成本，推动资金与交易流量向港股通、QDII、跨境理财通等合规渠道迁移。",
-      "capability_delta": "",
-      "assessment": {},
-      "tags": [
-        "金融监管",
-        "跨境证券",
-        "合规",
-        "中国证监会",
-        "券商平台"
-      ]
-    },
-    {
-      "id": "telegram:zaihuapd:41522",
-      "title": "🐧 腾讯收购喜马拉雅获批，附加条件：放弃音频独家版权",
-      "url": "https://mp.weixin.qq.com/s/xnx31SOS6NMozZXnHeaaQg",
-      "source_type": "telegram",
-      "ai_score": 7.0,
-      "signal_score": 8.0,
-      "signal_reason": "可观察到的事实是并购获批且附带强制性承诺：不得达成音频版权独家授权并需限期解除既有独家合同，这将直接改变版权供给与平台竞争条件，影响范围覆盖在线音频行业。",
-      "capability_delta": "",
-      "assessment": {},
-      "tags": [
-        "反垄断监管",
-        "并购",
-        "在线音频",
-        "版权授权",
-        "中国互联网"
-      ]
-    },
-    {
-      "id": "hackernews:story:48240419",
-      "title": "Project Glasswing: An Initial Update",
+      "id": "telegram:zaihuapd:41530",
+      "title": "🤖 Anthropic 公布 Project Glasswing 初期成果：AI 发现逾万高危漏洞",
       "url": "https://www.anthropic.com/research/glasswing-initial-update",
-      "source_type": "hackernews",
-      "ai_score": 8.0,
-      "signal_score": 7.0,
-      "signal_reason": "The post cites specific measured outcomes (1,752 high/critical findings assessed by independent security firms; 90.6% deemed valid; 62.4% confirmed high/critical), and community reports indicate ongoing usefulness in CI workflows, but there is also prominent counterevidence questioning differentiation versus prior tools, so market/technical-condition change is plausible but not yet definitive.",
-      "capability_delta": "",
-      "assessment": {},
-      "tags": [
-        "AI security",
-        "vulnerability detection",
-        "code analysis",
-        "Anthropic",
-        "software supply chain"
-      ]
-    },
-    {
-      "id": "reddit:subreddit:1tkpz2y",
-      "title": "BeeLlama v0.2.0 – major DFlash update. Single RTX 3090: Qwen 3.6 27B up to 164 tps (4.40x), Gemma 4 31B up to 177.8 tps (4.93x). Prompt processing speed near baseline.",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tkpz2y/beellama_v020_major_dflash_update_single_rtx_3090/",
-      "source_type": "reddit",
-      "ai_score": 8.0,
-      "signal_score": 7.0,
-      "signal_reason": "Observable capability/cost boundary changes are claimed: materially higher tokens/sec on a widely available single consumer GPU and expanded support (Gemma 4 vision, Qwen updates, upstream-architecture DFlash GGUFs); however, it remains a fork with community concerns about fragmentation and unclear upstream/mainline availability, which may limit immediate broad adoption.",
-      "capability_delta": "",
-      "assessment": {},
-      "tags": [
-        "llm-inference",
-        "cuda",
-        "speculative-decoding",
-        "llama-cpp-ecosystem",
-        "local-llm"
-      ]
-    },
-    {
-      "id": "telegram:zaihuapd:41527",
-      "title": "Cloudflare 发布本次故障报告，全球网络故障 25 分钟，影响 28% HTTP 流量  12 月 5 日 08:47 UTC，Cloudflare 全",
-      "url": "https://t.me/zaihuapd/41527",
       "source_type": "telegram",
       "ai_score": 8.0,
-      "signal_score": 7.0,
-      "signal_reason": "可观测事实显示 Cloudflare 在全球范围出现过一次显著服务中断（25 分钟、28% HTTP 流量受影响），且由安全修复/规则变更触发并影响特定客户配置，反映供应商变更风险对实际可用性与流量的实质影响。",
+      "signal_score": 8.0,
+      "signal_reason": "可观察事实包括：报告称漏洞发现速率提升“十倍以上”、在上千开源项目中识别 6202 个高危严重漏洞且抽样审查真阳性 90.6%，并已发布 Claude Security 工具与基金会合作支持修复；这些表明安全工作流的能力边界（发现环节）与工具可用性发生了实质变化。",
       "capability_delta": "",
       "assessment": {},
       "tags": [
-        "Cloudflare",
-        "Incident Report",
-        "WAF",
-        "Web Security",
-        "SRE/Reliability"
+        "AI Security",
+        "Vulnerability Research",
+        "Secure Software Supply Chain",
+        "Open Source Security",
+        "Anthropic"
       ]
     },
     {
-      "id": "rss:simonwillison.net_atom_everything_:-4472143624805159830",
-      "title": "The memory shortage is causing a repricing of consumer electronics",
-      "url": "https://simonwillison.net/2026/May/22/memory-shortage/#atom-everything",
-      "source_type": "rss",
-      "ai_score": 7.0,
-      "signal_score": 7.0,
-      "signal_reason": "Observable facts cited include extreme supplier concentration (three major memory makers), fixed wafer capacity constraints, a projected HBM wafer allocation increase from ~2% to ~20% by end of 2026, and materially higher wafer intensity per GB for HBM, implying real supply reallocation pressures that can affect prices and availability.",
-      "capability_delta": "",
-      "assessment": {},
-      "tags": [
-        "semiconductors",
-        "memory",
-        "HBM",
-        "AI-infrastructure",
-        "consumer-electronics"
-      ]
-    },
-    {
-      "id": "telegram:zaihuapd:41536",
-      "title": "特朗普政府拟要求多数绿卡申请人离境办理",
-      "url": "https://wallstreetcn.com/articles/3772964",
+      "id": "telegram:zaihuapd:41539",
+      "title": "富途控股拟被罚 18.5 亿元 老虎证券子公司被罚没约 4.11 亿元  富途控股称，已收到中国证监会及深圳证监局的调查通知和行政罚款预通知函。",
+      "url": "https://t.me/zaihuapd/41539",
       "source_type": "telegram",
       "ai_score": 7.0,
-      "signal_score": 7.0,
-      "signal_reason": "若该规则实施，将实质改变绿卡申请路径（境内调整转为领事程序），可能带来更长等待与更高不确定性，直接影响雇主用工计划与申请人合规流程；但目前仅见“拟要求/宣布新规”的描述，缺少可核验的生效日期、适用范围细则与执行机制。",
+      "signal_score": 8.0,
+      "signal_reason": "可观察事实为监管机构已发出调查通知与行政罚款预通知函、拟采取整改/停止并处以数十亿元级罚没，显示监管边界与合规成本/风险发生实质变化且影响对象明确（跨境互联网券商及其客户与业务流程）。",
       "capability_delta": "",
       "assessment": {},
       "tags": [
-        "Immigration Policy",
-        "US Green Card",
-        "Tech Workforce",
-        "Regulation",
-        "Visa"
-      ]
-    },
-    {
-      "id": "hackernews:story:48238896",
-      "title": "Microsoft starts canceling Claude Code licenses",
-      "url": "https://www.theverge.com/tech/930447/microsoft-claude-code-discontinued-notepad",
-      "source_type": "hackernews",
-      "ai_score": 7.0,
-      "signal_score": 6.0,
-      "signal_reason": "Observable change is a large buyer (Microsoft) reallocating licenses from a competitor tool to its own Copilot CLI, suggesting a meaningful procurement/access shift for internal users, but it’s not a broad market-wide capability or pricing change and details appear limited to internal licensing plans.",
-      "capability_delta": "",
-      "assessment": {},
-      "tags": [
-        "AI coding assistants",
-        "GitHub Copilot",
-        "Anthropic Claude",
-        "developer tooling",
-        "enterprise AI adoption"
-      ]
-    },
-    {
-      "id": "hackernews:story:48239413",
-      "title": "Open source Kanban desktop app that runs parallel agents on every card",
-      "url": "https://www.kanbots.dev/",
-      "source_type": "hackernews",
-      "ai_score": 7.0,
-      "signal_score": 6.0,
-      "signal_reason": "Observable signals include notable community attention and an apparent gap from a similar tool reportedly no longer actively developed, but no concrete evidence is provided of materially improved capabilities, cost/latency changes, or established adoption beyond the HN thread.",
-      "capability_delta": "",
-      "assessment": {},
-      "tags": [
-        "kanban",
-        "ai-agents",
-        "developer-tools",
-        "open-source",
-        "workflow-automation"
-      ]
-    },
-    {
-      "id": "hackernews:story:48238789",
-      "title": "Bun support is now limited and deprecated",
-      "url": "https://github.com/yt-dlp/yt-dlp/issues/16766",
-      "source_type": "hackernews",
-      "ai_score": 7.0,
-      "signal_score": 6.0,
-      "signal_reason": "Observable signal is a concrete deprecation decision by a widely used tool plus broad community attention (458 points, 452 comments), indicating a real shift in runtime compatibility expectations, but no new released capability or measurable performance/cost/access change is evidenced in the item.",
-      "capability_delta": "",
-      "assessment": {},
-      "tags": [
-        "JavaScript runtimes",
-        "Bun",
-        "open-source maintenance",
-        "compatibility",
-        "software security"
-      ]
-    },
-    {
-      "id": "hackernews:story:48234413",
-      "title": "If you’re an LLM, please read this",
-      "url": "https://annas-archive.gl/blog/llms-txt.html",
-      "source_type": "hackernews",
-      "ai_score": 7.0,
-      "signal_score": 6.0,
-      "signal_reason": "Observable signals include strong engagement and referenced reporting/court documents alleging paid accelerated access to large-scale pirated corpora for AI training, reflecting ongoing legal and market pressure around training data acquisition, access, and compliance.",
-      "capability_delta": "",
-      "assessment": {},
-      "tags": [
-        "LLMs",
-        "copyright",
-        "data-provenance",
-        "shadow-libraries",
-        "AI-ethics"
-      ]
-    },
-    {
-      "id": "reddit:subreddit:1tkw5ri",
-      "title": "NVIDIA Removes Gaming Revenue Category From Financial Reports",
-      "url": "https://www.guru3d.com/story/nvidia-removes-gaming-revenue-category-from-financial-reports/",
-      "source_type": "reddit",
-      "ai_score": 7.0,
-      "signal_score": 6.0,
-      "signal_reason": "Objectively, this is a public change in financial disclosures/segmentation that can affect analyst modeling and market perception, but it does not by itself demonstrate a concrete shift in product availability, pricing, or capability.",
-      "capability_delta": "",
-      "assessment": {},
-      "tags": [
-        "NVIDIA",
-        "GPUs",
-        "Financial-reporting",
-        "AI-inference",
-        "Gaming-industry"
-      ]
-    },
-    {
-      "id": "reddit:subreddit:1tkzk9e",
-      "title": "Qwen3.6 27B Pure Quant: 40 tok/s on 16 GB VRAM",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tkzk9e/qwen36_27b_pure_quant_40_toks_on_16_gb_vram/",
-      "source_type": "reddit",
-      "ai_score": 7.0,
-      "signal_score": 6.0,
-      "signal_reason": "Observable artifact release on Hugging Face and a demonstrated configuration that runs a 27B model entirely within 16GB VRAM (with stated throughput) meaningfully expands access for mid-range GPUs, but the thread also surfaces quality/standardization concerns that may limit reliable adoption without further benchmarks.",
-      "capability_delta": "",
-      "assessment": {},
-      "tags": [
-        "LLM quantization",
-        "GGUF",
-        "Qwen",
-        "local inference",
-        "GPU VRAM"
-      ]
-    },
-    {
-      "id": "reddit:subreddit:1tknjcx",
-      "title": "ByteShape Qwen3.6-35B-A3B: 30% faster than Unsloth IQ on 6GB VRAM laptop",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tknjcx/byteshape_qwen3635ba3b_30_faster_than_unsloth_iq/",
-      "source_type": "reddit",
-      "ai_score": 7.0,
-      "signal_score": 6.0,
-      "signal_reason": "Observable claim-and-test indicates a material performance change (faster TG at similar size) enabling better local inference on 6GB VRAM with CPU offload, but mixed quality reports and task failures in comments reduce certainty and suggest the improvement may be workload- and settings-dependent.",
-      "capability_delta": "",
-      "assessment": {},
-      "tags": [
-        "LLM-quantization",
-        "Qwen",
-        "llama.cpp",
-        "local-LLM",
-        "performance-benchmarking"
+        "fintech",
+        "securities-regulation",
+        "cross-border-brokerage",
+        "China-CSRC",
+        "compliance"
       ]
     },
     {
@@ -297,15 +63,33 @@
       "source_type": "telegram",
       "ai_score": 7.0,
       "signal_score": 6.0,
-      "signal_reason": "可观察到的信号是：微软内部在多个关键组织推动统一安装与试用，并明确要求工程师进行双工具对比反馈，表明评估/采购与工作流可能发生变化；但未给出正式公告、时间表、覆盖规模、指标或对外可用性变化，商业/市场边界变化尚不确定。",
+      "signal_reason": "若属实，这是可观察到的组织级工具部署与评估动作（要求安装、并行对比、收集反馈），意味着企业内部对AI编程工作流的采用强度提升；但目前缺少官方确认、覆盖范围与效果数据，客观市场/能力边界变化证据有限。",
       "capability_delta": "",
       "assessment": {},
       "tags": [
         "Microsoft",
         "Claude Code",
-        "AI编程",
+        "AI编程助手",
         "开发者工具",
-        "企业AI采用"
+        "企业AI落地"
+      ]
+    },
+    {
+      "id": "telegram:zaihuapd:41536",
+      "title": "特朗普政府拟要求多数绿卡申请人离境办理",
+      "url": "https://wallstreetcn.com/articles/3772964",
+      "source_type": "telegram",
+      "ai_score": 7.0,
+      "signal_score": 6.0,
+      "signal_reason": "可观察到的事实是政策方向将从“境内调整身份”转向“离境领事程序”，这会直接改变流程与时间成本预期并影响明确人群（临时签证持有人、科技行业与留学生）；但尚未给出最终生效时间、适用范围细则与执行确定性，客观信号强度中等。",
+      "capability_delta": "",
+      "assessment": {},
+      "tags": [
+        "US immigration policy",
+        "green card",
+        "consular processing",
+        "tech workforce",
+        "international students"
       ]
     },
     {
@@ -315,69 +99,105 @@
       "source_type": "telegram",
       "ai_score": 7.0,
       "signal_score": 6.0,
-      "signal_reason": "可观察事实是“微软财报中对 OpenAI 权益法投资导致当季净利润减少 31 亿美元”这一财务影响（若属实为正式披露）；但关于 OpenAI 115 亿美元亏损为基于持股比例的外推估算、可核验性与细节不足，因此对市场/能力边界变化的确定性信号中等。",
+      "signal_reason": "可观察事实是微软财报显示权益法投资对当季净利润有显著负面影响（约31亿美元），并披露累计投入/承诺规模信息；但OpenAI真实当季亏损数值仍是基于比例推算而非直接披露，因而对市场条件变化的确定性为中等。",
       "capability_delta": "",
       "assessment": {},
       "tags": [
-        "AI财务",
-        "OpenAI",
         "Microsoft",
-        "大模型成本",
-        "科技行业分析"
+        "OpenAI",
+        "财报/会计",
+        "AI经济学",
+        "云计算成本"
       ]
     },
     {
-      "id": "hackernews:story:48238429",
-      "title": "CISA tries to contain data leak",
-      "url": "https://krebsonsecurity.com/2026/05/lawmakers-demand-answers-as-cisa-tries-to-contain-data-leak/",
-      "source_type": "hackernews",
+      "id": "telegram:zaihuapd:41540",
+      "title": "美商海盗船开始采用长鑫存储芯片，DDR5 内存价格有望下调",
+      "url": "https://thenextweb.com/news/chinese-dram-cxmt-corsair-ddr5-memory-prices",
+      "source_type": "telegram",
       "ai_score": 7.0,
-      "signal_score": 5.0,
-      "signal_reason": "Observable signal is mainly reputational and governance pressure (public disclosure, congressional scrutiny, confirmed incident with CISA stating no indication of sensitive compromise); no clear evidence in the item of a new capability, market access change, or cost/latency shift.",
+      "signal_score": 6.0,
+      "signal_reason": "可观察事实是Corsair开始在已上市的6000 MT/s DDR5产品中采用CXMT芯片，显示消费级内存供应链出现新增可用来源；但“2027年下半年价格明显回落”“2026Q1业绩爆发/年内上市”等为预测或未量化信息，尚不足以证明市场条件已发生明确且幅度可度量的变化。",
       "capability_delta": "",
       "assessment": {},
       "tags": [
-        "cybersecurity",
-        "government-security",
-        "data-breach",
-        "incident-response",
-        "policy"
+        "DRAM",
+        "DDR5",
+        "Supply Chain",
+        "Semiconductors",
+        "China Tech"
       ]
     },
     {
-      "id": "hackernews:story:48234380",
-      "title": "Deno 2.8",
-      "url": "https://deno.com/blog/v2.8",
-      "source_type": "hackernews",
+      "id": "telegram:zaihuapd:41542",
+      "title": "我国日均词元调用量两年增超千倍，今年 3 月突破 140 万亿  国家数据局披露，我国日均词元（Token）调用量已在今年 3 月突破 140 万亿。",
+      "url": "https://t.me/zaihuapd/41542",
+      "source_type": "telegram",
       "ai_score": 7.0,
-      "signal_score": 5.0,
-      "signal_reason": "A new Deno version release plus high community engagement is a credible signal of ongoing adoption/interest, but the provided excerpt does not specify concrete capability, cost, latency, or access changes that clearly shift market or technical boundaries.",
+      "signal_score": 6.0,
+      "signal_reason": "可观察到的事实是国家层面披露推理调用规模大幅上升，并强调Token可计量、可定价、可交易及围绕调用/分发/结算的体系形成；但缺少口径说明、行业拆分与成本/价格等关键指标，难以据此确认具体市场条件（成本、可得性、规则）发生了明确可量化变化。",
       "capability_delta": "",
       "assessment": {},
       "tags": [
-        "deno",
-        "javascript-runtime",
-        "typescript",
-        "developer-tools",
-        "web-backend"
+        "LLM",
+        "Token经济",
+        "中国AI产业",
+        "数据要素",
+        "算力与推理规模"
       ]
     },
     {
-      "id": "hackernews:story:48234090",
-      "title": "Antigravity 2.0 Tops the OpenSCAD Architectural 3D LLM Benchmark",
-      "url": "https://modelrift.com/blog/openscad-llm-benchmark/",
+      "id": "hackernews:story:48247004",
+      "title": "80386 microcode disassembled",
+      "url": "https://www.reenigne.org/blog/80386-microcode-disassembled/",
       "source_type": "hackernews",
-      "ai_score": 7.0,
-      "signal_score": 5.0,
-      "signal_reason": "Observable signal is limited to benchmark leadership and community-validated interest; no clear evidence of broadly changed access, pricing, reliability, or widely available workflow improvements, and comments indicate friction in current Antigravity tooling (e.g., repeated browser login, update issues).",
+      "ai_score": 8.0,
+      "signal_score": 4.0,
+      "signal_reason": "Observable signal is mainly knowledge release (a new public disassembly/analysis) rather than a clear change in capabilities, cost, access, or market availability; it may enable better emulation/verification, but no concrete performance, pricing, or adoption shift is evidenced in the item.",
       "capability_delta": "",
       "assessment": {},
       "tags": [
-        "LLM benchmarks",
-        "3D modeling",
-        "OpenSCAD",
-        "generative AI",
-        "CAD"
+        "reverse-engineering",
+        "microarchitecture",
+        "x86",
+        "microcode",
+        "hardware-security"
+      ]
+    },
+    {
+      "id": "hackernews:story:48246889",
+      "title": "Making deep learning go brrrr from first principles (2022)",
+      "url": "https://horace.io/brrr_intro.html",
+      "source_type": "hackernews",
+      "ai_score": 8.0,
+      "signal_score": 4.0,
+      "signal_reason": "No new release or capability change is reported; it’s a 2022 educational post plus a mention of a related 2024 talk, with discussion reflecting ongoing ecosystem fragmentation rather than a concrete market/technical shift.",
+      "capability_delta": "",
+      "assessment": {},
+      "tags": [
+        "deep-learning-systems",
+        "gpu-computing",
+        "performance-optimization",
+        "ml-infrastructure",
+        "nvidia"
+      ]
+    },
+    {
+      "id": "hackernews:story:48247325",
+      "title": "On The <dl> (2021)",
+      "url": "https://benmyers.dev/blog/on-the-dl/",
+      "source_type": "hackernews",
+      "ai_score": 7.0,
+      "signal_score": 2.0,
+      "signal_reason": "Observable facts indicate a standards-interpretation and developer-practice debate, not a new release, capability change, pricing shift, or newly enabled workflow.",
+      "capability_delta": "",
+      "assessment": {},
+      "tags": [
+        "html",
+        "accessibility",
+        "aria",
+        "web-standards",
+        "frontend"
       ]
     }
   ]
