@@ -4,7 +4,7 @@
     <title>Horizon Personal Feed - ZH</title>
     <link>https://felicia7c.github.io/newsfeed</link>
     <description>AI-filtered stories from Horizon</description>
-    <lastBuildDate>2026-05-23</lastBuildDate>
+    <lastBuildDate>2026-05-24</lastBuildDate>
     <atom:link href="https://felicia7c.github.io/newsfeed/feeds/horizon-selected-zh.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>[信号 8.0] 🍏 苹果开源 corecrypto 密码库，附形式化验证证明量子安全算法正确性</title>
@@ -13,254 +13,46 @@
       <pubDate>Sat, 23 May 2026 04:49:56 +0000</pubDate>
       <description><![CDATA[<p>AI Score: 9.0</p>
 <p>Signal Score: 8.0</p>
-<p>苹果开源corecrypto并发布ML-KEM/ML-DSA的实现与端到端形式化验证证明，以便独立审计并提升后量子密码在大规模设备上的可信度。</p>
-<p><strong>Tags:</strong> #post-quantum-cryptography, #formal-verification, #cryptography, #open-source, #apple-security</p>
+<p>苹果开源corecrypto并发布ML-KEM/ML-DSA的实现与端到端形式化验证证明，确保其与NIST标准一致并用于大规模设备与应用场景。</p>
+<p><strong>Tags:</strong> #Post-Quantum Cryptography, #Formal Verification, #Cryptographic Engineering, #Apple Security, #Open Source</p>
 <p><a href="https://security.apple.com/blog/formal-verification-corecrypto/">Read original</a></p>]]></description>
-      <category>post-quantum-cryptography</category>
-      <category>formal-verification</category>
-      <category>cryptography</category>
-      <category>open-source</category>
-      <category>apple-security</category>
+      <category>Post-Quantum Cryptography</category>
+      <category>Formal Verification</category>
+      <category>Cryptographic Engineering</category>
+      <category>Apple Security</category>
+      <category>Open Source</category>
     </item>
     <item>
-      <title>[信号 8.0] DeepSeek is pushing forward with $10.29 billion financing round, with Liang Wenfeng committing to continue developing open-source AI models rather than pursuing short-term commercialization goals</title>
-      <link>https://www.reddit.com/r/LocalLLaMA/comments/1tkfvvj/deepseek_is_pushing_forward_with_1029_billion/</link>
-      <guid isPermaLink="false">horizon:zh:reddit:subreddit:1tkfvvj</guid>
-      <pubDate>Fri, 22 May 2026 11:14:57 +0000</pubDate>
-      <description><![CDATA[<p>AI Score: 8.0</p>
-<p>Signal Score: 8.0</p>
-<p>DeepSeek is reportedly advancing a ~$10.29B funding round while reiterating an AGI-oriented roadmap and continued focus on developing open-source AI models rather than near-term commercialization.</p>
-<p><strong>Tags:</strong> #open-source-llms, #ai-funding, #deepseek, #model-efficiency, #industry-analysis</p>
-<p><a href="https://www.reddit.com/r/LocalLLaMA/comments/1tkfvvj/deepseek_is_pushing_forward_with_1029_billion/">Read original</a></p>]]></description>
-      <category>open-source-llms</category>
-      <category>ai-funding</category>
-      <category>deepseek</category>
-      <category>model-efficiency</category>
-      <category>industry-analysis</category>
-    </item>
-    <item>
-      <title>[信号 8.0] 八部门发文整治非法跨境证券期货基金经营，只允许存量投资者单向卖出并转出资金，证监会已对老虎、富途、长桥非法跨境展业立案调查</title>
-      <link>https://mp.weixin.qq.com/s?__biz=MzA4NzAzMDgwMw==&amp;amp;mid=2651090403&amp;amp;idx=3&amp;amp;sn=bca72a940ac72bef356f29b5b9576ac1&amp;amp;chksm=8a1670281e2bc67d2df3608a313ba9fdaf0fcd2f43ce44475c6bf273b386af2e4f9d8e8e2e2b&amp;amp;scene=0&amp;amp;xtrack=1</link>
-      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41519</guid>
-      <pubDate>Fri, 22 May 2026 08:26:16 +0000</pubDate>
-      <description><![CDATA[<p>AI Score: 8.0</p>
-<p>Signal Score: 8.0</p>
-<p>八部门联合发文开展为期两年的非法跨境证券期货基金经营整治，限制存量投资者仅可卖出并转出资金，并对老虎、富途、长桥等涉嫌非法跨境展业主体立案调查拟严厉处罚。</p>
-<p><strong>Tags:</strong> #金融监管, #跨境证券, #合规, #中国证监会, #券商平台</p>
-<p><a href="https://mp.weixin.qq.com/s?__biz=MzA4NzAzMDgwMw==&amp;amp;mid=2651090403&amp;amp;idx=3&amp;amp;sn=bca72a940ac72bef356f29b5b9576ac1&amp;amp;chksm=8a1670281e2bc67d2df3608a313ba9fdaf0fcd2f43ce44475c6bf273b386af2e4f9d8e8e2e2b&amp;amp;scene=0&amp;amp;xtrack=1">Read original</a></p>]]></description>
-      <category>金融监管</category>
-      <category>跨境证券</category>
-      <category>合规</category>
-      <category>中国证监会</category>
-      <category>券商平台</category>
-    </item>
-    <item>
-      <title>[信号 8.0] 🐧 腾讯收购喜马拉雅获批，附加条件：放弃音频独家版权</title>
-      <link>https://mp.weixin.qq.com/s/xnx31SOS6NMozZXnHeaaQg</link>
-      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41522</guid>
-      <pubDate>Fri, 22 May 2026 10:33:37 +0000</pubDate>
-      <description><![CDATA[<p>AI Score: 7.0</p>
-<p>Signal Score: 8.0</p>
-<p>国家市场监管总局批准腾讯收购喜马拉雅，但要求其放弃并解除在线音频版权独家安排，从而可能降低内容壁垒并促进跨平台获取同类版权。</p>
-<p><strong>Tags:</strong> #反垄断监管, #并购, #在线音频, #版权授权, #中国互联网</p>
-<p><a href="https://mp.weixin.qq.com/s/xnx31SOS6NMozZXnHeaaQg">Read original</a></p>]]></description>
-      <category>反垄断监管</category>
-      <category>并购</category>
-      <category>在线音频</category>
-      <category>版权授权</category>
-      <category>中国互联网</category>
-    </item>
-    <item>
-      <title>[信号 7.0] Project Glasswing: An Initial Update</title>
+      <title>[信号 8.0] 🤖 Anthropic 公布 Project Glasswing 初期成果：AI 发现逾万高危漏洞</title>
       <link>https://www.anthropic.com/research/glasswing-initial-update</link>
-      <guid isPermaLink="false">horizon:zh:hackernews:story:48240419</guid>
-      <pubDate>Fri, 22 May 2026 19:31:45 +0000</pubDate>
+      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41530</guid>
+      <pubDate>Sat, 23 May 2026 03:16:00 +0000</pubDate>
       <description><![CDATA[<p>AI Score: 8.0</p>
-<p>Signal Score: 7.0</p>
-<p>Anthropic shares an early update on Project Glasswing, claiming strong, independently assessed performance for AI-driven discovery and triage of real-world software vulnerabilities and prompting mixed community reactions about how much it exceeds existing tools.</p>
-<p><strong>Tags:</strong> #AI security, #vulnerability detection, #code analysis, #Anthropic, #software supply chain</p>
+<p>Signal Score: 8.0</p>
+<p>Anthropic 公布 Project Glasswing 初期结果：用 Claude Mythos Preview 在合作伙伴协作下大幅提升漏洞发现规模与速率，并指出验证披露与修补能力已成为新的系统性瓶颈。</p>
+<p><strong>Tags:</strong> #AI Security, #Vulnerability Research, #Secure Software Supply Chain, #Open Source Security, #Anthropic</p>
 <p><a href="https://www.anthropic.com/research/glasswing-initial-update">Read original</a></p>]]></description>
-      <category>AI security</category>
-      <category>vulnerability detection</category>
-      <category>code analysis</category>
+      <category>AI Security</category>
+      <category>Vulnerability Research</category>
+      <category>Secure Software Supply Chain</category>
+      <category>Open Source Security</category>
       <category>Anthropic</category>
-      <category>software supply chain</category>
     </item>
     <item>
-      <title>[信号 7.0] BeeLlama v0.2.0 – major DFlash update. Single RTX 3090: Qwen 3.6 27B up to 164 tps (4.40x), Gemma 4 31B up to 177.8 tps (4.93x). Prompt processing speed near baseline.</title>
-      <link>https://www.reddit.com/r/LocalLLaMA/comments/1tkpz2y/beellama_v020_major_dflash_update_single_rtx_3090/</link>
-      <guid isPermaLink="false">horizon:zh:reddit:subreddit:1tkpz2y</guid>
-      <pubDate>Fri, 22 May 2026 17:34:59 +0000</pubDate>
-      <description><![CDATA[<p>AI Score: 8.0</p>
-<p>Signal Score: 7.0</p>
-<p>BeeLlama v0.2.0 ships a major DFlash update delivering large throughput gains on RTX 3090 while adding full Gemma 4 31B support and improving Qwen 3.6 27B execution and compatibility.</p>
-<p><strong>Tags:</strong> #llm-inference, #cuda, #speculative-decoding, #llama-cpp-ecosystem, #local-llm</p>
-<p><a href="https://www.reddit.com/r/LocalLLaMA/comments/1tkpz2y/beellama_v020_major_dflash_update_single_rtx_3090/">Read original</a></p>]]></description>
-      <category>llm-inference</category>
-      <category>cuda</category>
-      <category>speculative-decoding</category>
-      <category>llama-cpp-ecosystem</category>
-      <category>local-llm</category>
-    </item>
-    <item>
-      <title>[信号 7.0] Cloudflare 发布本次故障报告，全球网络故障 25 分钟，影响 28% HTTP 流量  12 月 5 日 08:47 UTC，Cloudflare 全</title>
-      <link>https://t.me/zaihuapd/41527</link>
-      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41527</guid>
-      <pubDate>Fri, 22 May 2026 16:15:58 +0000</pubDate>
-      <description><![CDATA[<p>AI Score: 8.0</p>
-<p>Signal Score: 7.0</p>
-<p>Cloudflare 复盘 12 月 5 日一次持续约 25 分钟、影响约 28% HTTP 流量的全球网络故障，根因与修复 Next.js RSC 漏洞时的 WAF/规则变更有关并主要影响特定代理与托管规则集客户。</p>
-<p><strong>Tags:</strong> #Cloudflare, #Incident Report, #WAF, #Web Security, #SRE/Reliability</p>
-<p><a href="https://t.me/zaihuapd/41527">Read original</a></p>]]></description>
-      <category>Cloudflare</category>
-      <category>Incident Report</category>
-      <category>WAF</category>
-      <category>Web Security</category>
-      <category>SRE/Reliability</category>
-    </item>
-    <item>
-      <title>[信号 7.0] The memory shortage is causing a repricing of consumer electronics</title>
-      <link>https://simonwillison.net/2026/May/22/memory-shortage/#atom-everything</link>
-      <guid isPermaLink="false">horizon:zh:rss:simonwillison.net_atom_everything_:-4472143624805159830</guid>
-      <pubDate>Fri, 22 May 2026 22:01:31 +0000</pubDate>
+      <title>[信号 8.0] 富途控股拟被罚 18.5 亿元 老虎证券子公司被罚没约 4.11 亿元  富途控股称，已收到中国证监会及深圳证监局的调查通知和行政罚款预通知函。</title>
+      <link>https://t.me/zaihuapd/41539</link>
+      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41539</guid>
+      <pubDate>Sat, 23 May 2026 10:58:31 +0000</pubDate>
       <description><![CDATA[<p>AI Score: 7.0</p>
-<p>Signal Score: 7.0</p>
-<p>AI data-center growth is shifting limited DRAM wafer capacity toward HBM—where GBs consume far more wafer capacity—likely pushing up memory costs and repricing memory-heavy consumer devices over the next few years.</p>
-<p><strong>Tags:</strong> #semiconductors, #memory, #HBM, #AI-infrastructure, #consumer-electronics</p>
-<p><a href="https://simonwillison.net/2026/May/22/memory-shortage/#atom-everything">Read original</a></p>]]></description>
-      <category>semiconductors</category>
-      <category>memory</category>
-      <category>HBM</category>
-      <category>AI-infrastructure</category>
-      <category>consumer-electronics</category>
-    </item>
-    <item>
-      <title>[信号 7.0] 特朗普政府拟要求多数绿卡申请人离境办理</title>
-      <link>https://wallstreetcn.com/articles/3772964</link>
-      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41536</guid>
-      <pubDate>Sat, 23 May 2026 06:33:27 +0000</pubDate>
-      <description><![CDATA[<p>AI Score: 7.0</p>
-<p>Signal Score: 7.0</p>
-<p>特朗普政府拟推出新规，要求多数在美临时签证持有者的绿卡申请需离境回国通过海外领事馆办理，仅“特殊情况”可在境内调整身份。</p>
-<p><strong>Tags:</strong> #Immigration Policy, #US Green Card, #Tech Workforce, #Regulation, #Visa</p>
-<p><a href="https://wallstreetcn.com/articles/3772964">Read original</a></p>]]></description>
-      <category>Immigration Policy</category>
-      <category>US Green Card</category>
-      <category>Tech Workforce</category>
-      <category>Regulation</category>
-      <category>Visa</category>
-    </item>
-    <item>
-      <title>[信号 6.0] Microsoft starts canceling Claude Code licenses</title>
-      <link>https://www.theverge.com/tech/930447/microsoft-claude-code-discontinued-notepad</link>
-      <guid isPermaLink="false">horizon:zh:hackernews:story:48238896</guid>
-      <pubDate>Fri, 22 May 2026 17:32:04 +0000</pubDate>
-      <description><![CDATA[<p>AI Score: 7.0</p>
-<p>Signal Score: 6.0</p>
-<p>Microsoft is reportedly canceling most internal Claude Code licenses and shifting developers toward GitHub Copilot CLI after Claude Code usage undermined Copilot adoption.</p>
-<p><strong>Tags:</strong> #AI coding assistants, #GitHub Copilot, #Anthropic Claude, #developer tooling, #enterprise AI adoption</p>
-<p><a href="https://www.theverge.com/tech/930447/microsoft-claude-code-discontinued-notepad">Read original</a></p>]]></description>
-      <category>AI coding assistants</category>
-      <category>GitHub Copilot</category>
-      <category>Anthropic Claude</category>
-      <category>developer tooling</category>
-      <category>enterprise AI adoption</category>
-    </item>
-    <item>
-      <title>[信号 6.0] Open source Kanban desktop app that runs parallel agents on every card</title>
-      <link>https://www.kanbots.dev/</link>
-      <guid isPermaLink="false">horizon:zh:hackernews:story:48239413</guid>
-      <pubDate>Fri, 22 May 2026 18:17:57 +0000</pubDate>
-      <description><![CDATA[<p>AI Score: 7.0</p>
-<p>Signal Score: 6.0</p>
-<p>An open-source desktop Kanban app that attaches parallel AI agents to each card, prompting debate about workflow fit, review burden, and technical execution details.</p>
-<p><strong>Tags:</strong> #kanban, #ai-agents, #developer-tools, #open-source, #workflow-automation</p>
-<p><a href="https://www.kanbots.dev/">Read original</a></p>]]></description>
-      <category>kanban</category>
-      <category>ai-agents</category>
-      <category>developer-tools</category>
-      <category>open-source</category>
-      <category>workflow-automation</category>
-    </item>
-    <item>
-      <title>[信号 6.0] Bun support is now limited and deprecated</title>
-      <link>https://github.com/yt-dlp/yt-dlp/issues/16766</link>
-      <guid isPermaLink="false">horizon:zh:hackernews:story:48238789</guid>
-      <pubDate>Fri, 22 May 2026 17:24:12 +0000</pubDate>
-      <description><![CDATA[<p>AI Score: 7.0</p>
-<p>Signal Score: 6.0</p>
-<p>yt-dlp is limiting and deprecating Bun support, citing anticipated compatibility/security issues and difficulty maintaining against Bun’s large-scale rewrite trajectory.</p>
-<p><strong>Tags:</strong> #JavaScript runtimes, #Bun, #open-source maintenance, #compatibility, #software security</p>
-<p><a href="https://github.com/yt-dlp/yt-dlp/issues/16766">Read original</a></p>]]></description>
-      <category>JavaScript runtimes</category>
-      <category>Bun</category>
-      <category>open-source maintenance</category>
-      <category>compatibility</category>
-      <category>software security</category>
-    </item>
-    <item>
-      <title>[信号 6.0] If you’re an LLM, please read this</title>
-      <link>https://annas-archive.gl/blog/llms-txt.html</link>
-      <guid isPermaLink="false">horizon:zh:hackernews:story:48234413</guid>
-      <pubDate>Fri, 22 May 2026 11:28:08 +0000</pubDate>
-      <description><![CDATA[<p>AI Score: 7.0</p>
-<p>Signal Score: 6.0</p>
-<p>A blog post from Anna’s Archive addresses LLMs directly (including a donation ask) and sparks discussion about shadow libraries, AI training data sourcing, and copyright enforcement.</p>
-<p><strong>Tags:</strong> #LLMs, #copyright, #data-provenance, #shadow-libraries, #AI-ethics</p>
-<p><a href="https://annas-archive.gl/blog/llms-txt.html">Read original</a></p>]]></description>
-      <category>LLMs</category>
-      <category>copyright</category>
-      <category>data-provenance</category>
-      <category>shadow-libraries</category>
-      <category>AI-ethics</category>
-    </item>
-    <item>
-      <title>[信号 6.0] NVIDIA Removes Gaming Revenue Category From Financial Reports</title>
-      <link>https://www.guru3d.com/story/nvidia-removes-gaming-revenue-category-from-financial-reports/</link>
-      <guid isPermaLink="false">horizon:zh:reddit:subreddit:1tkw5ri</guid>
-      <pubDate>Fri, 22 May 2026 21:13:35 +0000</pubDate>
-      <description><![CDATA[<p>AI Score: 7.0</p>
-<p>Signal Score: 6.0</p>
-<p>NVIDIA has stopped reporting gaming revenue as a separate category, combining it with other segments to reflect GPUs’ mixed use across gaming and compute workloads.</p>
-<p><strong>Tags:</strong> #NVIDIA, #GPUs, #Financial-reporting, #AI-inference, #Gaming-industry</p>
-<p><a href="https://www.guru3d.com/story/nvidia-removes-gaming-revenue-category-from-financial-reports/">Read original</a></p>]]></description>
-      <category>NVIDIA</category>
-      <category>GPUs</category>
-      <category>Financial-reporting</category>
-      <category>AI-inference</category>
-      <category>Gaming-industry</category>
-    </item>
-    <item>
-      <title>[信号 6.0] Qwen3.6 27B Pure Quant: 40 tok/s on 16 GB VRAM</title>
-      <link>https://www.reddit.com/r/LocalLLaMA/comments/1tkzk9e/qwen36_27b_pure_quant_40_toks_on_16_gb_vram/</link>
-      <guid isPermaLink="false">horizon:zh:reddit:subreddit:1tkzk9e</guid>
-      <pubDate>Fri, 22 May 2026 23:29:14 +0000</pubDate>
-      <description><![CDATA[<p>AI Score: 7.0</p>
-<p>Signal Score: 6.0</p>
-<p>A Reddit user reports and publishes “pure” Q4_K_M GGUF quants of Qwen3.6 27B that fit in 16GB VRAM (15.1–15.4GB) with claimed ~40 tok/s performance, prompting technical discussion on quant methodology and evaluation.</p>
-<p><strong>Tags:</strong> #LLM quantization, #GGUF, #Qwen, #local inference, #GPU VRAM</p>
-<p><a href="https://www.reddit.com/r/LocalLLaMA/comments/1tkzk9e/qwen36_27b_pure_quant_40_toks_on_16_gb_vram/">Read original</a></p>]]></description>
-      <category>LLM quantization</category>
-      <category>GGUF</category>
-      <category>Qwen</category>
-      <category>local inference</category>
-      <category>GPU VRAM</category>
-    </item>
-    <item>
-      <title>[信号 6.0] ByteShape Qwen3.6-35B-A3B: 30% faster than Unsloth IQ on 6GB VRAM laptop</title>
-      <link>https://www.reddit.com/r/LocalLLaMA/comments/1tknjcx/byteshape_qwen3635ba3b_30_faster_than_unsloth_iq/</link>
-      <guid isPermaLink="false">horizon:zh:reddit:subreddit:1tknjcx</guid>
-      <pubDate>Fri, 22 May 2026 16:10:15 +0000</pubDate>
-      <description><![CDATA[<p>AI Score: 7.0</p>
-<p>Signal Score: 6.0</p>
-<p>A Reddit user benchmarks ByteShape’s new Qwen3.6-35B-A3B quant on a 6GB VRAM laptop and finds ~30% faster token generation than a similarly sized Unsloth IQ quant with some prefill/quality tradeoffs.</p>
-<p><strong>Tags:</strong> #LLM-quantization, #Qwen, #llama.cpp, #local-LLM, #performance-benchmarking</p>
-<p><a href="https://www.reddit.com/r/LocalLLaMA/comments/1tknjcx/byteshape_qwen3635ba3b_30_faster_than_unsloth_iq/">Read original</a></p>]]></description>
-      <category>LLM-quantization</category>
-      <category>Qwen</category>
-      <category>llama.cpp</category>
-      <category>local-LLM</category>
-      <category>performance-benchmarking</category>
+<p>Signal Score: 8.0</p>
+<p>报道称富途控股因被认定在内地无许可开展证券/基金销售/期货等业务拟合计罚款约18.5亿元并被责令整改或停止，老虎证券若干子公司亦因类似原因被罚没约4.11亿元。</p>
+<p><strong>Tags:</strong> #fintech, #securities-regulation, #cross-border-brokerage, #China-CSRC, #compliance</p>
+<p><a href="https://t.me/zaihuapd/41539">Read original</a></p>]]></description>
+      <category>fintech</category>
+      <category>securities-regulation</category>
+      <category>cross-border-brokerage</category>
+      <category>China-CSRC</category>
+      <category>compliance</category>
     </item>
     <item>
       <title>[信号 6.0] 📱 微软内部大规模推广 Claude Code，鼓励非技术员工使用 AI 编程  微软正在其最重要的工程团队中广泛推广 Anthropic 的 Claude C</title>
@@ -269,14 +61,30 @@
       <pubDate>Sat, 23 May 2026 06:05:36 +0000</pubDate>
       <description><![CDATA[<p>AI Score: 7.0</p>
 <p>Signal Score: 6.0</p>
-<p>据称微软在 CoreAI 及 Windows/M365/Outlook 等关键团队内部推广安装 Claude Code，并要求与 Copilot 同时使用以收集对比反馈，且鼓励无编程经验员工用于原型设计。</p>
-<p><strong>Tags:</strong> #Microsoft, #Claude Code, #AI编程, #开发者工具, #企业AI采用</p>
+<p>据称微软在CoreAI及Windows/M365等关键团队内部推广Claude Code，甚至鼓励非技术员工用其做原型，并要求工程师与Copilot并行使用提交对比反馈。</p>
+<p><strong>Tags:</strong> #Microsoft, #Claude Code, #AI编程助手, #开发者工具, #企业AI落地</p>
 <p><a href="https://t.me/zaihuapd/41535">Read original</a></p>]]></description>
       <category>Microsoft</category>
       <category>Claude Code</category>
-      <category>AI编程</category>
+      <category>AI编程助手</category>
       <category>开发者工具</category>
-      <category>企业AI采用</category>
+      <category>企业AI落地</category>
+    </item>
+    <item>
+      <title>[信号 6.0] 特朗普政府拟要求多数绿卡申请人离境办理</title>
+      <link>https://wallstreetcn.com/articles/3772964</link>
+      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41536</guid>
+      <pubDate>Sat, 23 May 2026 06:33:27 +0000</pubDate>
+      <description><![CDATA[<p>AI Score: 7.0</p>
+<p>Signal Score: 6.0</p>
+<p>特朗普政府拟出台新规，要求多数在美临时签证持有的绿卡申请人离境并在海外领事馆办理永久居留，可能引发更长等待并冲击科技与留学生群体。</p>
+<p><strong>Tags:</strong> #US immigration policy, #green card, #consular processing, #tech workforce, #international students</p>
+<p><a href="https://wallstreetcn.com/articles/3772964">Read original</a></p>]]></description>
+      <category>US immigration policy</category>
+      <category>green card</category>
+      <category>consular processing</category>
+      <category>tech workforce</category>
+      <category>international students</category>
     </item>
     <item>
       <title>[信号 6.0] 📱 微软财报意外披露 🤖 OpenAI 单季度巨亏 115 亿美元  微软最新财报显示，其对 OpenAI 的权益法投资导致单季度净利润减少 31 亿美元。</title>
@@ -285,62 +93,94 @@
       <pubDate>Sat, 23 May 2026 07:40:35 +0000</pubDate>
       <description><![CDATA[<p>AI Score: 7.0</p>
 <p>Signal Score: 6.0</p>
-<p>一则基于微软财报中权益法投资影响的推算称 OpenAI 单季度净亏损约 115 亿至超 120 亿美元，凸显大模型领域的高成本与高烧钱强度。</p>
-<p><strong>Tags:</strong> #AI财务, #OpenAI, #Microsoft, #大模型成本, #科技行业分析</p>
+<p>帖子根据微软财报中对OpenAI权益法投资导致利润减少的数据，按持股比例推算OpenAI单季度净亏损约115亿美元以上，强调AI烧钱速度与微软投入规模。</p>
+<p><strong>Tags:</strong> #Microsoft, #OpenAI, #财报/会计, #AI经济学, #云计算成本</p>
 <p><a href="https://t.me/zaihuapd/41537">Read original</a></p>]]></description>
-      <category>AI财务</category>
-      <category>OpenAI</category>
       <category>Microsoft</category>
-      <category>大模型成本</category>
-      <category>科技行业分析</category>
+      <category>OpenAI</category>
+      <category>财报/会计</category>
+      <category>AI经济学</category>
+      <category>云计算成本</category>
     </item>
     <item>
-      <title>[信号 5.0] CISA tries to contain data leak</title>
-      <link>https://krebsonsecurity.com/2026/05/lawmakers-demand-answers-as-cisa-tries-to-contain-data-leak/</link>
-      <guid isPermaLink="false">horizon:zh:hackernews:story:48238429</guid>
-      <pubDate>Fri, 22 May 2026 16:54:31 +0000</pubDate>
+      <title>[信号 6.0] 美商海盗船开始采用长鑫存储芯片，DDR5 内存价格有望下调</title>
+      <link>https://thenextweb.com/news/chinese-dram-cxmt-corsair-ddr5-memory-prices</link>
+      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41540</guid>
+      <pubDate>Sat, 23 May 2026 11:17:04 +0000</pubDate>
       <description><![CDATA[<p>AI Score: 7.0</p>
-<p>Signal Score: 5.0</p>
-<p>Lawmakers are demanding answers as CISA works to contain a data leak reportedly tied to improper handling of sensitive material, sparking criticism of basic security hygiene and oversight.</p>
-<p><strong>Tags:</strong> #cybersecurity, #government-security, #data-breach, #incident-response, #policy</p>
-<p><a href="https://krebsonsecurity.com/2026/05/lawmakers-demand-answers-as-cisa-tries-to-contain-data-leak/">Read original</a></p>]]></description>
-      <category>cybersecurity</category>
-      <category>government-security</category>
-      <category>data-breach</category>
-      <category>incident-response</category>
-      <category>policy</category>
+<p>Signal Score: 6.0</p>
+<p>报道称Corsair已在部分DDR5内存模组中采用长鑫存储（CXMT）DRAM芯片，预计在AI导致传统厂商产能转向HBM的背景下，中国扩产将缓解供应并可能在未来推动DDR5价格回落。</p>
+<p><strong>Tags:</strong> #DRAM, #DDR5, #Supply Chain, #Semiconductors, #China Tech</p>
+<p><a href="https://thenextweb.com/news/chinese-dram-cxmt-corsair-ddr5-memory-prices">Read original</a></p>]]></description>
+      <category>DRAM</category>
+      <category>DDR5</category>
+      <category>Supply Chain</category>
+      <category>Semiconductors</category>
+      <category>China Tech</category>
     </item>
     <item>
-      <title>[信号 5.0] Deno 2.8</title>
-      <link>https://deno.com/blog/v2.8</link>
-      <guid isPermaLink="false">horizon:zh:hackernews:story:48234380</guid>
-      <pubDate>Fri, 22 May 2026 11:23:30 +0000</pubDate>
+      <title>[信号 6.0] 我国日均词元调用量两年增超千倍，今年 3 月突破 140 万亿  国家数据局披露，我国日均词元（Token）调用量已在今年 3 月突破 140 万亿。</title>
+      <link>https://t.me/zaihuapd/41542</link>
+      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41542</guid>
+      <pubDate>Sat, 23 May 2026 14:36:42 +0000</pubDate>
       <description><![CDATA[<p>AI Score: 7.0</p>
-<p>Signal Score: 5.0</p>
-<p>Deno 2.8 announces the latest improvements to the Deno JavaScript/TypeScript runtime and tooling, prompting active community comparison with Node and Bun.</p>
-<p><strong>Tags:</strong> #deno, #javascript-runtime, #typescript, #developer-tools, #web-backend</p>
-<p><a href="https://deno.com/blog/v2.8">Read original</a></p>]]></description>
-      <category>deno</category>
-      <category>javascript-runtime</category>
-      <category>typescript</category>
-      <category>developer-tools</category>
-      <category>web-backend</category>
+<p>Signal Score: 6.0</p>
+<p>国家数据局称我国日均大模型Token调用量在2025年3月突破140万亿，较2024年初约1000亿实现两年超千倍增长，并指向Token计量/定价/结算体系加速形成。</p>
+<p><strong>Tags:</strong> #LLM, #Token经济, #中国AI产业, #数据要素, #算力与推理规模</p>
+<p><a href="https://t.me/zaihuapd/41542">Read original</a></p>]]></description>
+      <category>LLM</category>
+      <category>Token经济</category>
+      <category>中国AI产业</category>
+      <category>数据要素</category>
+      <category>算力与推理规模</category>
     </item>
     <item>
-      <title>[信号 5.0] Antigravity 2.0 Tops the OpenSCAD Architectural 3D LLM Benchmark</title>
-      <link>https://modelrift.com/blog/openscad-llm-benchmark/</link>
-      <guid isPermaLink="false">horizon:zh:hackernews:story:48234090</guid>
-      <pubDate>Fri, 22 May 2026 10:38:26 +0000</pubDate>
+      <title>[信号 4.0] 80386 microcode disassembled</title>
+      <link>https://www.reenigne.org/blog/80386-microcode-disassembled/</link>
+      <guid isPermaLink="false">horizon:zh:hackernews:story:48247004</guid>
+      <pubDate>Sat, 23 May 2026 12:11:43 +0000</pubDate>
+      <description><![CDATA[<p>AI Score: 8.0</p>
+<p>Signal Score: 4.0</p>
+<p>The post presents a detailed disassembly and analysis of the Intel 80386’s microcode, explaining findings and methods relevant to understanding and reconstructing legacy CPU behavior.</p>
+<p><strong>Tags:</strong> #reverse-engineering, #microarchitecture, #x86, #microcode, #hardware-security</p>
+<p><a href="https://www.reenigne.org/blog/80386-microcode-disassembled/">Read original</a></p>]]></description>
+      <category>reverse-engineering</category>
+      <category>microarchitecture</category>
+      <category>x86</category>
+      <category>microcode</category>
+      <category>hardware-security</category>
+    </item>
+    <item>
+      <title>[信号 4.0] Making deep learning go brrrr from first principles (2022)</title>
+      <link>https://horace.io/brrr_intro.html</link>
+      <guid isPermaLink="false">horizon:zh:hackernews:story:48246889</guid>
+      <pubDate>Sat, 23 May 2026 11:50:22 +0000</pubDate>
+      <description><![CDATA[<p>AI Score: 8.0</p>
+<p>Signal Score: 4.0</p>
+<p>A detailed tutorial-style essay explaining why deep learning training/inference is fast (or slow) by breaking down hardware and system-level bottlenecks and optimizations from first principles.</p>
+<p><strong>Tags:</strong> #deep-learning-systems, #gpu-computing, #performance-optimization, #ml-infrastructure, #nvidia</p>
+<p><a href="https://horace.io/brrr_intro.html">Read original</a></p>]]></description>
+      <category>deep-learning-systems</category>
+      <category>gpu-computing</category>
+      <category>performance-optimization</category>
+      <category>ml-infrastructure</category>
+      <category>nvidia</category>
+    </item>
+    <item>
+      <title>[信号 2.0] On The &lt;dl&gt; (2021)</title>
+      <link>https://benmyers.dev/blog/on-the-dl/</link>
+      <guid isPermaLink="false">horizon:zh:hackernews:story:48247325</guid>
+      <pubDate>Sat, 23 May 2026 13:03:43 +0000</pubDate>
       <description><![CDATA[<p>AI Score: 7.0</p>
-<p>Signal Score: 5.0</p>
-<p>A blog post introduces an OpenSCAD architectural 3D LLM benchmark (Pantheon) and reports Antigravity 2.0 as the top performer, including successfully modeling distinctive interior details.</p>
-<p><strong>Tags:</strong> #LLM benchmarks, #3D modeling, #OpenSCAD, #generative AI, #CAD</p>
-<p><a href="https://modelrift.com/blog/openscad-llm-benchmark/">Read original</a></p>]]></description>
-      <category>LLM benchmarks</category>
-      <category>3D modeling</category>
-      <category>OpenSCAD</category>
-      <category>generative AI</category>
-      <category>CAD</category>
+<p>Signal Score: 2.0</p>
+<p>An article and HN thread examining the proper semantics and accessibility implications of HTML &lt;dl&gt; (definition lists), including ARIA constraints and whether &lt;dl&gt; is practical for modern UI patterns.</p>
+<p><strong>Tags:</strong> #html, #accessibility, #aria, #web-standards, #frontend</p>
+<p><a href="https://benmyers.dev/blog/on-the-dl/">Read original</a></p>]]></description>
+      <category>html</category>
+      <category>accessibility</category>
+      <category>aria</category>
+      <category>web-standards</category>
+      <category>frontend</category>
     </item>
   </channel>
 </rss>
