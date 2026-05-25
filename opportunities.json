@@ -1,203 +1,149 @@
 {
-  "date": "2026-05-24",
+  "date": "2026-05-25",
   "language": "zh",
   "opportunities": [
     {
-      "id": "telegram:zaihuapd:41533",
-      "title": "🍏 苹果开源 corecrypto 密码库，附形式化验证证明量子安全算法正确性",
-      "url": "https://security.apple.com/blog/formal-verification-corecrypto/",
-      "source_type": "telegram",
-      "ai_score": 9.0,
-      "signal_score": 8.0,
-      "signal_reason": "可观测事实包括：源代码与验证工具/Isabelle理论库公开、与NIST标准一致的实现可被独立审计复用，并已在iMessage/VPN等场景及约25亿活跃设备的基础加密中部署，显著提升可验证性与生态可集成性。",
-      "capability_delta": "",
-      "assessment": {},
-      "tags": [
-        "Post-Quantum Cryptography",
-        "Formal Verification",
-        "Cryptographic Engineering",
-        "Apple Security",
-        "Open Source"
-      ]
-    },
-    {
-      "id": "telegram:zaihuapd:41530",
-      "title": "🤖 Anthropic 公布 Project Glasswing 初期成果：AI 发现逾万高危漏洞",
-      "url": "https://www.anthropic.com/research/glasswing-initial-update",
-      "source_type": "telegram",
-      "ai_score": 8.0,
-      "signal_score": 8.0,
-      "signal_reason": "可观察事实包括：报告称漏洞发现速率提升“十倍以上”、在上千开源项目中识别 6202 个高危严重漏洞且抽样审查真阳性 90.6%，并已发布 Claude Security 工具与基金会合作支持修复；这些表明安全工作流的能力边界（发现环节）与工具可用性发生了实质变化。",
-      "capability_delta": "",
-      "assessment": {},
-      "tags": [
-        "AI Security",
-        "Vulnerability Research",
-        "Secure Software Supply Chain",
-        "Open Source Security",
-        "Anthropic"
-      ]
-    },
-    {
-      "id": "telegram:zaihuapd:41539",
-      "title": "富途控股拟被罚 18.5 亿元 老虎证券子公司被罚没约 4.11 亿元  富途控股称，已收到中国证监会及深圳证监局的调查通知和行政罚款预通知函。",
-      "url": "https://t.me/zaihuapd/41539",
-      "source_type": "telegram",
-      "ai_score": 7.0,
-      "signal_score": 8.0,
-      "signal_reason": "可观察事实为监管机构已发出调查通知与行政罚款预通知函、拟采取整改/停止并处以数十亿元级罚没，显示监管边界与合规成本/风险发生实质变化且影响对象明确（跨境互联网券商及其客户与业务流程）。",
-      "capability_delta": "",
-      "assessment": {},
-      "tags": [
-        "fintech",
-        "securities-regulation",
-        "cross-border-brokerage",
-        "China-CSRC",
-        "compliance"
-      ]
-    },
-    {
-      "id": "telegram:zaihuapd:41535",
-      "title": "📱 微软内部大规模推广 Claude Code，鼓励非技术员工使用 AI 编程  微软正在其最重要的工程团队中广泛推广 Anthropic 的 Claude C",
-      "url": "https://t.me/zaihuapd/41535",
-      "source_type": "telegram",
-      "ai_score": 7.0,
-      "signal_score": 6.0,
-      "signal_reason": "若属实，这是可观察到的组织级工具部署与评估动作（要求安装、并行对比、收集反馈），意味着企业内部对AI编程工作流的采用强度提升；但目前缺少官方确认、覆盖范围与效果数据，客观市场/能力边界变化证据有限。",
-      "capability_delta": "",
-      "assessment": {},
-      "tags": [
-        "Microsoft",
-        "Claude Code",
-        "AI编程助手",
-        "开发者工具",
-        "企业AI落地"
-      ]
-    },
-    {
-      "id": "telegram:zaihuapd:41536",
-      "title": "特朗普政府拟要求多数绿卡申请人离境办理",
-      "url": "https://wallstreetcn.com/articles/3772964",
-      "source_type": "telegram",
-      "ai_score": 7.0,
-      "signal_score": 6.0,
-      "signal_reason": "可观察到的事实是政策方向将从“境内调整身份”转向“离境领事程序”，这会直接改变流程与时间成本预期并影响明确人群（临时签证持有人、科技行业与留学生）；但尚未给出最终生效时间、适用范围细则与执行确定性，客观信号强度中等。",
-      "capability_delta": "",
-      "assessment": {},
-      "tags": [
-        "US immigration policy",
-        "green card",
-        "consular processing",
-        "tech workforce",
-        "international students"
-      ]
-    },
-    {
-      "id": "telegram:zaihuapd:41537",
-      "title": "📱 微软财报意外披露 🤖 OpenAI 单季度巨亏 115 亿美元  微软最新财报显示，其对 OpenAI 的权益法投资导致单季度净利润减少 31 亿美元。",
-      "url": "https://t.me/zaihuapd/41537",
-      "source_type": "telegram",
-      "ai_score": 7.0,
-      "signal_score": 6.0,
-      "signal_reason": "可观察事实是微软财报显示权益法投资对当季净利润有显著负面影响（约31亿美元），并披露累计投入/承诺规模信息；但OpenAI真实当季亏损数值仍是基于比例推算而非直接披露，因而对市场条件变化的确定性为中等。",
-      "capability_delta": "",
-      "assessment": {},
-      "tags": [
-        "Microsoft",
-        "OpenAI",
-        "财报/会计",
-        "AI经济学",
-        "云计算成本"
-      ]
-    },
-    {
-      "id": "telegram:zaihuapd:41540",
-      "title": "美商海盗船开始采用长鑫存储芯片，DDR5 内存价格有望下调",
-      "url": "https://thenextweb.com/news/chinese-dram-cxmt-corsair-ddr5-memory-prices",
-      "source_type": "telegram",
-      "ai_score": 7.0,
-      "signal_score": 6.0,
-      "signal_reason": "可观察事实是Corsair开始在已上市的6000 MT/s DDR5产品中采用CXMT芯片，显示消费级内存供应链出现新增可用来源；但“2027年下半年价格明显回落”“2026Q1业绩爆发/年内上市”等为预测或未量化信息，尚不足以证明市场条件已发生明确且幅度可度量的变化。",
-      "capability_delta": "",
-      "assessment": {},
-      "tags": [
-        "DRAM",
-        "DDR5",
-        "Supply Chain",
-        "Semiconductors",
-        "China Tech"
-      ]
-    },
-    {
-      "id": "telegram:zaihuapd:41542",
-      "title": "我国日均词元调用量两年增超千倍，今年 3 月突破 140 万亿  国家数据局披露，我国日均词元（Token）调用量已在今年 3 月突破 140 万亿。",
-      "url": "https://t.me/zaihuapd/41542",
-      "source_type": "telegram",
-      "ai_score": 7.0,
-      "signal_score": 6.0,
-      "signal_reason": "可观察到的事实是国家层面披露推理调用规模大幅上升，并强调Token可计量、可定价、可交易及围绕调用/分发/结算的体系形成；但缺少口径说明、行业拆分与成本/价格等关键指标，难以据此确认具体市场条件（成本、可得性、规则）发生了明确可量化变化。",
-      "capability_delta": "",
-      "assessment": {},
-      "tags": [
-        "LLM",
-        "Token经济",
-        "中国AI产业",
-        "数据要素",
-        "算力与推理规模"
-      ]
-    },
-    {
-      "id": "hackernews:story:48247004",
-      "title": "80386 microcode disassembled",
-      "url": "https://www.reenigne.org/blog/80386-microcode-disassembled/",
+      "id": "hackernews:story:48258684",
+      "title": "Memory has grown to nearly two-thirds of AI chip component costs",
+      "url": "https://epoch.ai/data-insights/ai-chip-component-cost-shares",
       "source_type": "hackernews",
       "ai_score": 8.0,
-      "signal_score": 4.0,
-      "signal_reason": "Observable signal is mainly knowledge release (a new public disassembly/analysis) rather than a clear change in capabilities, cost, access, or market availability; it may enable better emulation/verification, but no concrete performance, pricing, or adoption shift is evidenced in the item.",
+      "signal_score": 7.0,
+      "signal_reason": "If memory truly represents ~2/3 of component costs, then changes in DRAM supply, pricing, or packaging (e.g., higher-bandwidth stacks) can materially move AI system cost/performance; comments report large observed consumer RAM price increases and the thread indicates broad market pressure, but no concrete new supply expansion or price drop is evidenced in the item itself.",
       "capability_delta": "",
       "assessment": {},
       "tags": [
+        "AI-hardware",
+        "DRAM-memory",
+        "semiconductors",
+        "cost-analysis",
+        "GPU-accelerators"
+      ]
+    },
+    {
+      "id": "telegram:zaihuapd:41550",
+      "title": "APKPure 上的 Telegram 官方版被植入间谍后门",
+      "url": "https://x.com/EricParker/status/2058411298195661221",
+      "source_type": "telegram",
+      "ai_score": 8.0,
+      "signal_score": 7.0,
+      "signal_reason": "可观察到的事实主张包含明确版本号（12.6.5）、重签名打包、恶意载荷位置（classes3.dex）与回传目标（38.190.225.166），若属实意味着分发渠道/安装来源的风险边界发生变化并会触发安全响应；但当前材料未提供独立验证或官方通告，客观信号强度略受限。",
+      "capability_delta": "",
+      "assessment": {},
+      "tags": [
+        "mobile-security",
+        "android-malware",
+        "supply-chain",
+        "telegram",
+        "threat-intelligence"
+      ]
+    },
+    {
+      "id": "telegram:zaihuapd:41549",
+      "title": "Google Docs 推出 Docs Live 功能：支持语音对话生成文档",
+      "url": "https://www.wsj.com/tech/personal-tech/google-docs-live-test-e4473e07",
+      "source_type": "telegram",
+      "ai_score": 7.0,
+      "signal_score": 7.0,
+      "signal_reason": "可观察到的变化包括：在 Google Docs 内新增语音对话生成文档的能力、与 Drive/网页检索的集成、以及明确的发布路径（先 iOS/Android 付费 AI 订阅用户，后续扩展到网页与更多用户）；这些都意味着可用性与覆盖面将随 rollout 实质提升，但当前仍处早期分发阶段。",
+      "capability_delta": "",
+      "assessment": {},
+      "tags": [
+        "Google Docs",
+        "Gemini",
+        "AI写作",
+        "语音交互",
+        "生产力工具"
+      ]
+    },
+    {
+      "id": "hackernews:story:48253186",
+      "title": "Scammers are abusing an internal Microsoft account to send spam links",
+      "url": "https://techcrunch.com/2026/05/21/scammers-are-abusing-an-internal-microsoft-account-to-send-spam/",
+      "source_type": "hackernews",
+      "ai_score": 8.0,
+      "signal_score": 6.0,
+      "signal_reason": "Observable signal is moderate: the incident suggests a real weakness/abuse path in a major platform and amplifies demand for clearer domain provenance and better anti-phishing controls, but the post does not document a new widely available capability, pricing/access change, or a confirmed systemic remediation/market shift.",
+      "capability_delta": "",
+      "assessment": {},
+      "tags": [
+        "cybersecurity",
+        "phishing",
+        "email-security",
+        "microsoft",
+        "identity-and-access-management"
+      ]
+    },
+    {
+      "id": "hackernews:story:48254309",
+      "title": "Why is Vivado 2026.1 dropping Linux support for free tier?",
+      "url": "https://adaptivesupport.amd.com/s/question/0D5Pd00001YQLdMKAX/why-is-vivado-20261-dropping-linux-support-for-free-tier-?language=en_US",
+      "source_type": "hackernews",
+      "ai_score": 7.0,
+      "signal_score": 6.0,
+      "signal_reason": "If accurate, dropping Linux from the free tier is an observable access/licensing change that can increase setup/CI friction and shift evaluation/adoption dynamics; however, the item is primarily a support-thread/question plus community reaction rather than a fully documented official policy announcement with detailed terms.",
+      "capability_delta": "",
+      "assessment": {},
+      "tags": [
+        "FPGA",
+        "EDA-tools",
+        "Linux",
+        "AMD-Xilinx",
+        "Developer-Experience"
+      ]
+    },
+    {
+      "id": "telegram:zaihuapd:41545",
+      "title": "美国白宫要求在所有政府手机上安装官方应用",
+      "url": "https://www.govexec.com/management/2026/05/white-house-ordering-agencies-place-its-new-app-all-employees-government-phones/413738/",
+      "source_type": "telegram",
+      "ai_score": 7.0,
+      "signal_score": 6.0,
+      "signal_reason": "可观察事实为联邦层面强制部署新应用并由机构IT自动下发，明确改变了政府移动终端的软件基线与管理动作，可能触发合规审查与安全评估需求；但尚无披露应用能力、数据收集范围或成本/效率等量化变化。",
+      "capability_delta": "",
+      "assessment": {},
+      "tags": [
+        "Government IT",
+        "Mobile Device Management",
+        "Cybersecurity",
+        "Privacy",
+        "Public Policy"
+      ]
+    },
+    {
+      "id": "hackernews:story:48256912",
+      "title": "Constraint Decay: The Fragility of LLM Agents in Back End Code Generation",
+      "url": "https://arxiv.org/abs/2605.06445",
+      "source_type": "hackernews",
+      "ai_score": 8.0,
+      "signal_score": 5.0,
+      "signal_reason": "Observable signal is mainly informational: a documented limitation and strong community attention, but no concrete capability, access, pricing, or workflow change is evidenced, and frontier-model performance is explicitly noted as under-tested.",
+      "capability_delta": "",
+      "assessment": {},
+      "tags": [
+        "LLM agents",
+        "code generation",
+        "software architecture",
+        "AI reliability",
+        "backend engineering"
+      ]
+    },
+    {
+      "id": "hackernews:story:48253386",
+      "title": "Microsoft open-sources “the earliest DOS source code discovered to date”",
+      "url": "https://arstechnica.com/gadgets/2026/04/microsoft-open-sources-the-earliest-dos-source-code-discovered-to-date/",
+      "source_type": "hackernews",
+      "ai_score": 7.0,
+      "signal_score": 4.0,
+      "signal_reason": "Observable change is primarily improved access to historic source code for researchers and enthusiasts; it does not clearly change capability, cost, or workflows for modern production systems, though it enables preservation and analysis work with publicly available artifacts.",
+      "capability_delta": "",
+      "assessment": {},
+      "tags": [
+        "open-source",
+        "software-history",
+        "operating-systems",
         "reverse-engineering",
-        "microarchitecture",
-        "x86",
-        "microcode",
-        "hardware-security"
-      ]
-    },
-    {
-      "id": "hackernews:story:48246889",
-      "title": "Making deep learning go brrrr from first principles (2022)",
-      "url": "https://horace.io/brrr_intro.html",
-      "source_type": "hackernews",
-      "ai_score": 8.0,
-      "signal_score": 4.0,
-      "signal_reason": "No new release or capability change is reported; it’s a 2022 educational post plus a mention of a related 2024 talk, with discussion reflecting ongoing ecosystem fragmentation rather than a concrete market/technical shift.",
-      "capability_delta": "",
-      "assessment": {},
-      "tags": [
-        "deep-learning-systems",
-        "gpu-computing",
-        "performance-optimization",
-        "ml-infrastructure",
-        "nvidia"
-      ]
-    },
-    {
-      "id": "hackernews:story:48247325",
-      "title": "On The <dl> (2021)",
-      "url": "https://benmyers.dev/blog/on-the-dl/",
-      "source_type": "hackernews",
-      "ai_score": 7.0,
-      "signal_score": 2.0,
-      "signal_reason": "Observable facts indicate a standards-interpretation and developer-practice debate, not a new release, capability change, pricing shift, or newly enabled workflow.",
-      "capability_delta": "",
-      "assessment": {},
-      "tags": [
-        "html",
-        "accessibility",
-        "aria",
-        "web-standards",
-        "frontend"
+        "programming-languages"
       ]
     }
   ]
