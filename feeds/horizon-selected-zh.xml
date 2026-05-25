@@ -4,183 +4,135 @@
     <title>Horizon Personal Feed - ZH</title>
     <link>https://felicia7c.github.io/newsfeed</link>
     <description>AI-filtered stories from Horizon</description>
-    <lastBuildDate>2026-05-24</lastBuildDate>
+    <lastBuildDate>2026-05-25</lastBuildDate>
     <atom:link href="https://felicia7c.github.io/newsfeed/feeds/horizon-selected-zh.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>[信号 8.0] 🍏 苹果开源 corecrypto 密码库，附形式化验证证明量子安全算法正确性</title>
-      <link>https://security.apple.com/blog/formal-verification-corecrypto/</link>
-      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41533</guid>
-      <pubDate>Sat, 23 May 2026 04:49:56 +0000</pubDate>
-      <description><![CDATA[<p>AI Score: 9.0</p>
-<p>Signal Score: 8.0</p>
-<p>苹果开源corecrypto并发布ML-KEM/ML-DSA的实现与端到端形式化验证证明，确保其与NIST标准一致并用于大规模设备与应用场景。</p>
-<p><strong>Tags:</strong> #Post-Quantum Cryptography, #Formal Verification, #Cryptographic Engineering, #Apple Security, #Open Source</p>
-<p><a href="https://security.apple.com/blog/formal-verification-corecrypto/">Read original</a></p>]]></description>
-      <category>Post-Quantum Cryptography</category>
-      <category>Formal Verification</category>
-      <category>Cryptographic Engineering</category>
-      <category>Apple Security</category>
-      <category>Open Source</category>
-    </item>
-    <item>
-      <title>[信号 8.0] 🤖 Anthropic 公布 Project Glasswing 初期成果：AI 发现逾万高危漏洞</title>
-      <link>https://www.anthropic.com/research/glasswing-initial-update</link>
-      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41530</guid>
-      <pubDate>Sat, 23 May 2026 03:16:00 +0000</pubDate>
+      <title>[信号 7.0] Memory has grown to nearly two-thirds of AI chip component costs</title>
+      <link>https://epoch.ai/data-insights/ai-chip-component-cost-shares</link>
+      <guid isPermaLink="false">horizon:zh:hackernews:story:48258684</guid>
+      <pubDate>Sun, 24 May 2026 16:31:29 +0000</pubDate>
       <description><![CDATA[<p>AI Score: 8.0</p>
-<p>Signal Score: 8.0</p>
-<p>Anthropic 公布 Project Glasswing 初期结果：用 Claude Mythos Preview 在合作伙伴协作下大幅提升漏洞发现规模与速率，并指出验证披露与修补能力已成为新的系统性瓶颈。</p>
-<p><strong>Tags:</strong> #AI Security, #Vulnerability Research, #Secure Software Supply Chain, #Open Source Security, #Anthropic</p>
-<p><a href="https://www.anthropic.com/research/glasswing-initial-update">Read original</a></p>]]></description>
-      <category>AI Security</category>
-      <category>Vulnerability Research</category>
-      <category>Secure Software Supply Chain</category>
-      <category>Open Source Security</category>
-      <category>Anthropic</category>
+<p>Signal Score: 7.0</p>
+<p>An Epoch AI analysis argues that memory has risen to nearly two-thirds of AI chip component costs, making DRAM supply and pricing a primary bottleneck for AI hardware cost trajectories.</p>
+<p><strong>Tags:</strong> #AI-hardware, #DRAM-memory, #semiconductors, #cost-analysis, #GPU-accelerators</p>
+<p><a href="https://epoch.ai/data-insights/ai-chip-component-cost-shares">Read original</a></p>]]></description>
+      <category>AI-hardware</category>
+      <category>DRAM-memory</category>
+      <category>semiconductors</category>
+      <category>cost-analysis</category>
+      <category>GPU-accelerators</category>
     </item>
     <item>
-      <title>[信号 8.0] 富途控股拟被罚 18.5 亿元 老虎证券子公司被罚没约 4.11 亿元  富途控股称，已收到中国证监会及深圳证监局的调查通知和行政罚款预通知函。</title>
-      <link>https://t.me/zaihuapd/41539</link>
-      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41539</guid>
-      <pubDate>Sat, 23 May 2026 10:58:31 +0000</pubDate>
-      <description><![CDATA[<p>AI Score: 7.0</p>
-<p>Signal Score: 8.0</p>
-<p>报道称富途控股因被认定在内地无许可开展证券/基金销售/期货等业务拟合计罚款约18.5亿元并被责令整改或停止，老虎证券若干子公司亦因类似原因被罚没约4.11亿元。</p>
-<p><strong>Tags:</strong> #fintech, #securities-regulation, #cross-border-brokerage, #China-CSRC, #compliance</p>
-<p><a href="https://t.me/zaihuapd/41539">Read original</a></p>]]></description>
-      <category>fintech</category>
-      <category>securities-regulation</category>
-      <category>cross-border-brokerage</category>
-      <category>China-CSRC</category>
-      <category>compliance</category>
-    </item>
-    <item>
-      <title>[信号 6.0] 📱 微软内部大规模推广 Claude Code，鼓励非技术员工使用 AI 编程  微软正在其最重要的工程团队中广泛推广 Anthropic 的 Claude C</title>
-      <link>https://t.me/zaihuapd/41535</link>
-      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41535</guid>
-      <pubDate>Sat, 23 May 2026 06:05:36 +0000</pubDate>
-      <description><![CDATA[<p>AI Score: 7.0</p>
-<p>Signal Score: 6.0</p>
-<p>据称微软在CoreAI及Windows/M365等关键团队内部推广Claude Code，甚至鼓励非技术员工用其做原型，并要求工程师与Copilot并行使用提交对比反馈。</p>
-<p><strong>Tags:</strong> #Microsoft, #Claude Code, #AI编程助手, #开发者工具, #企业AI落地</p>
-<p><a href="https://t.me/zaihuapd/41535">Read original</a></p>]]></description>
-      <category>Microsoft</category>
-      <category>Claude Code</category>
-      <category>AI编程助手</category>
-      <category>开发者工具</category>
-      <category>企业AI落地</category>
-    </item>
-    <item>
-      <title>[信号 6.0] 特朗普政府拟要求多数绿卡申请人离境办理</title>
-      <link>https://wallstreetcn.com/articles/3772964</link>
-      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41536</guid>
-      <pubDate>Sat, 23 May 2026 06:33:27 +0000</pubDate>
-      <description><![CDATA[<p>AI Score: 7.0</p>
-<p>Signal Score: 6.0</p>
-<p>特朗普政府拟出台新规，要求多数在美临时签证持有的绿卡申请人离境并在海外领事馆办理永久居留，可能引发更长等待并冲击科技与留学生群体。</p>
-<p><strong>Tags:</strong> #US immigration policy, #green card, #consular processing, #tech workforce, #international students</p>
-<p><a href="https://wallstreetcn.com/articles/3772964">Read original</a></p>]]></description>
-      <category>US immigration policy</category>
-      <category>green card</category>
-      <category>consular processing</category>
-      <category>tech workforce</category>
-      <category>international students</category>
-    </item>
-    <item>
-      <title>[信号 6.0] 📱 微软财报意外披露 🤖 OpenAI 单季度巨亏 115 亿美元  微软最新财报显示，其对 OpenAI 的权益法投资导致单季度净利润减少 31 亿美元。</title>
-      <link>https://t.me/zaihuapd/41537</link>
-      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41537</guid>
-      <pubDate>Sat, 23 May 2026 07:40:35 +0000</pubDate>
-      <description><![CDATA[<p>AI Score: 7.0</p>
-<p>Signal Score: 6.0</p>
-<p>帖子根据微软财报中对OpenAI权益法投资导致利润减少的数据，按持股比例推算OpenAI单季度净亏损约115亿美元以上，强调AI烧钱速度与微软投入规模。</p>
-<p><strong>Tags:</strong> #Microsoft, #OpenAI, #财报/会计, #AI经济学, #云计算成本</p>
-<p><a href="https://t.me/zaihuapd/41537">Read original</a></p>]]></description>
-      <category>Microsoft</category>
-      <category>OpenAI</category>
-      <category>财报/会计</category>
-      <category>AI经济学</category>
-      <category>云计算成本</category>
-    </item>
-    <item>
-      <title>[信号 6.0] 美商海盗船开始采用长鑫存储芯片，DDR5 内存价格有望下调</title>
-      <link>https://thenextweb.com/news/chinese-dram-cxmt-corsair-ddr5-memory-prices</link>
-      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41540</guid>
-      <pubDate>Sat, 23 May 2026 11:17:04 +0000</pubDate>
-      <description><![CDATA[<p>AI Score: 7.0</p>
-<p>Signal Score: 6.0</p>
-<p>报道称Corsair已在部分DDR5内存模组中采用长鑫存储（CXMT）DRAM芯片，预计在AI导致传统厂商产能转向HBM的背景下，中国扩产将缓解供应并可能在未来推动DDR5价格回落。</p>
-<p><strong>Tags:</strong> #DRAM, #DDR5, #Supply Chain, #Semiconductors, #China Tech</p>
-<p><a href="https://thenextweb.com/news/chinese-dram-cxmt-corsair-ddr5-memory-prices">Read original</a></p>]]></description>
-      <category>DRAM</category>
-      <category>DDR5</category>
-      <category>Supply Chain</category>
-      <category>Semiconductors</category>
-      <category>China Tech</category>
-    </item>
-    <item>
-      <title>[信号 6.0] 我国日均词元调用量两年增超千倍，今年 3 月突破 140 万亿  国家数据局披露，我国日均词元（Token）调用量已在今年 3 月突破 140 万亿。</title>
-      <link>https://t.me/zaihuapd/41542</link>
-      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41542</guid>
-      <pubDate>Sat, 23 May 2026 14:36:42 +0000</pubDate>
-      <description><![CDATA[<p>AI Score: 7.0</p>
-<p>Signal Score: 6.0</p>
-<p>国家数据局称我国日均大模型Token调用量在2025年3月突破140万亿，较2024年初约1000亿实现两年超千倍增长，并指向Token计量/定价/结算体系加速形成。</p>
-<p><strong>Tags:</strong> #LLM, #Token经济, #中国AI产业, #数据要素, #算力与推理规模</p>
-<p><a href="https://t.me/zaihuapd/41542">Read original</a></p>]]></description>
-      <category>LLM</category>
-      <category>Token经济</category>
-      <category>中国AI产业</category>
-      <category>数据要素</category>
-      <category>算力与推理规模</category>
-    </item>
-    <item>
-      <title>[信号 4.0] 80386 microcode disassembled</title>
-      <link>https://www.reenigne.org/blog/80386-microcode-disassembled/</link>
-      <guid isPermaLink="false">horizon:zh:hackernews:story:48247004</guid>
-      <pubDate>Sat, 23 May 2026 12:11:43 +0000</pubDate>
+      <title>[信号 7.0] APKPure 上的 Telegram 官方版被植入间谍后门</title>
+      <link>https://x.com/EricParker/status/2058411298195661221</link>
+      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41550</guid>
+      <pubDate>Sun, 24 May 2026 11:38:22 +0000</pubDate>
       <description><![CDATA[<p>AI Score: 8.0</p>
+<p>Signal Score: 7.0</p>
+<p>据称从 APKPure 下载的 Telegram 12.6.5 被重签名并注入 DataCollector 间谍后门，可窃取聊天记录等敏感数据并加密回传至指定 C2 服务器。</p>
+<p><strong>Tags:</strong> #mobile-security, #android-malware, #supply-chain, #telegram, #threat-intelligence</p>
+<p><a href="https://x.com/EricParker/status/2058411298195661221">Read original</a></p>]]></description>
+      <category>mobile-security</category>
+      <category>android-malware</category>
+      <category>supply-chain</category>
+      <category>telegram</category>
+      <category>threat-intelligence</category>
+    </item>
+    <item>
+      <title>[信号 7.0] Google Docs 推出 Docs Live 功能：支持语音对话生成文档</title>
+      <link>https://www.wsj.com/tech/personal-tech/google-docs-live-test-e4473e07</link>
+      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41549</guid>
+      <pubDate>Sun, 24 May 2026 09:39:46 +0000</pubDate>
+      <description><![CDATA[<p>AI Score: 7.0</p>
+<p>Signal Score: 7.0</p>
+<p>Google 正测试 Docs Live，让用户用语音对话在 Google Docs 中生成并迭代文档草稿，同时可引用 Drive 与网页信息补全内容并遵循 Workspace 隐私规则。</p>
+<p><strong>Tags:</strong> #Google Docs, #Gemini, #AI写作, #语音交互, #生产力工具</p>
+<p><a href="https://www.wsj.com/tech/personal-tech/google-docs-live-test-e4473e07">Read original</a></p>]]></description>
+      <category>Google Docs</category>
+      <category>Gemini</category>
+      <category>AI写作</category>
+      <category>语音交互</category>
+      <category>生产力工具</category>
+    </item>
+    <item>
+      <title>[信号 6.0] Scammers are abusing an internal Microsoft account to send spam links</title>
+      <link>https://techcrunch.com/2026/05/21/scammers-are-abusing-an-internal-microsoft-account-to-send-spam/</link>
+      <guid isPermaLink="false">horizon:zh:hackernews:story:48253186</guid>
+      <pubDate>Sun, 24 May 2026 00:51:32 +0000</pubDate>
+      <description><![CDATA[<p>AI Score: 8.0</p>
+<p>Signal Score: 6.0</p>
+<p>Reports indicate scammers are leveraging an internal Microsoft account to distribute spam links, highlighting broader concerns about Microsoft identity, domain trust, and phishing resilience.</p>
+<p><strong>Tags:</strong> #cybersecurity, #phishing, #email-security, #microsoft, #identity-and-access-management</p>
+<p><a href="https://techcrunch.com/2026/05/21/scammers-are-abusing-an-internal-microsoft-account-to-send-spam/">Read original</a></p>]]></description>
+      <category>cybersecurity</category>
+      <category>phishing</category>
+      <category>email-security</category>
+      <category>microsoft</category>
+      <category>identity-and-access-management</category>
+    </item>
+    <item>
+      <title>[信号 6.0] Why is Vivado 2026.1 dropping Linux support for free tier?</title>
+      <link>https://adaptivesupport.amd.com/s/question/0D5Pd00001YQLdMKAX/why-is-vivado-20261-dropping-linux-support-for-free-tier-?language=en_US</link>
+      <guid isPermaLink="false">horizon:zh:hackernews:story:48254309</guid>
+      <pubDate>Sun, 24 May 2026 04:14:52 +0000</pubDate>
+      <description><![CDATA[<p>AI Score: 7.0</p>
+<p>Signal Score: 6.0</p>
+<p>Developers are criticizing AMD/Xilinx for allegedly removing Linux support from Vivado 2026.1’s free Basic tier, arguing it increases friction for education, hobbyist, and professional FPGA workflows compared to other vendors.</p>
+<p><strong>Tags:</strong> #FPGA, #EDA-tools, #Linux, #AMD-Xilinx, #Developer-Experience</p>
+<p><a href="https://adaptivesupport.amd.com/s/question/0D5Pd00001YQLdMKAX/why-is-vivado-20261-dropping-linux-support-for-free-tier-?language=en_US">Read original</a></p>]]></description>
+      <category>FPGA</category>
+      <category>EDA-tools</category>
+      <category>Linux</category>
+      <category>AMD-Xilinx</category>
+      <category>Developer-Experience</category>
+    </item>
+    <item>
+      <title>[信号 6.0] 美国白宫要求在所有政府手机上安装官方应用</title>
+      <link>https://www.govexec.com/management/2026/05/white-house-ordering-agencies-place-its-new-app-all-employees-government-phones/413738/</link>
+      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41545</guid>
+      <pubDate>Sun, 24 May 2026 03:26:48 +0000</pubDate>
+      <description><![CDATA[<p>AI Score: 7.0</p>
+<p>Signal Score: 6.0</p>
+<p>白宫要求联邦机构在所有员工政府手机和平板强制安装“白宫”应用，引发对数据泄露/后门风险及政治宣传倾向的安全与治理争议。</p>
+<p><strong>Tags:</strong> #Government IT, #Mobile Device Management, #Cybersecurity, #Privacy, #Public Policy</p>
+<p><a href="https://www.govexec.com/management/2026/05/white-house-ordering-agencies-place-its-new-app-all-employees-government-phones/413738/">Read original</a></p>]]></description>
+      <category>Government IT</category>
+      <category>Mobile Device Management</category>
+      <category>Cybersecurity</category>
+      <category>Privacy</category>
+      <category>Public Policy</category>
+    </item>
+    <item>
+      <title>[信号 5.0] Constraint Decay: The Fragility of LLM Agents in Back End Code Generation</title>
+      <link>https://arxiv.org/abs/2605.06445</link>
+      <guid isPermaLink="false">horizon:zh:hackernews:story:48256912</guid>
+      <pubDate>Sun, 24 May 2026 12:55:53 +0000</pubDate>
+      <description><![CDATA[<p>AI Score: 8.0</p>
+<p>Signal Score: 5.0</p>
+<p>The paper reports that LLM-based coding agents degrade significantly when required to follow explicit architectural constraints, making them more reliable for prototyping than for production backend code generation.</p>
+<p><strong>Tags:</strong> #LLM agents, #code generation, #software architecture, #AI reliability, #backend engineering</p>
+<p><a href="https://arxiv.org/abs/2605.06445">Read original</a></p>]]></description>
+      <category>LLM agents</category>
+      <category>code generation</category>
+      <category>software architecture</category>
+      <category>AI reliability</category>
+      <category>backend engineering</category>
+    </item>
+    <item>
+      <title>[信号 4.0] Microsoft open-sources “the earliest DOS source code discovered to date”</title>
+      <link>https://arstechnica.com/gadgets/2026/04/microsoft-open-sources-the-earliest-dos-source-code-discovered-to-date/</link>
+      <guid isPermaLink="false">horizon:zh:hackernews:story:48253386</guid>
+      <pubDate>Sun, 24 May 2026 01:21:13 +0000</pubDate>
+      <description><![CDATA[<p>AI Score: 7.0</p>
 <p>Signal Score: 4.0</p>
-<p>The post presents a detailed disassembly and analysis of the Intel 80386’s microcode, explaining findings and methods relevant to understanding and reconstructing legacy CPU behavior.</p>
-<p><strong>Tags:</strong> #reverse-engineering, #microarchitecture, #x86, #microcode, #hardware-security</p>
-<p><a href="https://www.reenigne.org/blog/80386-microcode-disassembled/">Read original</a></p>]]></description>
+<p>Microsoft has open-sourced what it says is the earliest discovered DOS source code, reconstructed from paper printouts, providing new primary material on early PC operating system development.</p>
+<p><strong>Tags:</strong> #open-source, #software-history, #operating-systems, #reverse-engineering, #programming-languages</p>
+<p><a href="https://arstechnica.com/gadgets/2026/04/microsoft-open-sources-the-earliest-dos-source-code-discovered-to-date/">Read original</a></p>]]></description>
+      <category>open-source</category>
+      <category>software-history</category>
+      <category>operating-systems</category>
       <category>reverse-engineering</category>
-      <category>microarchitecture</category>
-      <category>x86</category>
-      <category>microcode</category>
-      <category>hardware-security</category>
-    </item>
-    <item>
-      <title>[信号 4.0] Making deep learning go brrrr from first principles (2022)</title>
-      <link>https://horace.io/brrr_intro.html</link>
-      <guid isPermaLink="false">horizon:zh:hackernews:story:48246889</guid>
-      <pubDate>Sat, 23 May 2026 11:50:22 +0000</pubDate>
-      <description><![CDATA[<p>AI Score: 8.0</p>
-<p>Signal Score: 4.0</p>
-<p>A detailed tutorial-style essay explaining why deep learning training/inference is fast (or slow) by breaking down hardware and system-level bottlenecks and optimizations from first principles.</p>
-<p><strong>Tags:</strong> #deep-learning-systems, #gpu-computing, #performance-optimization, #ml-infrastructure, #nvidia</p>
-<p><a href="https://horace.io/brrr_intro.html">Read original</a></p>]]></description>
-      <category>deep-learning-systems</category>
-      <category>gpu-computing</category>
-      <category>performance-optimization</category>
-      <category>ml-infrastructure</category>
-      <category>nvidia</category>
-    </item>
-    <item>
-      <title>[信号 2.0] On The &lt;dl&gt; (2021)</title>
-      <link>https://benmyers.dev/blog/on-the-dl/</link>
-      <guid isPermaLink="false">horizon:zh:hackernews:story:48247325</guid>
-      <pubDate>Sat, 23 May 2026 13:03:43 +0000</pubDate>
-      <description><![CDATA[<p>AI Score: 7.0</p>
-<p>Signal Score: 2.0</p>
-<p>An article and HN thread examining the proper semantics and accessibility implications of HTML &lt;dl&gt; (definition lists), including ARIA constraints and whether &lt;dl&gt; is practical for modern UI patterns.</p>
-<p><strong>Tags:</strong> #html, #accessibility, #aria, #web-standards, #frontend</p>
-<p><a href="https://benmyers.dev/blog/on-the-dl/">Read original</a></p>]]></description>
-      <category>html</category>
-      <category>accessibility</category>
-      <category>aria</category>
-      <category>web-standards</category>
-      <category>frontend</category>
+      <category>programming-languages</category>
     </item>
   </channel>
 </rss>
