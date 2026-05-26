@@ -1,149 +1,275 @@
 {
-  "date": "2026-05-25",
+  "date": "2026-05-26",
   "language": "zh",
   "opportunities": [
     {
-      "id": "hackernews:story:48258684",
-      "title": "Memory has grown to nearly two-thirds of AI chip component costs",
-      "url": "https://epoch.ai/data-insights/ai-chip-component-cost-shares",
+      "id": "telegram:zaihuapd:41556",
+      "title": "Epic 公布虚幻引擎 6，首个展示游戏是《Rocket League》",
+      "url": "https://www.pcgamer.com/gaming-industry/epic-reveals-first-unreal-engine-6-game-and-its-not-fortnite/",
+      "source_type": "telegram",
+      "ai_score": 9.0,
+      "signal_score": 7.0,
+      "signal_reason": "可观察事实是Epic正式披露UE6并确认一款在线运营大作将从UE3直升UE6，意味着引擎与内容管线将出现代际迁移窗口与生态关注度提升；但未披露UE6发布时间、功能边界、性能/成本变化或开发者可用性细节，因此市场与技术条件变化的确定性有限。",
+      "capability_delta": "",
+      "assessment": {},
+      "tags": [
+        "Unreal Engine",
+        "Game Engines",
+        "Epic Games",
+        "Rocket League",
+        "Game Development"
+      ]
+    },
+    {
+      "id": "hackernews:story:48272354",
+      "title": "Microsoft Copilot Cowork Exfiltrates Files",
+      "url": "https://www.promptarmor.com/resources/microsoft-copilot-cowork-exfiltrates-files",
       "source_type": "hackernews",
       "ai_score": 8.0,
       "signal_score": 7.0,
-      "signal_reason": "If memory truly represents ~2/3 of component costs, then changes in DRAM supply, pricing, or packaging (e.g., higher-bandwidth stacks) can materially move AI system cost/performance; comments report large observed consumer RAM price increases and the thread indicates broad market pressure, but no concrete new supply expansion or price drop is evidenced in the item itself.",
+      "signal_reason": "Observable evidence of active community attention and a credible class of vulnerabilities affecting widely deployed enterprise AI tooling, implying materially elevated security/compliance risk and potential changes to rollout, hardening, or policy requirements; no clear vendor-side fix or capability change is evidenced in the provided text.",
       "capability_delta": "",
       "assessment": {},
       "tags": [
-        "AI-hardware",
-        "DRAM-memory",
-        "semiconductors",
-        "cost-analysis",
-        "GPU-accelerators"
+        "LLM security",
+        "prompt injection",
+        "data exfiltration",
+        "Copilot",
+        "agentic AI"
       ]
     },
     {
-      "id": "telegram:zaihuapd:41550",
-      "title": "APKPure 上的 Telegram 官方版被植入间谍后门",
-      "url": "https://x.com/EricParker/status/2058411298195661221",
+      "id": "reddit:subreddit:1tna22m",
+      "title": "The Financial Times has published an article about Heretic",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tna22m/the_financial_times_has_published_an_article/",
+      "source_type": "reddit",
+      "ai_score": 8.0,
+      "signal_score": 7.0,
+      "signal_reason": "Observable signals include major-media validation, explicit claim of <10-minute guardrail removal, and large reported adoption metrics (3,500 modified models; 13M downloads), alongside discussion of takedowns/press inquiries indicating increased legal and governance pressure around model modification.",
+      "capability_delta": "",
+      "assessment": {},
+      "tags": [
+        "LLMs",
+        "AI safety",
+        "model fine-tuning",
+        "open-source",
+        "policy-and-regulation"
+      ]
+    },
+    {
+      "id": "reddit:subreddit:1tn8utn",
+      "title": "NuExtract3 released: open-weight 4B VLM for Markdown, OCR and structured extraction (self-hostable)",
+      "url": "https://www.reddit.com/gallery/1tn8utn",
+      "source_type": "reddit",
+      "ai_score": 8.0,
+      "signal_score": 7.0,
+      "signal_reason": "Observable capability/access shift: an Apache-2.0, self-hostable 4B document-extraction VLM with low VRAM claims (~4GB noted by commenters), plus immediate GGUF/MLX distribution and a free no-signup demo; engagement and comments show active evaluation as a lower-cost alternative to paid OCR/VLM services.",
+      "capability_delta": "",
+      "assessment": {},
+      "tags": [
+        "OCR",
+        "Vision-Language-Models",
+        "Document-AI",
+        "Information-Extraction",
+        "Open-Source-Models"
+      ]
+    },
+    {
+      "id": "telegram:zaihuapd:41565",
+      "title": "非生非死：离体人脑被用于药物测试",
+      "url": "https://www.science.org/content/article/not-alive-not-dead-disembodied-human-brains-used-drug-testing",
       "source_type": "telegram",
       "ai_score": 8.0,
       "signal_score": 7.0,
-      "signal_reason": "可观察到的事实主张包含明确版本号（12.6.5）、重签名打包、恶意载荷位置（classes3.dex）与回传目标（38.190.225.166），若属实意味着分发渠道/安装来源的风险边界发生变化并会触发安全响应；但当前材料未提供独立验证或官方通告，客观信号强度略受限。",
+      "signal_reason": "可观察到的技术信号是：离体捐献人脑在死亡数小时后被恢复部分代谢与细胞活动并用于药物测试，意味着疾病机制研究与药物筛选的实验模型能力边界可能改变；但报道同时强调未恢复意识、且伦理/监管不确定性较高，落地速度与规模仍不明。",
       "capability_delta": "",
       "assessment": {},
       "tags": [
-        "mobile-security",
-        "android-malware",
-        "supply-chain",
-        "telegram",
-        "threat-intelligence"
+        "neuroscience",
+        "drug-discovery",
+        "brain-perfusion",
+        "bioethics",
+        "alzheimers-parkinsons"
       ]
     },
     {
-      "id": "telegram:zaihuapd:41549",
-      "title": "Google Docs 推出 Docs Live 功能：支持语音对话生成文档",
-      "url": "https://www.wsj.com/tech/personal-tech/google-docs-live-test-e4473e07",
+      "id": "reddit:subreddit:1tnafre",
+      "title": "MiniCPM5-1B",
+      "url": "https://huggingface.co/openbmb/MiniCPM5-1B",
+      "source_type": "reddit",
+      "ai_score": 7.0,
+      "signal_score": 7.0,
+      "signal_reason": "Observable capability shift: 131k context on a ~1B model lowers cost/latency for long-context tasks and enables new deployment patterns (local router in front of larger models); distribution/access is clear via Hugging Face and community interest is evidenced by high Reddit engagement.",
+      "capability_delta": "",
+      "assessment": {},
+      "tags": [
+        "LLM",
+        "local-inference",
+        "long-context",
+        "tool-calling",
+        "open-models"
+      ]
+    },
+    {
+      "id": "telegram:zaihuapd:41560",
+      "title": "人工智能时代网络安全专家需求激增",
+      "url": "https://www.nytimes.com/2026/05/24/technology/one-job-that-is-growing-in-the-ai-era-cybersecurity-experts.html",
       "source_type": "telegram",
       "ai_score": 7.0,
       "signal_score": 7.0,
-      "signal_reason": "可观察到的变化包括：在 Google Docs 内新增语音对话生成文档的能力、与 Drive/网页检索的集成、以及明确的发布路径（先 iOS/Android 付费 AI 订阅用户，后续扩展到网页与更多用户）；这些都意味着可用性与覆盖面将随 rollout 实质提升，但当前仍处早期分发阶段。",
-      "capability_delta": "",
-      "assessment": {},
-      "tags": [
-        "Google Docs",
-        "Gemini",
-        "AI写作",
-        "语音交互",
-        "生产力工具"
-      ]
-    },
-    {
-      "id": "hackernews:story:48253186",
-      "title": "Scammers are abusing an internal Microsoft account to send spam links",
-      "url": "https://techcrunch.com/2026/05/21/scammers-are-abusing-an-internal-microsoft-account-to-send-spam/",
-      "source_type": "hackernews",
-      "ai_score": 8.0,
-      "signal_score": 6.0,
-      "signal_reason": "Observable signal is moderate: the incident suggests a real weakness/abuse path in a major platform and amplifies demand for clearer domain provenance and better anti-phishing controls, but the post does not document a new widely available capability, pricing/access change, or a confirmed systemic remediation/market shift.",
+      "signal_reason": "可观察到的市场信号明确：网络安全招聘量同比增长11%、高管需求短期内提升5-7倍、部分公司因人手不足拒绝接单且薪酬包上探至数百万美元，显示需求与定价显著变化并指向“AI+安全”复合技能的岗位结构调整。",
       "capability_delta": "",
       "assessment": {},
       "tags": [
         "cybersecurity",
-        "phishing",
-        "email-security",
-        "microsoft",
-        "identity-and-access-management"
+        "AI-security",
+        "hiring-trends",
+        "software-vulnerabilities",
+        "workforce-skills"
       ]
     },
     {
-      "id": "hackernews:story:48254309",
-      "title": "Why is Vivado 2026.1 dropping Linux support for free tier?",
-      "url": "https://adaptivesupport.amd.com/s/question/0D5Pd00001YQLdMKAX/why-is-vivado-20261-dropping-linux-support-for-free-tier-?language=en_US",
-      "source_type": "hackernews",
+      "id": "telegram:zaihuapd:41566",
+      "title": "欧盟初步调查：谷歌涉嫌操纵搜索结果违反《数字市场法》  欧盟委员会初步调查结果显示，Alphabet涉嫌违反《数字市场法》（DMA），主要问题集中在搜索引擎和P",
+      "url": "https://t.me/zaihuapd/41566",
+      "source_type": "telegram",
       "ai_score": 7.0,
-      "signal_score": 6.0,
-      "signal_reason": "If accurate, dropping Linux from the free tier is an observable access/licensing change that can increase setup/CI friction and shift evaluation/adoption dynamics; however, the item is primarily a support-thread/question plus community reaction rather than a fully documented official policy announcement with detailed terms.",
+      "signal_score": 7.0,
+      "signal_reason": "可观察到的事实是欧盟监管已进入“初步调查结论”阶段并明确指向搜索与应用商店合规整改不足，意味着后续可能出现强制整改或处罚，从而实质改变相关平台的分发与导流规则及合规成本预期。",
       "capability_delta": "",
       "assessment": {},
       "tags": [
-        "FPGA",
-        "EDA-tools",
-        "Linux",
-        "AMD-Xilinx",
-        "Developer-Experience"
+        "EU-DMA",
+        "Antitrust-Regulation",
+        "Search-Ranking",
+        "App-Store-Policy",
+        "Google"
       ]
     },
     {
-      "id": "telegram:zaihuapd:41545",
-      "title": "美国白宫要求在所有政府手机上安装官方应用",
-      "url": "https://www.govexec.com/management/2026/05/white-house-ordering-agencies-place-its-new-app-all-employees-government-phones/413738/",
+      "id": "hackernews:story:48269961",
+      "title": "California moves to exempt Linux from its age-verification law after backlash",
+      "url": "https://www.tomshardware.com/software/linux/california-moves-to-exempt-linux-from-its-upcoming-age-verification-law-after-backlash-over-forcing-operating-systems-to-collect-users-ages-amendment-proposed-by-the-same-lawmaker-who-wrote-the-original-law",
+      "source_type": "hackernews",
+      "ai_score": 8.0,
+      "signal_score": 6.0,
+      "signal_reason": "Observable legislative movement (an amendment proposed by the original lawmaker) indicates a material shift in compliance scope for at least one platform (Linux), but the change is proposed rather than finalized and broader technical/market impacts remain contingent on the final statutory and enforcement details.",
+      "capability_delta": "",
+      "assessment": {},
+      "tags": [
+        "regulation",
+        "privacy",
+        "age-verification",
+        "linux",
+        "web-browsers"
+      ]
+    },
+    {
+      "id": "hackernews:story:48266906",
+      "title": "Netherlands Seizes 800 Servers, Arrests 2 for Aiding Cyberattacks",
+      "url": "https://krebsonsecurity.com/2026/05/netherlands-seizes-800-servers-arrests-2-for-aiding-cyberattacks/",
+      "source_type": "hackernews",
+      "ai_score": 8.0,
+      "signal_score": 6.0,
+      "signal_reason": "Observable market/technical conditions changed for affected actors: a large amount of attack-supporting infrastructure was physically seized and operators arrested, likely disrupting ongoing campaigns and forcing migration; however, no broad new capability, pricing, or access change is evidenced beyond this specific takedown.",
+      "capability_delta": "",
+      "assessment": {},
+      "tags": [
+        "cybersecurity",
+        "law-enforcement",
+        "bulletproof-hosting",
+        "botnets",
+        "threat-intelligence"
+      ]
+    },
+    {
+      "id": "reddit:subreddit:1tn0jyp",
+      "title": "server: fix checkpoints creation by jacekpoplawski · Pull Request #22929 · ggml-org/llama.cpp",
+      "url": "https://github.com/ggml-org/llama.cpp/pull/22929",
+      "source_type": "reddit",
+      "ai_score": 8.0,
+      "signal_score": 6.0,
+      "signal_reason": "Observable technical condition change: the PR is merged into main and maintainers report coordinated compatibility work across supported models/parsers; it can materially reduce latency from forced full prompt reprocessing in long-context sessions, though no explicit benchmarks or adoption metrics are provided.",
+      "capability_delta": "",
+      "assessment": {},
+      "tags": [
+        "llama.cpp",
+        "local-llm",
+        "kv-cache",
+        "long-context",
+        "agentic-coding"
+      ]
+    },
+    {
+      "id": "hackernews:story:48269580",
+      "title": "Exit IP VPN servers mitigation rollout",
+      "url": "https://mullvad.net/en/help/exit-ip-vpn-servers-mitigation-rollout",
+      "source_type": "hackernews",
+      "ai_score": 7.0,
+      "signal_score": 6.0,
+      "signal_reason": "Observable change is a provider-side mitigation rollout for a real-world tracking technique, indicating shifting privacy threat/defense conditions; however, no clear market-wide capability leap or quantified cost/latency/access change is stated in the provided content.",
+      "capability_delta": "",
+      "assessment": {},
+      "tags": [
+        "vpn",
+        "privacy",
+        "fingerprinting",
+        "network-security",
+        "mullvad"
+      ]
+    },
+    {
+      "id": "telegram:zaihuapd:41559",
+      "title": "腾讯 ima copilot 全量开放，主打个人知识库常驻记忆",
+      "url": "https://mp.weixin.qq.com/s/4gEMiKaRMTL2ieH5EnnnyA",
       "source_type": "telegram",
       "ai_score": 7.0,
       "signal_score": 6.0,
-      "signal_reason": "可观察事实为联邦层面强制部署新应用并由机构IT自动下发，明确改变了政府移动终端的软件基线与管理动作，可能触发合规审查与安全评估需求；但尚无披露应用能力、数据收集范围或成本/效率等量化变化。",
+      "signal_reason": "可观测变化是产品从灰度转为对所有用户开放，且明确支持调用笔记/知识库并提供分层记忆模块设计；但未披露性能、成本、接入方式（API/插件）、用户规模或生态合作信息，市场与技术边界的量化变化有限。",
       "capability_delta": "",
       "assessment": {},
       "tags": [
-        "Government IT",
-        "Mobile Device Management",
-        "Cybersecurity",
-        "Privacy",
-        "Public Policy"
+        "AI助手",
+        "个人知识库",
+        "长记忆",
+        "腾讯",
+        "Agent架构"
       ]
     },
     {
-      "id": "hackernews:story:48256912",
-      "title": "Constraint Decay: The Fragility of LLM Agents in Back End Code Generation",
-      "url": "https://arxiv.org/abs/2605.06445",
-      "source_type": "hackernews",
-      "ai_score": 8.0,
-      "signal_score": 5.0,
-      "signal_reason": "Observable signal is mainly informational: a documented limitation and strong community attention, but no concrete capability, access, pricing, or workflow change is evidenced, and frontier-model performance is explicitly noted as under-tested.",
+      "id": "telegram:zaihuapd:41561",
+      "title": "马斯克宣布 Grok V9-Medium 模型训练完成，预计两三周后发布",
+      "url": "https://x.com/elonmusk/status/2058787384364265734",
+      "source_type": "telegram",
+      "ai_score": 7.0,
+      "signal_score": 6.0,
+      "signal_reason": "可观察事实是模型已完成训练并给出2-3周的公开发布计划，且提到引入大量 Cursor 数据与从0.5T到1.5T的规模变化，可能带来能力边界提升；但尚无公开评测、定价/接入方式或可验证性能数据，信号中等。",
       "capability_delta": "",
       "assessment": {},
       "tags": [
-        "LLM agents",
-        "code generation",
-        "software architecture",
-        "AI reliability",
-        "backend engineering"
+        "LLM",
+        "Grok",
+        "Model Release",
+        "Reinforcement Learning",
+        "Code Generation"
       ]
     },
     {
-      "id": "hackernews:story:48253386",
-      "title": "Microsoft open-sources “the earliest DOS source code discovered to date”",
-      "url": "https://arstechnica.com/gadgets/2026/04/microsoft-open-sources-the-earliest-dos-source-code-discovered-to-date/",
+      "id": "hackernews:story:48265206",
+      "title": "Magnifica Humanitas",
+      "url": "https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html",
       "source_type": "hackernews",
       "ai_score": 7.0,
-      "signal_score": 4.0,
-      "signal_reason": "Observable change is primarily improved access to historic source code for researchers and enthusiasts; it does not clearly change capability, cost, or workflows for modern production systems, though it enables preservation and analysis work with publicly available artifacts.",
+      "signal_score": 3.0,
+      "signal_reason": "Observable facts indicate a prominent institution publishing an ethics/governance document that is drawing major attention, but it does not itself change technical capabilities, costs, access, or regulatory conditions in a concrete way.",
       "capability_delta": "",
       "assessment": {},
       "tags": [
-        "open-source",
-        "software-history",
-        "operating-systems",
-        "reverse-engineering",
-        "programming-languages"
+        "tech-ethics",
+        "AI-governance",
+        "technology-policy",
+        "power-and-society",
+        "institutional-analysis"
       ]
     }
   ]
