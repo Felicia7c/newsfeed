@@ -4,135 +4,247 @@
     <title>Horizon Personal Feed - ZH</title>
     <link>https://felicia7c.github.io/newsfeed</link>
     <description>AI-filtered stories from Horizon</description>
-    <lastBuildDate>2026-05-25</lastBuildDate>
+    <lastBuildDate>2026-05-26</lastBuildDate>
     <atom:link href="https://felicia7c.github.io/newsfeed/feeds/horizon-selected-zh.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>[信号 7.0] Memory has grown to nearly two-thirds of AI chip component costs</title>
-      <link>https://epoch.ai/data-insights/ai-chip-component-cost-shares</link>
-      <guid isPermaLink="false">horizon:zh:hackernews:story:48258684</guid>
-      <pubDate>Sun, 24 May 2026 16:31:29 +0000</pubDate>
-      <description><![CDATA[<p>AI Score: 8.0</p>
+      <title>[信号 7.0] Epic 公布虚幻引擎 6，首个展示游戏是《Rocket League》</title>
+      <link>https://www.pcgamer.com/gaming-industry/epic-reveals-first-unreal-engine-6-game-and-its-not-fortnite/</link>
+      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41556</guid>
+      <pubDate>Mon, 25 May 2026 02:20:58 +0000</pubDate>
+      <description><![CDATA[<p>AI Score: 9.0</p>
 <p>Signal Score: 7.0</p>
-<p>An Epoch AI analysis argues that memory has risen to nearly two-thirds of AI chip component costs, making DRAM supply and pricing a primary bottleneck for AI hardware cost trajectories.</p>
-<p><strong>Tags:</strong> #AI-hardware, #DRAM-memory, #semiconductors, #cost-analysis, #GPU-accelerators</p>
-<p><a href="https://epoch.ai/data-insights/ai-chip-component-cost-shares">Read original</a></p>]]></description>
-      <category>AI-hardware</category>
-      <category>DRAM-memory</category>
-      <category>semiconductors</category>
-      <category>cost-analysis</category>
-      <category>GPU-accelerators</category>
+<p>Epic在巴黎RLC赛事上首次公开虚幻引擎6，并宣布《Rocket League》将从UE3直接跨代升级到UE6，伴随对UE5优化争议与平台化方向的外界解读。</p>
+<p><strong>Tags:</strong> #Unreal Engine, #Game Engines, #Epic Games, #Rocket League, #Game Development</p>
+<p><a href="https://www.pcgamer.com/gaming-industry/epic-reveals-first-unreal-engine-6-game-and-its-not-fortnite/">Read original</a></p>]]></description>
+      <category>Unreal Engine</category>
+      <category>Game Engines</category>
+      <category>Epic Games</category>
+      <category>Rocket League</category>
+      <category>Game Development</category>
     </item>
     <item>
-      <title>[信号 7.0] APKPure 上的 Telegram 官方版被植入间谍后门</title>
-      <link>https://x.com/EricParker/status/2058411298195661221</link>
-      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41550</guid>
-      <pubDate>Sun, 24 May 2026 11:38:22 +0000</pubDate>
+      <title>[信号 7.0] Microsoft Copilot Cowork Exfiltrates Files</title>
+      <link>https://www.promptarmor.com/resources/microsoft-copilot-cowork-exfiltrates-files</link>
+      <guid isPermaLink="false">horizon:zh:hackernews:story:48272354</guid>
+      <pubDate>Mon, 25 May 2026 21:45:57 +0000</pubDate>
       <description><![CDATA[<p>AI Score: 8.0</p>
 <p>Signal Score: 7.0</p>
-<p>据称从 APKPure 下载的 Telegram 12.6.5 被重签名并注入 DataCollector 间谍后门，可窃取聊天记录等敏感数据并加密回传至指定 C2 服务器。</p>
-<p><strong>Tags:</strong> #mobile-security, #android-malware, #supply-chain, #telegram, #threat-intelligence</p>
-<p><a href="https://x.com/EricParker/status/2058411298195661221">Read original</a></p>]]></description>
-      <category>mobile-security</category>
-      <category>android-malware</category>
-      <category>supply-chain</category>
-      <category>telegram</category>
+<p>A report describes how Microsoft Copilot’s cowork/agent skill behavior can be leveraged to exfiltrate files, fueling discussion about prompt-injection and the lack of robust separation between instructions and sensitive data in LLM agents.</p>
+<p><strong>Tags:</strong> #LLM security, #prompt injection, #data exfiltration, #Copilot, #agentic AI</p>
+<p><a href="https://www.promptarmor.com/resources/microsoft-copilot-cowork-exfiltrates-files">Read original</a></p>]]></description>
+      <category>LLM security</category>
+      <category>prompt injection</category>
+      <category>data exfiltration</category>
+      <category>Copilot</category>
+      <category>agentic AI</category>
+    </item>
+    <item>
+      <title>[信号 7.0] The Financial Times has published an article about Heretic</title>
+      <link>https://www.reddit.com/r/LocalLLaMA/comments/1tna22m/the_financial_times_has_published_an_article/</link>
+      <guid isPermaLink="false">horizon:zh:reddit:subreddit:1tna22m</guid>
+      <pubDate>Mon, 25 May 2026 14:00:26 +0000</pubDate>
+      <description><![CDATA[<p>AI Score: 8.0</p>
+<p>Signal Score: 7.0</p>
+<p>A Financial Times article spotlights Heretic, a GitHub tool said to remove Llama 3.3 guardrails in minutes and to have been used to produce thousands of “decensored” models with millions of downloads, prompting concern about mainstream attention and potential crackdowns.</p>
+<p><strong>Tags:</strong> #LLMs, #AI safety, #model fine-tuning, #open-source, #policy-and-regulation</p>
+<p><a href="https://www.reddit.com/r/LocalLLaMA/comments/1tna22m/the_financial_times_has_published_an_article/">Read original</a></p>]]></description>
+      <category>LLMs</category>
+      <category>AI safety</category>
+      <category>model fine-tuning</category>
+      <category>open-source</category>
+      <category>policy-and-regulation</category>
+    </item>
+    <item>
+      <title>[信号 7.0] NuExtract3 released: open-weight 4B VLM for Markdown, OCR and structured extraction (self-hostable)</title>
+      <link>https://www.reddit.com/gallery/1tn8utn</link>
+      <guid isPermaLink="false">horizon:zh:reddit:subreddit:1tn8utn</guid>
+      <pubDate>Mon, 25 May 2026 13:14:58 +0000</pubDate>
+      <description><![CDATA[<p>AI Score: 8.0</p>
+<p>Signal Score: 7.0</p>
+<p>Numind released NuExtract3, an Apache-2.0 open-weight 4B Qwen3.5-based VLM for turning complex document images/text into Markdown/OCR and structured outputs, with free online demo and self-hostable weights.</p>
+<p><strong>Tags:</strong> #OCR, #Vision-Language-Models, #Document-AI, #Information-Extraction, #Open-Source-Models</p>
+<p><a href="https://www.reddit.com/gallery/1tn8utn">Read original</a></p>]]></description>
+      <category>OCR</category>
+      <category>Vision-Language-Models</category>
+      <category>Document-AI</category>
+      <category>Information-Extraction</category>
+      <category>Open-Source-Models</category>
+    </item>
+    <item>
+      <title>[信号 7.0] 非生非死：离体人脑被用于药物测试</title>
+      <link>https://www.science.org/content/article/not-alive-not-dead-disembodied-human-brains-used-drug-testing</link>
+      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41565</guid>
+      <pubDate>Mon, 25 May 2026 14:57:45 +0000</pubDate>
+      <description><![CDATA[<p>AI Score: 8.0</p>
+<p>Signal Score: 7.0</p>
+<p>Science 报道称生物科技公司借助 BrainEx 灌流系统让离体人脑在死亡数小时后恢复部分生物活动以进行药物测试，同时引发关于生命边界与伦理监管的争议。</p>
+<p><strong>Tags:</strong> #neuroscience, #drug-discovery, #brain-perfusion, #bioethics, #alzheimers-parkinsons</p>
+<p><a href="https://www.science.org/content/article/not-alive-not-dead-disembodied-human-brains-used-drug-testing">Read original</a></p>]]></description>
+      <category>neuroscience</category>
+      <category>drug-discovery</category>
+      <category>brain-perfusion</category>
+      <category>bioethics</category>
+      <category>alzheimers-parkinsons</category>
+    </item>
+    <item>
+      <title>[信号 7.0] MiniCPM5-1B</title>
+      <link>https://huggingface.co/openbmb/MiniCPM5-1B</link>
+      <guid isPermaLink="false">horizon:zh:reddit:subreddit:1tnafre</guid>
+      <pubDate>Mon, 25 May 2026 14:14:16 +0000</pubDate>
+      <description><![CDATA[<p>AI Score: 7.0</p>
+<p>Signal Score: 7.0</p>
+<p>MiniCPM5-1B is a ~1.08B-parameter open model on Hugging Face highlighted for a 131k context window and suitability as a lightweight local router/tool-call model.</p>
+<p><strong>Tags:</strong> #LLM, #local-inference, #long-context, #tool-calling, #open-models</p>
+<p><a href="https://huggingface.co/openbmb/MiniCPM5-1B">Read original</a></p>]]></description>
+      <category>LLM</category>
+      <category>local-inference</category>
+      <category>long-context</category>
+      <category>tool-calling</category>
+      <category>open-models</category>
+    </item>
+    <item>
+      <title>[信号 7.0] 人工智能时代网络安全专家需求激增</title>
+      <link>https://www.nytimes.com/2026/05/24/technology/one-job-that-is-growing-in-the-ai-era-cybersecurity-experts.html</link>
+      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41560</guid>
+      <pubDate>Mon, 25 May 2026 06:21:41 +0000</pubDate>
+      <description><![CDATA[<p>AI Score: 7.0</p>
+<p>Signal Score: 7.0</p>
+<p>AI带来的代码规模扩张与新型攻击能力推动企业显著增加网络安全岗位招聘，尤其需要懂安全与AI的高管与工程师。</p>
+<p><strong>Tags:</strong> #cybersecurity, #AI-security, #hiring-trends, #software-vulnerabilities, #workforce-skills</p>
+<p><a href="https://www.nytimes.com/2026/05/24/technology/one-job-that-is-growing-in-the-ai-era-cybersecurity-experts.html">Read original</a></p>]]></description>
+      <category>cybersecurity</category>
+      <category>AI-security</category>
+      <category>hiring-trends</category>
+      <category>software-vulnerabilities</category>
+      <category>workforce-skills</category>
+    </item>
+    <item>
+      <title>[信号 7.0] 欧盟初步调查：谷歌涉嫌操纵搜索结果违反《数字市场法》  欧盟委员会初步调查结果显示，Alphabet涉嫌违反《数字市场法》（DMA），主要问题集中在搜索引擎和P</title>
+      <link>https://t.me/zaihuapd/41566</link>
+      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41566</guid>
+      <pubDate>Tue, 26 May 2026 00:27:51 +0000</pubDate>
+      <description><![CDATA[<p>AI Score: 7.0</p>
+<p>Signal Score: 7.0</p>
+<p>欧盟初步调查认为Alphabet可能因搜索与Play商店的自我偏好及限制开发者引导外部购买渠道而违反《数字市场法》。</p>
+<p><strong>Tags:</strong> #EU-DMA, #Antitrust-Regulation, #Search-Ranking, #App-Store-Policy, #Google</p>
+<p><a href="https://t.me/zaihuapd/41566">Read original</a></p>]]></description>
+      <category>EU-DMA</category>
+      <category>Antitrust-Regulation</category>
+      <category>Search-Ranking</category>
+      <category>App-Store-Policy</category>
+      <category>Google</category>
+    </item>
+    <item>
+      <title>[信号 6.0] California moves to exempt Linux from its age-verification law after backlash</title>
+      <link>https://www.tomshardware.com/software/linux/california-moves-to-exempt-linux-from-its-upcoming-age-verification-law-after-backlash-over-forcing-operating-systems-to-collect-users-ages-amendment-proposed-by-the-same-lawmaker-who-wrote-the-original-law</link>
+      <guid isPermaLink="false">horizon:zh:hackernews:story:48269961</guid>
+      <pubDate>Mon, 25 May 2026 18:19:58 +0000</pubDate>
+      <description><![CDATA[<p>AI Score: 8.0</p>
+<p>Signal Score: 6.0</p>
+<p>California lawmakers are moving to amend an upcoming age-verification law to exempt Linux following backlash over requiring operating systems to collect users’ ages.</p>
+<p><strong>Tags:</strong> #regulation, #privacy, #age-verification, #linux, #web-browsers</p>
+<p><a href="https://www.tomshardware.com/software/linux/california-moves-to-exempt-linux-from-its-upcoming-age-verification-law-after-backlash-over-forcing-operating-systems-to-collect-users-ages-amendment-proposed-by-the-same-lawmaker-who-wrote-the-original-law">Read original</a></p>]]></description>
+      <category>regulation</category>
+      <category>privacy</category>
+      <category>age-verification</category>
+      <category>linux</category>
+      <category>web-browsers</category>
+    </item>
+    <item>
+      <title>[信号 6.0] Netherlands Seizes 800 Servers, Arrests 2 for Aiding Cyberattacks</title>
+      <link>https://krebsonsecurity.com/2026/05/netherlands-seizes-800-servers-arrests-2-for-aiding-cyberattacks/</link>
+      <guid isPermaLink="false">horizon:zh:hackernews:story:48266906</guid>
+      <pubDate>Mon, 25 May 2026 13:56:39 +0000</pubDate>
+      <description><![CDATA[<p>AI Score: 8.0</p>
+<p>Signal Score: 6.0</p>
+<p>Dutch authorities seized 800 servers and arrested two people accused of providing infrastructure used to support cyberattacks.</p>
+<p><strong>Tags:</strong> #cybersecurity, #law-enforcement, #bulletproof-hosting, #botnets, #threat-intelligence</p>
+<p><a href="https://krebsonsecurity.com/2026/05/netherlands-seizes-800-servers-arrests-2-for-aiding-cyberattacks/">Read original</a></p>]]></description>
+      <category>cybersecurity</category>
+      <category>law-enforcement</category>
+      <category>bulletproof-hosting</category>
+      <category>botnets</category>
       <category>threat-intelligence</category>
     </item>
     <item>
-      <title>[信号 7.0] Google Docs 推出 Docs Live 功能：支持语音对话生成文档</title>
-      <link>https://www.wsj.com/tech/personal-tech/google-docs-live-test-e4473e07</link>
-      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41549</guid>
-      <pubDate>Sun, 24 May 2026 09:39:46 +0000</pubDate>
-      <description><![CDATA[<p>AI Score: 7.0</p>
-<p>Signal Score: 7.0</p>
-<p>Google 正测试 Docs Live，让用户用语音对话在 Google Docs 中生成并迭代文档草稿，同时可引用 Drive 与网页信息补全内容并遵循 Workspace 隐私规则。</p>
-<p><strong>Tags:</strong> #Google Docs, #Gemini, #AI写作, #语音交互, #生产力工具</p>
-<p><a href="https://www.wsj.com/tech/personal-tech/google-docs-live-test-e4473e07">Read original</a></p>]]></description>
-      <category>Google Docs</category>
-      <category>Gemini</category>
-      <category>AI写作</category>
-      <category>语音交互</category>
-      <category>生产力工具</category>
-    </item>
-    <item>
-      <title>[信号 6.0] Scammers are abusing an internal Microsoft account to send spam links</title>
-      <link>https://techcrunch.com/2026/05/21/scammers-are-abusing-an-internal-microsoft-account-to-send-spam/</link>
-      <guid isPermaLink="false">horizon:zh:hackernews:story:48253186</guid>
-      <pubDate>Sun, 24 May 2026 00:51:32 +0000</pubDate>
+      <title>[信号 6.0] server: fix checkpoints creation by jacekpoplawski · Pull Request #22929 · ggml-org/llama.cpp</title>
+      <link>https://github.com/ggml-org/llama.cpp/pull/22929</link>
+      <guid isPermaLink="false">horizon:zh:reddit:subreddit:1tn0jyp</guid>
+      <pubDate>Mon, 25 May 2026 06:22:12 +0000</pubDate>
       <description><![CDATA[<p>AI Score: 8.0</p>
 <p>Signal Score: 6.0</p>
-<p>Reports indicate scammers are leveraging an internal Microsoft account to distribute spam links, highlighting broader concerns about Microsoft identity, domain trust, and phishing resilience.</p>
-<p><strong>Tags:</strong> #cybersecurity, #phishing, #email-security, #microsoft, #identity-and-access-management</p>
-<p><a href="https://techcrunch.com/2026/05/21/scammers-are-abusing-an-internal-microsoft-account-to-send-spam/">Read original</a></p>]]></description>
-      <category>cybersecurity</category>
-      <category>phishing</category>
-      <category>email-security</category>
-      <category>microsoft</category>
-      <category>identity-and-access-management</category>
+<p>llama.cpp merged a server-side fix to improve checkpoint creation so long-context agent sessions are less likely to trigger expensive full prompt reprocessing when conversation history changes.</p>
+<p><strong>Tags:</strong> #llama.cpp, #local-llm, #kv-cache, #long-context, #agentic-coding</p>
+<p><a href="https://github.com/ggml-org/llama.cpp/pull/22929">Read original</a></p>]]></description>
+      <category>llama.cpp</category>
+      <category>local-llm</category>
+      <category>kv-cache</category>
+      <category>long-context</category>
+      <category>agentic-coding</category>
     </item>
     <item>
-      <title>[信号 6.0] Why is Vivado 2026.1 dropping Linux support for free tier?</title>
-      <link>https://adaptivesupport.amd.com/s/question/0D5Pd00001YQLdMKAX/why-is-vivado-20261-dropping-linux-support-for-free-tier-?language=en_US</link>
-      <guid isPermaLink="false">horizon:zh:hackernews:story:48254309</guid>
-      <pubDate>Sun, 24 May 2026 04:14:52 +0000</pubDate>
+      <title>[信号 6.0] Exit IP VPN servers mitigation rollout</title>
+      <link>https://mullvad.net/en/help/exit-ip-vpn-servers-mitigation-rollout</link>
+      <guid isPermaLink="false">horizon:zh:hackernews:story:48269580</guid>
+      <pubDate>Mon, 25 May 2026 17:45:11 +0000</pubDate>
       <description><![CDATA[<p>AI Score: 7.0</p>
 <p>Signal Score: 6.0</p>
-<p>Developers are criticizing AMD/Xilinx for allegedly removing Linux support from Vivado 2026.1’s free Basic tier, arguing it increases friction for education, hobbyist, and professional FPGA workflows compared to other vendors.</p>
-<p><strong>Tags:</strong> #FPGA, #EDA-tools, #Linux, #AMD-Xilinx, #Developer-Experience</p>
-<p><a href="https://adaptivesupport.amd.com/s/question/0D5Pd00001YQLdMKAX/why-is-vivado-20261-dropping-linux-support-for-free-tier-?language=en_US">Read original</a></p>]]></description>
-      <category>FPGA</category>
-      <category>EDA-tools</category>
-      <category>Linux</category>
-      <category>AMD-Xilinx</category>
-      <category>Developer-Experience</category>
+<p>Mullvad details a rollout to mitigate Exit IP-based VPN server fingerprinting and the community discusses related browser proxy approaches and fingerprinting-countermeasure design.</p>
+<p><strong>Tags:</strong> #vpn, #privacy, #fingerprinting, #network-security, #mullvad</p>
+<p><a href="https://mullvad.net/en/help/exit-ip-vpn-servers-mitigation-rollout">Read original</a></p>]]></description>
+      <category>vpn</category>
+      <category>privacy</category>
+      <category>fingerprinting</category>
+      <category>network-security</category>
+      <category>mullvad</category>
     </item>
     <item>
-      <title>[信号 6.0] 美国白宫要求在所有政府手机上安装官方应用</title>
-      <link>https://www.govexec.com/management/2026/05/white-house-ordering-agencies-place-its-new-app-all-employees-government-phones/413738/</link>
-      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41545</guid>
-      <pubDate>Sun, 24 May 2026 03:26:48 +0000</pubDate>
+      <title>[信号 6.0] 腾讯 ima copilot 全量开放，主打个人知识库常驻记忆</title>
+      <link>https://mp.weixin.qq.com/s/4gEMiKaRMTL2ieH5EnnnyA</link>
+      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41559</guid>
+      <pubDate>Mon, 25 May 2026 05:21:17 +0000</pubDate>
       <description><![CDATA[<p>AI Score: 7.0</p>
 <p>Signal Score: 6.0</p>
-<p>白宫要求联邦机构在所有员工政府手机和平板强制安装“白宫”应用，引发对数据泄露/后门风险及政治宣传倾向的安全与治理争议。</p>
-<p><strong>Tags:</strong> #Government IT, #Mobile Device Management, #Cybersecurity, #Privacy, #Public Policy</p>
-<p><a href="https://www.govexec.com/management/2026/05/white-house-ordering-agencies-place-its-new-app-all-employees-government-phones/413738/">Read original</a></p>]]></description>
-      <category>Government IT</category>
-      <category>Mobile Device Management</category>
-      <category>Cybersecurity</category>
-      <category>Privacy</category>
-      <category>Public Policy</category>
+<p>腾讯宣布 AI 助手 ima copilot 结束灰度测试并全量开放，主打基于个人知识库的常驻记忆与任务连续性，并采用 Soul/User/Memory/Agent 分层记忆体系。</p>
+<p><strong>Tags:</strong> #AI助手, #个人知识库, #长记忆, #腾讯, #Agent架构</p>
+<p><a href="https://mp.weixin.qq.com/s/4gEMiKaRMTL2ieH5EnnnyA">Read original</a></p>]]></description>
+      <category>AI助手</category>
+      <category>个人知识库</category>
+      <category>长记忆</category>
+      <category>腾讯</category>
+      <category>Agent架构</category>
     </item>
     <item>
-      <title>[信号 5.0] Constraint Decay: The Fragility of LLM Agents in Back End Code Generation</title>
-      <link>https://arxiv.org/abs/2605.06445</link>
-      <guid isPermaLink="false">horizon:zh:hackernews:story:48256912</guid>
-      <pubDate>Sun, 24 May 2026 12:55:53 +0000</pubDate>
-      <description><![CDATA[<p>AI Score: 8.0</p>
-<p>Signal Score: 5.0</p>
-<p>The paper reports that LLM-based coding agents degrade significantly when required to follow explicit architectural constraints, making them more reliable for prototyping than for production backend code generation.</p>
-<p><strong>Tags:</strong> #LLM agents, #code generation, #software architecture, #AI reliability, #backend engineering</p>
-<p><a href="https://arxiv.org/abs/2605.06445">Read original</a></p>]]></description>
-      <category>LLM agents</category>
-      <category>code generation</category>
-      <category>software architecture</category>
-      <category>AI reliability</category>
-      <category>backend engineering</category>
-    </item>
-    <item>
-      <title>[信号 4.0] Microsoft open-sources “the earliest DOS source code discovered to date”</title>
-      <link>https://arstechnica.com/gadgets/2026/04/microsoft-open-sources-the-earliest-dos-source-code-discovered-to-date/</link>
-      <guid isPermaLink="false">horizon:zh:hackernews:story:48253386</guid>
-      <pubDate>Sun, 24 May 2026 01:21:13 +0000</pubDate>
+      <title>[信号 6.0] 马斯克宣布 Grok V9-Medium 模型训练完成，预计两三周后发布</title>
+      <link>https://x.com/elonmusk/status/2058787384364265734</link>
+      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41561</guid>
+      <pubDate>Mon, 25 May 2026 07:07:04 +0000</pubDate>
       <description><![CDATA[<p>AI Score: 7.0</p>
-<p>Signal Score: 4.0</p>
-<p>Microsoft has open-sourced what it says is the earliest discovered DOS source code, reconstructed from paper printouts, providing new primary material on early PC operating system development.</p>
-<p><strong>Tags:</strong> #open-source, #software-history, #operating-systems, #reverse-engineering, #programming-languages</p>
-<p><a href="https://arstechnica.com/gadgets/2026/04/microsoft-open-sources-the-earliest-dos-source-code-discovered-to-date/">Read original</a></p>]]></description>
-      <category>open-source</category>
-      <category>software-history</category>
-      <category>operating-systems</category>
-      <category>reverse-engineering</category>
-      <category>programming-languages</category>
+<p>Signal Score: 6.0</p>
+<p>马斯克称 Grok V9-Medium（1.5T）基础模型已训练完成、评估良好，正进行微调与后续强化学习，预计两三周内公开发布并提升复杂编程能力。</p>
+<p><strong>Tags:</strong> #LLM, #Grok, #Model Release, #Reinforcement Learning, #Code Generation</p>
+<p><a href="https://x.com/elonmusk/status/2058787384364265734">Read original</a></p>]]></description>
+      <category>LLM</category>
+      <category>Grok</category>
+      <category>Model Release</category>
+      <category>Reinforcement Learning</category>
+      <category>Code Generation</category>
+    </item>
+    <item>
+      <title>[信号 3.0] Magnifica Humanitas</title>
+      <link>https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html</link>
+      <guid isPermaLink="false">horizon:zh:hackernews:story:48265206</guid>
+      <pubDate>Mon, 25 May 2026 10:11:29 +0000</pubDate>
+      <description><![CDATA[<p>AI Score: 7.0</p>
+<p>Signal Score: 3.0</p>
+<p>A Vatican encyclical argues that technology is not neutral, can concentrate power, and calls on builders and institutions to orient technological development toward the common good.</p>
+<p><strong>Tags:</strong> #tech-ethics, #AI-governance, #technology-policy, #power-and-society, #institutional-analysis</p>
+<p><a href="https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html">Read original</a></p>]]></description>
+      <category>tech-ethics</category>
+      <category>AI-governance</category>
+      <category>technology-policy</category>
+      <category>power-and-society</category>
+      <category>institutional-analysis</category>
     </item>
   </channel>
 </rss>
