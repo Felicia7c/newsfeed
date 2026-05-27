@@ -4,247 +4,311 @@
     <title>Horizon Personal Feed - ZH</title>
     <link>https://felicia7c.github.io/newsfeed</link>
     <description>AI-filtered stories from Horizon</description>
-    <lastBuildDate>2026-05-26</lastBuildDate>
+    <lastBuildDate>2026-05-27</lastBuildDate>
     <atom:link href="https://felicia7c.github.io/newsfeed/feeds/horizon-selected-zh.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>[信号 7.0] Epic 公布虚幻引擎 6，首个展示游戏是《Rocket League》</title>
-      <link>https://www.pcgamer.com/gaming-industry/epic-reveals-first-unreal-engine-6-game-and-its-not-fortnite/</link>
-      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41556</guid>
-      <pubDate>Mon, 25 May 2026 02:20:58 +0000</pubDate>
-      <description><![CDATA[<p>AI Score: 9.0</p>
+      <title>[信号 7.0] Netherlands blocks US takeover of vital digital supplier</title>
+      <link>https://www.politico.eu/article/netherlands-blocks-us-takeover-vital-digital-supplier/</link>
+      <guid isPermaLink="false">horizon:zh:hackernews:story:48278406</guid>
+      <pubDate>Tue, 26 May 2026 11:46:08 +0000</pubDate>
+      <description><![CDATA[<p>AI Score: 8.0</p>
 <p>Signal Score: 7.0</p>
-<p>Epic在巴黎RLC赛事上首次公开虚幻引擎6，并宣布《Rocket League》将从UE3直接跨代升级到UE6，伴随对UE5优化争议与平台化方向的外界解读。</p>
-<p><strong>Tags:</strong> #Unreal Engine, #Game Engines, #Epic Games, #Rocket League, #Game Development</p>
-<p><a href="https://www.pcgamer.com/gaming-industry/epic-reveals-first-unreal-engine-6-game-and-its-not-fortnite/">Read original</a></p>]]></description>
-      <category>Unreal Engine</category>
-      <category>Game Engines</category>
-      <category>Epic Games</category>
-      <category>Rocket League</category>
-      <category>Game Development</category>
+<p>The Netherlands blocked a US takeover of Solvinity, a key supplier hosting DigiD, amid political and public concerns about control, privacy, and national digital sovereignty.</p>
+<p><strong>Tags:</strong> #digital-identity, #data-sovereignty, #privacy, #national-security, #govtech</p>
+<p><a href="https://www.politico.eu/article/netherlands-blocks-us-takeover-vital-digital-supplier/">Read original</a></p>]]></description>
+      <category>digital-identity</category>
+      <category>data-sovereignty</category>
+      <category>privacy</category>
+      <category>national-security</category>
+      <category>govtech</category>
+    </item>
+    <item>
+      <title>[信号 7.0] The pressure</title>
+      <link>https://simonwillison.net/2026/May/26/the-pressure/#atom-everything</link>
+      <guid isPermaLink="false">horizon:zh:rss:simonwillison.net_atom_everything_:984651939931537573</guid>
+      <pubDate>Tue, 26 May 2026 23:48:45 +0000</pubDate>
+      <description><![CDATA[<p>AI Score: 8.0</p>
+<p>Signal Score: 7.0</p>
+<p>Daniel Stenberg reports that curl is receiving more than one detailed, credible AI-assisted security report per day, creating unprecedented workload and pressure on the project’s security team.</p>
+<p><strong>Tags:</strong> #security, #open-source, #curl, #AI-assisted-vulnerability-discovery, #software-maintenance</p>
+<p><a href="https://simonwillison.net/2026/May/26/the-pressure/#atom-everything">Read original</a></p>]]></description>
+      <category>security</category>
+      <category>open-source</category>
+      <category>curl</category>
+      <category>AI-assisted-vulnerability-discovery</category>
+      <category>software-maintenance</category>
     </item>
     <item>
       <title>[信号 7.0] Microsoft Copilot Cowork Exfiltrates Files</title>
-      <link>https://www.promptarmor.com/resources/microsoft-copilot-cowork-exfiltrates-files</link>
-      <guid isPermaLink="false">horizon:zh:hackernews:story:48272354</guid>
-      <pubDate>Mon, 25 May 2026 21:45:57 +0000</pubDate>
+      <link>https://simonwillison.net/2026/May/26/copilot-cowork-exfiltrates-files/#atom-everything</link>
+      <guid isPermaLink="false">horizon:zh:rss:simonwillison.net_atom_everything_:5199524195945505990</guid>
+      <pubDate>Tue, 26 May 2026 15:36:48 +0000</pubDate>
       <description><![CDATA[<p>AI Score: 8.0</p>
 <p>Signal Score: 7.0</p>
-<p>A report describes how Microsoft Copilot’s cowork/agent skill behavior can be leveraged to exfiltrate files, fueling discussion about prompt-injection and the lack of robust separation between instructions and sensitive data in LLM agents.</p>
-<p><strong>Tags:</strong> #LLM security, #prompt injection, #data exfiltration, #Copilot, #agentic AI</p>
-<p><a href="https://www.promptarmor.com/resources/microsoft-copilot-cowork-exfiltrates-files">Read original</a></p>]]></description>
-      <category>LLM security</category>
+<p>A report describes how Microsoft Copilot Cowork could be abused to exfiltrate data via agent-sent emails rendered with external images that trigger attacker-controlled network requests, potentially leveraging OneDrive link sharing.</p>
+<p><strong>Tags:</strong> #AI security, #prompt injection, #data exfiltration, #agentic systems, #Microsoft Copilot</p>
+<p><a href="https://simonwillison.net/2026/May/26/copilot-cowork-exfiltrates-files/#atom-everything">Read original</a></p>]]></description>
+      <category>AI security</category>
       <category>prompt injection</category>
       <category>data exfiltration</category>
-      <category>Copilot</category>
-      <category>agentic AI</category>
+      <category>agentic systems</category>
+      <category>Microsoft Copilot</category>
     </item>
     <item>
-      <title>[信号 7.0] The Financial Times has published an article about Heretic</title>
-      <link>https://www.reddit.com/r/LocalLLaMA/comments/1tna22m/the_financial_times_has_published_an_article/</link>
-      <guid isPermaLink="false">horizon:zh:reddit:subreddit:1tna22m</guid>
-      <pubDate>Mon, 25 May 2026 14:00:26 +0000</pubDate>
+      <title>[信号 7.0] 🦘 美团发布跑腿 Skill，用户可用任意 AI 助手一句话下单</title>
+      <link>http://client.sina.com.cn/news/2026-05-26/doc-inhzffss1481138.shtml</link>
+      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41576</guid>
+      <pubDate>Tue, 26 May 2026 08:29:26 +0000</pubDate>
       <description><![CDATA[<p>AI Score: 8.0</p>
 <p>Signal Score: 7.0</p>
-<p>A Financial Times article spotlights Heretic, a GitHub tool said to remove Llama 3.3 guardrails in minutes and to have been used to produce thousands of “decensored” models with millions of downloads, prompting concern about mainstream attention and potential crackdowns.</p>
-<p><strong>Tags:</strong> #LLMs, #AI safety, #model fine-tuning, #open-source, #policy-and-regulation</p>
-<p><a href="https://www.reddit.com/r/LocalLLaMA/comments/1tna22m/the_financial_times_has_published_an_article/">Read original</a></p>]]></description>
-      <category>LLMs</category>
-      <category>AI safety</category>
-      <category>model fine-tuning</category>
-      <category>open-source</category>
-      <category>policy-and-regulation</category>
+<p>美团发布跑腿 Skill，把对话式跑腿下单封装为开放标准接口并开源，用户可在任意 AI 助手中一句话完成识别、匹配、估价与下单并查询进度。</p>
+<p><strong>Tags:</strong> #AI Agent, #API/Skills, #对话式下单, #本地生活服务, #开源</p>
+<p><a href="http://client.sina.com.cn/news/2026-05-26/doc-inhzffss1481138.shtml">Read original</a></p>]]></description>
+      <category>AI Agent</category>
+      <category>API/Skills</category>
+      <category>对话式下单</category>
+      <category>本地生活服务</category>
+      <category>开源</category>
     </item>
     <item>
-      <title>[信号 7.0] NuExtract3 released: open-weight 4B VLM for Markdown, OCR and structured extraction (self-hostable)</title>
-      <link>https://www.reddit.com/gallery/1tn8utn</link>
-      <guid isPermaLink="false">horizon:zh:reddit:subreddit:1tn8utn</guid>
-      <pubDate>Mon, 25 May 2026 13:14:58 +0000</pubDate>
+      <title>[信号 7.0] 📱 中国审查 Meta 收购 Manus，两名联合创始人被限制离境  中国监管部门正在审查 Meta 收购 AI 初创公司 Manus 是否违反投资规定。</title>
+      <link>https://t.me/zaihuapd/41577</link>
+      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41577</guid>
+      <pubDate>Tue, 26 May 2026 09:56:44 +0000</pubDate>
       <description><![CDATA[<p>AI Score: 8.0</p>
 <p>Signal Score: 7.0</p>
-<p>Numind released NuExtract3, an Apache-2.0 open-weight 4B Qwen3.5-based VLM for turning complex document images/text into Markdown/OCR and structured outputs, with free online demo and self-hostable weights.</p>
-<p><strong>Tags:</strong> #OCR, #Vision-Language-Models, #Document-AI, #Information-Extraction, #Open-Source-Models</p>
-<p><a href="https://www.reddit.com/gallery/1tn8utn">Read original</a></p>]]></description>
-      <category>OCR</category>
-      <category>Vision-Language-Models</category>
-      <category>Document-AI</category>
-      <category>Information-Extraction</category>
-      <category>Open-Source-Models</category>
+<p>报道称中国监管部门正审查 Meta 收购 AI 初创公司 Manus 是否违规，审查期间 Manus CEO 与 CSO 被限制离境。</p>
+<p><strong>Tags:</strong> #AI, #M&amp;A, #China regulation, #Geopolitics, #Tech policy</p>
+<p><a href="https://t.me/zaihuapd/41577">Read original</a></p>]]></description>
+      <category>AI</category>
+      <category>M&amp;A</category>
+      <category>China regulation</category>
+      <category>Geopolitics</category>
+      <category>Tech policy</category>
     </item>
     <item>
-      <title>[信号 7.0] 非生非死：离体人脑被用于药物测试</title>
-      <link>https://www.science.org/content/article/not-alive-not-dead-disembodied-human-brains-used-drug-testing</link>
-      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41565</guid>
-      <pubDate>Mon, 25 May 2026 14:57:45 +0000</pubDate>
-      <description><![CDATA[<p>AI Score: 8.0</p>
-<p>Signal Score: 7.0</p>
-<p>Science 报道称生物科技公司借助 BrainEx 灌流系统让离体人脑在死亡数小时后恢复部分生物活动以进行药物测试，同时引发关于生命边界与伦理监管的争议。</p>
-<p><strong>Tags:</strong> #neuroscience, #drug-discovery, #brain-perfusion, #bioethics, #alzheimers-parkinsons</p>
-<p><a href="https://www.science.org/content/article/not-alive-not-dead-disembodied-human-brains-used-drug-testing">Read original</a></p>]]></description>
-      <category>neuroscience</category>
-      <category>drug-discovery</category>
-      <category>brain-perfusion</category>
-      <category>bioethics</category>
-      <category>alzheimers-parkinsons</category>
-    </item>
-    <item>
-      <title>[信号 7.0] MiniCPM5-1B</title>
-      <link>https://huggingface.co/openbmb/MiniCPM5-1B</link>
-      <guid isPermaLink="false">horizon:zh:reddit:subreddit:1tnafre</guid>
-      <pubDate>Mon, 25 May 2026 14:14:16 +0000</pubDate>
+      <title>[信号 7.0] Spain blocks prediction markets Polymarket, Kalshi over lack of gambling licence</title>
+      <link>https://www.reuters.com/business/spain-blocks-prediction-markets-polymarket-kalshi-over-lack-gambling-licences-2026-05-26/</link>
+      <guid isPermaLink="false">horizon:zh:hackernews:story:48279316</guid>
+      <pubDate>Tue, 26 May 2026 13:08:13 +0000</pubDate>
       <description><![CDATA[<p>AI Score: 7.0</p>
 <p>Signal Score: 7.0</p>
-<p>MiniCPM5-1B is a ~1.08B-parameter open model on Hugging Face highlighted for a 131k context window and suitability as a lightweight local router/tool-call model.</p>
-<p><strong>Tags:</strong> #LLM, #local-inference, #long-context, #tool-calling, #open-models</p>
-<p><a href="https://huggingface.co/openbmb/MiniCPM5-1B">Read original</a></p>]]></description>
-      <category>LLM</category>
-      <category>local-inference</category>
-      <category>long-context</category>
-      <category>tool-calling</category>
-      <category>open-models</category>
-    </item>
-    <item>
-      <title>[信号 7.0] 人工智能时代网络安全专家需求激增</title>
-      <link>https://www.nytimes.com/2026/05/24/technology/one-job-that-is-growing-in-the-ai-era-cybersecurity-experts.html</link>
-      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41560</guid>
-      <pubDate>Mon, 25 May 2026 06:21:41 +0000</pubDate>
-      <description><![CDATA[<p>AI Score: 7.0</p>
-<p>Signal Score: 7.0</p>
-<p>AI带来的代码规模扩张与新型攻击能力推动企业显著增加网络安全岗位招聘，尤其需要懂安全与AI的高管与工程师。</p>
-<p><strong>Tags:</strong> #cybersecurity, #AI-security, #hiring-trends, #software-vulnerabilities, #workforce-skills</p>
-<p><a href="https://www.nytimes.com/2026/05/24/technology/one-job-that-is-growing-in-the-ai-era-cybersecurity-experts.html">Read original</a></p>]]></description>
-      <category>cybersecurity</category>
-      <category>AI-security</category>
-      <category>hiring-trends</category>
-      <category>software-vulnerabilities</category>
-      <category>workforce-skills</category>
-    </item>
-    <item>
-      <title>[信号 7.0] 欧盟初步调查：谷歌涉嫌操纵搜索结果违反《数字市场法》  欧盟委员会初步调查结果显示，Alphabet涉嫌违反《数字市场法》（DMA），主要问题集中在搜索引擎和P</title>
-      <link>https://t.me/zaihuapd/41566</link>
-      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41566</guid>
-      <pubDate>Tue, 26 May 2026 00:27:51 +0000</pubDate>
-      <description><![CDATA[<p>AI Score: 7.0</p>
-<p>Signal Score: 7.0</p>
-<p>欧盟初步调查认为Alphabet可能因搜索与Play商店的自我偏好及限制开发者引导外部购买渠道而违反《数字市场法》。</p>
-<p><strong>Tags:</strong> #EU-DMA, #Antitrust-Regulation, #Search-Ranking, #App-Store-Policy, #Google</p>
-<p><a href="https://t.me/zaihuapd/41566">Read original</a></p>]]></description>
-      <category>EU-DMA</category>
-      <category>Antitrust-Regulation</category>
-      <category>Search-Ranking</category>
-      <category>App-Store-Policy</category>
-      <category>Google</category>
-    </item>
-    <item>
-      <title>[信号 6.0] California moves to exempt Linux from its age-verification law after backlash</title>
-      <link>https://www.tomshardware.com/software/linux/california-moves-to-exempt-linux-from-its-upcoming-age-verification-law-after-backlash-over-forcing-operating-systems-to-collect-users-ages-amendment-proposed-by-the-same-lawmaker-who-wrote-the-original-law</link>
-      <guid isPermaLink="false">horizon:zh:hackernews:story:48269961</guid>
-      <pubDate>Mon, 25 May 2026 18:19:58 +0000</pubDate>
-      <description><![CDATA[<p>AI Score: 8.0</p>
-<p>Signal Score: 6.0</p>
-<p>California lawmakers are moving to amend an upcoming age-verification law to exempt Linux following backlash over requiring operating systems to collect users’ ages.</p>
-<p><strong>Tags:</strong> #regulation, #privacy, #age-verification, #linux, #web-browsers</p>
-<p><a href="https://www.tomshardware.com/software/linux/california-moves-to-exempt-linux-from-its-upcoming-age-verification-law-after-backlash-over-forcing-operating-systems-to-collect-users-ages-amendment-proposed-by-the-same-lawmaker-who-wrote-the-original-law">Read original</a></p>]]></description>
+<p>Spain has blocked Polymarket and Kalshi for operating without a gambling licence, highlighting escalating regulatory pressure on prediction markets.</p>
+<p><strong>Tags:</strong> #regulation, #prediction-markets, #fintech, #crypto, #online-gambling</p>
+<p><a href="https://www.reuters.com/business/spain-blocks-prediction-markets-polymarket-kalshi-over-lack-gambling-licences-2026-05-26/">Read original</a></p>]]></description>
       <category>regulation</category>
-      <category>privacy</category>
-      <category>age-verification</category>
-      <category>linux</category>
-      <category>web-browsers</category>
+      <category>prediction-markets</category>
+      <category>fintech</category>
+      <category>crypto</category>
+      <category>online-gambling</category>
     </item>
     <item>
-      <title>[信号 6.0] Netherlands Seizes 800 Servers, Arrests 2 for Aiding Cyberattacks</title>
-      <link>https://krebsonsecurity.com/2026/05/netherlands-seizes-800-servers-arrests-2-for-aiding-cyberattacks/</link>
-      <guid isPermaLink="false">horizon:zh:hackernews:story:48266906</guid>
-      <pubDate>Mon, 25 May 2026 13:56:39 +0000</pubDate>
-      <description><![CDATA[<p>AI Score: 8.0</p>
-<p>Signal Score: 6.0</p>
-<p>Dutch authorities seized 800 servers and arrested two people accused of providing infrastructure used to support cyberattacks.</p>
-<p><strong>Tags:</strong> #cybersecurity, #law-enforcement, #bulletproof-hosting, #botnets, #threat-intelligence</p>
-<p><a href="https://krebsonsecurity.com/2026/05/netherlands-seizes-800-servers-arrests-2-for-aiding-cyberattacks/">Read original</a></p>]]></description>
-      <category>cybersecurity</category>
-      <category>law-enforcement</category>
-      <category>bulletproof-hosting</category>
-      <category>botnets</category>
-      <category>threat-intelligence</category>
+      <title>[信号 7.0] 支付宝发布 Token Pay 和 AI 钱包</title>
+      <link>https://finance.sina.com.cn/jjxw/2026-05-26/doc-inhzffss1524895.shtml</link>
+      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41578</guid>
+      <pubDate>Tue, 26 May 2026 12:31:49 +0000</pubDate>
+      <description><![CDATA[<p>AI Score: 7.0</p>
+<p>Signal Score: 7.0</p>
+<p>支付宝推出 Token Pay 与 AI 钱包，支持智能体任务支付管理及面向大模型公司的全球订阅/充值等支付场景，并已与部分 AI 公司合作上线。</p>
+<p><strong>Tags:</strong> #Alipay, #payments, #AI agents, #LLM ecosystem, #fintech</p>
+<p><a href="https://finance.sina.com.cn/jjxw/2026-05-26/doc-inhzffss1524895.shtml">Read original</a></p>]]></description>
+      <category>Alipay</category>
+      <category>payments</category>
+      <category>AI agents</category>
+      <category>LLM ecosystem</category>
+      <category>fintech</category>
     </item>
     <item>
-      <title>[信号 6.0] server: fix checkpoints creation by jacekpoplawski · Pull Request #22929 · ggml-org/llama.cpp</title>
-      <link>https://github.com/ggml-org/llama.cpp/pull/22929</link>
-      <guid isPermaLink="false">horizon:zh:reddit:subreddit:1tn0jyp</guid>
-      <pubDate>Mon, 25 May 2026 06:22:12 +0000</pubDate>
+      <title>[信号 6.0] Big tech&#x27;s anti-labor playbook has come for Wikipedia</title>
+      <link>https://medium.com/@jakeorlowitz/wikipedia-is-doing-the-capitalist-thing-56a393232943</link>
+      <guid isPermaLink="false">horizon:zh:hackernews:story:48285592</guid>
+      <pubDate>Tue, 26 May 2026 20:33:24 +0000</pubDate>
       <description><![CDATA[<p>AI Score: 8.0</p>
 <p>Signal Score: 6.0</p>
-<p>llama.cpp merged a server-side fix to improve checkpoint creation so long-context agent sessions are less likely to trigger expensive full prompt reprocessing when conversation history changes.</p>
-<p><strong>Tags:</strong> #llama.cpp, #local-llm, #kv-cache, #long-context, #agentic-coding</p>
-<p><a href="https://github.com/ggml-org/llama.cpp/pull/22929">Read original</a></p>]]></description>
-      <category>llama.cpp</category>
+<p>The post and comments argue Wikimedia is adopting big-tech-style anti-labor practices, citing layoffs and a notable firing that may degrade editor tooling and community-driven development on Wikipedia.</p>
+<p><strong>Tags:</strong> #wikipedia, #open-source-governance, #labor-relations, #community-tooling, #mediawiki</p>
+<p><a href="https://medium.com/@jakeorlowitz/wikipedia-is-doing-the-capitalist-thing-56a393232943">Read original</a></p>]]></description>
+      <category>wikipedia</category>
+      <category>open-source-governance</category>
+      <category>labor-relations</category>
+      <category>community-tooling</category>
+      <category>mediawiki</category>
+    </item>
+    <item>
+      <title>[信号 6.0] Dropbox CEO Drew Houston to step down</title>
+      <link>https://www.cnbc.com/2026/05/26/dropbox-ceo-drew-houston-ashraf-alkarmi.html</link>
+      <guid isPermaLink="false">horizon:zh:hackernews:story:48279453</guid>
+      <pubDate>Tue, 26 May 2026 13:18:33 +0000</pubDate>
+      <description><![CDATA[<p>AI Score: 7.0</p>
+<p>Signal Score: 6.0</p>
+<p>Dropbox CEO Drew Houston is stepping down, with discussion focusing on Dropbox’s future strategy amid platform competition and changing cloud-storage usage patterns.</p>
+<p><strong>Tags:</strong> #dropbox, #leadership-change, #cloud-storage, #big-tech-competition, #ai-strategy</p>
+<p><a href="https://www.cnbc.com/2026/05/26/dropbox-ceo-drew-houston-ashraf-alkarmi.html">Read original</a></p>]]></description>
+      <category>dropbox</category>
+      <category>leadership-change</category>
+      <category>cloud-storage</category>
+      <category>big-tech-competition</category>
+      <category>ai-strategy</category>
+    </item>
+    <item>
+      <title>[信号 6.0] PrismML just released Binary and Ternary Bonsai Image 4B: 1-bit/ternary text-to-image diffusion transformers that can even run 100% locally in your browser on WebGPU.</title>
+      <link>https://v.redd.it/2ltnmcnp2j3h1</link>
+      <guid isPermaLink="false">horizon:zh:reddit:subreddit:1togflk</guid>
+      <pubDate>Tue, 26 May 2026 18:53:40 +0000</pubDate>
+      <description><![CDATA[<p>AI Score: 7.0</p>
+<p>Signal Score: 6.0</p>
+<p>PrismML released Apache-2.0 binary/ternary “Bonsai Image 4B” text-to-image models (~2–3GB) with a Hugging Face WebGPU demo aiming for fully local in-browser generation, sparking both excitement and concerns about provenance and demo stability.</p>
+<p><strong>Tags:</strong> #text-to-image, #diffusion-models, #quantization, #WebGPU, #HuggingFace</p>
+<p><a href="https://v.redd.it/2ltnmcnp2j3h1">Read original</a></p>]]></description>
+      <category>text-to-image</category>
+      <category>diffusion-models</category>
+      <category>quantization</category>
+      <category>WebGPU</category>
+      <category>HuggingFace</category>
+    </item>
+    <item>
+      <title>[信号 6.0] Turning local agents into self-optimizing agents</title>
+      <link>https://i.redd.it/dj431wtwoi3h1.gif</link>
+      <guid isPermaLink="false">horizon:zh:reddit:subreddit:1toejzp</guid>
+      <pubDate>Tue, 26 May 2026 17:51:07 +0000</pubDate>
+      <description><![CDATA[<p>AI Score: 7.0</p>
+<p>Signal Score: 6.0</p>
+<p>A local-LLM proxy logs chats and periodically has the model distill lessons into a skills file that is automatically injected into future system prompts to continuously improve performance.</p>
+<p><strong>Tags:</strong> #local-llm, #agentic-systems, #prompt-engineering, #self-improvement, #evaluation</p>
+<p><a href="https://i.redd.it/dj431wtwoi3h1.gif">Read original</a></p>]]></description>
       <category>local-llm</category>
-      <category>kv-cache</category>
-      <category>long-context</category>
-      <category>agentic-coding</category>
+      <category>agentic-systems</category>
+      <category>prompt-engineering</category>
+      <category>self-improvement</category>
+      <category>evaluation</category>
     </item>
     <item>
-      <title>[信号 6.0] Exit IP VPN servers mitigation rollout</title>
-      <link>https://mullvad.net/en/help/exit-ip-vpn-servers-mitigation-rollout</link>
-      <guid isPermaLink="false">horizon:zh:hackernews:story:48269580</guid>
-      <pubDate>Mon, 25 May 2026 17:45:11 +0000</pubDate>
+      <title>[信号 6.0] Strix Halo users, a rejected PR can give you up to 30% faster PP for MOEs.</title>
+      <link>https://www.reddit.com/r/LocalLLaMA/comments/1to00xl/strix_halo_users_a_rejected_pr_can_give_you_up_to/</link>
+      <guid isPermaLink="false">horizon:zh:reddit:subreddit:1to00xl</guid>
+      <pubDate>Tue, 26 May 2026 07:50:34 +0000</pubDate>
       <description><![CDATA[<p>AI Score: 7.0</p>
 <p>Signal Score: 6.0</p>
-<p>Mullvad details a rollout to mitigate Exit IP-based VPN server fingerprinting and the community discusses related browser proxy approaches and fingerprinting-countermeasure design.</p>
-<p><strong>Tags:</strong> #vpn, #privacy, #fingerprinting, #network-security, #mullvad</p>
-<p><a href="https://mullvad.net/en/help/exit-ip-vpn-servers-mitigation-rollout">Read original</a></p>]]></description>
-      <category>vpn</category>
-      <category>privacy</category>
-      <category>fingerprinting</category>
-      <category>network-security</category>
-      <category>mullvad</category>
+<p>A rejected llama.cpp PR patch is shared that can significantly speed up MoE prompt processing on Strix Halo—especially at low context—despite not being merged upstream.</p>
+<p><strong>Tags:</strong> #llama.cpp, #MoE, #ROCm, #AMD Strix Halo, #inference-optimization</p>
+<p><a href="https://www.reddit.com/r/LocalLLaMA/comments/1to00xl/strix_halo_users_a_rejected_pr_can_give_you_up_to/">Read original</a></p>]]></description>
+      <category>llama.cpp</category>
+      <category>MoE</category>
+      <category>ROCm</category>
+      <category>AMD Strix Halo</category>
+      <category>inference-optimization</category>
     </item>
     <item>
-      <title>[信号 6.0] 腾讯 ima copilot 全量开放，主打个人知识库常驻记忆</title>
-      <link>https://mp.weixin.qq.com/s/4gEMiKaRMTL2ieH5EnnnyA</link>
-      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41559</guid>
-      <pubDate>Mon, 25 May 2026 05:21:17 +0000</pubDate>
+      <title>[信号 6.0] SkillOpt treats markdown skill files as trainable parameters with proper optimization machinery</title>
+      <link>https://i.redd.it/vun7zfxz8g3h1.jpeg</link>
+      <guid isPermaLink="false">horizon:zh:reddit:subreddit:1to1mey</guid>
+      <pubDate>Tue, 26 May 2026 09:20:57 +0000</pubDate>
       <description><![CDATA[<p>AI Score: 7.0</p>
 <p>Signal Score: 6.0</p>
-<p>腾讯宣布 AI 助手 ima copilot 结束灰度测试并全量开放，主打基于个人知识库的常驻记忆与任务连续性，并采用 Soul/User/Memory/Agent 分层记忆体系。</p>
-<p><strong>Tags:</strong> #AI助手, #个人知识库, #长记忆, #腾讯, #Agent架构</p>
-<p><a href="https://mp.weixin.qq.com/s/4gEMiKaRMTL2ieH5EnnnyA">Read original</a></p>]]></description>
-      <category>AI助手</category>
-      <category>个人知识库</category>
-      <category>长记忆</category>
-      <category>腾讯</category>
-      <category>Agent架构</category>
+<p>SkillOpt frames markdown “skill files” as trainable parameters optimized via bounded LLM edits accepted only when they strictly improve held-out validation performance, with reported strong cross-model transfer and small-model gains.</p>
+<p><strong>Tags:</strong> #llm-agents, #prompt-optimization, #evaluation-and-benchmarks, #training-methods, #tooling</p>
+<p><a href="https://i.redd.it/vun7zfxz8g3h1.jpeg">Read original</a></p>]]></description>
+      <category>llm-agents</category>
+      <category>prompt-optimization</category>
+      <category>evaluation-and-benchmarks</category>
+      <category>training-methods</category>
+      <category>tooling</category>
     </item>
     <item>
-      <title>[信号 6.0] 马斯克宣布 Grok V9-Medium 模型训练完成，预计两三周后发布</title>
-      <link>https://x.com/elonmusk/status/2058787384364265734</link>
-      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41561</guid>
-      <pubDate>Mon, 25 May 2026 07:07:04 +0000</pubDate>
+      <title>[信号 6.0] 📱 X 打击内容搬运，收益将划归原创者</title>
+      <link>https://www.businessinsider.com/x-cracks-down-on-stolen-content-nikita-bier-2026-5</link>
+      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41567</guid>
+      <pubDate>Tue, 26 May 2026 01:22:35 +0000</pubDate>
       <description><![CDATA[<p>AI Score: 7.0</p>
 <p>Signal Score: 6.0</p>
-<p>马斯克称 Grok V9-Medium（1.5T）基础模型已训练完成、评估良好，正进行微调与后续强化学习，预计两三周内公开发布并提升复杂编程能力。</p>
-<p><strong>Tags:</strong> #LLM, #Grok, #Model Release, #Reinforcement Learning, #Code Generation</p>
-<p><a href="https://x.com/elonmusk/status/2058787384364265734">Read original</a></p>]]></description>
-      <category>LLM</category>
+<p>X 宣布可识别批量搬运盗用内容的账号并将展示收益转给原创者，且已对一名大账号进行大幅收益削减作为执法示例。</p>
+<p><strong>Tags:</strong> #X(Twitter), #内容版权, #创作者经济, #平台治理, #内容审核</p>
+<p><a href="https://www.businessinsider.com/x-cracks-down-on-stolen-content-nikita-bier-2026-5">Read original</a></p>]]></description>
+      <category>X(Twitter)</category>
+      <category>内容版权</category>
+      <category>创作者经济</category>
+      <category>平台治理</category>
+      <category>内容审核</category>
+    </item>
+    <item>
+      <title>[信号 6.0] 🤖 马斯克称 xAI 将于年底前开源 0.5T 参数模型，外界推测或为 Grok 4.2</title>
+      <link>https://x.com/i/status/2058796067592736866</link>
+      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41569</guid>
+      <pubDate>Tue, 26 May 2026 02:46:11 +0000</pubDate>
+      <description><![CDATA[<p>AI Score: 7.0</p>
+<p>Signal Score: 6.0</p>
+<p>马斯克称 xAI 计划在年底前开源一个 0.5T 参数模型，外界推测可能与 Grok 4.2 相关，但具体名称与时间表仍不明确。</p>
+<p><strong>Tags:</strong> #xAI, #Open Source, #Large Language Models, #Grok, #Model Weights</p>
+<p><a href="https://x.com/i/status/2058796067592736866">Read original</a></p>]]></description>
+      <category>xAI</category>
+      <category>Open Source</category>
+      <category>Large Language Models</category>
       <category>Grok</category>
-      <category>Model Release</category>
-      <category>Reinforcement Learning</category>
-      <category>Code Generation</category>
+      <category>Model Weights</category>
     </item>
     <item>
-      <title>[信号 3.0] Magnifica Humanitas</title>
-      <link>https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html</link>
-      <guid isPermaLink="false">horizon:zh:hackernews:story:48265206</guid>
-      <pubDate>Mon, 25 May 2026 10:11:29 +0000</pubDate>
+      <title>[信号 5.0] Outsourcing plus local AI will soon become more economical vs. frontier labs</title>
+      <link>https://www.signalbloom.ai/posts/outsourcing-plus-localai-will-soon-become-more-economical-vs-frontier-labs/</link>
+      <guid isPermaLink="false">horizon:zh:hackernews:story:48278610</guid>
+      <pubDate>Tue, 26 May 2026 12:08:33 +0000</pubDate>
       <description><![CDATA[<p>AI Score: 7.0</p>
-<p>Signal Score: 3.0</p>
-<p>A Vatican encyclical argues that technology is not neutral, can concentrate power, and calls on builders and institutions to orient technological development toward the common good.</p>
-<p><strong>Tags:</strong> #tech-ethics, #AI-governance, #technology-policy, #power-and-society, #institutional-analysis</p>
-<p><a href="https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html">Read original</a></p>]]></description>
-      <category>tech-ethics</category>
-      <category>AI-governance</category>
-      <category>technology-policy</category>
-      <category>power-and-society</category>
-      <category>institutional-analysis</category>
+<p>Signal Score: 5.0</p>
+<p>The post and discussion argue that combining outsourcing with local/cheap LLM usage may soon beat frontier-lab API costs, with outcomes heavily dependent on operator skill and management/specification rigor.</p>
+<p><strong>Tags:</strong> #llm-economics, #software-outsourcing, #developer-productivity, #ai-ops, #hacker-news-discussion</p>
+<p><a href="https://www.signalbloom.ai/posts/outsourcing-plus-localai-will-soon-become-more-economical-vs-frontier-labs/">Read original</a></p>]]></description>
+      <category>llm-economics</category>
+      <category>software-outsourcing</category>
+      <category>developer-productivity</category>
+      <category>ai-ops</category>
+      <category>hacker-news-discussion</category>
+    </item>
+    <item>
+      <title>[信号 5.0] 伊朗计划永久断开全球互联网，仅允许通过政府审查的人员上网  据伊朗数字权利活动人士透露，伊朗正计划永久断开与全球互联网的连接，仅允许通过政府审查的人员上网。</title>
+      <link>https://t.me/zaihuapd/41574</link>
+      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41574</guid>
+      <pubDate>Tue, 26 May 2026 06:36:20 +0000</pubDate>
+      <description><![CDATA[<p>AI Score: 7.0</p>
+<p>Signal Score: 5.0</p>
+<p>报道称伊朗正推进一项机密计划，将国际互联网接入变为经政府审查者的特权，并让其他人仅能使用与外界隔离的国内网络。</p>
+<p><strong>Tags:</strong> #internet-censorship, #network-sovereignty, #iran, #cybersecurity, #digital-rights</p>
+<p><a href="https://t.me/zaihuapd/41574">Read original</a></p>]]></description>
+      <category>internet-censorship</category>
+      <category>network-sovereignty</category>
+      <category>iran</category>
+      <category>cybersecurity</category>
+      <category>digital-rights</category>
+    </item>
+    <item>
+      <title>[信号 4.0] Chemistry behind the Garden Grove chemical tank</title>
+      <link>https://www.science.org/content/blog-post/methyl-methacrylate-tank</link>
+      <guid isPermaLink="false">horizon:zh:hackernews:story:48284712</guid>
+      <pubDate>Tue, 26 May 2026 19:25:16 +0000</pubDate>
+      <description><![CDATA[<p>AI Score: 7.0</p>
+<p>Signal Score: 4.0</p>
+<p>A deep-dive explains the chemistry and failure modes behind the Garden Grove methyl methacrylate chemical tank incident and related industrial-safety implications.</p>
+<p><strong>Tags:</strong> #chemical-safety, #industrial-accidents, #polymer-chemistry, #process-engineering, #risk-analysis</p>
+<p><a href="https://www.science.org/content/blog-post/methyl-methacrylate-tank">Read original</a></p>]]></description>
+      <category>chemical-safety</category>
+      <category>industrial-accidents</category>
+      <category>polymer-chemistry</category>
+      <category>process-engineering</category>
+      <category>risk-analysis</category>
+    </item>
+    <item>
+      <title>[信号 4.0] The user is visibly frustrated</title>
+      <link>https://pscanf.com/s/354/</link>
+      <guid isPermaLink="false">horizon:zh:hackernews:story:48275059</guid>
+      <pubDate>Tue, 26 May 2026 04:39:03 +0000</pubDate>
+      <description><![CDATA[<p>AI Score: 7.0</p>
+<p>Signal Score: 4.0</p>
+<p>A heavily discussed HN post argues that chatbot-style interfaces often frustrate users and may be a poor default for many AI use cases compared to more integrated, task-oriented assistance.</p>
+<p><strong>Tags:</strong> #LLM UX, #Chatbots, #Developer Tools, #Human-Computer Interaction, #AI Product Design</p>
+<p><a href="https://pscanf.com/s/354/">Read original</a></p>]]></description>
+      <category>LLM UX</category>
+      <category>Chatbots</category>
+      <category>Developer Tools</category>
+      <category>Human-Computer Interaction</category>
+      <category>AI Product Design</category>
     </item>
   </channel>
 </rss>
