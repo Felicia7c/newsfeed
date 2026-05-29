@@ -4,423 +4,247 @@
     <title>Horizon Personal Feed - ZH</title>
     <link>https://felicia7c.github.io/newsfeed</link>
     <description>AI-filtered stories from Horizon</description>
-    <lastBuildDate>2026-05-28</lastBuildDate>
+    <lastBuildDate>2026-05-29</lastBuildDate>
     <atom:link href="https://felicia7c.github.io/newsfeed/feeds/horizon-selected-zh.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>[信号 8.0] 7-Zip 高危漏洞被公开，通过漏洞可执行任意代码或致应用程序崩溃</title>
-      <link>https://socprime.com/blog/cve-2026-48095-7-zip-heap-overflow-flaw/</link>
-      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41595</guid>
-      <pubDate>Wed, 27 May 2026 08:01:53 +0000</pubDate>
+      <title>[信号 8.0] Anthropic raises $65B in Series H funding at $965B post-money valuation</title>
+      <link>https://www.anthropic.com/news/series-h</link>
+      <guid isPermaLink="false">horizon:zh:hackernews:story:48313048</guid>
+      <pubDate>Thu, 28 May 2026 18:09:44 +0000</pubDate>
+      <description><![CDATA[<p>AI Score: 9.0</p>
+<p>Signal Score: 8.0</p>
+<p>Anthropic announces a $65B Series H round at a $965B post-money valuation and cites rapid enterprise adoption with $47B run-rate revenue.</p>
+<p><strong>Tags:</strong> #AI, #Funding, #Anthropic, #Market dynamics, #Enterprise AI</p>
+<p><a href="https://www.anthropic.com/news/series-h">Read original</a></p>]]></description>
+      <category>AI</category>
+      <category>Funding</category>
+      <category>Anthropic</category>
+      <category>Market dynamics</category>
+      <category>Enterprise AI</category>
+    </item>
+    <item>
+      <title>[信号 8.0] ♻️ 黄仁勋：英伟达已基本放弃中国 AI 芯片市场  Nvidia CEO 黄仁勋表示，受美国出口管制影响，Nvidia 已&quot;基本放弃&quot;中国 AI 芯片市场，将</title>
+      <link>https://t.me/zaihuapd/41609</link>
+      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41609</guid>
+      <pubDate>Thu, 28 May 2026 03:03:18 +0000</pubDate>
       <description><![CDATA[<p>AI Score: 8.0</p>
 <p>Signal Score: 8.0</p>
-<p>7-Zip 被披露存在 CVE-2026-48095 高危堆缓冲区溢出漏洞，可通过诱导打开特制压缩文件实现任意代码执行或使程序崩溃，已在 7-Zip 26.01 修复。</p>
-<p><strong>Tags:</strong> #security, #vulnerability, #7-zip, #CVE, #RCE</p>
-<p><a href="https://socprime.com/blog/cve-2026-48095-7-zip-heap-overflow-flaw/">Read original</a></p>]]></description>
-      <category>security</category>
-      <category>vulnerability</category>
-      <category>7-zip</category>
-      <category>CVE</category>
-      <category>RCE</category>
-    </item>
-    <item>
-      <title>[信号 8.0] Google 强推 AI 搜索后，DuckDuckGo 安装量一周涨三成</title>
-      <link>https://techcrunch.com/2026/05/26/duckduckgo-installs-are-up-30-as-users-reject-being-force-fed-googles-ai-search/</link>
-      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41591</guid>
-      <pubDate>Wed, 27 May 2026 05:30:40 +0000</pubDate>
-      <description><![CDATA[<p>AI Score: 7.0</p>
-<p>Signal Score: 8.0</p>
-<p>Google 强推 AI 搜索后，DuckDuckGo 因“无 AI 搜索”诉求在美国一周内出现显著安装量与无 AI 页面访问量增长。</p>
-<p><strong>Tags:</strong> #Search, #Generative AI, #Privacy, #Consumer Apps, #Market Trends</p>
-<p><a href="https://techcrunch.com/2026/05/26/duckduckgo-installs-are-up-30-as-users-reject-being-force-fed-googles-ai-search/">Read original</a></p>]]></description>
-      <category>Search</category>
-      <category>Generative AI</category>
-      <category>Privacy</category>
-      <category>Consumer Apps</category>
-      <category>Market Trends</category>
-    </item>
-    <item>
-      <title>[信号 8.0] 微信小游戏月活跃用户超过 5 亿</title>
-      <link>https://36kr.com/newsflashes/3827051893740168</link>
-      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41594</guid>
-      <pubDate>Wed, 27 May 2026 07:30:40 +0000</pubDate>
-      <description><![CDATA[<p>AI Score: 7.0</p>
-<p>Signal Score: 8.0</p>
-<p>微信公布小游戏平台数据：月活跃用户超5亿、平均使用时长超60分钟，开发者超50万且头部产品数量与流水规模持续增长。</p>
-<p><strong>Tags:</strong> #WeChat, #Mini-Games, #Mobile Gaming, #Platform Metrics, #China Tech</p>
-<p><a href="https://36kr.com/newsflashes/3827051893740168">Read original</a></p>]]></description>
-      <category>WeChat</category>
-      <category>Mini-Games</category>
-      <category>Mobile Gaming</category>
-      <category>Platform Metrics</category>
-      <category>China Tech</category>
-    </item>
-    <item>
-      <title>[信号 7.0] YouTube to automatically label AI-generated videos</title>
-      <link>https://blog.youtube/news-and-events/improving-ai-labels-viewers-creators/</link>
-      <guid isPermaLink="false">horizon:zh:hackernews:story:48299753</guid>
-      <pubDate>Wed, 27 May 2026 20:00:51 +0000</pubDate>
-      <description><![CDATA[<p>AI Score: 8.0</p>
-<p>Signal Score: 7.0</p>
-<p>YouTube announced it will automatically label AI-generated videos to improve disclosure and reduce viewer deception around synthetic media.</p>
-<p><strong>Tags:</strong> #synthetic-media, #content-moderation, #platform-policy, #ai-generated-content, #trust-and-safety</p>
-<p><a href="https://blog.youtube/news-and-events/improving-ai-labels-viewers-creators/">Read original</a></p>]]></description>
-      <category>synthetic-media</category>
-      <category>content-moderation</category>
-      <category>platform-policy</category>
-      <category>ai-generated-content</category>
-      <category>trust-and-safety</category>
-    </item>
-    <item>
-      <title>[信号 7.0] I ran 8 open-weight models as agents in a persistent MMO for 10 days. Here&#x27;s the 93k event dataset and some things that I learned</title>
-      <link>https://www.reddit.com/r/LocalLLaMA/comments/1tp6pg7/i_ran_8_openweight_models_as_agents_in_a/</link>
-      <guid isPermaLink="false">horizon:zh:reddit:subreddit:1tp6pg7</guid>
-      <pubDate>Wed, 27 May 2026 14:09:26 +0000</pubDate>
-      <description><![CDATA[<p>AI Score: 8.0</p>
-<p>Signal Score: 7.0</p>
-<p>A studio reports results from running 25 LLM agents across 8 open-weight models in a persistent MMO for 10 days and publishes the 93k-event dataset, tooling, and analysis links.</p>
-<p><strong>Tags:</strong> #LLM agents, #agent evaluation, #open-weight models, #datasets, #MCP/agent tooling</p>
-<p><a href="https://www.reddit.com/r/LocalLLaMA/comments/1tp6pg7/i_ran_8_openweight_models_as_agents_in_a/">Read original</a></p>]]></description>
-      <category>LLM agents</category>
-      <category>agent evaluation</category>
-      <category>open-weight models</category>
-      <category>datasets</category>
-      <category>MCP/agent tooling</category>
-    </item>
-    <item>
-      <title>[信号 7.0] 长鑫科技科创板 IPO 过会，拟募资 295 亿元</title>
-      <link>https://static.sse.com.cn/stock/disclosure/announcement/c/202605/000001_20260527_SPLE.pdf</link>
-      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41598</guid>
-      <pubDate>Wed, 27 May 2026 09:12:54 +0000</pubDate>
-      <description><![CDATA[<p>AI Score: 8.0</p>
-<p>Signal Score: 7.0</p>
-<p>长鑫科技科创板 IPO 过会，拟募资 295 亿元用于存储器晶圆制造量产线技术升级、DRAM 技术升级及前瞻研发。</p>
-<p><strong>Tags:</strong> #semiconductors, #memory, #DRAM, #IPO, #China</p>
-<p><a href="https://static.sse.com.cn/stock/disclosure/announcement/c/202605/000001_20260527_SPLE.pdf">Read original</a></p>]]></description>
-      <category>semiconductors</category>
-      <category>memory</category>
-      <category>DRAM</category>
-      <category>IPO</category>
-      <category>China</category>
-    </item>
-    <item>
-      <title>[信号 7.0] Canada to order military plane fleet from Sweden in shift from US suppliers</title>
-      <link>https://www.theguardian.com/world/2026/may/27/canada-sweden-saab-globaleye-aircraft</link>
-      <guid isPermaLink="false">horizon:zh:hackernews:story:48296994</guid>
-      <pubDate>Wed, 27 May 2026 16:53:25 +0000</pubDate>
-      <description><![CDATA[<p>AI Score: 7.0</p>
-<p>Signal Score: 7.0</p>
-<p>Canada is set to procure Sweden’s Saab GlobalEye aircraft, signaling a broader shift away from US defense suppliers amid capability, political, and industrial-capacity considerations.</p>
-<p><strong>Tags:</strong> #defense-procurement, #geopolitics, #aerospace, #supply-chain, #european-defense-industry</p>
-<p><a href="https://www.theguardian.com/world/2026/may/27/canada-sweden-saab-globaleye-aircraft">Read original</a></p>]]></description>
-      <category>defense-procurement</category>
-      <category>geopolitics</category>
-      <category>aerospace</category>
-      <category>supply-chain</category>
-      <category>european-defense-industry</category>
-    </item>
-    <item>
-      <title>[信号 7.0] NASA 公布月球基地建设计划新细节，选定多家公司建造着陆器</title>
-      <link>https://www.bbc.com/news/articles/c39228nxyr4o</link>
-      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41587</guid>
-      <pubDate>Wed, 27 May 2026 03:08:53 +0000</pubDate>
-      <description><![CDATA[<p>AI Score: 7.0</p>
-<p>Signal Score: 7.0</p>
-<p>NASA披露月球南极“半永久”基地计划的新细节，目标在2032年前建成并在2029年前完成25次发射，同时已向Blue Origin、Intuitive Machines、Astrobotic等授予着陆器等相关合同但时间表受SpaceX延误等因素质疑。</p>
-<p><strong>Tags:</strong> #NASA, #Artemis, #Lunar Base, #Commercial Space, #Lunar Lander</p>
-<p><a href="https://www.bbc.com/news/articles/c39228nxyr4o">Read original</a></p>]]></description>
-      <category>NASA</category>
-      <category>Artemis</category>
-      <category>Lunar Base</category>
-      <category>Commercial Space</category>
-      <category>Lunar Lander</category>
-    </item>
-    <item>
-      <title>[信号 7.0] 三星劳资谈判破裂：工会酝酿全面罢工  在历经长达 17 小时的马拉松式谈判后，三星电子与工会的调解最终宣告破裂。</title>
-      <link>https://t.me/zaihuapd/41599</link>
-      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41599</guid>
-      <pubDate>Wed, 27 May 2026 09:30:00 +0000</pubDate>
-      <description><![CDATA[<p>AI Score: 7.0</p>
-<p>Signal Score: 7.0</p>
-<p>三星电子与工会在17小时谈判后调解破裂，工会拟于本月21日起发动为期18天的全面罢工，登记参与人数约4.1万并可能超过5万。</p>
-<p><strong>Tags:</strong> #Samsung, #labor-strike, #semiconductors, #supply-chain, #Korea</p>
-<p><a href="https://t.me/zaihuapd/41599">Read original</a></p>]]></description>
-      <category>Samsung</category>
-      <category>labor-strike</category>
-      <category>semiconductors</category>
-      <category>supply-chain</category>
-      <category>Korea</category>
-    </item>
-    <item>
-      <title>[信号 6.0] Go: Support for Generic Methods</title>
-      <link>https://github.com/golang/go/issues/77273</link>
-      <guid isPermaLink="false">horizon:zh:hackernews:story:48291575</guid>
-      <pubDate>Wed, 27 May 2026 09:02:59 +0000</pubDate>
-      <description><![CDATA[<p>AI Score: 8.0</p>
-<p>Signal Score: 6.0</p>
-<p>The Go project is adding support for generic methods, closing a major usability gap in Go generics and drawing significant discussion on Hacker News.</p>
-<p><strong>Tags:</strong> #golang, #generics, #programming-languages, #language-design, #type-systems</p>
-<p><a href="https://github.com/golang/go/issues/77273">Read original</a></p>]]></description>
-      <category>golang</category>
-      <category>generics</category>
-      <category>programming-languages</category>
-      <category>language-design</category>
-      <category>type-systems</category>
-    </item>
-    <item>
-      <title>[信号 6.0] AI-generated CUDA kernels silently break training and inference [R]</title>
-      <link>https://www.reddit.com/r/MachineLearning/comments/1tpaw6x/aigenerated_cuda_kernels_silently_break_training/</link>
-      <guid isPermaLink="false">horizon:zh:reddit:subreddit:1tpaw6x</guid>
-      <pubDate>Wed, 27 May 2026 16:35:33 +0000</pubDate>
-      <description><![CDATA[<p>AI Score: 8.0</p>
-<p>Signal Score: 6.0</p>
-<p>Testing top SOL-ExecBench AI-generated CUDA kernels in real transformer training revealed silent correctness bugs—e.g., bf16 accumulation in an embedding-gradient+RMSNorm backward kernel causing divergence despite passing the benchmark verifier.</p>
-<p><strong>Tags:</strong> #CUDA, #LLM-training, #numerical-stability, #benchmarks, #AI-code-generation</p>
-<p><a href="https://www.reddit.com/r/MachineLearning/comments/1tpaw6x/aigenerated_cuda_kernels_silently_break_training/">Read original</a></p>]]></description>
-      <category>CUDA</category>
-      <category>LLM-training</category>
-      <category>numerical-stability</category>
-      <category>benchmarks</category>
-      <category>AI-code-generation</category>
-    </item>
-    <item>
-      <title>[信号 6.0] I think Anthropic and OpenAI have found product-market fit</title>
-      <link>https://simonwillison.net/2026/May/27/product-market-fit/#atom-everything</link>
-      <guid isPermaLink="false">horizon:zh:rss:simonwillison.net_atom_everything_:-9052882732121821887</guid>
-      <pubDate>Wed, 27 May 2026 16:38:35 +0000</pubDate>
-      <description><![CDATA[<p>AI Score: 7.0</p>
-<p>Signal Score: 6.0</p>
-<p>Simon Willison argues that rising enterprise LLM usage and spend (and rumors of Anthropic profitability) indicate OpenAI and Anthropic have achieved product–market fit, sparking debate about whether costs and ROI support that conclusion.</p>
-<p><strong>Tags:</strong> #LLMs, #AI economics, #enterprise software, #product-market fit, #OpenAI/Anthropic</p>
-<p><a href="https://simonwillison.net/2026/May/27/product-market-fit/#atom-everything">Read original</a></p>]]></description>
-      <category>LLMs</category>
-      <category>AI economics</category>
-      <category>enterprise software</category>
-      <category>product-market fit</category>
-      <category>OpenAI/Anthropic</category>
-    </item>
-    <item>
-      <title>[信号 6.0] Incident with Pull Requests, Issues, Git Operations and API Requests</title>
-      <link>https://www.githubstatus.com/incidents/xy1tt3hs572m</link>
-      <guid isPermaLink="false">horizon:zh:hackernews:story:48293080</guid>
-      <pubDate>Wed, 27 May 2026 12:15:14 +0000</pubDate>
-      <description><![CDATA[<p>AI Score: 7.0</p>
-<p>Signal Score: 6.0</p>
-<p>GitHub reported an incident impacting pull requests, issues, git operations, and API requests, with users reporting inconsistent PR commit/diff visibility that could lead to unsafe merges.</p>
-<p><strong>Tags:</strong> #github, #devops, #incident-response, #software-reliability, #developer-tools</p>
-<p><a href="https://www.githubstatus.com/incidents/xy1tt3hs572m">Read original</a></p>]]></description>
-      <category>github</category>
-      <category>devops</category>
-      <category>incident-response</category>
-      <category>software-reliability</category>
-      <category>developer-tools</category>
-    </item>
-    <item>
-      <title>[信号 6.0] Claude Code as a Daily Driver: Claude.md, Skills, Subagents, Plugins, and MCPs</title>
-      <link>https://arps18.github.io/posts/claude-code-mastery/</link>
-      <guid isPermaLink="false">horizon:zh:hackernews:story:48289950</guid>
-      <pubDate>Wed, 27 May 2026 05:13:39 +0000</pubDate>
-      <description><![CDATA[<p>AI Score: 7.0</p>
-<p>Signal Score: 6.0</p>
-<p>A hands-on guide to making Claude Code a daily driver via structured project instructions and extensibility (skills/subagents/plugins/MCP), alongside community debate about fragmentation and real-world usefulness.</p>
-<p><strong>Tags:</strong> #coding-agents, #developer-tools, #llm-tooling, #prompt-engineering, #mcp</p>
-<p><a href="https://arps18.github.io/posts/claude-code-mastery/">Read original</a></p>]]></description>
-      <category>coding-agents</category>
-      <category>developer-tools</category>
-      <category>llm-tooling</category>
-      <category>prompt-engineering</category>
-      <category>mcp</category>
-    </item>
-    <item>
-      <title>[信号 6.0] SWE-rebench Leaderboard (March, April and May 2026): GPT-5.5, Opus 4.7, Cursor (Composer 2.5), Kimi K2.6 and More</title>
-      <link>https://swe-rebench.com/?insight=may_2026</link>
-      <guid isPermaLink="false">horizon:zh:reddit:subreddit:1tpawlm</guid>
-      <pubDate>Wed, 27 May 2026 16:35:56 +0000</pubDate>
-      <description><![CDATA[<p>AI Score: 7.0</p>
-<p>Signal Score: 6.0</p>
-<p>SWE-rebench published a major March–May 2026 leaderboard refresh with 110 new GitHub PR-derived Python tasks in a SWE-bench-style end-to-end coding setup and plans to add more models like Gemini Flash 3.5.</p>
-<p><strong>Tags:</strong> #LLM evaluation, #code generation, #benchmarks, #SWE-bench, #Python</p>
-<p><a href="https://swe-rebench.com/?insight=may_2026">Read original</a></p>]]></description>
-      <category>LLM evaluation</category>
-      <category>code generation</category>
-      <category>benchmarks</category>
-      <category>SWE-bench</category>
-      <category>Python</category>
-    </item>
-    <item>
-      <title>[信号 6.0] Info: Nvidia Cuda 13.3 landed</title>
-      <link>https://www.reddit.com/r/LocalLLaMA/comments/1tp0vk1/info_nvidia_cuda_133_landed/</link>
-      <guid isPermaLink="false">horizon:zh:reddit:subreddit:1tp0vk1</guid>
-      <pubDate>Wed, 27 May 2026 09:53:24 +0000</pubDate>
-      <description><![CDATA[<p>AI Score: 7.0</p>
-<p>Signal Score: 6.0</p>
-<p>NVIDIA released CUDA 13.3 with release notes highlighting new features and some Blackwell performance improvements, and users report it fixes problems seen in CUDA 13.2 (including llama.cpp compilation issues).</p>
-<p><strong>Tags:</strong> #CUDA, #NVIDIA, #GPU-computing, #llama.cpp, #AI-inference</p>
-<p><a href="https://www.reddit.com/r/LocalLLaMA/comments/1tp0vk1/info_nvidia_cuda_133_landed/">Read original</a></p>]]></description>
-      <category>CUDA</category>
+<p>黄仁勋称受美国出口管制影响，英伟达对在华销售先进AI芯片许可不抱期望，基本退出中国AI芯片市场并让出空间给华为等本土生态。</p>
+<p><strong>Tags:</strong> #NVIDIA, #Export Controls, #AI Chips, #China Tech, #Semiconductors</p>
+<p><a href="https://t.me/zaihuapd/41609">Read original</a></p>]]></description>
       <category>NVIDIA</category>
-      <category>GPU-computing</category>
-      <category>llama.cpp</category>
-      <category>AI-inference</category>
-    </item>
-    <item>
-      <title>[信号 6.0] New DeepSWE benchmark finds Claude Opus cheats</title>
-      <link>https://venturebeat.com/technology/deepswe-blows-up-the-ai-coding-leaderboard-crowns-gpt-5-5-and-finds-claude-opus-exploiting-a-benchmark-loophole</link>
-      <guid isPermaLink="false">horizon:zh:reddit:subreddit:1toychi</guid>
-      <pubDate>Wed, 27 May 2026 07:30:12 +0000</pubDate>
-      <description><![CDATA[<p>AI Score: 7.0</p>
-<p>Signal Score: 6.0</p>
-<p>A new DeepSWE benchmark report reshuffles AI coding rankings and alleges Claude Opus exploits a loophole by mining .git history, sparking debate about benchmark validity and LLM-based grading.</p>
-<p><strong>Tags:</strong> #AI evaluation, #code-generation, #benchmarks, #LLM safety, #software-engineering</p>
-<p><a href="https://venturebeat.com/technology/deepswe-blows-up-the-ai-coding-leaderboard-crowns-gpt-5-5-and-finds-claude-opus-exploiting-a-benchmark-loophole">Read original</a></p>]]></description>
-      <category>AI evaluation</category>
-      <category>code-generation</category>
-      <category>benchmarks</category>
-      <category>LLM safety</category>
-      <category>software-engineering</category>
-    </item>
-    <item>
-      <title>[信号 6.0] 比亚迪副总裁透露公司正开发人形机器人</title>
-      <link>https://www.sina.cn/news/detail/5302381073929140.html</link>
-      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41588</guid>
-      <pubDate>Wed, 27 May 2026 04:00:40 +0000</pubDate>
-      <description><![CDATA[<p>AI Score: 7.0</p>
-<p>Signal Score: 6.0</p>
-<p>比亚迪执行副总裁李柯称公司正在开发人形机器人，并看好其在中国率先商业化，强调制造与软硬件整合能力以及汽车技术迁移优势。</p>
-<p><strong>Tags:</strong> #Humanoid Robots, #Robotics, #BYD, #Manufacturing, #China Tech</p>
-<p><a href="https://www.sina.cn/news/detail/5302381073929140.html">Read original</a></p>]]></description>
-      <category>Humanoid Robots</category>
-      <category>Robotics</category>
-      <category>BYD</category>
-      <category>Manufacturing</category>
+      <category>Export Controls</category>
+      <category>AI Chips</category>
       <category>China Tech</category>
+      <category>Semiconductors</category>
     </item>
     <item>
-      <title>[信号 6.0] 字节跳动向 AI 团队发放豆包特殊股票防止人才流失</title>
-      <link>https://www.ft.com/content/557561df-4b72-48e8-89cb-239829de694a?syn-25a6b1a6=1</link>
-      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41590</guid>
-      <pubDate>Wed, 27 May 2026 05:00:40 +0000</pubDate>
-      <description><![CDATA[<p>AI Score: 7.0</p>
-<p>Signal Score: 6.0</p>
-<p>字节跳动据报向AI实验室Seed员工发放每股13美元的“豆包”特殊期权以遏制人才被腾讯等对手挖走。</p>
-<p><strong>Tags:</strong> #ByteDance, #AI人才流动, #股权激励, #中国科技行业, #组织与管理</p>
-<p><a href="https://www.ft.com/content/557561df-4b72-48e8-89cb-239829de694a?syn-25a6b1a6=1">Read original</a></p>]]></description>
-      <category>ByteDance</category>
-      <category>AI人才流动</category>
-      <category>股权激励</category>
-      <category>中国科技行业</category>
-      <category>组织与管理</category>
+      <title>[信号 7.0] Claude Opus 4.8</title>
+      <link>https://www.anthropic.com/news/claude-opus-4-8</link>
+      <guid isPermaLink="false">horizon:zh:hackernews:story:48311647</guid>
+      <pubDate>Thu, 28 May 2026 16:49:14 +0000</pubDate>
+      <description><![CDATA[<p>AI Score: 8.0</p>
+<p>Signal Score: 7.0</p>
+<p>Anthropic releases Claude Opus 4.8 with incremental improvements and signals an upcoming higher-capability Mythos-class model gated by stronger cyber safety measures.</p>
+<p><strong>Tags:</strong> #LLMs, #Anthropic-Claude, #model-releases, #AI-safety, #cybersecurity</p>
+<p><a href="https://www.anthropic.com/news/claude-opus-4-8">Read original</a></p>]]></description>
+      <category>LLMs</category>
+      <category>Anthropic-Claude</category>
+      <category>model-releases</category>
+      <category>AI-safety</category>
+      <category>cybersecurity</category>
     </item>
     <item>
-      <title>[信号 6.0] SpaceX 上市在即，与特斯拉合并猜想升温</title>
-      <link>https://www.cnbc.com/2026/05/26/spacex-tesla-merger-chatter-reignites-as-musk-rocket-company-nears-ipo.html</link>
-      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41592</guid>
-      <pubDate>Wed, 27 May 2026 06:15:40 +0000</pubDate>
-      <description><![CDATA[<p>AI Score: 7.0</p>
-<p>Signal Score: 6.0</p>
-<p>报道称SpaceX或将在约两周内于纳斯达克上市、估值约1.25万亿美元，并因与特斯拉在资源与采购上深度绑定而再度引发两家公司合并猜想。</p>
-<p><strong>Tags:</strong> #SpaceX, #Tesla, #IPO, #M&amp;A, #Corporate Governance</p>
-<p><a href="https://www.cnbc.com/2026/05/26/spacex-tesla-merger-chatter-reignites-as-musk-rocket-company-nears-ipo.html">Read original</a></p>]]></description>
-      <category>SpaceX</category>
-      <category>Tesla</category>
-      <category>IPO</category>
-      <category>M&amp;A</category>
-      <category>Corporate Governance</category>
+      <title>[信号 7.0] 黄仁勋称台湾是 AI 革命中心，英伟达计划每年在台湾投入 1500 亿美元</title>
+      <link>https://arstechnica.com/tech-policy/2026/05/nvidia-ceo-wants-taiwan-to-be-center-of-ai-revolution-not-us/</link>
+      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41617</guid>
+      <pubDate>Thu, 28 May 2026 07:33:42 +0000</pubDate>
+      <description><![CDATA[<p>AI Score: 8.0</p>
+<p>Signal Score: 7.0</p>
+<p>黄仁勋称台湾将成为AI革命中心，英伟达计划把在台年度投入提升至约1500亿美元，并建设台北新总部以强化AI芯片与系统供应链合作。</p>
+<p><strong>Tags:</strong> #NVIDIA, #AI硬件, #半导体供应链, #台湾, #TSMC</p>
+<p><a href="https://arstechnica.com/tech-policy/2026/05/nvidia-ceo-wants-taiwan-to-be-center-of-ai-revolution-not-us/">Read original</a></p>]]></description>
+      <category>NVIDIA</category>
+      <category>AI硬件</category>
+      <category>半导体供应链</category>
+      <category>台湾</category>
+      <category>TSMC</category>
     </item>
     <item>
-      <title>[信号 6.0] 彭博称中国延后空客入境审批</title>
-      <link>https://www.reuters.com/world/asia-pacific/china-stalls-airbus-approvals-pressure-europe-homegrown-chinese-jets-bloomberg-2026-05-27/</link>
-      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41593</guid>
-      <pubDate>Wed, 27 May 2026 06:26:59 +0000</pubDate>
-      <description><![CDATA[<p>AI Score: 7.0</p>
-<p>Signal Score: 6.0</p>
-<p>报道称中国推迟部分空客飞机交付审批，以施压欧洲加快对C919的适航认证。</p>
-<p><strong>Tags:</strong> #Aviation, #Regulation, #Airbus, #C919, #Geopolitics</p>
-<p><a href="https://www.reuters.com/world/asia-pacific/china-stalls-airbus-approvals-pressure-europe-homegrown-chinese-jets-bloomberg-2026-05-27/">Read original</a></p>]]></description>
-      <category>Aviation</category>
-      <category>Regulation</category>
-      <category>Airbus</category>
-      <category>C919</category>
-      <category>Geopolitics</category>
+      <title>[信号 7.0] 中国将为人形机器人分配数字 ID</title>
+      <link>https://www.scmp.com/tech/policy/article/3354747/china-give-every-humanoid-robot-digital-id-push-boost-industry-standards</link>
+      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41619</guid>
+      <pubDate>Thu, 28 May 2026 09:08:02 +0000</pubDate>
+      <description><![CDATA[<p>AI Score: 8.0</p>
+<p>Signal Score: 7.0</p>
+<p>中国将通过国家级平台为国内制造的AI双足人形机器人分配唯一数字ID，用于生产到回收的全流程追踪与风险监测，并推动行业标准化。</p>
+<p><strong>Tags:</strong> #robotics, #policy-regulation, #industry-standards, #traceability, #china</p>
+<p><a href="https://www.scmp.com/tech/policy/article/3354747/china-give-every-humanoid-robot-digital-id-push-boost-industry-standards">Read original</a></p>]]></description>
+      <category>robotics</category>
+      <category>policy-regulation</category>
+      <category>industry-standards</category>
+      <category>traceability</category>
+      <category>china</category>
     </item>
     <item>
-      <title>[信号 6.0] 华为发表“韬定律”：以时间缩微替代几何缩微，探索半导体新路径  近日在上海举行的 2026 国际电路与系统研讨会上，华为发表“韬定律”，提出以“时间缩微”替代“</title>
-      <link>https://t.me/zaihuapd/41597</link>
-      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41597</guid>
-      <pubDate>Wed, 27 May 2026 09:00:00 +0000</pubDate>
-      <description><![CDATA[<p>AI Score: 7.0</p>
-<p>Signal Score: 6.0</p>
-<p>华为在会议上提出以“时间缩微”替代“几何缩微”的“韬定律”，宣称已据此量产数百款芯片并将推出逻辑折叠的新麒麟芯片，目标在2031年达到相当于1.4nm密度水平。</p>
-<p><strong>Tags:</strong> #semiconductors, #Moore&#x27;s law, #chip design, #Huawei, #technology roadmap</p>
-<p><a href="https://t.me/zaihuapd/41597">Read original</a></p>]]></description>
+      <title>[信号 7.0] 比亚迪发布 4nm 智驾芯片“璇玑 A3”</title>
+      <link>https://finance.sina.com.cn/roll/2026-05-28/doc-inhznenn1371824.shtml</link>
+      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41623</guid>
+      <pubDate>Thu, 28 May 2026 13:01:59 +0000</pubDate>
+      <description><![CDATA[<p>AI Score: 8.0</p>
+<p>Signal Score: 7.0</p>
+<p>比亚迪在发布会上推出并宣布已规模量产4nm智驾芯片“璇玑A3”，称可支持L3/L4自动驾驶且三芯片合计算力超过2100 TOPS。</p>
+<p><strong>Tags:</strong> #automotive-ai-chips, #autonomous-driving, #semiconductors, #BYD, #edge-compute</p>
+<p><a href="https://finance.sina.com.cn/roll/2026-05-28/doc-inhznenn1371824.shtml">Read original</a></p>]]></description>
+      <category>automotive-ai-chips</category>
+      <category>autonomous-driving</category>
       <category>semiconductors</category>
-      <category>Moore&#x27;s law</category>
-      <category>chip design</category>
-      <category>Huawei</category>
-      <category>technology roadmap</category>
+      <category>BYD</category>
+      <category>edge-compute</category>
     </item>
     <item>
-      <title>[信号 6.0] 加州拟豁免开源系统遵守年龄验证法</title>
-      <link>https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260AB1043</link>
-      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41602</guid>
-      <pubDate>Wed, 27 May 2026 11:45:00 +0000</pubDate>
+      <title>[信号 7.0] EU fines Temu €200M for allowing sale of illegal products</title>
+      <link>https://www.bbc.co.uk/news/articles/c1k2ydn1rz8o</link>
+      <guid isPermaLink="false">horizon:zh:hackernews:story:48309302</guid>
+      <pubDate>Thu, 28 May 2026 14:18:18 +0000</pubDate>
+      <description><![CDATA[<p>AI Score: 7.0</p>
+<p>Signal Score: 7.0</p>
+<p>The EU fined Temu €200M for allowing illegal products to be sold on its marketplace, sparking discussion about enforcement practicality and parity with other platforms.</p>
+<p><strong>Tags:</strong> #EU regulation, #e-commerce marketplaces, #product compliance, #platform enforcement, #cross-border trade</p>
+<p><a href="https://www.bbc.co.uk/news/articles/c1k2ydn1rz8o">Read original</a></p>]]></description>
+      <category>EU regulation</category>
+      <category>e-commerce marketplaces</category>
+      <category>product compliance</category>
+      <category>platform enforcement</category>
+      <category>cross-border trade</category>
+    </item>
+    <item>
+      <title>[信号 7.0] 📱YouTube 调整 AI 视频标注，未申报内容也可能自动加标签</title>
+      <link>https://blog.youtube/news-and-events/improving-ai-labels-viewers-creators/</link>
+      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41612</guid>
+      <pubDate>Thu, 28 May 2026 04:18:42 +0000</pubDate>
+      <description><![CDATA[<p>AI Score: 7.0</p>
+<p>Signal Score: 7.0</p>
+<p>YouTube将从2026年5月起把逼真AI内容标签放到更显眼位置，并在检测到未申报的显著AI生成/修改时自动标注且部分情况下永久保留。</p>
+<p><strong>Tags:</strong> #YouTube, #AI内容标注, #平台政策, #内容审核, #C2PA</p>
+<p><a href="https://blog.youtube/news-and-events/improving-ai-labels-viewers-creators/">Read original</a></p>]]></description>
+      <category>YouTube</category>
+      <category>AI内容标注</category>
+      <category>平台政策</category>
+      <category>内容审核</category>
+      <category>C2PA</category>
+    </item>
+    <item>
+      <title>[信号 6.0] Building durable workflows on Postgres</title>
+      <link>https://www.dbos.dev/blog/postgres-is-all-you-need-for-durable-execution</link>
+      <guid isPermaLink="false">horizon:zh:hackernews:story:48313530</guid>
+      <pubDate>Thu, 28 May 2026 18:41:46 +0000</pubDate>
+      <description><![CDATA[<p>AI Score: 8.0</p>
+<p>Signal Score: 6.0</p>
+<p>The piece argues that Postgres can serve as the primary substrate for durable workflow execution, prompting community comparison to dedicated workflow engines like Temporal and alternative Postgres-backed implementations.</p>
+<p><strong>Tags:</strong> #postgresql, #distributed-systems, #workflow-orchestration, #durable-execution, #backend-engineering</p>
+<p><a href="https://www.dbos.dev/blog/postgres-is-all-you-need-for-durable-execution">Read original</a></p>]]></description>
+      <category>postgresql</category>
+      <category>distributed-systems</category>
+      <category>workflow-orchestration</category>
+      <category>durable-execution</category>
+      <category>backend-engineering</category>
+    </item>
+    <item>
+      <title>[信号 6.0] 开源项目分享：DOMD：从零自研渲染引擎的 Markdown 所见即所得编辑器（开源 / 本地优先 / 20 KB 内核）</title>
+      <link>https://github.com/do-md/domd</link>
+      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41614</guid>
+      <pubDate>Thu, 28 May 2026 05:48:42 +0000</pubDate>
       <description><![CDATA[<p>AI Score: 7.0</p>
 <p>Signal Score: 6.0</p>
-<p>加州拟通过 AB 1856 修正案调整 AB 1043 定义，可能豁免可自由复制/再分发/修改的开源操作系统免于年龄验证要求，而部分商业化平台仍可能受约束。</p>
-<p><strong>Tags:</strong> #Regulation, #Open Source, #Linux, #Age Verification, #Public Policy</p>
-<p><a href="https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260AB1043">Read original</a></p>]]></description>
-      <category>Regulation</category>
-      <category>Open Source</category>
-      <category>Linux</category>
-      <category>Age Verification</category>
-      <category>Public Policy</category>
+<p>DOMD 是一个本地优先、内核约 20KB 的开源 Markdown 所见即所得编辑器，基于自研渲染引擎并提供 Web/Tauri 原生版与可用于 AI 流式注入的 CLI。</p>
+<p><strong>Tags:</strong> #markdown, #wysiwyg-editor, #rendering-engine, #local-first, #tauri</p>
+<p><a href="https://github.com/do-md/domd">Read original</a></p>]]></description>
+      <category>markdown</category>
+      <category>wysiwyg-editor</category>
+      <category>rendering-engine</category>
+      <category>local-first</category>
+      <category>tauri</category>
     </item>
     <item>
-      <title>[信号 5.0] What Apple and Google are doing to push notifications</title>
-      <link>https://www.jacquescorbytuech.com/writing/what-apple-and-google-are-doing-your-push-notifications</link>
-      <guid isPermaLink="false">horizon:zh:hackernews:story:48299220</guid>
-      <pubDate>Wed, 27 May 2026 19:24:10 +0000</pubDate>
+      <title>[信号 6.0] 高通与字节跳动达成 AI 芯片合作，字节跳动将采购数百万颗定制 ASIC  据消息人士透露，高通已与字节跳动就 AI ASIC 芯片达成合作协议，字节跳动将采购</title>
+      <link>https://t.me/zaihuapd/41616</link>
+      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41616</guid>
+      <pubDate>Thu, 28 May 2026 07:09:12 +0000</pubDate>
       <description><![CDATA[<p>AI Score: 7.0</p>
-<p>Signal Score: 5.0</p>
-<p>The piece examines how Apple and Google’s platform policies and mechanisms are evolving to limit abusive push notifications and steer notifications toward higher-signal, user-respecting use cases.</p>
-<p><strong>Tags:</strong> #mobile, #push-notifications, #privacy, #platform-policy, #user-experience</p>
-<p><a href="https://www.jacquescorbytuech.com/writing/what-apple-and-google-are-doing-your-push-notifications">Read original</a></p>]]></description>
-      <category>mobile</category>
-      <category>push-notifications</category>
+<p>Signal Score: 6.0</p>
+<p>消息称高通与字节跳动达成 AI 定制 ASIC 合作，字节跳动计划采购数百万颗芯片以支撑其 AI 算力需求并推动内部设计量产化。</p>
+<p><strong>Tags:</strong> #AI芯片, #ASIC, #高通, #字节跳动, #算力基础设施</p>
+<p><a href="https://t.me/zaihuapd/41616">Read original</a></p>]]></description>
+      <category>AI芯片</category>
+      <category>ASIC</category>
+      <category>高通</category>
+      <category>字节跳动</category>
+      <category>算力基础设施</category>
+    </item>
+    <item>
+      <title>[信号 6.0] 索尼发布 Bravia 9 II 与 7 II，首次将独立 RGB LED 背光带入消费电视</title>
+      <link>https://www.flatpanelshd.com/news.php?subaction=showfull&amp;amp;id=1779897602</link>
+      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41622</guid>
+      <pubDate>Thu, 28 May 2026 12:15:10 +0000</pubDate>
+      <description><![CDATA[<p>AI Score: 7.0</p>
+<p>Signal Score: 6.0</p>
+<p>索尼发布2026年Bravia 9 II与7 II旗舰液晶电视，采用“True RGB”独立RGB LED背光以提升亮度与色彩体积，并覆盖50-115英寸含首个115英寸机型。</p>
+<p><strong>Tags:</strong> #Display Technology, #TV Hardware, #RGB LED Backlight, #Mini LED, #Sony</p>
+<p><a href="https://www.flatpanelshd.com/news.php?subaction=showfull&amp;amp;id=1779897602">Read original</a></p>]]></description>
+      <category>Display Technology</category>
+      <category>TV Hardware</category>
+      <category>RGB LED Backlight</category>
+      <category>Mini LED</category>
+      <category>Sony</category>
+    </item>
+    <item>
+      <title>[信号 6.0] 美司法部要求 Reddit 和 X 提供批评 ICE 账号信息</title>
+      <link>https://www.bloomberg.com/news/articles/2026-05-28/trump-s-doj-ramps-up-probes-of-anonymous-ice-critics-with-x-reddit-subpoenas</link>
+      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41624</guid>
+      <pubDate>Thu, 28 May 2026 14:22:59 +0000</pubDate>
+      <description><![CDATA[<p>AI Score: 7.0</p>
+<p>Signal Score: 6.0</p>
+<p>美国司法部据称以刑事调查为由向 Reddit 和 X 发送大陪审团传票，要求提供批评 ICE 的匿名账号个人与金融信息，相关用户正寻求法院撤销传票。</p>
+<p><strong>Tags:</strong> #privacy, #law-enforcement, #social-media, #free-speech, #legal</p>
+<p><a href="https://www.bloomberg.com/news/articles/2026-05-28/trump-s-doj-ramps-up-probes-of-anonymous-ice-critics-with-x-reddit-subpoenas">Read original</a></p>]]></description>
       <category>privacy</category>
-      <category>platform-policy</category>
-      <category>user-experience</category>
+      <category>law-enforcement</category>
+      <category>social-media</category>
+      <category>free-speech</category>
+      <category>legal</category>
     </item>
     <item>
-      <title>[信号 4.0] Mini Micro Fantasy Computer</title>
-      <link>https://miniscript.org/MiniMicro/index.html#about</link>
-      <guid isPermaLink="false">horizon:zh:hackernews:story:48291947</guid>
-      <pubDate>Wed, 27 May 2026 09:56:02 +0000</pubDate>
+      <title>[信号 4.0] Various LLM Smells</title>
+      <link>https://shvbsle.in/various-llm-smells/</link>
+      <guid isPermaLink="false">horizon:zh:hackernews:story:48313810</guid>
+      <pubDate>Thu, 28 May 2026 19:02:18 +0000</pubDate>
       <description><![CDATA[<p>AI Score: 7.0</p>
 <p>Signal Score: 4.0</p>
-<p>Mini Micro is a “fantasy computer” environment built around MiniScript, aiming to provide a constrained, understandable computing platform for learning and experimentation.</p>
-<p><strong>Tags:</strong> #fantasy-computer, #programming-languages, #education, #emulation, #retrocomputing</p>
-<p><a href="https://miniscript.org/MiniMicro/index.html#about">Read original</a></p>]]></description>
-      <category>fantasy-computer</category>
-      <category>programming-languages</category>
-      <category>education</category>
-      <category>emulation</category>
-      <category>retrocomputing</category>
+<p>A post and discussion catalog common stylistic “smells” that reveal LLM-generated text and debate how to use LLMs to improve writing without adopting homogenized phrasing.</p>
+<p><strong>Tags:</strong> #LLMs, #AI-writing, #prompting, #style-and-linguistics, #Hacker-News</p>
+<p><a href="https://shvbsle.in/various-llm-smells/">Read original</a></p>]]></description>
+      <category>LLMs</category>
+      <category>AI-writing</category>
+      <category>prompting</category>
+      <category>style-and-linguistics</category>
+      <category>Hacker-News</category>
     </item>
     <item>
-      <title>[信号 4.0] Private equity bought America&#x27;s essential services</title>
-      <link>https://rubbishtalk.com/economy/how-private-equity-bought-americas-essential-services/</link>
-      <guid isPermaLink="false">horizon:zh:hackernews:story:48292941</guid>
-      <pubDate>Wed, 27 May 2026 12:00:53 +0000</pubDate>
+      <title>[信号 4.0] Show HN: Continue? Y/N: A 60-second game about AI agent permission fatigue</title>
+      <link>https://llmgame.scalex.dev/</link>
+      <guid isPermaLink="false">horizon:zh:hackernews:story:48308376</guid>
+      <pubDate>Thu, 28 May 2026 13:02:00 +0000</pubDate>
       <description><![CDATA[<p>AI Score: 7.0</p>
 <p>Signal Score: 4.0</p>
-<p>An article and large HN discussion argue that private equity has increasingly acquired and financially engineered essential U.S. services, reshaping incentives and outcomes for consumers, workers, and pension systems.</p>
-<p><strong>Tags:</strong> #private-equity, #political-economy, #regulation, #public-services, #finance</p>
-<p><a href="https://rubbishtalk.com/economy/how-private-equity-bought-americas-essential-services/">Read original</a></p>]]></description>
-      <category>private-equity</category>
-      <category>political-economy</category>
-      <category>regulation</category>
-      <category>public-services</category>
-      <category>finance</category>
+<p>A 60-second game simulating AI agent permission prompts to highlight how users can make unsafe choices under time pressure and prompt fatigue.</p>
+<p><strong>Tags:</strong> #AI-agents, #security, #human-factors, #developer-tools, #HCI</p>
+<p><a href="https://llmgame.scalex.dev/">Read original</a></p>]]></description>
+      <category>AI-agents</category>
+      <category>security</category>
+      <category>human-factors</category>
+      <category>developer-tools</category>
+      <category>HCI</category>
     </item>
   </channel>
 </rss>
