@@ -1,473 +1,275 @@
 {
-  "date": "2026-05-28",
+  "date": "2026-05-29",
   "language": "zh",
   "opportunities": [
     {
-      "id": "telegram:zaihuapd:41595",
-      "title": "7-Zip 高危漏洞被公开，通过漏洞可执行任意代码或致应用程序崩溃",
-      "url": "https://socprime.com/blog/cve-2026-48095-7-zip-heap-overflow-flaw/",
+      "id": "hackernews:story:48313048",
+      "title": "Anthropic raises $65B in Series H funding at $965B post-money valuation",
+      "url": "https://www.anthropic.com/news/series-h",
+      "source_type": "hackernews",
+      "ai_score": 9.0,
+      "signal_score": 8.0,
+      "signal_reason": "Observable facts indicate material changes in market conditions: a very large financing round at near-trillion valuation and publicly stated run-rate revenue growth (from $30B to $47B within weeks/months per linked quotes), alongside high community attention suggesting broad downstream relevance, though figures are self-reported and \"run-rate\" is not the same as realized revenue.",
+      "capability_delta": "",
+      "assessment": {},
+      "tags": [
+        "AI",
+        "Funding",
+        "Anthropic",
+        "Market dynamics",
+        "Enterprise AI"
+      ]
+    },
+    {
+      "id": "telegram:zaihuapd:41609",
+      "title": "♻️ 黄仁勋：英伟达已基本放弃中国 AI 芯片市场  Nvidia CEO 黄仁勋表示，受美国出口管制影响，Nvidia 已\"基本放弃\"中国 AI 芯片市场，将",
+      "url": "https://t.me/zaihuapd/41609",
       "source_type": "telegram",
       "ai_score": 8.0,
       "signal_score": 8.0,
-      "signal_reason": "可观察事实显示存在明确的高危 RCE/DoS 攻击路径（特制压缩文件+社会工程），并且官方已发布修复版本（26.01），会直接驱动补丁升级、漏洞扫描与安全加固等实际行动。",
+      "signal_reason": "可观察事实显示政策约束已实质性改变英伟达在中国的可供给能力（需许可证且“不要抱期望”），并明确影响其收入结构（曾占数据中心收入至少五分之一）与竞争格局（份额转向华为等本土厂商），属于市场条件与供给边界的实质变化。",
       "capability_delta": "",
       "assessment": {},
       "tags": [
-        "security",
-        "vulnerability",
-        "7-zip",
-        "CVE",
-        "RCE"
+        "NVIDIA",
+        "Export Controls",
+        "AI Chips",
+        "China Tech",
+        "Semiconductors"
       ]
     },
     {
-      "id": "telegram:zaihuapd:41591",
-      "title": "Google 强推 AI 搜索后，DuckDuckGo 安装量一周涨三成",
-      "url": "https://techcrunch.com/2026/05/26/duckduckgo-installs-are-up-30-as-users-reject-being-force-fed-googles-ai-search/",
-      "source_type": "telegram",
-      "ai_score": 7.0,
-      "signal_score": 8.0,
-      "signal_reason": "可观测指标显示短期市场行为变化：美国应用安装量周环比+18.1%、峰值+30.5%，iOS 均值+33%且峰值接近70%，并且“关闭所有 AI 功能”页面访问量+22.7%，表明用户对非 AI 搜索的需求与分流在统计期内明显上升。",
-      "capability_delta": "",
-      "assessment": {},
-      "tags": [
-        "Search",
-        "Generative AI",
-        "Privacy",
-        "Consumer Apps",
-        "Market Trends"
-      ]
-    },
-    {
-      "id": "telegram:zaihuapd:41594",
-      "title": "微信小游戏月活跃用户超过 5 亿",
-      "url": "https://36kr.com/newsflashes/3827051893740168",
-      "source_type": "telegram",
-      "ai_score": 7.0,
-      "signal_score": 8.0,
-      "signal_reason": "可观测指标显示明确的市场规模与参与者结构变化：MAU超过5亿、互动量超1亿次、开发者群体超50万且大量为小团队，并披露DAU破百万与季度流水破千万产品数量，反映该分发生态的用户触达与变现能力已在规模上被验证。",
-      "capability_delta": "",
-      "assessment": {},
-      "tags": [
-        "WeChat",
-        "Mini-Games",
-        "Mobile Gaming",
-        "Platform Metrics",
-        "China Tech"
-      ]
-    },
-    {
-      "id": "hackernews:story:48299753",
-      "title": "YouTube to automatically label AI-generated videos",
-      "url": "https://blog.youtube/news-and-events/improving-ai-labels-viewers-creators/",
+      "id": "hackernews:story:48311647",
+      "title": "Claude Opus 4.8",
+      "url": "https://www.anthropic.com/news/claude-opus-4-8",
       "source_type": "hackernews",
       "ai_score": 8.0,
       "signal_score": 7.0,
-      "signal_reason": "A major distribution platform is changing enforcement/UX by introducing automatic AI-content labeling, which materially affects content classification and compliance expectations at scale, though specifics on detection accuracy, rollout scope (e.g., music), and enforcement mechanisms remain limited in the provided excerpt.",
-      "capability_delta": "",
-      "assessment": {},
-      "tags": [
-        "synthetic-media",
-        "content-moderation",
-        "platform-policy",
-        "ai-generated-content",
-        "trust-and-safety"
-      ]
-    },
-    {
-      "id": "reddit:subreddit:1tp6pg7",
-      "title": "I ran 8 open-weight models as agents in a persistent MMO for 10 days. Here's the 93k event dataset and some things that I learned",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tp6pg7/i_ran_8_openweight_models_as_agents_in_a/",
-      "source_type": "reddit",
-      "ai_score": 8.0,
-      "signal_score": 7.0,
-      "signal_reason": "Observable new artifacts are shipped: a public Hugging Face dataset, an MIT-licensed SDK and MCP server, and a live spectator portal for a persistent multi-agent testbed—lowering friction to reproduce/extend long-horizon agent evaluations and compare open models under the same environment.",
-      "capability_delta": "",
-      "assessment": {},
-      "tags": [
-        "LLM agents",
-        "agent evaluation",
-        "open-weight models",
-        "datasets",
-        "MCP/agent tooling"
-      ]
-    },
-    {
-      "id": "telegram:zaihuapd:41598",
-      "title": "长鑫科技科创板 IPO 过会，拟募资 295 亿元",
-      "url": "https://static.sse.com.cn/stock/disclosure/announcement/c/202605/000001_20260527_SPLE.pdf",
-      "source_type": "telegram",
-      "ai_score": 8.0,
-      "signal_score": 7.0,
-      "signal_reason": "可观测事实包括：IPO 审核通过与明确募资额（295 亿元）及资金用途（量产线与 DRAM 技术升级/研发），意味着资本与产能/技术投入将提升，但尚未给出具体投产时间表、产能增量或供应/成本边界变化细节。",
-      "capability_delta": "",
-      "assessment": {},
-      "tags": [
-        "semiconductors",
-        "memory",
-        "DRAM",
-        "IPO",
-        "China"
-      ]
-    },
-    {
-      "id": "hackernews:story:48296994",
-      "title": "Canada to order military plane fleet from Sweden in shift from US suppliers",
-      "url": "https://www.theguardian.com/world/2026/may/27/canada-sweden-saab-globaleye-aircraft",
-      "source_type": "hackernews",
-      "ai_score": 7.0,
-      "signal_score": 7.0,
-      "signal_reason": "Observable market-condition change: a national-level procurement award to a non-US supplier, plus evidence cited in comments of long Airbus/Boeing backlogs and US uncertainty around comparable platforms, indicating demand diversion and capacity/availability pressures affecting acquisition timelines.",
-      "capability_delta": "",
-      "assessment": {},
-      "tags": [
-        "defense-procurement",
-        "geopolitics",
-        "aerospace",
-        "supply-chain",
-        "european-defense-industry"
-      ]
-    },
-    {
-      "id": "telegram:zaihuapd:41587",
-      "title": "NASA 公布月球基地建设计划新细节，选定多家公司建造着陆器",
-      "url": "https://www.bbc.com/news/articles/c39228nxyr4o",
-      "source_type": "telegram",
-      "ai_score": 7.0,
-      "signal_score": 7.0,
-      "signal_reason": "可观察到的客观变化是NASA已选定多家公司并授予与月球着陆器、运输车和通信设备相关合同，显示资金与采购落地、供应链需求明确；但整体里程碑（2029/2032）存在被专家质疑的执行不确定性。",
-      "capability_delta": "",
-      "assessment": {},
-      "tags": [
-        "NASA",
-        "Artemis",
-        "Lunar Base",
-        "Commercial Space",
-        "Lunar Lander"
-      ]
-    },
-    {
-      "id": "telegram:zaihuapd:41599",
-      "title": "三星劳资谈判破裂：工会酝酿全面罢工  在历经长达 17 小时的马拉松式谈判后，三星电子与工会的调解最终宣告破裂。",
-      "url": "https://t.me/zaihuapd/41599",
-      "source_type": "telegram",
-      "ai_score": 7.0,
-      "signal_score": 7.0,
-      "signal_reason": "可观察事实包括：官方调解程序结束、工会宣布具体罢工起止时间（18天）与参与规模（已登记4.1万、预计超5万），且涉及芯片部门奖金方案争议；这些信息表明短期生产/交付不确定性上升，但尚未给出对产量、出货或财务影响的量化结果。",
-      "capability_delta": "",
-      "assessment": {},
-      "tags": [
-        "Samsung",
-        "labor-strike",
-        "semiconductors",
-        "supply-chain",
-        "Korea"
-      ]
-    },
-    {
-      "id": "hackernews:story:48291575",
-      "title": "Go: Support for Generic Methods",
-      "url": "https://github.com/golang/go/issues/77273",
-      "source_type": "hackernews",
-      "ai_score": 8.0,
-      "signal_score": 6.0,
-      "signal_reason": "If accepted and shipped, generic methods would materially expand Go's language capabilities and simplify certain API/library designs; however, the linked item is an issue/proposal stage rather than a released change, so market/production impact is not yet concrete.",
-      "capability_delta": "",
-      "assessment": {},
-      "tags": [
-        "golang",
-        "generics",
-        "programming-languages",
-        "language-design",
-        "type-systems"
-      ]
-    },
-    {
-      "id": "reddit:subreddit:1tpaw6x",
-      "title": "AI-generated CUDA kernels silently break training and inference [R]",
-      "url": "https://www.reddit.com/r/MachineLearning/comments/1tpaw6x/aigenerated_cuda_kernels_silently_break_training/",
-      "source_type": "reddit",
-      "ai_score": 8.0,
-      "signal_score": 6.0,
-      "signal_reason": "Observable signal: NVIDIA introduced a new production-kernel benchmark (SOL-ExecBench) and independent testing shows verifier-passing submissions can still fail in real workloads, indicating a measurable gap between benchmark validation and production correctness; however, no evidence here of widespread adoption changes, pricing/access shifts, or a newly enabled workflow beyond heightened need for stronger verification.",
-      "capability_delta": "",
-      "assessment": {},
-      "tags": [
-        "CUDA",
-        "LLM-training",
-        "numerical-stability",
-        "benchmarks",
-        "AI-code-generation"
-      ]
-    },
-    {
-      "id": "rss:simonwillison.net_atom_everything_:-9052882732121821887",
-      "title": "I think Anthropic and OpenAI have found product-market fit",
-      "url": "https://simonwillison.net/2026/May/27/product-market-fit/#atom-everything",
-      "source_type": "rss",
-      "ai_score": 7.0,
-      "signal_score": 6.0,
-      "signal_reason": "Observable signals include a widely-circulated report/rumor of Anthropic nearing a first profitable quarter and multiple accounts of enterprises seeing rapidly increasing LLM bills from staff usage, indicating meaningful spend and potential margin improvement, though profitability and ROI are disputed and not backed by verified numbers in the post.",
+      "signal_reason": "Observable changes include a new Opus 4.8 release, a reported new web-UI toggle to disable adaptive thinking, and a disclosed limited preview of “Claude Mythos” for cybersecurity with an explicit plan for broader release contingent on safeguards—indicating evolving capability/access conditions but not yet a general availability shift for Mythos.",
       "capability_delta": "",
       "assessment": {},
       "tags": [
         "LLMs",
-        "AI economics",
-        "enterprise software",
-        "product-market fit",
-        "OpenAI/Anthropic"
+        "Anthropic-Claude",
+        "model-releases",
+        "AI-safety",
+        "cybersecurity"
       ]
     },
     {
-      "id": "hackernews:story:48293080",
-      "title": "Incident with Pull Requests, Issues, Git Operations and API Requests",
-      "url": "https://www.githubstatus.com/incidents/xy1tt3hs572m",
-      "source_type": "hackernews",
-      "ai_score": 7.0,
-      "signal_score": 6.0,
-      "signal_reason": "Observable facts indicate a reliability/regression event in a widely used platform affecting critical developer workflows and API access, plus community reports of PR state inconsistency; however, it is a transient incident report without evidence of a lasting capability, pricing, or access change.",
+      "id": "telegram:zaihuapd:41617",
+      "title": "黄仁勋称台湾是 AI 革命中心，英伟达计划每年在台湾投入 1500 亿美元",
+      "url": "https://arstechnica.com/tech-policy/2026/05/nvidia-ceo-wants-taiwan-to-be-center-of-ai-revolution-not-us/",
+      "source_type": "telegram",
+      "ai_score": 8.0,
+      "signal_score": 7.0,
+      "signal_reason": "可观察到的信号包括：宣称投入规模显著高于以往、明确的在台新总部项目时间表（今年动工、2030启用）与人员规模（4000人），并点名关键供应链伙伴（台积电、鸿海、纬创、广达），显示供应链与产能/制造协作将继续向台湾集中；但“每年1500亿美元”属于计划/表态，尚未见到公开财务承诺或执行证据支撑更高分。",
       "capability_delta": "",
       "assessment": {},
       "tags": [
-        "github",
-        "devops",
-        "incident-response",
-        "software-reliability",
-        "developer-tools"
-      ]
-    },
-    {
-      "id": "hackernews:story:48289950",
-      "title": "Claude Code as a Daily Driver: Claude.md, Skills, Subagents, Plugins, and MCPs",
-      "url": "https://arps18.github.io/posts/claude-code-mastery/",
-      "source_type": "hackernews",
-      "ai_score": 7.0,
-      "signal_score": 6.0,
-      "signal_reason": "Observable signal is mainly ecosystem/workflow adoption and friction: high engagement and multiple overlapping mechanisms (commands vs skills vs subagents vs plugins vs MCP) indicate active use plus standardization/UX gaps, but there is no single new capability release or quantified cost/latency/access change stated in the item.",
-      "capability_delta": "",
-      "assessment": {},
-      "tags": [
-        "coding-agents",
-        "developer-tools",
-        "llm-tooling",
-        "prompt-engineering",
-        "mcp"
-      ]
-    },
-    {
-      "id": "reddit:subreddit:1tpawlm",
-      "title": "SWE-rebench Leaderboard (March, April and May 2026): GPT-5.5, Opus 4.7, Cursor (Composer 2.5), Kimi K2.6 and More",
-      "url": "https://swe-rebench.com/?insight=may_2026",
-      "source_type": "reddit",
-      "ai_score": 7.0,
-      "signal_score": 6.0,
-      "signal_reason": "Observable signal is a material dataset/measurement update (110 new tasks across multiple months) and imminent expansion to additional model entries (e.g., Gemini Flash 3.5), improving the practical comparability of model performance; however it doesn’t by itself indicate a new capability boundary or major market/access change.",
-      "capability_delta": "",
-      "assessment": {},
-      "tags": [
-        "LLM evaluation",
-        "code generation",
-        "benchmarks",
-        "SWE-bench",
-        "Python"
-      ]
-    },
-    {
-      "id": "reddit:subreddit:1tp0vk1",
-      "title": "Info: Nvidia Cuda 13.3 landed",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tp0vk1/info_nvidia_cuda_133_landed/",
-      "source_type": "reddit",
-      "ai_score": 7.0,
-      "signal_score": 6.0,
-      "signal_reason": "Observable change is a new CUDA toolkit release with stated feature additions (e.g., Green contexts) and quantified matmul speedups on Blackwell/Blackwell Ultra plus community reports of 13.2 bug fixes/compilation improvements; however, reported gains and relevance are hardware-specific and early benchmarks shown are limited/incomplete.",
-      "capability_delta": "",
-      "assessment": {},
-      "tags": [
-        "CUDA",
         "NVIDIA",
-        "GPU-computing",
-        "llama.cpp",
-        "AI-inference"
+        "AI硬件",
+        "半导体供应链",
+        "台湾",
+        "TSMC"
       ]
     },
     {
-      "id": "reddit:subreddit:1toychi",
-      "title": "New DeepSWE benchmark finds Claude Opus cheats",
-      "url": "https://venturebeat.com/technology/deepswe-blows-up-the-ai-coding-leaderboard-crowns-gpt-5-5-and-finds-claude-opus-exploiting-a-benchmark-loophole",
-      "source_type": "reddit",
-      "ai_score": 7.0,
-      "signal_score": 6.0,
-      "signal_reason": "Observable signal is a newly publicized benchmark/leaderboard and a concrete failure mode (solution recovery from git history when prompt/repo mismatch) plus acknowledged methodology limits (LLM analyzer, ~90 reviewed rollouts/model), which may materially affect how results are trusted and compared but does not by itself change model capabilities or access.",
-      "capability_delta": "",
-      "assessment": {},
-      "tags": [
-        "AI evaluation",
-        "code-generation",
-        "benchmarks",
-        "LLM safety",
-        "software-engineering"
-      ]
-    },
-    {
-      "id": "telegram:zaihuapd:41588",
-      "title": "比亚迪副总裁透露公司正开发人形机器人",
-      "url": "https://www.sina.cn/news/detail/5302381073929140.html",
+      "id": "telegram:zaihuapd:41619",
+      "title": "中国将为人形机器人分配数字 ID",
+      "url": "https://www.scmp.com/tech/policy/article/3354747/china-give-every-humanoid-robot-digital-id-push-boost-industry-standards",
       "source_type": "telegram",
-      "ai_score": 7.0,
-      "signal_score": 6.0,
-      "signal_reason": "可观察事实是头部车企确认在研人形机器人，并明确提到潜在自用采购（门店导购）与开放平台合作方向，显示资源投入与潜在部署场景；但尚未披露量产计划、性能/成本、合作细则或正式发布节点，市场条件变化仍不够明确。",
+      "ai_score": 8.0,
+      "signal_score": 7.0,
+      "signal_reason": "可观察事实是政府部门牵头推出全生命周期管理平台与统一编码规则，明确适用对象覆盖制造、服务、销售、用户与回收等链条，意味着合规与数据接入要求可能形成新的行业门槛与工作流变化，但尚未给出强制性范围、落地时间表或具体技术接口细节。",
       "capability_delta": "",
       "assessment": {},
       "tags": [
-        "Humanoid Robots",
-        "Robotics",
-        "BYD",
-        "Manufacturing",
-        "China Tech"
+        "robotics",
+        "policy-regulation",
+        "industry-standards",
+        "traceability",
+        "china"
       ]
     },
     {
-      "id": "telegram:zaihuapd:41590",
-      "title": "字节跳动向 AI 团队发放豆包特殊股票防止人才流失",
-      "url": "https://www.ft.com/content/557561df-4b72-48e8-89cb-239829de694a?syn-25a6b1a6=1",
+      "id": "telegram:zaihuapd:41623",
+      "title": "比亚迪发布 4nm 智驾芯片“璇玑 A3”",
+      "url": "https://finance.sina.com.cn/roll/2026-05-28/doc-inhznenn1371824.shtml",
       "source_type": "telegram",
-      "ai_score": 7.0,
-      "signal_score": 6.0,
-      "signal_reason": "可观察到的事实是字节跳动首次对Seed推出特定低价期权、并出现核心AI人才向腾讯流动，说明大厂在AI用工与激励上的投入与竞争强度上升；但未体现新技术能力、成本/性能边界或市场供给侧的明确改变。",
+      "ai_score": 8.0,
+      "signal_score": 7.0,
+      "signal_reason": "可观的客观信号包括：4nm节点、已开启规模化量产、明确面向L3/L4智驾算力（2100+ TOPS）以及公司自述具备晶圆厂与芯片产品线规模；但缺少可验证的性能/功耗/成本数据与明确量产车型/出货规模，市场条件变化幅度仍不完全可量化。",
       "capability_delta": "",
       "assessment": {},
       "tags": [
-        "ByteDance",
-        "AI人才流动",
-        "股权激励",
-        "中国科技行业",
-        "组织与管理"
-      ]
-    },
-    {
-      "id": "telegram:zaihuapd:41592",
-      "title": "SpaceX 上市在即，与特斯拉合并猜想升温",
-      "url": "https://www.cnbc.com/2026/05/26/spacex-tesla-merger-chatter-reignites-as-musk-rocket-company-nears-ipo.html",
-      "source_type": "telegram",
-      "ai_score": 7.0,
-      "signal_score": 6.0,
-      "signal_reason": "若“约两周后纳斯达克上市、1.25万亿美元估值”属实，这是明确的市场条件变化信号；但合并仅为再度升温的传闻/内部讨论，未见公告、申报或条款等硬证据，因此客观信号中等。",
-      "capability_delta": "",
-      "assessment": {},
-      "tags": [
-        "SpaceX",
-        "Tesla",
-        "IPO",
-        "M&A",
-        "Corporate Governance"
-      ]
-    },
-    {
-      "id": "telegram:zaihuapd:41593",
-      "title": "彭博称中国延后空客入境审批",
-      "url": "https://www.reuters.com/world/asia-pacific/china-stalls-airbus-approvals-pressure-europe-homegrown-chinese-jets-bloomberg-2026-05-27/",
-      "source_type": "telegram",
-      "ai_score": 7.0,
-      "signal_score": 6.0,
-      "signal_reason": "可观察到的事实是监管/审批节奏被用作谈判筹码，可能带来交付时间与市场准入的不确定性变化；但暂无明确量化范围（影响机型/数量/时长）或已落地的新规则与成本变化披露。",
-      "capability_delta": "",
-      "assessment": {},
-      "tags": [
-        "Aviation",
-        "Regulation",
-        "Airbus",
-        "C919",
-        "Geopolitics"
-      ]
-    },
-    {
-      "id": "telegram:zaihuapd:41597",
-      "title": "华为发表“韬定律”：以时间缩微替代几何缩微，探索半导体新路径  近日在上海举行的 2026 国际电路与系统研讨会上，华为发表“韬定律”，提出以“时间缩微”替代“",
-      "url": "https://t.me/zaihuapd/41597",
-      "source_type": "telegram",
-      "ai_score": 7.0,
-      "signal_score": 6.0,
-      "signal_reason": "可观察到的信号包括：公开提出新演进原则、宣称“381款芯片量产”、以及明确的时间表（今年秋季新品、2031年密度目标）与“开放合作”表态；但缺少可验证的技术细节、基准数据和第三方佐证，市场/能力边界变化尚不明确。",
-      "capability_delta": "",
-      "assessment": {},
-      "tags": [
+        "automotive-ai-chips",
+        "autonomous-driving",
         "semiconductors",
-        "Moore's law",
-        "chip design",
-        "Huawei",
-        "technology roadmap"
+        "BYD",
+        "edge-compute"
       ]
     },
     {
-      "id": "telegram:zaihuapd:41602",
-      "title": "加州拟豁免开源系统遵守年龄验证法",
-      "url": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260AB1043",
+      "id": "hackernews:story:48309302",
+      "title": "EU fines Temu €200M for allowing sale of illegal products",
+      "url": "https://www.bbc.co.uk/news/articles/c1k2ydn1rz8o",
+      "source_type": "hackernews",
+      "ai_score": 7.0,
+      "signal_score": 7.0,
+      "signal_reason": "An observable enforcement event (a €200M fine) signals tighter regulatory scrutiny and potential compliance-cost increases for large cross-border marketplaces; the action materially changes risk and operating conditions for affected platforms and sellers in the EU.",
+      "capability_delta": "",
+      "assessment": {},
+      "tags": [
+        "EU regulation",
+        "e-commerce marketplaces",
+        "product compliance",
+        "platform enforcement",
+        "cross-border trade"
+      ]
+    },
+    {
+      "id": "telegram:zaihuapd:41612",
+      "title": "📱YouTube 调整 AI 视频标注，未申报内容也可能自动加标签",
+      "url": "https://blog.youtube/news-and-events/improving-ai-labels-viewers-creators/",
+      "source_type": "telegram",
+      "ai_score": 7.0,
+      "signal_score": 7.0,
+      "signal_reason": "可观察到的平台规则与展示位置在既定日期发生变化（2026年5月），并引入自动检测+自动标注与部分“永久保留”机制（尤其与YouTube AI工具和C2PA元数据绑定），这将实质改变创作者的发布合规流程与内容透明度呈现。",
+      "capability_delta": "",
+      "assessment": {},
+      "tags": [
+        "YouTube",
+        "AI内容标注",
+        "平台政策",
+        "内容审核",
+        "C2PA"
+      ]
+    },
+    {
+      "id": "hackernews:story:48313530",
+      "title": "Building durable workflows on Postgres",
+      "url": "https://www.dbos.dev/blog/postgres-is-all-you-need-for-durable-execution",
+      "source_type": "hackernews",
+      "ai_score": 8.0,
+      "signal_score": 6.0,
+      "signal_reason": "Observable signal is moderate: strong community validation and active debate indicate real interest, but the content does not document a clear capability/cost boundary change (e.g., new major release, benchmarked improvements, pricing/access shifts) beyond proposing/advocating an approach and referencing existing projects.",
+      "capability_delta": "",
+      "assessment": {},
+      "tags": [
+        "postgresql",
+        "distributed-systems",
+        "workflow-orchestration",
+        "durable-execution",
+        "backend-engineering"
+      ]
+    },
+    {
+      "id": "telegram:zaihuapd:41614",
+      "title": "开源项目分享：DOMD：从零自研渲染引擎的 Markdown 所见即所得编辑器（开源 / 本地优先 / 20 KB 内核）",
+      "url": "https://github.com/do-md/domd",
       "source_type": "telegram",
       "ai_score": 7.0,
       "signal_score": 6.0,
-      "signal_reason": "若修正案通过，将在法规层面改变开源操作系统提供方的合规边界与成本结构（免除年龄验证义务），且有明确时间表（6 月投票、原法案 2027-01 生效）；但结果不确定、覆盖范围仍依赖最终法条与适用解释。",
+      "signal_reason": "可观察到的能力与分发要素较明确：开源仓库、Web 拖入即用、本地不上传、提供 macOS 原生版与系统级 Quick Look 扩展，以及 domd-cli 支持外部/agent 驱动编辑与流式渲染；但缺少用户增长、商业化、性能对比与生态集成落地等外部证据，市场条件变化信号中等。",
       "capability_delta": "",
       "assessment": {},
       "tags": [
-        "Regulation",
-        "Open Source",
-        "Linux",
-        "Age Verification",
-        "Public Policy"
+        "markdown",
+        "wysiwyg-editor",
+        "rendering-engine",
+        "local-first",
+        "tauri"
       ]
     },
     {
-      "id": "hackernews:story:48299220",
-      "title": "What Apple and Google are doing to push notifications",
-      "url": "https://www.jacquescorbytuech.com/writing/what-apple-and-google-are-doing-your-push-notifications",
-      "source_type": "hackernews",
+      "id": "telegram:zaihuapd:41616",
+      "title": "高通与字节跳动达成 AI 芯片合作，字节跳动将采购数百万颗定制 ASIC  据消息人士透露，高通已与字节跳动就 AI ASIC 芯片达成合作协议，字节跳动将采购",
+      "url": "https://t.me/zaihuapd/41616",
+      "source_type": "telegram",
       "ai_score": 7.0,
-      "signal_score": 5.0,
-      "signal_reason": "Observable signal is moderate: platform enforcement and controls on notification types meaningfully affect developer workflows and marketing/engagement practices, but the item does not indicate a specific new capability release, pricing shift, or market-access change beyond ongoing tightening and guidance.",
+      "signal_score": 6.0,
+      "signal_reason": "可观察到的信号是：报道指向大规模采购（数百万颗）与高通面向超大规模客户交付首款 ASIC 的时间线；但尚无官方确认、产品规格/交付/价格等关键事实，商业与技术边界变化未被公开证实。",
       "capability_delta": "",
       "assessment": {},
       "tags": [
-        "mobile",
-        "push-notifications",
+        "AI芯片",
+        "ASIC",
+        "高通",
+        "字节跳动",
+        "算力基础设施"
+      ]
+    },
+    {
+      "id": "telegram:zaihuapd:41622",
+      "title": "索尼发布 Bravia 9 II 与 7 II，首次将独立 RGB LED 背光带入消费电视",
+      "url": "https://www.flatpanelshd.com/news.php?subaction=showfull&amp;id=1779897602",
+      "source_type": "telegram",
+      "ai_score": 7.0,
+      "signal_score": 6.0,
+      "signal_reason": "可观察到的变化是独立RGB背光技术进入消费级量产电视、覆盖多尺寸并宣称达到接近4000尼特与高色域；但对生态与工作流的直接影响有限，且接口与格式支持（仅两路HDMI 2.1、暂不支持杜比视界2）限制了部分用户侧增量。",
+      "capability_delta": "",
+      "assessment": {},
+      "tags": [
+        "Display Technology",
+        "TV Hardware",
+        "RGB LED Backlight",
+        "Mini LED",
+        "Sony"
+      ]
+    },
+    {
+      "id": "telegram:zaihuapd:41624",
+      "title": "美司法部要求 Reddit 和 X 提供批评 ICE 账号信息",
+      "url": "https://www.bloomberg.com/news/articles/2026-05-28/trump-s-doj-ramps-up-probes-of-anonymous-ice-critics-with-x-reddit-subpoenas",
+      "source_type": "telegram",
+      "ai_score": 7.0,
+      "signal_score": 6.0,
+      "signal_reason": "可观察到执法手段从行政传唤升级为大陪审团传票并指向获取姓名、住址和银行信息，表明平台合规与用户隐私保护面临更强约束与潜在流程变化，但尚未披露具体罪名或形成明确的新法规/行业标准变化。",
+      "capability_delta": "",
+      "assessment": {},
+      "tags": [
         "privacy",
-        "platform-policy",
-        "user-experience"
+        "law-enforcement",
+        "social-media",
+        "free-speech",
+        "legal"
       ]
     },
     {
-      "id": "hackernews:story:48291947",
-      "title": "Mini Micro Fantasy Computer",
-      "url": "https://miniscript.org/MiniMicro/index.html#about",
+      "id": "hackernews:story:48313810",
+      "title": "Various LLM Smells",
+      "url": "https://shvbsle.in/various-llm-smells/",
       "source_type": "hackernews",
       "ai_score": 7.0,
       "signal_score": 4.0,
-      "signal_reason": "Observable signals are mainly community interest and discussion; the content does not present clear evidence of a major capability/cost/access change, new distribution channel, or market-condition shift beyond a niche tool being showcased.",
+      "signal_reason": "Observable signal is mainly community attention and shared heuristics; it does not indicate a new capability, release, cost shift, or access change—just increased awareness of detectable LLM stylistic patterns.",
       "capability_delta": "",
       "assessment": {},
       "tags": [
-        "fantasy-computer",
-        "programming-languages",
-        "education",
-        "emulation",
-        "retrocomputing"
+        "LLMs",
+        "AI-writing",
+        "prompting",
+        "style-and-linguistics",
+        "Hacker-News"
       ]
     },
     {
-      "id": "hackernews:story:48292941",
-      "title": "Private equity bought America's essential services",
-      "url": "https://rubbishtalk.com/economy/how-private-equity-bought-americas-essential-services/",
+      "id": "hackernews:story:48308376",
+      "title": "Show HN: Continue? Y/N: A 60-second game about AI agent permission fatigue",
+      "url": "https://llmgame.scalex.dev/",
       "source_type": "hackernews",
       "ai_score": 7.0,
       "signal_score": 4.0,
-      "signal_reason": "Observable signals show strong attention and discussion but no specific new technical capability, market access change, policy action, or quantified shift in costs/latency/reliability—primarily analysis/commentary rather than a discrete change in conditions.",
+      "signal_reason": "Observable signal is primarily community interest in a conceptual demo (high engagement) rather than a new capability, standard, or measurable change in cost/latency/access; no clear evidence of market-condition shift beyond awareness and discussion.",
       "capability_delta": "",
       "assessment": {},
       "tags": [
-        "private-equity",
-        "political-economy",
-        "regulation",
-        "public-services",
-        "finance"
+        "AI-agents",
+        "security",
+        "human-factors",
+        "developer-tools",
+        "HCI"
       ]
     }
   ]
