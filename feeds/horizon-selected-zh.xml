@@ -4,279 +4,231 @@
     <title>Horizon Personal Feed - ZH</title>
     <link>https://felicia7c.github.io/newsfeed</link>
     <description>AI-filtered stories from Horizon</description>
-    <lastBuildDate>2026-05-30</lastBuildDate>
+    <lastBuildDate>2026-05-31</lastBuildDate>
     <atom:link href="https://felicia7c.github.io/newsfeed/feeds/horizon-selected-zh.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>[信号 8.0] 蓝色起源新格伦火箭静态点火测试爆炸，NASA 登月计划受重创</title>
-      <link>https://arstechnica.com/space/2026/05/blue-origins-new-glenn-rocket-just-exploded-during-a-static-fire-test/</link>
-      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41643</guid>
-      <pubDate>Fri, 29 May 2026 11:08:21 +0000</pubDate>
-      <description><![CDATA[<p>AI Score: 9.0</p>
-<p>Signal Score: 8.0</p>
-<p>蓝色起源新格伦火箭在卡纳维拉尔角静态点火测试中爆炸导致火箭与地面设施报废，可能显著推迟Project Kuiper发射与NASA登月相关任务。</p>
-<p><strong>Tags:</strong> #Blue Origin, #New Glenn, #Spaceflight, #NASA Artemis, #Rocket engines</p>
-<p><a href="https://arstechnica.com/space/2026/05/blue-origins-new-glenn-rocket-just-exploded-during-a-static-fire-test/">Read original</a></p>]]></description>
-      <category>Blue Origin</category>
-      <category>New Glenn</category>
-      <category>Spaceflight</category>
-      <category>NASA Artemis</category>
-      <category>Rocket engines</category>
-    </item>
-    <item>
-      <title>[信号 8.0] 中国首次将 9 款国产 AI 芯片纳入安可安全采购目录</title>
-      <link>https://www.tomshardware.com/tech-industry/semiconductors/china-certifies-nine-domestic-ai-chips-for-government-procurement</link>
-      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41636</guid>
-      <pubDate>Fri, 29 May 2026 08:41:03 +0000</pubDate>
+      <title>[信号 8.0] 🤖 Codex 现已开放跨设备远程控制，强化协作与搜索功能</title>
+      <link>https://developers.openai.com/codex/changelog#codex-2026-05-28-app</link>
+      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41656</guid>
+      <pubDate>Sat, 30 May 2026 10:37:37 +0000</pubDate>
       <description><![CDATA[<p>AI Score: 8.0</p>
 <p>Signal Score: 8.0</p>
-<p>中国首次将9款国产AI训练与推理芯片纳入安可安全采购目录，作为政府机构和国企采购依据，有效期三年。</p>
-<p><strong>Tags:</strong> #AI芯片, #中国半导体, #政府采购, #安全认证, #算力基础设施</p>
-<p><a href="https://www.tomshardware.com/tech-industry/semiconductors/china-certifies-nine-domestic-ai-chips-for-government-procurement">Read original</a></p>]]></description>
-      <category>AI芯片</category>
-      <category>中国半导体</category>
-      <category>政府采购</category>
-      <category>安全认证</category>
-      <category>算力基础设施</category>
+<p>Codex 更新增加 Windows 桌面前台操作与跨设备远程控制，并改进统计展示、多线程协作与对话/分支搜索能力。</p>
+<p><strong>Tags:</strong> #OpenAI Codex, #Remote Control, #Desktop Automation, #Developer Tools, #Collaboration</p>
+<p><a href="https://developers.openai.com/codex/changelog#codex-2026-05-28-app">Read original</a></p>]]></description>
+      <category>OpenAI Codex</category>
+      <category>Remote Control</category>
+      <category>Desktop Automation</category>
+      <category>Developer Tools</category>
+      <category>Collaboration</category>
     </item>
     <item>
-      <title>[信号 8.0] SpaceX 获 41.6 亿美元美军卫星导弹追踪合同</title>
-      <link>https://www.bloomberg.com/news/articles/2026-05-29/spacex-wins-4-billion-contract-for-us-golden-dome-satellites</link>
-      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41647</guid>
-      <pubDate>Sat, 30 May 2026 01:53:12 +0000</pubDate>
-      <description><![CDATA[<p>AI Score: 8.0</p>
-<p>Signal Score: 8.0</p>
-<p>SpaceX赢得美国太空军41.6亿美元合同，为“Golden Dome”计划建设天基传感与处理体系以在轨识别和跟踪飞机、导弹等空中威胁。</p>
-<p><strong>Tags:</strong> #SpaceX, #Defense Space, #Satellite Surveillance, #Missile Tracking, #US Space Force</p>
-<p><a href="https://www.bloomberg.com/news/articles/2026-05-29/spacex-wins-4-billion-contract-for-us-golden-dome-satellites">Read original</a></p>]]></description>
-      <category>SpaceX</category>
-      <category>Defense Space</category>
-      <category>Satellite Surveillance</category>
-      <category>Missile Tracking</category>
-      <category>US Space Force</category>
-    </item>
-    <item>
-      <title>[信号 7.0] vllm-project/vllm released v0.22.0</title>
-      <link>https://github.com/vllm-project/vllm/releases/tag/v0.22.0</link>
-      <guid isPermaLink="false">horizon:zh:github:release:331396286</guid>
-      <pubDate>Fri, 29 May 2026 10:28:13 +0000</pubDate>
+      <title>[信号 7.0] OpenRouter raises $113M Series B</title>
+      <link>https://openrouter.ai/announcements/series-b</link>
+      <guid isPermaLink="false">horizon:zh:hackernews:story:48338660</guid>
+      <pubDate>Sat, 30 May 2026 17:27:28 +0000</pubDate>
       <description><![CDATA[<p>AI Score: 8.0</p>
 <p>Signal Score: 7.0</p>
-<p>vLLM v0.22.0 ships major DeepSeek V4 improvements, advances Model Runner V2 toward being the default for some models, and adds an experimental Rust frontend integration.</p>
-<p><strong>Tags:</strong> #vLLM, #LLM Inference, #Model Serving, #CUDA/ROCm, #Mixture-of-Experts</p>
-<p><a href="https://github.com/vllm-project/vllm/releases/tag/v0.22.0">Read original</a></p>]]></description>
-      <category>vLLM</category>
-      <category>LLM Inference</category>
-      <category>Model Serving</category>
-      <category>CUDA/ROCm</category>
-      <category>Mixture-of-Experts</category>
-    </item>
-    <item>
-      <title>[信号 7.0] 三星电子市值突破 1 万亿美元，韩国股指首破 7000 点  在全球 AI 硬件需求激增的强烈催化下，存储芯片板块正上演史诗级狂飙。</title>
-      <link>https://t.me/zaihuapd/41635</link>
-      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41635</guid>
-      <pubDate>Fri, 29 May 2026 07:16:48 +0000</pubDate>
-      <description><![CDATA[<p>AI Score: 7.0</p>
-<p>Signal Score: 7.0</p>
-<p>在AI硬件需求激增背景下，三星电子股价大涨、市值首破1万亿美元并带动韩国股指创历史新高，存储芯片板块显著走强。</p>
-<p><strong>Tags:</strong> #Semiconductors, #Memory Chips, #AI Hardware, #Samsung, #Markets</p>
-<p><a href="https://t.me/zaihuapd/41635">Read original</a></p>]]></description>
-      <category>Semiconductors</category>
-      <category>Memory Chips</category>
-      <category>AI Hardware</category>
-      <category>Samsung</category>
-      <category>Markets</category>
-    </item>
-    <item>
-      <title>[信号 6.0] SQLite is all you need for durable workflows</title>
-      <link>https://obeli.sk/blog/sqlite-is-all-you-need-for-durable-workflows/</link>
-      <guid isPermaLink="false">horizon:zh:hackernews:story:48326802</guid>
-      <pubDate>Fri, 29 May 2026 17:54:50 +0000</pubDate>
-      <description><![CDATA[<p>AI Score: 7.0</p>
-<p>Signal Score: 6.0</p>
-<p>The article contends that SQLite can serve as a sufficient persistence layer for durable workflow systems, challenging the assumption that heavier database/server infrastructure is always required.</p>
-<p><strong>Tags:</strong> #sqlite, #workflow-orchestration, #durability, #distributed-systems, #database-engineering</p>
-<p><a href="https://obeli.sk/blog/sqlite-is-all-you-need-for-durable-workflows/">Read original</a></p>]]></description>
-      <category>sqlite</category>
-      <category>workflow-orchestration</category>
-      <category>durability</category>
-      <category>distributed-systems</category>
-      <category>database-engineering</category>
-    </item>
-    <item>
-      <title>[信号 6.0] Notes from the Mistral AI Now Summit</title>
-      <link>https://koenvangilst.nl/lab/mistral-ai-now-summit</link>
-      <guid isPermaLink="false">horizon:zh:hackernews:story:48325340</guid>
-      <pubDate>Fri, 29 May 2026 16:22:01 +0000</pubDate>
-      <description><![CDATA[<p>AI Score: 7.0</p>
-<p>Signal Score: 6.0</p>
-<p>Notes from the Mistral AI Now Summit, with community discussion focusing on Mistral’s on-prem/European-regulated-industry positioning and concerns that its model quality is falling behind leading small/reasoning models.</p>
-<p><strong>Tags:</strong> #LLMs, #Mistral, #On-prem AI, #Regulated industries, #Model evaluation</p>
-<p><a href="https://koenvangilst.nl/lab/mistral-ai-now-summit">Read original</a></p>]]></description>
-      <category>LLMs</category>
-      <category>Mistral</category>
-      <category>On-prem AI</category>
-      <category>Regulated industries</category>
-      <category>Model evaluation</category>
-    </item>
-    <item>
-      <title>[信号 6.0] MCP is dead?</title>
-      <link>https://www.quandri.io/engineering-blog/mcp-is-dead</link>
-      <guid isPermaLink="false">horizon:zh:hackernews:story:48330436</guid>
-      <pubDate>Fri, 29 May 2026 22:56:49 +0000</pubDate>
-      <description><![CDATA[<p>AI Score: 7.0</p>
-<p>Signal Score: 6.0</p>
-<p>A blog post questioning MCP’s viability sparked a large HN discussion where practitioners argue MCP remains widely adopted and that the key value is ecosystem/service discovery rather than the specific transport protocol.</p>
-<p><strong>Tags:</strong> #MCP, #LLM agents, #protocols, #tool integration, #developer platforms</p>
-<p><a href="https://www.quandri.io/engineering-blog/mcp-is-dead">Read original</a></p>]]></description>
-      <category>MCP</category>
-      <category>LLM agents</category>
-      <category>protocols</category>
-      <category>tool integration</category>
-      <category>developer platforms</category>
-    </item>
-    <item>
-      <title>[信号 6.0] Liquid AI reveals 8B-A1B MoE trained on 38T</title>
-      <link>https://www.liquid.ai/blog/lfm2-5-8b-a1b</link>
-      <guid isPermaLink="false">horizon:zh:hackernews:story:48325306</guid>
-      <pubDate>Fri, 29 May 2026 16:19:54 +0000</pubDate>
-      <description><![CDATA[<p>AI Score: 7.0</p>
-<p>Signal Score: 6.0</p>
-<p>Liquid AI introduced LFM2.5-8B-A1B, an 8B-parameter MoE model with ~1B active parameters trained on 38T tokens and shared via an online playground, sparking mixed community reactions on real-world capability.</p>
-<p><strong>Tags:</strong> #LLM, #Mixture-of-Experts, #Model-release, #Benchmarking, #HackerNews</p>
-<p><a href="https://www.liquid.ai/blog/lfm2-5-8b-a1b">Read original</a></p>]]></description>
+<p>OpenRouter announced a $113M Series B as it positions itself as a key proxy layer that simplifies access, billing, and experimentation across many LLM providers and models.</p>
+<p><strong>Tags:</strong> #LLM, #AI infrastructure, #API gateway, #Developer tools, #Venture funding</p>
+<p><a href="https://openrouter.ai/announcements/series-b">Read original</a></p>]]></description>
       <category>LLM</category>
-      <category>Mixture-of-Experts</category>
-      <category>Model-release</category>
-      <category>Benchmarking</category>
-      <category>HackerNews</category>
+      <category>AI infrastructure</category>
+      <category>API gateway</category>
+      <category>Developer tools</category>
+      <category>Venture funding</category>
     </item>
     <item>
-      <title>[信号 6.0] GTA 6 Developers Unionize</title>
-      <link>https://rockstarintel.com/gta-6-developers-announce-rockstar-games-union/</link>
-      <guid isPermaLink="false">horizon:zh:hackernews:story:48324499</guid>
-      <pubDate>Fri, 29 May 2026 15:32:55 +0000</pubDate>
+      <title>[信号 6.0] Microsoft Office 2019 and 2021 for Mac view-only conversion</title>
+      <link>https://consumerrights.wiki/w/Microsoft_Office_2019_and_2021_for_Mac_view-only_conversion_(2026)</link>
+      <guid isPermaLink="false">horizon:zh:hackernews:story:48341578</guid>
+      <pubDate>Sat, 30 May 2026 23:26:13 +0000</pubDate>
+      <description><![CDATA[<p>AI Score: 8.0</p>
+<p>Signal Score: 6.0</p>
+<p>A report and large HN thread discuss Microsoft potentially turning Office 2019/2021 for Mac perpetual licenses into view-only, prompting backlash, legal arguments, and calls to switch to alternatives.</p>
+<p><strong>Tags:</strong> #software-licensing, #microsoft-office, #subscription-models, #consumer-rights, #macos</p>
+<p><a href="https://consumerrights.wiki/w/Microsoft_Office_2019_and_2021_for_Mac_view-only_conversion_(2026)">Read original</a></p>]]></description>
+      <category>software-licensing</category>
+      <category>microsoft-office</category>
+      <category>subscription-models</category>
+      <category>consumer-rights</category>
+      <category>macos</category>
+    </item>
+    <item>
+      <title>[信号 6.0] Zig: Build System Reworked</title>
+      <link>https://ziglang.org/devlog/2026/#2026-05-26</link>
+      <guid isPermaLink="false">horizon:zh:hackernews:story:48334048</guid>
+      <pubDate>Sat, 30 May 2026 08:38:28 +0000</pubDate>
+      <description><![CDATA[<p>AI Score: 8.0</p>
+<p>Signal Score: 6.0</p>
+<p>Zig’s devlog announces a reworked build system, with community discussion highlighting improved tooling, upgrade experiences with Zig 0.16.0, and faster developer feedback loops.</p>
+<p><strong>Tags:</strong> #zig, #build-systems, #systems-programming, #developer-tooling, #compilers</p>
+<p><a href="https://ziglang.org/devlog/2026/#2026-05-26">Read original</a></p>]]></description>
+      <category>zig</category>
+      <category>build-systems</category>
+      <category>systems-programming</category>
+      <category>developer-tooling</category>
+      <category>compilers</category>
+    </item>
+    <item>
+      <title>[信号 6.0] Openrsync: An implementation of rsync, by the OpenBSD team</title>
+      <link>https://github.com/kristapsdz/openrsync</link>
+      <guid isPermaLink="false">horizon:zh:hackernews:story:48334854</guid>
+      <pubDate>Sat, 30 May 2026 10:51:48 +0000</pubDate>
+      <description><![CDATA[<p>AI Score: 8.0</p>
+<p>Signal Score: 6.0</p>
+<p>Openrsync is an OpenBSD-team implementation of rsync aiming for a more maintainable and security-oriented codebase, with active community evaluation of compatibility and deployment implications.</p>
+<p><strong>Tags:</strong> #rsync, #OpenBSD, #systems-software, #security, #file-sync</p>
+<p><a href="https://github.com/kristapsdz/openrsync">Read original</a></p>]]></description>
+      <category>rsync</category>
+      <category>OpenBSD</category>
+      <category>systems-software</category>
+      <category>security</category>
+      <category>file-sync</category>
+    </item>
+    <item>
+      <title>[信号 6.0] How we contain Claude across products</title>
+      <link>https://simonwillison.net/2026/May/30/how-we-contain-claude/#atom-everything</link>
+      <guid isPermaLink="false">horizon:zh:rss:simonwillison.net_atom_everything_:202502967927388120</guid>
+      <pubDate>Sat, 30 May 2026 21:36:24 +0000</pubDate>
+      <description><![CDATA[<p>AI Score: 8.0</p>
+<p>Signal Score: 6.0</p>
+<p>Anthropic published a detailed engineering overview of how it sandboxes and constrains Claude’s actions across Claude.ai, Claude Code, and related products using multiple isolation layers and network/egress controls.</p>
+<p><strong>Tags:</strong> #AI Security, #Sandboxing, #Systems Engineering, #LLM Agents, #Isolation/Containment</p>
+<p><a href="https://simonwillison.net/2026/May/30/how-we-contain-claude/#atom-everything">Read original</a></p>]]></description>
+      <category>AI Security</category>
+      <category>Sandboxing</category>
+      <category>Systems Engineering</category>
+      <category>LLM Agents</category>
+      <category>Isolation/Containment</category>
+    </item>
+    <item>
+      <title>[信号 6.0] 研究称恶意网站可借 SSD 计时推测用户活动</title>
+      <link>https://futurism.com/future-society/websites-spying-solid-state-drive</link>
+      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41663</guid>
+      <pubDate>Sun, 31 May 2026 01:55:35 +0000</pubDate>
+      <description><![CDATA[<p>AI Score: 8.0</p>
+<p>Signal Score: 6.0</p>
+<p>研究提出 FROST 攻击，恶意网站可借助浏览器 OPFS 与 SSD 计时侧信道高精度推测用户访问网站与使用应用。</p>
+<p><strong>Tags:</strong> #side-channel-attacks, #web-security, #browser-security, #storage-systems, #privacy</p>
+<p><a href="https://futurism.com/future-society/websites-spying-solid-state-drive">Read original</a></p>]]></description>
+      <category>side-channel-attacks</category>
+      <category>web-security</category>
+      <category>browser-security</category>
+      <category>storage-systems</category>
+      <category>privacy</category>
+    </item>
+    <item>
+      <title>[信号 6.0] Accenture to acquire Ookla</title>
+      <link>https://newsroom.accenture.com/news/2026/accenture-to-acquire-ookla-to-strengthen-network-intelligence-and-experience-with-data-and-ai-for-enterprises</link>
+      <guid isPermaLink="false">horizon:zh:hackernews:story:48337987</guid>
+      <pubDate>Sat, 30 May 2026 16:28:58 +0000</pubDate>
       <description><![CDATA[<p>AI Score: 7.0</p>
 <p>Signal Score: 6.0</p>
-<p>Developers working on GTA 6 reportedly announced a union effort at Rockstar Games, emphasizing pay transparency, flexible work, and ending crunch.</p>
-<p><strong>Tags:</strong> #game-development, #labor-unions, #workplace-practices, #tech-industry, #employment</p>
-<p><a href="https://rockstarintel.com/gta-6-developers-announce-rockstar-games-union/">Read original</a></p>]]></description>
-      <category>game-development</category>
-      <category>labor-unions</category>
-      <category>workplace-practices</category>
-      <category>tech-industry</category>
-      <category>employment</category>
+<p>Accenture is acquiring Ookla to combine its large-scale network measurement datasets and products with Accenture’s data/AI services for telecoms, hyperscalers, and enterprises.</p>
+<p><strong>Tags:</strong> #acquisition, #telecom, #network-measurement, #internet-performance, #data-products</p>
+<p><a href="https://newsroom.accenture.com/news/2026/accenture-to-acquire-ookla-to-strengthen-network-intelligence-and-experience-with-data-and-ai-for-enterprises">Read original</a></p>]]></description>
+      <category>acquisition</category>
+      <category>telecom</category>
+      <category>network-measurement</category>
+      <category>internet-performance</category>
+      <category>data-products</category>
     </item>
     <item>
-      <title>[信号 6.0] 华为发表“韬定律”：以时间缩微替代几何缩微，探索半导体新路径  近日在上海举行的 2026 国际电路与系统研讨会上，华为发表“韬定律”，提出以“时间缩微”替代“</title>
-      <link>https://t.me/zaihuapd/41648</link>
-      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41648</guid>
-      <pubDate>Sat, 30 May 2026 02:18:00 +0000</pubDate>
+      <title>[信号 6.0] Running Python ASGI apps in the browser via Pyodide + a service worker</title>
+      <link>https://simonwillison.net/2026/May/30/pyodide-asgi-browser/#atom-everything</link>
+      <guid isPermaLink="false">horizon:zh:rss:simonwillison.net_atom_everything_:-2929498308867090026</guid>
+      <pubDate>Sat, 30 May 2026 21:02:16 +0000</pubDate>
       <description><![CDATA[<p>AI Score: 7.0</p>
 <p>Signal Score: 6.0</p>
-<p>华为在研讨会上提出“韬定律”以“时间缩微”驱动半导体多层级协同优化，并宣称已量产数百款芯片、将发布采用逻辑折叠技术的新麒麟芯片且目标在2031年达到约等同1.4nm密度水平。</p>
-<p><strong>Tags:</strong> #semiconductors, #chip-design, #Moores-law, #hardware-systems, #Huawei</p>
-<p><a href="https://t.me/zaihuapd/41648">Read original</a></p>]]></description>
-      <category>semiconductors</category>
-      <category>chip-design</category>
-      <category>Moores-law</category>
-      <category>hardware-systems</category>
-      <category>Huawei</category>
+<p>Simon Willison documents research into running Python ASGI applications entirely in the browser via Pyodide and a Service Worker, improving on earlier Web Worker navigation-interception approaches that broke JavaScript execution.</p>
+<p><strong>Tags:</strong> #Pyodide, #WebAssembly, #ASGI, #Service Workers, #Python in the browser</p>
+<p><a href="https://simonwillison.net/2026/May/30/pyodide-asgi-browser/#atom-everything">Read original</a></p>]]></description>
+      <category>Pyodide</category>
+      <category>WebAssembly</category>
+      <category>ASGI</category>
+      <category>Service Workers</category>
+      <category>Python in the browser</category>
     </item>
     <item>
-      <title>[信号 5.0] We should be more tired than the model</title>
-      <link>https://vickiboykis.com/2026/05/28/we-should-be-more-tired-than-the-model/</link>
-      <guid isPermaLink="false">horizon:zh:hackernews:story:48322118</guid>
-      <pubDate>Fri, 29 May 2026 12:12:16 +0000</pubDate>
+      <title>[信号 6.0] ♻️ NVIDIA、📱 Windows 和 Arm 同步预告，N1X 笔记本芯片或将在 Computex 亮相</title>
+      <link>https://x.com/nvidia/status/2060390710797328574</link>
+      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41653</guid>
+      <pubDate>Sat, 30 May 2026 08:37:19 +0000</pubDate>
+      <description><![CDATA[<p>AI Score: 7.0</p>
+<p>Signal Score: 6.0</p>
+<p>NVIDIA、Windows与Arm同步预告Computex将迎来“PC新时代”发布，媒体推测可能与传闻中的NVIDIA N1/N1X Arm笔记本芯片有关。</p>
+<p><strong>Tags:</strong> #NVIDIA, #Arm, #Windows, #PC硬件, #Computex</p>
+<p><a href="https://x.com/nvidia/status/2060390710797328574">Read original</a></p>]]></description>
+      <category>NVIDIA</category>
+      <category>Arm</category>
+      <category>Windows</category>
+      <category>PC硬件</category>
+      <category>Computex</category>
+    </item>
+    <item>
+      <title>[信号 6.0] 人民日报评 APP 乱跳转：严重者应下架关停</title>
+      <link>https://finance.sina.com.cn/wm/2026-05-30/doc-inhzswye6913276.shtml</link>
+      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41660</guid>
+      <pubDate>Sat, 30 May 2026 15:15:13 +0000</pubDate>
+      <description><![CDATA[<p>AI Score: 7.0</p>
+<p>Signal Score: 6.0</p>
+<p>人民日报评论称应严厉整治APP信息窗口乱跳转等侵权行为，对屡教不改者下架关停并追责相关广告与服务链条，应用商店需加强审核监测。</p>
+<p><strong>Tags:</strong> #监管合规, #移动应用, #用户隐私, #广告生态, #中国政策</p>
+<p><a href="https://finance.sina.com.cn/wm/2026-05-30/doc-inhzswye6913276.shtml">Read original</a></p>]]></description>
+      <category>监管合规</category>
+      <category>移动应用</category>
+      <category>用户隐私</category>
+      <category>广告生态</category>
+      <category>中国政策</category>
+    </item>
+    <item>
+      <title>[信号 5.0] Leo&#x27;s first encyclical attacks technological messianism</title>
+      <link>https://www.economist.com/europe/2026/05/28/leos-first-encyclical-attacks-technological-messianism</link>
+      <guid isPermaLink="false">horizon:zh:hackernews:story:48334710</guid>
+      <pubDate>Sat, 30 May 2026 10:30:50 +0000</pubDate>
       <description><![CDATA[<p>AI Score: 7.0</p>
 <p>Signal Score: 5.0</p>
-<p>Argues that as code-generation gets cheap, the limiting factor becomes human cognitive load in directing, reviewing, and understanding what models produce, and discusses strategies to manage that bottleneck.</p>
-<p><strong>Tags:</strong> #AI-assisted programming, #software engineering, #developer productivity, #code refactoring, #human factors</p>
-<p><a href="https://vickiboykis.com/2026/05/28/we-should-be-more-tired-than-the-model/">Read original</a></p>]]></description>
-      <category>AI-assisted programming</category>
-      <category>software engineering</category>
-      <category>developer productivity</category>
-      <category>code refactoring</category>
-      <category>human factors</category>
+<p>The article and discussion cover Pope Leo’s first encyclical criticizing techno-messianic narratives, prompting broad debate about AI hype, control of technology, and the role of religious and political institutions in tech governance.</p>
+<p><strong>Tags:</strong> #AI governance, #tech ethics, #societal impact, #AI hype, #policy</p>
+<p><a href="https://www.economist.com/europe/2026/05/28/leos-first-encyclical-attacks-technological-messianism">Read original</a></p>]]></description>
+      <category>AI governance</category>
+      <category>tech ethics</category>
+      <category>societal impact</category>
+      <category>AI hype</category>
+      <category>policy</category>
     </item>
     <item>
-      <title>[信号 4.0] The dead economy theory</title>
-      <link>https://www.owenmcgrann.com/p/the-dead-economy-theory</link>
-      <guid isPermaLink="false">horizon:zh:hackernews:story:48324712</guid>
-      <pubDate>Fri, 29 May 2026 15:46:24 +0000</pubDate>
-      <description><![CDATA[<p>AI Score: 8.0</p>
-<p>Signal Score: 4.0</p>
-<p>The piece argues that AI-driven automation may hollow out the economy by reducing labor income and thus demand, producing systemic instability rather than broadly shared prosperity.</p>
-<p><strong>Tags:</strong> #AI-economics, #political-economy, #automation, #labor-markets, #Hacker-News</p>
-<p><a href="https://www.owenmcgrann.com/p/the-dead-economy-theory">Read original</a></p>]]></description>
-      <category>AI-economics</category>
-      <category>political-economy</category>
-      <category>automation</category>
-      <category>labor-markets</category>
-      <category>Hacker-News</category>
-    </item>
-    <item>
-      <title>[信号 4.0] Bijou64: A variable-length integer encoding</title>
-      <link>https://www.inkandswitch.com/tangents/bijou64/</link>
-      <guid isPermaLink="false">horizon:zh:hackernews:story:48323992</guid>
-      <pubDate>Fri, 29 May 2026 15:03:32 +0000</pubDate>
-      <description><![CDATA[<p>AI Score: 7.0</p>
-<p>Signal Score: 4.0</p>
-<p>Bijou64 proposes a length-prefixed variable-length integer encoding aimed at being simpler/nicer than LEB128 while discussing real-world tradeoffs in encoding size, canonicalization, and performance considerations.</p>
-<p><strong>Tags:</strong> #serialization, #binary-encoding, #systems, #performance, #varint</p>
-<p><a href="https://www.inkandswitch.com/tangents/bijou64/">Read original</a></p>]]></description>
-      <category>serialization</category>
-      <category>binary-encoding</category>
-      <category>systems</category>
-      <category>performance</category>
-      <category>varint</category>
-    </item>
-    <item>
-      <title>[信号 4.0] Is AI causing a repeat of frontend’s lost decade?</title>
-      <link>https://mastrojs.github.io/blog/2026-05-23-is-AI-causing-a-repeat-of-frontends-lost-decade/</link>
-      <guid isPermaLink="false">horizon:zh:hackernews:story:48321631</guid>
-      <pubDate>Fri, 29 May 2026 11:09:32 +0000</pubDate>
-      <description><![CDATA[<p>AI Score: 7.0</p>
-<p>Signal Score: 4.0</p>
-<p>The post argues that AI could reintroduce a “lost decade” dynamic in frontend by commoditizing work and deprioritizing hard-won expertise, sparking debate about accidental complexity versus real quality concerns like accessibility and performance.</p>
-<p><strong>Tags:</strong> #frontend, #AI-assisted coding, #web development, #software engineering, #developer productivity</p>
-<p><a href="https://mastrojs.github.io/blog/2026-05-23-is-AI-causing-a-repeat-of-frontends-lost-decade/">Read original</a></p>]]></description>
-      <category>frontend</category>
-      <category>AI-assisted coding</category>
-      <category>web development</category>
-      <category>software engineering</category>
-      <category>developer productivity</category>
-    </item>
-    <item>
-      <title>[信号 4.0] On Rendering Diffs</title>
-      <link>https://pierre.computer/writing/on-rendering-diffs</link>
-      <guid isPermaLink="false">horizon:zh:hackernews:story:48327809</guid>
-      <pubDate>Fri, 29 May 2026 19:04:54 +0000</pubDate>
-      <description><![CDATA[<p>AI Score: 7.0</p>
-<p>Signal Score: 4.0</p>
-<p>A detailed exploration of how diff UIs are rendered and optimized, highlighting performance and usability challenges and practical techniques to improve diff viewing.</p>
-<p><strong>Tags:</strong> #diff-rendering, #developer-tools, #performance-optimization, #ui-ux, #version-control</p>
-<p><a href="https://pierre.computer/writing/on-rendering-diffs">Read original</a></p>]]></description>
-      <category>diff-rendering</category>
-      <category>developer-tools</category>
-      <category>performance-optimization</category>
-      <category>ui-ux</category>
-      <category>version-control</category>
-    </item>
-    <item>
-      <title>[信号 3.0] You can just say it</title>
-      <link>https://noperator.dev/posts/you-can-just-say-it/</link>
-      <guid isPermaLink="false">horizon:zh:hackernews:story:48324853</guid>
-      <pubDate>Fri, 29 May 2026 15:54:28 +0000</pubDate>
+      <title>[信号 3.0] Domain expertise has always been the real moat</title>
+      <link>https://www.brethorsting.com/blog/2026/05/domain-expertise-has-always-been-the-real-moat/</link>
+      <guid isPermaLink="false">horizon:zh:hackernews:story:48340411</guid>
+      <pubDate>Sat, 30 May 2026 20:40:57 +0000</pubDate>
       <description><![CDATA[<p>AI Score: 7.0</p>
 <p>Signal Score: 3.0</p>
-<p>Argues that when using LLMs for communication, the most honest and useful message is often the underlying prompt/intention, and defines “AI slop” as verbose output lacking motivation or understanding rather than AI use itself.</p>
-<p><strong>Tags:</strong> #LLMs, #communication, #AI ethics, #writing, #Hacker News</p>
-<p><a href="https://noperator.dev/posts/you-can-just-say-it/">Read original</a></p>]]></description>
-      <category>LLMs</category>
-      <category>communication</category>
-      <category>AI ethics</category>
-      <category>writing</category>
-      <category>Hacker News</category>
+<p>The post argues that durable competitive advantage comes from deep understanding of a problem domain, with coding increasingly commoditized relative to domain knowledge and context.</p>
+<p><strong>Tags:</strong> #domain-expertise, #software-engineering, #ai-impact, #career-development, #product-development</p>
+<p><a href="https://www.brethorsting.com/blog/2026/05/domain-expertise-has-always-been-the-real-moat/">Read original</a></p>]]></description>
+      <category>domain-expertise</category>
+      <category>software-engineering</category>
+      <category>ai-impact</category>
+      <category>career-development</category>
+      <category>product-development</category>
+    </item>
+    <item>
+      <title>[信号 3.0] Voxel Space (2017)</title>
+      <link>https://s-macke.github.io/VoxelSpace/</link>
+      <guid isPermaLink="false">horizon:zh:hackernews:story:48336564</guid>
+      <pubDate>Sat, 30 May 2026 14:25:50 +0000</pubDate>
+      <description><![CDATA[<p>AI Score: 7.0</p>
+<p>Signal Score: 3.0</p>
+<p>An interactive explanation and implementation of the 1990s Comanche-style heightmap rendering technique often mislabeled as voxel rendering, plus community discussion and related ports.</p>
+<p><strong>Tags:</strong> #computer-graphics, #rendering, #game-dev, #heightmaps, #hacker-news</p>
+<p><a href="https://s-macke.github.io/VoxelSpace/">Read original</a></p>]]></description>
+      <category>computer-graphics</category>
+      <category>rendering</category>
+      <category>game-dev</category>
+      <category>heightmaps</category>
+      <category>hacker-news</category>
     </item>
   </channel>
 </rss>
