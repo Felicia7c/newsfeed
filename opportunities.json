@@ -1,311 +1,257 @@
 {
-  "date": "2026-05-30",
+  "date": "2026-05-31",
   "language": "zh",
   "opportunities": [
     {
-      "id": "telegram:zaihuapd:41643",
-      "title": "蓝色起源新格伦火箭静态点火测试爆炸，NASA 登月计划受重创",
-      "url": "https://arstechnica.com/space/2026/05/blue-origins-new-glenn-rocket-just-exploded-during-a-static-fire-test/",
-      "source_type": "telegram",
-      "ai_score": 9.0,
-      "signal_score": 8.0,
-      "signal_reason": "可观测事实显示运力与发射基础设施短期内受损（整箭与发射台毁损、复飞时间表未定、FAA与NASA介入关注），对Kuiper卫星发射计划与阿尔忒弥斯相关任务排期构成实质性不确定性与延迟信号。",
-      "capability_delta": "",
-      "assessment": {},
-      "tags": [
-        "Blue Origin",
-        "New Glenn",
-        "Spaceflight",
-        "NASA Artemis",
-        "Rocket engines"
-      ]
-    },
-    {
-      "id": "telegram:zaihuapd:41636",
-      "title": "中国首次将 9 款国产 AI 芯片纳入安可安全采购目录",
-      "url": "https://www.tomshardware.com/tech-industry/semiconductors/china-certifies-nine-domestic-ai-chips-for-government-procurement",
+      "id": "telegram:zaihuapd:41656",
+      "title": "🤖 Codex 现已开放跨设备远程控制，强化协作与搜索功能",
+      "url": "https://developers.openai.com/codex/changelog#codex-2026-05-28-app",
       "source_type": "telegram",
       "ai_score": 8.0,
       "signal_score": 8.0,
-      "signal_reason": "可观测的市场条件变化是：新增“AI训练与推理芯片”认证品类并明确作为政府/国企采购依据，意味着合规准入门槛与采购名单被官方固化（有效期三年），将对相关厂商在政企渠道的可得性与采购流程产生直接影响。",
+      "signal_reason": "可观测变化包括：新增从移动端/Mac 远程启动 Windows Codex 并实时查看进度、Codex 在 Windows 前台直接操控桌面应用，以及搜索覆盖对话内容与 Git 分支名、工作树支持线程协调与独立后台线程；这些属于能力边界与工作流压缩的明确升级。",
       "capability_delta": "",
       "assessment": {},
       "tags": [
-        "AI芯片",
-        "中国半导体",
-        "政府采购",
-        "安全认证",
-        "算力基础设施"
+        "OpenAI Codex",
+        "Remote Control",
+        "Desktop Automation",
+        "Developer Tools",
+        "Collaboration"
       ]
     },
     {
-      "id": "telegram:zaihuapd:41647",
-      "title": "SpaceX 获 41.6 亿美元美军卫星导弹追踪合同",
-      "url": "https://www.bloomberg.com/news/articles/2026-05-29/spacex-wins-4-billion-contract-for-us-golden-dome-satellites",
-      "source_type": "telegram",
-      "ai_score": 8.0,
-      "signal_score": 8.0,
-      "signal_reason": "可观察事实为：美国太空军授予单笔41.6亿美元合同并推进Golden Dome天基追踪网络落地，表明政府采购已明确、预算规模大且将带来传感器、通信与地面处理系统的实际建设与集成需求变化。",
-      "capability_delta": "",
-      "assessment": {},
-      "tags": [
-        "SpaceX",
-        "Defense Space",
-        "Satellite Surveillance",
-        "Missile Tracking",
-        "US Space Force"
-      ]
-    },
-    {
-      "id": "github:release:331396286",
-      "title": "vllm-project/vllm released v0.22.0",
-      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.22.0",
-      "source_type": "github",
+      "id": "hackernews:story:48338660",
+      "title": "OpenRouter raises $113M Series B",
+      "url": "https://openrouter.ai/announcements/series-b",
+      "source_type": "hackernews",
       "ai_score": 8.0,
       "signal_score": 7.0,
-      "signal_reason": "Observable capability changes include new fused-kernel/quantization support (NVFP4 fused MoE), CUDA graph support, speculative decoding, MRv2 default-selection logic for certain models, and a Rust frontend integration—features that can materially affect throughput/latency and integration options for existing vLLM users.",
-      "capability_delta": "",
-      "assessment": {},
-      "tags": [
-        "vLLM",
-        "LLM Inference",
-        "Model Serving",
-        "CUDA/ROCm",
-        "Mixture-of-Experts"
-      ]
-    },
-    {
-      "id": "telegram:zaihuapd:41635",
-      "title": "三星电子市值突破 1 万亿美元，韩国股指首破 7000 点  在全球 AI 硬件需求激增的强烈催化下，存储芯片板块正上演史诗级狂飙。",
-      "url": "https://t.me/zaihuapd/41635",
-      "source_type": "telegram",
-      "ai_score": 7.0,
-      "signal_score": 7.0,
-      "signal_reason": "可观察事实包括：三星市值突破1万亿美元、股价早盘涨逾12%、经营利润同比大幅增长以及韩国综合指数大涨并创新高，显示资本市场对AI相关硬件（尤其存储芯片）需求与供给格局的预期发生了明显变化，但未给出新的产品/供给能力或成本指标等更直接的技术边界变化证据。",
-      "capability_delta": "",
-      "assessment": {},
-      "tags": [
-        "Semiconductors",
-        "Memory Chips",
-        "AI Hardware",
-        "Samsung",
-        "Markets"
-      ]
-    },
-    {
-      "id": "hackernews:story:48326802",
-      "title": "SQLite is all you need for durable workflows",
-      "url": "https://obeli.sk/blog/sqlite-is-all-you-need-for-durable-workflows/",
-      "source_type": "hackernews",
-      "ai_score": 7.0,
-      "signal_score": 6.0,
-      "signal_reason": "Observable signal is strong community validation and active debate, plus concrete real-world usage examples (Temporal using SQLite for local installs; one commenter claiming broad internal tooling replacements on a single server), but no new release, benchmark, or capability change is evidenced beyond commentary and anecdotes.",
-      "capability_delta": "",
-      "assessment": {},
-      "tags": [
-        "sqlite",
-        "workflow-orchestration",
-        "durability",
-        "distributed-systems",
-        "database-engineering"
-      ]
-    },
-    {
-      "id": "hackernews:story:48325340",
-      "title": "Notes from the Mistral AI Now Summit",
-      "url": "https://koenvangilst.nl/lab/mistral-ai-now-summit",
-      "source_type": "hackernews",
-      "ai_score": 7.0,
-      "signal_score": 6.0,
-      "signal_reason": "Observable signals include real on-prem deployments in European banks (e.g., BNP Paribas KYC; Abanca at ~2M customers) and strong community attention, indicating active demand for sovereign/on-prem LLM setups; however, comments also cite performance/competitiveness gaps, reducing confidence in a near-term capability shift.",
-      "capability_delta": "",
-      "assessment": {},
-      "tags": [
-        "LLMs",
-        "Mistral",
-        "On-prem AI",
-        "Regulated industries",
-        "Model evaluation"
-      ]
-    },
-    {
-      "id": "hackernews:story:48330436",
-      "title": "MCP is dead?",
-      "url": "https://www.quandri.io/engineering-blog/mcp-is-dead",
-      "source_type": "hackernews",
-      "ai_score": 7.0,
-      "signal_score": 6.0,
-      "signal_reason": "Observable signals include a public statement from an OpenAI MCP/ChatGPT App Store lead asserting broad industry adoption (“~every company… building an MCP server”) plus strong community attention, but no concrete metrics, version changes, or official compatibility/roadmap changes are evidenced in the provided text.",
-      "capability_delta": "",
-      "assessment": {},
-      "tags": [
-        "MCP",
-        "LLM agents",
-        "protocols",
-        "tool integration",
-        "developer platforms"
-      ]
-    },
-    {
-      "id": "hackernews:story:48325306",
-      "title": "Liquid AI reveals 8B-A1B MoE trained on 38T",
-      "url": "https://www.liquid.ai/blog/lfm2-5-8b-a1b",
-      "source_type": "hackernews",
-      "ai_score": 7.0,
-      "signal_score": 6.0,
-      "signal_reason": "Observable signals include a new model release with materially different compute profile (sparse MoE with ~1B active params) and public access via a hosted playground, but no clear evidence in the provided content of state-of-the-art performance or a step-change in cost/latency; one user report suggests weaker performance on a bug-fixing benchmark.",
+      "signal_reason": "The $113M Series B is an observable, significant capital and validation signal for an LLM-aggregation/proxy workflow, and the high engagement plus comments citing specific utility (multi-provider model access, unified APIs, billing limits) indicate real usage demand; however, the announcement does not itself show a specific capability/price step-change for end users.",
       "capability_delta": "",
       "assessment": {},
       "tags": [
         "LLM",
-        "Mixture-of-Experts",
-        "Model-release",
-        "Benchmarking",
-        "HackerNews"
+        "AI infrastructure",
+        "API gateway",
+        "Developer tools",
+        "Venture funding"
       ]
     },
     {
-      "id": "hackernews:story:48324499",
-      "title": "GTA 6 Developers Unionize",
-      "url": "https://rockstarintel.com/gta-6-developers-announce-rockstar-games-union/",
+      "id": "hackernews:story:48341578",
+      "title": "Microsoft Office 2019 and 2021 for Mac view-only conversion",
+      "url": "https://consumerrights.wiki/w/Microsoft_Office_2019_and_2021_for_Mac_view-only_conversion_(2026)",
       "source_type": "hackernews",
-      "ai_score": 7.0,
+      "ai_score": 8.0,
       "signal_score": 6.0,
-      "signal_reason": "A credible report of union formation at a major studio is an observable shift that can affect labor relations and production practices; however, the content does not provide concrete confirmed outcomes (e.g., recognized bargaining unit, contract terms, or immediate operational changes).",
+      "signal_reason": "If implemented, this would materially change access/utility for existing Office 2019/2021 Mac users (functionality reduced to viewing) and could accelerate migration to Microsoft 365; the observable signal is strong user impact and controversy, but details depend on enforcement scope/timeline and are not fully confirmed in the provided excerpt.",
       "capability_delta": "",
       "assessment": {},
       "tags": [
-        "game-development",
-        "labor-unions",
-        "workplace-practices",
-        "tech-industry",
-        "employment"
+        "software-licensing",
+        "microsoft-office",
+        "subscription-models",
+        "consumer-rights",
+        "macos"
       ]
     },
     {
-      "id": "telegram:zaihuapd:41648",
-      "title": "华为发表“韬定律”：以时间缩微替代几何缩微，探索半导体新路径  近日在上海举行的 2026 国际电路与系统研讨会上，华为发表“韬定律”，提出以“时间缩微”替代“",
-      "url": "https://t.me/zaihuapd/41648",
+      "id": "hackernews:story:48334048",
+      "title": "Zig: Build System Reworked",
+      "url": "https://ziglang.org/devlog/2026/#2026-05-26",
+      "source_type": "hackernews",
+      "ai_score": 8.0,
+      "signal_score": 6.0,
+      "signal_reason": "Observable signal is moderate: a concrete upstream change to Zig’s build system plus high community attention suggests real workflow impact for Zig users, but the provided content does not specify measurable capability/cost/latency changes or broad market adoption effects beyond user reports and discussion.",
+      "capability_delta": "",
+      "assessment": {},
+      "tags": [
+        "zig",
+        "build-systems",
+        "systems-programming",
+        "developer-tooling",
+        "compilers"
+      ]
+    },
+    {
+      "id": "hackernews:story:48334854",
+      "title": "Openrsync: An implementation of rsync, by the OpenBSD team",
+      "url": "https://github.com/kristapsdz/openrsync",
+      "source_type": "hackernews",
+      "ai_score": 8.0,
+      "signal_score": 6.0,
+      "signal_reason": "Observable signal shows a new/alternative rsync implementation from a credible systems-security ecosystem and significant community attention, but the provided content does not demonstrate a clear capability/cost/access step-change or widespread production readiness beyond incremental improvement and interest.",
+      "capability_delta": "",
+      "assessment": {},
+      "tags": [
+        "rsync",
+        "OpenBSD",
+        "systems-software",
+        "security",
+        "file-sync"
+      ]
+    },
+    {
+      "id": "rss:simonwillison.net_atom_everything_:202502967927388120",
+      "title": "How we contain Claude across products",
+      "url": "https://simonwillison.net/2026/May/30/how-we-contain-claude/#atom-everything",
+      "source_type": "rss",
+      "ai_score": 8.0,
+      "signal_score": 6.0,
+      "signal_reason": "Observable signal is primarily improved transparency and concrete implementation disclosure (tools and architecture) rather than a new capability release or market change; it may materially affect how practitioners evaluate and adopt Claude-based products for regulated/high-security use, but no explicit pricing, access, or performance shift is stated.",
+      "capability_delta": "",
+      "assessment": {},
+      "tags": [
+        "AI Security",
+        "Sandboxing",
+        "Systems Engineering",
+        "LLM Agents",
+        "Isolation/Containment"
+      ]
+    },
+    {
+      "id": "telegram:zaihuapd:41663",
+      "title": "研究称恶意网站可借 SSD 计时推测用户活动",
+      "url": "https://futurism.com/future-society/websites-spying-solid-state-drive",
+      "source_type": "telegram",
+      "ai_score": 8.0,
+      "signal_score": 6.0,
+      "signal_reason": "可观察到的事实是：无需交互的攻击路径+给出量化准确率并指出受影响平台（Mac/Linux，声称 Windows 也可能受影响），意味着潜在风险边界扩大；但尚未见到补丁/默认缓解措施变化、广泛复现或真实世界利用证据，市场/技术条件的变化信号中等。",
+      "capability_delta": "",
+      "assessment": {},
+      "tags": [
+        "side-channel-attacks",
+        "web-security",
+        "browser-security",
+        "storage-systems",
+        "privacy"
+      ]
+    },
+    {
+      "id": "hackernews:story:48337987",
+      "title": "Accenture to acquire Ookla",
+      "url": "https://newsroom.accenture.com/news/2026/accenture-to-acquire-ookla-to-strengthen-network-intelligence-and-experience-with-data-and-ai-for-enterprises",
+      "source_type": "hackernews",
+      "ai_score": 7.0,
+      "signal_score": 6.0,
+      "signal_reason": "Observable market signal: a large, disclosed transaction brings widely-deployed consumer and field-test network telemetry under a major IT services firm, indicating consolidation and likely tighter integration of Ookla’s datasets into enterprise network optimization offerings, though it does not by itself change public access/capabilities.",
+      "capability_delta": "",
+      "assessment": {},
+      "tags": [
+        "acquisition",
+        "telecom",
+        "network-measurement",
+        "internet-performance",
+        "data-products"
+      ]
+    },
+    {
+      "id": "rss:simonwillison.net_atom_everything_:-2929498308867090026",
+      "title": "Running Python ASGI apps in the browser via Pyodide + a service worker",
+      "url": "https://simonwillison.net/2026/May/30/pyodide-asgi-browser/#atom-everything",
+      "source_type": "rss",
+      "ai_score": 7.0,
+      "signal_score": 6.0,
+      "signal_reason": "Observable technical improvement (enabling normal execution of JavaScript in generated pages while running a Python ASGI app in-browser) and a publicly available implementation/research repo suggest a more practical workflow for browser-only Python web apps, but it is presented as research rather than a broadly adopted release or market shift.",
+      "capability_delta": "",
+      "assessment": {},
+      "tags": [
+        "Pyodide",
+        "WebAssembly",
+        "ASGI",
+        "Service Workers",
+        "Python in the browser"
+      ]
+    },
+    {
+      "id": "telegram:zaihuapd:41653",
+      "title": "♻️ NVIDIA、📱 Windows 和 Arm 同步预告，N1X 笔记本芯片或将在 Computex 亮相",
+      "url": "https://x.com/nvidia/status/2060390710797328574",
       "source_type": "telegram",
       "ai_score": 7.0,
       "signal_score": 6.0,
-      "signal_reason": "可观察事实层面包含：公开场合发布新技术路线表述、宣称已量产381款芯片及计划在今年秋季发布新手机SoC；但缺少可核验的技术指标、工艺/成本/性能数据与第三方确认，短期对市场条件的确定性改变有限。",
+      "signal_reason": "可观察到的事实是三家官方账号联合预告并指向Computex会场，显示存在协调发布与即将公布新品的高概率；但产品名称、能力边界、成本/性能指标、供货与生态落地细节均未披露，尚不足以确认市场条件已发生明确变化。",
       "capability_delta": "",
       "assessment": {},
       "tags": [
-        "semiconductors",
-        "chip-design",
-        "Moores-law",
-        "hardware-systems",
-        "Huawei"
+        "NVIDIA",
+        "Arm",
+        "Windows",
+        "PC硬件",
+        "Computex"
       ]
     },
     {
-      "id": "hackernews:story:48322118",
-      "title": "We should be more tired than the model",
-      "url": "https://vickiboykis.com/2026/05/28/we-should-be-more-tired-than-the-model/",
+      "id": "telegram:zaihuapd:41660",
+      "title": "人民日报评 APP 乱跳转：严重者应下架关停",
+      "url": "https://finance.sina.com.cn/wm/2026-05-30/doc-inhzswye6913276.shtml",
+      "source_type": "telegram",
+      "ai_score": 7.0,
+      "signal_score": 6.0,
+      "signal_reason": "可观察事实包括：工信部已通报31款侵权APP/SDK且明确包含乱跳转问题、官方媒体表态支持更严厉处置并提出对广告商/服务商追责与应用商店加强审核，显示合规与分发审核环境可能收紧，但尚未披露新的具体法规、处罚结果或执行细则变化。",
+      "capability_delta": "",
+      "assessment": {},
+      "tags": [
+        "监管合规",
+        "移动应用",
+        "用户隐私",
+        "广告生态",
+        "中国政策"
+      ]
+    },
+    {
+      "id": "hackernews:story:48334710",
+      "title": "Leo's first encyclical attacks technological messianism",
+      "url": "https://www.economist.com/europe/2026/05/28/leos-first-encyclical-attacks-technological-messianism",
       "source_type": "hackernews",
       "ai_score": 7.0,
       "signal_score": 5.0,
-      "signal_reason": "Observable signal is mainly validated interest and active debate (high HN engagement) around agentic coding workflow pain points; the item does not report a concrete new capability release, pricing/access shift, or measured performance change in tools or markets.",
+      "signal_reason": "Observable signal is primarily narrative and institutional positioning (a major global religious authority publicly framing tech/AI in moral terms) plus substantial public engagement; it does not by itself indicate a specific capability, cost, access, or regulatory change.",
       "capability_delta": "",
       "assessment": {},
       "tags": [
-        "AI-assisted programming",
-        "software engineering",
-        "developer productivity",
-        "code refactoring",
-        "human factors"
+        "AI governance",
+        "tech ethics",
+        "societal impact",
+        "AI hype",
+        "policy"
       ]
     },
     {
-      "id": "hackernews:story:48324712",
-      "title": "The dead economy theory",
-      "url": "https://www.owenmcgrann.com/p/the-dead-economy-theory",
-      "source_type": "hackernews",
-      "ai_score": 8.0,
-      "signal_score": 4.0,
-      "signal_reason": "The item is commentary and speculation rather than an observable change in capability, pricing, access, or regulation; the main concrete signal is strong community attention (high votes/comments), which indicates interest but not a market/technical condition shift.",
-      "capability_delta": "",
-      "assessment": {},
-      "tags": [
-        "AI-economics",
-        "political-economy",
-        "automation",
-        "labor-markets",
-        "Hacker-News"
-      ]
-    },
-    {
-      "id": "hackernews:story:48323992",
-      "title": "Bijou64: A variable-length integer encoding",
-      "url": "https://www.inkandswitch.com/tangents/bijou64/",
-      "source_type": "hackernews",
-      "ai_score": 7.0,
-      "signal_score": 4.0,
-      "signal_reason": "Observable signal is primarily informational (a new encoding proposal and discussion) without clear evidence in the provided content of broad adoption, standardized integration, or demonstrated step-change in cost/latency/reliability for a defined user group.",
-      "capability_delta": "",
-      "assessment": {},
-      "tags": [
-        "serialization",
-        "binary-encoding",
-        "systems",
-        "performance",
-        "varint"
-      ]
-    },
-    {
-      "id": "hackernews:story:48321631",
-      "title": "Is AI causing a repeat of frontend’s lost decade?",
-      "url": "https://mastrojs.github.io/blog/2026-05-23-is-AI-causing-a-repeat-of-frontends-lost-decade/",
-      "source_type": "hackernews",
-      "ai_score": 7.0,
-      "signal_score": 4.0,
-      "signal_reason": "Observable signal is mainly sentiment and discourse (no concrete new capability, pricing/access change, or released technology), though the large community engagement indicates attention to workflow/skill shifts.",
-      "capability_delta": "",
-      "assessment": {},
-      "tags": [
-        "frontend",
-        "AI-assisted coding",
-        "web development",
-        "software engineering",
-        "developer productivity"
-      ]
-    },
-    {
-      "id": "hackernews:story:48327809",
-      "title": "On Rendering Diffs",
-      "url": "https://pierre.computer/writing/on-rendering-diffs",
-      "source_type": "hackernews",
-      "ai_score": 7.0,
-      "signal_score": 4.0,
-      "signal_reason": "Evidence of ongoing user pain (e.g., 3-way diffs still poorly served; complaints about GitHub UX) and meaningful engagement, but no concrete new capability, release, pricing/access change, or market-structure shift is reported in the content itself.",
-      "capability_delta": "",
-      "assessment": {},
-      "tags": [
-        "diff-rendering",
-        "developer-tools",
-        "performance-optimization",
-        "ui-ux",
-        "version-control"
-      ]
-    },
-    {
-      "id": "hackernews:story:48324853",
-      "title": "You can just say it",
-      "url": "https://noperator.dev/posts/you-can-just-say-it/",
+      "id": "hackernews:story:48340411",
+      "title": "Domain expertise has always been the real moat",
+      "url": "https://www.brethorsting.com/blog/2026/05/domain-expertise-has-always-been-the-real-moat/",
       "source_type": "hackernews",
       "ai_score": 7.0,
       "signal_score": 3.0,
-      "signal_reason": "No new technology, release, pricing, access change, or measurable capability shift is described—it's mainly a norms/behavior discussion despite high community attention.",
+      "signal_reason": "No new technology release, policy change, or measurable shift in access/cost/latency is presented; the item is primarily commentary plus anecdotal evidence, despite high engagement.",
       "capability_delta": "",
       "assessment": {},
       "tags": [
-        "LLMs",
-        "communication",
-        "AI ethics",
-        "writing",
-        "Hacker News"
+        "domain-expertise",
+        "software-engineering",
+        "ai-impact",
+        "career-development",
+        "product-development"
+      ]
+    },
+    {
+      "id": "hackernews:story:48336564",
+      "title": "Voxel Space (2017)",
+      "url": "https://s-macke.github.io/VoxelSpace/",
+      "source_type": "hackernews",
+      "ai_score": 7.0,
+      "signal_score": 3.0,
+      "signal_reason": "No new capability or market change is evidenced; it’s a 2017 educational/demo page resurfacing with community links to existing ports, without indicating improved access, cost/latency shifts, or a new release.",
+      "capability_delta": "",
+      "assessment": {},
+      "tags": [
+        "computer-graphics",
+        "rendering",
+        "game-dev",
+        "heightmaps",
+        "hacker-news"
       ]
     }
   ]
