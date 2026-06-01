@@ -4,103 +4,55 @@
     <title>Horizon Personal Feed - ZH</title>
     <link>https://felicia7c.github.io/newsfeed</link>
     <description>AI-filtered stories from Horizon</description>
-    <lastBuildDate>2026-05-31</lastBuildDate>
+    <lastBuildDate>2026-06-01</lastBuildDate>
     <atom:link href="https://felicia7c.github.io/newsfeed/feeds/horizon-selected-zh.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>[信号 8.0] 🤖 Codex 现已开放跨设备远程控制，强化协作与搜索功能</title>
-      <link>https://developers.openai.com/codex/changelog#codex-2026-05-28-app</link>
-      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41656</guid>
-      <pubDate>Sat, 30 May 2026 10:37:37 +0000</pubDate>
-      <description><![CDATA[<p>AI Score: 8.0</p>
-<p>Signal Score: 8.0</p>
-<p>Codex 更新增加 Windows 桌面前台操作与跨设备远程控制，并改进统计展示、多线程协作与对话/分支搜索能力。</p>
-<p><strong>Tags:</strong> #OpenAI Codex, #Remote Control, #Desktop Automation, #Developer Tools, #Collaboration</p>
-<p><a href="https://developers.openai.com/codex/changelog#codex-2026-05-28-app">Read original</a></p>]]></description>
-      <category>OpenAI Codex</category>
-      <category>Remote Control</category>
-      <category>Desktop Automation</category>
-      <category>Developer Tools</category>
-      <category>Collaboration</category>
-    </item>
-    <item>
-      <title>[信号 7.0] OpenRouter raises $113M Series B</title>
-      <link>https://openrouter.ai/announcements/series-b</link>
-      <guid isPermaLink="false">horizon:zh:hackernews:story:48338660</guid>
-      <pubDate>Sat, 30 May 2026 17:27:28 +0000</pubDate>
-      <description><![CDATA[<p>AI Score: 8.0</p>
+      <title>[信号 7.0] 移动电源 CCC 认证将新增安全测试要求</title>
+      <link>https://news.cctv.com/2026/05/31/ARTIJRDERjgVN35d2KfVwMxR260531.shtml</link>
+      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41670</guid>
+      <pubDate>Sun, 31 May 2026 09:44:06 +0000</pubDate>
+      <description><![CDATA[<p>AI Score: 7.0</p>
 <p>Signal Score: 7.0</p>
-<p>OpenRouter announced a $113M Series B as it positions itself as a key proxy layer that simplifies access, billing, and experimentation across many LLM providers and models.</p>
-<p><strong>Tags:</strong> #LLM, #AI infrastructure, #API gateway, #Developer tools, #Venture funding</p>
-<p><a href="https://openrouter.ai/announcements/series-b">Read original</a></p>]]></description>
-      <category>LLM</category>
-      <category>AI infrastructure</category>
-      <category>API gateway</category>
-      <category>Developer tools</category>
-      <category>Venture funding</category>
+<p>市场监管总局调整移动电源等产品CCC认证规则，新增GB 47372—2026为认证依据并强化热滥用、针刺等安全测试，设过渡期至2027年3月31日后全面执行。</p>
+<p><strong>Tags:</strong> #CCC认证, #电池安全, #移动电源, #GB 47372-2026, #合规监管</p>
+<p><a href="https://news.cctv.com/2026/05/31/ARTIJRDERjgVN35d2KfVwMxR260531.shtml">Read original</a></p>]]></description>
+      <category>CCC认证</category>
+      <category>电池安全</category>
+      <category>移动电源</category>
+      <category>GB 47372-2026</category>
+      <category>合规监管</category>
     </item>
     <item>
-      <title>[信号 6.0] Microsoft Office 2019 and 2021 for Mac view-only conversion</title>
-      <link>https://consumerrights.wiki/w/Microsoft_Office_2019_and_2021_for_Mac_view-only_conversion_(2026)</link>
-      <guid isPermaLink="false">horizon:zh:hackernews:story:48341578</guid>
-      <pubDate>Sat, 30 May 2026 23:26:13 +0000</pubDate>
+      <title>[信号 6.0] Cloudflare Turnstile requiring fingerprintable WebGL</title>
+      <link>https://hacktivis.me/articles/cloudflare-turnstile-webgl-fingerprinting</link>
+      <guid isPermaLink="false">horizon:zh:hackernews:story:48345840</guid>
+      <pubDate>Sun, 31 May 2026 14:13:20 +0000</pubDate>
       <description><![CDATA[<p>AI Score: 8.0</p>
 <p>Signal Score: 6.0</p>
-<p>A report and large HN thread discuss Microsoft potentially turning Office 2019/2021 for Mac perpetual licenses into view-only, prompting backlash, legal arguments, and calls to switch to alternatives.</p>
-<p><strong>Tags:</strong> #software-licensing, #microsoft-office, #subscription-models, #consumer-rights, #macos</p>
-<p><a href="https://consumerrights.wiki/w/Microsoft_Office_2019_and_2021_for_Mac_view-only_conversion_(2026)">Read original</a></p>]]></description>
-      <category>software-licensing</category>
-      <category>microsoft-office</category>
-      <category>subscription-models</category>
-      <category>consumer-rights</category>
-      <category>macos</category>
+<p>The article and HN discussion report that Cloudflare Turnstile’s bot checks effectively require fingerprintable WebGL characteristics, creating privacy concerns and breaking access for some browsers/users.</p>
+<p><strong>Tags:</strong> #web-security, #browser-fingerprinting, #cloudflare, #privacy, #anti-bot</p>
+<p><a href="https://hacktivis.me/articles/cloudflare-turnstile-webgl-fingerprinting">Read original</a></p>]]></description>
+      <category>web-security</category>
+      <category>browser-fingerprinting</category>
+      <category>cloudflare</category>
+      <category>privacy</category>
+      <category>anti-bot</category>
     </item>
     <item>
-      <title>[信号 6.0] Zig: Build System Reworked</title>
-      <link>https://ziglang.org/devlog/2026/#2026-05-26</link>
-      <guid isPermaLink="false">horizon:zh:hackernews:story:48334048</guid>
-      <pubDate>Sat, 30 May 2026 08:38:28 +0000</pubDate>
+      <title>[信号 6.0] Dav2d</title>
+      <link>https://jbkempf.com/blog/2026/dav2d/</link>
+      <guid isPermaLink="false">horizon:zh:hackernews:story:48344961</guid>
+      <pubDate>Sun, 31 May 2026 11:44:45 +0000</pubDate>
       <description><![CDATA[<p>AI Score: 8.0</p>
 <p>Signal Score: 6.0</p>
-<p>Zig’s devlog announces a reworked build system, with community discussion highlighting improved tooling, upgrade experiences with Zig 0.16.0, and faster developer feedback loops.</p>
-<p><strong>Tags:</strong> #zig, #build-systems, #systems-programming, #developer-tooling, #compilers</p>
-<p><a href="https://ziglang.org/devlog/2026/#2026-05-26">Read original</a></p>]]></description>
-      <category>zig</category>
-      <category>build-systems</category>
-      <category>systems-programming</category>
-      <category>developer-tooling</category>
-      <category>compilers</category>
-    </item>
-    <item>
-      <title>[信号 6.0] Openrsync: An implementation of rsync, by the OpenBSD team</title>
-      <link>https://github.com/kristapsdz/openrsync</link>
-      <guid isPermaLink="false">horizon:zh:hackernews:story:48334854</guid>
-      <pubDate>Sat, 30 May 2026 10:51:48 +0000</pubDate>
-      <description><![CDATA[<p>AI Score: 8.0</p>
-<p>Signal Score: 6.0</p>
-<p>Openrsync is an OpenBSD-team implementation of rsync aiming for a more maintainable and security-oriented codebase, with active community evaluation of compatibility and deployment implications.</p>
-<p><strong>Tags:</strong> #rsync, #OpenBSD, #systems-software, #security, #file-sync</p>
-<p><a href="https://github.com/kristapsdz/openrsync">Read original</a></p>]]></description>
-      <category>rsync</category>
-      <category>OpenBSD</category>
-      <category>systems-software</category>
-      <category>security</category>
-      <category>file-sync</category>
-    </item>
-    <item>
-      <title>[信号 6.0] How we contain Claude across products</title>
-      <link>https://simonwillison.net/2026/May/30/how-we-contain-claude/#atom-everything</link>
-      <guid isPermaLink="false">horizon:zh:rss:simonwillison.net_atom_everything_:202502967927388120</guid>
-      <pubDate>Sat, 30 May 2026 21:36:24 +0000</pubDate>
-      <description><![CDATA[<p>AI Score: 8.0</p>
-<p>Signal Score: 6.0</p>
-<p>Anthropic published a detailed engineering overview of how it sandboxes and constrains Claude’s actions across Claude.ai, Claude Code, and related products using multiple isolation layers and network/egress controls.</p>
-<p><strong>Tags:</strong> #AI Security, #Sandboxing, #Systems Engineering, #LLM Agents, #Isolation/Containment</p>
-<p><a href="https://simonwillison.net/2026/May/30/how-we-contain-claude/#atom-everything">Read original</a></p>]]></description>
-      <category>AI Security</category>
-      <category>Sandboxing</category>
-      <category>Systems Engineering</category>
-      <category>LLM Agents</category>
-      <category>Isolation/Containment</category>
+<p>The post and HN thread discuss dav2d and the broader challenge of making AV2 decoding practical, given much higher complexity than AV1 and uncertain real-world performance tradeoffs versus compression gains.</p>
+<p><strong>Tags:</strong> #video-codecs, #AV2, #software-decoding, #performance-optimization, #systems-engineering</p>
+<p><a href="https://jbkempf.com/blog/2026/dav2d/">Read original</a></p>]]></description>
+      <category>video-codecs</category>
+      <category>AV2</category>
+      <category>software-decoding</category>
+      <category>performance-optimization</category>
+      <category>systems-engineering</category>
     </item>
     <item>
       <title>[信号 6.0] 研究称恶意网站可借 SSD 计时推测用户活动</title>
@@ -109,126 +61,78 @@
       <pubDate>Sun, 31 May 2026 01:55:35 +0000</pubDate>
       <description><![CDATA[<p>AI Score: 8.0</p>
 <p>Signal Score: 6.0</p>
-<p>研究提出 FROST 攻击，恶意网站可借助浏览器 OPFS 与 SSD 计时侧信道高精度推测用户访问网站与使用应用。</p>
-<p><strong>Tags:</strong> #side-channel-attacks, #web-security, #browser-security, #storage-systems, #privacy</p>
+<p>研究提出 FROST 无交互攻击，恶意网站可通过浏览器 OPFS 与 SSD 计时侧信道推测用户正在访问的网站和使用的应用。</p>
+<p><strong>Tags:</strong> #Side-channel Attacks, #Browser Security, #Web Privacy, #OPFS, #SSD Timing</p>
 <p><a href="https://futurism.com/future-society/websites-spying-solid-state-drive">Read original</a></p>]]></description>
-      <category>side-channel-attacks</category>
-      <category>web-security</category>
-      <category>browser-security</category>
-      <category>storage-systems</category>
-      <category>privacy</category>
+      <category>Side-channel Attacks</category>
+      <category>Browser Security</category>
+      <category>Web Privacy</category>
+      <category>OPFS</category>
+      <category>SSD Timing</category>
     </item>
     <item>
-      <title>[信号 6.0] Accenture to acquire Ookla</title>
-      <link>https://newsroom.accenture.com/news/2026/accenture-to-acquire-ookla-to-strengthen-network-intelligence-and-experience-with-data-and-ai-for-enterprises</link>
-      <guid isPermaLink="false">horizon:zh:hackernews:story:48337987</guid>
-      <pubDate>Sat, 30 May 2026 16:28:58 +0000</pubDate>
+      <title>[信号 6.0] 1-Bit Bonsai Image 4B Image Generation for Local Devices</title>
+      <link>https://prismml.com/news/bonsai-image-4b</link>
+      <guid isPermaLink="false">horizon:zh:hackernews:story:48346257</guid>
+      <pubDate>Sun, 31 May 2026 15:04:52 +0000</pubDate>
       <description><![CDATA[<p>AI Score: 7.0</p>
 <p>Signal Score: 6.0</p>
-<p>Accenture is acquiring Ookla to combine its large-scale network measurement datasets and products with Accenture’s data/AI services for telecoms, hyperscalers, and enterprises.</p>
-<p><strong>Tags:</strong> #acquisition, #telecom, #network-measurement, #internet-performance, #data-products</p>
-<p><a href="https://newsroom.accenture.com/news/2026/accenture-to-acquire-ookla-to-strengthen-network-intelligence-and-experience-with-data-and-ai-for-enterprises">Read original</a></p>]]></description>
-      <category>acquisition</category>
-      <category>telecom</category>
-      <category>network-measurement</category>
-      <category>internet-performance</category>
-      <category>data-products</category>
+<p>PrismML presents “1-Bit Bonsai Image 4B,” a heavily quantized image-generation model intended to make large diffusion-style generation feasible on local devices.</p>
+<p><strong>Tags:</strong> #generative-ai, #diffusion-models, #model-quantization, #on-device-ml, #efficient-inference</p>
+<p><a href="https://prismml.com/news/bonsai-image-4b">Read original</a></p>]]></description>
+      <category>generative-ai</category>
+      <category>diffusion-models</category>
+      <category>model-quantization</category>
+      <category>on-device-ml</category>
+      <category>efficient-inference</category>
     </item>
     <item>
-      <title>[信号 6.0] Running Python ASGI apps in the browser via Pyodide + a service worker</title>
-      <link>https://simonwillison.net/2026/May/30/pyodide-asgi-browser/#atom-everything</link>
-      <guid isPermaLink="false">horizon:zh:rss:simonwillison.net_atom_everything_:-2929498308867090026</guid>
-      <pubDate>Sat, 30 May 2026 21:02:16 +0000</pubDate>
-      <description><![CDATA[<p>AI Score: 7.0</p>
-<p>Signal Score: 6.0</p>
-<p>Simon Willison documents research into running Python ASGI applications entirely in the browser via Pyodide and a Service Worker, improving on earlier Web Worker navigation-interception approaches that broke JavaScript execution.</p>
-<p><strong>Tags:</strong> #Pyodide, #WebAssembly, #ASGI, #Service Workers, #Python in the browser</p>
-<p><a href="https://simonwillison.net/2026/May/30/pyodide-asgi-browser/#atom-everything">Read original</a></p>]]></description>
-      <category>Pyodide</category>
-      <category>WebAssembly</category>
-      <category>ASGI</category>
-      <category>Service Workers</category>
-      <category>Python in the browser</category>
+      <title>[信号 5.0] Restartable Sequences</title>
+      <link>https://justine.lol/rseq/</link>
+      <guid isPermaLink="false">horizon:zh:hackernews:story:48346019</guid>
+      <pubDate>Sun, 31 May 2026 14:38:48 +0000</pubDate>
+      <description><![CDATA[<p>AI Score: 8.0</p>
+<p>Signal Score: 5.0</p>
+<p>Explains Linux rseq() restartable sequences as a kernel-assisted way to execute short critical sections without mutexes or atomics while preserving scheduler abstraction, with notes on practical usage via librseq.</p>
+<p><strong>Tags:</strong> #linux, #concurrency, #systems-programming, #performance, #lock-free</p>
+<p><a href="https://justine.lol/rseq/">Read original</a></p>]]></description>
+      <category>linux</category>
+      <category>concurrency</category>
+      <category>systems-programming</category>
+      <category>performance</category>
+      <category>lock-free</category>
     </item>
     <item>
-      <title>[信号 6.0] ♻️ NVIDIA、📱 Windows 和 Arm 同步预告，N1X 笔记本芯片或将在 Computex 亮相</title>
-      <link>https://x.com/nvidia/status/2060390710797328574</link>
-      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41653</guid>
-      <pubDate>Sat, 30 May 2026 08:37:19 +0000</pubDate>
-      <description><![CDATA[<p>AI Score: 7.0</p>
-<p>Signal Score: 6.0</p>
-<p>NVIDIA、Windows与Arm同步预告Computex将迎来“PC新时代”发布，媒体推测可能与传闻中的NVIDIA N1/N1X Arm笔记本芯片有关。</p>
-<p><strong>Tags:</strong> #NVIDIA, #Arm, #Windows, #PC硬件, #Computex</p>
-<p><a href="https://x.com/nvidia/status/2060390710797328574">Read original</a></p>]]></description>
-      <category>NVIDIA</category>
-      <category>Arm</category>
-      <category>Windows</category>
-      <category>PC硬件</category>
-      <category>Computex</category>
-    </item>
-    <item>
-      <title>[信号 6.0] 人民日报评 APP 乱跳转：严重者应下架关停</title>
-      <link>https://finance.sina.com.cn/wm/2026-05-30/doc-inhzswye6913276.shtml</link>
-      <guid isPermaLink="false">horizon:zh:telegram:zaihuapd:41660</guid>
-      <pubDate>Sat, 30 May 2026 15:15:13 +0000</pubDate>
-      <description><![CDATA[<p>AI Score: 7.0</p>
-<p>Signal Score: 6.0</p>
-<p>人民日报评论称应严厉整治APP信息窗口乱跳转等侵权行为，对屡教不改者下架关停并追责相关广告与服务链条，应用商店需加强审核监测。</p>
-<p><strong>Tags:</strong> #监管合规, #移动应用, #用户隐私, #广告生态, #中国政策</p>
-<p><a href="https://finance.sina.com.cn/wm/2026-05-30/doc-inhzswye6913276.shtml">Read original</a></p>]]></description>
-      <category>监管合规</category>
-      <category>移动应用</category>
-      <category>用户隐私</category>
-      <category>广告生态</category>
-      <category>中国政策</category>
-    </item>
-    <item>
-      <title>[信号 5.0] Leo&#x27;s first encyclical attacks technological messianism</title>
-      <link>https://www.economist.com/europe/2026/05/28/leos-first-encyclical-attacks-technological-messianism</link>
-      <guid isPermaLink="false">horizon:zh:hackernews:story:48334710</guid>
-      <pubDate>Sat, 30 May 2026 10:30:50 +0000</pubDate>
+      <title>[信号 5.0] Deflock hits 100k ALPRs Mapped in USA</title>
+      <link>https://deflock.org/</link>
+      <guid isPermaLink="false">horizon:zh:hackernews:story:48347370</guid>
+      <pubDate>Sun, 31 May 2026 17:04:10 +0000</pubDate>
       <description><![CDATA[<p>AI Score: 7.0</p>
 <p>Signal Score: 5.0</p>
-<p>The article and discussion cover Pope Leo’s first encyclical criticizing techno-messianic narratives, prompting broad debate about AI hype, control of technology, and the role of religious and political institutions in tech governance.</p>
-<p><strong>Tags:</strong> #AI governance, #tech ethics, #societal impact, #AI hype, #policy</p>
-<p><a href="https://www.economist.com/europe/2026/05/28/leos-first-encyclical-attacks-technological-messianism">Read original</a></p>]]></description>
-      <category>AI governance</category>
-      <category>tech ethics</category>
-      <category>societal impact</category>
-      <category>AI hype</category>
-      <category>policy</category>
+<p>Deflock reports mapping 100,000 automated license plate readers in the U.S., sparking discussion about surveillance scope, legality, and dataset accuracy.</p>
+<p><strong>Tags:</strong> #privacy, #surveillance, #ALPR, #open-data, #civic-tech</p>
+<p><a href="https://deflock.org/">Read original</a></p>]]></description>
+      <category>privacy</category>
+      <category>surveillance</category>
+      <category>ALPR</category>
+      <category>open-data</category>
+      <category>civic-tech</category>
     </item>
     <item>
-      <title>[信号 3.0] Domain expertise has always been the real moat</title>
-      <link>https://www.brethorsting.com/blog/2026/05/domain-expertise-has-always-been-the-real-moat/</link>
-      <guid isPermaLink="false">horizon:zh:hackernews:story:48340411</guid>
-      <pubDate>Sat, 30 May 2026 20:40:57 +0000</pubDate>
+      <title>[信号 4.0] The Website Specification</title>
+      <link>https://specification.website/</link>
+      <guid isPermaLink="false">horizon:zh:hackernews:story:48343683</guid>
+      <pubDate>Sun, 31 May 2026 07:09:50 +0000</pubDate>
       <description><![CDATA[<p>AI Score: 7.0</p>
-<p>Signal Score: 3.0</p>
-<p>The post argues that durable competitive advantage comes from deep understanding of a problem domain, with coding increasingly commoditized relative to domain knowledge and context.</p>
-<p><strong>Tags:</strong> #domain-expertise, #software-engineering, #ai-impact, #career-development, #product-development</p>
-<p><a href="https://www.brethorsting.com/blog/2026/05/domain-expertise-has-always-been-the-real-moat/">Read original</a></p>]]></description>
-      <category>domain-expertise</category>
-      <category>software-engineering</category>
-      <category>ai-impact</category>
-      <category>career-development</category>
-      <category>product-development</category>
-    </item>
-    <item>
-      <title>[信号 3.0] Voxel Space (2017)</title>
-      <link>https://s-macke.github.io/VoxelSpace/</link>
-      <guid isPermaLink="false">horizon:zh:hackernews:story:48336564</guid>
-      <pubDate>Sat, 30 May 2026 14:25:50 +0000</pubDate>
-      <description><![CDATA[<p>AI Score: 7.0</p>
-<p>Signal Score: 3.0</p>
-<p>An interactive explanation and implementation of the 1990s Comanche-style heightmap rendering technique often mislabeled as voxel rendering, plus community discussion and related ports.</p>
-<p><strong>Tags:</strong> #computer-graphics, #rendering, #game-dev, #heightmaps, #hacker-news</p>
-<p><a href="https://s-macke.github.io/VoxelSpace/">Read original</a></p>]]></description>
-      <category>computer-graphics</category>
-      <category>rendering</category>
-      <category>game-dev</category>
-      <category>heightmaps</category>
-      <category>hacker-news</category>
+<p>Signal Score: 4.0</p>
+<p>A checklist-style “Website Specification” outlining recommended/required web best practices, sparking debate about AI/agent-oriented guidance and practical implementation details (e.g., login form UX and security norms).</p>
+<p><strong>Tags:</strong> #web-development, #web-standards, #security, #best-practices, #ai-agents</p>
+<p><a href="https://specification.website/">Read original</a></p>]]></description>
+      <category>web-development</category>
+      <category>web-standards</category>
+      <category>security</category>
+      <category>best-practices</category>
+      <category>ai-agents</category>
     </item>
   </channel>
 </rss>
