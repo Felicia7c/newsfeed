@@ -1,113 +1,59 @@
 {
-  "date": "2026-05-31",
+  "date": "2026-06-01",
   "language": "zh",
   "opportunities": [
     {
-      "id": "telegram:zaihuapd:41656",
-      "title": "🤖 Codex 现已开放跨设备远程控制，强化协作与搜索功能",
-      "url": "https://developers.openai.com/codex/changelog#codex-2026-05-28-app",
+      "id": "telegram:zaihuapd:41670",
+      "title": "移动电源 CCC 认证将新增安全测试要求",
+      "url": "https://news.cctv.com/2026/05/31/ARTIJRDERjgVN35d2KfVwMxR260531.shtml",
       "source_type": "telegram",
-      "ai_score": 8.0,
-      "signal_score": 8.0,
-      "signal_reason": "可观测变化包括：新增从移动端/Mac 远程启动 Windows Codex 并实时查看进度、Codex 在 Windows 前台直接操控桌面应用，以及搜索覆盖对话内容与 Git 分支名、工作树支持线程协调与独立后台线程；这些属于能力边界与工作流压缩的明确升级。",
-      "capability_delta": "",
-      "assessment": {},
-      "tags": [
-        "OpenAI Codex",
-        "Remote Control",
-        "Desktop Automation",
-        "Developer Tools",
-        "Collaboration"
-      ]
-    },
-    {
-      "id": "hackernews:story:48338660",
-      "title": "OpenRouter raises $113M Series B",
-      "url": "https://openrouter.ai/announcements/series-b",
-      "source_type": "hackernews",
-      "ai_score": 8.0,
+      "ai_score": 7.0,
       "signal_score": 7.0,
-      "signal_reason": "The $113M Series B is an observable, significant capital and validation signal for an LLM-aggregation/proxy workflow, and the high engagement plus comments citing specific utility (multi-provider model access, unified APIs, billing limits) indicate real usage demand; however, the announcement does not itself show a specific capability/price step-change for end users.",
+      "signal_reason": "可观察到明确的规则与标准变更（新增GB 47372—2026及更严格测试项），并给出硬性时间表（2027-04-01全面执行、存量证书需转换），将直接改变相关产品的准入与测试/认证成本与流程。",
       "capability_delta": "",
       "assessment": {},
       "tags": [
-        "LLM",
-        "AI infrastructure",
-        "API gateway",
-        "Developer tools",
-        "Venture funding"
+        "CCC认证",
+        "电池安全",
+        "移动电源",
+        "GB 47372-2026",
+        "合规监管"
       ]
     },
     {
-      "id": "hackernews:story:48341578",
-      "title": "Microsoft Office 2019 and 2021 for Mac view-only conversion",
-      "url": "https://consumerrights.wiki/w/Microsoft_Office_2019_and_2021_for_Mac_view-only_conversion_(2026)",
+      "id": "hackernews:story:48345840",
+      "title": "Cloudflare Turnstile requiring fingerprintable WebGL",
+      "url": "https://hacktivis.me/articles/cloudflare-turnstile-webgl-fingerprinting",
       "source_type": "hackernews",
       "ai_score": 8.0,
       "signal_score": 6.0,
-      "signal_reason": "If implemented, this would materially change access/utility for existing Office 2019/2021 Mac users (functionality reduced to viewing) and could accelerate migration to Microsoft 365; the observable signal is strong user impact and controversy, but details depend on enforcement scope/timeline and are not fully confirmed in the provided excerpt.",
+      "signal_reason": "Observable evidence indicates a real shift in practical web access requirements for some users (minority browser maintainer reports user impact; widespread discussion/engagement), but no clearly documented change in Cloudflare policy/product terms or measurable cost/latency/access improvements—primarily an exposed dependency/behavior with mitigations like spoofing mentioned.",
       "capability_delta": "",
       "assessment": {},
       "tags": [
-        "software-licensing",
-        "microsoft-office",
-        "subscription-models",
-        "consumer-rights",
-        "macos"
+        "web-security",
+        "browser-fingerprinting",
+        "cloudflare",
+        "privacy",
+        "anti-bot"
       ]
     },
     {
-      "id": "hackernews:story:48334048",
-      "title": "Zig: Build System Reworked",
-      "url": "https://ziglang.org/devlog/2026/#2026-05-26",
+      "id": "hackernews:story:48344961",
+      "title": "Dav2d",
+      "url": "https://jbkempf.com/blog/2026/dav2d/",
       "source_type": "hackernews",
       "ai_score": 8.0,
       "signal_score": 6.0,
-      "signal_reason": "Observable signal is moderate: a concrete upstream change to Zig’s build system plus high community attention suggests real workflow impact for Zig users, but the provided content does not specify measurable capability/cost/latency changes or broad market adoption effects beyond user reports and discussion.",
+      "signal_reason": "Observable signals include active community interest and concrete technical claims (AV2 decode complexity ~5× AV1; ~25% size reduction mentioned) implying materially higher compute requirements, but no demonstrated widely-available implementation, benchmarks, or market/access change is evidenced in the provided content.",
       "capability_delta": "",
       "assessment": {},
       "tags": [
-        "zig",
-        "build-systems",
-        "systems-programming",
-        "developer-tooling",
-        "compilers"
-      ]
-    },
-    {
-      "id": "hackernews:story:48334854",
-      "title": "Openrsync: An implementation of rsync, by the OpenBSD team",
-      "url": "https://github.com/kristapsdz/openrsync",
-      "source_type": "hackernews",
-      "ai_score": 8.0,
-      "signal_score": 6.0,
-      "signal_reason": "Observable signal shows a new/alternative rsync implementation from a credible systems-security ecosystem and significant community attention, but the provided content does not demonstrate a clear capability/cost/access step-change or widespread production readiness beyond incremental improvement and interest.",
-      "capability_delta": "",
-      "assessment": {},
-      "tags": [
-        "rsync",
-        "OpenBSD",
-        "systems-software",
-        "security",
-        "file-sync"
-      ]
-    },
-    {
-      "id": "rss:simonwillison.net_atom_everything_:202502967927388120",
-      "title": "How we contain Claude across products",
-      "url": "https://simonwillison.net/2026/May/30/how-we-contain-claude/#atom-everything",
-      "source_type": "rss",
-      "ai_score": 8.0,
-      "signal_score": 6.0,
-      "signal_reason": "Observable signal is primarily improved transparency and concrete implementation disclosure (tools and architecture) rather than a new capability release or market change; it may materially affect how practitioners evaluate and adopt Claude-based products for regulated/high-security use, but no explicit pricing, access, or performance shift is stated.",
-      "capability_delta": "",
-      "assessment": {},
-      "tags": [
-        "AI Security",
-        "Sandboxing",
-        "Systems Engineering",
-        "LLM Agents",
-        "Isolation/Containment"
+        "video-codecs",
+        "AV2",
+        "software-decoding",
+        "performance-optimization",
+        "systems-engineering"
       ]
     },
     {
@@ -117,141 +63,87 @@
       "source_type": "telegram",
       "ai_score": 8.0,
       "signal_score": 6.0,
-      "signal_reason": "可观察到的事实是：无需交互的攻击路径+给出量化准确率并指出受影响平台（Mac/Linux，声称 Windows 也可能受影响），意味着潜在风险边界扩大；但尚未见到补丁/默认缓解措施变化、广泛复现或真实世界利用证据，市场/技术条件的变化信号中等。",
+      "signal_reason": "可观察事实是出现了无需点击/安装即可在网页层面推断用户活动的攻击路径，并报告了较高准确率与可行实验结果；但当前仅在 Mac/Linux 验证、距离大规模实际利用与缓解措施落地仍有不确定性，尚未体现明确的成本/可用性变化或官方修复发布。",
       "capability_delta": "",
       "assessment": {},
       "tags": [
-        "side-channel-attacks",
-        "web-security",
-        "browser-security",
-        "storage-systems",
-        "privacy"
+        "Side-channel Attacks",
+        "Browser Security",
+        "Web Privacy",
+        "OPFS",
+        "SSD Timing"
       ]
     },
     {
-      "id": "hackernews:story:48337987",
-      "title": "Accenture to acquire Ookla",
-      "url": "https://newsroom.accenture.com/news/2026/accenture-to-acquire-ookla-to-strengthen-network-intelligence-and-experience-with-data-and-ai-for-enterprises",
+      "id": "hackernews:story:48346257",
+      "title": "1-Bit Bonsai Image 4B Image Generation for Local Devices",
+      "url": "https://prismml.com/news/bonsai-image-4b",
       "source_type": "hackernews",
       "ai_score": 7.0,
       "signal_score": 6.0,
-      "signal_reason": "Observable market signal: a large, disclosed transaction brings widely-deployed consumer and field-test network telemetry under a major IT services firm, indicating consolidation and likely tighter integration of Ookla’s datasets into enterprise network optimization offerings, though it does not by itself change public access/capabilities.",
+      "signal_reason": "Observable signal is a claimed capability shift toward running multi-billion-parameter image generation locally via 1-bit weights, aligning with clear demand for non-subscription, private/local inference; however, the discussion highlights uncertainty about real-world speed/latency gains versus primarily memory/storage benefits, limiting how clearly market conditions change from the information provided.",
       "capability_delta": "",
       "assessment": {},
       "tags": [
-        "acquisition",
-        "telecom",
-        "network-measurement",
-        "internet-performance",
-        "data-products"
+        "generative-ai",
+        "diffusion-models",
+        "model-quantization",
+        "on-device-ml",
+        "efficient-inference"
       ]
     },
     {
-      "id": "rss:simonwillison.net_atom_everything_:-2929498308867090026",
-      "title": "Running Python ASGI apps in the browser via Pyodide + a service worker",
-      "url": "https://simonwillison.net/2026/May/30/pyodide-asgi-browser/#atom-everything",
-      "source_type": "rss",
-      "ai_score": 7.0,
-      "signal_score": 6.0,
-      "signal_reason": "Observable technical improvement (enabling normal execution of JavaScript in generated pages while running a Python ASGI app in-browser) and a publicly available implementation/research repo suggest a more practical workflow for browser-only Python web apps, but it is presented as research rather than a broadly adopted release or market shift.",
+      "id": "hackernews:story:48346019",
+      "title": "Restartable Sequences",
+      "url": "https://justine.lol/rseq/",
+      "source_type": "hackernews",
+      "ai_score": 8.0,
+      "signal_score": 5.0,
+      "signal_reason": "Signals an established kernel feature and an existing support library (librseq) being discussed and referenced; no explicit new release, capability change, or market/access shift is evidenced beyond continued interest and awareness.",
       "capability_delta": "",
       "assessment": {},
       "tags": [
-        "Pyodide",
-        "WebAssembly",
-        "ASGI",
-        "Service Workers",
-        "Python in the browser"
+        "linux",
+        "concurrency",
+        "systems-programming",
+        "performance",
+        "lock-free"
       ]
     },
     {
-      "id": "telegram:zaihuapd:41653",
-      "title": "♻️ NVIDIA、📱 Windows 和 Arm 同步预告，N1X 笔记本芯片或将在 Computex 亮相",
-      "url": "https://x.com/nvidia/status/2060390710797328574",
-      "source_type": "telegram",
-      "ai_score": 7.0,
-      "signal_score": 6.0,
-      "signal_reason": "可观察到的事实是三家官方账号联合预告并指向Computex会场，显示存在协调发布与即将公布新品的高概率；但产品名称、能力边界、成本/性能指标、供货与生态落地细节均未披露，尚不足以确认市场条件已发生明确变化。",
-      "capability_delta": "",
-      "assessment": {},
-      "tags": [
-        "NVIDIA",
-        "Arm",
-        "Windows",
-        "PC硬件",
-        "Computex"
-      ]
-    },
-    {
-      "id": "telegram:zaihuapd:41660",
-      "title": "人民日报评 APP 乱跳转：严重者应下架关停",
-      "url": "https://finance.sina.com.cn/wm/2026-05-30/doc-inhzswye6913276.shtml",
-      "source_type": "telegram",
-      "ai_score": 7.0,
-      "signal_score": 6.0,
-      "signal_reason": "可观察事实包括：工信部已通报31款侵权APP/SDK且明确包含乱跳转问题、官方媒体表态支持更严厉处置并提出对广告商/服务商追责与应用商店加强审核，显示合规与分发审核环境可能收紧，但尚未披露新的具体法规、处罚结果或执行细则变化。",
-      "capability_delta": "",
-      "assessment": {},
-      "tags": [
-        "监管合规",
-        "移动应用",
-        "用户隐私",
-        "广告生态",
-        "中国政策"
-      ]
-    },
-    {
-      "id": "hackernews:story:48334710",
-      "title": "Leo's first encyclical attacks technological messianism",
-      "url": "https://www.economist.com/europe/2026/05/28/leos-first-encyclical-attacks-technological-messianism",
+      "id": "hackernews:story:48347370",
+      "title": "Deflock hits 100k ALPRs Mapped in USA",
+      "url": "https://deflock.org/",
       "source_type": "hackernews",
       "ai_score": 7.0,
       "signal_score": 5.0,
-      "signal_reason": "Observable signal is primarily narrative and institutional positioning (a major global religious authority publicly framing tech/AI in moral terms) plus substantial public engagement; it does not by itself indicate a specific capability, cost, access, or regulatory change.",
+      "signal_reason": "Observable signals include a publicly available map/dataset and evidence of substantial ALPR prevalence plus active community attention, but there is no clear newly changed capability, access, cost, or market condition beyond increased visibility and incremental dataset iteration.",
       "capability_delta": "",
       "assessment": {},
       "tags": [
-        "AI governance",
-        "tech ethics",
-        "societal impact",
-        "AI hype",
-        "policy"
+        "privacy",
+        "surveillance",
+        "ALPR",
+        "open-data",
+        "civic-tech"
       ]
     },
     {
-      "id": "hackernews:story:48340411",
-      "title": "Domain expertise has always been the real moat",
-      "url": "https://www.brethorsting.com/blog/2026/05/domain-expertise-has-always-been-the-real-moat/",
+      "id": "hackernews:story:48343683",
+      "title": "The Website Specification",
+      "url": "https://specification.website/",
       "source_type": "hackernews",
       "ai_score": 7.0,
-      "signal_score": 3.0,
-      "signal_reason": "No new technology release, policy change, or measurable shift in access/cost/latency is presented; the item is primarily commentary plus anecdotal evidence, despite high engagement.",
+      "signal_score": 4.0,
+      "signal_reason": "Observable signal is mainly community attention to a guidance document (high engagement), but it does not indicate a new capability release, standard adoption, regulatory change, or measurable shift in cost/latency/access—just a curated set of recommendations.",
       "capability_delta": "",
       "assessment": {},
       "tags": [
-        "domain-expertise",
-        "software-engineering",
-        "ai-impact",
-        "career-development",
-        "product-development"
-      ]
-    },
-    {
-      "id": "hackernews:story:48336564",
-      "title": "Voxel Space (2017)",
-      "url": "https://s-macke.github.io/VoxelSpace/",
-      "source_type": "hackernews",
-      "ai_score": 7.0,
-      "signal_score": 3.0,
-      "signal_reason": "No new capability or market change is evidenced; it’s a 2017 educational/demo page resurfacing with community links to existing ports, without indicating improved access, cost/latency shifts, or a new release.",
-      "capability_delta": "",
-      "assessment": {},
-      "tags": [
-        "computer-graphics",
-        "rendering",
-        "game-dev",
-        "heightmaps",
-        "hacker-news"
+        "web-development",
+        "web-standards",
+        "security",
+        "best-practices",
+        "ai-agents"
       ]
     }
   ]
