@@ -1,149 +1,293 @@
 {
-  "date": "2026-06-01",
+  "date": "2026-06-02",
   "language": "zh",
   "opportunities": [
     {
-      "id": "telegram:zaihuapd:41670",
-      "title": "移动电源 CCC 认证将新增安全测试要求",
-      "url": "https://news.cctv.com/2026/05/31/ARTIJRDERjgVN35d2KfVwMxR260531.shtml",
+      "id": "rss:simonwillison.net_atom_everything_:-6666774415242814492",
+      "title": "Hackers Simply Asked Meta AI to Give Them Access to High-Profile Instagram Accounts. It Worked",
+      "url": "https://simonwillison.net/2026/Jun/1/hackers-simply-asked-meta-ai/#atom-everything",
+      "source_type": "rss",
+      "ai_score": 9.0,
+      "signal_score": 8.0,
+      "signal_reason": "Observable facts indicate a materially increased risk surface from deploying AI support bots with privileged account-recovery capabilities, demonstrating a concrete failure mode that changes reliability/safety expectations for automated support and identity recovery systems.",
+      "capability_delta": "",
+      "assessment": {},
+      "tags": [
+        "security",
+        "account-takeover",
+        "AI-agents",
+        "social-engineering",
+        "platform-risk"
+      ]
+    },
+    {
+      "id": "telegram:zaihuapd:41677",
+      "title": "💻 GitHub Copilot 2026 年 6 月起改为按使用量计费，老用户调用 GPT-5.5 乘数达 57 倍",
+      "url": "https://docs-internal.github.com/en/copilot/reference/copilot-billing/request-based-billing-legacy/what-changed-with-billing",
+      "source_type": "telegram",
+      "ai_score": 8.0,
+      "signal_score": 8.0,
+      "signal_reason": "可观察到的事实是定价与计费边界发生明确变化（按用量/token 计费、AI Credits 额度、旧计划过渡规则）并给出具体模型乘数（GPT-5.5 57×），将实质性改变使用成本、预算与采购/管控策略。",
+      "capability_delta": "",
+      "assessment": {},
+      "tags": [
+        "GitHub Copilot",
+        "LLM计费",
+        "Token用量",
+        "开发者工具",
+        "成本与定价"
+      ]
+    },
+    {
+      "id": "telegram:zaihuapd:41691",
+      "title": "三星内存芯片价格暴涨最高 60%，AI 数据中心建设潮加剧芯片短缺  据路透社独家报道，全球最大内存芯片制造商三星电子本月将特定内存芯片价格较 9 月份上调最高",
+      "url": "https://t.me/zaihuapd/41691",
+      "source_type": "telegram",
+      "ai_score": 7.0,
+      "signal_score": 8.0,
+      "signal_reason": "可观察事实显示价格与供需条件发生明显变化：32GB DDR5合约价从149美元涨至239美元，多个容量DDR5价格约涨50%至60%，并归因于AI数据中心需求推动的短缺与恐慌性采购，直接影响硬件成本与采购节奏。",
+      "capability_delta": "",
+      "assessment": {},
+      "tags": [
+        "Memory",
+        "Semiconductors",
+        "AI Data Centers",
+        "DDR5",
+        "Supply Chain"
+      ]
+    },
+    {
+      "id": "telegram:zaihuapd:41693",
+      "title": "马来西亚将对 📱 TikTok、📱 Instagram 等社交平台实施强制许可管理  马来西亚通信与多媒体委员会宣布，从 2026 年 1 月 1 日起，Tik",
+      "url": "https://t.me/zaihuapd/41693",
+      "source_type": "telegram",
+      "ai_score": 7.0,
+      "signal_score": 8.0,
+      "signal_reason": "可观察到的事实是监管框架与生效时间点明确、覆盖平台清单具体、适用门槛（800 万用户）清晰，意味着平台在马来西亚的合规义务与执行要求将发生实质变化。",
+      "capability_delta": "",
+      "assessment": {},
+      "tags": [
+        "regulation",
+        "social-media-platforms",
+        "content-moderation",
+        "Malaysia",
+        "compliance"
+      ]
+    },
+    {
+      "id": "hackernews:story:48352939",
+      "title": "Nvidia RTX Spark",
+      "url": "https://www.nvidia.com/en-us/products/rtx-spark/",
+      "source_type": "hackernews",
+      "ai_score": 8.0,
+      "signal_score": 7.0,
+      "signal_reason": "Observable signal is strong: Nvidia is publicly launching a new Windows-on-Arm processor line and citing broad third-party software/game support (\"over 100\" providers), which indicates meaningful ecosystem movement and a potential new hardware category, though real-world performance/compatibility and rollout details remain uncertain in the discussed material.",
+      "capability_delta": "",
+      "assessment": {},
+      "tags": [
+        "NVIDIA",
+        "Windows on Arm",
+        "PC hardware",
+        "AI PCs",
+        "GPU/CPU SoCs"
+      ]
+    },
+    {
+      "id": "hackernews:story:48358646",
+      "title": "Anthropic confidentially submits draft S-1 to the SEC",
+      "url": "https://www.anthropic.com/news/confidential-draft-s1-sec",
+      "source_type": "hackernews",
+      "ai_score": 8.0,
+      "signal_score": 7.0,
+      "signal_reason": "A draft S-1 filing is an observable step toward becoming a public company, which typically leads to mandatory financial disclosures, new access for public-market investors, and potential changes in capital availability and market dynamics, though timing and terms remain uncertain due to the confidential process.",
+      "capability_delta": "",
+      "assessment": {},
+      "tags": [
+        "AI industry",
+        "IPO",
+        "SEC filings",
+        "Anthropic",
+        "public markets"
+      ]
+    },
+    {
+      "id": "telegram:zaihuapd:41679",
+      "title": "英伟达发布 Vera Rubin 平台，黄仁勋预计 Blackwell 与 Rubin 截至 2027 年销售额 1 万亿美元  英伟达在 GTC 发布 Ver",
+      "url": "https://t.me/zaihuapd/41679",
+      "source_type": "telegram",
+      "ai_score": 8.0,
+      "signal_score": 7.0,
+      "signal_reason": "可观测事实包括：平台级新品发布、宣称多款芯片已量产、合作伙伴将于今年下半年开始供货，以及公开的高额营收预测；这些信号指向即将到来的供应与采购周期变化，但文中缺少可核验的性能基准、定价/可用性范围与客户采用数据，客观信号强度有限。",
+      "capability_delta": "",
+      "assessment": {},
+      "tags": [
+        "NVIDIA",
+        "AI基础设施",
+        "GPU/CPU硬件",
+        "数据中心",
+        "GTC发布"
+      ]
+    },
+    {
+      "id": "telegram:zaihuapd:41681",
+      "title": "NVIDIA DLSS 4.5 光线重建 8 月覆盖全系 RTX 显卡",
+      "url": "https://videocardz.com/newz/nvidia-dlss-4-5-ray-reconstruction-coming-in-august-for-rtx-20-30-40-and-50-series",
+      "source_type": "telegram",
+      "ai_score": 8.0,
+      "signal_score": 7.0,
+      "signal_reason": "可观察到的变化包括：明确时间点（8 月）、明确覆盖范围（全系 RTX 20-50）、明确分发渠道（NVIDIA App）、明确落地范围（27 款游戏与 Blender 5.3 计划集成），意味着相关工作流/效果可在大规模装机基数上获得一致更新，但尚未看到独立基准、成本/延迟量化或实际可用性验证。",
+      "capability_delta": "",
+      "assessment": {},
+      "tags": [
+        "NVIDIA",
+        "DLSS",
+        "Ray Tracing",
+        "Transformer Models",
+        "Graphics Rendering"
+      ]
+    },
+    {
+      "id": "telegram:zaihuapd:41686",
+      "title": "加州众议院通过法案，要求游戏停服后仍需可玩",
+      "url": "https://www.eurogamer.net/stop-killing-games-passes-floor-vote-california",
+      "source_type": "telegram",
+      "ai_score": 8.0,
+      "signal_score": 7.0,
+      "signal_reason": "已完成州众议院表决通过并设定实施时间（2027），条款对厂商提出可验证的合规义务（60 天通知、可玩性方案或退款），若参议院通过并生效将直接改变成本结构、停服流程与合同/退款规则；但仍处立法流程中，尚未最终落地。",
+      "capability_delta": "",
+      "assessment": {},
+      "tags": [
+        "gaming",
+        "regulation",
+        "consumer-rights",
+        "live-service",
+        "policy"
+      ]
+    },
+    {
+      "id": "telegram:zaihuapd:41678",
+      "title": "AI 需求推动软银超越丰田，成为日本市值最大公司",
+      "url": "https://www.fx678.com/C/20260601/202606011035122469.html",
       "source_type": "telegram",
       "ai_score": 7.0,
       "signal_score": 7.0,
-      "signal_reason": "可观察到明确的规则与标准变更（新增GB 47372—2026及更严格测试项），并给出硬性时间表（2027-04-01全面执行、存量证书需转换），将直接改变相关产品的准入与测试/认证成本与流程。",
+      "signal_reason": "可观察到的事实包括：软银年内股价约+73%、单日再涨超8%创历史新高；市值约46万亿日元并短暂/当日超越丰田；以及公开承诺在法国投资最高750亿欧元建设大型AI计算集群网络，这些均表明资金与基础设施投入在规模和预期上出现明显变化。",
       "capability_delta": "",
       "assessment": {},
       "tags": [
-        "CCC认证",
-        "电池安全",
-        "移动电源",
-        "GB 47372-2026",
-        "合规监管"
+        "AI市场",
+        "资本市场",
+        "SoftBank",
+        "算力基础设施",
+        "OpenAI"
       ]
     },
     {
-      "id": "hackernews:story:48345840",
-      "title": "Cloudflare Turnstile requiring fingerprintable WebGL",
-      "url": "https://hacktivis.me/articles/cloudflare-turnstile-webgl-fingerprinting",
+      "id": "hackernews:story:48356625",
+      "title": "Malicious npm packages detected across Red Hat Cloud Services",
+      "url": "https://github.com/RedHatInsights/javascript-clients/issues/492",
       "source_type": "hackernews",
       "ai_score": 8.0,
       "signal_score": 6.0,
-      "signal_reason": "Observable evidence indicates a real shift in practical web access requirements for some users (minority browser maintainer reports user impact; widespread discussion/engagement), but no clearly documented change in Cloudflare policy/product terms or measurable cost/latency/access improvements—primarily an exposed dependency/behavior with mitigations like spoofing mentioned.",
+      "signal_reason": "Observable signal of ongoing, recurring npm supply-chain compromises affecting a major vendor and prompting concrete operational controls (e.g., yarn/pnpm cooldown/delay mechanisms, MFA for publishing, repository manager policies), but no new platform capability or market shift is evidenced beyond heightened attention and adoption of existing mitigations.",
       "capability_delta": "",
       "assessment": {},
       "tags": [
-        "web-security",
-        "browser-fingerprinting",
-        "cloudflare",
-        "privacy",
-        "anti-bot"
+        "supply-chain-security",
+        "npm",
+        "javascript",
+        "devsecops",
+        "open-source-security"
       ]
     },
     {
-      "id": "hackernews:story:48344961",
-      "title": "Dav2d",
-      "url": "https://jbkempf.com/blog/2026/dav2d/",
+      "id": "hackernews:story:48358667",
+      "title": "Florida sues OpenAI and Sam Altman over AI risks",
+      "url": "https://www.politico.com/news/2026/06/01/openai-hit-with-florida-lawsuit-00944215",
       "source_type": "hackernews",
-      "ai_score": 8.0,
+      "ai_score": 7.0,
       "signal_score": 6.0,
-      "signal_reason": "Observable signals include active community interest and concrete technical claims (AV2 decode complexity ~5× AV1; ~25% size reduction mentioned) implying materially higher compute requirements, but no demonstrated widely-available implementation, benchmarks, or market/access change is evidenced in the provided content.",
+      "signal_reason": "Observable facts show increased regulatory/legal pressure on a leading AI provider via a state lawsuit and broad public attention, which can affect compliance risk and governance expectations, but there is no confirmed change in model capabilities, access, pricing, or operational constraints yet.",
       "capability_delta": "",
       "assessment": {},
       "tags": [
-        "video-codecs",
-        "AV2",
-        "software-decoding",
-        "performance-optimization",
-        "systems-engineering"
+        "AI regulation",
+        "AI safety",
+        "legal liability",
+        "LLMs",
+        "policy"
       ]
     },
     {
-      "id": "telegram:zaihuapd:41663",
-      "title": "研究称恶意网站可借 SSD 计时推测用户活动",
-      "url": "https://futurism.com/future-society/websites-spying-solid-state-drive",
+      "id": "telegram:zaihuapd:41694",
+      "title": "闲鱼 AI 误将用户手机照片自动上架，陕历博文物被标价 6000 元",
+      "url": "https://www.jiemian.com/article/14514989.html",
       "source_type": "telegram",
-      "ai_score": 8.0,
-      "signal_score": 6.0,
-      "signal_reason": "可观察事实是出现了无需点击/安装即可在网页层面推断用户活动的攻击路径，并报告了较高准确率与可行实验结果；但当前仅在 Mac/Linux 验证、距离大规模实际利用与缓解措施落地仍有不确定性，尚未体现明确的成本/可用性变化或官方修复发布。",
-      "capability_delta": "",
-      "assessment": {},
-      "tags": [
-        "Side-channel Attacks",
-        "Browser Security",
-        "Web Privacy",
-        "OPFS",
-        "SSD Timing"
-      ]
-    },
-    {
-      "id": "hackernews:story:48346257",
-      "title": "1-Bit Bonsai Image 4B Image Generation for Local Devices",
-      "url": "https://prismml.com/news/bonsai-image-4b",
-      "source_type": "hackernews",
       "ai_score": 7.0,
       "signal_score": 6.0,
-      "signal_reason": "Observable signal is a claimed capability shift toward running multi-billion-parameter image generation locally via 1-bit weights, aligning with clear demand for non-subscription, private/local inference; however, the discussion highlights uncertainty about real-world speed/latency gains versus primarily memory/storage benefits, limiting how clearly market conditions change from the information provided.",
+      "signal_reason": "可观察到平台已采取实质性措施（功能链路调整承诺、接入国家文物局数据库、提升72个高敏类目门槛），反映出对自动化发布与合规风控的明确需求与约束增强；但未披露量化指标（覆盖范围、误触发率、成本/效率变化）与行业范围扩散情况。",
       "capability_delta": "",
       "assessment": {},
       "tags": [
-        "generative-ai",
-        "diffusion-models",
-        "model-quantization",
-        "on-device-ml",
-        "efficient-inference"
+        "AI安全与治理",
+        "隐私与数据权限",
+        "电商平台",
+        "内容审核/合规",
+        "自动化发布"
       ]
     },
     {
-      "id": "hackernews:story:48346019",
-      "title": "Restartable Sequences",
-      "url": "https://justine.lol/rseq/",
+      "id": "hackernews:story:48357075",
+      "title": "CS336: Language Modeling from Scratch",
+      "url": "https://cs336.stanford.edu/",
       "source_type": "hackernews",
       "ai_score": 8.0,
-      "signal_score": 5.0,
-      "signal_reason": "Signals an established kernel feature and an existing support library (librseq) being discussed and referenced; no explicit new release, capability change, or market/access shift is evidenced beyond continued interest and awareness.",
-      "capability_delta": "",
-      "assessment": {},
-      "tags": [
-        "linux",
-        "concurrency",
-        "systems-programming",
-        "performance",
-        "lock-free"
-      ]
-    },
-    {
-      "id": "hackernews:story:48347370",
-      "title": "Deflock hits 100k ALPRs Mapped in USA",
-      "url": "https://deflock.org/",
-      "source_type": "hackernews",
-      "ai_score": 7.0,
-      "signal_score": 5.0,
-      "signal_reason": "Observable signals include a publicly available map/dataset and evidence of substantial ALPR prevalence plus active community attention, but there is no clear newly changed capability, access, cost, or market condition beyond increased visibility and incremental dataset iteration.",
-      "capability_delta": "",
-      "assessment": {},
-      "tags": [
-        "privacy",
-        "surveillance",
-        "ALPR",
-        "open-data",
-        "civic-tech"
-      ]
-    },
-    {
-      "id": "hackernews:story:48343683",
-      "title": "The Website Specification",
-      "url": "https://specification.website/",
-      "source_type": "hackernews",
-      "ai_score": 7.0,
       "signal_score": 4.0,
-      "signal_reason": "Observable signal is mainly community attention to a guidance document (high engagement), but it does not indicate a new capability release, standard adoption, regulatory change, or measurable shift in cost/latency/access—just a curated set of recommendations.",
+      "signal_reason": "Observable signals are primarily educational (a course resource) rather than a new capability or market shift; comments indicate practical feasibility on consumer GPUs for small-scale reproduction and note GPU rental pricing, but no clear change in access, cost structure, or industry conditions is evidenced beyond typical training-cost considerations.",
       "capability_delta": "",
       "assessment": {},
       "tags": [
-        "web-development",
-        "web-standards",
-        "security",
-        "best-practices",
-        "ai-agents"
+        "LLMs",
+        "deep-learning-education",
+        "transformers",
+        "NLP",
+        "training-compute"
+      ]
+    },
+    {
+      "id": "hackernews:story:48360054",
+      "title": "Should you normalize RGB values by 255 or 256?",
+      "url": "https://30fps.net/pages/255-vs-256-division/",
+      "source_type": "hackernews",
+      "ai_score": 7.0,
+      "signal_score": 3.0,
+      "signal_reason": "No observable market or capability shift is presented; it’s an explanatory article/discussion about existing conversion conventions and rounding behavior rather than a new release, standard change, or performance/cost/access improvement.",
+      "capability_delta": "",
+      "assessment": {},
+      "tags": [
+        "computer-graphics",
+        "numerical-methods",
+        "color-science",
+        "image-processing",
+        "floating-point"
+      ]
+    },
+    {
+      "id": "hackernews:story:48357905",
+      "title": "What appear to be biochemical processes may be a natural feature of geology",
+      "url": "https://www.quantamagazine.org/the-dirt-that-refused-to-die-20260601/",
+      "source_type": "hackernews",
+      "ai_score": 7.0,
+      "signal_score": 3.0,
+      "signal_reason": "Observable facts indicate an interpretive scientific development and community interest, but no clear new capability, cost/access shift, deployment pathway, or market/engineering condition change is evidenced in the post.",
+      "capability_delta": "",
+      "assessment": {},
+      "tags": [
+        "astrobiology",
+        "origin-of-life",
+        "geochemistry",
+        "prebiotic-chemistry",
+        "science"
       ]
     }
   ]
